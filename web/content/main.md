@@ -1,6 +1,7 @@
 +++
 title = "Cryptocurrency Cabal"
 weight = 1
+date = '2015-08-21'
 +++
 
 ## Welcome to Cryptocurrency Cabal!
