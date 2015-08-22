@@ -8,7 +8,7 @@ develop:
 	hugo server --theme=cabal --watch
 
 fullgithub: 
-	cp -r spring2015 public/
+	cp -r spring2015/* public/
 	make html
 	git add -A
 	git commit -m "Rebuilt site"

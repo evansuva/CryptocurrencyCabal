@@ -8,7 +8,8 @@ DISQUS_SITENAME = "davidevans"
 
 [params]
     sidebartitle = "Crypto Currency Cabal"
-    sidebartagline = "University&nbsp;of&nbsp;Virginia cs4501:&nbsp;Fall&nbsp;2015"
+    sidebartagline = "University of Virginia"
+    sidebartagline2 = "cs4501 Fall 2015"
     nodate = true
     noauthor = true
     noread = true
