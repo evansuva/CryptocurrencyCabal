@@ -16,10 +16,7 @@ fullgithub:
 	git subtree push --prefix=public https://evansuva@github.com/CryptocurrencyCabal.git gh-pages
 
 github: 
-	make html
-	git add -A
-	git commit -m "Rebuilt site"
-	git push origin master
-	git subtree push --prefix=public https://evansuva@github.com/CryptocurrencyCabal.git gh-pages
+	cd ..; make github
+
 
 .PHONY: html clean develop

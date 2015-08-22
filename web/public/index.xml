@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptocurrency Cabal</title>
-    <link>http://bitcon-class.org/</link>
+    <link>http://bitcoin-class.org/</link>
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://bitcon-class.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cryptocurrency Cabal</title>
-      <link>http://bitcon-class.org/main/</link>
+      <link>http://bitcoin-class.org/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcon-class.org/main/</guid>
+      <guid>http://bitcoin-class.org/main/</guid>
       <description></description>
     </item>
     
