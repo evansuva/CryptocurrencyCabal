@@ -1,0 +1,11 @@
+GITHUB_PAGES_BRANCH=gh-pages
+SITENAME=bitcoin-class.org
+
+github: 
+	cd web; make html
+	git add -A
+	git commit -m "Rebuilt site"
+	git push origin master
+	git subtree push --prefix=web/public https://evansuva@github.com/CryptocurrencyCabal.git gh-pages
+
+.PHONY: html clean develop
