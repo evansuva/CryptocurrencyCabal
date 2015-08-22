@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cryptocurrency Cafe</title><link href="http://bitcoin-class.org/0/" rel="alternate"></link><link href="http://bitcoin-class.org/0/feeds/class24.atom.xml" rel="self"></link><id>http://bitcoin-class.org/0/</id><updated>2015-04-13T00:00:00-04:00</updated><entry><title>Class 24: Silk Road</title><link href="http://bitcoin-class.org/0/class-24-silk-road.html" rel="alternate"></link><updated>2015-04-13T00:00:00-04:00</updated><author><name>David Evans</name></author><id>tag:bitcoin-class.org,2015-04-13:0/class-24-silk-road.html</id><summary type="html">&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;p&gt;Each team will have an opportunity to present their project the last
+three classes (April 20, 22 and 27).  The schedule is &lt;a href="http://bitcoin-class.org/0/final-presentations.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; 
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/46953307" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;div class="caption"&gt;Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  &lt;br&gt;If you &lt;a href="http://bitcoin-class.org/0/classes/class24/class24-inked.pptx"&gt;download the slides&lt;/a&gt;, they are present though.
+Hopefully, the player will be fixed someday. &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h1&gt;Legality of Bitcoin&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://bitcoin-class.org/0/classes/class24/FIN-2013-G001.pdf"&gt;&lt;em&gt;Application of FinCEN’s Regulations to Persons Administering,
+Exchanging, or Using Virtual Currencies&lt;/em&gt;&lt;/a&gt; (March 2013)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.irs.gov/uac/Newsroom/IRS-Virtual-Currency-Guidance"&gt;&lt;em&gt;IRS Virtual Currency Guidance : Virtual Currency Is Treated as Property for U.S. Federal Tax Purposes; General Rules for Property Transactions Apply&lt;/em&gt;&lt;/a&gt;, 24 March 2014.  &lt;a href="http://www.irs.gov/pub/irs-drop/n-14-21.pdf"&gt;Notice 2014-21&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Silk Road&lt;/h1&gt;
+&lt;p&gt;Roger Dingledine, Nick Mathewson, Paul Syverson. &lt;a href="https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf"&gt;&lt;em&gt;Tor: The Second-Generation Onion Router&lt;/em&gt;&lt;/a&gt;, &lt;a href="https://www.usenix.org/legacy/event/sec04/"&gt;USENIX Security Symposium 2004&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.torproject.org/"&gt;Tor Project Site&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://metrics.torproject.org/relayflags.html?graph=relayflags&amp;amp;start=2014-01-13&amp;amp;end=2015-04-13&amp;amp;flag=Running&amp;amp;flag=Exit&amp;amp;flag=Fast&amp;amp;flag=Stable"&gt;How many exit nodes?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nicolas Christin, &lt;a href="http://arxiv.org/pdf/1207.7139.pdf"&gt;&lt;em&gt;Traveling the Silk Road: A measurement analysis of a large anonymous online marketplace&lt;/em&gt;&lt;/a&gt;. November 2012.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.nytimes.com/2014/01/19/business/eagle-scout-idealist-drug-trafficker.html?_r=0"&gt;&lt;em&gt;Eagle Scout. Idealist. Drug Trafficker?&lt;/em&gt;&lt;/a&gt;, New York Times, 18 Jan 2014.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.unitedstatescourts.org/federal/nysd/422824/"&gt;Documents from Ross Ulbright case&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://bitcoin-class.org/0/classes/class24/fbi.pdf"&gt;&lt;em&gt;Declaration of Christopher Tarbell&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://antilop.cc/sr/files/2015_03_06_ULBRICHT_motion_new_trial.pdf"&gt;Motion from 6 March&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>

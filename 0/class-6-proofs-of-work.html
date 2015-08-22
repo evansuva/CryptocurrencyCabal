@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Class 6: Proofs of Work
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitcoin Class taught at University of Virginia">
+    <meta name="keywords" content="bitcoin,cryptocurrency,class,bitcoin mining,cryptocurrency course, bitcoin course, bitcoin class">
+    <meta name="author" content="David Evans">
+    <link rel="icon" type="image/png" href="http://www.rust-class.org/static/images/logo.png" />  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://bitcoin-class.org/0/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+     .about {
+        font-size: 8pt;
+        font-color: "gray";
+     }
+    </style>
+    <link href="http://bitcoin-class.org/0/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://bitcoin-class.org/0/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://bitcoin-class.org/0/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://bitcoin-class.org/0/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://bitcoin-class.org/0/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cryptocurrency Cafe ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="http://bitcoin-class.org/0/index.html">Cryptocurrency Cafe </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                  <li><a href="/pages/classes.html"><b>Classes</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/forum.html"><b>Forum</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/ps0.html">PS0</a></li>
+                  <li><a href="/pages/project1.html">Project 1</a></li>
+                  <li><a href="/pages/project2.html">Project 2</a></li>
+                  <li><a href="/pages/final-projects.html"><b>Final Projects</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/resources.html"><b>Resources</b></a></li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="http://bitcoin-class.org/0/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+<section id="content">
+        <article>
+                <header>
+<div class="whighlight">This is the archived Spring 2015 version of the course.  For the most recent version, see <a href="http://bitcoin-class.org">http://bitcoin-class.org</a>.</div>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Class 6: Proofs of Work">
+                                        Class 6: Proofs of Work
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="quietlabel">Posted: </span>
+<abbr class="published" title="2015-02-02T00:00:00-05:00">
+    Mon 02 February 2015
+</abbr>
+<!-- <span class="quietlabel">by</span>
+<a href="http://bitcoin-class.org/0/author/david-evans.html">David Evans</a>
+-->
+<!--
+<span class="label">Category</span>
+<a href="http://bitcoin-class.org/0/category/class6.html"><i class="icon-folder-open"></i>class6</a>.
+-->
+
+<!--
+-->
+</footer><!-- /.post-info -->                </div>
+                <p><div class="phighlight">
+   <a href="http://bitcoin-class.org/0/classes/class6/class6.pdf">PDF version for printing</a>
+   </div></p>
+<h2>Schedule</h2>
+<div class="todo">
+
+<ul>
+<li>
+<p>If you didn’t get full credit for Project 1 because of failure to post
+  something interesting, you can (and should!) redeem yourself and earn
+  full credit by <strong>posting an interesting comment by Thursday</strong>.  It can
+  be on (1) Discussion questions from Project 1 (2) notes from classes,
+  or (3) general forum.</p>
+</li>
+<li>
+<p><strong>Read:</strong> <a href="https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc"><em>Chapter 6: The Bitcoin
+Network</em></a>,
+<a href="https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc"><em>Chapter 7: The
+Blockchain</em></a>
+from Andreas Antonopoulos' book.  (Ideally, you should finish these
+before Wednesday's class, but at the latest by Monday, 9 Feb.)
+   </div></p>
+</li>
+</ul>
+<p><center> 
+<iframe src="//www.slideshare.net/slideshow/embed_code/44177245" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<div class="caption">Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  <br>If you download the slides, they are present though.
+Hopefully, the player will be fixed someday. </div>
+</center></p>
+<h1>Trust</h1>
+<p>What are valid sources of <em>trust</em>?
+<div class="gap"></p>
+</div>
+
+<p>What are invalid sources of <em>trust</em>?
+<div class="gap"></p>
+</div>
+
+<p>What mechanisms have humans evolved or constructed to enhance trust among strangers?
+<div class="gap"></p>
+</div>
+
+<h1>Distributed Consensus</h1>
+<p>How well does the 2-out-of-3 network consensus public ledger protocol work?
+<div class="gap"></p>
+</div>
+
+<h1>Proof-of-Work</h1>
+<p>Cynthia Dwork and Moni Naor.  <a href="http://bitcoin-class.org/0/classes/class6/pvp.pdf"><em>Pricing via Processing or Combatting Junk Mail</em></a>, CRYPTO 1992.</p>
+<p><strong>Pricing Function</strong>: (<span class="math"><em>f</em></span>)
+- moderately easy to compute
+- cannot be amortized 
+- computing <span class="math"><em>f</em>(<em>m</em><sub>1</sub>), ..., <em>f</em>(<em>m</em><sub>l</sub>)</span> costs <span class="math"><em>l</em></span> times as much as computing <span class="math"><em>f</em>(<em>m</em><sub>i<sub>)</span>. 
+- easily verified: given <span class="math"><em>x</em></span>, <span class="math"><em>y</em></span> easy to check <span class="math"><em>y</em> = <em>f</em>(<em>x</em>)</span>.</p>
+<p>Adam Back. <a href="http://www.hashcash.org/papers/announce.txt"><em>Hash Cash Postage Implementation</em></a></p>
+<p><strong>Interactive Hashcash</strong>:<br />
+1. Sender to Receiver: <code>Hello</code><br />
+2. Receiver to Sender: <span class="math"><em>r</em></span> (random nonce)<br />
+3. Sender to Receiver: <span class="math"><em>x</em></span>, <code>Mail</code> where <span class="math"><em>x</em> = <em>f</em>(<em>r</em>)</span>.<br />
+4. Receiver verifies <span class="math"><em>x</em> = <em>f</em>(<em>r</em>)</span>.  </p>
+<p>How well does this protocol work for sending mail?
+<div class="gap"></p>
+</div>
+
+<p>Suppose we use SHA-256 for <span class="math"><em>f</em></span>?
+<div class="gap"></p>
+</div>
+
+<p>How can we make this protocol non-interactive?
+<div class="gap"></p>
+</div>
+
+<h1>Bitcoin Mining</h1>
+<p>Proof-of-work: Find an <span class="math"><em>x</em></span> such that: SHA-256(SHA-256(<span class="math"><em>r</em></span> + <span class="math"><em>x</em></span>)) &lt; <span class="math"><em>T</em>/<em>d</em></span>.</p>
+<p><span class="math"><em>d</em></span> is the "difficulty" (varies).<br />
+<span class="math"><em>T</em></span> is a fixed target (256-bit number).<br />
+<span class="math"><em>r</em></span> depends on hash of previous block, transactions, and other information.</p>
+<p>What does it mean for the bitcoin difficulty to go down?
+<div class="gap"></p>
+</div>
+
+<p><a href="https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp">BitcoinMiner</a> (code from core Bitcoin implementation)</p>
+<div class="highlight"><pre><span class="c1">//</span>
+<span class="c1">// ScanHash scans nonces looking for a hash with at least some zero bits.</span>
+<span class="c1">// The nonce is usually preserved between calls, but periodically or if the</span>
+<span class="c1">// nonce is 0xffff0000 or above, the block is rebuilt and nNonce starts over at</span>
+<span class="c1">// zero.</span>
+<span class="c1">//</span>
+<span class="kt">bool</span> <span class="k">static</span> <span class="nf">ScanHash</span><span class="p">(</span><span class="k">const</span> <span class="n">CBlockHeader</span> <span class="o">*</span><span class="n">pblock</span><span class="p">,</span> <span class="kt">uint32_t</span><span class="o">&amp;</span> <span class="n">nNonce</span><span class="p">,</span> <span class="n">uint256</span> <span class="o">*</span><span class="n">phash</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Write the first 76 bytes of the block header to a double-SHA256 state.</span>
+    <span class="n">CHash256</span> <span class="n">hasher</span><span class="p">;</span>
+    <span class="n">CDataStream</span> <span class="n">ss</span><span class="p">(</span><span class="n">SER_NETWORK</span><span class="p">,</span> <span class="n">PROTOCOL_VERSION</span><span class="p">);</span>
+    <span class="n">ss</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pblock</span><span class="p">;</span>
+    <span class="n">assert</span><span class="p">(</span><span class="n">ss</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">80</span><span class="p">);</span>
+    <span class="n">hasher</span><span class="p">.</span><span class="n">Write</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">ss</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">76</span><span class="p">);</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">nNonce</span><span class="o">++</span><span class="p">;</span>
+
+        <span class="c1">// Write the last 4 bytes of the block header (the nonce) to a copy of</span>
+        <span class="c1">// the double-SHA256 state, and compute the result.</span>
+        <span class="n">CHash256</span><span class="p">(</span><span class="n">hasher</span><span class="p">).</span><span class="n">Write</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">nNonce</span><span class="p">,</span> <span class="mi">4</span><span class="p">).</span><span class="n">Finalize</span><span class="p">((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">phash</span><span class="p">);</span>
+
+        <span class="c1">// Return the nonce if the hash has at least some zero bits,</span>
+        <span class="c1">// caller will check if it has enough to reach the target</span>
+        <span class="k">if</span> <span class="p">(((</span><span class="kt">uint16_t</span><span class="o">*</span><span class="p">)</span><span class="n">phash</span><span class="p">)[</span><span class="mi">15</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+
+        <span class="c1">// If nothing found after trying for a while, return -1</span>
+        <span class="k">if</span> <span class="p">((</span><span class="n">nNonce</span> <span class="o">&amp;</span> <span class="mh">0xfff</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p><a href="https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp#L438">BitcoinMiner</a>: (excerpted, most error checking code removed)</p>
+<div class="highlight"><pre><span class="kt">void</span> <span class="k">static</span> <span class="nf">BitcoinMiner</span><span class="p">(</span><span class="n">CWallet</span> <span class="o">*</span><span class="n">pwallet</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">SetThreadPriority</span><span class="p">(</span><span class="n">THREAD_PRIORITY_LOWEST</span><span class="p">);</span>
+    <span class="n">CReserveKey</span> <span class="n">reservekey</span><span class="p">(</span><span class="n">pwallet</span><span class="p">);</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nExtraNonce</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="n">try</span> <span class="p">{</span>
+        <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Create new block</span>
+            <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">nTransactionsUpdatedLast</span> <span class="o">=</span> <span class="n">mempool</span><span class="p">.</span><span class="n">GetTransactionsUpdated</span><span class="p">();</span>
+            <span class="n">CBlockIndex</span><span class="o">*</span> <span class="n">pindexPrev</span> <span class="o">=</span> <span class="n">chainActive</span><span class="p">.</span><span class="n">Tip</span><span class="p">();</span>
+
+            <span class="n">auto_ptr</span><span class="o">&lt;</span><span class="n">CBlockTemplate</span><span class="o">&gt;</span> <span class="n">pblocktemplate</span><span class="p">(</span><span class="n">CreateNewBlockWithKey</span><span class="p">(</span><span class="n">reservekey</span><span class="p">));</span>
+            <span class="n">CBlock</span> <span class="o">*</span><span class="n">pblock</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">pblocktemplate</span><span class="o">-&gt;</span><span class="n">block</span><span class="p">;</span>
+            <span class="n">IncrementExtraNonce</span><span class="p">(</span><span class="n">pblock</span><span class="p">,</span> <span class="n">pindexPrev</span><span class="p">,</span> <span class="n">nExtraNonce</span><span class="p">);</span>
+
+            <span class="kt">int64_t</span> <span class="n">nStart</span> <span class="o">=</span> <span class="n">GetTime</span><span class="p">();</span>
+            <span class="n">arith_uint256</span> <span class="n">hashTarget</span> <span class="o">=</span> <span class="n">arith_uint256</span><span class="p">().</span><span class="n">SetCompact</span><span class="p">(</span><span class="n">pblock</span><span class="o">-&gt;</span><span class="n">nBits</span><span class="p">);</span>
+            <span class="n">uint256</span> <span class="n">hash</span><span class="p">;</span>
+            <span class="kt">uint32_t</span> <span class="n">nNonce</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Check if something found</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">ScanHash</span><span class="p">(</span><span class="n">pblock</span><span class="p">,</span> <span class="n">nNonce</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">hash</span><span class="p">))</span>
+                <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">UintToArith256</span><span class="p">(</span><span class="n">hash</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">hashTarget</span><span class="p">)</span>
+                    <span class="p">{</span>
+                        <span class="c1">// Found a solution</span>
+                        <span class="n">pblock</span><span class="o">-&gt;</span><span class="n">nNonce</span> <span class="o">=</span> <span class="n">nNonce</span><span class="p">;</span>
+                        <span class="n">assert</span><span class="p">(</span><span class="n">hash</span> <span class="o">==</span> <span class="n">pblock</span><span class="o">-&gt;</span><span class="n">GetHash</span><span class="p">());</span>
+
+                        <span class="n">SetThreadPriority</span><span class="p">(</span><span class="n">THREAD_PRIORITY_NORMAL</span><span class="p">);</span>
+                        <span class="n">LogPrintf</span><span class="p">(</span><span class="s">&quot;proof-of-work found  </span><span class="se">\n</span><span class="s">  hash: %s  </span><span class="se">\n</span><span class="s">target: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> 
+                              <span class="n">hash</span><span class="p">.</span><span class="n">GetHex</span><span class="p">(),</span> <span class="n">hashTarget</span><span class="p">.</span><span class="n">GetHex</span><span class="p">());</span>
+                        <span class="n">ProcessBlockFound</span><span class="p">(</span><span class="n">pblock</span><span class="p">,</span> <span class="o">*</span><span class="n">pwallet</span><span class="p">,</span> <span class="n">reservekey</span><span class="p">);</span>
+                        <span class="n">SetThreadPriority</span><span class="p">(</span><span class="n">THREAD_PRIORITY_LOWEST</span><span class="p">);</span>
+                        <span class="k">break</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="n">nNonce</span> <span class="o">&gt;=</span> <span class="mh">0xffff0000</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+                <span class="c1">// ... other breaking conditions elided</span>
+                <span class="c1">// Update nTime every few seconds</span>
+                <span class="n">UpdateTime</span><span class="p">(</span><span class="n">pblock</span><span class="p">,</span> <span class="n">pindexPrev</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">boost</span><span class="o">::</span><span class="n">thread_interrupted</span><span class="o">&amp;</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">LogPrintf</span><span class="p">(</span><span class="s">&quot;BitcoinMiner terminated</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="n">throw</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "class-6-proofs-of-work.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://bitcoin-class.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+</section>
+
+<script type="text/javascript">
+    var disqus_shortname = 'bitcoin-class';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+</script>
+
+      <hr>
+
+      <footer>
+	<div id="footer">
+        <address id="about">
+          <a href="/">Cryptocurrency Cafe</a>, Spring 2015<br>      
+          <a href="http://www.cs.virginia.edu">University of Virginia Computer Science</a><br>
+	  <p align="right"><font color="grey" size="-2"> Site built using <a href="http://pelican.notmyidea.org/">Pelican</a>.  Theme uses <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome</a>.</p>
+        </address><!-- /#about -->
+	</div>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3775212-12']);
+_gaq.push(['_setDomainName', 'bitcoin-class.org']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript';
+  ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+  'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://bitcoin-class.org/0/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://bitcoin-class.org/0/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
