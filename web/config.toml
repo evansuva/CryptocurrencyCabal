@@ -7,8 +7,8 @@ GOOGLE_ANALYTICS = "UA-3775212-1"
 DISQUS_SITENAME = "davidevans"
 
 [params]
-    sidebartitle = "Cryptocurrency Cabal"
-    sidebartagline = "cs4501: Fall 2015"
+    sidebartitle = "Crypto Currency Cabal"
+    sidebartagline = "University&nbsp;of&nbsp;Virginia cs4501:&nbsp;Fall&nbsp;2015"
     nodate = true
     noauthor = true
     noread = true
