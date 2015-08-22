@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/</link>
-    <description>Recent content on Cryptocurrency Cabal</description>
+    <title>News on Cryptocurrency Cabal</title>
+    <link>http://bitcoin-class.org/news/</link>
+    <description>Recent content in News on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Aug 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Cryptocurrency Cabal</title>
-      <link>http://bitcoin-class.org/main/</link>
-      <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/main/</guid>
-      <description>
-
-&lt;h2 id=&#34;welcome-to-cryptocurrency-cabal:379caad01b6ea305187be199bcac1370&#34;&gt;Welcome to Cryptocurrency Cabal!&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;First Class:&lt;/strong&gt; Wednesday, 26 August 2015&lt;br /&gt;
-&lt;strong&gt;Location:&lt;/strong&gt; Olsson 120&lt;br /&gt;
-&lt;strong&gt;Teachers:&lt;/strong&gt; &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; and &lt;a href=&#34;http://www.cs.virginia.edu/~sza4uq/&#34;&gt;Samee Zahur&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;More information will be posted here soon.  Until then, see &lt;a href=&#34;0/&#34;&gt;Last Semester&amp;rsquo;s Course&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="http://bitcoin-class.org/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ombuds: Using Bitcoin to make online messages &#39;immutable&#39;</title>
