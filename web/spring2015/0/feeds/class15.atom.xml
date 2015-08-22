@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cryptocurrency Cafe</title><link href="http://bitcoin-class.org/0/" rel="alternate"></link><link href="http://bitcoin-class.org/0/feeds/class15.atom.xml" rel="self"></link><id>http://bitcoin-class.org/0/</id><updated>2015-03-04T00:00:00-05:00</updated><entry><title>Class 15: Script</title><link href="http://bitcoin-class.org/0/class-15-script.html" rel="alternate"></link><updated>2015-03-04T00:00:00-05:00</updated><author><name>David Evans</name></author><id>tag:bitcoin-class.org,2015-03-04:0/class-15-script.html</id><summary type="html">&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;p&gt;&lt;div class="todo"&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://bitcoin-class.org/0/pages/project2.html"&gt;Project 2 Part
+  2&lt;/a&gt; is due &lt;strong&gt;tomorrow&lt;/strong&gt; (Thursday, 5 March).&lt;br /&gt;
+  Submission is by email, send a PDF with your
+  answers to questions 5-9.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keep thinking about ideas for your project.  The first deliverable for
+  the project will be a preliminary proposal due on March 19.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enjoy your Spring Break!
+   &lt;/div&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;center&gt; 
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/45811474" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;div class="caption"&gt;Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  &lt;br&gt;If you &lt;a href="http://bitcoin-class.org/0/classes/class15/class15-inked.pptx"&gt;download the slides&lt;/a&gt;, they are present though.
+Hopefully, the player will be fixed someday. &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h1&gt;Bitcoin Script&lt;/h1&gt;
+&lt;p&gt;Transaction outputs in bitcoin are protected by &lt;em&gt;locking scripts&lt;/em&gt;, and
+must be unlocked by &lt;em&gt;unlocking scripts&lt;/em&gt;.  The scripts are written in a
+simple (compared to, say, the Java Virtual Machine language, but quite
+complex and poorly specified for what one might expect would be needed
+for bitcoin transactions) stack-based language.  A transaction output is
+not unlocked unless an unlocking script is provided such that the result
+of executing the unlocking script, followed by executing the locking
+script, is a stack with value True on top (and no invalid transaction
+results during the execution).&lt;/p&gt;
+&lt;p&gt;Some script instructions:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Opcode&lt;/th&gt;
+&lt;th&gt;Input&lt;/th&gt;
+&lt;th&gt;Output&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Pushes a &lt;strong&gt;1&lt;/strong&gt; (True) on the stack&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_DUP&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;a&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;a&lt;/em&gt; &lt;em&gt;a&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Duplicates the top element of the stack&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_ADD&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;(&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;)&lt;/td&gt;
+&lt;td&gt;Pushes the sum of the top two elements.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_EQUAL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;0&lt;/strong&gt; or &lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Pushes &lt;strong&gt;1&lt;/strong&gt; if the top two elements are exactly equal, otherwise &lt;strong&gt;0&lt;/strong&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_VERIFY&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;a&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;If &lt;em&gt;a&lt;/em&gt; is not &lt;strong&gt;True&lt;/strong&gt; (&lt;strong&gt;1&lt;/strong&gt;), terminates as Invalid.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_RETURN&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;Terminates as Invalid.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_EQUALVERIFY&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;If &lt;em&gt;a&lt;/em&gt; and &lt;em&gt;b&lt;/em&gt; are not equal, terminates as Invalid.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;OP_HASH160&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;a&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;H(&lt;em&gt;a&lt;/em&gt;)&lt;/td&gt;
+&lt;td&gt;Pushes bitcoin address, RIPEMD(SHA256(&lt;em&gt;a&lt;/em&gt;)).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Some more complex instructions:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;OP_IF&lt;/code&gt; [statements] &lt;code&gt;OP_ENDIF&lt;/code&gt; - If the top of the stack is &lt;strong&gt;1&lt;/strong&gt;, executes [statements].  Otherwise does nothing.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;OP_CHECKSIG&lt;/code&gt; - Pops two items from the stack, &lt;em&gt;publickey&lt;/em&gt; and &lt;em&gt;sig&lt;/em&gt;.
+Verifies the entire transaction (known from node state, not the stack)
+using the &lt;em&gt;publickey&lt;/em&gt; and &lt;em&gt;sig&lt;/em&gt;.  If the signature is valid, push &lt;strong&gt;1&lt;/strong&gt;;
+otherwise, &lt;strong&gt;0&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;OP_1 OP_DUP OP_ADD OP_DUP OP_SUB OP_VERIFY&lt;/code&gt;
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The most common locking script (send to public address):&lt;br /&gt;
+&lt;code&gt;OP_DUP&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_HASH160&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_DATA20&lt;/code&gt; &lt;em&gt;(bitcoin address)&lt;/em&gt;&lt;br /&gt;
+&lt;code&gt;OP_EQUALVERIFY&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_CHECKSIG&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;What must be on the stack for the locking script to succeed (end with &lt;strong&gt;1&lt;/strong&gt; on top of stack)?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;OP_HASH160&lt;/code&gt;&lt;br /&gt;
+[20-byte hash]&lt;br /&gt;
+&lt;code&gt;OP_EQUAL&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;What must be on the stack for the locking script above ("Pay-to-Script-Hash") to succeed?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;According to &lt;a href="http://www.quantabytes.com/articles/a-survey-of-bitcoin-transaction-types"&gt;Most Popular Transaction
+Scripts&lt;/a&gt;
+(analysis of all transactions in first 290,000 blocks), the ninth most popular script is:
+&lt;code&gt;OP_RETURN OP_DATA_40&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;What must be on the stack for the &lt;code&gt;OP_RETURN OP_DATA_40&lt;/code&gt; locking script to succeed (end with
+&lt;strong&gt;1&lt;/strong&gt; on top of stack)? (Trick question: what happens to the coin
+protected by this locking script?)
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Is the bitcoin scripting language Turing-complete?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you are not clear on what Turing-complete means, see &lt;a href="http://www.dori-mic.org"&gt;&lt;em&gt;Dori-Mic and the Universal Machine!&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;BTCD Code&lt;/h2&gt;
+&lt;p&gt;Type: &lt;a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L206"&gt;Script&lt;/a&gt; is the virtual machine the executes scripts (note that it has two Stacks) &lt;/p&gt;
+&lt;p&gt;Execute a script: &lt;a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L723"&gt;Execute&lt;/a&gt;&lt;br /&gt;
+Execute one instruction: &lt;a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L782"&gt;Step&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L38"&gt;Opcodes&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L971"&gt;exec&lt;/a&gt; function executes one instruction  &lt;/p&gt;
+&lt;p&gt;Some interesting opcode implementations:
+&lt;a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1143"&gt;OP_IF&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1235"&gt;OP_RETURN&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Bitcoin Core Code&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp"&gt;script/interpreter.cpp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L524"&gt;OP_DUP&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L752"&gt;Crypto&lt;/a&gt;
+&lt;a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L785"&gt;OP_CHECKSIG&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.crmarsh.com/script-playground/"&gt;Script Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some interesting things you can do with bitcoin scripts:&lt;br /&gt;
+&lt;a href="https://en.bitcoin.it/wiki/Contracts"&gt;Contracts&lt;/a&gt; (see also Nick Szabo's &lt;a href="http://szabo.best.vwh.net/formalize.html"&gt;&lt;em&gt;Formalizing and Securing Relationships on Public Networks&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://eprint.iacr.org/2013/784"&gt;Secure Multiparty Computations&lt;/a&gt; (to implement lotteries)  &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;OP_RETURN&lt;/code&gt;/pasted script execution bug doesn't even make this list of &lt;a href="http://www.coindesk.com/9-biggest-screwups-bitcoin-history/"&gt;&lt;em&gt;The 9 Biggest Screwups in Bitcoin History&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blockexplorer.com/rawblock/00000000000997f9fd2fe1ee376293ef8c42ad09193a5d2086dddf8e5c426b56"&gt;Block 71036&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>

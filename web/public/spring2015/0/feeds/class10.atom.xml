@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cryptocurrency Cafe</title><link href="http://bitcoin-class.org/0/" rel="alternate"></link><link href="http://bitcoin-class.org/0/feeds/class10.atom.xml" rel="self"></link><id>http://bitcoin-class.org/0/</id><updated>2015-02-16T00:00:00-05:00</updated><entry><title>Class 10: More Mining</title><link href="http://bitcoin-class.org/0/class-10-more-mining.html" rel="alternate"></link><updated>2015-02-16T00:00:00-05:00</updated><author><name>David Evans</name></author><id>tag:bitcoin-class.org,2015-02-16:0/class-10-more-mining.html</id><summary type="html">&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;p&gt;&lt;div class="todo"&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://bitcoin-class.org/0/pages/project2.html"&gt;Project 2&lt;/a&gt;, Part 1 is due &lt;strong&gt;Sunday, 22 February&lt;/strong&gt;.  Part 2 will begin afte class on Monday, 23 February and is due on Thursday, 5 March.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start (continue!) thinking of ideas for your final project.  I've posted a few starting ideas &lt;a href="http://bitcoin-class.org/0/pages/project-ideas.html"&gt;on the course site&lt;/a&gt;.  The first major deliverable for the final project will be a project proposal (due &lt;strong&gt;20 March&lt;/strong&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reading: finish reading through &lt;a href="https://github.com/aantonop/bitcoinbook/blob/develop/ch08.asciidoc"&gt;&lt;em&gt;Chapter 8: Mining and Consensus&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;center&gt; 
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/44794648" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;div class="caption"&gt;Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  &lt;br&gt;If you &lt;a href="http://bitcoin-class.org/0/classes/class10/class10-inked.pptx"&gt;download the slides&lt;/a&gt;, they are present though.
+Hopefully, the player will be fixed someday. &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h1&gt;Final Project&lt;/h1&gt;
+&lt;p&gt;Your main assignment after finishing Project 2 will be an open-ended
+project.  You can work on anything you want that is related to
+cryptocurrency (loosely defined), so long as you can convince me it will
+be interesting and worthwhile.  My hope is everyone will do a project
+that will have significant value beyond just our class.&lt;/p&gt;
+&lt;p&gt;You can work alone or in a team of any size.  The impressiveness of your
+project should scale with the size of your team (but not linearly, since
+there is added communication overhead as your team size increases).  It
+should scale as at least &lt;span class="math"&gt;&lt;em&gt;N&lt;/em&gt;&lt;sup&gt;2/3&lt;/sup&gt;&lt;/span&gt;
+where &lt;span class="math"&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; is the number of students in the
+course on your team.  (You are welcome to enlist help from people not in
+the class, and they don't count towards your &lt;span
+class="math"&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt; value.)&lt;/p&gt;
+&lt;h1&gt;Forking PointCoin&lt;/h1&gt;
+&lt;p&gt;What causes a blockchain to fork?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If all the trans-pacific network cables (there are &lt;a href="http://www.submarinecablemap.com/"&gt;only about
+12&lt;/a&gt;) were cut, what would happen to
+the bitcoin blockchain?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1&gt;Asymptotic Analysis&lt;/h1&gt;
+&lt;p&gt;When is asymptotic analysis useful?
+&lt;div class="gap"&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;When is asymptotic analysis useless?
+&lt;div class="gap"&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;The measured time to compute one SHA-256 hash on my EC2 node (2.5 GHz
+processor) is 750 ns.  Approximately how many instructions execute to
+compute on SHA-256 hash?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1&gt;Mining Cost&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Assumption.&lt;/strong&gt; SHA-256 produces a uniform random output.  (We know this
+  is not really true, but it is a reasonable approximation, and
+  necessary for the analysis.)  So, we can model SHA-256 on any (new)
+  input &lt;span class="math"&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; as drawing randomly from 2&lt;sup&gt;256&lt;/sup&gt; possible outputs:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SHA-256(&lt;span class="math"&gt;&lt;em&gt;x&lt;/em&gt;) &amp;larr; [0, 2&lt;sup&gt;256&lt;/sup&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;Target = T&lt;sub&gt;max&lt;/sub&gt; / Difficulty&lt;/span&gt;&lt;br /&gt;
+&lt;span class="math"&gt;T&lt;sub&gt;max&lt;/sub&gt; = (2&lt;sup&gt;16&lt;/sup&gt; – 1)2&lt;sup&gt;256&lt;sup&gt; &amp;approx; 2&lt;sup&gt;224&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Current (15 Feb) Bitcoin Difficulty = 44,455,415,962&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;target&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="mi"&gt;224&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;44455415962&lt;/span&gt;
+&lt;span class="mi"&gt;606449092506427232846302685260647042725721699378946247123L&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;success_probability&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;target&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;256&lt;/span&gt;
+&lt;span class="mf"&gt;5.237396582969569e-21&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;expected_hashes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;success_probability&lt;/span&gt;
+&lt;span class="mf"&gt;1.9093455768686638e+20&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;nanos_needed&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;expected_hashes&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;760&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;seconds_needed&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;nanos_needed&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;
+&lt;span class="mf"&gt;145110263842018.44&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;seconds_needed&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="mf"&gt;1679516942.6159542&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;years&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;365&lt;/span&gt;
+&lt;span class="mf"&gt;4601416.2811396&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;years&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="o"&gt;~&lt;/span&gt; &lt;span class="mf"&gt;9.2&lt;/span&gt; &lt;span class="n"&gt;M&lt;/span&gt; &lt;span class="n"&gt;years&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;find&lt;/span&gt; &lt;span class="n"&gt;one&lt;/span&gt; &lt;span class="n"&gt;block&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;EC2&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;assuming&lt;/span&gt; &lt;span class="n"&gt;difficulty&lt;/span&gt; &lt;span class="n"&gt;doesn&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;increase&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Energy&lt;/h1&gt;
+&lt;p&gt;Why is energy/hash so much less for custom ASICs? 
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In an ASIC, it is possible to build an XOR using 4 transistors.  How
+many transistors have to flip to do an XOR on a general purpose
+processor like an Intel i7?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://en.bitcoin.it/wiki/Mining_hardware_comparison"&gt;Mining Hardware&lt;/a&gt;
+- current ASIC miners achive &amp;gt;5 Billion hashes per seconds and over 1500
+Million hashes per Joule (the energy required to lift an apple one
+meter).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.thecoinsman.com/2014/08/bitcoin/inside-chinese-bitcoin-mine/"&gt;&lt;em&gt;Inside a Chinese Bitcoin Mine&lt;/em&gt;&lt;/a&gt;, The Coinsman, 11 August 2014.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first thing you notice as you approach the warehouse is the noise. It begins as soon as you step out of the car, at which point it sounds like massive swarm of angry bees droning away somewhere off in the distance. It becomes louder and louder the closer you get to the building, and as you step through the doors it becomes a deafening and steady roar...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Estimate for total energy use of bitcoin network with current hashrate:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;expected_hashes&lt;/span&gt;
+&lt;span class="mf"&gt;1.9093455768686638e+20&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;hashes_per_second&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;expected_hashes&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;600&lt;/span&gt;
+&lt;span class="mf"&gt;3.18224262811444e+17&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;309384699.96&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;according&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;blockchain&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;309&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;384&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mf"&gt;699.96&lt;/span&gt; &lt;span class="n"&gt;GH&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;span class="mf"&gt;3.0938469996e+17&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;hashes_per_second&lt;/span&gt;
+&lt;span class="mf"&gt;0.9722222222361415&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Mhash_per_J&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1500&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Mhash_per_second&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;hashes_per_second&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Mhash_per_second&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;Mhash_per_J&lt;/span&gt;
+&lt;span class="mf"&gt;212149508.54096264&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;212 MJ per second = 212 MW&lt;/p&gt;
+&lt;p&gt;Our nearest nuclear plant, the &lt;a href="https://www.dom.com/corporate/what-we-do/electricity/generation/nuclear/north-anna-power-station"&gt;North Anna Power
+Station&lt;/a&gt;
+(Lake Anna) generates 1892 MW, "enough to power 450,000 homes" or about
+9x the amount needed to power the current bitcoin network (only counting
+the miners themselves; additional power needed for cooling, etc.)&lt;/p&gt;
+&lt;p&gt;How does the energy use of bitcoin compare to what is used by the
+current financial infrastructure for comparable service?  (This is a
+very difficult question to answer, would be a good project idea, not
+something to answer in the blank below!)&lt;/p&gt;
+&lt;div class="gap"&gt;
+
+&lt;/div&gt;</summary></entry></feed>

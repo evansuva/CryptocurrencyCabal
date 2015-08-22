@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cryptocurrency Cafe</title><link href="http://bitcoin-class.org/0/" rel="alternate"></link><link href="http://bitcoin-class.org/0/feeds/class12.atom.xml" rel="self"></link><id>http://bitcoin-class.org/0/</id><updated>2015-02-23T19:00:00-05:00</updated><entry><title>Class 12: Mostly About Superfish</title><link href="http://bitcoin-class.org/0/class-12-mostly-about-superfish.html" rel="alternate"></link><updated>2015-02-23T19:00:00-05:00</updated><author><name>David Evans</name></author><id>tag:bitcoin-class.org,2015-02-23:0/class-12-mostly-about-superfish.html</id><summary type="html">&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;p&gt;&lt;div class="todo"&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Quiz 2 will be in class on &lt;strong&gt;Wednesday, 25 February&lt;/strong&gt;.  It will be similar in length, format, and content to Quiz 1 (except will cover material from the beginning of the class through &lt;a href="http://bitcoin-class.org/0/class-10-more-mining.html"&gt;Class 10&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://bitcoin-class.org/0/pages/project2.html"&gt;Project 2 Part 2&lt;/a&gt; starts now!  Read the rules carefully to understand what is within scope for this, and please ask for clarifications before doing anything questionable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;center&gt; 
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/45046365" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;div class="caption"&gt;Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  &lt;br&gt;If you &lt;a href="http://bitcoin-class.org/0/classes/class12/class12-inked.pptx"&gt;download the slides&lt;/a&gt;, they are present though.
+Hopefully, the player will be fixed someday. &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h2&gt;Difficulty&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://bitcoinwisdom.com/bitcoin/difficulty"&gt;Bitcoin Difficulty increased yesterday!&lt;/a&gt;: 46684376316&lt;/p&gt;
+&lt;p&gt;This invalidates our results from the previous class about the SP20
+miner being profitable (with our assumption about 5% difficulty increase
+per month). &lt;/p&gt;
+&lt;p&gt;PointCoin's difficulty rate reveals something about when students got
+their miners working, and about how EC2 throttles micro instances:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;a href="/classes/class12/pointcoin-difficulty.png"&gt;&lt;img src="/classes/class12/pointcoin-difficulty.png" width=600&gt;&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h2&gt;Superfish&lt;/h2&gt;
+&lt;p&gt;Here are some articles about superfish:  &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.filippo.io/komodia-superfish-ssl-validation-is-broken/"&gt;&lt;em&gt;Komodia/Superfish SSL Validation is Broken&lt;/em&gt;&lt;/a&gt;, Filippo Valsorda&lt;br /&gt;
+&lt;a href="http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html"&gt;&lt;em&gt;Extracting the SuperFish certificate&lt;/em&gt;&lt;/a&gt;, Robert Graham&lt;br /&gt;
+&lt;a href="http://bitbanter.com/2015/02/20/lenovo-man-middle/"&gt;&lt;em&gt;Lenovo Under Sustained Man in Middle Management Attack&lt;/em&gt;&lt;/a&gt;, Josh Cincinatti&lt;br /&gt;
+&lt;a href="http://www.slate.com/articles/technology/bitwise/2015/02/lenovo_superfish_scandal_why_it_s_one_of_the_worst_consumer_computing_screw.html"&gt;&lt;em&gt;You Had One Job, Lenovo&lt;/em&gt;&lt;/a&gt;, David Auerbach, Slate  &lt;/p&gt;
+&lt;h2&gt;SSL Warings&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://research.google.com/pubs/AdrienneFelt.html"&gt;Adrienne Felt&lt;/a&gt;'s work on SSL warnings in Chrome browser:&lt;br /&gt;
+&lt;a href="https://docs.google.com/presentation/d/1TNFx6eaQVfe83PV80-FZ39QY1dSLGCWW8f2i5-NeJ48/edit#slide=id.p"&gt;&lt;em&gt;Improving SSL Warnings&lt;/em&gt;&lt;/a&gt; (talk slides)&lt;br /&gt;
+&lt;a href="http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/43265.pdf"&gt;&lt;em&gt;Improving SSL Warnings: Comprehension and Adherence&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/41927.pdf"&gt;&lt;em&gt;Experimenting At Scale With Google Chrome's SSL Warning&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;
+You can also see her old page about the work she did at UVa: &lt;a href="http://www.cs.virginia.edu/felt/privacy/"&gt;&lt;em&gt;Privacy Protection for Social Network APIs&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;</summary></entry></feed>

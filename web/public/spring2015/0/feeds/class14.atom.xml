@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cryptocurrency Cafe</title><link href="http://bitcoin-class.org/0/" rel="alternate"></link><link href="http://bitcoin-class.org/0/feeds/class14.atom.xml" rel="self"></link><id>http://bitcoin-class.org/0/</id><updated>2015-03-02T00:00:00-05:00</updated><entry><title>Class 14: Selfish Mining</title><link href="http://bitcoin-class.org/0/class-14-selfish-mining.html" rel="alternate"></link><updated>2015-03-02T00:00:00-05:00</updated><author><name>David Evans</name></author><id>tag:bitcoin-class.org,2015-03-02:0/class-14-selfish-mining.html</id><summary type="html">&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;p&gt;&lt;div class="todo"&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://bitcoin-class.org/0/pages/project2.html"&gt;Project 2 Part
+  2&lt;/a&gt; is due next
+  &lt;strong&gt;Thursday, 5 March.&lt;/strong&gt; Submission is by email, send a PDF with your
+  answers to questions 5-9.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keep thinking about ideas for your project.  The first deliverable for
+  the project will be a preliminary proposal due on March 19.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;center&gt; 
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/45339406" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;div class="caption"&gt;Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  &lt;br&gt;If you &lt;a href="http://bitcoin-class.org/0/classes/class14/class14-inked.pptx"&gt;download the slides&lt;/a&gt;, they are present though.
+Hopefully, the player will be fixed someday. &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h2&gt;Mining the Last Bitcoin&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/bitcoin/bitcoin/blob/59310f1c02673c3ee068cd82f8654bed9b757889/src/main.cpp#L1229"&gt;Computing the block value:&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;CAmount&lt;/span&gt; &lt;span class="nf"&gt;GetBlockValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;nHeight&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;CAmount&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;nFees&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;CAmount&lt;/span&gt; &lt;span class="n"&gt;nSubsidy&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;COIN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;halvings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;nHeight&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;Params&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="n"&gt;SubsidyHalvingInterval&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+    &lt;span class="c1"&gt;// Force block reward to zero when right shift is undefined.&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;halvings&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;nFees&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="c1"&gt;// Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.&lt;/span&gt;
+    &lt;span class="n"&gt;nSubsidy&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class="n"&gt;halvings&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;nSubsidy&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;nFees&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Interestingly, the &lt;a href="https://github.com/bitcoin/bitcoin/blob/4405b78d6059e536c36974088a8ed4d9f0f29898/main.cpp#L675"&gt;first commit version of this code&lt;/a&gt;
+in github (29 August 2009) is missing the &lt;code&gt;halvings &amp;gt;= 64&lt;/code&gt; line we talked about in class: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;int64&lt;/span&gt; &lt;span class="n"&gt;CBlock&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;GetBlockValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;int64&lt;/span&gt; &lt;span class="n"&gt;nFees&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;int64&lt;/span&gt; &lt;span class="n"&gt;nSubsidy&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;COIN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="c1"&gt;// Subsidy is cut in half every 4 years&lt;/span&gt;
+    &lt;span class="n"&gt;nSubsidy&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;nBestHeight&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;210000&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;nSubsidy&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;nFees&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Will a node running the early version of this code (assuming the global &lt;code&gt;nBestHeight&lt;/code&gt; is equal to &lt;code&gt;nHeight&lt;/code&gt;)
+ever compute a
+different block value than a node running the current version of the
+code?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Python code for estimating block time: &lt;a href="http://bitcoin-class.org/0/classes/class14/subsidy.py"&gt;subsidy.py&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;expect_block&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6929999&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="mi"&gt;2132&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;05&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;19&lt;/span&gt; &lt;span class="mo"&gt;00&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;38.200000&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Why is it likely that the expected final bitcoin generation block is
+found in 2132 instead of 2140 (as estimated by 10 minute expected block
+generation rate)?&lt;/p&gt;
+&lt;div class="gap"&gt;
+
+&lt;/div&gt;
+
+&lt;h2&gt;Selfish Mining&lt;/h2&gt;
+&lt;p&gt;What are the risks and benefits of witholding a found block?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Based on the &lt;a href="http://www.submarinecablemap.com/"&gt;submarine cable map&lt;/a&gt;,
+where should you put your bitcoin mining operation?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Suppose you (and no other bitcoin nodes) had access to an under-Artic
+fiberoptic cable, providing faster than currently possible routes
+between Japan and Anchorage.  Would this provide a valuable advantage in
+bitcoin?  Would you prefer to have a fast microwave link between Japan
+and Finland?&lt;/p&gt;
+&lt;div class="gap"&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;This is the paper about selfish mining: Ittay Eyal and Emin G&amp;uuml;n
+Sirer, &lt;a href="http://arxiv.org/pdf/1311.0243v5.pdf"&gt;&lt;em&gt;Majority is not Enough: Bitcoin Mining is
+Vulnerable&lt;/em&gt;&lt;/a&gt; (Nov 2013).  There
+has been a lot of debate about this paper and the claim that rational
+miners will behave selfishly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://freedom-to-tinker.com/blog/felten/game-theory-and-bitcoin/"&gt;Game Theory and Bitcoin&lt;/a&gt; (Ed Felten)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://hackingdistributed.com/2013/11/14/response-to-feedback-on-selfish-mining/#id10"&gt;Response to Feedback on Selfish Mining&lt;/a&gt; (Eyal and Sirer's response to Felten's post and other arguments; read Felten's responses in the comments)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://hackingdistributed.com/2013/11/05/faq-selfish-mining/"&gt;Some Frequently Asked Questions on Selfish Mining&lt;/a&gt; (includes Simpson's clip)&lt;/li&gt;
+&lt;/ul&gt;</summary></entry></feed>

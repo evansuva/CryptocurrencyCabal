@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cryptocurrency Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitcoin Class taught at University of Virginia">
+    <meta name="keywords" content="bitcoin,cryptocurrency,class,bitcoin mining,cryptocurrency course, bitcoin course, bitcoin class">
+    <meta name="author" content="David Evans">
+    <link rel="icon" type="image/png" href="http://www.rust-class.org/static/images/logo.png" />  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://bitcoin-class.org/0/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+     .about {
+        font-size: 8pt;
+        font-color: "gray";
+     }
+    </style>
+    <link href="http://bitcoin-class.org/0/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://bitcoin-class.org/0/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://bitcoin-class.org/0/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://bitcoin-class.org/0/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://bitcoin-class.org/0/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cryptocurrency Cafe ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="http://bitcoin-class.org/0/index.html">Cryptocurrency Cafe </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                  <li><a href="/pages/classes.html"><b>Classes</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/forum.html"><b>Forum</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/ps0.html">PS0</a></li>
+                  <li><a href="/pages/project1.html">Project 1</a></li>
+                  <li><a href="/pages/project2.html">Project 2</a></li>
+                  <li><a href="/pages/final-projects.html"><b>Final Projects</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/resources.html"><b>Resources</b></a></li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="http://bitcoin-class.org/0/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+	<section id="sidebar">
+          <p>
+	    <a href="http://www.virginia.edu"><b>University&nbsp;of&nbsp;Virginia</b></a>
+	    Spring&nbsp;2015<br>
+	    <a href="http://www.cs.virginia.edu/evans/">David&nbsp;Evans</a>
+	  </p>
+	  <p>
+	  <div class="separator"></div>
+<h3>
+<a href="https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&ctz=America/New_York">Calendar</a>
+</h3>
+<h3>
+<a href="./pages/forum.html">Forum</a>
+</h3>
+<h3><a href="./pages/syllabus.html">Syllabus</a>
+</h3>
+
+	  <div class="separator"></div>
+	  <h3>Projects</h3>
+<ul>
+<li> <a href="./pages/ps0.html">0: Registration</a>
+<li> <a href="./pages/project1.html">1: Bitcoin Transactions</a>
+<li> <a href="./pages/project2.html">2: Mining PointCoin</a>
+<li> <a href="./pages/final-projects.html"><b>Final Projects</b></a>
+<li> &nbsp;</li>
+<li> <a href="./pages/project-ideas.html">Project Ideas</a>
+</ul>
+	  <div class="separator"></div>
+	  <h3><A href="./pages/classes.html">Classes</a></h3>
+<ul>
+<li> &nbsp;<a href="./class-1-why-are-these-buildings-burning-down.html">1: Burning Down</a>
+<li> &nbsp;<a href="./class-2-cryptography.html">2: Cryptography</a>
+<li> &nbsp;<a href="./class-3-elliptic-curves.html">3: Elliptic Curves</a>
+<li> &nbsp;<a href="./class-4-verifiably-random.html">4: Verifiably Random</a>
+<li> &nbsp;<a href="./class-5-digicash.html">5: DigiCash</a>
+<li> &nbsp;<a href="./class-6-proofs-of-work.html">6: Proofs of Work</a>
+<li> &nbsp;<a href="./class-7-merkle-trees.html">7: Merkle Trees</a>
+<li> &nbsp;<a href="./class-8-review-and-project-2.html">8: Project 2</a>
+<li> &nbsp;<a href="./class-9-mining.html">9: Mining</a>
+<li> &nbsp;<a href="./class-10-more-mining.html">10: More Mining</a>
+<li> &nbsp;<a href="./class-11-pools-and-profits.html">11: Pools and Profits</a>
+<li> &nbsp;<a href="./class-12-mostly-about-superfish.html">12: Superfish!</a>
+<li> &nbsp;<a href="./class-13-quiz-2.html">13: Quiz 2</a>
+<li> &nbsp;<a href="./class-14-selfish-mining.html">14: Selfish Mining</a>
+<li> &nbsp;<a href="./class-15-script.html">15: Script</a>
+<li> &nbsp;<a href="./class-16-alternate-cryptocurrencies.html">16: Alternate Cryptocurrencies</a>
+<li> &nbsp;<a href="./class-18-useful-proofs-of-work.html">18: Useful PoW</a>
+<li> &nbsp;<a href="./class-19-josh-cincinnati-visit.html">19: Josh Cincinnati</a>
+<li> &nbsp;<a href="./class-20-project-proposal-presentations-1.html">20: Projects 1</a>
+<li> &nbsp;<a href="./class-21-project-proposal-presentations-2.html">21: Projects 2</a>
+<li> &nbsp;<a href="./class-22-subsidies-ombuds-melange.html">22: Melange</a>
+<li> &nbsp;<a href="./class-23-sidechains.html">23: Blooming Sidechains!</a>
+<li> &nbsp;<a href="./class-24-silk-road.html">24: Silk Road</a>
+<li> &nbsp;<a href="./class-25-proof-of-reserve.html">25: Proof-of-Reserve</a>
+<li> &nbsp;<a href="./class-26-presentations-1.html">26: Presentations 1</a>
+<li> &nbsp;<a href="./class-27-presentations-2.html">27: Presentations 2</a>
+<li> &nbsp;<a href="./class-28-presentations-3.html">28: Presentations 3</a>
+</ul>
+
+<p><br></br></p>
+<p><br></br></p>
+
+<ul>
+<li>
+<a href="./pages/using-materials.html">Using These Materials</a>
+</ul>
+
+	</section>
+</section>
+
+
+<section id="mainbody">
+
+<div class="whighlight">This is the archived Spring 2015 version of the course.  For the most recent version, see <a href="http://bitcoin-class.org">http://bitcoin-class.org</a>.</div>
+
+<!--
+<div id="calendar">
+<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=7ibtm6lnt88vl00h7a0e8n0bc4%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="200" height="600" frameborder="0" scrolling="no">
+</iframe>
+</div>
+-->
+
+
+        <div class="article">
+ 
+                   <h1><a href="http://bitcoin-class.org/0/class-18-useful-proofs-of-work.html">Class 18: Useful Proofs-of-Work</a></h1>
+                   <div class="well small"><footer class="post-info">
+<span class="quietlabel">Posted: </span>
+<abbr class="published" title="2015-03-23T00:00:00-04:00">
+    Mon 23 March 2015
+</abbr>
+<!-- <span class="quietlabel">by</span>
+<a href="http://bitcoin-class.org/0/author/david-evans.html">David Evans</a>
+-->
+<!--
+<span class="label">Category</span>
+<a href="http://bitcoin-class.org/0/category/class18.html"><i class="icon-folder-open"></i>class18</a>.
+-->
+
+<!--
+-->
+</footer><!-- /.post-info --></div>
+                   <div class="content"><h2>Schedule</h2>
+<p>Wednesday's class will be a visit from <a href="http://bitbanter.com/">Josh
+Cincinnati</a>.  You are encouraged to read some of
+his blog posts before his visit, including <a href="http://bitbanter.com/2015/01/14/minimalist-socialism/"><em>Minimalist Socialism
+through
+Cryptocurrency</em></a>
+and <a href="http://bitbanter.com/2015/02/20/lenovo-man-middle/"><em>Lenovo Under Sustained Man in Middle Management
+Attack</em></a>.  Josh
+graduated from UVa in 2007 (double-majoring in Political &amp; Social
+Thought and Mathematics) and has been involved in <a href="https://www.linkedin.com/pub/josh-cincinnati/5/944/98?trk=pub-pbmap">several interesting
+companies since then</a>.</p>
+<p>Next week, each team will have an opportunity to present your project
+idea.  The schedule will be posted separately soon.</p>
+<p><center> 
+<iframe src="//www.slideshare.net/slideshow/embed_code/46251018" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<div class="caption">Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  <br>If you <a href="http://bitcoin-class.org/0/classes/class18/class18-inked.pptx">download the slides</a>, they are present though.
+Hopefully, the player will be fixed someday. </div>
+</center></p>
+<h2>Permacoin</h2>
+<p>Andrew Miller, Ari Juels, Elaine Shi, Bryan Parno, and Jonathan Katz. 
+<a href="http://cs.umd.edu/~amiller/permacoin.pdf"><em>Permacoin: Repurposing Bitcoin Work for Data Preservation</em></a>.  IEEE Symposium on Security and Privacy ("Oakland") 2014.</p></div>
+<div class="commentstag"><a href="http://bitcoin-class.org/0/class-18-useful-proofs-of-work.html#disqus_thread" data-disqus-identifier="class-18-useful-proofs-of-work">Comments</a></div>
+                   <hr />
+        </div>
+
+        <div class="article">
+ 
+                   <h1><a href="http://bitcoin-class.org/0/class-17-project-discussion.html">Class 17: Project Discussion</a></h1>
+                   <div class="well small"><footer class="post-info">
+<span class="quietlabel">Posted: </span>
+<abbr class="published" title="2015-03-18T00:00:00-04:00">
+    Wed 18 March 2015
+</abbr>
+<!-- <span class="quietlabel">by</span>
+<a href="http://bitcoin-class.org/0/author/david-evans.html">David Evans</a>
+-->
+<!--
+<span class="label">Category</span>
+<a href="http://bitcoin-class.org/0/category/class17.html"><i class="icon-folder-open"></i>class17</a>.
+-->
+
+<!--
+-->
+</footer><!-- /.post-info --></div>
+                   <div class="content"><p>Welcome <a href="http://goo.gl/NwvPMA">Maxwell</a>!</p></div>
+<div class="commentstag"><a href="http://bitcoin-class.org/0/class-17-project-discussion.html#disqus_thread" data-disqus-identifier="class-17-project-discussion">Comments</a></div>
+                   <hr />
+        </div>
+
+        <div class="article">
+ 
+                   <h1><a href="http://bitcoin-class.org/0/class-16-alternate-cryptocurrencies.html">Class 16: Alternate Cryptocurrencies</a></h1>
+                   <div class="well small"><footer class="post-info">
+<span class="quietlabel">Posted: </span>
+<abbr class="published" title="2015-03-15T00:00:00-04:00">
+    Sun 15 March 2015
+</abbr>
+<!-- <span class="quietlabel">by</span>
+<a href="http://bitcoin-class.org/0/author/david-evans.html">David Evans</a>
+-->
+<!--
+<span class="label">Category</span>
+<a href="http://bitcoin-class.org/0/category/class16.html"><i class="icon-folder-open"></i>class16</a>.
+-->
+
+<!--
+-->
+</footer><!-- /.post-info --></div>
+                   <div class="content"><h2>Project Proposals</h2>
+<p><strong>Project Proposals</strong> are due <strong>Thursday, 19 March</strong> (11:59pm).  Send
+  your proposal by email to <a
+  href="mailto:evans@virginia.edu"><em>evans@virginia.edu</em></a> with
+  subject line <code>Project Proposal</code>.  Your email should contain at least:</p>
+<ol>
+<li>
+<p>Title of your Proposal - a short title that should get across what you are doing.</p>
+</li>
+<li>
+<p>Team members list - a list of everyone on your team.  You should
+<code>cc:</code> all the team members in the email so I have one email to reply-all
+to that will reach your full tem.</p>
+</li>
+<li>
+<p>Motivation - explanation of why your project topic is worthwhile.</p>
+</li>
+<li>
+<p>Project Plan - what you plan to do.</p>
+</li>
+<li>
+<p>First deliverable - description of what you will have ready to submit
+for the first deadline, <strong>Sunday, 5 April</strong> (note that you will be
+presenting about your project in class on <strong>Wednesday, 1 April</strong>).</p>
+</li>
+</ol>
+<p>If you are looking for teammates for your project, or searching for a
+project idea, come to my office hours after class today if possible.</p>
+<p><center> 
+<iframe src="//www.slideshare.net/slideshow/embed_code/45906874" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<div class="caption">Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  <br>If you <a href="http://bitcoin-class.org/0/classes/class16/class16-inked.pptx">download the slides</a>, they are present though.
+Hopefully, the player will be fixed someday. </div>
+</center></p>
+<h2>Alternate Cryptocurrencies</h2>
+<p>How can decentralized cryptocurrencies be different from bitcoin?
+<div class="gap"></p>
+</div>
+
+<p>Variations:</p>
+<ul>
+<li>Economics: deflationary vs. inflationary</li>
+<li>Proof-of-work: possible advantages of other proof-of-work mechanisms</li>
+<li>Consensus mechanism: majority of computing power vs. alternatives</li>
+<li>Scripting language for transactions: simpler vs. more powerful and expressive</li>
+<li>Parameters: speed of blocks, size of transactions</li>
+</ul>
+<h2>Dogecoin!</h2>
+<p>What is a <em>key derivation function</em>?
+<div class="gap"></p>
+</div>
+
+<p>Why is SHA-256 is horrible key derivation function today?
+<div class="gap"></p>
+</div>
+
+<p>Colin Percival, <a href="http://bitcoin-class.org/0/classes/class16/scrypt.pdf"><em>Stronger Key Derivation via Sequential
+Memory-Hard Functions</em></a>, 2009. <a href="http://www.daemonology.net/papers/scrypt-slides.pdf">presentation slides</a> including <a href="http://xkcd.com/538/">XKCD 538</a>.</p>
+<p>What is a <em>memory-hard</em> algorithm?
+<div class="gap"></p>
+</div>
+
+<p>Is a memory-hard algorithm better for a cryptocurrency proof-of-work
+than a compute-intensive one like SHA-256?
+<div class="gap"></p>
+</div>
+
+<p>Andrew Miller, Ari Juels, Elaine Shi, Bryan Parno, and Jonathan
+Katz. <a href="http://bitcoin-class.org/0/classes/class16/permacoin.pdf"><em>Permacoin: Repurposing Bitcoin Work for Data
+Preservation</em></a>.  IEEE Security and Privacy
+("Oakland") 2014.</p>
+<h4>Interesting Video</h4>
+<p>If you're still looking for ideas for your project still, this video may give you some good ideas:
+<a href="https://www.youtube.com/watch?v=rQ3e1Pzu7iI"><em>What Satoshi Didn't Know</em></a>, Gavin Anderson, DevCore Boston 2015.  (This talk gets into the history of bitcoin and lots of issues with flaws in its design, and raises some interesting possibilities for future work - e.g., are there ways to use old unspent transactions to solve network problems without spending them?)</p></div>
+<div class="commentstag"><a href="http://bitcoin-class.org/0/class-16-alternate-cryptocurrencies.html#disqus_thread" data-disqus-identifier="class-16-alternate-cryptocurrencies">Comments</a></div>
+                   <hr />
+        </div>
+
+        <div class="article">
+ 
+                   <h1><a href="http://bitcoin-class.org/0/office-hours-snowed-out-now-on-skype.html">Office Hours Snowed Out (now on Skype)</a></h1>
+                   <div class="well small"><footer class="post-info">
+<span class="quietlabel">Posted: </span>
+<abbr class="published" title="2015-03-05T00:00:00-05:00">
+    Thu 05 March 2015
+</abbr>
+<!-- <span class="quietlabel">by</span>
+<a href="http://bitcoin-class.org/0/author/david-evans.html">David Evans</a>
+-->
+<!--
+<span class="label">Category</span>
+<a href="http://bitcoin-class.org/0/category/announcements.html"><i class="icon-folder-open"></i>announcements</a>.
+-->
+
+<!--
+-->
+</footer><!-- /.post-info --></div>
+                   <div class="content"><p>I won't be able to hold my scheduled office hours today due to the
+expected megastorm.  I will be available by skype (evans1629) during the
+scheduled time (4-5pm) if anyone has project ideas to disucss or other
+questions.</p>
+<p>Stay warm and enjoy "Spring" break!</p></div>
+<div class="commentstag"><a href="http://bitcoin-class.org/0/office-hours-snowed-out-now-on-skype.html#disqus_thread" data-disqus-identifier="office-hours-snowed-out-now-on-skype">Comments</a></div>
+                   <hr />
+        </div>
+
+        <div class="article">
+                   <a href="http://bitcoin-class.org/0/class-15-script.html">Class 15: Script</a> (Wed 04 March 2015)<br></br>
+
+ <!--                  <div class="summary">
+                        <a class="btn primary xsmall" href="http://bitcoin-class.org/0/class-15-script.html">More...</a>                      
+                   </div>-->
+        </div>
+
+        <div class="article">
+                   <a href="http://bitcoin-class.org/0/class-14-selfish-mining.html">Class 14: Selfish Mining</a> (Mon 02 March 2015)<br></br>
+
+ <!--                  <div class="summary">
+                        <a class="btn primary xsmall" href="http://bitcoin-class.org/0/class-14-selfish-mining.html">More...</a>                      
+                   </div>-->
+        </div>
+
+        <div class="article">
+                   <a href="http://bitcoin-class.org/0/bitcoin-anthropology-talk.html">Bitcoin Anthropology Talk</a> (Wed 25 February 2015)<br></br>
+
+ <!--                  <div class="summary">
+                        <a class="btn primary xsmall" href="http://bitcoin-class.org/0/bitcoin-anthropology-talk.html">More...</a>                      
+                   </div>-->
+        </div>
+
+        <div class="article">
+                   <a href="http://bitcoin-class.org/0/class-13-quiz-2.html">Class 13: Quiz 2</a> (Wed 25 February 2015)<br></br>
+
+ <!--                  <div class="summary">
+                        <a class="btn primary xsmall" href="http://bitcoin-class.org/0/class-13-quiz-2.html">More...</a>                      
+                   </div>-->
+        </div>
+
+        <div class="article">
+                   <a href="http://bitcoin-class.org/0/pointcoin-updates.html">PointCoin Updates</a> (Mon 23 February 2015)<br></br>
+
+ <!--                  <div class="summary">
+                        <a class="btn primary xsmall" href="http://bitcoin-class.org/0/pointcoin-updates.html">More...</a>                      
+                   </div>-->
+        </div>
+
+        <div class="article">
+                   <a href="http://bitcoin-class.org/0/class-12-mostly-about-superfish.html">Class 12: Mostly About Superfish</a> (Mon 23 February 2015)<br></br>
+
+ <!--                  <div class="summary">
+                        <a class="btn primary xsmall" href="http://bitcoin-class.org/0/class-12-mostly-about-superfish.html">More...</a>                      
+                   </div>-->
+        </div>
+        <hr />
+
+        <div class="pagination">
+        <ul>
+                        <li class="prev"><a href="http://bitcoin-class.org/0/index2.html">&larr; Previous</a></li>
+                        <li class=""><a href="http://bitcoin-class.org/0/index.html">1</a></li>
+                        <li class=""><a href="http://bitcoin-class.org/0/index2.html">2</a></li>
+                        <li class="active"><a href="http://bitcoin-class.org/0/index3.html">3</a></li>
+                        <li class=""><a href="http://bitcoin-class.org/0/index4.html">4</a></li>
+                        <li class=""><a href="http://bitcoin-class.org/0/index5.html">5</a></li>
+                        <li class="next"><a href="http://bitcoin-class.org/0/index4.html">Next &rarr;</a></li>
+        </ul>
+        </div>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'bitcoin-class';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+</script>
+
+      <hr>
+
+      <footer>
+	<div id="footer">
+        <address id="about">
+          <a href="/">Cryptocurrency Cafe</a>, Spring 2015<br>      
+          <a href="http://www.cs.virginia.edu">University of Virginia Computer Science</a><br>
+	  <p align="right"><font color="grey" size="-2"> Site built using <a href="http://pelican.notmyidea.org/">Pelican</a>.  Theme uses <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome</a>.</p>
+        </address><!-- /#about -->
+	</div>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3775212-12']);
+_gaq.push(['_setDomainName', 'bitcoin-class.org']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript';
+  ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+  'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://bitcoin-class.org/0/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://bitcoin-class.org/0/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

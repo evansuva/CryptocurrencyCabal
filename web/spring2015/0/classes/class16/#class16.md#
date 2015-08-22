@@ -1,0 +1,91 @@
+Title: Class 16: Alternate Cryptocurrencies
+Date: 2015-03-15
+
+## Project Proposals
+
+**Project Proposals** are due **Thursday, 19 March** (11:59pm).  Send
+  your proposal by email to <a
+  href="mailto:evans@virginia.edu"><em>evans@virginia.edu</em></a> with
+  subject line `Project Proposal`.  Your email should contain at least:
+
+1. Title of your Proposal - a short title that should get across what you are doing.
+
+2. Team members list - a list of everyone on your team.  You should
+`cc:` all the team members in the email so I have one email to reply-all
+to that will reach your full tem.
+
+3. Motivation - explanation of why your project topic is worthwhile.
+
+4. Project Plan - what you plan to do.
+
+5. First deliverable - description of what you will have ready to submit
+for the first deadline, **Sunday, 5 April** (note that you will be
+presenting about your project in class on **Wednesday, 1 April**).
+
+If you are looking for teammates for your project, or searching for a
+project idea, come to my office hours after class today if possible.
+
+
+<center> 
+<iframe src="//www.slideshare.net/slideshow/embed_code/45906874" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<div class="caption">Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  <br>If you [download the slides](|filename|./class16-inked.pptx), they are present though.
+Hopefully, the player will be fixed someday. </div>
+</center>
+
+
+## Alternate Cryptocurrencies
+
+How can decentralized cryptocurrencies be different from bitcoin?
+<div class="gap">
+
+</div>
+
+Variations:
+
+- Economics: deflationary vs. inflationary
+- Proof-of-work: possible advantages of other proof-of-work mechanisms
+- Consensus mechanism: majority of computing power vs. alternatives
+- Scripting language for transactions: simpler vs. more powerful and expressive
+- Parameters: speed of blocks, size of transactions
+
+  
+## Dogecoin!
+
+What is a _key derivation function_?
+<div class="gap">
+
+</div>
+
+Why is SHA-256 is horrible key derivation function today?
+<div class="gap">
+
+</div>
+
+Colin Percival, [_Stronger Key Derivation via Sequential
+Memory-Hard Functions_](|filename|./scrypt.pdf), 2009. [presentation slides](http://www.daemonology.net/papers/scrypt-slides.pdf) including [XKCD 538](http://xkcd.com/538/).
+
+What is a _memory-hard_ algorithm?
+<div class="gap">
+
+</div>
+
+Is a memory-hard algorithm better for a cryptocurrency proof-of-work
+than a compute-intensive one like SHA-256?
+<div class="gap">
+
+</div>
+
+Andrew Miller, Ari Juels, Elaine Shi, Bryan Parno, and Jonathan
+Katz. [_Permacoin: Repurposing Bitcoin Work for Data
+Preservation_](|filename|./permacoin.pdf).  IEEE Security and Privacy
+("Oakland") 2014.
+
+#### Interesting Video
+
+If you're still looking for ideas for your project still, this video may give you some good ideas:
+[_What Satoshi Didn't Know_](https://www.youtube.com/watch?v=rQ3e1Pzu7iI), Gavin Anderson, DevCore Boston 2015.  (This talk gets into the history of bitcoin and lots of issues with flaws in its design, and raises some interesting possibilities for future work - e.g., are there ways to use old unspent transactions to solve network problems without spending them?)
+
+
+

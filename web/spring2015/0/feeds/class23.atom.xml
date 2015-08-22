@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cryptocurrency Cafe</title><link href="http://bitcoin-class.org/0/" rel="alternate"></link><link href="http://bitcoin-class.org/0/feeds/class23.atom.xml" rel="self"></link><id>http://bitcoin-class.org/0/</id><updated>2015-04-08T00:00:00-04:00</updated><entry><title>Class 23: Sidechains</title><link href="http://bitcoin-class.org/0/class-23-sidechains.html" rel="alternate"></link><updated>2015-04-08T00:00:00-04:00</updated><author><name>David Evans</name></author><id>tag:bitcoin-class.org,2015-04-08:0/class-23-sidechains.html</id><summary type="html">&lt;p&gt;&lt;div class="phighlight"&gt;
+   &lt;a href="http://bitcoin-class.org/0/classes/class23/class23.pdf"&gt;PDF version for printing&lt;/a&gt;
+   &lt;/div&gt;&lt;/p&gt;
+&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;p&gt;Each team will have an opportunity to present their project the last
+three classes (April 20, 22 and 27).  Teams will sign up for
+presentation slots at Monday's class.  Final projects are due by 11:59pm
+on Sunday, 3 May.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Thursday, 6pm Commerce School 223&lt;/strong&gt;.  &lt;em&gt;Entrepreneurial and Career
+  Ventures in the world of Digital Currency&lt;/em&gt; Panel.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Friday, 10:45am Rice 242&lt;/strong&gt;.  Suman Jana, &lt;em&gt;Rise of the Planet of the
+  Apps: Security and Privacy in the Age of Bad Code&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt; 
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/46953167" width="670" height="380" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;div class="caption"&gt;Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  &lt;br&gt;If you &lt;a href="http://bitcoin-class.org/0/classes/class23/class23-inked.pptx"&gt;download the slides&lt;/a&gt;, they are present though.
+Hopefully, the player will be fixed someday. &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h1&gt;Bloom Filters&lt;/h1&gt;
+&lt;p&gt;Burton Bloom, &lt;a href="http://bitcoin-class.org/0/classes/class23/bloom.pdf"&gt;&lt;em&gt;Space/Time Trade-offs in Hash Coding with Allowable
+Errors&lt;/em&gt;&lt;/a&gt;, Communications of the ACM, July 1970.&lt;/p&gt;
+&lt;h3&gt;Conventional Hash Table&lt;/h3&gt;
+&lt;p&gt;Store collection of &lt;em&gt;N&lt;/em&gt; &lt;em&gt;b&lt;/em&gt;-bit elements, using &lt;em&gt;k&lt;/em&gt; &amp;gt; &lt;em&gt;N&lt;/em&gt; cells.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;H&lt;/em&gt; is pseudorandom function, &lt;em&gt;H&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;) &amp;larr; [0, &lt;em&gt;k&lt;/em&gt;).&lt;/p&gt;
+&lt;div class="gap"&gt;
+
+&lt;/div&gt;
+
+&lt;h3&gt;Bloom Filter&lt;/h3&gt;
+&lt;p&gt;Tradeoff: shrink size of array to store, accept false matches.  &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;m&lt;/em&gt; = number of bits in array&lt;br /&gt;
+&lt;em&gt;k&lt;/em&gt; = number of hash functions&lt;br /&gt;
+&lt;em&gt;n&lt;/em&gt; = number of elements&lt;/p&gt;
+&lt;p&gt;What is the probability a given element of the array is not selected by a particular hash function?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What is the probability a given element of the array is not selected for
+a particular element by any of the &lt;em&gt;k&lt;/em&gt; hash functions?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After &lt;em&gt;n&lt;/em&gt; elements, what is the probability that an array bit is 0?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Probability of false match: (1 - (1 - 1/&lt;em&gt;m&lt;/em&gt;)&lt;sup&gt;&lt;em&gt;kn&lt;/em&gt;&lt;/sup&gt;)&lt;sup&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;How big should &lt;em&gt;m&lt;/em&gt; be to have less than 0.01% false positive rate for a block with 1000 addresses?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;How much privacy does using a bloom filter provide to an SPV wallet?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1&gt;Merged Mining&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://en.bitcoin.it/wiki/Merged_mining_specification"&gt;Merged Mining Specification&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How can Namecoin leverage Bitcoin mining power while maintaining its own blockchain and difficulty level?
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What are the advantages of enabing bitcoin miners to also mine namecoin?&lt;br /&gt;
+&lt;div class="gap"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Bug: &lt;a href="https://bitcointalk.org/index.php?topic=310954"&gt;&lt;em&gt;Namecoin was stillborn, I had to switch off life-support&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;
+Patch: &lt;a href="https://github.com/namecoin/namecoin/commit/d70d01ff77310d3755891cb43cb2700b553019f4"&gt;https://github.com/namecoin/namecoin/commit/d70d01ff77310d3755891cb43cb2700b553019f4&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Side Chains&lt;/h1&gt;
+&lt;p&gt;Why is it so hard to evolve bitcoin?
+&lt;div class="gap"&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Adam Back, Matt Corallo, Luke Dashjr, Mark Friedenbach, Gregory Maxwell, Andrew Miller, Andrew Poelstra, Jorge Timón, and Pieter Wuille.  &lt;a href="http://www.blockstream.com/sidechains.pdf"&gt;&lt;em&gt;Enabling Blockchain Innovations with Pegged Sidechains&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blockstream.com/"&gt;Blockstream&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>

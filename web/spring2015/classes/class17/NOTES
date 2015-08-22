@@ -1,0 +1,61 @@
+Permacoin
+
+
+"Scratch Off Puzzle":
+
+Guess(puz) \rarr; ticket
+
+IsWinningTicket(puz, $Z$, ticket) \rarr; $\{0, 1\}$.  Outputs 1 if ticket is a value solution to puz at difficulty level $Z$.
+
+Bitcoin Design Requirements for SOP:
+
+1. Predictable effort - vary $Z$ to increase effort in a predictable (probabilistic) way.
+
+2. Easy to verify: given puz and ticket, each to check IsWinningTicket(puz, $Z$, ticket).
+
+3. Precomputation resistance: without knowledge of puz (previous block
+header, in particular), there is no way to use precomputation to speed
+up guessing.
+
+4. Linearity of expected reward: expected reward is $cP$ where $P$ is
+the computing power (hashing power) and $c$ is some constant.
+
+Proofs of Retrievaibility
+
+Prover ($P$) can prove to a Verifier ($V$) that $P$ can retrieve file
+$F$.  $V$ can check the proof without needing to store $F$.
+
+
+
+
+
+store random subset of segments, based on hash of public key
+
+non-interactive challenges - challenge is $H(puz || s)$ where s is selected by prover (not verifier)
+
+
+## Erasure codes
+
+$M$, message of length $k$, encoded using length $n$ ($n > k$), such
+that $M$ can be fully recovered from any $r$ of the $n$ symbols.
+
+What is an erasure code for $\Sigma = \{0, 1\}$, $n = k + 1$ and $r = k$?
+<div class="gap">
+#
+#
+</div>
+
+What is an erasure code for $\Sigma = \{0, \ldots, 999\}$, $k = 2$, $n = 4$, and $r = 2$?
+<div class="gap">
+#
+#
+#
+#
+</div>
+
+### Reed-Solomon Codes
+
+$r = k - (n - k) / 2$ (can correct up to $(n-k)/2$ errors).
+
+
+
