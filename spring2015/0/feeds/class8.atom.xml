@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cryptocurrency Cafe</title><link href="http://bitcoin-class.org/0/" rel="alternate"></link><link href="http://bitcoin-class.org/0/feeds/class8.atom.xml" rel="self"></link><id>http://bitcoin-class.org/0/</id><updated>2015-02-09T00:00:00-05:00</updated><entry><title>Class 8: Review and Project 2</title><link href="http://bitcoin-class.org/0/class-8-review-and-project-2.html" rel="alternate"></link><updated>2015-02-09T00:00:00-05:00</updated><author><name>David Evans</name></author><id>tag:bitcoin-class.org,2015-02-09:0/class-8-review-and-project-2.html</id><summary type="html">&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;p&gt;&lt;div class="todo"&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Quiz&lt;/strong&gt;: We'll have a short quiz in class on Wednesday, 11
+    &lt;strong&gt;February&lt;/strong&gt;.  The quiz will be closed resources, except for your course notes (things you have on paper, not using the electronic resources).  The point of the quiz is to see how well people are &lt;strong&gt;understanding the core ideas we've covered&lt;/strong&gt;.  It covers the material from Classes 1-7, Project 1, and the readings from Antonopoulos' book Chapters 1-7 and Satoshi's paper.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Project 2&lt;/strong&gt;: Our goal is to have everyone in the class have a
+    PointCoin node up an running on an EC2 node by the end of today's
+    class.  After that, your task for Project 2 is to create a PointCoin
+    miner.  We will provide some more guidance on this (posted by
+    Wednesday), as well as specific questions to answer for Project 2.
+   &lt;/div&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(The are no notes or slides for this class, it was used to answer
+questions and provide help getting started on Project 2.)&lt;/p&gt;</summary></entry></feed>

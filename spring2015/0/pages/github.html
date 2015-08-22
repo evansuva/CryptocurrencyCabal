@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Getting Started with Github</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitcoin Class taught at University of Virginia">
+    <meta name="keywords" content="bitcoin,cryptocurrency,class,bitcoin mining,cryptocurrency course, bitcoin course, bitcoin class">
+    <meta name="author" content="David Evans">
+    <link rel="icon" type="image/png" href="http://www.rust-class.org/static/images/logo.png" />  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://bitcoin-class.org/0/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+     .about {
+        font-size: 8pt;
+        font-color: "gray";
+     }
+    </style>
+    <link href="http://bitcoin-class.org/0/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://bitcoin-class.org/0/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://bitcoin-class.org/0/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://bitcoin-class.org/0/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://bitcoin-class.org/0/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://bitcoin-class.org/0/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Cryptocurrency Cafe ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="http://bitcoin-class.org/0/index.html">Cryptocurrency Cafe </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                  <li><a href="/pages/classes.html"><b>Classes</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/forum.html"><b>Forum</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/ps0.html">PS0</a></li>
+                  <li><a href="/pages/project1.html">Project 1</a></li>
+                  <li><a href="/pages/project2.html">Project 2</a></li>
+                  <li><a href="/pages/final-projects.html"><b>Final Projects</b></a></li>
+                  <li><a href="/">&middot</a></li>
+                  <li><a href="/pages/resources.html"><b>Resources</b></a></li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="http://bitcoin-class.org/0/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+<section id="content" class="body">
+<div class="whighlight">This is the archived Spring 2015 version of the course.  For the most recent version, see <a href="http://bitcoin-class.org">http://bitcoin-class.org</a>.</div>
+
+        <h1 class="entry-title">Getting Started with Github</h1>
+        <p>For this course you will need to use <a href="http://github.com">github</a> to
+manage your code and submit your assignments.  <a href="http://gitscm.com/">Git</a>
+is a widely used version control system originally developed by Linus
+Torvalds for use in managing development of the Linux operating system
+kernel.  Github is company that provides free web-hosting for git
+repositories.</p>
+<p>Follow the instructions below to get started using git and set up the
+repository you will use for this class (we'll talk more about git in
+class, but this should be enough to get started):</p>
+<ol>
+<li>
+<p>Register for a student github account: <a href="https://github.com/edu">https://github.com/edu</a></p>
+<p>Note: you need to do this even if you already have a public github
+  account, unless you have a paid account to support non-public
+  repositories.  With the student account, you will be able to have
+  non-public repositories for free.</p>
+<p>You will need to verify your email address (which must be a .edu
+  address), and then go back to the
+  <a href="https://github.com/edu">https://github.com/edu</a> page to fill in a
+  form to request a student account.  You should then receive a
+  "Powerup get!" message from github, and be able to create private
+  repositories with your account.</p>
+</li>
+<li>
+<p>Set up git on the machine you will use for course assignments. Follow the instructions here:
+      <a href="https://help.github.com/articles/set-up-git">https://help.github.com/articles/set-up-git</a>.
+      Follow the instructions to download and install a git client for your OS
+      (<a href="http://mac.github.com/">Mac</a>,
+      <a href="http://windows.github.com/">Windows</a>).</p>
+</li>
+</ol>
+<h1>Using git for course projects</h1>
+<p>For most of the assignments in this course, we will provide starting
+code in a git repository and you will need to use separate private
+repository for each project. Typically, you need to fetch the code
+skeleton from the respective public repository of the course every time
+before you start working.</p>
+<p>The general process of working on projects is to (we'll go through each
+step in detail below):</p>
+<ol>
+<li>
+<p>Create a private repository on github.</p>
+</li>
+<li>
+<p><strong>Clone</strong> the repository, so you have a local working copy.</p>
+</li>
+<li>
+<p>Get the code skeleton from the course repo, merge it into your
+working copy, and push to the main repository.</p>
+</li>
+<li>
+<p>Edit code and text files in your local copy.</p>
+</li>
+<li>
+<p><strong>push</strong> the local changes to the main repository.</p>
+</li>
+</ol>
+<p>As you do the assignment, you should commit and push your changes regularly.</p>
+<h2>Setting up the Repository</h2>
+<p>Let's take <a href="http://bitcoin-class.org/0/pages/project1.html">Project 1</a> as an
+example. Here's what you should do.</p>
+<p><b>1. Create a new repository named <code>project1</code>.</b></p>
+<ul>
+<li>Visit <a href="https://github.com/repositories/new">https://github.com/repositories/new</a></li>
+<li>Select "Private" for the type of repository.  (If you got a student discount correctly, this should be available for free.  If it asks you for
+          a credit card, go back to step 1 of <a href="http://bitcoin-class.org/0/pages/github.html">setting up github</a>.)</li>
+<li>Keep the "Initialize this repository with a README" unchecked, since you will fetch it later from a public repository.</li>
+</ul>
+<p><b>2. Clone the empty private repository to your working
+environment.</b> Instead of <em>mygithubname</em> below, use your github
+username.</p>
+<div class="highlight"><pre>git clone https://github.com/mygithubname/project1.git
+</pre></div>
+
+
+<p>If you haven't set up SSH keys for github, you'll need to enter your
+github username and password.</p>
+<p><b>3. Fetch the code skeleton from the course repository to your private
+repository.</b> Enter the working directory of your empty repository and
+add a remote repository named <code>starting</code>, merge the code, and push it to
+your private repository by executing:</p>
+<div class="highlight"><pre>git remote add starting git@github.com:CryptoCurrencyCafe/project1.git
+git pull starting master
+git push --tags origin master
+</pre></div>
+
+
+<h2>Working with Files</h2>
+<p>Now you can write your own code in editor and save it to files. You can see what files have changed by running:
+<code>git status</code>.  You should see something like this:</p>
+<div class="highlight"><pre># On branch master
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+#
+#   break_daves_key.go
+</pre></div>
+
+
+<p>In this example, nothing has been added to commit but untracked files
+are present.</p>
+<p>To add the files to the main repository:</p>
+<div class="highlight"><pre>git add break_daves_key.go
+</pre></div>
+
+
+<p>You should try running <code>git status</code> again to see the files that will be
+committed.  Note that add stages the file in its current state!  If you
+modify the file after the add, the version of the file when you did the
+add is the version that will be committed.</p>
+<p>Then,</p>
+<div class="highlight"><pre>git commit
+</pre></div>
+
+
+<p>commits the staged files to the main repository.  This will launch and
+editor for you to enter a commit message.  You can use <code>-m</code> to provide a
+message at the command line instead:</p>
+<div class="highlight"><pre>git commit -m &#39;I am no longer afraid of commitment!&#39;
+</pre></div>
+
+
+<p>Your actual commit messages you use should be <strong>clear</strong> and <strong>useful</strong>.
+It is tempting to use <a href="http://whatthecommit.com/">lazy commit message</a>,
+but you will regret this as your projects get more complex and code
+breaks in mysterious ways.</p>
+<p>If you want to skip the two-stage commit, you can do:</p>
+<div class="highlight"><pre>git commit -a
+</pre></div>
+
+
+<p>to automatically add all new and changed files to the commit.</p>
+<p>At this point, the changes are stored in your local repository, but not
+yet in the main repository.  Once you have changes you want to push to
+the main repository:</p>
+<div class="highlight"><pre>git push
+</pre></div>
+
+
+<p>After this, all the changes are now pushed to the main repository at
+github.  Visit your repository in github to see the result.  </p>
+<p>This seems like a lot of steps, but by providing a full local repository
+and making the steps of staging and pushing to the remote repository
+explicit, git provides developers with a lot of control over
+repositories that becomes very useful when several (or many) developers
+are working on the same project and trying to combine each others
+changes (or recover from mistakes).</p>
+<p>There are many resources for learning more about git.  The free book,
+<a href="http://git-scm.com/book/en/">Pro Git</a> by Scott Chacon is recommended.</p>
+</section>
+
+<script type="text/javascript">
+    var disqus_shortname = 'bitcoin-class';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+</script>
+
+      <hr>
+
+      <footer>
+	<div id="footer">
+        <address id="about">
+          <a href="/">Cryptocurrency Cafe</a>, Spring 2015<br>      
+          <a href="http://www.cs.virginia.edu">University of Virginia Computer Science</a><br>
+	  <p align="right"><font color="grey" size="-2"> Site built using <a href="http://pelican.notmyidea.org/">Pelican</a>.  Theme uses <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome</a>.</p>
+        </address><!-- /#about -->
+	</div>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3775212-12']);
+_gaq.push(['_setDomainName', 'bitcoin-class.org']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript';
+  ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+  'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://bitcoin-class.org/0/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://bitcoin-class.org/0/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
