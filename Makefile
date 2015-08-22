@@ -3,6 +3,7 @@ SITENAME=bitcoin-class.org
 
 github: 
 	cd web; make html
+	echo $(SITENAME) > web/public/CNAME
 	git add -A
 	git commit -m "Rebuilt site"
 	git push origin master
