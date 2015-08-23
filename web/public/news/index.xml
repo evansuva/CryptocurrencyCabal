@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/news/</link>
+    <link>http://localhost:1313/news/</link>
     <description>Recent content in News on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Aug 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ombuds: Using Bitcoin to make online messages &#39;immutable&#39;</title>
-      <link>http://bitcoin-class.org/news/ombuds/</link>
+      <link>http://localhost:1313/news/ombuds/</link>
       <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/ombuds/</guid>
+      <guid>http://localhost:1313/news/ombuds/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s an article about the Ombuds project created by Alex Kuck and
 Nick Skelsey to use the bitcoin blockchain for communications:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.journalism.co.uk/news/ombuds-using-bitcoin-to-make-online-messages-immutable-/s2/a566167/&#34;&gt;&lt;em&gt;Ombuds: Using Bitcoin to make online messages &amp;lsquo;immutable&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Journalism.co.uk, 20 August 2015.&lt;/p&gt;
 
 &lt;p&gt;Alex and Nick graduated from UVa in Spring 2015, and helped develop the
-&lt;a href=&#34;http://bitcoin-class.org/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
+&lt;a href=&#34;http://localhost:1313/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
 cryptocurrency.&lt;/p&gt;
 </description>
     </item>

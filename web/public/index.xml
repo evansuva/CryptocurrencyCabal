@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Aug 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cryptocurrency Cabal</title>
-      <link>http://bitcoin-class.org/main/</link>
+      <link>http://localhost:1313/main/</link>
       <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/main/</guid>
+      <guid>http://localhost:1313/main/</guid>
       <description>
 
 &lt;h2 id=&#34;welcome-to-cryptocurrency-cabal:379caad01b6ea305187be199bcac1370&#34;&gt;Welcome to Cryptocurrency Cabal!&lt;/h2&gt;
@@ -28,18 +28,304 @@
     </item>
     
     <item>
+      <title>Schedule</title>
+      <link>http://localhost:1313/schedule/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/schedule/</guid>
+      <description>
+
+&lt;h1 id=&#34;schedule:6b0be342d4ab5efd25856c2371c7688a&#34;&gt;Schedule&lt;/h1&gt;
+
+&lt;p&gt;&lt;table class=&#34;schedule&#34; width=&#34;90%&#34;&gt;
+   &lt;tr class=&#34;schedule-header&#34;&gt;
+      &lt;td width=&#34;30%&#34;&gt;Date&lt;/td&gt;&lt;td width=&#34;70%&#34;&gt;Item&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr class=&#34;schedule-class1&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 26&amp;nbsp;August &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 1: What is Money? &lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;schedule-deadline&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Sunday, 30&amp;nbsp;August (8:29pm) &lt;/td&gt; &lt;td class=&#34;schedule-due&#34;&gt; Due: PS 0: Registration &lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;schedule-header&#34;&gt;
+      &lt;td colspan=2 class=&#34;schedule-overview&#34;&gt;
+      Cryptographic Foundations
+      &lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;schedule-class2&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Monday, 31&amp;nbsp;August &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 2: Introduction to Cryptography &lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr class=&#34;schedule-class1&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 2 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 3: Elliptic Curves &lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;schedule-class2&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Monday, 7 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 4: Signatures &lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;schedule-class1&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 9 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 5: Randomness &lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;schedule-class2&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Monday, 14 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 6: DigiCash &lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;schedule-class1&#34;&gt;
+      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 16 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 7: Proofs-of-Work&lt;/td&gt;
+   &lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/table&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Syllabus</title>
+      <link>http://localhost:1313/syllabus/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/syllabus/</guid>
+      <description>
+
+&lt;h1 id=&#34;syllabus:051025d606153e159a2b11ffecb897d5&#34;&gt;Syllabus&lt;/h1&gt;
+
+&lt;p&gt;&lt;div class=&#34;mhighlight&#34;&gt;
+Draft version.  Subject to change until first class.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Meetings:&lt;/strong&gt; Mondays and Wednesdays, 2:00-3:15pm in Olsson Hall 120.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Teacher:&lt;/strong&gt; &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; and &lt;a href=&#34;http://www.cs.virginia.edu/~sza4uq/&#34;&gt;Samee
+  Zahur&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; See &lt;a href=&#34;https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;course calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Course Site:&lt;/strong&gt; All course materials will be posted at &lt;a href=&#34;http://bitcoin-class.org&#34;&gt;http://bitcoin-class.org/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;hanging&#34;&gt; &lt;strong&gt;Textbook:&lt;/strong&gt; We will not follow a textbook
+closely, but will have several readings from two books:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Andreas M. Antonopoulos,
+&lt;a href=&#34;https://github.com/aantonop/bitcoinbook&#34;&gt;&lt;em&gt;Mastering Bitcoin: Unlocking Digital
+Cryptocurrencies&lt;/em&gt;&lt;/a&gt;.  (You can
+use the free version of the book available at
+&lt;a href=&#34;https://github.com/aantonop/bitcoinbook&#34;&gt;https://github.com/aantonop/bitcoinbook&lt;/a&gt;,
+but would probably benefit from buying the &lt;a href=&#34;http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042&#34;&gt;printed
+version&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven
+Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
+Technologies&lt;/em&gt;&lt;/a&gt;.
+This is a new book under development by a team at Princeton University.
+(There are also lecture videos and slides that correspond to the book.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;overview:051025d606153e159a2b11ffecb897d5&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;For the past 10,000 years, humans have been seeking better ways to store
+and transfer value.  &lt;em&gt;Cryptocurrencies&lt;/em&gt; (most notably bitcoin), provide
+a way to do this using bits alone without any centralized authority.  In
+this course, we will study the technical aspects of cryptocurrencies, as
+well as the political, legal, and economic issues they raise.&lt;/p&gt;
+
+&lt;h2 id=&#34;expected-background:051025d606153e159a2b11ffecb897d5&#34;&gt;Expected Background&lt;/h2&gt;
+
+&lt;p&gt;Students entering this course are expected to be comfortable reading,
+designing, and writing complex programs that involve thousands of lines
+of code distributed over many modules.  You should be fairly comfortable
+with math, at least enough to analyze probabilities.&lt;/p&gt;
+
+&lt;p&gt;You should be comfortable learning how to use new programming language
+features and APIs by reading their documentation (or source code when no
+documentation is available), and not be surprised when solving
+programming assignments requires you to learn a new language on your own
+or to seek documentation beyond what was provided in class.&lt;/p&gt;
+
+&lt;p&gt;Students are not expected to have significant previous experience with
+cryptography (although such background will certainly be helpful).&lt;/p&gt;
+
+&lt;p&gt;Some specific things I expect of students entering this course:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;You should have some experience programming in at least one
+programming language, and not be afraid of needing to learn new
+languages.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You have written at least one program with over 1000 lines of code.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You should understand basic probability and be able to figure out
+things like the probability that 100 tosses of a fair coin do not
+result in any tails.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You should understand at least as much about complexity and
+computability as is covered in &lt;a href=&#34;http://dori-mic.org&#34;&gt;&lt;em&gt;Dori-Mic and the Universal
+Machine&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You should find computing exciting and delighting, and believe you can
+use computing to make the world a better place.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you do not satisfy any of these expectations, that doesn&amp;rsquo;t mean you
+cannot take the class, but you need to let me know about it at the
+beginning of the semester.&lt;/p&gt;
+
+&lt;h2 id=&#34;honor:051025d606153e159a2b11ffecb897d5&#34;&gt;Honor&lt;/h2&gt;
+
+&lt;p&gt;As a student at Mr. Jefferson&amp;rsquo;s University, you are trusted to be
+honorable.&lt;/p&gt;
+
+&lt;p&gt;We take advantage of this trust to provide a better learning environment
+for everyone.  In particular, students in this class are expected to
+follow these rules:&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;I will not lie, cheat or steal.&lt;/b&gt; If I am unsure whether something
+would be considered lying, cheating or stealing, I will ask before doing
+it.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;I will carefully read and follow the collaboration policy on each
+assignment.&lt;/b&gt; I will not abuse resources, including any submissions or
+solutions for assignments from last semester&amp;rsquo;s version of this course,
+that would be clearly detrimental to my own learning.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-expectations:051025d606153e159a2b11ffecb897d5&#34;&gt;Other Expectations&lt;/h2&gt;
+
+&lt;p&gt;In addition to the honor rules, students in this class are also expected
+to follow the &lt;a href=&#34;https://www.recurse.com/manual#sec-environment&#34;&gt;Recurse Center social
+rules&lt;/a&gt; and these
+behaviors:&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;I will do what I can to help my fellow classmates learn.&lt;/b&gt; Except
+when specifically instructed not to, this means when other students ask
+me for help, I will attempt to provide it. I will look at their answers
+and discuss what I think is good or bad about their answers. I will help
+others improve their work, but will not give them my answers directly. I
+will try to teach them what they need to know to discover solutions
+themselves.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;I will ask for help.&lt;/b&gt; I will make a reasonable effort to do things
+on my own first (or with my partners for group assignment), but will ask
+my classmates or the course staff for help before getting overly
+frustrated.  There are many ways to ask for help including the course
+website and office hours.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;I grant the course staff permission to reproduce and distribute
+excerpts from my submissions for teaching purposes.&lt;/b&gt; If may opt-out
+of this by adding a comment to your code, but without an explicit
+opt-out comment we assume you agree to it.  Excerpts will be used
+anonymously when illustrating a misunderstanding or common problem, and
+with credit when showing an interesting or exemplary answer.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;I will not invest money I cannot afford to lose in
+cryptocurrencies.&lt;/b&gt; The main topic of this course is cryptocurrencies,
+and students will be encouraged to gain experience using bitcoin to
+conduct real transactions (but will not be expected to spend any
+personal money on bitcoin).  Please be aware that bitcoin is very
+volatile, and that you could lose all the money in your bitcoin wallet
+if you make a programming error or lose your key. It would be foolish
+and reckless to convert any money you would be upset about losing into a
+cryptocurrency.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;I will provide useful feedback.&lt;/b&gt; I realize that this is a new and
+ experimental course, and it is important that I let the course staff
+ know what they need to improve the course. I will not wait until the
+ end of the course to make the course staff aware of any problems. I
+ will provide feedback either anonymously or by contacting the course
+ staff directly. &lt;b&gt;I will fill out all requested surveys honestly and
+ thoroughly&lt;/b&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;assignments:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments&lt;/h2&gt;
+
+&lt;p&gt;The course will have frequent short quizzes, one midterm, four major
+projects, and one open-ended project.&lt;/p&gt;
+
+&lt;p&gt;The&lt;/p&gt;
+
+&lt;p&gt;problem sets generally will be assigned at class on Monday or
+Wednesday, and due shortly after (sometimes as early as by midnight the
+following day).  This will typically involve a short reading assignment
+and some questions to answer, but may also involve short technical
+problems.&lt;/p&gt;
+
+&lt;p&gt;The three major projects will involve writing programs and solving
+problems to understand a bitcoin wallet (Project 1), bitcoin mining
+(Project 2), and blockchain analysis (Project 3).&lt;/p&gt;
+
+&lt;p&gt;For the final project, you are free to work on anything relevant to
+cryptocurrencies.  Some suggestions for project ideas will be posted on
+the course website.&lt;/p&gt;
+
+&lt;p&gt;The registrar has scheduled an exam for this course on Thursday, 3 May
+(2-5pm).  We do not anticipate using this time for a traditional exam,
+but will use it for presenting final projects.&lt;/p&gt;
+
+&lt;p&gt;A tenative and (continually) updated schedule is available as a &lt;a href=&#34;https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;Google
+calendar&lt;/a&gt;.
+(You can view this calendar on the course site, or incorporate in as
+iCal calendar into your own calendar using &lt;a href=&#34;https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics&#34;&gt;this
+link&lt;/a&gt;.
+Except when noted otherwise, assignments are due at &lt;b&gt;8:29pm&lt;/b&gt; on the
+due date.&lt;/p&gt;
+
+&lt;h2 id=&#34;schedule:051025d606153e159a2b11ffecb897d5&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;The main due dates:&lt;/p&gt;
+
+&lt;p&gt;Sunday, 30 August     Problem Set 0: Registration, Setting up a Bitcoin Wallet
+Monday, 7 September   Checkup 1
+Friday, 11 September  Problem Set 1: Bitcoin Transactions
+Monday, 21 September  Checkup 2
+5-7 October       Reading Days Holiday
+Sunday, 11 October    Problem Set 2: Mining
+Monday, 19 October    Midterm
+Sunday, 25 October    Problem Set 3: Blockchain Analysis
+Sunday, 15 November   Problem Set 4: Alternate Cryptocurrencies
+Monday, 23 November   Project Proposal
+25-27 November        Thanksgiving Holiday
+Monday, 7 December    (Last Class) Due: Project Report
+Friday, 11 December   Scheduled Exam (2-5pm)&lt;/p&gt;
+
+&lt;p&gt;Dates shown here are subject to change based on how the semester
+progresses, but with ample warning.&lt;/p&gt;
+
+&lt;h2 id=&#34;grading:051025d606153e159a2b11ffecb897d5&#34;&gt;Grading&lt;/h2&gt;
+
+&lt;p&gt;We prefer to spend our time focused as much as possible on &lt;em&gt;teaching&lt;/em&gt;,
+and as little as possible on &lt;em&gt;grading&lt;/em&gt;.  The assignments in this class
+are designed to maximize &lt;em&gt;learning&lt;/em&gt;, rather than primarily for
+&lt;em&gt;assessment&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;That said, we understand that students do need to be assigned grades at
+the end of the semester, and sometimes grades can be a powerful and
+effective motivator.  Grades will be determined based on your
+performance on all the class assignments and class contributions
+(including postings on the course site).  Some assignments may be graded
+by randomly looking at selected answers, rather than reading everything
+submitted.  There is no set weighting among these things, and in
+general, if there is some combination of the above that demonstrates
+that you have gotten what we hope out of the class then you will receive
+an A grade.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Ombuds: Using Bitcoin to make online messages &#39;immutable&#39;</title>
-      <link>http://bitcoin-class.org/news/ombuds/</link>
+      <link>http://localhost:1313/news/ombuds/</link>
       <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/ombuds/</guid>
+      <guid>http://localhost:1313/news/ombuds/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s an article about the Ombuds project created by Alex Kuck and
 Nick Skelsey to use the bitcoin blockchain for communications:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.journalism.co.uk/news/ombuds-using-bitcoin-to-make-online-messages-immutable-/s2/a566167/&#34;&gt;&lt;em&gt;Ombuds: Using Bitcoin to make online messages &amp;lsquo;immutable&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Journalism.co.uk, 20 August 2015.&lt;/p&gt;
 
 &lt;p&gt;Alex and Nick graduated from UVa in Spring 2015, and helped develop the
-&lt;a href=&#34;http://bitcoin-class.org/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
+&lt;a href=&#34;http://localhost:1313/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
 cryptocurrency.&lt;/p&gt;
 </description>
     </item>

@@ -666,7 +666,7 @@ table, th, td {
    border-spacing: 10px;
 }
 
-.schedule-header, .schedule-class1, .schedule-class2 {
+.schedule-header, .schedule-class, .schedule-class1, .schedule-class2 {
    margin-right: 10px;
 }
 
@@ -679,10 +679,6 @@ table, th, td {
    background-color: #EEE;
 }
 
-.schedule-deadline {
-   background-color: #FAA;
-}
-
 .schedule-class2 {
    background-color: #FFC;
 }
@@ -693,13 +689,9 @@ table, th, td {
    padding: 6px;
 }
 
-.schedule-class, .schedule-due {
+.schedule-class {
    text-align: left;
    padding: 6px;
-}
-
-.schedule-due {
-   font-weight: bold;
 }
 
 .mhighlight {

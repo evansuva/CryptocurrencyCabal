@@ -2,6 +2,7 @@ baseurl = "http://bitcoin-class.org"
 languageCode = "en-us"
 title = "Cryptocurrency Cabal"
 subtitle = "cs4501: Fall 2015"
+docsdir = "http://bitcoin-class.org/docs"
 
 GOOGLE_ANALYTICS = "UA-3775212-1"
 DISQUS_SITENAME = "davidevans"

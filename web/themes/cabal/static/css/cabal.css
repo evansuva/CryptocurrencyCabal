@@ -203,10 +203,10 @@ h1.post-title a {
 	color: #111111;
 }
 .post-date {
-	color: #E54028;
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
-	font-size: 1.0rem;
+	font-size: 0.8rem;
+	color: #7F1000;
 }
 .post-date-day {
 	font-size: 1.5rem;
@@ -660,3 +660,60 @@ a.button_accent:active{color:#fff;background-color:#0e94ec;outline:0}
 
 div.hide { display:none; }
 div.show { }
+
+table, th, td {
+   border: 1px solid black;
+   border-spacing: 10px;
+}
+
+.schedule-header, .schedule-class1, .schedule-class2 {
+   margin-right: 10px;
+}
+
+.schedule-header {
+   text-align: center;
+   font-weight: bold;
+}
+
+.schedule-class1 {
+   background-color: #EEE;
+}
+
+.schedule-deadline {
+   background-color: #FAA;
+}
+
+.schedule-class2 {
+   background-color: #FFC;
+}
+
+.schedule-date {
+   text-align: center;
+   font-weight: bold;
+   padding: 6px;
+}
+
+.schedule-class, .schedule-due {
+   text-align: left;
+   padding: 6px;
+}
+
+.schedule-due {
+   font-weight: bold;
+}
+
+.mhighlight {
+   font-size: 15px; background-color: #FFC; text-align: center; margin-left: 60px; margin-right: 60px; margin-top: 25px; margin-bottom: 25px; border-style:ridge; border-width:5px; border-color: #F88; font-weight:bold; padding-top: 5px; padding-bottom: 5px;
+}
+
+.phighlight {
+   font-size: 12px; 
+   float:right;
+   width: 180px;
+   background-color: #FDC; 
+   text-align: center; 
+   border-color: #222;
+   border-width: 2px;
+   border-style: solid;
+   font-weight:bold; padding-top: 5px; padding-bottom: 5px;
+}
