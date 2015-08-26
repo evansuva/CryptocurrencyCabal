@@ -31,7 +31,7 @@ marginheight="0" scrolling="no"></iframe>
 
    <div class="caption">
 Note: ink markings may not appear in the
-embedded viewer.  To see them, download the slides.
+embedded viewer.  To see them, [download the slides](/classes/class1-post.pptx).
    </div>
 
 </center>
@@ -97,8 +97,8 @@ How well does US paper money work as a currency?
 
 Why are there [over 800 cryptocurrency startups](https://angel.co/cryptocurrency-2)?
 
-How big do you expect the bitcoin blockchain to be at the end of this
-class (December 11)?  (closest answer wins!)
+How big do you expect the bitcoin blockchain to be on the last day of
+class (December 7, 2:00pm)?  (closest answer wins!)
  
 
 
