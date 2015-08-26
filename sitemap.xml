@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://bitcoin-class.org/</loc>
     <lastmod>2015-08-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/main/</loc>
+    <loc>http://bitcoin-class.org/main/</loc>
     <lastmod>2015-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/schedule/</loc>
+    <loc>http://bitcoin-class.org/schedule/</loc>
     <lastmod>2015-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/syllabus/</loc>
+    <loc>http://bitcoin-class.org/syllabus/</loc>
     <lastmod>2015-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/news/ombuds/</loc>
+    <loc>http://bitcoin-class.org/news/ombuds/</loc>
     <lastmod>2015-08-21T00:00:00+00:00</lastmod>
   </url>
   
