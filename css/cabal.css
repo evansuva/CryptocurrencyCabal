@@ -745,3 +745,7 @@ table, th, td {
 .indented{display:block;margin-left:10px;margin-top:2px;margin-bottom:10px;}
 .endaction{display:block;padding:3px;padding-bottom:2px;bottom-padding:10px;margin-top:2px;border:1px solid #c70; background-color:#f56530;}
 .biggap{display:block;padding:100px;margin-bottom:10px;margin-top:10px;border:1px solid #666}
+
+.caption {
+   font-size: 11px; color: #111; margin-left: 60px; margin-right: 30px; margin-top: 0px; margin-bottom: 20px;
+}
