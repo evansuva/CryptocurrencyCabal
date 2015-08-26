@@ -23,9 +23,9 @@
 Before &lt;strong&gt;8:29pm Saturday&lt;/strong&gt; (29 August):&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/syllabus/&#34;&gt;Course Syllabus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Setup&lt;/strong&gt; a bitcoin wallet (see &lt;a href=&#34;http://bitcoin-class.org/registration/&#34;&gt;Registration&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Submit &lt;a href=&#34;http://bitcoin-class.org/registration/&#34;&gt;Registration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/syllabus&#34;&gt;Course Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Setup&lt;/strong&gt; a bitcoin wallet (see &lt;a href=&#34;http://bitcoin-class.org/registration&#34;&gt;Registration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Submit &lt;a href=&#34;http://bitcoin-class.org/registration&#34;&gt;Registration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Monday&amp;rsquo;s class&lt;/strong&gt;:&lt;/p&gt;
@@ -90,25 +90,6 @@ Macro Polo (on Yuan Dynasty paper money, 13th century)&lt;/p&gt;
 &lt;p&gt;How well does US paper money work as a currency?&lt;/p&gt;
 
 &lt;p&gt;Why are there &lt;a href=&#34;https://angel.co/cryptocurrency-2&#34;&gt;over 800 cryptocurrency startups&lt;/a&gt;?&lt;/p&gt;
-
-&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-   var disqus_url = &#39;http://bitcoin-class.org/class1&#39;;
-   var disqus_shortname = &#39;davidevans&#39;; // required: replace example with your forum shortname
-
-   /* * * DON&#39;T EDIT BELOW THIS LINE * * */
-   (function() {
-            var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
-            dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
-            (document.getElementsByTagName(&#39;head&#39;)[0] ||  document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
-        })();
-    &lt;/script&gt;
-    &lt;noscript&gt;Please enable JavaScript to view
-    the &lt;a href=&#34;http://disqus.com/?ref_noscript&#34;&gt;comments powered by
-    Disqus.&lt;/a&gt;&lt;/noscript&gt;
-    &lt;a href=&#34;http://disqus.com&#34; class=&#34;dsq-brlink&#34;&gt;Comments powered by &lt;span class=&#34;logo-disqus&#34;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
 </description>
     </item>
     

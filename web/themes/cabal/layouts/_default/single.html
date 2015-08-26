@@ -78,7 +78,7 @@
             {{ end }}
           </section>
           {{ if not .Params.nocomment }}
-          	{{ template "_internal/disqus.html" . }}
+          	{{ partial "disqus.html" . }}
           {{ end }}
         
       {{ partial "footer.html" . }}

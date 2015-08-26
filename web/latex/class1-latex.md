@@ -1,12 +1,5 @@
----
-title: "Class 1: What is Money?"
-date: '2015-08-26'
-print: "class1.pdf"
-nocomment: false
-weight: 3
-menu:
-  main:
----
+% Class 1: What is Money?
+% '2015-08-26'
 
 ## Schedule
 
