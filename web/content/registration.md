@@ -15,8 +15,7 @@ Due: 8:29pm on Saturday, 29 August
 To register for the course, you need to **setup a bitcoin wallet** (so
 don't wait until the last minute to do this).
 
-[MultiBit HD](https://multibit.org/) is a good choice for this (but not for
-storing large amounts!).  See
+[MultiBit HD](https://multibit.org/) is a good choice for this.  See
 [https://bitcoin.org/en/choose-your-wallet](https://bitcoin.org/en/choose-your-wallet)
 for information on bitcoin wallets.  Be aware that you probably do not
 have time to download the full blockchain before this assignment is due,
