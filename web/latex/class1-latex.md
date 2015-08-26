@@ -22,12 +22,18 @@ available [in
 print](http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042)).  
    </div>
 
-<!-- <center>
-<iframe src="//www.slideshare.net/slideshow/embed_code/43441659"
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/md9EiU6QZoWroa"
 width="476" height="400" frameborder="0" marginwidth="0"
 marginheight="0" scrolling="no"></iframe>
+
+<div class="caption">Note: ink markings may not appear in the
+embedded viewer.  To see them, [download the slides]({{< relref "/classes/class1-post.pptx >}})
+</div>
+
 </center>
--->
+
+
 
 ## Notes
 

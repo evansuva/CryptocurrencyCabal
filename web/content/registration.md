@@ -24,12 +24,16 @@ so need to use a _lightweight wallet_ (we will learn what this means
 later in the class).
 
 After creating a wallet, you should find the _Recieving Address_ which
-you will need for one of the questions.
+you will need for one of the questions.  If you used MultiBit HD, you
+will see this by clicking "Request" (to request payment), and copy the
+"Recipient Address".  It should be a string like,
+`19WmbY4nDcjAEv6wb5rcd5E6MutVMXBZzy`.  Note that your wallet may create
+several recipient addresses, so you won't see the same address each time
+you do this.
 
-Note that it is not necessary now, or at any time during this class, for
-you to actually buy bitcoins with your own money.  If you are inclined
-to do this, be careful, and don't use any funds you cannot afford to
-lose!
+It is not necessary now, or at any time during this class, for you to
+actually buy bitcoins with your own money.  If you are inclined to do
+this, be careful, and don't use any funds you cannot afford to lose!
 
 Submit the form below (also avaible as [direct link](https://docs.google.com/forms/d/1taP-16YrkyfNMjZxDkz5dF3BTaFd5wrDdIcZPq7OYmE/viewform?usp=send_form)):
 
