@@ -47,10 +47,10 @@ print&lt;/a&gt;).&lt;br /&gt;
 width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34;
 marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
-&lt;div class=&#34;caption&#34;&gt;Note: ink markings may not appear in the
-embedded viewer.  To see them, [download the slides](No page found with path or logical name &#34;/classes/class1-post.pptx&#34;.
-)
-&lt;/div&gt;
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, download the slides.
+   &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
 
