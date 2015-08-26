@@ -331,8 +331,62 @@ print&lt;/a&gt;).&lt;br /&gt;
 width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34;
 marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;Note: ink markings may not appear in the
-embedded viewer.  To see them, [download the slides](&lt;/p&gt;
+&lt;div class=&#34;caption&#34;&gt;Note: ink markings may not appear in the
+embedded viewer.  To see them, [download the slides](No page found with path or logical name &#34;/classes/class1-post.pptx&#34;.
+)
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;notes:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;What is currency?&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Every commodity admits two uses: (1) its proper use, (2) its use as an article of exchange.&lt;/em&gt;&lt;br /&gt;
+Aristotle&amp;rsquo;s &lt;a href=&#34;https://play.google.com/books/reader?id=1J7N4eAKuhwC&amp;amp;printsec=frontcover&amp;amp;output=reader&amp;amp;hl=en&amp;amp;pg=GBS.PR13&#34;&gt;&lt;em&gt;Politics&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What properties should a currency have?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What is a &lt;em&gt;fiat currency&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;All these pieces of paper are, issued with as much solemnity and authority as if they were of pure gold or silver&amp;hellip; and indeed everybody takes them readily, for wheresoever a person may go throughout the Great Kaan&amp;rsquo;s dominions he shall find these pieces of paper current, and shall be able to transact all sales and purchases of goods by means of them just as well as if they were coins of pure gold.&lt;/em&gt;&lt;br /&gt;
+Macro Polo (on Yuan Dynasty paper money, 13th century)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Was salt a fiat currency as used by the Romans?  Was salt a fiat currency as used by the Han Dynasty?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sinosphere.blogs.nytimes.com/2014/11/21/chinas-millenniums-old-salt-monopoly-no-match-for-economic-reform/&#34;&gt;&lt;em&gt;China’s Millenniums-Old Salt Monopoly No Match for Economic Reform&lt;/em&gt;&lt;/a&gt;, New York Times, 21 November 2014.&lt;/p&gt;
+
+&lt;h2 id=&#34;designing-a-digital-currency:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Designing a Digital Currency&lt;/h2&gt;
+
+&lt;p&gt;What are the drawbacks of using a centralized bank to record transactions?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What race conditions could occur when you make a purchase with a credit card today?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What is recorded in the bitcoin ledger?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;discussion-questions:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Discussion Questions&lt;/h2&gt;
+
+&lt;p&gt;How well does US paper money work as a currency?&lt;/p&gt;
+
+&lt;p&gt;Why are there &lt;a href=&#34;https://angel.co/cryptocurrency-2&#34;&gt;over 800 cryptocurrency startups&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;How big do you expect the bitcoin blockchain to be at the end of this
+class (December 11)?  (closest answer wins!)&lt;/p&gt;
 </description>
     </item>
     
