@@ -8,6 +8,8 @@ menu:
 
 # Schedule
 
+THIS IS NOT THE REAL SCHEDULE
+
    <table class="schedule" width="90%">
    <tr class="schedule-header">
       <td width="30%">Date</td><td width="70%">Item</td>

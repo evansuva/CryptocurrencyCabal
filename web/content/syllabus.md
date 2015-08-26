@@ -13,17 +13,19 @@ menu:
 Draft version.  Subject to change until first class.
    </div>
 
-**Meetings:** Mondays and Wednesdays, 2:00-3:15pm in Olsson Hall 120.
+**Meetings:** Mondays and Wednesdays, 2:00-3:15pm in Olsson 120.
 
-**Teacher:** [David Evans](http://www.cs.virginia.edu/evans) and [Samee
-  Zahur](http://www.cs.virginia.edu/~sza4uq/)
+**Teachers:** [David Evans](http://www.cs.virginia.edu/evans) and [Samee
+  Zahur](http://www.cs.virginia.edu/~sza4uq/)  
+**Assistant:** [Ori Shimony](https://www.linkedin.com/pub/ori-shimony/b7/913/665)
 
-**Office Hours:** See [course calendar](https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&ctz=America/New_York).
+**Office Hours:** Mondays 4-5:30pm (Ori, Rice 442); Wednesdays 3:15-4:30pm (Samee, Rice 442); Thursdays 2:30-3:30pm (Dave, Rice 507).  Office hours will be updated on the [course calendar](https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&ctz=America/New_York).
 
-**Course Site:** All course materials will be posted at [http://bitcoin-class.org/](http://bitcoin-class.org).
-
-   <div class="hanging"> **Textbook:** We will not follow a textbook
-closely, but will have several readings from two books:
+**Course Site:** [http://bitcoin-class.org/](http://bitcoin-class.org)
+ 
+   <div class="hanging"> **Readings:** We will not follow a textbook
+closely, but will have several readings from two books (both of which
+are freely available):
 
 - Andreas M. Antonopoulos,
 [_Mastering Bitcoin: Unlocking Digital
@@ -39,15 +41,20 @@ Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
 This is a new book under development by a team at Princeton University.
 (There are also lecture videos and slides that correspond to the book.)
 
+In addition to those books, we will have several readings from both
+general audience publications, technical documents, and research papers.
+
 </div>
 
-# Overview
+## Overview
 
 For the past 10,000 years, humans have been seeking better ways to store
 and transfer value.  _Cryptocurrencies_ (most notably bitcoin), provide
 a way to do this using bits alone without any centralized authority.  In
-this course, we will study the technical aspects of cryptocurrencies, as
-well as the political, legal, and economic issues they raise.
+this course, we will learn about the cryptographic foundations for
+cryptocurrencies; networking, software, hardware, and security issues
+relevant to designing and implementing a cryptocurrency, and consider
+the economic, legal, and political issues raised by cryptocurrencies.
 
 ## Expected Background 
 
@@ -56,16 +63,16 @@ designing, and writing complex programs that involve thousands of lines
 of code distributed over many modules.  You should be fairly comfortable
 with math, at least enough to analyze probabilities.  
 
-You should be comfortable learning how to use new programming language
+You should be comfortable learning how to use a new programming language
 features and APIs by reading their documentation (or source code when no
-documentation is available), and not be surprised when solving
-programming assignments requires you to learn a new language on your own
-or to seek documentation beyond what was provided in class.
+documentation is available), and not be surprised when you are expected
+to learn a new language on your own or to seek documentation beyond what
+was provided in class.
 
-Students are not expected to have significant previous experience with
+Students are **not expected** to have significant previous experience with
 cryptography (although such background will certainly be helpful).
 
-Some specific things I expect of students entering this course:
+Some specific things we expect of students entering this course:
 
 - You should have some experience programming in at least one
   programming language, and not be afraid of needing to learn new
@@ -85,56 +92,53 @@ Some specific things I expect of students entering this course:
   use computing to make the world a better place.
 
 If you do not satisfy any of these expectations, that doesn't mean you
-cannot take the class, but you need to let me know about it at the
-beginning of the semester.  
+cannot take the class, but you need to let one of the course teachers
+know about it at the beginning of the semester.
 
-## Honor
+## Honor Pledge
 
-As a student at Mr. Jefferson's University, you are trusted to be
-honorable.  
+This course focuses on how to establish trust among distrusting people
+using mathematics, computing, and networking.  As a student at
+Mr. Jefferson's University, you are intrinsically trusted.
 
 We take advantage of this trust to provide a better learning environment
 for everyone.  In particular, students in this class are expected to
 follow these rules:
 
-<b>I will not lie, cheat or steal.</b> If I am unsure whether something
+- <b>I will not lie, cheat or steal.</b> If I am unsure whether something
 would be considered lying, cheating or stealing, I will ask before doing
 it.
 
-<b>I will carefully read and follow the collaboration policy on each
+- <b>I will carefully read and follow the collaboration policy on each
 assignment.</b> I will not abuse resources, including any submissions or
 solutions for assignments from last semester's version of this course,
 that would be clearly detrimental to my own learning.
 
-## Other Expectations
-
 In addition to the honor rules, students in this class are also expected
-to follow the [Recurse Center social
-rules](https://www.recurse.com/manual#sec-environment) and these
-behaviors:
+to follow these behaviors:
 
-<b>I will do what I can to help my fellow classmates learn.</b> Except
-when specifically instructed not to, this means when other students ask
+- <b>I will do what I can to help my fellow classmates learn.</b> _Except
+when specifically instructed not to_, this means when other students ask
 me for help, I will attempt to provide it. I will look at their answers
 and discuss what I think is good or bad about their answers. I will help
 others improve their work, but will not give them my answers directly. I
 will try to teach them what they need to know to discover solutions
 themselves.
 
-<b>I will ask for help.</b> I will make a reasonable effort to do things
+- <b>I will ask for help.</b> I will make a reasonable effort to do things
 on my own first (or with my partners for group assignment), but will ask
 my classmates or the course staff for help before getting overly
 frustrated.  There are many ways to ask for help including the course
 website and office hours.
 
-<b>I grant the course staff permission to reproduce and distribute
+- <b>I grant the course staff permission to reproduce and distribute
 excerpts from my submissions for teaching purposes.</b> If may opt-out
 of this by adding a comment to your code, but without an explicit
 opt-out comment we assume you agree to it.  Excerpts will be used
 anonymously when illustrating a misunderstanding or common problem, and
 with credit when showing an interesting or exemplary answer.
 
-<b>I will not invest money I cannot afford to lose in
+- <b>I will not invest money I cannot afford to lose in
 cryptocurrencies.</b> The main topic of this course is cryptocurrencies,
 and students will be encouraged to gain experience using bitcoin to
 conduct real transactions (but will not be expected to spend any
@@ -144,7 +148,7 @@ if you make a programming error or lose your key. It would be foolish
 and reckless to convert any money you would be upset about losing into a
 cryptocurrency.
 
-<b>I will provide useful feedback.</b> I realize that this is a new and
+- <b>I will provide useful feedback.</b> I realize that this is a new and
  experimental course, and it is important that I let the course staff
  know what they need to improve the course. I will not wait until the
  end of the course to make the course staff aware of any problems. I
@@ -154,28 +158,34 @@ cryptocurrency.
 
 ## Assignments
 
-The course will have frequent short quizzes, one midterm, four major
-projects, and one open-ended project.
+The course will have one midterm, four problem sets, one final project,
+and a (discretionary) final exam.  In addition, there will be several
+check-ups (short tests in class, with opportunities to revise and
+improve answers after discussion) and short assignments that may involve
+reading assignments and posting answers and questions on the course
+website.
 
-The 
+**Exams.** The midterm is Monday, 19 October.  The final exam is
+scheduled for Friday, 11 December (2-5pm).  This time will be used to
+schedule short oral exams for students who have not already demonstrated
+strong understanding of the course topics.
 
-problem sets generally will be assigned at class on Monday or
-Wednesday, and due shortly after (sometimes as early as by midnight the
-following day).  This will typically involve a short reading assignment
-and some questions to answer, but may also involve short technical
-problems.
+**Problem Sets.** The problem sets will involve writing programs and
+solving problems to understand transactions in bitcoin (Problem Set 1),
+bitcoin nodes and mining (Problem Set 2), blockchain analysis (Problem
+Set 3), and alternate cryptocurrencies (Problem Set 4).  For most of
+these assignments, you will be encouraged to work with one or two other
+people in a small team.
 
-The three major projects will involve writing programs and solving
-problems to understand a bitcoin wallet (Project 1), bitcoin mining
-(Project 2), and blockchain analysis (Project 3).
+**Final Project.** For the final project, you are free to work on
+anything relevant to cryptocurrencies.  Some suggestions for project
+ideas will be posted on the course website.  Students who have ambitious
+ideas for a project may be able to arrange with the course staff to
+expand the project to substitute for other assignments (such as Problem
+Set 4).
 
-For the final project, you are free to work on anything relevant to
-cryptocurrencies.  Some suggestions for project ideas will be posted on
-the course website.
 
-The registrar has scheduled an exam for this course on Thursday, 3 May
-(2-5pm).  We do not anticipate using this time for a traditional exam,
-but will use it for presenting final projects.
+## Schedule
 
 A tenative and (continually) updated schedule is available as a [Google
 calendar](https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&ctz=America/New_York).
@@ -185,24 +195,19 @@ link](https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.ca
 Except when noted otherwise, assignments are due at <b>8:29pm</b> on the
 due date.
 
-## Schedule
+The main expected due dates:
 
-The main due dates:
-
-
-Sunday, 30 August     Problem Set 0: Registration, Setting up a Bitcoin Wallet
-Monday, 7 September   Checkup 1
-Friday, 11 September  Problem Set 1: Bitcoin Transactions
-Monday, 21 September  Checkup 2
-5-7 October	      Reading Days Holiday
-Sunday, 11 October    Problem Set 2: Mining
-Monday, 19 October    Midterm 
-Sunday, 25 October    Problem Set 3: Blockchain Analysis
-Sunday, 15 November   Problem Set 4: Alternate Cryptocurrencies
-Monday, 23 November   Project Proposal
-25-27 November	      Thanksgiving Holiday
-Monday, 7 December    (Last Class) Due: Project Report
-Friday, 11 December   Scheduled Exam (2-5pm)
+- Sunday, 30 August: **Registration**
+- Monday, 7 September: **Checkup 1** (in class)
+- Tuesday, 15 September: **Problem Set 1: Bitcoin Transactions**
+- Monday, 21 September: **Checkup 2** (in class)
+- Friday, 2 October: **Problem Set 2: Nodes and Mining**
+- Monday, 19 October: **Midterm Exam**
+- Tuesday, 27 October: **Problem Set 3: Blockchain Analysis**
+- Tuesday, 17 November: **Problem Set 4: Alternate Cryptocurrencies**
+- Sunday, 22 November: **Project Proposal**
+- Monday, 7 December: Last class
+- Friday, 11 December: **Final Exam** (discretionary)
 
 Dates shown here are subject to change based on how the semester
 progresses, but with ample warning.
@@ -217,13 +222,16 @@ _assessment_.
 
 That said, we understand that students do need to be assigned grades at
 the end of the semester, and sometimes grades can be a powerful and
-effective motivator.  Grades will be determined based on your
-performance on all the class assignments and class contributions
-(including postings on the course site).  Some assignments may be graded
-by randomly looking at selected answers, rather than reading everything
-submitted.  There is no set weighting among these things, and in
-general, if there is some combination of the above that demonstrates
-that you have gotten what we hope out of the class then you will receive
-an A grade.
+effective motivator as well as a useful way to measure progress and
+understanding.
+
+Grades will be determined based on your performance on all the class
+assignments and class contributions (including postings on the course
+site).  Some assignments may be graded by randomly looking at selected
+answers, rather than reading everything submitted.  
+
+There is no set weighting among these things, and in general, if there
+is some combination of the above that demonstrates that you have gotten
+what we hope out of the class then you will receive an A grade.
 
 
