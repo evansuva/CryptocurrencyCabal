@@ -14,5 +14,6 @@ More information will be posted here soon.  Until then, see the
 [Syllabus]({{< relref "syllabus.md" >}}) and [Last Semester's
 Course](0/).
 
+<!--more-->
 
 

@@ -29,6 +29,8 @@ available [in
 print](http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042)).  
    </div>
 
+<!--more-->
+
 <center>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/md9EiU6QZoWroa"
 width="476" height="400" frameborder="0" marginwidth="0"

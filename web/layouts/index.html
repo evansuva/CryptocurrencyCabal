@@ -41,12 +41,13 @@
       				{{ end }}
             </p>
             <article class="post-summary">
-            	{{ .Content }}
+            	{{ .Summary }}
             </article>
-<!--			<div class="read-more-link">
+	       {{ if .Truncated }}
+			<div class="read-more-link">
 				<a href="{{ .RelPermalink }}"><span class="read-more-slashes">//</span>Read More...</a>
 			</div>
--->
+		{{ end }}
           </section>
         {{ end }}
 	  {{ end }}

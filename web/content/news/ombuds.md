@@ -12,3 +12,5 @@ Nick Skelsey to use the bitcoin blockchain for communications:
 Alex and Nick graduated from UVa in Spring 2015, and helped develop the
 [first offering of this course](/0/), including creating the PointCoin
 cryptocurrency.
+
+<!--more-->
