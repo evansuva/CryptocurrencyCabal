@@ -187,7 +187,7 @@ due date.
 
 The main expected due dates:
 
-- Sunday, 30 August: **Registration**
+- Saturday, 29 August: **Registration**
 - Monday, 7 September: **Checkup 1** (in class)
 - Tuesday, 15 September: **Problem Set 1: Bitcoin Transactions**
 - Monday, 21 September: **Checkup 2** (in class)

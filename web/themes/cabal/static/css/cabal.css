@@ -717,3 +717,31 @@ table, th, td {
    border-style: solid;
    font-weight:bold; padding-top: 5px; padding-bottom: 5px;
 }
+
+.due {
+     display:block;align:center;padding:5px;margin-bottom:5px;margin-top:5px;margin-left:50px;margin-right:50px;font-weight:bold;font-size:15px;text-align:center;background-color:#f5f570;border:1px solid #f55
+}
+
+.highlighted{
+  display:block;align:center;padding:5px;margin-bottom:10px;margin-top:5px;margin-left:50px;margin-right:50px;font-size:15px;text-align:left;background-color:#f5f570;border:1px solid #f55
+}
+
+.smallnote{display:block;align:center;color: #888; margin-left:20px; margin-right:20px;}
+.littlenote{font-size:"-2";color:#777;}
+
+.smallquote{display:block;align:right;color: #444; margin-left:60px; margin-right:20px;}
+
+.separator{display:block;padding-top:2px;padding-bottom:0px;margin-right:10px;margin-bottom:6px;margin-top:4px; background-color:#eeeacd;}
+
+.todo {
+  display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#FFEFD5;border:1px solid #FFD700;
+}
+
+.disqus{display:block;margin-left:50px;margin-right:50px;margin-top:10px;background-color:#FFFEF3;font-size:10px;}
+
+.math{font-family:"Georgia", Palatino, serif}
+.gap{display:block;padding:50px;margin-bottom:10px;margin-top:10px;border:1px solid #666}
+.startaction{display:block;padding:3px;margin-bottom:2px;margin-top:2px;border:1px solid #c70; background-color:#f56530;}
+.indented{display:block;margin-left:10px;margin-top:2px;margin-bottom:10px;}
+.endaction{display:block;padding:3px;padding-bottom:2px;bottom-padding:10px;margin-top:2px;border:1px solid #c70; background-color:#f56530;}
+.biggap{display:block;padding:100px;margin-bottom:10px;margin-top:10px;border:1px solid #666}

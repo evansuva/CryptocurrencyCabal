@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes on Cryptocurrency Cabal</title>
+    <link>http://bitcoin-class.org/classes/</link>
+    <description>Recent content in Classes on Cryptocurrency Cabal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 1: What is Money?</title>
+      <link>http://bitcoin-class.org/classes/class1/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class1/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+Before &lt;strong&gt;8:29pm Saturday&lt;/strong&gt; (29 August):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/syllabus/&#34;&gt;Course Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Setup&lt;/strong&gt; a bitcoin wallet (see &lt;a href=&#34;http://bitcoin-class.org/registration/&#34;&gt;Registration&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Submit &lt;a href=&#34;http://bitcoin-class.org/registration/&#34;&gt;Registration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Monday&amp;rsquo;s class&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt;
+&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch01.asciidoc&#34;&gt;&lt;em&gt;Chapter 1: Introduction&lt;/em&gt;&lt;/a&gt;
+and
+&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch02.asciidoc&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Works&lt;/em&gt;&lt;/a&gt;
+from Andreas M. Antonopoulos, &lt;a href=&#34;https://github.com/aantonop/bitcoinbook&#34;&gt;&lt;em&gt;Mastering Bitcoin: Unlocking Digital
+Cryptocurrencies&lt;/em&gt;&lt;/a&gt; book (also
+available &lt;a href=&#34;http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042&#34;&gt;in
+print&lt;/a&gt;).&lt;br /&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- &lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/43441659&#34;
+width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34;
+marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+--&gt;
+
+&lt;h2 id=&#34;notes:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;What is currency?&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Every commodity admits two uses: (1) its proper use, (2) its use as an article of exchange.&lt;/em&gt;&lt;br /&gt;
+Aristotle&amp;rsquo;s &lt;a href=&#34;https://play.google.com/books/reader?id=1J7N4eAKuhwC&amp;amp;printsec=frontcover&amp;amp;output=reader&amp;amp;hl=en&amp;amp;pg=GBS.PR13&#34;&gt;&lt;em&gt;Politics&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What properties should a currency have?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What is a &lt;em&gt;fiat currency&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;All these pieces of paper are, issued with as much solemnity and authority as if they were of pure gold or silver&amp;hellip; and indeed everybody takes them readily, for wheresoever a person may go throughout the Great Kaan&amp;rsquo;s dominions he shall find these pieces of paper current, and shall be able to transact all sales and purchases of goods by means of them just as well as if they were coins of pure gold.&lt;/em&gt;&lt;br /&gt;
+Macro Polo (on Yuan Dynasty paper money, 13th century)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Was salt a fiat currency as used by the Romans?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Was salt a fiat currency as used by the Han Dynasty?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sinosphere.blogs.nytimes.com/2014/11/21/chinas-millenniums-old-salt-monopoly-no-match-for-economic-reform/&#34;&gt;&lt;em&gt;China’s Millenniums-Old Salt Monopoly No Match for Economic Reform&lt;/em&gt;&lt;/a&gt;, New York Times, 21 November 2014.&lt;/p&gt;
+
+&lt;p&gt;What does it mean to &lt;em&gt;own&lt;/em&gt; something digital?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;discussion-questions:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Discussion Questions&lt;/h2&gt;
+
+&lt;p&gt;How well does US paper money work as a currency?&lt;/p&gt;
+
+&lt;p&gt;Why are there &lt;a href=&#34;https://angel.co/cryptocurrency-2&#34;&gt;over 800 cryptocurrency startups&lt;/a&gt;?&lt;/p&gt;
+
+&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+   var disqus_url = &#39;http://bitcoin-class.org/class1&#39;;
+   var disqus_shortname = &#39;davidevans&#39;; // required: replace example with your forum shortname
+
+   /* * * DON&#39;T EDIT BELOW THIS LINE * * */
+   (function() {
+            var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+            dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+            (document.getElementsByTagName(&#39;head&#39;)[0] ||  document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+        })();
+    &lt;/script&gt;
+    &lt;noscript&gt;Please enable JavaScript to view
+    the &lt;a href=&#34;http://disqus.com/?ref_noscript&#34;&gt;comments powered by
+    Disqus.&lt;/a&gt;&lt;/noscript&gt;
+    &lt;a href=&#34;http://disqus.com&#34; class=&#34;dsq-brlink&#34;&gt;Comments powered by &lt;span class=&#34;logo-disqus&#34;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

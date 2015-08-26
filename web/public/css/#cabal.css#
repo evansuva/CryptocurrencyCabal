@@ -666,7 +666,7 @@ table, th, td {
    border-spacing: 10px;
 }
 
-.schedule-header, .schedule-class, .schedule-class1, .schedule-class2 {
+.schedule-header, .schedule-class1, .schedule-class2 {
    margin-right: 10px;
 }
 
@@ -679,6 +679,10 @@ table, th, td {
    background-color: #EEE;
 }
 
+.schedule-deadline {
+   background-color: #FAA;
+}
+
 .schedule-class2 {
    background-color: #FFC;
 }
@@ -689,9 +693,13 @@ table, th, td {
    padding: 6px;
 }
 
-.schedule-class {
+.schedule-class, .schedule-due {
    text-align: left;
    padding: 6px;
+}
+
+.schedule-due {
+   font-weight: bold;
 }
 
 .mhighlight {
@@ -709,3 +717,15 @@ table, th, td {
    border-style: solid;
    font-weight:bold; padding-top: 5px; padding-bottom: 5px;
 }
+
+.due {
+     display:block;align:center;padding:5px;margin-bottom:5px;margin-top:5px;margin-left:50px;margin-right:50px;font-weight:bold;font-size:15px;text-align:center;background-color:#f5f570;border:1px solid #f55
+}
+
+.highlighted{display:block;align:center;padding:5px;margin-bottom:10px;margin-top:5px;margin-left:50px;margin-right:50px;font-size:15px;text-align:left;background-color:#f5f570;border:1px solid #f55}
+.smallnote{display:block;align:center;color: #888; margin-left:20px; margin-right:20px;}
+.littlenote{font-size:"-2";color:#777;}
+
+.smallquote{display:block;align:right;color: #444; margin-left:60px; margin-right:20px;}
+
+.separator{display:block;padding-top:2px;padding-bottom:0px;margin-right:10px;margin-bottom:6px;margin-top:4px; background-color:#eeeacd;}
