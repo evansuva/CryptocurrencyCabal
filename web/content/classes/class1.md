@@ -5,7 +5,7 @@ print: "class1.pdf"
 nocomment: false
 weight: 3
 menu:
-  main:
+  classes:
 ---
 
 ## Schedule
