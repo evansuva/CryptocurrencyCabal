@@ -7,7 +7,7 @@
 Before **8:29pm Saturday** (29 August):
 
 1. **Read:** [Course Syllabus](/syllabus)
-2. **Setup** a bitcoin wallet (see [Registration](/registration)
+2. **Setup** a bitcoin wallet (see [Registration](/registration))
 3. **Submit [Registration](/registration)**
 
 Before **Monday's class**:
@@ -33,7 +33,10 @@ marginheight="0" scrolling="no"></iframe>
 
 What is currency?
 
-   <div class="gap"></div>
+
+#
+#
+
 
 > _Every commodity admits two uses: (1) its proper use, (2) its use as an article of exchange._  
 > Aristotle's [_Politics_](https://play.google.com/books/reader?id=1J7N4eAKuhwC&printsec=frontcover&output=reader&hl=en&pg=GBS.PR13)
@@ -41,31 +44,53 @@ What is currency?
 
 What properties should a currency have?
 
-<div class="gap"></div>
+
+#
+
 
 What is a _fiat currency_?
 
-<div class="gap"></div>
+
+#
+
 
 > _All these pieces of paper are, issued with as much solemnity and authority as if they were of pure gold or silver... and indeed everybody takes them readily, for wheresoever a person may go throughout the Great Kaan's dominions he shall find these pieces of paper current, and shall be able to transact all sales and purchases of goods by means of them just as well as if they were coins of pure gold._  
 > Macro Polo (on Yuan Dynasty paper money, 13th century)
 
-Was salt a fiat currency as used by the Romans?
-<div class="gap"></div>
+Was salt a fiat currency as used by the Romans?  Was salt a fiat currency as used by the Han Dynasty?
 
-Was salt a fiat currency as used by the Han Dynasty?
 
-<div class="gap"></div>
+#
+
 
 [_China’s Millenniums-Old Salt Monopoly No Match for Economic Reform_](http://sinosphere.blogs.nytimes.com/2014/11/21/chinas-millenniums-old-salt-monopoly-no-match-for-economic-reform/), New York Times, 21 November 2014.
 
-What does it mean to _own_ something digital?
-<div class="gap"></div>
+## Designing a Digital Currency
+
+What are the drawbacks of using a centralized bank to record transactions?
+
+#
+
+
+What race conditions could occur when you make a purchase with a credit card today?
+
+#
+
+
+What is recorded in the bitcoin ledger?
+
+#
+
 
 ## Discussion Questions
 
 How well does US paper money work as a currency?
 
 Why are there [over 800 cryptocurrency startups](https://angel.co/cryptocurrency-2)?
+
+How big do you expect the bitcoin blockchain to be at the end of this
+class (December 11)?  (closest answer wins!)
+ 
+
 
 

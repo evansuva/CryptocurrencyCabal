@@ -27,6 +27,10 @@ def process_latex(finname):
             else:
                 if line.startswith('---'):
                     inheader = True
+                elif line.startswith('<div class="gap"></div>'):
+                    print "\n#\n"
+                elif line.startswith('<div class="biggap"></div>'):
+                    print "\n#\n#\n"
                 else:
                     print line,
 
