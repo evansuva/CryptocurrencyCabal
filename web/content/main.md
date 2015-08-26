@@ -1,7 +1,7 @@
 +++
 title = "Cryptocurrency Cabal"
-weight = 1
-date = '2015-08-21'
+weight = 3
+date = '2015-08-26'
 +++
 
 ## Welcome to Cryptocurrency Cabal!
@@ -10,7 +10,9 @@ date = '2015-08-21'
 **Location:** Olsson 120  
 **Teachers:** [David Evans](http://www.cs.virginia.edu/evans) and [Samee Zahur](http://www.cs.virginia.edu/~sza4uq/)
 
-More information will be posted here soon.  Until then, see [Last Semester's Course](0/).
+More information will be posted here soon.  Until then, see the
+[Syllabus]({{< relref "syllabus.md" >}}) and [Last Semester's
+Course](0/).
 
 
 

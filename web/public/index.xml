@@ -6,83 +6,8 @@
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Cryptocurrency Cabal</title>
-      <link>http://bitcoin-class.org/main/</link>
-      <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/main/</guid>
-      <description>
-
-&lt;h2 id=&#34;welcome-to-cryptocurrency-cabal:379caad01b6ea305187be199bcac1370&#34;&gt;Welcome to Cryptocurrency Cabal!&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;First Class:&lt;/strong&gt; Wednesday, 26 August 2015&lt;br /&gt;
-&lt;strong&gt;Location:&lt;/strong&gt; Olsson 120&lt;br /&gt;
-&lt;strong&gt;Teachers:&lt;/strong&gt; &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; and &lt;a href=&#34;http://www.cs.virginia.edu/~sza4uq/&#34;&gt;Samee Zahur&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;More information will be posted here soon.  Until then, see &lt;a href=&#34;0/&#34;&gt;Last Semester&amp;rsquo;s Course&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Schedule</title>
-      <link>http://bitcoin-class.org/schedule/</link>
-      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/schedule/</guid>
-      <description>
-
-&lt;h1 id=&#34;schedule:6b0be342d4ab5efd25856c2371c7688a&#34;&gt;Schedule&lt;/h1&gt;
-
-&lt;p&gt;THIS IS NOT THE REAL SCHEDULE&lt;/p&gt;
-
-&lt;p&gt;&lt;table class=&#34;schedule&#34; width=&#34;90%&#34;&gt;
-   &lt;tr class=&#34;schedule-header&#34;&gt;
-      &lt;td width=&#34;30%&#34;&gt;Date&lt;/td&gt;&lt;td width=&#34;70%&#34;&gt;Item&lt;/td&gt;
-   &lt;/tr&gt;
-   &lt;tr class=&#34;schedule-class1&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 26&amp;nbsp;August &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 1: What is Money? &lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;tr class=&#34;schedule-deadline&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Sunday, 30&amp;nbsp;August (8:29pm) &lt;/td&gt; &lt;td class=&#34;schedule-due&#34;&gt; Due: PS 0: Registration &lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;tr class=&#34;schedule-header&#34;&gt;
-      &lt;td colspan=2 class=&#34;schedule-overview&#34;&gt;
-      Cryptographic Foundations
-      &lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;tr class=&#34;schedule-class2&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Monday, 31&amp;nbsp;August &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 2: Introduction to Cryptography &lt;/td&gt;
-   &lt;/tr&gt;
-   &lt;tr class=&#34;schedule-class1&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 2 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 3: Elliptic Curves &lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;tr class=&#34;schedule-class2&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Monday, 7 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 4: Signatures &lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;tr class=&#34;schedule-class1&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 9 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 5: Randomness &lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;tr class=&#34;schedule-class2&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Monday, 14 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 6: DigiCash &lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;tr class=&#34;schedule-class1&#34;&gt;
-      &lt;td class=&#34;schedule-date&#34;&gt; Wednesday, 16 September &lt;/td&gt; &lt;td class=&#34;schedule-class&#34;&gt; Class 7: Proofs-of-Work&lt;/td&gt;
-   &lt;/tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/table&gt;&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Syllabus</title>
@@ -322,6 +247,26 @@ answers, rather than reading everything submitted.&lt;/p&gt;
 &lt;p&gt;There is no set weighting among these things, and in general, if there
 is some combination of the above that demonstrates that you have gotten
 what we hope out of the class then you will receive an A grade.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cryptocurrency Cabal</title>
+      <link>http://bitcoin-class.org/main/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/main/</guid>
+      <description>
+
+&lt;h2 id=&#34;welcome-to-cryptocurrency-cabal:379caad01b6ea305187be199bcac1370&#34;&gt;Welcome to Cryptocurrency Cabal!&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;First Class:&lt;/strong&gt; Wednesday, 26 August 2015&lt;br /&gt;
+&lt;strong&gt;Location:&lt;/strong&gt; Olsson 120&lt;br /&gt;
+&lt;strong&gt;Teachers:&lt;/strong&gt; &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; and &lt;a href=&#34;http://www.cs.virginia.edu/~sza4uq/&#34;&gt;Samee Zahur&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;More information will be posted here soon.  Until then, see the
+&lt;a href=&#34;http://bitcoin-class.org/syllabus/&#34;&gt;Syllabus&lt;/a&gt; and &lt;a href=&#34;0/&#34;&gt;Last Semester&amp;rsquo;s
+Course&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
