@@ -149,12 +149,12 @@ $endif$
 \author{$for(author)$$author$$sep$ \and $endfor$}
 \date{$date$}
 
-\markboth{Cryptocurrency Spring 2015}{cs4501: Cryptocurrency $title$}
+\markboth{Cryptocurrency Fall 2015}{cs4501: Cryptocurrency $title$}
 \begin{document}
 
 \thispagestyle{empty}
 \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} }l c r}
-{\bf University of Virginia} & {\bf cs4501: Cryptocurrency Cafe} & \today
+{\bf University of Virginia} & {\bf cs4501: Cryptocurrency Cabal} & \today
 \\
 \end{tabular*}
 \hrule
@@ -208,7 +208,7 @@ $endfor$
 \vfill
 \hrule
 \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} }l c r}
-{\footnotesize David Evans} & {\footnotesize \em Creative Commons
+{\footnotesize David Evans and Samee Zahur} & {\footnotesize \em Creative Commons
 Attribution-Noncommercial-Share Alike 3.0} & {\footnotesize \url{http://bitcoin-class.org}} \\
 \end{tabular*}
 

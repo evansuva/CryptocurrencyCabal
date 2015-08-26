@@ -1,11 +1,5 @@
----
-title: "Syllabus"
-weight: 2
-date: '2015-08-22'
-print: "syllabus.pdf"
-menu:
-   main:
----
+% Syllabus
+% '2015-08-22'
 
 # Syllabus
 
