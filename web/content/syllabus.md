@@ -15,7 +15,7 @@ menu:
   Zahur](http://www.cs.virginia.edu/~sza4uq/)  
 **Assistant:** [Ori Shimony](https://www.linkedin.com/pub/ori-shimony/b7/913/665)
 
-**Office Hours:** Mondays 4-5:30pm (Ori, Rice 442); Wednesdays 3:15-4:30pm (Samee, Rice 442); Thursdays 2:30-3:30pm (Dave, Rice 507).  Office hours will be updated on the [course calendar](https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&ctz=America/New_York).
+**Office Hours:** Mondays 5-6:30pm (Ori, Rice 442); Wednesdays 3:15-4:30pm (Samee, Rice 442); Thursdays 2:30-3:30pm (Dave, Rice 507).  Office hours will be updated on the [course calendar](https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&ctz=America/New_York).
 
 **Course Site:** [http://bitcoin-class.org/](http://bitcoin-class.org)
  
