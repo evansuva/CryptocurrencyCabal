@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    PS1: Bitcoin Transactions // Cryptocurrency Cabal
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.15-DEV" />
+
+  <meta property="og:title" content="PS1: Bitcoin Transactions" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://bitcoin-class.org/ps/ps1/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rotunda.png">
+  <link rel="shortcut icon" href="/rotunda.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Cryptocurrency Cabal" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  <link rel="stylesheet" href="http://bitcoin-class.org/css/cabal.css">
+
+  
+ 
+  
+<script>
+function showText(show,hide)
+{
+    document.getElementById(show).className = "show";
+    document.getElementById(hide).className = "hide";
+}
+</script>
+ 
+
+  
+
+  
+</head>
+
+<body>
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+
+    <a href="http://bitcoin-class.org"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
+    <h2 class="brand-tagline">University of Virginia
+    <br>cs4501 Fall 2015
+    </h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href=""></a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/syllabus/">Syllabus</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b>Assignments</b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/registration/">Registration</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b>Classes</b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class1/">Class 1: What is Money?</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+
+    
+
+  </div>
+</div>
+
+	
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+    <section id="main">
+            
+            	<span class="post-date">
+                	31 Aug 2015
+            	</span>
+            	
+            
+
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<h1 id="problem-set-1-bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7">Problem Set 1: Bitcoin Transactions</h1>
+
+<p><div class="due">
+Due: Tuesday, 15 September at 8:29pm
+   </div></p>
+
+<h2 id="purpose:939ea9b9cc2ea0226c5f2d7200883cc7">Purpose</h2>
+
+<p>The goal of this assignment is for everyone in the class to understand
+how keys, addresses, and transactions work in bitcoin.  In addition,
+this assignment should help everyone get up-to-speed with the software
+tools (including the Go programming language) we will use in later
+assignments.</p>
+
+<h3 id="collaboration-policy:939ea9b9cc2ea0226c5f2d7200883cc7">Collaboration Policy</h3>
+
+<p>For this assignment, everyone should submit their own assignment and
+should writeup their own answers to the questions as well as execute all
+the required transactions with your own keys.</p>
+
+<p>You may, and are encouraged to, discuss all of the problems with anyone
+else you want (both on-line using the course web site or any other means
+you choose, and in person), and it is okay to share code with others so
+long as you understand everything in all of the code you use.</p>
+
+<h3 id="submission:939ea9b9cc2ea0226c5f2d7200883cc7">Submission</h3>
+
+<p>Submit your answers as a single PDF file using <a href="https://www.dropbox.com/request/KV26Qd6UrcB9j6nBLVw8">this
+link</a>.  The name
+of your file should be <code>&lt;your email ID&gt;-ps1.pdf</code>.</p>
+
+<p>Your submission should include clearly marked answers for all the
+problems (highlighted in yellow).</p>
+
+<h1 id="blockchain-sleuthing:939ea9b9cc2ea0226c5f2d7200883cc7">Blockchain Sleuthing</h1>
+
+<p>You should have received some bitcoin at the address you submitted in
+the registration form.  (If you did not receive any bitcoin, contact the
+course staff right away!)</p>
+
+<p>From that transaction, you have an address that was used to send you the
+bitcoin.  For these questions, your goal is to figure out what you can
+about the way bitcoin was distributed to the class.  For these
+questions, manual sleuthing should be sufficient (although ambitious
+students may find ways to automate this).</p>
+
+<p><div class="problem"></p>
+
+<p><strong>Problem 1.</strong> Answer the following questions about the transaction
+  where you received the bitcoin.  If you received more than one
+  transfer, include all the transaction IDs).</p>
+
+<p>a. What is the transaction ID?</p>
+
+<p>b. What was the transaction fee for the transaction?  (Give your answer
+in BTC, as well as current approximate US dollar value.)</p>
+
+<p>c. What was the total value of all the transactions in the block
+containing your transfer?  (Note:
+<a href="https://blockchain.info">https://blockchain.info</a> provides this info
+conveniently, although you could compute it yourself)</p>
+
+<p>d. How long did it take from when the transaction was received until it
+had 3 confirmations?  (Include an explanation of how you estimated this
+in your answer.)
+    </div></p>
+
+<p>Bitcoin advocates often taut its &ldquo;anonymity&rdquo;, but bitcoin transactions
+are actually publicly visible.</p>
+
+<p><div class="problem">
+<strong>Problem 2.</strong> See how much can you figure out about the way bitcoin was
+transferred to students in the class, starting from your transactions.</p>
+
+<p>a. Identify the bitcoin addresses of what are likely to be other
+students in the class (you could potentially find 27, but it is enough
+to find 3).</p>
+
+<p>b. Trace back the source of the bitcoin as far as you can.  Bonus points
+if you can figure out from which exchange the bitcoin was purchased and
+when.</p>
+
+<p>c. (Bonus) Can you learn anything about where the send of the bitcoin is
+located geographically?  (In this case, you have external information to
+know I&rsquo;m in Charlottesville, but what could you learn about the sender&rsquo;s
+probable location just from the information in the blockchain?)</p>
+
+<p></div></p>
+
+<p>Hints:</p>
+
+<ul>
+<li><p>Start by looking at the transaction that sent bitcoin to your
+receiving address.  You can search for this by searching for your
+recieving address at
+<a href="https://blockexplorer.com">https://blockexplorer.com</a>,
+<a href="https://insight.bitpay.com/">https://insight.bitpay.com/</a>,
+<a href="https://blockchain.info">https://blockchain.info</a>, or many other
+sites that provide information about the bitcoin blockchain.</p></li>
+
+<li><p>You can go forward, by following what happened with the &ldquo;change&rdquo; from
+that transaction.</p></li>
+
+<li><p>You can go backward, by following transactions to the sending address.</p></li>
+</ul>
+
+<p><div class="problem"></p>
+
+<p><strong>Problem 3.</strong> Suppose a malicious developer wanted to distribute a
+  bitcoin wallet implementation that would steal as much bitcoin as
+  possible from its users with a little chance as possible of getting
+  caught.  (a) Explain things a malicious developed might do to create
+  an evil wallet.  (b) How confident are you your money is safe in the
+  wallet you are using, and what would you do to increase your
+  confidence if you were going to store all of your income in it?</p>
+
+<p></div></p>
+
+<h1 id="getting-going:939ea9b9cc2ea0226c5f2d7200883cc7">Getting GOing</h1>
+
+<p>You are free to use any programming language and open source bitcoin
+libraries and openly-licensed code you want for this assignment, but
+must follow the license requirements of any code you use and credit this
+code in your submission.</p>
+
+<p>The directions we provide use the <a href="https://github.com/btcsuite">BTC
+Suite</a> library for bitcoin, implemented in
+the <a href="https://golang.org/">Go</a>.</p>
+
+<p>Most of you do not have any experience using Go, but it is not a
+difficult language to learn coming from experience with Java (which all
+of you have), and although its not <a href="http://rust-class.org">my favorite programming
+language</a> it is a language that nearly everyone
+finds enjoyable to use and it is becoming widely used in industry
+(especially at Google, where it was developed).  The main reason we are
+using it for this, though, is because the <a href="https://github.com/btcsuite">BTC
+library</a> is the best bitcoin library we are
+aware of, and it is written in Go.</p>
+
+<p>If you are comfortable learning a new programming language by diving
+right into moderately complex programs and figuring out things as you
+go, you should be able to jump right into this assignment.  If you
+prefer a more structured introduction to Go, there are many tutorials
+available, including the <a href="https://tour.golang.org/welcome/1">Tour of
+Go</a>.  The <a href="https://gobyexample.com/">Go by
+Example</a> site is very helpful.  For more
+documentation, visit <a href="https://golang.org/doc/">https://golang.org/doc/</a>.</p>
+
+<!--
+# Going Gets Good
+
+After you have installed go, you can set up the BTC library by doing:
+
+```shell
+> go get github.com/btcsuite/btcec
+```
+-->
+
+<h1 id="obtain-the-starting-code:939ea9b9cc2ea0226c5f2d7200883cc7">Obtain the Starting Code</h1>
+
+<p>Before continuing with this assignment, you should <a href="/tools/github/">set up git and your
+github account</a> and follow the
+directions there to set up your private repository containing the
+starting code for ps1.  (It may seem like overkill to use git for this
+assignment since you will not need to write much code or work with
+teammates on this one.  But, it is good to get experience using git and
+will become necessary to work effectively with teammates for later
+projects.)</p>
+
+<p>Once you have finished setting up your <code>ps1</code> repository, it should
+contain the files:</p>
+
+<ul>
+<li><a href="https://github.com/CryptocurrencyCabal/ps1/blob/master/keypair.go">keypair.go</a>:
+code for generating a bitcoin key pair (including its public address).</li>
+<li><a href="https://github.com/CryptocurrencyCabal/ps1/blob/master/spend.go">spend.go</a>: code for generating a bitcoin transaction.</li>
+</ul>
+
+<h1 id="elliptic-curve-cryptography:939ea9b9cc2ea0226c5f2d7200883cc7">Elliptic Curve Cryptography</h1>
+
+<p>The btcsuite library includes,
+<a href="https://github.com/btcsuite/btcd/tree/master/btcec">btcec</a>, an implementation of the
+ECDSC algorithm using the
+<a href="https://en.bitcoin.it/wiki/Secp256k1">secp256k1</a> elliptic curve used by
+bitcoin.</p>
+
+<p>Examine the
+<a href="https://github.com/btcsuite/btcd/blob/master/btcec/btcec.go">btcec.go</a> code.</p>
+
+<p><div class="problem">
+<strong>Problem 4.</strong> Find the <span class="math"><em>y</em><sup>2</sup> =
+  <em>x</em><sup>3</sup> + 7</span> curve in this code.  (For your answer, just
+  submit the line numbers for the code that tests if a given point is on the curve.)
+   </div></p>
+
+<p>Elliptic curves for cryptography needs really big numbers.  The modulus for the <code>secp256k1</code> curve is found on <a href="https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L909">line 929</a>:</p>
+
+<pre><code> secp256k1.P = fromHex(&quot;FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F&quot;)
+</code></pre>
+
+<p>This should be the value <span class="math">2<sup>256</sup> - 2<sup>32</sup> - 2<sup>9</sup> - 2<sup>8</sup> - 2<sup>7</sup> - 2<sup>6</sup> - 2<sup>4</sup> - 1.</p>
+
+<p><div class="problem"></p>
+
+<p><strong>Problem 5.</strong> Verify that the modulus used as <code>secp256k1.P</code> in
+  <code>btcec.go</code> is correct.  You can do this either using
+  <a href="https://golang.org/pkg/math/big/">math/big</a>, Go&rsquo;s bit integer library
+  to do computations on such large numbers, or by computing it by hand.
+  (For your answer, just show how you verified the modulus.  Including a
+  snippet of code is fine.)</p>
+
+<p></div></p>
+
+<h2 id="generating-a-key-pair:939ea9b9cc2ea0226c5f2d7200883cc7">Generating a Key Pair</h2>
+
+<p>We have provided code in <code>keypair.go</code> that generates a bitcoin key pair.
+You can try running this by running <code>go run keypair.go</code> (or you can
+compile it with <code>go build keypair.go</code> and then run the resulting
+executable <code>keypair</code>).  It will print out the generated private key and
+corresponding public bitcoin address.  (Try running it a few times to
+see that it produces a different key pair each time.)</p>
+
+<p>Keys for ECDSC are generated by choosing a random private key, <span
+class="math"><em>k</em></span>, and finding the corresponding public key by
+&ldquo;multiplying&rdquo; it by <span class="math"><em>G</em></span>, the generator point.
+(Multiplication here is not standard multiplication, but multiplication
+on the elliptic curve, as discussed in <a href="No page found with path or logical name "classes/class3.md".
+">Class 3</a>.)  The point <span
+class="math"><em>G</em></span> is defined by <a href="https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L912">lines
+912-3</a>):</p>
+
+<pre><code>secp256k1.Gx = fromHex(&quot;79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798&quot;)
+secp256k1.Gy = fromHex(&quot;483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8&quot;)
+</code></pre>
+
+<p>The resulting point is the public key.  It is easy to derive the public
+key from the private key, but believed to be hard to learn anything
+useful about the private key from the public key.  (The belief that it
+is hard to reverse the elliptic curve multiplication is based on the
+assumption that it is hard to compute discrete logarithms, which is not
+proven, but underlies much of modern cryptography.)</p>
+
+<p>The code for generating a new keypair is in <a href="https://github.com/CryptocurrencyCabal/ps1/blob/master/keypair.go#L20">keypair.go</a>:</p>
+
+<pre><code class="language-go">func generateKeyPair() (*btcec.PublicKey, *btcec.PrivateKey) {
+   priv, err := btcec.NewPrivateKey(btcec.S256())
+   if err != nil {
+       // There was an error. Log it and bail out
+       log.Fatal(err)
+   }
+   return priv.PubKey(), priv
+}
+</code></pre>
+
+<p>The important work is the
+<a href="https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/privkey.go#L38">NewPrivateKey</a>
+function.</p>
+
+<p><div class="problem">
+<strong>Problem 5.</strong> What are <em>all</em> the things you need to trust if you are
+going to send money to the key generated by running <code>keypair.go</code>?  You
+should assume that you are an ultra-paranoid multi-billionaire who
+intends to transfer her entire fortune to the generated address.<br />
+    </div></p>
+
+<h2 id="generating-a-vanity-key:939ea9b9cc2ea0226c5f2d7200883cc7">Generating a Vanity Key</h2>
+
+<p>Anyone can have a bitcoin address like
+<code>1H7tu2qUAyyr5aX1WA17eyvbetAGyqxfKZ</code> or
+<code>1L3iGYBD5wbiki2SYUT5wmupy4TTgmEBg3</code>, but suppose you want a bitcoin
+address that includes the name of your cat or your birthday.</p>
+
+<p><div class="problem">
+<strong>Problem 6.</strong> Define a function, <code>func
+generateVanityAddress(pattern string) (*btcec.PublicKey,
+*btcec.PrivateKey)</code> where <code>pattern</code> is a regular expression.  It should
+return a valid key pair where the corresponding public address <a href="http://golang.org/pkg/regexp/#MatchString">matches
+the pattern</a>.<br />
+   </div></p>
+
+<p>You should be able to use your function to generate an address that
+includes the digits of pi in sequence:
+<code>generateVanityAddress(&quot;3.*1.*4.*1.*5.*9.*&quot;)</code> or contains <code>DAVE</code> without
+any adjacent letters (<code>generateVanityAddress(&quot;[0-9]DAVE[0-9]&quot;)</code>) in its
+public bitcoin address.  In deciding how vain you want to be for the
+next exercise, think about how the running time scales with the number
+of strings that match the target pattern.</p>
+
+<p><div class="problem">
+<strong>Problem 7.</strong> Use your <code>generateVanityAddress</code> function to create
+your own vanity address containing your first or last name (or if that
+is too long it could just be your initials).  If you are extra vain,
+create a address where your name appears at the beginning (after the
+initial <code>1</code>).  (Note that uppercase &lsquo;O&rsquo; and &lsquo;I&rsquo; and lowercase &lsquo;l&rsquo; are
+not used in any address, so if your name includes these letters you will
+have to be creative.)
+  </div></p>
+
+<p><div class="problem">
+<strong>Problem 8.</strong>   Is your vanity address more or less secure than the first address you generated?
+   </div></p>
+
+<p>There are on-line services that produce vanity addresses, like
+   <a href="http://bitcoinvanitygen.com/">http://bitcoinvanitygen.com/</a>.  You
+   should contemplate briefly whether using such a site is <a href="http://www.reddit.com/r/Bitcoin/comments/21foj9/funds_currently_being_stolen_from_vanity/">more vain or
+   stupid</a>.</p>
+
+<h1 id="bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7">Bitcoin Transactions</h1>
+
+<p>Having an address is not much fun without any funds!</p>
+
+<p>You should have received some money to the address you submitted in
+<a href="../../ps/ps0/ps0.md">PS0</a>.  For these questions, you will need to have
+actual money to transfer, so be careful to make small transfers for
+these questions in case something goes wrong.  (In the event that you do
+lose all of your bitcoin, you can get a new transfer to an adress of
+your choosing by explaining to me what you have learned about software
+development and or best practices.  It is not necessary to buy your own
+bitcoin, even if you lose all of the original transfer.)</p>
+
+<p><div class="problem">
+<b>Problem 9.</b> Make a <strong>small</strong> (e.g., 1 mBTC) transfer from
+your wallet address to your vanity address.  You can do this using
+your MultiBit wallet.  Find the transaction in the blockchain (you can do this by
+searching for your vanity address at
+<a href="https://insight.bitpay.com/">insight.bitpay.com</a> or
+<a href="https://blockchain.info/">blockchain.info</a>). You will need the
+transaction ID for the next exercise.  (For your answer, just provide the transaction ID.)
+   </div></p>
+
+<p>Once you have located the transaction that sends bitcoin to your vanity
+address you should notice several things.</p>
+
+<p>Your wallet most likely send bitcoins to your address <em>and</em> back to a
+new address.  We call this second address the &lsquo;change&rsquo; address. Notice
+that each output has an ordered position. This index (known as the <code>vout</code>)
+along with the transaction ID lets us uniquely identify transaction
+outputs. This is important if you want to use those outputs in a new
+transaction.</p>
+
+<p><div class="problem">
+<b>Problem 10.</b> Transfer the coin from your vanity address back to your wallet. To do this you can run <code>spend.go</code> in  ps1. You can provide the parameters needed for the transaction at the command line (it is not necessary to modify the code).<br />
+   </div></p>
+
+<p>If done correctly the script should look this when executed:</p>
+
+<pre><code class="language-bash">&gt; go run spend.go \
+    -txid=&quot;6bf98ac2e1a25ea9c2951bb6a40262e054514236f864a3414c16fe6b3a5f3f62&quot; \
+    -vout=0 \
+    -privkey=&quot;8d66a9f85c4f737b231d1af0bd917c8e02f05d616f26c41f269a194a10c29029&quot; \
+    -address=&quot;1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB&quot;
+
+Here is your raw bitcoin transaction:
+0100000001623f5f3a6bfe164c41a364f836425154e06202a4b61b95c2a95ea2e1c28af96b000000006a47304402202487724e5e42e60b5d8d98636797339b09db8c70452959cf9c48a0be1a45aba302203465c00d34a190dd1294c9c1561af7c0bcc2b0d452ae74b6d126ad06e0f03624012103c4a967e4e04f32f6b25b723c4d994bcc5f1f6db2cd7757d25643af0d1a1b4c1effffffff01905f0100000000001976a91488989f2c91337ad5241abedeafe8ed96fa28940488ac00000000
+The sending api responded with:
+{&quot;txid&quot;:&quot;8d1687cc05cd3264c8d41acf19efcd08ecd44b5b57d3105fe081fdfd4baa6b0b&quot;}
+</code></pre>
+
+<p>Notice that when the command above is run with these parameters it only
+works
+<a href="https://blockchain.info/tx/8d1687cc05cd3264c8d41acf19efcd08ecd44b5b57d3105fe081fdfd4baa6b0b">once</a>. If
+you tried to run it again or send the coins somewhere else the script
+would fail.</p>
+
+<p><div class="problem">
+<b>Problem 11.</b> Try to double spend the same bitcoin by sending it
+twice to your wallet address.  Figure out as much as you can about what
+happens when the double spend transactions are attempted.  See how close
+you can get to obtaining two verified transactions spending the same
+coin (e.g., can you achieve two transactions with at least one
+confirmation each?)
+   </div></p>
+
+<p>Please don&rsquo;t try to actually rip anyone off; only attempt double
+spending with your own addresses (or those of willing classmates).  You
+are not expected to actually be able to double-spend successfully (if
+this were easy, bitcoin would not work well as a currency!), but should
+be able to learn something by attemting to do this.</p>
+
+<h3 id="submission-1:939ea9b9cc2ea0226c5f2d7200883cc7">Submission</h3>
+
+<p>Follow the submission instructions at the beginning of this page by
+8:29pm on Tuesday, 15 September.</p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/tools/github/">Getting Started with Github</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+ 
+   var disqus_url = '';
+   var disqus_shortname = 'davidevans'; 
+
+    
+   (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] ||  document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view
+    the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+
+   <div class="funding">
+University of Virginia<br>
+cs4501: Introduction to Cryptocurrency<br>
+Fall 2015
+   </div>
+
+	<p></p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

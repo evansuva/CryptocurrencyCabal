@@ -3,8 +3,7 @@ title: "Syllabus"
 weight: 2
 date: '2015-08-22'
 print: "syllabus.pdf"
-menu:
-   main:
+menu: "main"
 ---
 
 # Syllabus

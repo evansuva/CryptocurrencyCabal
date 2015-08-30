@@ -6,8 +6,22 @@
     <description>Recent content in News on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bitcoin Technology Piques Interest on Wall St.</title>
+      <link>http://bitcoin-class.org/news/nyt/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/news/nyt/</guid>
+      <description>&lt;p&gt;New York Times, &lt;a href=&#34;http://www.nytimes.com/2015/08/31/business/dealbook/bitcoin-technology-piques-interest-on-wall-st.html&#34;&gt;&lt;em&gt;Bitcoin Technology Piques Interest on Wall St.&lt;/em&gt;&lt;/a&gt;, 28 August 2015 (by Nathaniel Popper).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;hellip; the innovations that helped turn Bitcoin into the most popular virtual currency are now being viewed as a potentially enormous disruptive force for several industries, including accounting, music and journalism. Nowhere, though, are more money and resources being spent on the technology than on Wall Street — the very industry that Bitcoin was created to circumvent.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Ombuds: Using Bitcoin to make online messages &#39;immutable&#39;</title>

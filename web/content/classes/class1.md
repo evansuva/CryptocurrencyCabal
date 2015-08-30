@@ -4,8 +4,7 @@ date: '2015-08-26'
 print: "class1.pdf"
 nocomment: false
 weight: 3
-menu:
-  classes:
+menu: "classes"
 ---
 
 ## Schedule

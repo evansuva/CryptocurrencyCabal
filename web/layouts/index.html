@@ -8,8 +8,20 @@
             {{ partial "listtop.html" . }}
 
 
-<section id="main">
+<section id="news">
+   <div class="items">
+        <b>Cryptocurrency News</b>
+        {{ range .Data.Pages }}
+           {{ if eq .Section "news" }}
+         <h1 class="news-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+         </h1>
+           {{ end }}
+        {{ end }}
+   </div>
+</section>
 
+<section id="main">
       <div class="posts">
         {{ range .Data.Pages }}
         {{ if gt .Weight 2 }}
@@ -52,7 +64,6 @@
         {{ end }}
 	  {{ end }}
       </div>
-
 </section>
 
         {{ partial "footer.html" . }}

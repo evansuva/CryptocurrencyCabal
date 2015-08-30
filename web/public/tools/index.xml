@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Cryptocurrency Cabal</title>
+    <link>http://bitcoin-class.org/tools/</link>
+    <description>Recent content in Tools on Cryptocurrency Cabal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://bitcoin-class.org/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Started with Github</title>
+      <link>http://bitcoin-class.org/tools/github/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/tools/github/</guid>
+      <description>
+
+&lt;h1 id=&#34;getting-started-with-github:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Getting Started with Github&lt;/h1&gt;
+
+&lt;p&gt;For this course you will need to use &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt; to
+manage your code and submit your assignments.  &lt;a href=&#34;http://gitscm.com/&#34;&gt;Git&lt;/a&gt;
+is a widely used version control system originally developed by Linus
+Torvalds for use in managing development of the Linux operating system
+kernel.  Github is company that provides free web-hosting for git
+repositories.&lt;/p&gt;
+
+&lt;p&gt;Follow the instructions below to get started using git and set up the
+repository you will use for this class (we&amp;rsquo;ll talk more about git in
+class, but this should be enough to get started):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Register for a student github account: &lt;a href=&#34;https://github.com/edu&#34;&gt;https://github.com/edu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: you need to do this even if you already have a public github
+  account, unless you have a paid account to support non-public
+  repositories.  With the student account, you will be able to have
+  non-public repositories for free.&lt;/p&gt;
+
+&lt;p&gt;You will need to verify your email address (which must be a .edu
+  address), and then go back to the
+  &lt;a href=&#34;https://github.com/edu&#34;&gt;https://github.com/edu&lt;/a&gt; page to fill in a
+  form to request a student account.  You should then receive a
+  &amp;ldquo;Powerup get!&amp;rdquo; message from github, and be able to create private
+  repositories with your account.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set up git on the machine you will use for course assignments. Follow the instructions here:
+  &lt;a href=&#34;https://help.github.com/articles/set-up-git&#34;&gt;https://help.github.com/articles/set-up-git&lt;/a&gt;.
+  Follow the instructions to download and install a git client for your OS
+  (&lt;a href=&#34;http://mac.github.com/&#34;&gt;Mac&lt;/a&gt;,
+  &lt;a href=&#34;http://windows.github.com/&#34;&gt;Windows&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;using-git-for-ccc:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Using git for CCC&lt;/h1&gt;
+
+&lt;p&gt;For some of the assignments in this course, we will provide starting
+code in a git repository and you will need to use separate private
+repository for each assignment.  (After the assignment is due, you can
+make this repository public, both to share it as you wish, and to free
+up another private repository since the number of private repositories
+you get with your free education account is limited.)&lt;/p&gt;
+
+&lt;p&gt;Typically, you need to fetch the code skeleton from the respective
+public repository of the course every time before you start working.&lt;/p&gt;
+
+&lt;p&gt;The general process of working on projects is to (we&amp;rsquo;ll go through each
+step in detail below):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Create a private repository on github.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Clone&lt;/strong&gt; the repository, so you have a local working copy.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Get the code skeleton from the course repo, merge it into your
+working copy, and push to the main repository.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Edit code and text files in your local copy.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;push&lt;/strong&gt; the local changes to the main repository.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As you do the assignment, you should commit and push your changes regularly.&lt;/p&gt;
+
+&lt;h2 id=&#34;setting-up-the-repository:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Setting up the Repository&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;1. Create a new repository named &lt;code&gt;ps1&lt;/code&gt;.&lt;/b&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Visit &lt;a href=&#34;https://github.com/repositories/new&#34;&gt;https://github.com/repositories/new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select &amp;ldquo;Private&amp;rdquo; for the type of repository.  (If you got a student discount correctly, this should be available for free.  If it asks you for
+      a credit card, go back to step 1 of &lt;a href=&#34;|filename|github.md&#34;&gt;setting up github&lt;/a&gt;.)&lt;/li&gt;
+&lt;li&gt;Keep the &amp;ldquo;Initialize this repository with a README&amp;rdquo; unchecked, since you will fetch it later from a public repository.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;2. Clone the empty private repository to your working
+environment.&lt;/b&gt; Instead of &lt;em&gt;mygithubname&lt;/em&gt; below, use your github
+username.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+git clone https://github.com/mygithubname/ps1.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t set up SSH keys for github, you&amp;rsquo;ll need to enter your
+github username and password.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;3. Fetch the code skeleton from the course repository to your private
+repository.&lt;/b&gt; Enter the working directory of your empty repository and
+add a remote repository named &lt;code&gt;starting&lt;/code&gt;, merge the code, and push it to
+your private repository by executing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+git remote add starting git@github.com:CryptoCurrencyCabal/ps1.git
+git pull starting master
+git push --tags origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;working-with-files:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Working with Files&lt;/h2&gt;
+
+&lt;p&gt;Now you can write your own code in editor and save it to files. You can see what files have changed by running:
+&lt;code&gt;git status&lt;/code&gt;.  You should see something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+# On branch master
+# Untracked files:
+#   (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to include in what will be committed)
+#
+#   break_daves_key.go
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this example, nothing has been added to commit but untracked files
+are present.&lt;/p&gt;
+
+&lt;p&gt;To add the files to the main repository:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+git add break_daves_key.go
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should try running &lt;code&gt;git status&lt;/code&gt; again to see the files that will be
+committed.  Note that add stages the file in its current state!  If you
+modify the file after the add, the version of the file when you did the
+add is the version that will be committed.&lt;/p&gt;
+
+&lt;p&gt;Then,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+git commit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;commits the staged files to the main repository.  This will launch and
+editor for you to enter a commit message.  You can use &lt;code&gt;-m&lt;/code&gt; to provide a
+message at the command line instead:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+git commit -m &#39;I am no longer afraid of commitment!&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Your actual commit messages you use should be &lt;strong&gt;clear&lt;/strong&gt; and &lt;strong&gt;useful&lt;/strong&gt;.
+It is tempting to use &lt;a href=&#34;http://whatthecommit.com/&#34;&gt;lazy commit message&lt;/a&gt;,
+but you will regret this as your projects get more complex and code
+breaks in mysterious ways.&lt;/p&gt;
+
+&lt;p&gt;If you want to skip the two-stage commit, you can do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+git commit -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to automatically add all new and changed files to the commit.&lt;/p&gt;
+
+&lt;p&gt;At this point, the changes are stored in your local repository, but not
+yet in the main repository.  Once you have changes you want to push to
+the main repository:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After this, all the changes are now pushed to the main repository at
+github.  Visit your repository in github to see the result.&lt;/p&gt;
+
+&lt;p&gt;This seems like a lot of steps, but by providing a full local repository
+and making the steps of staging and pushing to the remote repository
+explicit, git provides developers with a lot of control over
+repositories that becomes very useful when several (or many) developers
+are working on the same project and trying to combine each others
+changes (or recover from mistakes).&lt;/p&gt;
+
+&lt;p&gt;There are many resources for learning more about git.  The free book,
+&lt;a href=&#34;http://git-scm.com/book/en/&#34;&gt;Pro Git&lt;/a&gt; by Scott Chacon is recommended.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

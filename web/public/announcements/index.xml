@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Announcements on Cryptocurrency Cabal</title>
+    <link>http://bitcoin-class.org/announcements/</link>
+    <description>Recent content in Announcements on Cryptocurrency Cabal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Office Hours Schedule</title>
+      <link>http://bitcoin-class.org/announcements/officehours/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/officehours/</guid>
+      <description>&lt;p&gt;Ori&amp;rsquo;s office hours have been moved to 5-6:30pm Monday (in Rice 442).
+All of our office hours are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ori, Mondays 5-6:30pm in Rice 442&lt;/li&gt;
+&lt;li&gt;Samee, 3:30-4:30pm in Rice 442&lt;/li&gt;
+&lt;li&gt;Dave, 2:30-3:30pm in Rice 507&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you can&amp;rsquo;t make the scheduled office hours, send email to arrange another time.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

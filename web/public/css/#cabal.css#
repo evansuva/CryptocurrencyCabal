@@ -198,6 +198,14 @@ h2.brand-group {
 }
 
 /* Posts */
+h1.news-title {
+	text-decoration: none;
+	color: #111111;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8rem;
+}
+
+
 h1.post-title a {
 	text-decoration: none;
 	color: #111111;
@@ -653,6 +661,13 @@ hr.thin {
    font-size: 14pt;
 }
 
+#news {
+   float: right;
+   width: 350px;
+   font-size: 12pt;
+   background: #EEE;
+}
+
 a.button_accent{margin:30px 30px;padding:10px 10px;display:inline-block;border:3px solid #0e94ec;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;text-transform:uppercase;color:#0e94ec;font-size:17px;font-weight:400;}
 a.button_accent:link{color:#0e94ec}
 a.button_accent:hover{color:#fff;background-color:#0e94ec;outline:0}
@@ -722,10 +737,43 @@ table, th, td {
      display:block;align:center;padding:5px;margin-bottom:5px;margin-top:5px;margin-left:50px;margin-right:50px;font-weight:bold;font-size:15px;text-align:center;background-color:#f5f570;border:1px solid #f55
 }
 
-.highlighted{display:block;align:center;padding:5px;margin-bottom:10px;margin-top:5px;margin-left:50px;margin-right:50px;font-size:15px;text-align:left;background-color:#f5f570;border:1px solid #f55}
+.highlighted{
+  display:block;align:center;padding:5px;margin-bottom:10px;margin-top:5px;margin-left:50px;margin-right:50px;font-size:15px;text-align:left;background-color:#f5f570;border:1px solid #f55
+}
+
 .smallnote{display:block;align:center;color: #888; margin-left:20px; margin-right:20px;}
 .littlenote{font-size:"-2";color:#777;}
 
 .smallquote{display:block;align:right;color: #444; margin-left:60px; margin-right:20px;}
 
 .separator{display:block;padding-top:2px;padding-bottom:0px;margin-right:10px;margin-bottom:6px;margin-top:4px; background-color:#eeeacd;}
+
+.todo {
+  display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#FFEFD5;border:1px solid #FFD700;
+}
+
+.disqus{display:block;margin-left:50px;margin-right:50px;margin-top:10px;background-color:#FFFEF3;font-size:10px;}
+
+.math{font-family:"Georgia", Palatino, serif}
+.gap{display:block;padding:50px;margin-bottom:10px;margin-top:10px;border:1px solid #666}
+.startaction{display:block;padding:3px;margin-bottom:2px;margin-top:2px;border:1px solid #c70; background-color:#f56530;}
+.indented{display:block;margin-left:10px;margin-top:2px;margin-bottom:10px;}
+.endaction{display:block;padding:3px;padding-bottom:2px;bottom-padding:10px;margin-top:2px;border:1px solid #c70; background-color:#f56530;}
+.biggap{display:block;padding:100px;margin-bottom:10px;margin-top:10px;border:1px solid #666}
+
+.caption {
+   font-size: 11px; color: #111; margin-left: 60px; margin-right: 30px; margin-top: 0px; margin-bottom: 20px;
+}
+
+.note{font-family:'Open Sans';font-size=9pt;line-height=7pt;margin-top:5px;display:block;color:#222;}
+.commentstag{font-family:'Open Sans';text-align:right;font-size=9pt;line-height=7pt;margin-top:5px;display:block;color:#222;}
+.hide{display:none;}
+.show{display:block;}
+.invisible{visibility:hidden;}
+.exercise{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#FFDAB9;border:1px
+solid #f55}
+.discussion{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#B0E0E6;border:1px solid #55f}
+.discuss{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#B0E0E6;border:1px solid #55f}
+.problem{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#FFFAD2;border:1px solid #ffd700}
+.challenge{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#F0F076;border:1px solid #f50}
+

@@ -10,21 +10,42 @@
     <nav class="nav">
       <ul class="nav-list">
         {{ range .Site.Menus.main }}
-   {{ if ge .Weight 10 }}
-          <li class="nav-sub-item">
-   {{ if eq $.Title .Name }}
-         <span class="nav-sub-item-selected">{{ .Name }}</span>
-   {{ else }}
-         <a href="{{ .URL }}">{{ .Name }}</a>
-   {{ end }}
-{{ else }}
           <li class="nav-item">
-{{ if eq $.Title .Name }}
-<span class="nav-item-selected">{{ .Name }}</span></a>
-{{ else }}
-<a href="{{ .URL }}">{{ .Name }}</a>
-{{ end }}
-{{ end }}
+          {{ if eq $.Title .Name }}
+              <span class="nav-item-selected">{{ .Name }}</span></a>
+          {{ else }}
+              <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <b>Assignments</b>
+    <nav class="nav">
+      <ul class="nav-list">
+        {{ range .Site.Menus.assignments }}
+          <li class="nav-item">
+          {{ if eq $.Title .Name }}
+              <span class="nav-item-selected">{{ .Name }}</span></a>
+          {{ else }}
+              <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <b>Classes</b>
+    <nav class="nav">
+      <ul class="nav-list">
+        {{ range .Site.Menus.classes }}
+          <li class="nav-item">
+          {{ if eq $.Title .Name }}
+              <span class="nav-item-selected">{{ .Name }}</span></a>
+          {{ else }}
+              <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
           </li>
         {{ end }}
       </ul>

@@ -1,8 +1,8 @@
-+++
-title = "Office Hours Schedule"
-weight = 6
-date = '2015-08-27'
-+++
+---
+title: "Office Hours Schedule"
+weight: 3
+date: 2015-08-28
+---
 
 Ori's office hours have been moved to 5-6:30pm Monday (in Rice 442).
 All of our office hours are:
@@ -12,3 +12,5 @@ All of our office hours are:
 - Dave, 2:30-3:30pm in Rice 507
 
 If you can't make the scheduled office hours, send email to arrange another time.
+
+<!--more-->

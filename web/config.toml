@@ -15,7 +15,7 @@ DISQUS_SITENAME = "davidevans"
     noauthor = true
     noread = true
     nopaging=true
-    notoc=true
+    notoc = true
 
 [[menu.main]]
 

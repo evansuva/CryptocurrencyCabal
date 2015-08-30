@@ -198,6 +198,14 @@ h2.brand-group {
 }
 
 /* Posts */
+h1.news-title {
+	text-decoration: none;
+	color: #111111;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8rem;
+}
+
+
 h1.post-title a {
 	text-decoration: none;
 	color: #111111;
@@ -653,6 +661,18 @@ hr.thin {
    font-size: 14pt;
 }
 
+#news {
+   float: right;
+   width: 350px;
+   font-size: 12pt;
+   background: #EEE;
+   padding: 10px 10px 10px 10px;
+   margin-left: 5px;
+   margin-top: 5px;
+   margin-right: 5px;
+   margin-bottom: 5px;
+}
+
 a.button_accent{margin:30px 30px;padding:10px 10px;display:inline-block;border:3px solid #0e94ec;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;text-transform:uppercase;color:#0e94ec;font-size:17px;font-weight:400;}
 a.button_accent:link{color:#0e94ec}
 a.button_accent:hover{color:#fff;background-color:#0e94ec;outline:0}
@@ -748,4 +768,30 @@ table, th, td {
 
 .caption {
    font-size: 11px; color: #111; margin-left: 60px; margin-right: 30px; margin-top: 0px; margin-bottom: 20px;
+}
+
+.note{font-family:'Open Sans';font-size=9pt;line-height=7pt;margin-top:5px;display:block;color:#222;}
+.commentstag{font-family:'Open Sans';text-align:right;font-size=9pt;line-height=7pt;margin-top:5px;display:block;color:#222;}
+.hide{display:none;}
+.show{display:block;}
+.invisible{visibility:hidden;}
+.exercise{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#FFDAB9;border:1px
+solid #f55}
+.discussion{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#B0E0E6;border:1px solid #55f}
+.discuss{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#B0E0E6;border:1px solid #55f}
+.problem{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#FFFAD2;border:1px solid #ffd700}
+.challenge{display:block;padding:5px;margin-bottom:10px;margin-top:10px;background-color:#F0F076;border:1px solid #f50}
+
+
+.code {
+  font-size: 0.8em
+}
+
+.hljs {
+  font-size: 0.75em;
+  width: 800px;
+}
+
+.hljs-number, .hljs-built_in {
+  color: #fff;
 }

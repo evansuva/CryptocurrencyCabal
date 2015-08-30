@@ -21,7 +21,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/cabal.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
@@ -35,6 +34,8 @@
   <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 
   {{ partial "syntaxhighlight.html" . }}
+
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/cabal.css">
 
   {{ if .Params.lightbox }}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
