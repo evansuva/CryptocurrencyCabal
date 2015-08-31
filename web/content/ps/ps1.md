@@ -82,8 +82,8 @@ are actually publicly visible.
 transferred to students in the class, starting from your transactions.
 
 a. Identify the bitcoin addresses of what are likely to be other
-students in the class (you could potentially find 27, but it is enough
-to find 3). 
+students in the class (you could potentially find all of them, but it is
+enough to find 3).
 
 b. Trace back the source of the bitcoin as far as you can.  Bonus points
 if you can figure out from which exchange the bitcoin was purchased and

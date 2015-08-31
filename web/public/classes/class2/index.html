@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Class 2: Cryptography // Cryptocurrency Cabal
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.15-DEV" />
+
+  <meta property="og:title" content="Class 2: Cryptography" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://bitcoin-class.org/classes/class2/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rotunda.png">
+  <link rel="shortcut icon" href="/rotunda.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Cryptocurrency Cabal" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  <link rel="stylesheet" href="http://bitcoin-class.org/css/cabal.css">
+
+  
+ 
+  
+<script>
+function showText(show,hide)
+{
+    document.getElementById(show).className = "show";
+    document.getElementById(hide).className = "hide";
+}
+</script>
+ 
+
+  
+
+  
+</head>
+
+<body>
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+
+    <a href="http://bitcoin-class.org"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
+    <h2 class="brand-tagline">University of Virginia
+    <br>cs4501 Fall 2015
+    </h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href=""></a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/syllabus/">Syllabus</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b>Assignments</b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/registration/">Registration</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b>Classes</b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class1/">Class 1: What is Money?</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+
+    
+
+  </div>
+</div>
+
+	
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+    <section id="main">
+            
+            	<span class="post-date">
+                	31 Aug 2015
+            	</span>
+            	
+            
+                <div class="phighlight">
+                     <a href="/class2.pdf">PDF for printing</a>
+                </div>
+            
+
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<h2 id="schedule:59cb8283a9bd282131a45da3029e68b4">Schedule</h2>
+
+<p><div class="todo">
+Before the next class (Wednesday, Sept 2):</p>
+
+<ul>
+<li><p><strong>Read:</strong>
+<a href="https://github.com/aantonop/bitcoinbook/blob/develop/ch03.asciidoc"><em>Chapter 3: The Bitcoin Client</em></a>
+and
+<a href="https://github.com/aantonop/bitcoinbook/blob/develop/ch04.asciidoc"><em>Chapter 4: Keys, Addresses, Wallets</em></a>
+from Andreas M. Antonopoulos, <a href="https://github.com/aantonop/bitcoinbook"><em>Mastering Bitcoin: Unlocking Digital
+Cryptocurrencies</em></a> book (also
+available <a href="http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042">in
+print</a>).</p></li>
+
+<li><p><strong>Read:</strong> <a href="http://bitcoin-class.org/docs/princeton-book/chapter_1.pdf"><em>Chapter 1: Introduction to Cryptography and
+Cryptocurrencies</em></a>,
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. <a href="https://piazza.com/princeton/spring2015/btctech/resources"><em>Bitcoin and Cryptocurrency
+Technologies</em></a>.
+This chapter starts with cryptographic hashing and authenticated data
+structures (which we are deferring until until later, but is still worth
+reading now), and Section 1.3 covers digital signatures.</p></li>
+</ul>
+
+<p><strong>Monday, September 7</strong>: Check-up 1.  This will be a short in-class quiz
+  to test your understanding of the main concepts covered so far.  It
+  will cover material from the readings and classes 1-3.</p>
+
+<p><strong>Tuesday, September 15</strong> (8:29pm): <a href="http://www.bitcoin-class.org/ps/ps1.md">Problem Set 1</a> due.</p>
+
+<p></div></p>
+
+<!--
+<center> <iframe
+src="//www.slideshare.net/slideshow/embed_code/43552674" width="476"
+height="400" frameborder="0" marginwidth="0" marginheight="0"
+scrolling="no"></iframe><br> 
+<div class="caption"> Note: due to a bug in
+slideshare's updated player, ink markings no longer appear in the
+viewer.  <br>If you download the slides, they are present though.
+Hopefully, the player will be fixed someday.  </div>
+
+</center>
+-->
+
+<!--
+how is it possible to own something digital?
+
+- copyright!
+
+England
+
+1662 - Licensing of the Press Act
+
+guild of printers, "Stationer's Company" (formed in 1403, royal charter in 1557)
+granted monopoly on printing [cf. Chinese granting monopoly on salt production]
+exclusive right to print - responsible for censoring
+
+ended in 1694 - no restrictions        
+
+
+Act of Queen Anne
+-->
+
+<h2 id="cryptography:59cb8283a9bd282131a45da3029e68b4">Cryptography</h2>
+
+<p><em>kryptos</em> is a Greek root meaning hidden (&ldquo;secret&rdquo;)</p>
+
+<p><em>crypto</em> + <em>graphy</em> = &ldquo;secret writing&rdquo;</p>
+
+<p><em>Decryption</em> is what the intended receiver does.<br />
+<em>Cryptanalysis</em> is what an attacker does.</p>
+
+<p>How are cryptography and security related?
+<div class="gap"></p>
+
+<p></div></p>
+
+<h3 id="simple-message-cryptosystem:59cb8283a9bd282131a45da3029e68b4">Simple Message Cryptosystem</h3>
+
+<p>Two functions:</p>
+
+<ul>
+<li><strong>Encrypt:</strong> <span class="math"><em>E</em>(<em>m</em>: byte[]) &rarr; byte[]</span>.  The input is called the
+<strong>plaintext</strong>; the output is called the <strong>ciphertext</strong>.</li>
+<li><strong>Decrypt:</strong> <span class="math"><em>D</em>(<em>c</em>: byte[]) &rarr; byte[]</span>.</li>
+</ul>
+
+<p>Required properties:</p>
+
+<ul>
+<li><strong>Correctness:</strong> for all possible messages, <span class="math"><em>m</em>, <em>D</em>(<em>E</em>(<em>m</em>)) = <em>m</em></span></li>
+<li><strong>Security:</strong> given the output of <span class="math"><em>E</em>(<em>m</em>)</span>, it is &ldquo;hard&rdquo; to learn anything interesting about <span class="math"><em>m</em></span>.<br /></li>
+</ul>
+
+<p><a href="http://web.mit.edu/newsoffice/2013/goldwasser-and-micali-win-turing-award-0313.html"><em>Goldwasser and Micali win Turing Award: Team honored for
+‘revolutionizing the science of
+cryptography&rsquo;</em></a>,
+MIT News, 13 March 2013.</p>
+
+<p>Their paper that introduced semantic security notions is:
+<a href="http://groups.csail.mit.edu/cis/pubs/shafi/1982-stoc.pdf"><em>Probabilistic Encryption and How to Play Mental Poker Keeping Secret
+All Partial
+Information</em></a>,
+ACM Symposium on Theory of Computing, 1982.  (We will not get into
+formal security definitions or proofs in this class, but you should take
+<a href="http://www.cs.virginia.edu/~mohammad/">Mohammad Mahmoody</a>&rsquo;s class to
+learn them.)</p>
+
+<h3 id="keyed-symmetric-cryptosystem:59cb8283a9bd282131a45da3029e68b4">Keyed Symmetric Cryptosystem</h3>
+
+<p>Claude Shannon, <a href="http://netlab.cs.ucla.edu/wiki/files/shannon1949.pdf"><em>Communication Theory of Secrecy Systems</em></a>, 1949 (work done during World War II, but declassified later).</p>
+
+<p>Two functions:</p>
+
+<ul>
+<li><strong>Encrypt:</strong> <span class="math"><em>E</em>(<em><font color="red">k</font></em>: byte[], <em>m</em>: byte[]) &rarr; byte[]</span>.</li>
+<li><strong>Decrypt:</strong> <span class="math"><em>D</em>(<em><font color="red">k</font></em>, <em>c</em>: byte[]) &rarr; byte[]</span>.</li>
+</ul>
+
+<p>Required properties:</p>
+
+<ul>
+<li><strong>Correctness:</strong> for all possible messages, <span class="math"><em>m</em></span>, and keys, <span class="math"><em>k</em></span>, <span class="math"><em>D</em>(<em><font color="red">k</font></em>, <em>E</em>(<em><font color="red">k</font></em>, <em>m</em>)) = <em>m</em></span>.</li>
+<li><strong>Security:</strong> given <span class="math"><em>E</em></span>, <span class="math"><em>D</em></span>, and the output of <span class="math"><em>E</em>(<font color="red"><em>k</em></font>, <em>m</em>)</span> it is &ldquo;hard&rdquo; to learn anything interesting about <span class="math"><em>m</em></span> (without knowing <span class="math"><font color="red"><em>k</em></font></span>).</li>
+</ul>
+
+<p>Are these properties enough to be secure against an active attacker?
+<div class="gap"></p>
+
+<p></div></p>
+
+<p><strong>Keyspace:</strong> set of all possible keys.  Assume (hopefully for
+  user!) that key is drawn uniformly from this set.</p>
+
+<p><strong>Brute Force Attack:</strong> for all possible keys, <span
+  class="math"><em>k</em><sub>i</sub></span>, try computing <span
+  class="math"><em>D</em>(<em>k</em><sub>i</sub>)</span> to see if it looks like a
+  reasonable plaintext.</p>
+
+<p>In order for a brute force attack to succeed, what properties are
+necessary about (1) the keyspace and (2) the message space?</p>
+
+<div class="gap"></div>
+
+<p>Where is symmetric cryptography used in your bitcoin wallet?</p>
+
+<div class="biggap"></div>
+
+<!--page-->
+
+<h2 id="asymmetric-cryptosystems:59cb8283a9bd282131a45da3029e68b4">Asymmetric Cryptosystems</h2>
+
+<p><strong>Asymmetric cryptosystems</strong> use <em>different functions</em> for encrypting
+  and decrypting, with the property that revealing the encryption
+  function does not reveal the decryption function.  With Kerckhoff&rsquo;s
+  Principle, this means there are different keys for encryption and
+  decryption.</p>
+
+<ul>
+<li><p><strong>Generate:</strong> produce key pair, <span class="math">(<em><font color="green">KU<sub>X</sub></font></em>, <em><font color="red">KR<sub>X</sub></font></em>)</span>, and publish the public key, <span class="math"><em><font color="green">KU<sub>X</sub></font></em></span>.</p></li>
+
+<li><p><strong>Encrypt:</strong> <span class="math"><em>E</em>(<em><font color="green">KU<sub>X</sub></font></em>: byte[], <em>m</em>: byte[]) &rarr; byte[]</span>.</p></li>
+
+<li><p><strong>Decrypt:</strong> <span class="math"><em>D</em>(<em><font color="red">KR<sub>X</sub></font></em>, <em>c</em>: byte[]) &rarr; byte[]</span>.</p></li>
+</ul>
+
+<p><strong>Messages:</strong> Sender encrypts a message with the recipient&rsquo;s public key.
+  Recipient decrypts the message using her private key.</p>
+
+<p><strong>Signatures:</strong> Signer encrypts a message with her own private key.
+  Verifier checks the message using the signer&rsquo;s public key.</p>
+
+<p>How can we use asymmetric cryptosystems to <em>prove</em> ownership?
+<div class="gap"></div></p>
+
+<p>How can we use asymmetric cryptosystems to <em>transfer</em> ownership?
+<div class="gap"></div></p>
+
+<p>Where is asymmetric cryptography used in your wallet?
+<div class="gap"></div></p>
+
+<p>Assuming we have a strong asymmetric cryptosystem, what hard problems are left
+to solve to make a cryptocurrency?</p>
+
+<div class="gap"></div>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/syllabus/">Syllabus</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/announcements/officehours/">Office Hours Schedule</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+ 
+   var disqus_url = '';
+   var disqus_shortname = 'davidevans'; 
+
+    
+   (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] ||  document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view
+    the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+
+   <div class="funding">
+University of Virginia<br>
+cs4501: Introduction to Cryptocurrency<br>
+Fall 2015
+   </div>
+
+	<p></p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>
