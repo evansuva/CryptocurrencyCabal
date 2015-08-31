@@ -165,6 +165,11 @@ Go&lt;/a&gt;.  The &lt;a href=&#34;https://gobyexample.com/&#34;&gt;Go by
 Example&lt;/a&gt; site is very helpful.  For more
 documentation, visit &lt;a href=&#34;https://golang.org/doc/&#34;&gt;https://golang.org/doc/&lt;/a&gt;.&lt;/p&gt;
 
+&lt;p&gt;Start by &lt;a href=&#34;https://golang.org/doc/install&#34;&gt;downloading and installing
+Go&lt;/a&gt;.  The latest version is go1.5, which
+is the version you should use.  After that,
+&lt;a href=&#34;https://github.com/btcsuite/btcd&#34;&gt;follow the directions to install btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
+
 &lt;!--
 # Going Gets Good
 
@@ -282,7 +287,7 @@ should assume that you are an ultra-paranoid multi-billionaire who
 intends to transfer her entire fortune to the generated address.&lt;br /&gt;
     &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;generating-a-vanity-key:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Generating a Vanity Key&lt;/h2&gt;
+&lt;h2 id=&#34;generating-a-vanity-address:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Generating a Vanity Address&lt;/h2&gt;
 
 &lt;p&gt;Anyone can have a bitcoin address like
 &lt;code&gt;1H7tu2qUAyyr5aX1WA17eyvbetAGyqxfKZ&lt;/code&gt; or
@@ -305,15 +310,15 @@ public bitcoin address.  In deciding how vain you want to be for the
 next exercise, think about how the running time scales with the number
 of strings that match the target pattern.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 7.&lt;/strong&gt; Use your &lt;code&gt;generateVanityAddress&lt;/code&gt; function to create
-your own vanity address containing your first or last name (or if that
-is too long it could just be your initials).  If you are extra vain,
-create a address where your name appears at the beginning (after the
-initial &lt;code&gt;1&lt;/code&gt;).  (Note that uppercase &amp;lsquo;O&amp;rsquo; and &amp;lsquo;I&amp;rsquo; and lowercase &amp;lsquo;l&amp;rsquo; are
-not used in any address, so if your name includes these letters you will
-have to be creative.)
-  &lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 7.&lt;/strong&gt; Use your &lt;code&gt;generateVanityAddress&lt;/code&gt;
+function to create your own vanity address.  Its up to you to decide
+what to put in your vanity address, but it should be clear that your
+address is not a typical random one.  If you are extra vain, create a
+address where your name appears at the beginning (after the initial
+&lt;code&gt;1&lt;/code&gt;).  (Note that uppercase &amp;lsquo;O&amp;rsquo; and &amp;lsquo;I&amp;rsquo; and lowercase &amp;lsquo;l&amp;rsquo; are not used
+in any address, so if your name includes these letters you will have to
+be creative.)&lt;br /&gt;
+   &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
 &lt;strong&gt;Problem 8.&lt;/strong&gt;   Is your vanity address more or less secure than the first address you generated?
@@ -357,9 +362,15 @@ along with the transaction ID lets us uniquely identify transaction
 outputs. This is important if you want to use those outputs in a new
 transaction.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;b&gt;Problem 10.&lt;/b&gt; Transfer the coin from your vanity address back to your wallet. To do this you can run &lt;code&gt;spend.go&lt;/code&gt; in  ps1. You can provide the parameters needed for the transaction at the command line (it is not necessary to modify the code).&lt;br /&gt;
-   &lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem 10.&lt;/strong&gt; Transfer some bitcoin from your vanity address to someone
+else in the class (you can use one of the addresses you identified in
+Problem 2). To do this you can run &lt;code&gt;spend.go&lt;/code&gt; in ps1. You can provide
+the parameters needed for the transaction at the command line (it is not
+necessary to modify the code).&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;If done correctly the script should look this when executed:&lt;/p&gt;
 
@@ -367,7 +378,7 @@ transaction.&lt;/p&gt;
     -txid=&amp;quot;6bf98ac2e1a25ea9c2951bb6a40262e054514236f864a3414c16fe6b3a5f3f62&amp;quot; \
     -vout=0 \
     -privkey=&amp;quot;8d66a9f85c4f737b231d1af0bd917c8e02f05d616f26c41f269a194a10c29029&amp;quot; \
-    -address=&amp;quot;1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB&amp;quot;
+    -toaddress=&amp;quot;1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB&amp;quot;
 
 Here is your raw bitcoin transaction:
 0100000001623f5f3a6bfe164c41a364f836425154e06202a4b61b95c2a95ea2e1c28af96b000000006a47304402202487724e5e42e60b5d8d98636797339b09db8c70452959cf9c48a0be1a45aba302203465c00d34a190dd1294c9c1561af7c0bcc2b0d452ae74b6d126ad06e0f03624012103c4a967e4e04f32f6b25b723c4d994bcc5f1f6db2cd7757d25643af0d1a1b4c1effffffff01905f0100000000001976a91488989f2c91337ad5241abedeafe8ed96fa28940488ac00000000

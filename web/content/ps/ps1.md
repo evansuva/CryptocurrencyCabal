@@ -154,6 +154,12 @@ Go](https://tour.golang.org/welcome/1).  The [Go by
 Example](https://gobyexample.com/) site is very helpful.  For more
 documentation, visit [https://golang.org/doc/](https://golang.org/doc/).
 
+Start by [downloading and installing
+Go](https://golang.org/doc/install).  The latest version is go1.5, which
+is the version you should use.  After that, 
+[follow the directions to install btcd](https://github.com/btcsuite/btcd) from btcsuite.
+
+
 <!--
 # Going Gets Good
 
@@ -267,7 +273,7 @@ should assume that you are an ultra-paranoid multi-billionaire who
 intends to transfer her entire fortune to the generated address.  
     </div>
 
-## Generating a Vanity Key
+## Generating a Vanity Address
 
 Anyone can have a bitcoin address like
 `1H7tu2qUAyyr5aX1WA17eyvbetAGyqxfKZ` or
@@ -290,15 +296,15 @@ public bitcoin address.  In deciding how vain you want to be for the
 next exercise, think about how the running time scales with the number
 of strings that match the target pattern.
 
-  <div class="problem"> 
-**Problem 7.** Use your `generateVanityAddress` function to create
-your own vanity address containing your first or last name (or if that
-is too long it could just be your initials).  If you are extra vain,
-create a address where your name appears at the beginning (after the
-initial `1`).  (Note that uppercase 'O' and 'I' and lowercase 'l' are
-not used in any address, so if your name includes these letters you will
-have to be creative.)
-  </div>
+   <div class="problem"> **Problem 7.** Use your `generateVanityAddress`
+function to create your own vanity address.  Its up to you to decide
+what to put in your vanity address, but it should be clear that your
+address is not a typical random one.  If you are extra vain, create a
+address where your name appears at the beginning (after the initial
+`1`).  (Note that uppercase 'O' and 'I' and lowercase 'l' are not used
+in any address, so if your name includes these letters you will have to
+be creative.)  
+   </div>
 
    <div class="problem">
 **Problem 8.**   Is your vanity address more or less secure than the first address you generated?
@@ -343,7 +349,13 @@ outputs. This is important if you want to use those outputs in a new
 transaction.
 
    <div class="problem">
-<b>Problem 10.</b> Transfer the coin from your vanity address back to your wallet. To do this you can run `spend.go` in  ps1. You can provide the parameters needed for the transaction at the command line (it is not necessary to modify the code).  
+
+**Problem 10.** Transfer some bitcoin from your vanity address to someone
+else in the class (you can use one of the addresses you identified in
+Problem 2). To do this you can run `spend.go` in ps1. You can provide
+the parameters needed for the transaction at the command line (it is not
+necessary to modify the code).
+
    </div>
 
 If done correctly the script should look this when executed:
@@ -353,7 +365,7 @@ If done correctly the script should look this when executed:
     -txid="6bf98ac2e1a25ea9c2951bb6a40262e054514236f864a3414c16fe6b3a5f3f62" \
     -vout=0 \
     -privkey="8d66a9f85c4f737b231d1af0bd917c8e02f05d616f26c41f269a194a10c29029" \
-    -address="1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB"
+    -toaddress="1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB"
 
 Here is your raw bitcoin transaction:
 0100000001623f5f3a6bfe164c41a364f836425154e06202a4b61b95c2a95ea2e1c28af96b000000006a47304402202487724e5e42e60b5d8d98636797339b09db8c70452959cf9c48a0be1a45aba302203465c00d34a190dd1294c9c1561af7c0bcc2b0d452ae74b6d126ad06e0f03624012103c4a967e4e04f32f6b25b723c4d994bcc5f1f6db2cd7757d25643af0d1a1b4c1effffffff01905f0100000000001976a91488989f2c91337ad5241abedeafe8ed96fa28940488ac00000000
