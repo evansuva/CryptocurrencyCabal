@@ -307,6 +307,11 @@ Go</a>.  The <a href="https://gobyexample.com/">Go by
 Example</a> site is very helpful.  For more
 documentation, visit <a href="https://golang.org/doc/">https://golang.org/doc/</a>.</p>
 
+<p>Start by <a href="https://golang.org/doc/install">downloading and installing
+Go</a>.  The latest version is go1.5, which
+is the version you should use.  After that,
+<a href="https://github.com/btcsuite/btcd">follow the directions to install btcd</a> from btcsuite.</p>
+
 <!--
 # Going Gets Good
 
@@ -424,7 +429,7 @@ should assume that you are an ultra-paranoid multi-billionaire who
 intends to transfer her entire fortune to the generated address.<br />
     </div></p>
 
-<h2 id="generating-a-vanity-key:939ea9b9cc2ea0226c5f2d7200883cc7">Generating a Vanity Key</h2>
+<h2 id="generating-a-vanity-address:939ea9b9cc2ea0226c5f2d7200883cc7">Generating a Vanity Address</h2>
 
 <p>Anyone can have a bitcoin address like
 <code>1H7tu2qUAyyr5aX1WA17eyvbetAGyqxfKZ</code> or
@@ -447,15 +452,15 @@ public bitcoin address.  In deciding how vain you want to be for the
 next exercise, think about how the running time scales with the number
 of strings that match the target pattern.</p>
 
-<p><div class="problem">
-<strong>Problem 7.</strong> Use your <code>generateVanityAddress</code> function to create
-your own vanity address containing your first or last name (or if that
-is too long it could just be your initials).  If you are extra vain,
-create a address where your name appears at the beginning (after the
-initial <code>1</code>).  (Note that uppercase &lsquo;O&rsquo; and &lsquo;I&rsquo; and lowercase &lsquo;l&rsquo; are
-not used in any address, so if your name includes these letters you will
-have to be creative.)
-  </div></p>
+<p><div class="problem"> <strong>Problem 7.</strong> Use your <code>generateVanityAddress</code>
+function to create your own vanity address.  Its up to you to decide
+what to put in your vanity address, but it should be clear that your
+address is not a typical random one.  If you are extra vain, create a
+address where your name appears at the beginning (after the initial
+<code>1</code>).  (Note that uppercase &lsquo;O&rsquo; and &lsquo;I&rsquo; and lowercase &lsquo;l&rsquo; are not used
+in any address, so if your name includes these letters you will have to
+be creative.)<br />
+   </div></p>
 
 <p><div class="problem">
 <strong>Problem 8.</strong>   Is your vanity address more or less secure than the first address you generated?
@@ -499,9 +504,15 @@ along with the transaction ID lets us uniquely identify transaction
 outputs. This is important if you want to use those outputs in a new
 transaction.</p>
 
-<p><div class="problem">
-<b>Problem 10.</b> Transfer the coin from your vanity address back to your wallet. To do this you can run <code>spend.go</code> in  ps1. You can provide the parameters needed for the transaction at the command line (it is not necessary to modify the code).<br />
-   </div></p>
+<p><div class="problem"></p>
+
+<p><strong>Problem 10.</strong> Transfer some bitcoin from your vanity address to someone
+else in the class (you can use one of the addresses you identified in
+Problem 2). To do this you can run <code>spend.go</code> in ps1. You can provide
+the parameters needed for the transaction at the command line (it is not
+necessary to modify the code).</p>
+
+<p></div></p>
 
 <p>If done correctly the script should look this when executed:</p>
 
@@ -509,7 +520,7 @@ transaction.</p>
     -txid=&quot;6bf98ac2e1a25ea9c2951bb6a40262e054514236f864a3414c16fe6b3a5f3f62&quot; \
     -vout=0 \
     -privkey=&quot;8d66a9f85c4f737b231d1af0bd917c8e02f05d616f26c41f269a194a10c29029&quot; \
-    -address=&quot;1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB&quot;
+    -toaddress=&quot;1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB&quot;
 
 Here is your raw bitcoin transaction:
 0100000001623f5f3a6bfe164c41a364f836425154e06202a4b61b95c2a95ea2e1c28af96b000000006a47304402202487724e5e42e60b5d8d98636797339b09db8c70452959cf9c48a0be1a45aba302203465c00d34a190dd1294c9c1561af7c0bcc2b0d452ae74b6d126ad06e0f03624012103c4a967e4e04f32f6b25b723c4d994bcc5f1f6db2cd7757d25643af0d1a1b4c1effffffff01905f0100000000001976a91488989f2c91337ad5241abedeafe8ed96fa28940488ac00000000
