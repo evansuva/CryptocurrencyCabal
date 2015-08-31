@@ -4,7 +4,7 @@ date: '2015-08-31'
 print: "class2.pdf"
 nocomment: false
 weight: 3
-menu: "hidden"
+menu: "classes"
 ---
 ## Schedule 
 
@@ -20,7 +20,8 @@ Cryptocurrencies_](https://github.com/aantonop/bitcoinbook) book (also
 available [in
 print](http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042)).
 You can skim most of Chapter 3, especially the parts about installing
-bitcoin core, but should read Chapter 4.
+bitcoin core, but should read Chapter 4.  (You should have already read
+Chapters 1 and 2.)
 
 - **Read:** [_Chapter 1: Introduction to Cryptography and
 Cryptocurrencies_](http://bitcoin-class.org/docs/princeton-book/chapter_1.pdf),
@@ -40,18 +41,18 @@ reading now), and Section 1.3 covers digital signatures.
    </div>
 <!--more-->
 
-<!--
-<center> <iframe
-src="//www.slideshare.net/slideshow/embed_code/43552674" width="476"
-height="400" frameborder="0" marginwidth="0" marginheight="0"
-scrolling="no"></iframe><br> 
-<div class="caption"> Note: due to a bug in
-slideshare's updated player, ink markings no longer appear in the
-viewer.  <br>If you download the slides, they are present though.
-Hopefully, the player will be fixed someday.  </div>
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ppf9BW9JlnIXC5"
+width="476" height="400" frameborder="0" marginwidth="0"
+marginheight="0" scrolling="no"></iframe>
+
+   <div class="caption">
+Note: ink markings may not appear in the
+embedded viewer.  To see them, [download the slides](/classes/class2-post.pptx).
+   </div>
 
 </center>
--->
+
 
 <!--
 how is it possible to own something digital?
@@ -150,6 +151,8 @@ Where is symmetric cryptography used in your bitcoin wallet?
 <div class="biggap"></div>
 
 <!--page-->
+
+(This material was not actually covered in class 2, but will be covered in class 3.)
 
 ## Asymmetric Cryptosystems
 
