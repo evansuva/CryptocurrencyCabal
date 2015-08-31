@@ -23,14 +23,16 @@
 Before the next class (Wednesday, Sept 2):&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Read:&lt;/strong&gt;
-&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch03.asciidoc&#34;&gt;&lt;em&gt;Chapter 3: The Bitcoin Client&lt;/em&gt;&lt;/a&gt;
-and
-&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch04.asciidoc&#34;&gt;&lt;em&gt;Chapter 4: Keys, Addresses, Wallets&lt;/em&gt;&lt;/a&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch03.asciidoc&#34;&gt;&lt;em&gt;Chapter 3: The Bitcoin
+Client&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch04.asciidoc&#34;&gt;&lt;em&gt;Chapter 4: Keys, Addresses,
+Wallets&lt;/em&gt;&lt;/a&gt;
 from Andreas M. Antonopoulos, &lt;a href=&#34;https://github.com/aantonop/bitcoinbook&#34;&gt;&lt;em&gt;Mastering Bitcoin: Unlocking Digital
 Cryptocurrencies&lt;/em&gt;&lt;/a&gt; book (also
 available &lt;a href=&#34;http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042&#34;&gt;in
-print&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+print&lt;/a&gt;).
+You can skim most of Chapter 3, especially the parts about installing
+bitcoin core, but should read Chapter 4.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_1.pdf&#34;&gt;&lt;em&gt;Chapter 1: Introduction to Cryptography and
 Cryptocurrencies&lt;/em&gt;&lt;/a&gt;,
