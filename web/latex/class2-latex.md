@@ -5,14 +5,16 @@
    <div class="todo">
 Before the next class (Wednesday, Sept 2):
 
-- **Read:** 
-[_Chapter 3: The Bitcoin Client_](https://github.com/aantonop/bitcoinbook/blob/develop/ch03.asciidoc)
-and
-[_Chapter 4: Keys, Addresses, Wallets_](https://github.com/aantonop/bitcoinbook/blob/develop/ch04.asciidoc)
+- **Read:** [_Chapter 3: The Bitcoin
+Client_](https://github.com/aantonop/bitcoinbook/blob/develop/ch03.asciidoc)
+and [_Chapter 4: Keys, Addresses,
+Wallets_](https://github.com/aantonop/bitcoinbook/blob/develop/ch04.asciidoc)
 from Andreas M. Antonopoulos, [_Mastering Bitcoin: Unlocking Digital
 Cryptocurrencies_](https://github.com/aantonop/bitcoinbook) book (also
 available [in
-print](http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042)).  
+print](http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042)).
+You can skim most of Chapter 3, especially the parts about installing
+bitcoin core, but should read Chapter 4.
 
 - **Read:** [_Chapter 1: Introduction to Cryptography and
 Cryptocurrencies_](http://bitcoin-class.org/docs/princeton-book/chapter_1.pdf),
