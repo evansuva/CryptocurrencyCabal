@@ -248,8 +248,7 @@ see that it produces a different key pair each time.)&lt;/p&gt;
 class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;, and finding the corresponding public key by
 &amp;ldquo;multiplying&amp;rdquo; it by &lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;, the generator point.
 (Multiplication here is not standard multiplication, but multiplication
-on the elliptic curve, as discussed in &lt;a href=&#34;No page found with path or logical name &#34;classes/class3.md&#34;.
-&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
+on the elliptic curve, as discussed in &lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; is defined by &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L912&#34;&gt;lines
 912-3&lt;/a&gt;):&lt;/p&gt;
 
@@ -601,6 +600,15 @@ changes (or recover from mistakes).&lt;/p&gt;
     </item>
     
     <item>
+      <title></title>
+      <link>http://bitcoin-class.org/classes/class3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Registration</title>
       <link>http://bitcoin-class.org/registration/</link>
       <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
@@ -906,7 +914,8 @@ Cryptocurrencies&lt;/em&gt;&lt;/a&gt; book (also
 available &lt;a href=&#34;http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042&#34;&gt;in
 print&lt;/a&gt;).
 You can skim most of Chapter 3, especially the parts about installing
-bitcoin core, but should read Chapter 4.&lt;/p&gt;&lt;/li&gt;
+bitcoin core, but should read Chapter 4.  (You should have already read
+Chapters 1 and 2.)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_1.pdf&#34;&gt;&lt;em&gt;Chapter 1: Introduction to Cryptography and
 Cryptocurrencies&lt;/em&gt;&lt;/a&gt;,
@@ -926,18 +935,17 @@ reading now), and Section 1.3 covers digital signatures.&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;!--
-&lt;center&gt; &lt;iframe
-src=&#34;//www.slideshare.net/slideshow/embed_code/43552674&#34; width=&#34;476&#34;
-height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34;
-scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;br&gt; 
-&lt;div class=&#34;caption&#34;&gt; Note: due to a bug in
-slideshare&#39;s updated player, ink markings no longer appear in the
-viewer.  &lt;br&gt;If you download the slides, they are present though.
-Hopefully, the player will be fixed someday.  &lt;/div&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ppf9BW9JlnIXC5&#34;
+width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34;
+marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
-&lt;/center&gt;
---&gt;
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class2-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
 
 &lt;!--
 how is it possible to own something digital?
@@ -1045,6 +1053,8 @@ necessary about (1) the keyspace and (2) the message space?&lt;/p&gt;
 
 &lt;!--page--&gt;
 
+&lt;p&gt;(This material was not actually covered in class 2, but will be covered in class 3.)&lt;/p&gt;
+
 &lt;h2 id=&#34;asymmetric-cryptosystems:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Asymmetric Cryptosystems&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Asymmetric cryptosystems&lt;/strong&gt; use &lt;em&gt;different functions&lt;/em&gt; for encrypting
@@ -1080,6 +1090,24 @@ necessary about (1) the keyspace and (2) the message space?&lt;/p&gt;
 to solve to make a cryptocurrency?&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Email/Calendar Update</title>
+      <link>http://bitcoin-class.org/announcements/email/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/email/</guid>
+      <description>&lt;p&gt;The email address, &lt;code&gt;ccc-staff@cs.virginia.edu&lt;/code&gt;, reaches all the course
+staff (Dave, Samee, and Ori).  If you have a question that can be asked
+publicly, its best to post it as a comment on the website.  But, for
+things that don&amp;rsquo;t belong as website comments, use that email address to
+reach all of us.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve updated the course calendar to include all the deadlines, and
+encourage you to incorporate this into your calendar:
+&lt;a href=&#34;https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics&#34;&gt;use this link&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
