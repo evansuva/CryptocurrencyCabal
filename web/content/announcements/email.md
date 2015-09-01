@@ -1,7 +1,7 @@
 ---
 title: "Email/Calendar Update"
 weight: 3
-date: 2015-08-31
+date: 2015-09-01
 ---
 
 The email address, `ccc-staff@cs.virginia.edu`, reaches all the course
