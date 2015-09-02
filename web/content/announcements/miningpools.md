@@ -19,3 +19,5 @@ SHA-256).
 We'll talk about mining a lot more in the coming weeks to get a good
 understanding of what this means technically, as well as the
 implications for the blockchain.
+
+<!--more-->
