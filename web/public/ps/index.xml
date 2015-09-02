@@ -6,13 +6,13 @@
     <description>Recent content in Ps on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/ps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PS1: Bitcoin Transactions</title>
       <link>http://bitcoin-class.org/ps/ps1/</link>
-      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://bitcoin-class.org/ps/ps1/</guid>
       <description>
@@ -63,9 +63,7 @@ about the way bitcoin was distributed to the class.  For these
 questions, manual sleuthing should be sufficient (although ambitious
 students may find ways to automate this).&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 1.&lt;/strong&gt; Answer the following questions about the transaction
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 1.&lt;/strong&gt; Answer the following questions about the transaction
   where you received the bitcoin.  If you received more than one
   transfer, include all the transaction IDs).&lt;/p&gt;
 
@@ -87,8 +85,7 @@ in your answer.)
 &lt;p&gt;Bitcoin advocates often taut its &amp;ldquo;anonymity&amp;rdquo;, but bitcoin transactions
 are actually publicly visible.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 2.&lt;/strong&gt; See how much can you figure out about the way bitcoin was
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 2.&lt;/strong&gt; See how much can you figure out about the way bitcoin was
 transferred to students in the class, starting from your transactions.&lt;/p&gt;
 
 &lt;p&gt;a. Identify the bitcoin addresses of what are likely to be other
@@ -123,17 +120,14 @@ that transaction.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;You can go backward, by following transactions to the sending address.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 3.&lt;/strong&gt; Suppose a malicious developer wanted to distribute a
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 3.&lt;/strong&gt; Suppose a malicious developer wanted to distribute a
   bitcoin wallet implementation that would steal as much bitcoin as
   possible from its users with a little chance as possible of getting
   caught.  (a) Explain things a malicious developed might do to create
   an evil wallet.  (b) How confident are you your money is safe in the
   wallet you are using, and what would you do to increase your
-  confidence if you were going to store all of your income in it?&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+  confidence if you were going to store all of your income in it?
+   &lt;/div&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;getting-going:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Getting GOing&lt;/h1&gt;
 
@@ -165,11 +159,6 @@ Go&lt;/a&gt;.  The &lt;a href=&#34;https://gobyexample.com/&#34;&gt;Go by
 Example&lt;/a&gt; site is very helpful.  For more
 documentation, visit &lt;a href=&#34;https://golang.org/doc/&#34;&gt;https://golang.org/doc/&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Start by &lt;a href=&#34;https://golang.org/doc/install&#34;&gt;downloading and installing
-Go&lt;/a&gt;.  The latest version is go1.5, which
-is the version you should use.  After that,
-&lt;a href=&#34;https://github.com/btcsuite/btcd&#34;&gt;follow the directions to install btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
-
 &lt;!--
 # Going Gets Good
 
@@ -182,14 +171,30 @@ After you have installed go, you can set up the BTC library by doing:
 
 &lt;h1 id=&#34;obtain-the-starting-code:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Obtain the Starting Code&lt;/h1&gt;
 
-&lt;p&gt;Before continuing with this assignment, you should &lt;a href=&#34;http://bitcoin-class.org/tools/github/&#34;&gt;set up git and your
-github account&lt;/a&gt; and follow the
-directions there to set up your private repository containing the
-starting code for ps1.  (It may seem like overkill to use git for this
-assignment since you will not need to write much code or work with
-teammates on this one.  But, it is good to get experience using git and
-will become necessary to work effectively with teammates for later
-projects.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install Go.&lt;/strong&gt;
+Start by &lt;a href=&#34;https://golang.org/doc/install&#34;&gt;downloading and installing
+Go&lt;/a&gt;.  The latest version is go1.5, which
+is the version you should use.&lt;/p&gt;
+
+&lt;p&gt;Make sure to create a directory to contain your workspace and set the
+GOPATH environment variable to point to that location (these commands
+are for the Mac OS X shell and the bash shell on Linux):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ mkdir go_workspace
+$ export GOPATH=$Home/go_workspace
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Install BTCD.&lt;/strong&gt; &lt;a href=&#34;https://github.com/btcsuite/btcd&#34;&gt;Follow the directions to install
+  btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Setting up git.&lt;/strong&gt; Before continuing with this assignment, you should
+&lt;a href=&#34;http://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
+and follow the directions there to set up your private repository
+containing the starting code for ps1.  (It may seem like overkill to use
+git for this assignment since you will not need to write much code or
+work with teammates on this one.  But, it is good to get experience
+using git and will become necessary to work effectively with teammates
+for later projects.)&lt;/p&gt;
 
 &lt;p&gt;Once you have finished setting up your &lt;code&gt;ps1&lt;/code&gt; repository, it should
 contain the files:&lt;/p&gt;
@@ -203,19 +208,16 @@ code for generating a bitcoin key pair (including its public address).&lt;/li&gt
 &lt;h1 id=&#34;elliptic-curve-cryptography:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Elliptic Curve Cryptography&lt;/h1&gt;
 
 &lt;p&gt;The btcsuite library includes,
-&lt;a href=&#34;https://github.com/btcsuite/btcd/tree/master/btcec&#34;&gt;btcec&lt;/a&gt;, an implementation of the
-ECDSC algorithm using the
+&lt;a href=&#34;https://github.com/btcsuite/btcd/tree/master/btcec&#34;&gt;btcec&lt;/a&gt;, an
+implementation of the ECDSA digital signatures algorithm using the
 &lt;a href=&#34;https://en.bitcoin.it/wiki/Secp256k1&#34;&gt;secp256k1&lt;/a&gt; elliptic curve used by
 bitcoin.&lt;/p&gt;
 
 &lt;p&gt;Examine the
-&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/master/btcec/btcec.go&#34;&gt;btcec.go&lt;/a&gt; code.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 4.&lt;/strong&gt; Find the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt; =
-  &lt;em&gt;x&lt;/em&gt;&lt;sup&gt;3&lt;/sup&gt; + 7&lt;/span&gt; curve in this code.  (For your answer, just
-  submit the line numbers for the code that tests if a given point is on the curve.)
-   &lt;/div&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/master/btcec/btcec.go&#34;&gt;btcec.go&lt;/a&gt;
+code.  For example, you should be able to find the &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt; = &lt;em&gt;x&lt;/em&gt;&lt;sup&gt;3&lt;/sup&gt; + 7&lt;/span&gt; curve in this
+code.&lt;/p&gt;
 
 &lt;p&gt;Elliptic curves for cryptography needs really big numbers.  The modulus for the &lt;code&gt;secp256k1&lt;/code&gt; curve is found on &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L909&#34;&gt;line 929&lt;/a&gt;:&lt;/p&gt;
 
@@ -224,9 +226,7 @@ bitcoin.&lt;/p&gt;
 
 &lt;p&gt;This should be the value &lt;span class=&#34;math&#34;&gt;2&lt;sup&gt;256&lt;/sup&gt; - 2&lt;sup&gt;32&lt;/sup&gt; - 2&lt;sup&gt;9&lt;/sup&gt; - 2&lt;sup&gt;8&lt;/sup&gt; - 2&lt;sup&gt;7&lt;/sup&gt; - 2&lt;sup&gt;6&lt;/sup&gt; - 2&lt;sup&gt;4&lt;/sup&gt; - 1.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 5.&lt;/strong&gt; Verify that the modulus used as &lt;code&gt;secp256k1.P&lt;/code&gt; in
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 4.&lt;/strong&gt; Verify that the modulus used as &lt;code&gt;secp256k1.P&lt;/code&gt; in
   &lt;code&gt;btcec.go&lt;/code&gt; is correct.  You can do this either using
   &lt;a href=&#34;https://golang.org/pkg/math/big/&#34;&gt;math/big&lt;/a&gt;, Go&amp;rsquo;s bit integer library
   to do computations on such large numbers, or by computing it by hand.
@@ -279,8 +279,7 @@ proven, but underlies much of modern cryptography.)&lt;/p&gt;
 &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/privkey.go#L38&#34;&gt;NewPrivateKey&lt;/a&gt;
 function.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 5.&lt;/strong&gt; What are &lt;em&gt;all&lt;/em&gt; the things you need to trust if you are
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 5.&lt;/strong&gt; What are &lt;em&gt;all&lt;/em&gt; the things you need to trust if you are
 going to send money to the key generated by running &lt;code&gt;keypair.go&lt;/code&gt;?  You
 should assume that you are an ultra-paranoid multi-billionaire who
 intends to transfer her entire fortune to the generated address.&lt;br /&gt;
@@ -293,8 +292,7 @@ intends to transfer her entire fortune to the generated address.&lt;br /&gt;
 &lt;code&gt;1L3iGYBD5wbiki2SYUT5wmupy4TTgmEBg3&lt;/code&gt;, but suppose you want a bitcoin
 address that includes the name of your cat or your birthday.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 6.&lt;/strong&gt; Define a function, &lt;code&gt;func
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 6.&lt;/strong&gt; Define a function, &lt;code&gt;func
 generateVanityAddress(pattern string) (*btcec.PublicKey,
 *btcec.PrivateKey)&lt;/code&gt; where &lt;code&gt;pattern&lt;/code&gt; is a regular expression.  It should
 return a valid key pair where the corresponding public address &lt;a href=&#34;http://golang.org/pkg/regexp/#MatchString&#34;&gt;matches
@@ -319,8 +317,7 @@ in any address, so if your name includes these letters you will have to
 be creative.)&lt;br /&gt;
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 8.&lt;/strong&gt;   Is your vanity address more or less secure than the first address you generated?
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 8.&lt;/strong&gt;   Is your vanity address more or less secure than the first address you generated?
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;There are on-line services that produce vanity addresses, like
@@ -341,8 +338,7 @@ your choosing by explaining to me what you have learned about software
 development and or best practices.  It is not necessary to buy your own
 bitcoin, even if you lose all of the original transfer.)&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;b&gt;Problem 9.&lt;/b&gt; Make a &lt;strong&gt;small&lt;/strong&gt; (e.g., 1 mBTC) transfer from
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;b&gt;Problem 9.&lt;/b&gt; Make a &lt;strong&gt;small&lt;/strong&gt; (e.g., 1 mBTC) transfer from
 your wallet address to your vanity address.  You can do this using
 your MultiBit wallet.  Find the transaction in the blockchain (you can do this by
 searching for your vanity address at
@@ -361,37 +357,53 @@ along with the transaction ID lets us uniquely identify transaction
 outputs. This is important if you want to use those outputs in a new
 transaction.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 10.&lt;/strong&gt; Transfer some bitcoin from your vanity address to someone
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 10.&lt;/strong&gt; Transfer some bitcoin from your vanity address to someone
 else in the class (you can use one of the addresses you identified in
 Problem 2). To do this you can run &lt;code&gt;spend.go&lt;/code&gt; in ps1. You can provide
 the parameters needed for the transaction at the command line (it is not
-necessary to modify the code).&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+necessary to modify the code).
+   &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;If done correctly the script should look this when executed:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; go run spend.go \
-    -txid=&amp;quot;6bf98ac2e1a25ea9c2951bb6a40262e054514236f864a3414c16fe6b3a5f3f62&amp;quot; \
-    -vout=0 \
-    -privkey=&amp;quot;8d66a9f85c4f737b231d1af0bd917c8e02f05d616f26c41f269a194a10c29029&amp;quot; \
-    -toaddress=&amp;quot;1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB&amp;quot;
-
+      -privkey &amp;quot;f3942c1e1...87&amp;quot; \
+      -toaddress &amp;quot;19WmbY4nDcjAEv6wb5rcd5E6MutVMXBZzy&amp;quot; \
+      -txid &amp;quot;9070329c2850d9b1dadeaa8683039b273beb58a27812172e31e397cf19fd5ca0&amp;quot; \
+      -vout 0
 Here is your raw bitcoin transaction:
-0100000001623f5f3a6bfe164c41a364f836425154e06202a4b61b95c2a95ea2e1c28af96b000000006a47304402202487724e5e42e60b5d8d98636797339b09db8c70452959cf9c48a0be1a45aba302203465c00d34a190dd1294c9c1561af7c0bcc2b0d452ae74b6d126ad06e0f03624012103c4a967e4e04f32f6b25b723c4d994bcc5f1f6db2cd7757d25643af0d1a1b4c1effffffff01905f0100000000001976a91488989f2c91337ad5241abedeafe8ed96fa28940488ac00000000
+0100000001a05cfd19cf97e3312e171278a258eb3b279b038386aadedab1d950289c327090000000006a47304402201d2fd4818cf4f4faa8\
+4bbd407e5477c2a3722b137339460ff99c7255ad63bcc802201d991cad02e62d24fb4db2527a456159e069567116a325ee09186061395839\
+e901210324594ad7124d0812e060200b66cc5199142e9adc42b0cd0c40f457eac4005d5dffffffff01f78a0100000000001976a9145d624b\
+a9f2c55817af8b819ed4aaae55a36e256288ac00000000
 The sending api responded with:
-{&amp;quot;txid&amp;quot;:&amp;quot;8d1687cc05cd3264c8d41acf19efcd08ecd44b5b57d3105fe081fdfd4baa6b0b&amp;quot;}
+{&amp;quot;txid&amp;quot;:&amp;quot;e5f4cb8e3736cab91ff4eb889bc8af659f1d8d398b3f934c8d63871b495d9065&amp;quot;}
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;ve left out most of my private key, since posting your private key on
+the web is not a very smart thing to do!&lt;/p&gt;
 
 &lt;p&gt;Notice that when the command above is run with these parameters it only
 works
-&lt;a href=&#34;https://blockchain.info/tx/8d1687cc05cd3264c8d41acf19efcd08ecd44b5b57d3105fe081fdfd4baa6b0b&#34;&gt;once&lt;/a&gt;. If
-you tried to run it again or send the coins somewhere else the script
-would fail.&lt;/p&gt;
+&lt;a href=&#34;https://blockchain.info/tx/e5f4cb8e3736cab91ff4eb889bc8af659f1d8d398b3f934c8d63871b495d9065&#34;&gt;once&lt;/a&gt;.
+If you try to run it again you should get an API error since the input
+transaction has already been spent.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;b&gt;Problem 11.&lt;/b&gt; Try to double spend the same
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 11.&lt;/strong&gt; The provided &lt;code&gt;spend.go&lt;/code&gt; code
+   sends the full amount of the input transaction (less the network fee)
+   to the destination address.  Modify the program to add an &lt;code&gt;-amount
+   &amp;lt;int&amp;gt;&lt;/code&gt; flag that takes the amount to transfer in satoshi.  If the amount
+   available in the transaction (less the network fee) exceeds the
+   amount to send, your program should print an error message.
+   Otherwise, it should send the requested amount to the toaddress, and
+   send the change back to your address.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Try using your modified spending code to send a small amount to another
+address, and do another transaction to check that the change you receive
+back is still spendable.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;b&gt;Problem 12.&lt;/b&gt; (Bonus) Try to double spend the same
 bitcoin.  Figure out as much as you can about what happens when the
 double spend transactions are attempted.  See if you can get a
 transaction to appear on the &lt;a href=&#34;https://blockchain.info/double-spends&#34;&gt;list of double

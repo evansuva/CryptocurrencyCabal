@@ -1,6 +1,6 @@
 ---
 title: "PS1: Bitcoin Transactions"
-date: '2015-08-31'
+date: '2015-09-01'
 nocomment: false
 menu: "hidden" 
 ---
@@ -53,9 +53,7 @@ about the way bitcoin was distributed to the class.  For these
 questions, manual sleuthing should be sufficient (although ambitious
 students may find ways to automate this).
 
-   <div class="problem"> 
-
-**Problem 1.** Answer the following questions about the transaction
+   <div class="problem"> **Problem 1.** Answer the following questions about the transaction
   where you received the bitcoin.  If you received more than one
   transfer, include all the transaction IDs).
 
@@ -77,8 +75,7 @@ in your answer.)
 Bitcoin advocates often taut its "anonymity", but bitcoin transactions
 are actually publicly visible.  
 
-   <div class="problem"> 
-**Problem 2.** See how much can you figure out about the way bitcoin was
+   <div class="problem"> **Problem 2.** See how much can you figure out about the way bitcoin was
 transferred to students in the class, starting from your transactions.
 
 a. Identify the bitcoin addresses of what are likely to be other
@@ -111,16 +108,13 @@ Hints:
 
 - You can go backward, by following transactions to the sending address.
 
-   <div class="problem">
-
-**Problem 3.** Suppose a malicious developer wanted to distribute a
+   <div class="problem">**Problem 3.** Suppose a malicious developer wanted to distribute a
   bitcoin wallet implementation that would steal as much bitcoin as
   possible from its users with a little chance as possible of getting
   caught.  (a) Explain things a malicious developed might do to create
   an evil wallet.  (b) How confident are you your money is safe in the
   wallet you are using, and what would you do to increase your
   confidence if you were going to store all of your income in it?
-
    </div>
 
 
@@ -154,11 +148,6 @@ Go](https://tour.golang.org/welcome/1).  The [Go by
 Example](https://gobyexample.com/) site is very helpful.  For more
 documentation, visit [https://golang.org/doc/](https://golang.org/doc/).
 
-Start by [downloading and installing
-Go](https://golang.org/doc/install).  The latest version is go1.5, which
-is the version you should use.  After that, 
-[follow the directions to install btcd](https://github.com/btcsuite/btcd) from btcsuite.
-
 
 <!--
 # Going Gets Good
@@ -172,14 +161,30 @@ After you have installed go, you can set up the BTC library by doing:
 
 # Obtain the Starting Code
 
-Before continuing with this assignment, you should [set up git and your
-github account]({{< relref "tools/github.md" >}}) and follow the
-directions there to set up your private repository containing the
-starting code for ps1.  (It may seem like overkill to use git for this
-assignment since you will not need to write much code or work with
-teammates on this one.  But, it is good to get experience using git and
-will become necessary to work effectively with teammates for later
-projects.)
+**Install Go.**
+Start by [downloading and installing
+Go](https://golang.org/doc/install).  The latest version is go1.5, which
+is the version you should use.  
+
+Make sure to create a directory to contain your workspace and set the
+GOPATH environment variable to point to that location (these commands
+are for the Mac OS X shell and the bash shell on Linux):
+```shell
+$ mkdir go_workspace
+$ export GOPATH=$Home/go_workspace
+```
+
+**Install BTCD.** [Follow the directions to install
+  btcd](https://github.com/btcsuite/btcd) from btcsuite.
+
+**Setting up git.** Before continuing with this assignment, you should
+[set up git and your github account]({{< relref "tools/github.md" >}})
+and follow the directions there to set up your private repository
+containing the starting code for ps1.  (It may seem like overkill to use
+git for this assignment since you will not need to write much code or
+work with teammates on this one.  But, it is good to get experience
+using git and will become necessary to work effectively with teammates
+for later projects.)
 
 Once you have finished setting up your `ps1` repository, it should
 contain the files:
@@ -191,19 +196,16 @@ contain the files:
 # Elliptic Curve Cryptography
 
 The btcsuite library includes,
-[btcec](https://github.com/btcsuite/btcd/tree/master/btcec), an implementation of the
-ECDSC algorithm using the
+[btcec](https://github.com/btcsuite/btcd/tree/master/btcec), an
+implementation of the ECDSA digital signatures algorithm using the
 [secp256k1](https://en.bitcoin.it/wiki/Secp256k1) elliptic curve used by
 bitcoin.
 
 Examine the
-[btcec.go](https://github.com/btcsuite/btcd/blob/master/btcec/btcec.go) code.
-
-   <div class="problem">
-**Problem 4.** Find the <span class="math">_y_<sup>2</sup> =
-  _x_<sup>3</sup> + 7</span> curve in this code.  (For your answer, just
-  submit the line numbers for the code that tests if a given point is on the curve.)
-   </div>
+[btcec.go](https://github.com/btcsuite/btcd/blob/master/btcec/btcec.go)
+code.  For example, you should be able to find the <span
+class="math">_y_<sup>2</sup> = _x_<sup>3</sup> + 7</span> curve in this
+code. 
 
 Elliptic curves for cryptography needs really big numbers.  The modulus for the `secp256k1` curve is found on [line 929](https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L909):
 ```
@@ -211,9 +213,7 @@ Elliptic curves for cryptography needs really big numbers.  The modulus for the 
 ```
 This should be the value <span class="math">2<sup>256</sup> - 2<sup>32</sup> - 2<sup>9</sup> - 2<sup>8</sup> - 2<sup>7</sup> - 2<sup>6</sup> - 2<sup>4</sup> - 1.  
 
-   <div class="problem">
-
-**Problem 5.** Verify that the modulus used as `secp256k1.P` in
+   <div class="problem">**Problem 4.** Verify that the modulus used as `secp256k1.P` in
   `btcec.go` is correct.  You can do this either using
   [math/big](https://golang.org/pkg/math/big/), Go's bit integer library
   to do computations on such large numbers, or by computing it by hand.
@@ -266,8 +266,7 @@ The important work is the
 [NewPrivateKey](https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/privkey.go#L38)
 function.  
 
-   <div class="problem"> 
-**Problem 5.** What are _all_ the things you need to trust if you are
+   <div class="problem">**Problem 5.** What are _all_ the things you need to trust if you are
 going to send money to the key generated by running `keypair.go`?  You
 should assume that you are an ultra-paranoid multi-billionaire who
 intends to transfer her entire fortune to the generated address.  
@@ -280,8 +279,7 @@ Anyone can have a bitcoin address like
 `1L3iGYBD5wbiki2SYUT5wmupy4TTgmEBg3`, but suppose you want a bitcoin
 address that includes the name of your cat or your birthday.
 
-  <div class="problem"> 
-**Problem 6.** Define a function, `func
+  <div class="problem">**Problem 6.** Define a function, `func
 generateVanityAddress(pattern string) (*btcec.PublicKey,
 *btcec.PrivateKey)` where `pattern` is a regular expression.  It should
 return a valid key pair where the corresponding public address [matches
@@ -306,8 +304,7 @@ in any address, so if your name includes these letters you will have to
 be creative.)  
    </div>
 
-   <div class="problem">
-**Problem 8.**   Is your vanity address more or less secure than the first address you generated?
+   <div class="problem">**Problem 8.**   Is your vanity address more or less secure than the first address you generated?
    </div>
 
 There are on-line services that produce vanity addresses, like
@@ -328,8 +325,7 @@ your choosing by explaining to me what you have learned about software
 development and or best practices.  It is not necessary to buy your own
 bitcoin, even if you lose all of the original transfer.)
 
-   <div class="problem">
-<b>Problem 9.</b> Make a **small** (e.g., 1 mBTC) transfer from
+   <div class="problem"><b>Problem 9.</b> Make a **small** (e.g., 1 mBTC) transfer from
 your wallet address to your vanity address.  You can do this using
 your MultiBit wallet.  Find the transaction in the blockchain (you can do this by
 searching for your vanity address at
@@ -348,38 +344,54 @@ along with the transaction ID lets us uniquely identify transaction
 outputs. This is important if you want to use those outputs in a new
 transaction.
 
-   <div class="problem">
-
-**Problem 10.** Transfer some bitcoin from your vanity address to someone
+   <div class="problem">**Problem 10.** Transfer some bitcoin from your vanity address to someone
 else in the class (you can use one of the addresses you identified in
 Problem 2). To do this you can run `spend.go` in ps1. You can provide
 the parameters needed for the transaction at the command line (it is not
 necessary to modify the code).
-
    </div>
 
 If done correctly the script should look this when executed:
 
 ```bash
 > go run spend.go \
-    -txid="6bf98ac2e1a25ea9c2951bb6a40262e054514236f864a3414c16fe6b3a5f3f62" \
-    -vout=0 \
-    -privkey="8d66a9f85c4f737b231d1af0bd917c8e02f05d616f26c41f269a194a10c29029" \
-    -toaddress="1DTFjSGeij6woxyaJFaYLMzciKCYP83ZNB"
-
+      -privkey "f3942c1e1...87" \
+      -toaddress "19WmbY4nDcjAEv6wb5rcd5E6MutVMXBZzy" \
+      -txid "9070329c2850d9b1dadeaa8683039b273beb58a27812172e31e397cf19fd5ca0" \
+      -vout 0
 Here is your raw bitcoin transaction:
-0100000001623f5f3a6bfe164c41a364f836425154e06202a4b61b95c2a95ea2e1c28af96b000000006a47304402202487724e5e42e60b5d8d98636797339b09db8c70452959cf9c48a0be1a45aba302203465c00d34a190dd1294c9c1561af7c0bcc2b0d452ae74b6d126ad06e0f03624012103c4a967e4e04f32f6b25b723c4d994bcc5f1f6db2cd7757d25643af0d1a1b4c1effffffff01905f0100000000001976a91488989f2c91337ad5241abedeafe8ed96fa28940488ac00000000
+0100000001a05cfd19cf97e3312e171278a258eb3b279b038386aadedab1d950289c327090000000006a47304402201d2fd4818cf4f4faa8\
+4bbd407e5477c2a3722b137339460ff99c7255ad63bcc802201d991cad02e62d24fb4db2527a456159e069567116a325ee09186061395839\
+e901210324594ad7124d0812e060200b66cc5199142e9adc42b0cd0c40f457eac4005d5dffffffff01f78a0100000000001976a9145d624b\
+a9f2c55817af8b819ed4aaae55a36e256288ac00000000
 The sending api responded with:
-{"txid":"8d1687cc05cd3264c8d41acf19efcd08ecd44b5b57d3105fe081fdfd4baa6b0b"}
+{"txid":"e5f4cb8e3736cab91ff4eb889bc8af659f1d8d398b3f934c8d63871b495d9065"}
 ```
+
+I've left out most of my private key, since posting your private key on
+the web is not a very smart thing to do!
 
 Notice that when the command above is run with these parameters it only
 works
-[once](https://blockchain.info/tx/8d1687cc05cd3264c8d41acf19efcd08ecd44b5b57d3105fe081fdfd4baa6b0b). If
-you tried to run it again or send the coins somewhere else the script
-would fail.
+[once](https://blockchain.info/tx/e5f4cb8e3736cab91ff4eb889bc8af659f1d8d398b3f934c8d63871b495d9065).
+If you try to run it again you should get an API error since the input
+transaction has already been spent.
 
-   <div class="problem"> <b>Problem 11.</b> Try to double spend the same
+   <div class="problem">**Problem 11.** The provided `spend.go` code
+   sends the full amount of the input transaction (less the network fee)
+   to the destination address.  Modify the program to add an `-amount
+   <int>` flag that takes the amount to transfer in satoshi.  If the amount
+   available in the transaction (less the network fee) exceeds the
+   amount to send, your program should print an error message.
+   Otherwise, it should send the requested amount to the toaddress, and
+   send the change back to your address.
+   </div>
+
+Try using your modified spending code to send a small amount to another
+address, and do another transaction to check that the change you receive
+back is still spendable.
+
+   <div class="problem"> <b>Problem 12.</b> (Bonus) Try to double spend the same
 bitcoin.  Figure out as much as you can about what happens when the
 double spend transactions are attempted.  See if you can get a
 transaction to appear on the [list of double

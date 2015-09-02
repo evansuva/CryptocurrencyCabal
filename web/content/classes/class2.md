@@ -36,7 +36,7 @@ reading now), and Section 1.3 covers digital signatures.
   to test your understanding of the main concepts covered so far.  It
   will cover material from the readings and classes 1-3.
 
-**Tuesday, September 15** (8:29pm): [Problem Set 1](http://www.bitcoin-class.org/ps/ps1.md) due.
+**Tuesday, September 15** (8:29pm): [Problem Set 1](http://www.bitcoin-class.org/ps/ps1) due.
 
    </div>
 <!--more-->
