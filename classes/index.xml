@@ -6,15 +6,192 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title></title>
+      <title>Class 3: Digital Signatures</title>
       <link>http://bitcoin-class.org/classes/class3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://bitcoin-class.org/classes/class3/</guid>
-      <description></description>
+      <description>
+
+&lt;h2 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Monday, September 7&lt;/strong&gt;: Check-up 1.  This will be a short in-class quiz
+  to test your understanding of the main concepts covered so far.  It
+  will cover material from the readings (see Class 2 for details) and classes 1-3.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;signatures:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Signatures&lt;/h2&gt;
+
+&lt;p&gt;Real-life signatures. Properties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Easy to verify&lt;/li&gt;
+&lt;li&gt;Forging unlikely&lt;/li&gt;
+&lt;li&gt;Hard to repudiate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Digital signatures. Should have same properties, in the absence of legal forces on the internet.&lt;/p&gt;
+
+&lt;p&gt;Topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assymetric cryptography&lt;/li&gt;
+&lt;li&gt;Digital signatures&lt;/li&gt;
+&lt;li&gt;Elliptic curve cryptography&lt;/li&gt;
+&lt;li&gt;Implementation pitfalls&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ordinary (or symmetric) Crypto&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Both parties have to agree on a key&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Diffie-Hellman key exchange&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Proposed in 1976&lt;/li&gt;
+&lt;li&gt;Establishes a private secret key, unknown to any evesdropper&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Discrete Logarithm Problem&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Given $g,y,p$, find $x$ such that $g^x \text{ mod } p = y$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;del&gt;Discrete&lt;/del&gt; Logarithm Problem&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Easy to solve for real numbers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Random Element out of &amp;hellip;?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is the range of elements out of which we are randomly selecting?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mod 5 exponentiation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Multiplicative order&amp;rdquo; is the number of multiplication after which the result repeats. I.e. Multiplicative order of g is n if n is the smallest positive integer such that $g^n=1$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Exponent Modulus&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Multiplicative order is at most $p-1$&lt;/li&gt;
+&lt;li&gt;Pick random $x$ such that $0 \le x &amp;lt; p-1$&lt;/li&gt;
+&lt;li&gt;$g^a g^ b \text{ mod } p = g^{a+b} \text{ mod } p = g^{(a+b) \text{ mod }n} \text{ mod } p$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Public-key Cryptography&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Google announces $g^a$&lt;/li&gt;
+&lt;li&gt;Bob picks random secret $b$, computes $(g^a)^b=g^{ab}$.&lt;/li&gt;
+&lt;li&gt;Bob encrypts message $m$ and sends: $g^b, g^{ab}m$,&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Man-in-the-middle (MITM)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Active adversary can still read everything. We have to know messages are coming from the right person.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;digital-signatures:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Digital Signatures&lt;/h2&gt;
+
+&lt;p&gt;Discrete-log based signature&lt;/p&gt;
+
+&lt;p&gt;ElGamal Signature Scheme&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed global parameters: $g,p$&lt;/li&gt;
+&lt;li&gt;Private key: $a$&lt;/li&gt;
+&lt;li&gt;Public key: $g^a \text{ mod } p$&lt;/li&gt;
+&lt;li&gt;Signing:
+
+&lt;ol&gt;
+&lt;li&gt;Input: message $m$&lt;/li&gt;
+&lt;li&gt;Pick random $k$&lt;/li&gt;
+&lt;li&gt;Compute $r = g^k \text{ mod } p$;
+       $s = (m-ar)k^{-1} \text{ mod } (p-1)$&lt;/li&gt;
+&lt;li&gt;Send $(r,s)$ with message $m$&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;Verification:
+
+&lt;ol&gt;
+&lt;li&gt;Input: message $m, (r,s)$&lt;/li&gt;
+&lt;li&gt;Check if $r^s(g^a)^r = g^m (\text{ mod } p)$&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;avoiding-overly-long-numbers:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Avoiding (overly) long numbers&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Real-life keys are long. We can use any group where discrete log is hard.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A group is a set of elements and an associated operation such that it satisfies the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Closure: $a*b$ is also a group element&lt;/li&gt;
+&lt;li&gt;Associativity: $\forall a,b,c: (a&lt;em&gt;b)*c = a&lt;/em&gt;(b*c)$&lt;/li&gt;
+&lt;li&gt;Identity element: $a*e = a = e*a$&lt;/li&gt;
+&lt;li&gt;Inverse: $a*b = e = b*a$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additional Cryptographic Properties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Discrete logarithm should be hard&lt;/li&gt;
+&lt;li&gt;Group operation should be efficient&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Elliptic Curve Cryptography (ECC)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Group elements are points on the curve $y^2 = x^3+7$&lt;/li&gt;
+&lt;li&gt;Point &amp;ldquo;addition&amp;rdquo; using &amp;ldquo;geometry&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Elliptic Curve Digital Signature Algorithm&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Follows the same structure as ElGamal signature, but only on $x$-coordinate.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pitfalls:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Pitfalls&lt;/h2&gt;
+
+&lt;p&gt;If we ever repeat signing nonce, we leak private key&lt;/p&gt;
+
+&lt;p&gt;Sony actually did this with Playstation 3 consoles.&lt;/p&gt;
+
+&lt;p&gt;Poor randomness makes private keys predictable. Use /dev/urandom (Linux) or java.security.SecureRandom. Common mistake was to use Math.random() or srand(time(0))&lt;/p&gt;
+
+&lt;p&gt;Logjam attack: downgrade security during handshake.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;How are digital signatures and real-life signatures different in terms of why we trust them? What stops each from being forged by others?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Assume somebody really clever has a way of solving the discrete logarithm problem easily. That is, for any given g,y,p, the adversary can compute $x$ such that $g^x \text{ mod } p = y$. How can this algorithm be used to break security of Diffie-Hellman protocol?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What is a nonce? What breaks if we reuse it between encrypted messages?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In elliptic curve cryptography, why do we use mod $p$ integers? What would go wrong if we used real numbers?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
