@@ -1,4 +1,4 @@
-all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf
+all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf ../public/class3.pdf
 
 ../public/syllabus.pdf: ../content/syllabus.md
 	python latexify.py ../content/syllabus.md > syllabus-latex.md
@@ -12,3 +12,7 @@ all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf
 ../public/class2.pdf: ../content/classes/class2.md
 	python latexify.py ../content/classes/class2.md > class2-latex.md
 	pandoc --template=./cabal.template class2-latex.md -o ../public/class2.pdf
+
+../public/class3.pdf: ../content/classes/class3.md
+	python latexify.py ../content/classes/class3.md > class3-latex.md
+	pandoc --template=./cabal.template class3-latex.md -o ../public/class3.pdf

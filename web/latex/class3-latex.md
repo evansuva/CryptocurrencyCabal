@@ -1,11 +1,5 @@
----
-title: "Class 3: Digital Signatures"
-date: '2015-09-02'
-print: "class2.pdf"
-nocomment: false
-weight: 3
-menu: "hidden"
----
+% Class 3: Digital Signatures
+% '2015-09-02'
 ## Schedule 
 
    <div class="todo">
