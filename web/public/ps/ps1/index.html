@@ -107,6 +107,12 @@ function showText(show,hide)
         
           <li class="nav-item">
           
+              <span class="nav-item-selected">PS1: Bitcoin Transactions</span></a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
               <a href="/registration/">Registration</a>
           
           </li>
@@ -540,7 +546,7 @@ transaction has already been spent.</p>
 <p><div class="problem"><strong>Problem 11.</strong> The provided <code>spend.go</code> code
    sends the full amount of the input transaction (less the network fee)
    to the destination address.  Modify the program to add an <code>-amount
-   &lt;int&gt;</code> flag that takes the amount to transfer in satoshi.  If the amount
+   &lt;value&gt;</code> flag that takes the amount to transfer in satoshi.  If the amount
    available in the transaction (less the network fee) exceeds the
    amount to send, your program should print an error message.
    Otherwise, it should send the requested amount to the toaddress, and

@@ -2,7 +2,7 @@
 title: "PS1: Bitcoin Transactions"
 date: '2015-09-01'
 nocomment: false
-menu: "hidden" 
+menu: "assignments" 
 ---
 
 # Problem Set 1: Bitcoin Transactions
@@ -11,8 +11,6 @@ menu: "hidden"
 Due: Tuesday, 15 September at 8:29pm
    </div>
 
-<!--more-->
-
 ## Purpose
 
 The goal of this assignment is for everyone in the class to understand
@@ -20,6 +18,8 @@ how keys, addresses, and transactions work in bitcoin.  In addition,
 this assignment should help everyone get up-to-speed with the software
 tools (including the Go programming language) we will use in later
 assignments.
+
+<!--more-->
 
 ### Collaboration Policy
 
@@ -380,7 +380,7 @@ transaction has already been spent.
    <div class="problem">**Problem 11.** The provided `spend.go` code
    sends the full amount of the input transaction (less the network fee)
    to the destination address.  Modify the program to add an `-amount
-   <int>` flag that takes the amount to transfer in satoshi.  If the amount
+   <value>` flag that takes the amount to transfer in satoshi.  If the amount
    available in the transaction (less the network fee) exceeds the
    amount to send, your program should print an error message.
    Otherwise, it should send the requested amount to the toaddress, and
