@@ -258,10 +258,10 @@ secp256k1.Gy = fromHex(&amp;quot;483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A685541
 
 &lt;p&gt;The resulting point is the public key.  It is easy to derive the public
 key from the private key, but believed to be hard to learn anything
-useful about the private key from the public key.  (The belief that it
+useful about the private key from the public key.  The belief that it
 is hard to reverse the elliptic curve multiplication is based on the
 assumption that it is hard to compute discrete logarithms, which is not
-proven, but underlies much of modern cryptography.)&lt;/p&gt;
+proven, but underlies much of modern cryptography.&lt;/p&gt;
 
 &lt;p&gt;The code for generating a new keypair is in &lt;a href=&#34;https://github.com/CryptocurrencyCabal/ps1/blob/master/keypair.go#L20&#34;&gt;keypair.go&lt;/a&gt;:&lt;/p&gt;
 
@@ -275,7 +275,7 @@ proven, but underlies much of modern cryptography.)&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The important work is the
+&lt;p&gt;The important work is done by the
 &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/privkey.go#L38&#34;&gt;NewPrivateKey&lt;/a&gt;
 function.&lt;/p&gt;
 
@@ -301,8 +301,8 @@ the pattern&lt;/a&gt;.&lt;br /&gt;
 
 &lt;p&gt;You should be able to use your function to generate an address that
 includes the digits of pi in sequence:
-&lt;code&gt;generateVanityAddress(&amp;quot;3.*1.*4.*1.*5.*9.*&amp;quot;)&lt;/code&gt; or contains &lt;code&gt;DAVE&lt;/code&gt; without
-any adjacent letters (&lt;code&gt;generateVanityAddress(&amp;quot;[0-9]DAVE[0-9]&amp;quot;)&lt;/code&gt;) in its
+&lt;code&gt;generateVanityAddress(&amp;quot;3.*1.*4.*1.*5.*9.*&amp;quot;)&lt;/code&gt; or contains &lt;code&gt;dave&lt;/code&gt; without
+any adjacent letters (&lt;code&gt;generateVanityAddress(&amp;quot;[0-9]dave[0-9]&amp;quot;)&lt;/code&gt;) in its
 public bitcoin address.  In deciding how vain you want to be for the
 next exercise, think about how the running time scales with the number
 of strings that match the target pattern.&lt;/p&gt;

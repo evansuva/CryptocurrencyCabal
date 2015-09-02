@@ -245,10 +245,10 @@ secp256k1.Gy = fromHex("483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08F
 
 The resulting point is the public key.  It is easy to derive the public
 key from the private key, but believed to be hard to learn anything
-useful about the private key from the public key.  (The belief that it
+useful about the private key from the public key.  The belief that it
 is hard to reverse the elliptic curve multiplication is based on the
 assumption that it is hard to compute discrete logarithms, which is not
-proven, but underlies much of modern cryptography.)
+proven, but underlies much of modern cryptography.
 
 The code for generating a new keypair is in [keypair.go](https://github.com/CryptocurrencyCabal/ps1/blob/master/keypair.go#L20):
 ````go
@@ -262,7 +262,7 @@ func generateKeyPair() (*btcec.PublicKey, *btcec.PrivateKey) {
 }
 ````
 
-The important work is the
+The important work is done by the
 [NewPrivateKey](https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/privkey.go#L38)
 function.  
 
@@ -288,8 +288,8 @@ the pattern](http://golang.org/pkg/regexp/#MatchString).
 
 You should be able to use your function to generate an address that
 includes the digits of pi in sequence:
-`generateVanityAddress("3.*1.*4.*1.*5.*9.*")` or contains `DAVE` without
-any adjacent letters (`generateVanityAddress("[0-9]DAVE[0-9]")`) in its
+`generateVanityAddress("3.*1.*4.*1.*5.*9.*")` or contains `dave` without
+any adjacent letters (`generateVanityAddress("[0-9]dave[0-9]")`) in its
 public bitcoin address.  In deciding how vain you want to be for the
 next exercise, think about how the running time scales with the number
 of strings that match the target pattern.
