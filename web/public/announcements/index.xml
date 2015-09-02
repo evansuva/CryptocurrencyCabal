@@ -6,8 +6,32 @@
     <description>Recent content in Announcements on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mining Pools</title>
+      <link>http://bitcoin-class.org/announcements/miningpools/</link>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/miningpools/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s the up-to-date graph of hashing power distributed by mining pools
+(that I wasn&amp;rsquo;t able to find in class Monday):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blockchain.info/pools?timespan=4days&#34;&gt;https://blockchain.info/pools?timespan=4days&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at the current results for the past for days, more than 50% of
+the hashing power appears to be held by just three mining pools: F2Pool
+(20%), BitFury (17%), and AntPool (17%).  Each of these has around 75
+PH/s (one peta-hash means 10&lt;sup&gt;15&lt;/sup&gt; computations of the bitcoin
+block hashing function, which actually involves two computations of
+SHA-256).&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll talk about mining a lot more in the coming weeks to get a good
+understanding of what this means technically, as well as the
+implications for the blockchain.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Email/Calendar Update</title>
