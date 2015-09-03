@@ -381,7 +381,7 @@ transaction has already been spent.
    sends the full amount of the input transaction (less the network fee)
    to the destination address.  Modify the program to add an `-amount
    <value>` flag that takes the amount to transfer in satoshi.  If the amount
-   available in the transaction output (less the network fee) exceeds the
+   available in the specified transaction output (less the network fee) exceeds the
    amount to send, your program should print an error message.
    Otherwise, it should send the requested amount to the toaddress, and
    send the change back to your address.
