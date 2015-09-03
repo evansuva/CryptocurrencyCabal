@@ -915,7 +915,7 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
 
 &lt;h2 id=&#34;signatures:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Signatures&lt;/h2&gt;
 
-&lt;p&gt;Real-life signatures. Properties:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Real-life&amp;rdquo; signatures. Properties:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Easy to verify&lt;/li&gt;
@@ -947,92 +947,99 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
 &lt;li&gt;Establishes a private secret key, unknown to any evesdropper&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Discrete Logarithm Problem&lt;/p&gt;
+&lt;p&gt;Whitfield Diffie and Martin E. Hellman, &lt;a href=&#34;http://www-ee.stanford.edu/~hellman/publications/24.pdf&#34;&gt;&lt;em&gt;New Directions in Cryptography&lt;/em&gt;&lt;/a&gt;, IEEE Transactions on Information Theory, 1976.&lt;/p&gt;
+
+&lt;p&gt;The paper concludes with an interesting historical discussion (that gets
+bonus points for mentioning Thomas Jefferson):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;While at first the public key systems and one-way authentication systems suggested in this paper appear to be unportended by past cryptographic developments, it is possible to view them as the natural outgrowth of trends in cryptography stretching back hundreds of years. Secrecy is at the heart of cryptography. In early cryptography, however, there was a confusion about what was to be kept secret. &amp;hellip; After the invention of the telegraph, the distinction between a general system and a specific key allowed the general system to be compromised, for example by theft of a cryptographic device, without compromising future messages enciphered in new keys. &amp;hellip; The development of computers has led for the first time to a mathematical theory of algorithms which can begin to approach the difficult problem of estimating the computational difficulty of breaking a cryptographic system. The position of mathematical proof may thus come full circle and be reestablished as the best method of certification.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The last characteristic which we note in the history of cryptography is the division between amateur and professional cryptographers. Skill in production cryptanalysis has always been heavily on the side of the professionals, but innovation, particularly in the design of new types of cryptographic systems, has come primarily from the amateurs. Thomas Jefferson, a cryptographic amateur, invented a system which was still in use in World War II, while the most noted cryptographic system of the twentieth century, the rotor machine, was invented simultaneously by four separate people, all amateurs. We hope this will inspire others to work in this fascinating area in which participation has been discouraged in the recent past by a nearly total government monopoly.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Observe how the them of amateurs being the ones who design the important
+cryptographic systems carries through with bitcoin. Although Satoshi&amp;rsquo;s
+actual identity is unknown, it seems pretty clear that they are not a
+professionally-trained cryptographer, and (so far, at least!) all the
+digital currencies developed by world renowned cryptographers have
+failed.&lt;/p&gt;
+
+&lt;h3 id=&#34;discrete-logarithm-problem:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Discrete Logarithm Problem&lt;/h3&gt;
+
+&lt;p&gt;Given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt;, and &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt;, find &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Discrete&lt;/del&gt; Logarithm Problem: easy to solve for real numbers.&lt;/p&gt;
+
+&lt;p&gt;What is the range of elements out of which we are randomly selecting?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;mod-5-exponentiation:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Mod 5 exponentiation&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Multiplicative order&lt;/strong&gt; is the number of multiplication after which the result repeats.&lt;/p&gt;
+
+&lt;p&gt;Multiplicative order of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; is &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; if &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; is the smallest positive integer
+such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sup&gt; = 1&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;exponent-modulus:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Exponent Modulus&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Given $g,y,p$, find $x$ such that $g^x \text{ mod } p = y$&lt;/li&gt;
+&lt;li&gt;Multiplicative order is at most &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt; - 1&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Pick random &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;0 &amp;le; &lt;em&gt;x&lt;/em&gt; &amp;lt; &lt;em&gt;p&lt;/em&gt; - 1&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt; &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;(&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;) mod &lt;em&gt;n&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;del&gt;Discrete&lt;/del&gt; Logarithm Problem&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Easy to solve for real numbers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Random Element out of &amp;hellip;?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What is the range of elements out of which we are randomly selecting?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Mod 5 exponentiation&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Multiplicative order&amp;rdquo; is the number of multiplication after which the result repeats. I.e. Multiplicative order of g is n if n is the smallest positive integer such that $g^n=1$.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Exponent Modulus&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Multiplicative order is at most $p-1$&lt;/li&gt;
-&lt;li&gt;Pick random $x$ such that $0 \le x &amp;lt; p-1$&lt;/li&gt;
-&lt;li&gt;$g^a g^ b \text{ mod } p = g^{a+b} \text{ mod } p = g^{(a+b) \text{ mod }n} \text{ mod } p$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Public-key Cryptography&lt;/p&gt;
+&lt;h1 id=&#34;public-key-cryptography:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Public-key Cryptography&lt;/h1&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Google announces $g^a$&lt;/li&gt;
-&lt;li&gt;Bob picks random secret $b$, computes $(g^a)^b=g^{ab}$.&lt;/li&gt;
-&lt;li&gt;Bob encrypts message $m$ and sends: $g^b, g^{ab}m$,&lt;/li&gt;
+&lt;li&gt;Google announces &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Bob picks random secret &lt;span class=&#34;math&#34;&gt;&lt;em&gt;b&lt;/em&gt;&lt;/span&gt;, computes &lt;span class=&#34;math&#34;&gt;(&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt;)&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt;=&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;ab&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Bob encrypts message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; and sends: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt;, &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;ab&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Man-in-the-middle (MITM)&lt;/p&gt;
+&lt;h3 id=&#34;man-in-the-middle-mitm:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Man-in-the-middle (MITM)&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Active adversary can still read everything. We have to know messages are coming from the right person.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Active adversary can still read everything. We have to know messages are coming from the right person.&lt;/p&gt;
 
 &lt;h2 id=&#34;digital-signatures:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Digital Signatures&lt;/h2&gt;
 
 &lt;p&gt;Discrete-log based signature&lt;/p&gt;
 
-&lt;p&gt;ElGamal Signature Scheme&lt;/p&gt;
+&lt;h3 id=&#34;elgamal-signature-scheme:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;ElGamal Signature Scheme&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Fixed global parameters: $g,p$&lt;/li&gt;
-&lt;li&gt;Private key: $a$&lt;/li&gt;
-&lt;li&gt;Public key: $g^a \text{ mod } p$&lt;/li&gt;
+&lt;li&gt;Fixed global parameters: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Private key: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Public key: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;a&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Signing:
 
 &lt;ol&gt;
-&lt;li&gt;Input: message $m$&lt;/li&gt;
-&lt;li&gt;Pick random $k$&lt;/li&gt;
-&lt;li&gt;Compute $r = g^k \text{ mod } p$;
-       $s = (m-ar)k^{-1} \text{ mod } (p-1)$&lt;/li&gt;
-&lt;li&gt;Send $(r,s)$ with message $m$&lt;/li&gt;
+&lt;li&gt;Input: message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Pick random &lt;span class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Compute &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt;;
+       &lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt; = (&lt;em&gt;m&lt;/em&gt;-&lt;em&gt;ar&lt;/em&gt;)&lt;em&gt;k&lt;/em&gt;&lt;sup&gt;-1&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; - 1&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Send &lt;span class=&#34;math&#34;&gt;(&lt;em&gt;r&lt;/em&gt;, &lt;em&gt;s&lt;/em&gt;)&lt;/span&gt; with message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;Verification:
 
 &lt;ol&gt;
-&lt;li&gt;Input: message $m, (r,s)$&lt;/li&gt;
-&lt;li&gt;Check if $r^s(g^a)^r = g^m (\text{ mod } p)$&lt;/li&gt;
+&lt;li&gt;Input: message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;, (&lt;em&gt;r&lt;/em&gt;,&lt;em&gt;s&lt;/em&gt;)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Verify that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sup&gt;&lt;em&gt;s&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt;)&lt;sup&gt;&lt;em&gt;r&lt;/em&gt;&lt;/sup&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;.&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;avoiding-overly-long-numbers:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Avoiding (overly) long numbers&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Real-life keys are long. We can use any group where discrete log is hard.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Real-life keys are long. We can use any group where discrete log is hard.&lt;/p&gt;
 
 &lt;p&gt;A group is a set of elements and an associated operation such that it satisfies the following:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Closure: $a*b$ is also a group element&lt;/li&gt;
-&lt;li&gt;Associativity: $\forall a,b,c: (a&lt;em&gt;b)*c = a&lt;/em&gt;(b*c)$&lt;/li&gt;
-&lt;li&gt;Identity element: $a*e = a = e*a$&lt;/li&gt;
-&lt;li&gt;Inverse: $a*b = e = b*a$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Closure&lt;/strong&gt;: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt; * &lt;em&gt;b&lt;/em&gt;&lt;/span&gt; is also a group element.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Associativity:&lt;/strong&gt; for all &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;: (&lt;em&gt;a&lt;/em&gt;&lt;em&gt;&lt;em&gt;b&lt;/em&gt;)&lt;/em&gt;&lt;em&gt;c&lt;/em&gt; = &lt;em&gt;a&lt;/em&gt;&lt;em&gt;(&lt;em&gt;b&lt;/em&gt;&lt;/em&gt;&lt;em&gt;c&lt;/em&gt;)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identity element:&lt;/strong&gt; there exists an element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;e&lt;/em&gt;&lt;/span&gt;, such that for every element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;: &lt;em&gt;a&lt;/em&gt; * &lt;em&gt;e&lt;/em&gt; = &lt;em&gt;a&lt;/em&gt; = &lt;em&gt;e&lt;/em&gt; * &lt;em&gt;a&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inverse:&lt;/strong&gt; for every element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt;, there exists an element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;b&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt; * &lt;em&gt;b&lt;/em&gt; = &lt;em&gt;e&lt;/em&gt; = &lt;em&gt;b&lt;/em&gt; * &lt;em&gt;a&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Additional Cryptographic Properties:&lt;/p&gt;
@@ -1042,26 +1049,27 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
 &lt;li&gt;Group operation should be efficient&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Elliptic Curve Cryptography (ECC)&lt;/p&gt;
+&lt;h3 id=&#34;elliptic-curve-cryptography-ecc:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Elliptic Curve Cryptography (ECC)&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Group elements are points on the curve $y^2 = x^3+7$&lt;/li&gt;
+&lt;li&gt;Group elements are points on a curve, e.g., &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt; = &lt;em&gt;x&lt;/em&gt;&lt;sup&gt;3&lt;/sup&gt; + 7&lt;/sup&gt;.&lt;/li&gt;
 &lt;li&gt;Point &amp;ldquo;addition&amp;rdquo; using &amp;ldquo;geometry&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Elliptic Curve Digital Signature Algorithm&lt;/p&gt;
+&lt;h3 id=&#34;elliptic-curve-digital-signature-algorithm:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Elliptic Curve Digital Signature Algorithm&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Follows the same structure as ElGamal signature, but only on $x$-coordinate.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Follows the same structure as ElGamal signature, but only on &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;-coordinate.&lt;/p&gt;
 
 &lt;h2 id=&#34;pitfalls:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Pitfalls&lt;/h2&gt;
 
-&lt;p&gt;If we ever repeat signing nonce, we leak private key&lt;/p&gt;
+&lt;p&gt;If we ever repeat signing nonce, we leak the private key.  Sony actually
+did this with Playstation 3 consoles (&lt;a href=&#34;https://events.ccc.de/congress/2010/Fahrplan/attachments/1780_27c3_console_hacking_2010.pdf&#34;&gt;&lt;em&gt;Console Hacking 2010: PS3 Epic Fail&lt;/em&gt;&lt;/a&gt;, CCC 2010).&lt;/p&gt;
 
-&lt;p&gt;Sony actually did this with Playstation 3 consoles.&lt;/p&gt;
-
-&lt;p&gt;Poor randomness makes private keys predictable. Use /dev/urandom (Linux) or java.security.SecureRandom. Common mistake was to use Math.random() or srand(time(0))&lt;/p&gt;
+&lt;p&gt;Poor randomness makes private keys predictable. Use &lt;code&gt;/dev/urandom&lt;/code&gt;
+(Linux) or &lt;code&gt;java.security.SecureRandom&lt;/code&gt; in Java.  If you use a
+pseudorandom number generator that is seeded with an easily guessed
+value, you are in big trouble!  A common mistake was to use
+&lt;code&gt;Math.random()&lt;/code&gt; or &lt;code&gt;srand(time(0))&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Logjam attack: downgrade security during handshake.&lt;/p&gt;
 
@@ -1070,11 +1078,11 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;How are digital signatures and real-life signatures different in terms of why we trust them? What stops each from being forged by others?&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Assume somebody really clever has a way of solving the discrete logarithm problem easily. That is, for any given g,y,p, the adversary can compute $x$ such that $g^x \text{ mod } p = y$. How can this algorithm be used to break security of Diffie-Hellman protocol?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Assume somebody really clever has a way of solving the discrete logarithm problem easily. That is, for any given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt;, and &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt;, the adversary can compute &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;&lt;/span&gt;. How can this algorithm be used to break security of Diffie-Hellman protocol?&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;What is a nonce? What breaks if we reuse it between encrypted messages?&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In elliptic curve cryptography, why do we use mod $p$ integers? What would go wrong if we used real numbers?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In elliptic curve cryptography, why do we use &lt;span class=&#34;math&#34;&gt;mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt; integers? What would go wrong if we used real numbers?  What would go wrong if we used unbounded integers?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
