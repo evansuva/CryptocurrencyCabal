@@ -8,7 +8,7 @@ menu: "classes"
 
 ## Checkup 1
 
-[Checkup 1]("/checkup1.pdf") (PDF link) and [Feedback]("/feedback.pdf")
+[Checkup 1](/checkup1.pdf) and [Feedback](/feedback.pdf).
 
 ## Checkup Revisions
 
