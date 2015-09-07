@@ -27,3 +27,4 @@ original answers.)
 **Tuesday, September 15** (8:29pm): [Problem Set 1](http://www.bitcoin-class.org/ps/ps1) due.
    </div>
 
+<!--more-->
