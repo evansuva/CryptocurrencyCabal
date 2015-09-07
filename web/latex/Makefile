@@ -1,4 +1,12 @@
-all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf ../public/class3.pdf
+all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf ../public/class3.pdf checkup1.pdf
+
+checkup1.pdf: ../../staff/checkup1/checkup1.md
+	python latexify.py ../../staff/checkup1/checkup1.md > checkup1-latex.md
+	pandoc --template=./cabal.template checkup1-latex.md -o checkup1.pdf
+
+feedback.pdf: ../../staff/checkup1/feedback.md
+	python latexify.py ../../staff/checkup1/feedback.md > feedback-latex.md
+	pandoc --template=./cabal.template feedback-latex.md -o feedback.pdf
 
 ../public/syllabus.pdf: ../content/syllabus.md
 	python latexify.py ../content/syllabus.md > syllabus-latex.md

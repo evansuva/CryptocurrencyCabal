@@ -37,6 +37,8 @@ def process_latex(finname):
                     print "\n#\n"
                 elif line.startswith('<div class="biggap"></div>'):
                     print "\n#\n#\n"
+                elif line.startswith('<div class="biggergap"></div>'):
+                    print "\n#\n#\n#\n#\n"
                 else:
                     print line,
 
