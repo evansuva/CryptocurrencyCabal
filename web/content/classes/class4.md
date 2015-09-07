@@ -14,10 +14,11 @@ menu: "classes"
 
 If you are not happy with your answers to any of the questions on
 Checkup 1, you may submit revised answers at the beginning of
-Wednesday's class.  (Just printout the [Checkup 1]("/checkup1.pdf") and
-fill in revised answers for any questions you want.  It is not necessary
-to resubmit answers to questions for which you are happy with your
-original answers.)
+Wednesday's class.  (Just print the [Checkup 1](/checkup1.pdf) and fill
+in revised answers for any questions you want, or submit your clearly
+marked answers on a separate page you generate.  It is not necessary to
+resubmit answers to questions for which you are happy with your original
+answers.)
 
 ## Schedule
 
