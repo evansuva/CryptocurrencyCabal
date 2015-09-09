@@ -63,9 +63,9 @@ What are the most common reasons for cryptosystems to fail in practice?
 
 <!--page-->
 
-<div class="highlight">
+   <div class="highlight">
 We didn't get to this in class, but will cover it in a future class.
-</div>
+   </div>
 
 ## Bitcoin's Curve
 

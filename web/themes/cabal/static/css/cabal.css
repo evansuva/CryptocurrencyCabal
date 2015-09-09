@@ -726,6 +726,10 @@ table, th, td {
    font-size: 15px; background-color: #FFC; text-align: center; margin-left: 60px; margin-right: 60px; margin-top: 25px; margin-bottom: 25px; border-style:ridge; border-width:5px; border-color: #F88; font-weight:bold; padding-top: 5px; padding-bottom: 5px;
 }
 
+.highlight {
+   font-size: 15px; background-color: #FFC; text-align: center; margin-left: 20px; margin-right: 20px; margin-top: 5px; margin-bottom: 5px; border-style:solid; border-width:2px; border-color: #F88; font-weight:bold; padding-top: 5px; padding-bottom: 5px;
+}
+
 .phighlight {
    font-size: 12px; 
    float:right;

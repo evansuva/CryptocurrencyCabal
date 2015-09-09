@@ -958,9 +958,9 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
 
 &lt;!--page--&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;
-We didn&#39;t get to this in class, but will cover it in a future class.
-&lt;/div&gt;
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;
+We didn&amp;rsquo;t get to this in class, but will cover it in a future class.
+   &lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;bitcoin-s-curve:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Bitcoin&amp;rsquo;s Curve&lt;/h2&gt;
 
