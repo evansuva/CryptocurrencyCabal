@@ -38,6 +38,19 @@ Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
 
 <!--more-->
 
+
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/jXzZMV6Wpg9kCK"
+width="625" height="400" frameborder="2" marginwidth="0"
+marginheight="0" scrolling="no"></iframe>
+
+   <div class="caption">
+Note: ink markings may not appear in the
+embedded viewer.  To see them, [download the slides](/classes/class5-post.pptx).
+   </div>
+
+</center>
+
 ## Notes
 
 What does it mean for a problem to be _hard_?
