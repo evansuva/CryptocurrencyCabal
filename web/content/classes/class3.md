@@ -20,7 +20,7 @@ menu: "classes"
 
 <center>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/aX0xcwqcvhABQg"
-width="476" height="400" frameborder="0" marginwidth="0"
+width="625" height="400" frameborder="2" marginwidth="0"
 marginheight="0" scrolling="no"></iframe>
 
    <div class="caption">

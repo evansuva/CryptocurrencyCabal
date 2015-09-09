@@ -6,8 +6,301 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 5: Becoming More Paranoid</title>
+      <link>http://bitcoin-class.org/classes/class5-latex/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class5-latex/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:34a85b2c2ef1e9a276b23cd8d0d26005&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, 9 September&lt;/strong&gt; (now): Checkup 1 revisions (if desired).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Check 2 (was originally scheduled for Monday, September 21)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Readings for next week&lt;/strong&gt; (should be completed by Monday, September 21 at the latest, but earlier is better):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
+System&lt;/em&gt;&lt;/a&gt;, 2008.  The is the original
+bitcoin paper, which is quite readable and historically interesting.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc&#34;&gt;&lt;em&gt;Chapter 6: The Bitcoin
+Network&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc&#34;&gt;&lt;em&gt;Chapter 7: The
+Blockchain&lt;/em&gt;&lt;/a&gt;
+from Andreas Antonopoulos&amp;rsquo; book.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Achieves
+Decentralization&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf&#34;&gt;&lt;em&gt;Chapter 5: Bitcoin
+Mining&lt;/em&gt;&lt;/a&gt;
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
+Technologies&lt;/em&gt;&lt;/a&gt;.
+&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;notes:34a85b2c2ef1e9a276b23cd8d0d26005&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;What does it mean for a problem to be &lt;em&gt;hard&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;If you know an algorithm with running time in &lt;span class=&#34;math&#34;&gt;&lt;em&gt;O&lt;/em&gt;($2^n$)&lt;/span&gt; for problem &lt;em&gt;P&lt;/em&gt;, what do you know about the hardness of problem &lt;em&gt;P&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What are the most common reasons for cryptosystems to fail in practice?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;bitcoin-s-curve:34a85b2c2ef1e9a276b23cd8d0d26005&#34;&gt;Bitcoin&amp;rsquo;s Curve&lt;/h2&gt;
+
+&lt;p&gt;Standards for Efficient Cryptography: &lt;a href=&#34;http://www.secg.org/sec2-v2.pdf&#34;&gt;&lt;em&gt;SEC 2: Recommended Elliptic Curve Domain Parameters&lt;/em&gt;&lt;/a&gt; (Certicom Research, 27 January 2010)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Verifiably random parameters offer some additional conservative features. These parameters are
+chosen from a seed using SHA-1 as specified in ANSI X9.62 [X9.62]. This process ensures that
+the parameters cannot be predetermined. The parameters are therefore extremely unlikely to
+be susceptible to future special-purpose attacks, and no trapdoors can have been placed in the
+parameters during their generation. When elliptic curve domain parameters are chosen verifiably
+at random, the seed S used to generate the parameters may optionally be stored along with the
+parameters so that users can verify the parameters were chosen verifiably at random.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What does it mean for parameters to be &amp;ldquo;verifiably random&amp;rdquo;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;randomness:34a85b2c2ef1e9a276b23cd8d0d26005&#34;&gt;Randomness&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Kolmogorov Complexity:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;K&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;)&lt;/span&gt; = the length of the shortest description of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kolmogorov&amp;rsquo;s Definition of Random:&lt;/strong&gt; A sequence &lt;span
+  class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt; is random, if &lt;span class=&#34;math&#34;&gt;&lt;em&gt;K&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;) =
+  |&lt;em&gt;s&lt;/em&gt;| + &lt;em&gt;C&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the Kolmogorov Complexity of the string &lt;code&gt;0001000010000011111111100111...&lt;/code&gt;?
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the Kolmogorov Complexity of the string: `1MRigEo5423vycLnUdSnA4C6Ts691fUiYu 18UikW89q9VgGDftQW3Gmuhe4sQDCFP5kD 19ZQwQmfAsgy47ErehfkW&amp;hellip;&amp;rsquo; ?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Daniel J. Bernstein, Tung Chou, Chitchanok Chuengsatiansup, Andreas
+H&amp;uuml;lsing, Tanja Lange, Ruben Niederhagen, and Christine van Vredendaal.
+&lt;a href=&#34;https://eprint.iacr.org/2014/571.pdf&#34;&gt;&lt;em&gt;How to Manipulate Curve Standards: A White Paper for the Black  Hat&lt;/em&gt;&lt;/a&gt;, 2014.&lt;/p&gt;
+
+&lt;p&gt;How likely is it that the parameters for the secp256k1 curve used by bitcoin have a trapdoor?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;How should ECC parameters be generated for an important curve in a standard?
+&amp;lt;!&amp;ndash;page&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;dual-ec-prng:34a85b2c2ef1e9a276b23cd8d0d26005&#34;&gt;Dual-EC PRNG&lt;/h2&gt;
+
+&lt;p&gt;\noindent
+$P$ and $Q$ are points on the curve, specified by the standard (but not
+explained how $Q$ is choosen).  $P$ is a generator, so there exists some
+$e$ such that $Q^e = P$.&lt;/p&gt;
+
+&lt;p&gt;\noindent $s&lt;em&gt;0 =$ initalize with seed randomness&lt;br /&gt;
+\noindent $s&lt;/em&gt;{i+1} = \varphi(s_i \times P)$&lt;/p&gt;
+
+&lt;p&gt;\noindent$r_i = \varphi(s_i \times Q)$
+$o_i = $ the low-order 16 bits of the $x$-coordinate of $r_i$.&lt;/p&gt;
+
+&lt;p&gt;\noindent Given $o_i$, how much work is it to find all the possible $r_i = (x, y)$ values?
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;\noindent Given $e$, what is $\varphi(e \times A)$ where $A$ is a possible $r_i$ value?
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Dan Shumow, Niels Ferguson.  &lt;a href=&#34;http://rump2007.cr.yp.to/15-shumow.pdf&#34;&gt;&lt;em&gt;On the Possibility of a Back Door in the
+NIST SP800-90 Dual Ec Prng&lt;/em&gt;&lt;/a&gt;.
+CRYPTO 2007 Rump Session.&lt;/p&gt;
+
+&lt;p&gt;Michael Wertheimer (NSA), &lt;a href=&#34;http://www.ams.org/notices/201502/rnoti-p165.pdf&#34;&gt;&lt;em&gt;Encryption and the NSA Role in International
+Standards&lt;/em&gt;&lt;/a&gt;, Notices
+of the American Mathematical Society, February 2015.&lt;/p&gt;
+
+&lt;p&gt;Wertheimer&amp;rsquo;s letter is an attempt to respond to &lt;a href=&#34;http://www.ams.org/notices/201406/rnoti-p623.pdf&#34;&gt;&lt;em&gt;Mathematicians Discuss the
+Snowden Revelations&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;The recent revelations about the NSA’s spying
+programs are both dismaying and encouraging.
+What is encouraging is that they might lead not
+just to a reform of the intelligence agencies but
+also to a more serious look at what the ongoing
+and inevitable erosion of privacy is doing to our
+society. What is dismaying is less the intrusive data
+collection itself and more what it reveals about the
+decision-making processes inside the government.&lt;/em&gt; (Andrew Odlyzko)&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 5: Becoming More Paranoid</title>
+      <link>http://bitcoin-class.org/classes/class5/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class5/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, 9 September&lt;/strong&gt; (now): Checkup 1 revisions (if desired).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Check 2 (was originally scheduled for Monday, September 21)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Readings for next week&lt;/strong&gt; (should be completed by Monday, September 21 at the latest, but earlier is better):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
+System&lt;/em&gt;&lt;/a&gt;, 2008.  The is the original
+bitcoin paper, which is quite readable and historically interesting.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc&#34;&gt;&lt;em&gt;Chapter 6: The Bitcoin
+Network&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc&#34;&gt;&lt;em&gt;Chapter 7: The
+Blockchain&lt;/em&gt;&lt;/a&gt;
+from Andreas Antonopoulos&amp;rsquo; book.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Achieves
+Decentralization&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf&#34;&gt;&lt;em&gt;Chapter 5: Bitcoin
+Mining&lt;/em&gt;&lt;/a&gt;
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
+Technologies&lt;/em&gt;&lt;/a&gt;.
+&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;notes:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;What does it mean for a problem to be &lt;em&gt;hard&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;If you know an algorithm with running time in &lt;span class=&#34;math&#34;&gt;&lt;em&gt;O&lt;/em&gt;(2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sup&gt;)&lt;/span&gt; for problem &lt;em&gt;P&lt;/em&gt;, what do you know about the hardness of problem &lt;em&gt;P&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What are the most common reasons for cryptosystems to fail in practice?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;
+We didn&#39;t get to this in class, but will cover it in a future class.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;bitcoin-s-curve:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Bitcoin&amp;rsquo;s Curve&lt;/h2&gt;
+
+&lt;p&gt;Standards for Efficient Cryptography: &lt;a href=&#34;http://www.secg.org/sec2-v2.pdf&#34;&gt;&lt;em&gt;SEC 2: Recommended Elliptic Curve Domain Parameters&lt;/em&gt;&lt;/a&gt; (Certicom Research, 27 January 2010)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Verifiably random parameters offer some additional conservative features. These parameters are
+chosen from a seed using SHA-1 as specified in ANSI X9.62 [X9.62]. This process ensures that
+the parameters cannot be predetermined. The parameters are therefore extremely unlikely to
+be susceptible to future special-purpose attacks, and no trapdoors can have been placed in the
+parameters during their generation. When elliptic curve domain parameters are chosen verifiably
+at random, the seed S used to generate the parameters may optionally be stored along with the
+parameters so that users can verify the parameters were chosen verifiably at random.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What does it mean for parameters to be &amp;ldquo;verifiably random&amp;rdquo;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;randomness:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Randomness&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Kolmogorov Complexity:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;K&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;)&lt;/span&gt; = the length of the shortest description of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kolmogorov&amp;rsquo;s Definition of Random:&lt;/strong&gt; A sequence &lt;span
+  class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt; is random, if &lt;span class=&#34;math&#34;&gt;&lt;em&gt;K&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;) =
+  |&lt;em&gt;s&lt;/em&gt;| + &lt;em&gt;C&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the Kolmogorov Complexity of the string &lt;code&gt;0001000010000011111111100111...&lt;/code&gt;?
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the Kolmogorov Complexity of the string: &lt;code&gt;1MRigEo5423vycLnUdSnA4C6Ts691fUiYu 18UikW89q9VgGDftQW3Gmuhe4sQDCFP5kD 19ZQwQmfAsgy47ErehfkW3SeSzNGFfH9iN 1AZCH1insc6JrT2Z9SiNvgtTugXg8sF8yd 15qYggRJvmyZfpchxvNqr6h3pNjw6bGBV9 1C943NwPPffUFY7VDzi3kt7KikXwc2vdkN 1JBhLLCgNYhR8f6AZcRS3mjfEAmMzPvwyf 1JvDrBSYm6o4ZTQUhwUE4FhPFxd2wuXWUR 1KcBM1RNhcp1oENycoD4AezA5Se4SrsZnA 16JZWC433XRxjWwR7X65uxRVFdLTmoPr4t 149LB8VYaT1BdMLyQUL92Kj6KrJfNwcp64 16zDGuzbwkHjW8dNYMw9stDjRbTzVSLZU1 1HfMaZn53ZDWKgmhWxk1UPZMjQ6QmpW6m 14gZWnuwKpRLTCUFCAgTZMciRaEdrkmEpr 1BZ2ateDPugmqLzYsXVy9EK5BguvXa2Bnj 1rCdRyMVcZHJaHA2LKUvRqYBcHqvAfQkc 1Ak8VwX6x4FPbA6aXTC3BQGQHnnhfaJuB8 129sBvF6Jternwdn5XcoA37LinQRcmAD5U1H2in 1HxEzSKHssPtog2krjFPiPfrKSiw4...&lt;/code&gt; ?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Daniel J. Bernstein, Tung Chou, Chitchanok Chuengsatiansup, Andreas
+H&amp;uuml;lsing, Tanja Lange, Ruben Niederhagen, and Christine van Vredendaal.
+&lt;a href=&#34;https://eprint.iacr.org/2014/571.pdf&#34;&gt;&lt;em&gt;How to Manipulate Curve Standards: A White Paper for the Black  Hat&lt;/em&gt;&lt;/a&gt;, 2014.&lt;/p&gt;
+
+&lt;p&gt;How likely is it that the parameters for the secp256k1 curve used by bitcoin have a trapdoor?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;How should ECC parameters be generated for an important curve in a standard?
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.root-dnssec.org/wp-content/uploads/2010/02/draft-icann-dnssec-ceremonies-00.txt&#34;&gt;&lt;em&gt;Root Zone DNSSEC KSK Ceremonies
+Guide&lt;/em&gt;&lt;/a&gt;.
+If you have a few hours to spare, you can watch a key signing for the
+DNSSEC (Domain Name System): &lt;a href=&#34;https://www.iana.org/dnssec/ceremonies/20&#34;&gt;DNSSEC KSK Ceremony
+20&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;dual-ec-prng:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Dual-EC PRNG&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf&#34;&gt;NIST Special Publication 800-90A Recommendation for Random Number
+Generation Using Deterministic Random Bit
+Generators&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; are points on the curve, specified by the standard (but not
+explained how &lt;span class=&#34;math&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is choosen).  &lt;span class=&#34;math&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; is a generator, so there exists some
+&lt;span class=&#34;math&#34;&gt;&lt;em&gt;e&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;e&lt;/em&gt;&lt;/sup&gt; = &lt;em&gt;P&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt; = &lt;/span&gt; initialize with seed randomness&lt;br /&gt;
+&lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;+1&lt;/sub&gt; = &amp;phiv;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; &amp;times; &lt;em&gt;P&lt;/em&gt;)&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; = &amp;phiv;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; &amp;times; &lt;em&gt;Q&lt;/em&gt;)&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;math&#34;&gt;&lt;em&gt;o&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; =&lt;/span&gt; the low-order 16 bits of the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;-coordinate of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;o&lt;/em&gt;&lt;sub&gt;i&lt;/sub&gt;&lt;/span&gt;, how much work is it to find all the possible &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;i&lt;/sub&gt; = (&lt;em&gt;x&lt;/em&gt;, &lt;em&gt;y&lt;/em&gt;)&lt;/span&gt; values?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;e&lt;/em&gt;&lt;/span&gt;, what is &lt;span class=&#34;math&#34;&gt;&amp;phiv;(&lt;em&gt;e&lt;/em&gt; &amp;times; &lt;em&gt;A&lt;/em&gt;)&lt;/span&gt; where &lt;span class=&#34;math&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; is a possible &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; value?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Dan Shumow, Niels Ferguson.  &lt;a href=&#34;http://rump2007.cr.yp.to/15-shumow.pdf&#34;&gt;&lt;em&gt;On the Possibility of a Back Door in the
+NIST SP800-90 Dual Ec Prng&lt;/em&gt;&lt;/a&gt;.
+CRYPTO 2007 Rump Session.&lt;/p&gt;
+
+&lt;p&gt;Michael Wertheimer (NSA), &lt;a href=&#34;http://www.ams.org/notices/201502/rnoti-p165.pdf&#34;&gt;&lt;em&gt;Encryption and the NSA Role in International
+Standards&lt;/em&gt;&lt;/a&gt;, Notices
+of the American Mathematical Society, February 2015.&lt;/p&gt;
+
+&lt;p&gt;Wertheimer&amp;rsquo;s letter is an attempt to respond to &lt;a href=&#34;http://www.ams.org/notices/201406/rnoti-p623.pdf&#34;&gt;&lt;em&gt;Mathematicians Discuss the
+Snowden Revelations&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;The recent revelations about the NSA’s spying
+programs are both dismaying and encouraging.
+What is encouraging is that they might lead not
+just to a reform of the intelligence agencies but
+also to a more serious look at what the ongoing
+and inevitable erosion of privacy is doing to our
+society. What is dismaying is less the intrusive data
+collection itself and more what it reveals about the
+decision-making processes inside the government.&lt;/em&gt; (Andrew Odlyzko)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How satisfying is the NSA&amp;rsquo;s response?  Are you more dismayed or encouraged?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 4: Checkup</title>
@@ -62,7 +355,7 @@ answers.)&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/aX0xcwqcvhABQg&#34;
-width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34;
+width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
 marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
