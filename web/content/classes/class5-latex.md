@@ -2,7 +2,7 @@
 title: "Class 5: Becoming More Paranoid"
 date: '2015-09-09'
 nocomment: false
-weight: 3
+weight: 99
 ---
 
 ## Schedule
