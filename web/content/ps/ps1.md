@@ -36,7 +36,9 @@ long as you understand everything in all of the code you use.
 
 Submit your answers as a single PDF file using [this
 link](https://www.dropbox.com/request/KV26Qd6UrcB9j6nBLVw8).  The name
-of your file should be `<your email ID>-ps1.pdf`.
+of your file should be `<your email ID>-ps1.pdf`.  (In addition to the
+PDF file you submit, you may submit a separate `spend.go` file with your
+code for question 11, or incorporate that code into the PDF submission.)
 
 Your submission should include clearly marked answers for all the
 problems (highlighted in yellow).
