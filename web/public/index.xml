@@ -1172,16 +1172,6 @@ answers.)&lt;/p&gt;
     </item>
     
     <item>
-      <title>Problem Set 1 Posted</title>
-      <link>http://bitcoin-class.org/announcements/ps1/</link>
-      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/ps1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Mining Pools</title>
       <link>http://bitcoin-class.org/announcements/miningpools/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
@@ -1202,6 +1192,16 @@ SHA-256).&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll talk about mining a lot more in the coming weeks to get a good
 understanding of what this means technically, as well as the
 implications for the blockchain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 1 Posted</title>
+      <link>http://bitcoin-class.org/announcements/ps1/</link>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/ps1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
 </description>
     </item>
     
