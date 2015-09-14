@@ -897,6 +897,83 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 6: Hash Functions</title>
+      <link>http://bitcoin-class.org/classes/class6/</link>
+      <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class6/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm, tomorrow): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Check 2 (was originally scheduled for Monday, September 21)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Readings for next week&lt;/strong&gt; (should be completed by Monday, September 21 at the latest, but earlier is better):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
+System&lt;/em&gt;&lt;/a&gt;, 2008.  The is the original
+bitcoin paper, which is quite readable and historically interesting.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc&#34;&gt;&lt;em&gt;Chapter 6: The Bitcoin
+Network&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc&#34;&gt;&lt;em&gt;Chapter 7: The
+Blockchain&lt;/em&gt;&lt;/a&gt;
+from Andreas Antonopoulos&amp;rsquo; book.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Achieves
+Decentralization&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf&#34;&gt;&lt;em&gt;Chapter 5: Bitcoin
+Mining&lt;/em&gt;&lt;/a&gt;
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
+Technologies&lt;/em&gt;&lt;/a&gt;.
+&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/JWtz4G4wUYKWU5&#34;
+width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
+marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;!--
+   &lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, [download the slides](/classes/class5-post.pptx).
+   &lt;/div&gt;
+--&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;notes:647dbe1e5b68015679492d34153c74f5&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;Why do we typically hash a message before signing it? What&amp;rsquo;s wrong if we always signed the full message?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What are the properties we want in a cryptographically secure hash function?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the &amp;ldquo;birthday attack&amp;rdquo; in the context of a hash function?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;Say you have 3000 distinct files in the &amp;ldquo;Documents&amp;rdquo; folder of our laptop. If
+you have SHA-256 hashes for each of them, do you expect any repeats? If we
+truncated the hash output to just 20 bits, how many repeats do you expect to
+see?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the advantage of using a Merkle tree as opposed to directly hashing
+the full string?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 5: Becoming Paranoid</title>
       <link>http://bitcoin-class.org/classes/class5/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
@@ -1091,6 +1168,40 @@ answers.)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.
    &lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 1 Posted</title>
+      <link>http://bitcoin-class.org/announcements/ps1/</link>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/ps1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mining Pools</title>
+      <link>http://bitcoin-class.org/announcements/miningpools/</link>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/miningpools/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s the up-to-date graph of hashing power distributed by mining pools
+(that I wasn&amp;rsquo;t able to find in class Monday):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blockchain.info/pools?timespan=4days&#34;&gt;https://blockchain.info/pools?timespan=4days&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at the current results for the past for days, more than 50% of
+the hashing power appears to be held by just three mining pools: F2Pool
+(20%), BitFury (17%), and AntPool (17%).  Each of these has around 75
+PH/s (one peta-hash means 10&lt;sup&gt;15&lt;/sup&gt; computations of the bitcoin
+block hashing function, which actually involves two computations of
+SHA-256).&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll talk about mining a lot more in the coming weeks to get a good
+understanding of what this means technically, as well as the
+implications for the blockchain.&lt;/p&gt;
 </description>
     </item>
     
@@ -1296,40 +1407,6 @@ value, you are in big trouble!  A common mistake was to use
 
 &lt;li&gt;&lt;p&gt;In elliptic curve cryptography, why do we use &lt;span class=&#34;math&#34;&gt;mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt; integers? What would go wrong if we used real numbers?  What would go wrong if we used unbounded integers?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mining Pools</title>
-      <link>http://bitcoin-class.org/announcements/miningpools/</link>
-      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/miningpools/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s the up-to-date graph of hashing power distributed by mining pools
-(that I wasn&amp;rsquo;t able to find in class Monday):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://blockchain.info/pools?timespan=4days&#34;&gt;https://blockchain.info/pools?timespan=4days&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Looking at the current results for the past for days, more than 50% of
-the hashing power appears to be held by just three mining pools: F2Pool
-(20%), BitFury (17%), and AntPool (17%).  Each of these has around 75
-PH/s (one peta-hash means 10&lt;sup&gt;15&lt;/sup&gt; computations of the bitcoin
-block hashing function, which actually involves two computations of
-SHA-256).&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;ll talk about mining a lot more in the coming weeks to get a good
-understanding of what this means technically, as well as the
-implications for the blockchain.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 1 Posted</title>
-      <link>http://bitcoin-class.org/announcements/ps1/</link>
-      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/ps1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
 </description>
     </item>
     
@@ -1686,27 +1763,6 @@ class (December 7, 2:00pm)?  (closest answer wins!)&lt;/p&gt;
 &lt;p&gt;More information will be posted here soon.  Until then, see the
 &lt;a href=&#34;http://bitcoin-class.org/syllabus/&#34;&gt;Syllabus&lt;/a&gt; and &lt;a href=&#34;0/&#34;&gt;Last Semester&amp;rsquo;s
 Course&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Inside the Fight Over Bitcoin’s Future</title>
-      <link>http://bitcoin-class.org/news/bitcoinxt/</link>
-      <pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/news/bitcoinxt/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s an article in the New Yorker, &lt;a href=&#34;http://www.newyorker.com/business/currency/inside-the-fight-over-bitcoins-future&#34;&gt;&lt;em&gt;Inside the Fight Over Bitcoin’s
-Future&lt;/em&gt;&lt;/a&gt;,
-25 August 2015 (by Maria Bustillos) about the split over the
-increasingly heated debate in the bitcoin community over the maximum
-size of a block.&lt;/p&gt;
-
-&lt;p&gt;The current maximum size accepted by the Bitcoin Core node
-software is 1MB (which means the network can support only approximately
-7 transactions per second).  There are lots of proposed solutions to
-this, including increasing the block size, but they are controversial
-and also raise lots of issues about how to make decisions like this for
-a decentralized system.&lt;/p&gt;
 </description>
     </item>
     
