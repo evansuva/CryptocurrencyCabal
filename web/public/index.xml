@@ -1095,9 +1095,8 @@ what is known today).
 The message needs to be something (1) only Alice could generate and (2)
 everyone can verify as transferring the coin to Bob.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;msg&lt;/em&gt; = &amp;ldquo;I, KU&lt;sub&gt;A&lt;/sub&gt; (Alice), transfer coin &lt;em&gt;X&lt;/em&gt; to KU&lt;sub&gt;B&lt;/sub&gt; (Bob)&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Send to ledger the message signed by Alice: (&lt;em&gt;msg&lt;/em&gt;, E&lt;sub&gt;KR&lt;sub&gt;A&lt;/sub&gt;&lt;/sub&gt;(&lt;em&gt;msg&lt;/em&gt;))
+&lt;p&gt;&lt;em&gt;msg&lt;/em&gt; = &amp;ldquo;I, KU&lt;sub&gt;A&lt;/sub&gt; (Alice), transfer coin &lt;em&gt;X&lt;/em&gt; to KU&lt;sub&gt;B&lt;/sub&gt; (Bob)&amp;rdquo;&lt;br /&gt;
+Send to ledger the message signed by Alice: (&lt;em&gt;msg&lt;/em&gt;, E&lt;sub&gt;KR&lt;sub&gt;A&lt;/sub&gt;&lt;/sub&gt;(&lt;em&gt;msg&lt;/em&gt;))
    &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>

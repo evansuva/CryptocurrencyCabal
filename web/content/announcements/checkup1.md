@@ -97,7 +97,6 @@ what is known today).
 The message needs to be something (1) only Alice could generate and (2)
 everyone can verify as transferring the coin to Bob.
 
-_msg_ = "I, KU<sub>A</sub> (Alice), transfer coin <em>X</em> to KU<sub>B</sub> (Bob)"
-
+_msg_ = "I, KU<sub>A</sub> (Alice), transfer coin <em>X</em> to KU<sub>B</sub> (Bob)"  
 Send to ledger the message signed by Alice: (_msg_, E<sub>KR<sub>A</sub></sub>(_msg_))
    </div>
