@@ -18,6 +18,10 @@
   </url>
   
   <url>
+    <loc>http://bitcoin-class.org/classes/class8/</loc>
+  </url>
+  
+  <url>
     <loc>http://bitcoin-class.org/registration/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
@@ -25,6 +29,16 @@
   <url>
     <loc>http://bitcoin-class.org/syllabus/</loc>
     <lastmod>2015-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bitcoin-class.org/announcements/checkup1/</loc>
+    <lastmod>2015-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bitcoin-class.org/classes/class7/</loc>
+    <lastmod>2015-09-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,17 +57,17 @@
   </url>
   
   <url>
+    <loc>http://bitcoin-class.org/classes/class3/</loc>
+    <lastmod>2015-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://bitcoin-class.org/announcements/miningpools/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://bitcoin-class.org/announcements/ps1/</loc>
-    <lastmod>2015-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://bitcoin-class.org/classes/class3/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   

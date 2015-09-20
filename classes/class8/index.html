@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Mining Pools // Cryptocurrency Cabal
+     // Cryptocurrency Cabal
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -16,11 +16,11 @@
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.15-DEV" />
 
-  <meta property="og:title" content="Mining Pools" />
+  <meta property="og:title" content="" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://bitcoin-class.org/announcements/miningpools/" />
+<meta property="og:url" content="http://bitcoin-class.org/classes/class8/" />
 
 
   
@@ -88,7 +88,7 @@ function showText(show,hide)
         
           <li class="nav-item">
           
-              <a href=""></a>
+              <span class="nav-item-selected"></span></a>
           
           </li>
         
@@ -183,7 +183,7 @@ function showText(show,hide)
     <section id="main">
             
             	<span class="post-date">
-                	2 Sep 2015
+                	1 Jan 0001
             	</span>
             	
             
@@ -199,21 +199,97 @@ function showText(show,hide)
 
 			
 
-            <p>Here&rsquo;s the up-to-date graph of hashing power distributed by mining pools
-(that I wasn&rsquo;t able to find in class Monday):</p>
+            <p><a href="https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp">BitcoinMiner</a> (code from core Bitcoin implementation)</p>
 
-<p><a href="https://blockchain.info/pools?timespan=4days">https://blockchain.info/pools?timespan=4days</a></p>
+<pre><code class="language-c">//
+// ScanHash scans nonces looking for a hash with at least some zero bits.
+// The nonce is usually preserved between calls, but periodically or if the
+// nonce is 0xffff0000 or above, the block is rebuilt and nNonce starts over at
+// zero.
+//
+bool static ScanHash(const CBlockHeader *pblock, uint32_t&amp; nNonce, uint256 *phash)
+{
+    // Write the first 76 bytes of the block header to a double-SHA256 state.
+    CHash256 hasher;
+    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+    ss &lt;&lt; *pblock;
+    assert(ss.size() == 80);
+    hasher.Write((unsigned char*)&amp;ss[0], 76);
 
-<p>Looking at the current results for the past for days, more than 50% of
-the hashing power appears to be held by just three mining pools: F2Pool
-(20%), BitFury (17%), and AntPool (17%).  Each of these has around 75
-PH/s (one peta-hash means 10<sup>15</sup> computations of the bitcoin
-block hashing function, which actually involves two computations of
-SHA-256).</p>
+    while (true) {
+        nNonce++;
 
-<p>We&rsquo;ll talk about mining a lot more in the coming weeks to get a good
-understanding of what this means technically, as well as the
-implications for the blockchain.</p>
+        // Write the last 4 bytes of the block header (the nonce) to a copy of
+        // the double-SHA256 state, and compute the result.
+        CHash256(hasher).Write((unsigned char*)&amp;nNonce, 4).Finalize((unsigned char*)phash);
+
+        // Return the nonce if the hash has at least some zero bits,
+        // caller will check if it has enough to reach the target
+        if (((uint16_t*)phash)[15] == 0)
+            return true;
+
+        // If nothing found after trying for a while, return -1
+        if ((nNonce &amp; 0xfff) == 0)
+            return false;
+    }
+}
+</code></pre>
+
+<p><a href="https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp#L438">BitcoinMiner</a>: (excerpted, most error checking code removed)</p>
+
+<pre><code class="language-c">void static BitcoinMiner(CWallet *pwallet)
+{
+    SetThreadPriority(THREAD_PRIORITY_LOWEST);
+    CReserveKey reservekey(pwallet);
+    unsigned int nExtraNonce = 0;
+
+    try {
+        while (true) {
+            // Create new block
+            unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
+            CBlockIndex* pindexPrev = chainActive.Tip();
+
+            auto_ptr&lt;CBlockTemplate&gt; pblocktemplate(CreateNewBlockWithKey(reservekey));
+            CBlock *pblock = &amp;pblocktemplate-&gt;block;
+            IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
+
+            int64_t nStart = GetTime();
+            arith_uint256 hashTarget = arith_uint256().SetCompact(pblock-&gt;nBits);
+            uint256 hash;
+            uint32_t nNonce = 0;
+            while (true) {
+                // Check if something found
+                if (ScanHash(pblock, nNonce, &amp;hash))
+                {
+                    if (UintToArith256(hash) &lt;= hashTarget)
+                    {
+                        // Found a solution
+                        pblock-&gt;nNonce = nNonce;
+                        assert(hash == pblock-&gt;GetHash());
+
+                        SetThreadPriority(THREAD_PRIORITY_NORMAL);
+                        LogPrintf(&quot;proof-of-work found  \n  hash: %s  \ntarget: %s\n&quot;, 
+	                          hash.GetHex(), hashTarget.GetHex());
+                        ProcessBlockFound(pblock, *pwallet, reservekey);
+                        SetThreadPriority(THREAD_PRIORITY_LOWEST);
+                        break;
+                    }
+                }
+
+                if (nNonce &gt;= 0xffff0000) break;
+                // ... other breaking conditions elided
+                // Update nTime every few seconds
+                UpdateTime(pblock, pindexPrev);
+            }
+        }
+    }
+    catch (const boost::thread_interrupted&amp;)
+    {
+        LogPrintf(&quot;BitcoinMiner terminated\n&quot;);
+        throw;
+    }
+}
+</code></pre>
 
 	
 			
@@ -226,14 +302,14 @@ implications for the blockchain.</p>
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/classes/class3/">Class 3: Digital Signatures</a>
+						<a class="paging-link" href="/tools/github/">Getting Started with Github</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/announcements/ps1/">Problem Set 1 Posted</a>
+			            <a class="paging-link" href="/registration/">Registration</a>
 		            </div>
 		            
 	            </div>
