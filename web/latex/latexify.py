@@ -30,6 +30,8 @@ def process_latex(finname):
                 line = line.replace('KR<sub>X</sub>', '$KR_{X}$')
                 line = line.replace('_k_<sub>i</sub>', '$k_i$')
                 line = line.replace('<!--page-->', '\clearpage')
+                if line.startswith('<!--end-->'): 
+                    break
 
                 if line.startswith('---'):
                     inheader = True

@@ -6,8 +6,206 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://bitcoin-class.org/classes/class8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class8/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp&#34;&gt;BitcoinMiner&lt;/a&gt; (code from core Bitcoin implementation)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;//
+// ScanHash scans nonces looking for a hash with at least some zero bits.
+// The nonce is usually preserved between calls, but periodically or if the
+// nonce is 0xffff0000 or above, the block is rebuilt and nNonce starts over at
+// zero.
+//
+bool static ScanHash(const CBlockHeader *pblock, uint32_t&amp;amp; nNonce, uint256 *phash)
+{
+    // Write the first 76 bytes of the block header to a double-SHA256 state.
+    CHash256 hasher;
+    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+    ss &amp;lt;&amp;lt; *pblock;
+    assert(ss.size() == 80);
+    hasher.Write((unsigned char*)&amp;amp;ss[0], 76);
+
+    while (true) {
+        nNonce++;
+
+        // Write the last 4 bytes of the block header (the nonce) to a copy of
+        // the double-SHA256 state, and compute the result.
+        CHash256(hasher).Write((unsigned char*)&amp;amp;nNonce, 4).Finalize((unsigned char*)phash);
+
+        // Return the nonce if the hash has at least some zero bits,
+        // caller will check if it has enough to reach the target
+        if (((uint16_t*)phash)[15] == 0)
+            return true;
+
+        // If nothing found after trying for a while, return -1
+        if ((nNonce &amp;amp; 0xfff) == 0)
+            return false;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp#L438&#34;&gt;BitcoinMiner&lt;/a&gt;: (excerpted, most error checking code removed)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void static BitcoinMiner(CWallet *pwallet)
+{
+    SetThreadPriority(THREAD_PRIORITY_LOWEST);
+    CReserveKey reservekey(pwallet);
+    unsigned int nExtraNonce = 0;
+
+    try {
+        while (true) {
+            // Create new block
+            unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
+            CBlockIndex* pindexPrev = chainActive.Tip();
+
+            auto_ptr&amp;lt;CBlockTemplate&amp;gt; pblocktemplate(CreateNewBlockWithKey(reservekey));
+            CBlock *pblock = &amp;amp;pblocktemplate-&amp;gt;block;
+            IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
+
+            int64_t nStart = GetTime();
+            arith_uint256 hashTarget = arith_uint256().SetCompact(pblock-&amp;gt;nBits);
+            uint256 hash;
+            uint32_t nNonce = 0;
+            while (true) {
+                // Check if something found
+                if (ScanHash(pblock, nNonce, &amp;amp;hash))
+                {
+                    if (UintToArith256(hash) &amp;lt;= hashTarget)
+                    {
+                        // Found a solution
+                        pblock-&amp;gt;nNonce = nNonce;
+                        assert(hash == pblock-&amp;gt;GetHash());
+
+                        SetThreadPriority(THREAD_PRIORITY_NORMAL);
+                        LogPrintf(&amp;quot;proof-of-work found  \n  hash: %s  \ntarget: %s\n&amp;quot;, 
+	                          hash.GetHex(), hashTarget.GetHex());
+                        ProcessBlockFound(pblock, *pwallet, reservekey);
+                        SetThreadPriority(THREAD_PRIORITY_LOWEST);
+                        break;
+                    }
+                }
+
+                if (nNonce &amp;gt;= 0xffff0000) break;
+                // ... other breaking conditions elided
+                // Update nTime every few seconds
+                UpdateTime(pblock, pindexPrev);
+            }
+        }
+    }
+    catch (const boost::thread_interrupted&amp;amp;)
+    {
+        LogPrintf(&amp;quot;BitcoinMiner terminated\n&amp;quot;);
+        throw;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 7: The Blockchain</title>
+      <link>http://bitcoin-class.org/classes/class7/</link>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class7/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Readings&lt;/strong&gt; (should be completed by Monday, September 21 at the latest; covered by Checkup 2):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
+System&lt;/em&gt;&lt;/a&gt;, 2008.  The is the original
+bitcoin paper, which is quite readable and historically interesting.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc&#34;&gt;&lt;em&gt;Chapter 6: The Bitcoin
+Network&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc&#34;&gt;&lt;em&gt;Chapter 7: The
+Blockchain&lt;/em&gt;&lt;/a&gt;
+from Andreas Antonopoulos&amp;rsquo; book.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Achieves
+Decentralization&lt;/em&gt;&lt;/a&gt;
+and &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf&#34;&gt;&lt;em&gt;Chapter 5: Bitcoin
+Mining&lt;/em&gt;&lt;/a&gt;
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
+Technologies&lt;/em&gt;&lt;/a&gt;.
+&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;blockchain-in-the-news:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Blockchain in the News&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ft.com/cms/s/0/f358ed6c-5ae0-11e5-9846-de406ccb37f2.html&#34;&gt;&lt;em&gt;Blockchain initiative backed by 9 large investment banks&lt;/em&gt;&lt;/a&gt;, Financial Times, 15 Sept 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://recode.net/2015/09/15/nine-of-the-worlds-biggest-banks-form-blockchain-partnership/&#34;&gt;&lt;em&gt;Nine of the World’s Biggest Banks Form Blockchain Partnership&lt;/em&gt;&lt;/a&gt;, Re/Code, 15 Sept 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/mikemontgomery/2015/09/15/bitcoin-is-only-the-beginning-for-blockchain-technology/&#34;&gt;&lt;em&gt;Bitcoin Is Only The Beginning For Blockchain Technology&lt;/em&gt;&lt;/a&gt;, Forbes, 15 Sept 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/laurashin/2015/09/09/bitcoins-shared-ledger-technology-moneys-new-operating-system/&#34;&gt;&lt;em&gt;Bitcoin&amp;rsquo;s Shared Ledger Technology: Money&amp;rsquo;s New Operating System&lt;/em&gt;&lt;/a&gt;, Forbes, 9 Sept 2015.&lt;/p&gt;
+
+&lt;h1 id=&#34;trust:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Trust&lt;/h1&gt;
+
+&lt;p&gt;What are valid sources of &lt;em&gt;trust&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What are potentially misleading sources of &lt;em&gt;trust&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What mechanisms have humans evolved or constructed to enhance trust among strangers?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;distributed-consensus:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Distributed Consensus&lt;/h1&gt;
+
+&lt;p&gt;How well does the 2-out-of-3 network consensus public ledger protocol work?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;proof-of-work:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Proof-of-Work&lt;/h1&gt;
+
+&lt;p&gt;Cynthia Dwork and Moni Naor.  &lt;a href=&#34;http://bitcoin-class.org/0/classes/class6/pvp.pdf&#34;&gt;&lt;em&gt;Pricing via Processing or Combatting Junk Mail&lt;/em&gt;&lt;/a&gt;, CRYPTO 1992.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pricing Function&lt;/strong&gt;: (&lt;span class=&#34;math&#34;&gt;&lt;em&gt;f&lt;/em&gt;&lt;/span&gt;)
+- moderately easy to compute
+- cannot be amortized
+- computing &lt;span class=&#34;math&#34;&gt;&lt;em&gt;f&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;), &amp;hellip;, &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;l&lt;/sub&gt;)&lt;/span&gt; costs &lt;span class=&#34;math&#34;&gt;&lt;em&gt;l&lt;/em&gt;&lt;/span&gt; times as much as computing &lt;span class=&#34;math&#34;&gt;&lt;em&gt;f&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;i&lt;sub&gt;)&lt;/span&gt;.
+- easily verified: given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt; easy to check &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;x&lt;/em&gt;)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Adam Back. &lt;a href=&#34;http://www.hashcash.org/papers/announce.txt&#34;&gt;&lt;em&gt;Hash Cash Postage Implementation&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interactive Hashcash&lt;/strong&gt;:&lt;br /&gt;
+1. Sender to Receiver: &lt;code&gt;Hello&lt;/code&gt;&lt;br /&gt;
+2. Receiver to Sender: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt; (random nonce)&lt;br /&gt;
+3. Sender to Receiver: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;, &lt;code&gt;Mail&lt;/code&gt; where &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;r&lt;/em&gt;)&lt;/span&gt;.&lt;br /&gt;
+4. Receiver verifies &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;f&lt;/em&gt;(&lt;em&gt;r&lt;/em&gt;)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;How well does this protocol work for sending mail?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;How can we make this protocol non-interactive?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;bitcoin-mining:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Bitcoin Mining&lt;/h1&gt;
+
+&lt;p&gt;Proof-of-work: Find an &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that: SHA-256(SHA-256(&lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt; + &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;)) &amp;lt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;T&lt;/em&gt;/&lt;em&gt;d&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt; is the &amp;ldquo;difficulty&amp;rdquo; (varies).&lt;br /&gt;
+&lt;span class=&#34;math&#34;&gt;&lt;em&gt;T&lt;/em&gt;&lt;/span&gt; is a fixed target (256-bit number).&lt;br /&gt;
+&lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt; depends on hash of previous block, transactions, and other information.&lt;/p&gt;
+
+&lt;p&gt;What does it mean for the bitcoin difficulty to go down?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 6: Hash Functions</title>

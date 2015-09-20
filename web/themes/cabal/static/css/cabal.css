@@ -722,6 +722,16 @@ table, th, td {
    font-weight: bold;
 }
 
+.answer {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #DDD;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .mhighlight {
    font-size: 15px; background-color: #FFC; text-align: center; margin-left: 60px; margin-right: 60px; margin-top: 25px; margin-bottom: 25px; border-style:ridge; border-width:5px; border-color: #F88; font-weight:bold; padding-top: 5px; padding-bottom: 5px;
 }
