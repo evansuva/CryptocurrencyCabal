@@ -33,6 +33,18 @@ Steven Goldfeder. [_Bitcoin and Cryptocurrency
 Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
    </div>
 
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/uCjusmzjkpfLzr"
+width="625" height="400" frameborder="2" marginwidth="0"
+marginheight="0" scrolling="no"></iframe>
+
+   <div class="caption">
+Note: ink markings may not appear in the
+embedded viewer.  To see them, [download the slides](/classes/class7-post.pptx).
+   </div>
+
+</center>
+
 # Blockchain in the News
 
 [_Blockchain initiative backed by 9 large investment banks_](http://www.ft.com/cms/s/0/f358ed6c-5ae0-11e5-9846-de406ccb37f2.html), Financial Times, 15 Sept 2015.
