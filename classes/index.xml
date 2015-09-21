@@ -31,99 +31,145 @@
 calendar&lt;/a&gt;.
 This has updated information on deadlines and office hours.&lt;/p&gt;
 
-&lt;p&gt;If you want to receive course website updates by email, you can subscribe to the&lt;/p&gt;
+&lt;p&gt;If you want to receive course website updates by email, you can
+subscribe to the RSS feed using a RSS reader or an emailing service like
+&lt;a href=&#34;https://www.feedmyinbox.com/&#34;&gt;feedmyinbox.com&lt;/a&gt; or
+&lt;a href=&#34;http://blogtrottr.com/&#34;&gt;Blogtrottr&lt;/a&gt;.  The feed address is
+&lt;a href=&#34;http://bitcoin-class.org/index.xml&#34;&gt;http://bitcoin-class.org/index.xml&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp&#34;&gt;BitcoinMiner&lt;/a&gt; (code from core Bitcoin implementation)&lt;/p&gt;
+&lt;p&gt;We generally will avoid sending out emails to the class, and will assume
+you are observing the website closely.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;//
-// ScanHash scans nonces looking for a hash with at least some zero bits.
-// The nonce is usually preserved between calls, but periodically or if the
-// nonce is 0xffff0000 or above, the block is rebuilt and nNonce starts over at
-// zero.
-//
-bool static ScanHash(const CBlockHeader *pblock, uint32_t&amp;amp; nNonce, uint256 *phash)
-{
-    // Write the first 76 bytes of the block header to a double-SHA256 state.
-    CHash256 hasher;
-    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
-    ss &amp;lt;&amp;lt; *pblock;
-    assert(ss.size() == 80);
-    hasher.Write((unsigned char*)&amp;amp;ss[0], 76);
+&lt;h1 id=&#34;exploring-blocks:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Exploring Blocks&lt;/h1&gt;
 
-    while (true) {
-        nNonce++;
+&lt;p&gt;|&lt;strong&gt;Label&lt;/strong&gt;|&lt;strong&gt;Bytes&lt;/strong&gt;|&lt;strong&gt;Description&lt;/strong&gt;|
+|&amp;ndash;|:&amp;ndash;|&amp;ndash;|
+|&lt;code&gt;version&lt;/code&gt;|4|Block version information|
+|&lt;code&gt;prev_block&lt;/code&gt;|32|Hash of the previous block|
+|&lt;code&gt;merkle_root&lt;/code&gt;|32|Hash of Merkle tree of all transactions|
+|&lt;code&gt;timestamp&lt;/code&gt;|4|When block was created (overflows in 2106)|
+|&lt;code&gt;bits&lt;/code&gt;|4|Difficulty target used for this block|
+|&lt;code&gt;nonce&lt;/code&gt;|4|Nonce found to generate this block|&lt;/p&gt;
 
-        // Write the last 4 bytes of the block header (the nonce) to a copy of
-        // the double-SHA256 state, and compute the result.
-        CHash256(hasher).Write((unsigned char*)&amp;amp;nNonce, 4).Finalize((unsigned char*)phash);
+&lt;h1 id=&#34;merkle-trees:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Merkle Trees&lt;/h1&gt;
 
-        // Return the nonce if the hash has at least some zero bits,
-        // caller will check if it has enough to reach the target
-        if (((uint16_t*)phash)[15] == 0)
-            return true;
+&lt;p&gt;Ralph Merkle, &lt;a href=&#34;http://merkle.com/1974/&#34;&gt;&lt;em&gt;Publishing a New Idea&lt;/em&gt;&lt;/a&gt;.
+Includes his &lt;a href=&#34;http://merkle.com/1974/FirstCS244projectProposal.pdf&#34;&gt;cs244 project
+proposal&lt;/a&gt;
+(&amp;ldquo;Discussion: No, I am not joking.&amp;ldquo;) and &lt;a href=&#34;http://merkle.com/1974/ExpertLetter.pdf&#34;&gt;ACM rejection
+letter&lt;/a&gt; (&amp;ldquo;I am sorry to have to
+inform you that the paper is not in the main stream of present
+cryptography thinking and I would not recommend that it be
+published&amp;hellip;&amp;ldquo;).&lt;/p&gt;
 
-        // If nothing found after trying for a while, return -1
-        if ((nNonce &amp;amp; 0xfff) == 0)
-            return false;
+&lt;p&gt;&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/master/blockchain/merkle.go&#34;&gt;https://github.com/btcsuite/btcd/blob/master/blockchain/merkle.go&lt;/a&gt; (some comments removed)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// HashMerkleBranches takes two hashes, treated as the left and right tree
+// nodes, and returns the hash of their concatenation. 
+func HashMerkleBranches(left *btcwire.ShaHash, right *btcwire.ShaHash) *btcwire.ShaHash {
+   var sha [btcwire.HashSize * 2]byte
+   copy(sha[:btcwire.HashSize], left.Bytes())
+   copy(sha[btcwire.HashSize:], right.Bytes())
+   newSha, _ := btcwire.NewShaHash(btcwire.DoubleSha256(sha[:]))
+   return newSha
+}
+
+func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
+    nextPoT := nextPowerOfTwo(len(transactions))
+    arraySize := nextPoT*2 - 1
+    merkles := make([]*btcwire.ShaHash, arraySize)
+
+    // Create the base transaction shas and populate the array with them.
+    for i, tx := range transactions { merkles[i] = tx.Sha() }
+
+    // Start the array offset after the last transaction and adjusted to the
+    // next power of two.
+    offset := nextPoT
+    for i := 0; i &amp;lt; arraySize-1; i += 2 {
+        switch {
+           case merkles[i] == nil: 
+              merkles[offset] = nil
+
+           case merkles[i+1] == nil:
+              newSha := HashMerkleBranches(merkles[i], merkles[i])
+              merkles[offset] = newSha
+       
+           default:
+              newSha := HashMerkleBranches(merkles[i], merkles[i+1])
+              merkles[offset] = newSha
+       }
+       offset++
     }
+    return merkles
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp#L438&#34;&gt;BitcoinMiner&lt;/a&gt;: (excerpted, most error checking code removed)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void static BitcoinMiner(CWallet *pwallet)
-{
-    SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    CReserveKey reservekey(pwallet);
-    unsigned int nExtraNonce = 0;
+&lt;p&gt;What is needed to verify &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;H&lt;sub&gt;root&lt;/sub&gt;&lt;/span&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-    try {
-        while (true) {
-            // Create new block
-            unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
-            CBlockIndex* pindexPrev = chainActive.Tip();
+&lt;p&gt;What must be recomputed if &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt; is replaced?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-            auto_ptr&amp;lt;CBlockTemplate&amp;gt; pblocktemplate(CreateNewBlockWithKey(reservekey));
-            CBlock *pblock = &amp;amp;pblocktemplate-&amp;gt;block;
-            IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
+&lt;p&gt;What must be computed if a new node, &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;5&lt;/sub&gt;&lt;/span&gt;, is added?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-            int64_t nStart = GetTime();
-            arith_uint256 hashTarget = arith_uint256().SetCompact(pblock-&amp;gt;nBits);
-            uint256 hash;
-            uint32_t nNonce = 0;
-            while (true) {
-                // Check if something found
-                if (ScanHash(pblock, nNonce, &amp;amp;hash))
-                {
-                    if (UintToArith256(hash) &amp;lt;= hashTarget)
-                    {
-                        // Found a solution
-                        pblock-&amp;gt;nNonce = nNonce;
-                        assert(hash == pblock-&amp;gt;GetHash());
+&lt;p&gt;How many SHA-256 hashes must be computed to verify &lt;a href=&#34;https://blockexplorer.com/block/00000000000000000a02a2bf9d7b366e226160b8412830e6d72061ea7712d970&#34;&gt;Block 375474&lt;/a&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-                        SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                        LogPrintf(&amp;quot;proof-of-work found  \n  hash: %s  \ntarget: %s\n&amp;quot;, 
-	                          hash.GetHex(), hashTarget.GetHex());
-                        ProcessBlockFound(pblock, *pwallet, reservekey);
-                        SetThreadPriority(THREAD_PRIORITY_LOWEST);
-                        break;
-                    }
-                }
+&lt;h1 id=&#34;mining-cost:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Mining Cost&lt;/h1&gt;
 
-                if (nNonce &amp;gt;= 0xffff0000) break;
-                // ... other breaking conditions elided
-                // Update nTime every few seconds
-                UpdateTime(pblock, pindexPrev);
-            }
-        }
-    }
-    catch (const boost::thread_interrupted&amp;amp;)
-    {
-        LogPrintf(&amp;quot;BitcoinMiner terminated\n&amp;quot;);
-        throw;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The measured time to compute one SHA-256 hash on my EC2 node (2.5 GHz
+processor) is 750 ns.  Approximately &lt;em&gt;how many instructions execute&lt;/em&gt; to
+compute on SHA-256 hash?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assumption.&lt;/strong&gt; SHA-256 produces a uniform random output.  (We know this
+  is not really true, but it is a reasonable approximation, and
+  necessary for the analysis.)  So, we can model SHA-256 on any (new)
+  input &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; as drawing randomly from 2&lt;sup&gt;256&lt;/sup&gt; possible outputs:&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SHA-256(&lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;) &amp;larr; [0, 2&lt;sup&gt;256&lt;/sup&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;math&#34;&gt;Target = T&lt;sub&gt;max&lt;/sub&gt; / Difficulty&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;max&lt;/sub&gt; &amp;approx; 2&lt;sup&gt;224&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bitcoinwisdom.com/bitcoin/difficulty&#34;&gt;Current Bitcoin Difficulty&lt;/a&gt; = 59,335,351,234&lt;/p&gt;
+
+&lt;h1 id=&#34;energy:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Energy&lt;/h1&gt;
+
+&lt;p&gt;Why is energy/hash so much less for custom ASICs?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;In an ASIC, it is possible to build an XOR using 4 transistors.  How
+many transistors have to flip to do an XOR on a general purpose
+processor like an Intel i7?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.bitcoin.it/wiki/Mining_hardware_comparison&#34;&gt;Mining Hardware&lt;/a&gt;
+- current ASIC miners achive &amp;gt;5 Billion hashes per seconds and over 1500
+Million hashes per Joule (the energy required to lift an apple one
+meter).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.thecoinsman.com/2014/08/bitcoin/inside-chinese-bitcoin-mine/&#34;&gt;&lt;em&gt;Inside a Chinese Bitcoin Mine&lt;/em&gt;&lt;/a&gt;, The Coinsman, 11 August 2014.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The first thing you notice as you approach the warehouse is the noise. It begins as soon as you step out of the car, at which point it sounds like massive swarm of angry bees droning away somewhere off in the distance. It becomes louder and louder the closer you get to the building, and as you step through the doors it becomes a deafening and steady roar&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Our nearest nuclear plant, the &lt;a href=&#34;https://www.dom.com/corporate/what-we-do/electricity/generation/nuclear/north-anna-power-station&#34;&gt;North Anna Power
+Station&lt;/a&gt;
+(Lake Anna) generates 1892 MW, &amp;ldquo;enough to power 450,000 homes&amp;rdquo; or about
+9x the amount needed to power the current bitcoin network (only counting
+the miners themselves; additional power needed for cooling, etc.)&lt;/p&gt;
+
+&lt;p&gt;How does the energy use of bitcoin compare to what is used by the
+current financial infrastructure for comparable service?  (This is a
+very difficult question to answer, would be a good project idea, not
+something to answer in the blank below!)&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
