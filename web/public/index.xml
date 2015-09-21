@@ -614,106 +614,6 @@ changes (or recover from mistakes).&lt;/p&gt;
     </item>
     
     <item>
-      <title></title>
-      <link>http://bitcoin-class.org/classes/class8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class8/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp&#34;&gt;BitcoinMiner&lt;/a&gt; (code from core Bitcoin implementation)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;//
-// ScanHash scans nonces looking for a hash with at least some zero bits.
-// The nonce is usually preserved between calls, but periodically or if the
-// nonce is 0xffff0000 or above, the block is rebuilt and nNonce starts over at
-// zero.
-//
-bool static ScanHash(const CBlockHeader *pblock, uint32_t&amp;amp; nNonce, uint256 *phash)
-{
-    // Write the first 76 bytes of the block header to a double-SHA256 state.
-    CHash256 hasher;
-    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
-    ss &amp;lt;&amp;lt; *pblock;
-    assert(ss.size() == 80);
-    hasher.Write((unsigned char*)&amp;amp;ss[0], 76);
-
-    while (true) {
-        nNonce++;
-
-        // Write the last 4 bytes of the block header (the nonce) to a copy of
-        // the double-SHA256 state, and compute the result.
-        CHash256(hasher).Write((unsigned char*)&amp;amp;nNonce, 4).Finalize((unsigned char*)phash);
-
-        // Return the nonce if the hash has at least some zero bits,
-        // caller will check if it has enough to reach the target
-        if (((uint16_t*)phash)[15] == 0)
-            return true;
-
-        // If nothing found after trying for a while, return -1
-        if ((nNonce &amp;amp; 0xfff) == 0)
-            return false;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp#L438&#34;&gt;BitcoinMiner&lt;/a&gt;: (excerpted, most error checking code removed)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void static BitcoinMiner(CWallet *pwallet)
-{
-    SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    CReserveKey reservekey(pwallet);
-    unsigned int nExtraNonce = 0;
-
-    try {
-        while (true) {
-            // Create new block
-            unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
-            CBlockIndex* pindexPrev = chainActive.Tip();
-
-            auto_ptr&amp;lt;CBlockTemplate&amp;gt; pblocktemplate(CreateNewBlockWithKey(reservekey));
-            CBlock *pblock = &amp;amp;pblocktemplate-&amp;gt;block;
-            IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
-
-            int64_t nStart = GetTime();
-            arith_uint256 hashTarget = arith_uint256().SetCompact(pblock-&amp;gt;nBits);
-            uint256 hash;
-            uint32_t nNonce = 0;
-            while (true) {
-                // Check if something found
-                if (ScanHash(pblock, nNonce, &amp;amp;hash))
-                {
-                    if (UintToArith256(hash) &amp;lt;= hashTarget)
-                    {
-                        // Found a solution
-                        pblock-&amp;gt;nNonce = nNonce;
-                        assert(hash == pblock-&amp;gt;GetHash());
-
-                        SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                        LogPrintf(&amp;quot;proof-of-work found  \n  hash: %s  \ntarget: %s\n&amp;quot;, 
-	                          hash.GetHex(), hashTarget.GetHex());
-                        ProcessBlockFound(pblock, *pwallet, reservekey);
-                        SetThreadPriority(THREAD_PRIORITY_LOWEST);
-                        break;
-                    }
-                }
-
-                if (nNonce &amp;gt;= 0xffff0000) break;
-                // ... other breaking conditions elided
-                // Update nTime every few seconds
-                UpdateTime(pblock, pindexPrev);
-            }
-        }
-    }
-    catch (const boost::thread_interrupted&amp;amp;)
-    {
-        LogPrintf(&amp;quot;BitcoinMiner terminated\n&amp;quot;);
-        throw;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Registration</title>
       <link>http://bitcoin-class.org/registration/</link>
       <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
@@ -993,6 +893,124 @@ answers, rather than reading everything submitted.&lt;/p&gt;
 &lt;p&gt;There is no set weighting among these things, and in general, if there
 is some combination of the above that demonstrates that you have gotten
 what we hope out of the class then you will receive an A grade.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 8: Mining</title>
+      <link>http://bitcoin-class.org/classes/class8/</link>
+      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class8/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.&lt;br /&gt;
+&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;br /&gt;
+&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;reminders:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Reminders&lt;/h2&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics&#34;&gt;subscribe to the course
+calendar&lt;/a&gt;.
+This has updated information on deadlines and office hours.&lt;/p&gt;
+
+&lt;p&gt;If you want to receive course website updates by email, you can subscribe to the&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp&#34;&gt;BitcoinMiner&lt;/a&gt; (code from core Bitcoin implementation)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;//
+// ScanHash scans nonces looking for a hash with at least some zero bits.
+// The nonce is usually preserved between calls, but periodically or if the
+// nonce is 0xffff0000 or above, the block is rebuilt and nNonce starts over at
+// zero.
+//
+bool static ScanHash(const CBlockHeader *pblock, uint32_t&amp;amp; nNonce, uint256 *phash)
+{
+    // Write the first 76 bytes of the block header to a double-SHA256 state.
+    CHash256 hasher;
+    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+    ss &amp;lt;&amp;lt; *pblock;
+    assert(ss.size() == 80);
+    hasher.Write((unsigned char*)&amp;amp;ss[0], 76);
+
+    while (true) {
+        nNonce++;
+
+        // Write the last 4 bytes of the block header (the nonce) to a copy of
+        // the double-SHA256 state, and compute the result.
+        CHash256(hasher).Write((unsigned char*)&amp;amp;nNonce, 4).Finalize((unsigned char*)phash);
+
+        // Return the nonce if the hash has at least some zero bits,
+        // caller will check if it has enough to reach the target
+        if (((uint16_t*)phash)[15] == 0)
+            return true;
+
+        // If nothing found after trying for a while, return -1
+        if ((nNonce &amp;amp; 0xfff) == 0)
+            return false;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp#L438&#34;&gt;BitcoinMiner&lt;/a&gt;: (excerpted, most error checking code removed)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void static BitcoinMiner(CWallet *pwallet)
+{
+    SetThreadPriority(THREAD_PRIORITY_LOWEST);
+    CReserveKey reservekey(pwallet);
+    unsigned int nExtraNonce = 0;
+
+    try {
+        while (true) {
+            // Create new block
+            unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
+            CBlockIndex* pindexPrev = chainActive.Tip();
+
+            auto_ptr&amp;lt;CBlockTemplate&amp;gt; pblocktemplate(CreateNewBlockWithKey(reservekey));
+            CBlock *pblock = &amp;amp;pblocktemplate-&amp;gt;block;
+            IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
+
+            int64_t nStart = GetTime();
+            arith_uint256 hashTarget = arith_uint256().SetCompact(pblock-&amp;gt;nBits);
+            uint256 hash;
+            uint32_t nNonce = 0;
+            while (true) {
+                // Check if something found
+                if (ScanHash(pblock, nNonce, &amp;amp;hash))
+                {
+                    if (UintToArith256(hash) &amp;lt;= hashTarget)
+                    {
+                        // Found a solution
+                        pblock-&amp;gt;nNonce = nNonce;
+                        assert(hash == pblock-&amp;gt;GetHash());
+
+                        SetThreadPriority(THREAD_PRIORITY_NORMAL);
+                        LogPrintf(&amp;quot;proof-of-work found  \n  hash: %s  \ntarget: %s\n&amp;quot;, 
+	                          hash.GetHex(), hashTarget.GetHex());
+                        ProcessBlockFound(pblock, *pwallet, reservekey);
+                        SetThreadPriority(THREAD_PRIORITY_LOWEST);
+                        break;
+                    }
+                }
+
+                if (nNonce &amp;gt;= 0xffff0000) break;
+                // ... other breaking conditions elided
+                // Update nTime every few seconds
+                UpdateTime(pblock, pindexPrev);
+            }
+        }
+    }
+    catch (const boost::thread_interrupted&amp;amp;)
+    {
+        LogPrintf(&amp;quot;BitcoinMiner terminated\n&amp;quot;);
+        throw;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

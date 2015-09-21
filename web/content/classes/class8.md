@@ -1,3 +1,29 @@
+---
+title: "Class 8: Mining"
+date: '2015-09-21'
+print: "class8.pdf"
+nocomment: false
+weight: 3
+menu: "classes"
+---
+
+## Schedule
+
+   <div class="todo">
+**Wednesday, September 23**: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.  
+**Friday, October 9**: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.  
+**Monday, October 19**: Midterm Exam
+   </div>
+
+## Reminders
+
+You can [subscribe to the course
+calendar](https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics).
+This has updated information on deadlines and office hours.
+
+If you want to receive course website updates by email, you can subscribe to the 
+
+
 [BitcoinMiner](https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp) (code from core Bitcoin implementation)
 
 ```c
