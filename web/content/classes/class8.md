@@ -32,6 +32,18 @@ subscribe to the RSS feed using a RSS reader or an emailing service like
 We generally will avoid sending out emails to the class, and will assume
 you are observing the website closely.  
 
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ir3gwqoaGyncK4"
+width="625" height="400" frameborder="2" marginwidth="0"
+marginheight="0" scrolling="no"></iframe>
+
+   <div class="caption">
+Note: ink markings may not appear in the
+embedded viewer.  To see them, [download the slides](/classes/class7-post.pptx).
+   </div>
+
+</center>
+
 # Exploring Blocks
 
 |**Label**|**Bytes**|**Description**|
