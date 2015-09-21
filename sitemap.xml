@@ -18,10 +18,6 @@
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class8/</loc>
-  </url>
-  
-  <url>
     <loc>http://bitcoin-class.org/registration/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
@@ -29,6 +25,11 @@
   <url>
     <loc>http://bitcoin-class.org/syllabus/</loc>
     <lastmod>2015-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bitcoin-class.org/classes/class8/</loc>
+    <lastmod>2015-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>

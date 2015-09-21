@@ -6,15 +6,34 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 21 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title></title>
+      <title>Class 8: Mining</title>
       <link>http://bitcoin-class.org/classes/class8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://bitcoin-class.org/classes/class8/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp&#34;&gt;BitcoinMiner&lt;/a&gt; (code from core Bitcoin implementation)&lt;/p&gt;
+      <description>
+
+&lt;h2 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.&lt;br /&gt;
+&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;br /&gt;
+&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;reminders:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Reminders&lt;/h2&gt;
+
+&lt;p&gt;You can &lt;a href=&#34;https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics&#34;&gt;subscribe to the course
+calendar&lt;/a&gt;.
+This has updated information on deadlines and office hours.&lt;/p&gt;
+
+&lt;p&gt;If you want to receive course website updates by email, you can subscribe to the&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/master/src/miner.cpp&#34;&gt;BitcoinMiner&lt;/a&gt; (code from core Bitcoin implementation)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;//
 // ScanHash scans nonces looking for a hash with at least some zero bits.
