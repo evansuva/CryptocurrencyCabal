@@ -190,13 +190,13 @@ link](https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.ca
 Except when noted otherwise, assignments are due at <b>8:29pm</b> on the
 due date.
 
-The main expected due dates:
+The main expected due dates: <font color="red">(updated 20 September 2015, see <a href="https://web.archive.org/web/20150921010439/http://bitcoin-class.org/syllabus/">archived version</a> for original)</font>
 
 - Saturday, 29 August: **Registration**
 - Monday, 7 September: **Checkup 1** (in class)
 - Tuesday, 15 September: **Problem Set 1: Bitcoin Transactions**
-- Monday, 21 September: **Checkup 2** (in class)
-- Friday, 2 October: **Problem Set 2: Nodes and Mining**
+- Wednesday, 23 September: **Checkup 2** (in class)
+- Friday, 9 October: **Problem Set 2: Blockchain**
 - Monday, 19 October: **Midterm Exam**
 - Tuesday, 27 October: **Problem Set 3: Blockchain Analysis**
 - Tuesday, 17 November: **Problem Set 4: Alternate Cryptocurrencies**
