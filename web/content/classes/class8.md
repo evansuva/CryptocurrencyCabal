@@ -27,6 +27,8 @@ subscribe to the RSS feed using a RSS reader or an emailing service like
 [Blogtrottr](http://blogtrottr.com/).  The feed address is
 [http://bitcoin-class.org/index.xml](http://bitcoin-class.org/index.xml).
 
+<!--more-->
+
 We generally will avoid sending out emails to the class, and will assume
 you are observing the website closely.  
 
