@@ -1,4 +1,4 @@
-all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf ../public/class3.pdf checkup1.pdf ../public/class5.pdf ../public/class6.pdf ../public/class7.pdf
+all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf ../public/class3.pdf checkup1.pdf ../public/class5.pdf ../public/class6.pdf ../public/class7.pdf ../public/class8.pdf
 
 checkup1.pdf: ../../staff/checkup1/checkup1.md
 	python latexify.py ../../staff/checkup1/checkup1.md > checkup1-latex.md
@@ -32,6 +32,10 @@ feedback.pdf: ../../staff/checkup1/feedback.md
 ../public/class7.pdf: ../content/classes/class7.md
 	python latexify.py ../content/classes/class7.md > class7-latex.md
 	pandoc --template=./cabal.template class7-latex.md -o ../public/class7.pdf
+
+../public/class8.pdf: class8-latex.md
+	# python latexify.py ../content/classes/class8.md > class8-latex.md
+	pandoc --template=./cabal.template class8-latex.md -o ../public/class8.pdf
 
 ### Do not update class3.pdf
 # ../public/class3.pdf: ../content/classes/class3.md
