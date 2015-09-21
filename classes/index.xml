@@ -47,21 +47,22 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class7-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;exploring-blocks:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Exploring Blocks&lt;/h1&gt;
 
-&lt;p&gt;|&lt;strong&gt;Label&lt;/strong&gt;|&lt;strong&gt;Bytes&lt;/strong&gt;|&lt;strong&gt;Description&lt;/strong&gt;|
-|&amp;ndash;|:&amp;ndash;|&amp;ndash;|
-|&lt;code&gt;version&lt;/code&gt;|4|Block version information|
-|&lt;code&gt;prev_block&lt;/code&gt;|32|Hash of the previous block|
-|&lt;code&gt;merkle_root&lt;/code&gt;|32|Hash of Merkle tree of all transactions|
-|&lt;code&gt;timestamp&lt;/code&gt;|4|When block was created (overflows in 2106)|
-|&lt;code&gt;bits&lt;/code&gt;|4|Difficulty target used for this block|
-|&lt;code&gt;nonce&lt;/code&gt;|4|Nonce found to generate this block|&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Label&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Bytes&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Block version information&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;prev_block&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Hash of the previous block&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;merkle_root&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Hash of Merkle tree of all transactions&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;timestamp&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;When block was created (overflows in 2106)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;bits&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Difficulty target used for this block&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;nonce&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Nonce found to generate this block&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
 
 &lt;h1 id=&#34;merkle-trees:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Merkle Trees&lt;/h1&gt;
 
@@ -116,7 +117,7 @@ func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;What is needed to verify &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;H&lt;sub&gt;root&lt;/sub&gt;&lt;/span&gt;?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -144,8 +145,8 @@ compute on SHA-256 hash?
 
 &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SHA-256(&lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;) &amp;larr; [0, 2&lt;sup&gt;256&lt;/sup&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&#34;math&#34;&gt;Target = T&lt;sub&gt;max&lt;/sub&gt; / Difficulty&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;max&lt;/sub&gt; &amp;approx; 2&lt;sup&gt;224&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ Target = \frac{T_{max}}{Difficulty}$&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;$ T_{max} \approx 2^{224}$&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://bitcoinwisdom.com/bitcoin/difficulty&#34;&gt;Current Bitcoin Difficulty&lt;/a&gt; = 59,335,351,234&lt;/p&gt;
 

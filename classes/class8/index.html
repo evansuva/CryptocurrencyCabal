@@ -241,21 +241,22 @@ marginheight="0" scrolling="no"></iframe></p>
 
 <p><div class="caption">
 Note: ink markings may not appear in the
-embedded viewer.  To see them, <a href="/classes/class7-post.pptx">download the slides</a>.
+embedded viewer.  To see them, <a href="/classes/class8-post.pptx">download the slides</a>.
    </div></p>
 
 <p></center></p>
 
 <h1 id="exploring-blocks:3a7d0da174b09b839e2f33e1cfd8fab3">Exploring Blocks</h1>
 
-<p>|<strong>Label</strong>|<strong>Bytes</strong>|<strong>Description</strong>|
-|&ndash;|:&ndash;|&ndash;|
-|<code>version</code>|4|Block version information|
-|<code>prev_block</code>|32|Hash of the previous block|
-|<code>merkle_root</code>|32|Hash of Merkle tree of all transactions|
-|<code>timestamp</code>|4|When block was created (overflows in 2106)|
-|<code>bits</code>|4|Difficulty target used for this block|
-|<code>nonce</code>|4|Nonce found to generate this block|</p>
+<table>
+<tr><td><b>Label</b></td><td><b>Bytes</b></td><td><b>Description</b></td></tr>
+<tr><td>version</td><td>4</td><td>Block version information</td></tr>
+<tr><td>prev_block</td><td>32</td><td>Hash of the previous block</td></tr>
+<tr><td>merkle_root</td><td>32</td><td>Hash of Merkle tree of all transactions</td></tr>
+<tr><td>timestamp</td><td>4</td><td>When block was created (overflows in 2106)</td></tr>
+<tr><td>bits</td><td>4</td><td>Difficulty target used for this block</td></tr>
+<tr><td>nonce</td><td>4</td><td>Nonce found to generate this block</td></tr>
+</table>
 
 <h1 id="merkle-trees:3a7d0da174b09b839e2f33e1cfd8fab3">Merkle Trees</h1>
 
@@ -310,7 +311,7 @@ func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
 }
 </code></pre>
 
-<p><a href="/merkle.png"><img src="/merkle.png" width=600></a></p>
+<p><a href="/classes/merkle.png"><img src="/classes/merkle.png" width=600></a></p>
 
 <p>What is needed to verify <span class="math">T<sub>2</sub></span> in <span class="math">H<sub>root</sub></span>?
 <div class="gap"></div></p>
@@ -338,8 +339,8 @@ compute on SHA-256 hash?
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHA-256(<span class="math"><em>x</em></span>) &larr; [0, 2<sup>256</sup>)</p>
 
-<p><span class="math">Target = T<sub>max</sub> / Difficulty</span><br />
-<span class="math">T<sub>max</sub> &approx; 2<sup>224</sup></p>
+<p><code>$ Target = \frac{T_{max}}{Difficulty}$</code><br />
+<code>$ T_{max} \approx 2^{224}$</code></p>
 
 <p><a href="https://bitcoinwisdom.com/bitcoin/difficulty">Current Bitcoin Difficulty</a> = 59,335,351,234</p>
 
@@ -424,6 +425,35 @@ something to answer in the blank below!)</p>
           
         
       <div class="footer">
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
 	<hr class="thin" />
 
    <div class="funding">
