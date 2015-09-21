@@ -732,6 +732,12 @@ table, th, td {
   padding-right: 10px;
 }
 
+code.has-jax {font: inherit;
+              font-size: 100%;
+              background: inherit;
+              border: inherit;
+              color: #515151;}
+
 .mhighlight {
    font-size: 15px; background-color: #FFC; text-align: center; margin-left: 60px; margin-right: 60px; margin-top: 25px; margin-bottom: 25px; border-style:ridge; border-width:5px; border-color: #F88; font-weight:bold; padding-top: 5px; padding-bottom: 5px;
 }

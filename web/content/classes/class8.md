@@ -39,21 +39,22 @@ marginheight="0" scrolling="no"></iframe>
 
    <div class="caption">
 Note: ink markings may not appear in the
-embedded viewer.  To see them, [download the slides](/classes/class7-post.pptx).
+embedded viewer.  To see them, [download the slides](/classes/class8-post.pptx).
    </div>
 
 </center>
 
 # Exploring Blocks
 
-|**Label**|**Bytes**|**Description**|
-|--|:--|--|
-|`version`|4|Block version information|
-|`prev_block`|32|Hash of the previous block|
-|`merkle_root`|32|Hash of Merkle tree of all transactions|
-|`timestamp`|4|When block was created (overflows in 2106)|
-|`bits`|4|Difficulty target used for this block|
-|`nonce`|4|Nonce found to generate this block|
+<table>
+<tr><td><b>Label</b></td><td><b>Bytes</b></td><td><b>Description</b></td></tr>
+<tr><td>version</td><td>4</td><td>Block version information</td></tr>
+<tr><td>prev_block</td><td>32</td><td>Hash of the previous block</td></tr>
+<tr><td>merkle_root</td><td>32</td><td>Hash of Merkle tree of all transactions</td></tr>
+<tr><td>timestamp</td><td>4</td><td>When block was created (overflows in 2106)</td></tr>
+<tr><td>bits</td><td>4</td><td>Difficulty target used for this block</td></tr>
+<tr><td>nonce</td><td>4</td><td>Nonce found to generate this block</td></tr>
+</table>
 
 # Merkle Trees
 
@@ -109,7 +110,7 @@ func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
 }
 ```
 
-<a href="/merkle.png"><img src="/merkle.png" width=600></a>
+<a href="/classes/merkle.png"><img src="/classes/merkle.png" width=600></a>
 
 What is needed to verify <span class="math">T<sub>2</sub></span> in <span class="math">H<sub>root</sub></span>?
 <div class="gap"></div>
@@ -139,8 +140,9 @@ compute on SHA-256 hash?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHA-256(<span class="math">_x_</span>) &larr; [0, 2<sup>256</sup>)
 
-<span class="math">Target = T<sub>max</sub> / Difficulty</span>  
-<span class="math">T<sub>max</sub> &approx; 2<sup>224</sup>
+`$ Target = \frac{T_{max}}{Difficulty}$ `  
+`$ T_{max} \approx 2^{224}$ `
+
 
 [Current Bitcoin Difficulty](https://bitcoinwisdom.com/bitcoin/difficulty) = 59,335,351,234
 
