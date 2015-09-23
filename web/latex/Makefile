@@ -1,8 +1,12 @@
-all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf ../public/class3.pdf checkup1.pdf ../public/class5.pdf ../public/class6.pdf ../public/class7.pdf ../public/class8.pdf
+all: ../public/syllabus.pdf ../public/class1.pdf ../public/class2.pdf ../public/class3.pdf checkup1.pdf ../public/class5.pdf ../public/class6.pdf ../public/class7.pdf ../public/class8.pdf checkup2.pdf
 
 checkup1.pdf: ../../staff/checkup1/checkup1.md
 	python latexify.py ../../staff/checkup1/checkup1.md > checkup1-latex.md
 	pandoc --template=./cabal.template checkup1-latex.md -o checkup1.pdf
+
+checkup2.pdf: checkup2.md
+	python latexify.py checkup2.md > checkup2-latex.md
+	pandoc --template=./cabal.template checkup2-latex.md -o checkup2.pdf
 
 feedback.pdf: ../../staff/checkup1/feedback.md
 	python latexify.py ../../staff/checkup1/feedback.md > feedback-latex.md
