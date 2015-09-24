@@ -11,3 +11,5 @@ date = '2015-09-15'
 [_Bitcoin Is Only The Beginning For Blockchain Technology_](http://www.forbes.com/sites/mikemontgomery/2015/09/15/bitcoin-is-only-the-beginning-for-blockchain-technology/), Forbes, 15 Sept 2015.
 
 [_Bitcoin's Shared Ledger Technology: Money's New Operating System_](http://www.forbes.com/sites/laurashin/2015/09/09/bitcoins-shared-ledger-technology-moneys-new-operating-system/), Forbes, 9 Sept 2015.
+
+<!--more-->

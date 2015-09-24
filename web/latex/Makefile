@@ -25,9 +25,9 @@ feedback.pdf: ../../staff/checkup1/feedback.md
 	python latexify.py ../content/classes/class2.md > class2-latex.md
 	pandoc --template=./cabal.template class2-latex.md -o ../public/class2.pdf
 
-../public/class5.pdf: ../content/classes/class5-latex.md
-	python latexify.py ../content/classes/class5-latex.md > class5-latex.md
-	pandoc --template=./cabal.template class5-latex.md -o ../public/class5.pdf
+../public/class5.pdf: class5-latex.md
+	python latexify.py ../content/classes/class5-latex.md > class5-latexo.md
+	pandoc --template=./cabal.template class5-latexo.md -o ../public/class5.pdf
 
 ../public/class6.pdf: ../content/classes/class6.md
 	python latexify.py ../content/classes/class6.md > class6-latex.md

@@ -21,17 +21,14 @@
             </h1>
             </header>
             <p class="post-meta">
-            	{{ if not .Params.nodate }}
-		          <span class="post-date">
-		            <span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
-		          </span>
-      				{{ end }}
+            {{ if not .Params.nodate }}
+            	<span class="post-date">
+                	{{ .Date.Format "2" }} {{ .Date.Format "Jan" }} {{ .Date.Format "2006" }}
+            	</span>
+            	{{ end }}
       				{{ if not .Params.noauthor }}
       					{{ if .Params.author }}By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }}>{{ .Params.author }}</a>{{ end }}
       				{{ end }}
-              {{ if not .Params.noread }}
-                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>{{.ReadingTime}} min. read</em></span>
-              {{ end }}
       				{{ if .Params.categories }}
       					<div class="post-categories">
 				        {{ $Site := .Site }}

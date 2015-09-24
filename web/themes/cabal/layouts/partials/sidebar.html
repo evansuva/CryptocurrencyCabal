@@ -21,7 +21,7 @@
       </ul>
     </nav>
 
-    <b>Assignments</b>
+    <b><a href="/ps/">Assignments</a></b>
     <nav class="nav">
       <ul class="nav-list">
         {{ range .Site.Menus.assignments }}
@@ -36,10 +36,10 @@
       </ul>
     </nav>
 
-    <b>Classes</b>
+    <b><A href="/classes/">Classes</a></b>
     <nav class="nav">
       <ul class="nav-list">
-        {{ range .Site.Menus.classes }}
+        {{ range first 4 .Site.Menus.classes.Reverse }}
           <li class="nav-item">
           {{ if eq $.Title .Name }}
               <span class="nav-item-selected">{{ .Name }}</span></a>
@@ -48,9 +48,12 @@
           {{ end }}
           </li>
         {{ end }}
+        <li><a href="classes/"><em>More...</em></a></li>
       </ul>
+
     </nav>
 
+    <a href="/0/">Spring 2015 Course</a>
 
     {{ if .Site.Menus.social }}
     <div class="social-buttons">

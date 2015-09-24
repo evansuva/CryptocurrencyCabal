@@ -1,5 +1,9 @@
-% Class 5: Becoming More Paranoid
-% '2015-09-09'
+---
+title: "Class 5: Becoming More Paranoid"
+date: '2015-09-09'
+nocomment: false
+weight: 99
+---
 
 ## Schedule
 
@@ -36,18 +40,14 @@ Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
 ## Notes
 
 What does it mean for a problem to be _hard_?
-
-#
-
+<div class="gap"></div>
 
 If you know an algorithm with running time in <span class="math">_O_($2^n$)</span> for problem _P_, what do you know about the hardness of problem _P_?
-
-#
-
+<div class="gap"></div>
 
 What are the most common reasons for cryptosystems to fail in practice?
 
-\clearpage
+<!--page-->
 
 ## Bitcoin's Curve
 
@@ -62,9 +62,7 @@ Standards for Efficient Cryptography: [_SEC 2: Recommended Elliptic Curve Domain
 > parameters so that users can verify the parameters were chosen verifiably at random._
 
 What does it mean for parameters to be "verifiably random"?
-
-#
-
+<div class="gap"></div>
 
 # Randomness
 
@@ -75,16 +73,11 @@ What does it mean for parameters to be "verifiably random"?
   |_s_| + _C_</span> 
 
 What is the Kolmogorov Complexity of the string `0001000010000011111111100111...`?
-
-#
-#
-
+<div class="biggap"></div>
 
 What is the Kolmogorov Complexity of the string: `1MRigEo5423vycLnUdSnA4C6Ts691fUiYu 18UikW89q9VgGDftQW3Gmuhe4sQDCFP5kD 19ZQwQmfAsgy47ErehfkW...' ?
 
-
-#
-
+<div class="gap"></div>
 
 
 Daniel J. Bernstein, Tung Chou, Chitchanok Chuengsatiansup, Andreas
@@ -94,12 +87,10 @@ H&uuml;lsing, Tanja Lange, Ruben Niederhagen, and Christine van Vredendaal.
 
 How likely is it that the parameters for the secp256k1 curve used by bitcoin have a trapdoor?
 
-
-#
-
+<div class="gap"></div>
 
 How should ECC parameters be generated for an important curve in a standard?
-\clearpage
+<!--page-->
 
 ## Dual-EC PRNG 
 
@@ -115,16 +106,10 @@ $e$ such that $Q^e = P$.
 $o_i = $ the low-order 16 bits of the $x$-coordinate of $r_i$.
 
 \noindent Given $o_i$, how much work is it to find all the possible $r_i = (x, y)$ values?
-
-#
-#
-
+<div class="biggap"></div>
 
 \noindent Given $e$, what is $\varphi(e \times A)$ where $A$ is a possible $r_i$ value?
-
-#
-#
-
+<div class="biggap"></div>
 
 Dan Shumow, Niels Ferguson.  [_On the Possibility of a Back Door in the
 NIST SP800-90 Dual Ec Prng_](http://rump2007.cr.yp.to/15-shumow.pdf).
