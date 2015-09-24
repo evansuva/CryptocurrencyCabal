@@ -6,8 +6,44 @@
     <description>Recent content in News on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
+      <link>http://bitcoin-class.org/news/u21/</link>
+      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/news/u21/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
+
+&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
+actually doing.  They have designed some custom mining hardware, but
+hard to see how it makes sense as a USB device for individuals.  I could
+see the value in a secure USB device that works as a bitcoin wallet and
+can be smoothly integrated with a web client, but hard to see the case
+for including a miner in it.&lt;/p&gt;
+
+&lt;p&gt;You can buy it from
+&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Banking Blockchains</title>
+      <link>http://bitcoin-class.org/news/blockchain/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/news/blockchain/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ft.com/cms/s/0/f358ed6c-5ae0-11e5-9846-de406ccb37f2.html&#34;&gt;&lt;em&gt;Blockchain initiative backed by 9 large investment banks&lt;/em&gt;&lt;/a&gt;, Financial Times, 15 Sept 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://recode.net/2015/09/15/nine-of-the-worlds-biggest-banks-form-blockchain-partnership/&#34;&gt;&lt;em&gt;Nine of the World’s Biggest Banks Form Blockchain Partnership&lt;/em&gt;&lt;/a&gt;, Re/Code, 15 Sept 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/mikemontgomery/2015/09/15/bitcoin-is-only-the-beginning-for-blockchain-technology/&#34;&gt;&lt;em&gt;Bitcoin Is Only The Beginning For Blockchain Technology&lt;/em&gt;&lt;/a&gt;, Forbes, 15 Sept 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/laurashin/2015/09/09/bitcoins-shared-ledger-technology-moneys-new-operating-system/&#34;&gt;&lt;em&gt;Bitcoin&amp;rsquo;s Shared Ledger Technology: Money&amp;rsquo;s New Operating System&lt;/em&gt;&lt;/a&gt;, Forbes, 9 Sept 2015.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Inside the Fight Over Bitcoin’s Future</title>
