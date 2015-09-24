@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Class 7: The Blockchain // Cryptocurrency Cabal
+    Darkode // Cryptocurrency Cabal
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -16,11 +16,11 @@
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.15-DEV" />
 
-  <meta property="og:title" content="Class 7: The Blockchain" />
+  <meta property="og:title" content="Darkode" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://bitcoin-class.org/classes/class7/" />
+<meta property="og:url" content="http://bitcoin-class.org/news/radiolab/" />
 
 
   
@@ -132,7 +132,7 @@ function showText(show,hide)
         
           <li class="nav-item">
           
-              <a href="/classes/class8/">Class 2: Cryptography</a>
+              <a href="/classes/class2/">Class 2: Cryptography</a>
           
           </li>
         
@@ -168,14 +168,10 @@ function showText(show,hide)
     <section id="main">
             
             	<span class="post-date">
-                	16 Sep 2015
+                	23 Sep 2015
             	</span>
             	
             
-                <div class="phighlight">
-                     <a href="/class7.pdf">PDF for printing</a>
-                </div>
-            
 
             
             	
@@ -188,108 +184,14 @@ function showText(show,hide)
 
 			
 
-            
-
-<h2 id="schedule:3a08b95a8ad598832d09afa687b9b147">Schedule</h2>
-
-<p><div class="todo">
-<strong>Wednesday, September 23</strong>: Checkup 2 (was originally scheduled for Monday, September 21)</p>
-
-<p><strong>Readings</strong> (should be completed by Monday, September 21 at the latest; covered by Checkup 2):</p>
-
-<ul>
-<li><p>Satoshi Nakamoto, <a href="https://bitcoin.org/bitcoin.pdf"><em>Bitcoin: A Peer-to-Peer Electronic Cash
-System</em></a>, 2008.  The is the original
-bitcoin paper, which is quite readable and historically interesting.</p></li>
-
-<li><p><a href="https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc"><em>Chapter 6: The Bitcoin
-Network</em></a>
-and <a href="https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc"><em>Chapter 7: The
-Blockchain</em></a>
-from Andreas Antonopoulos&rsquo; book.</p></li>
-
-<li><p><a href="http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf"><em>Chapter 2: How Bitcoin Achieves
-Decentralization</em></a>
-and <a href="http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf"><em>Chapter 5: Bitcoin
-Mining</em></a>
-from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. <a href="https://piazza.com/princeton/spring2015/btctech/resources"><em>Bitcoin and Cryptocurrency
-Technologies</em></a>.
-</div></p></li>
-</ul>
-
-<p><center>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/uCjusmzjkpfLzr"
-width="625" height="400" frameborder="2" marginwidth="0"
-marginheight="0" scrolling="no"></iframe></p>
-
-<p><div class="caption">
-Note: ink markings may not appear in the
-embedded viewer.  To see them, <a href="/classes/class7-post.pptx">download the slides</a>.
-   </div></p>
-
-<p></center></p>
-
-<h1 id="blockchain-in-the-news:3a08b95a8ad598832d09afa687b9b147">Blockchain in the News</h1>
-
-<p><a href="http://www.ft.com/cms/s/0/f358ed6c-5ae0-11e5-9846-de406ccb37f2.html"><em>Blockchain initiative backed by 9 large investment banks</em></a>, Financial Times, 15 Sept 2015.</p>
-
-<p><a href="http://recode.net/2015/09/15/nine-of-the-worlds-biggest-banks-form-blockchain-partnership/"><em>Nine of the World’s Biggest Banks Form Blockchain Partnership</em></a>, Re/Code, 15 Sept 2015.</p>
-
-<p><a href="http://www.forbes.com/sites/mikemontgomery/2015/09/15/bitcoin-is-only-the-beginning-for-blockchain-technology/"><em>Bitcoin Is Only The Beginning For Blockchain Technology</em></a>, Forbes, 15 Sept 2015.</p>
-
-<p><a href="http://www.forbes.com/sites/laurashin/2015/09/09/bitcoins-shared-ledger-technology-moneys-new-operating-system/"><em>Bitcoin&rsquo;s Shared Ledger Technology: Money&rsquo;s New Operating System</em></a>, Forbes, 9 Sept 2015.</p>
-
-<h1 id="trust:3a08b95a8ad598832d09afa687b9b147">Trust</h1>
-
-<p>What are valid sources of <em>trust</em>?
-<div class="gap"></div></p>
-
-<p>What are potentially misleading sources of <em>trust</em>?
-<div class="gap"></div></p>
-
-<p>What mechanisms have humans evolved or constructed to enhance trust among strangers?
-<div class="gap"></div></p>
-
-<h1 id="distributed-consensus:3a08b95a8ad598832d09afa687b9b147">Distributed Consensus</h1>
-
-<p>How well does the 2-out-of-3 network consensus public ledger protocol work?
-<div class="gap"></div></p>
-
-<h1 id="proof-of-work:3a08b95a8ad598832d09afa687b9b147">Proof-of-Work</h1>
-
-<p>Cynthia Dwork and Moni Naor.  <a href="http://bitcoin-class.org/0/classes/class6/pvp.pdf"><em>Pricing via Processing or Combatting Junk Mail</em></a>, CRYPTO 1992.</p>
-
-<p><strong>Pricing Function</strong>: (<span class="math"><em>f</em></span>)
-- moderately easy to compute
-- cannot be amortized
-- computing <span class="math"><em>f</em>(<em>m</em><sub>1</sub>), &hellip;, <em>f</em>(<em>m</em><sub>l</sub>)</span> costs <span class="math"><em>l</em></span> times as much as computing <span class="math"><em>f</em>(<em>m</em><sub>i<sub>)</span>.
-- easily verified: given <span class="math"><em>x</em></span>, <span class="math"><em>y</em></span> easy to check <span class="math"><em>y</em> = <em>f</em>(<em>x</em>)</span>.</p>
-
-<p>Adam Back. <a href="http://www.hashcash.org/papers/announce.txt"><em>Hash Cash Postage Implementation</em></a></p>
-
-<p><strong>Interactive Hashcash</strong>:<br />
-1. Sender to Receiver: <code>Hello</code><br />
-2. Receiver to Sender: <span class="math"><em>r</em></span> (random nonce)<br />
-3. Sender to Receiver: <span class="math"><em>x</em></span>, <code>Mail</code> where <span class="math"><em>x</em> = <em>f</em>(<em>r</em>)</span>.<br />
-4. Receiver verifies <span class="math"><em>x</em> = <em>f</em>(<em>r</em>)</span>.</p>
-
-<p>How well does this protocol work for sending mail?
-<div class="gap"></div></p>
-
-<p>How can we make this protocol non-interactive?
-<div class="gap"></div></p>
-
-<h1 id="bitcoin-mining:3a08b95a8ad598832d09afa687b9b147">Bitcoin Mining</h1>
-
-<p>Proof-of-work: Find an <span class="math"><em>x</em></span> such that: SHA-256(SHA-256(<span class="math"><em>r</em></span> + <span class="math"><em>x</em></span>)) &lt; <span class="math"><em>T</em>/<em>d</em></span>.</p>
-
-<p><span class="math"><em>d</em></span> is the &ldquo;difficulty&rdquo; (varies).<br />
-<span class="math"><em>T</em></span> is a fixed target (256-bit number).<br />
-<span class="math"><em>r</em></span> depends on hash of previous block, transactions, and other information.</p>
-
-<p>What does it mean for the bitcoin difficulty to go down?
-<div class="gap"></div></p>
+            <p>The <a href="http://www.radiolab.org/story/darkode/">latest episode of Radiolab</a>
+starts with a story about bitcoin being used in a ransom scam
+(CryptoLocker).  Its a sad story, without a lot of technical insights,
+but does give a sense of what the bitcoin experience is like for many
+people today.  A good thing to think about for a potential project is
+how to solve the problem &mdash;- making it so bitcoin can&rsquo;t be used to
+collect ransom untracably, without losing the desirable aspects of
+anonymity and decentralization.</p>
 
 	
 			
@@ -302,14 +204,14 @@ embedded viewer.  To see them, <a href="/classes/class7-post.pptx">download the 
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/announcements/checkup1/">Checkup 1 Comments</a>
+						<a class="paging-link" href="/syllabus/">Syllabus</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/classes/class6/">Class 6: Hash Functions</a>
+			            <a class="paging-link" href="/news/u21/">21 Inc. Releases First Product, a ‘Bitcoin Computer’</a>
 		            </div>
 		            
 	            </div>

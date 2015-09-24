@@ -6,8 +6,25 @@
     <description>Recent content in News on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2015 21:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Darkode</title>
+      <link>http://bitcoin-class.org/news/radiolab/</link>
+      <pubDate>Wed, 23 Sep 2015 21:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/news/radiolab/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.radiolab.org/story/darkode/&#34;&gt;latest episode of Radiolab&lt;/a&gt;
+starts with a story about bitcoin being used in a ransom scam
+(CryptoLocker).  Its a sad story, without a lot of technical insights,
+but does give a sense of what the bitcoin experience is like for many
+people today.  A good thing to think about for a potential project is
+how to solve the problem &amp;mdash;- making it so bitcoin can&amp;rsquo;t be used to
+collect ransom untracably, without losing the desirable aspects of
+anonymity and decentralization.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
