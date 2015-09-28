@@ -13,7 +13,7 @@ fullgithub:
 	git add -A
 	git commit -m "Rebuilt site"
 	git push origin master
-	git subtree push --prefix=public ssh://git@github.com/CryptocurrencyCabal.git gh-pages
+	git subtree push --prefix=public git@github.com:evansuva/CryptocurrencyCabal.git gh-pages
 
 github: 
 	cd ..; make github
