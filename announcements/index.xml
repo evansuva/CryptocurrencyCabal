@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Announcements on Cryptocurrency Cabal</title>
-    <link>http://localhost:1313/announcements/</link>
+    <link>http://bitcoin-class.org/announcements/</link>
     <description>Recent content in Announcements on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/announcements/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Checkup 1 Comments</title>
-      <link>http://localhost:1313/announcements/checkup1/</link>
+      <link>http://bitcoin-class.org/announcements/checkup1/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/checkup1/</guid>
+      <guid>http://bitcoin-class.org/announcements/checkup1/</guid>
       <description>
 
 &lt;p&gt;Here are answers and discussions for the Checkup 1 questions.  It would
@@ -116,10 +116,10 @@ Send to ledger the message signed by Alice: (&lt;em&gt;msg&lt;/em&gt;, E&lt;sub&
     
     <item>
       <title>Mining Pools</title>
-      <link>http://localhost:1313/announcements/miningpools/</link>
+      <link>http://bitcoin-class.org/announcements/miningpools/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/miningpools/</guid>
+      <guid>http://bitcoin-class.org/announcements/miningpools/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the up-to-date graph of hashing power distributed by mining pools
 (that I wasn&amp;rsquo;t able to find in class Monday):&lt;/p&gt;
 
@@ -140,20 +140,20 @@ implications for the blockchain.&lt;/p&gt;
     
     <item>
       <title>Problem Set 1 Posted</title>
-      <link>http://localhost:1313/announcements/ps1/</link>
+      <link>http://bitcoin-class.org/announcements/ps1/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/ps1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
+      <guid>http://bitcoin-class.org/announcements/ps1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Email/Calendar Update</title>
-      <link>http://localhost:1313/announcements/email/</link>
+      <link>http://bitcoin-class.org/announcements/email/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/email/</guid>
+      <guid>http://bitcoin-class.org/announcements/email/</guid>
       <description>&lt;p&gt;The email address, &lt;code&gt;ccc-staff@cs.virginia.edu&lt;/code&gt;, reaches all the course
 staff (Dave, Samee, and Ori).  If you have a question that can be asked
 publicly, its best to post it as a comment on the website.  But, for
@@ -168,10 +168,10 @@ encourage you to incorporate this into your calendar:
     
     <item>
       <title>Office Hours Schedule</title>
-      <link>http://localhost:1313/announcements/officehours/</link>
+      <link>http://bitcoin-class.org/announcements/officehours/</link>
       <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/officehours/</guid>
+      <guid>http://bitcoin-class.org/announcements/officehours/</guid>
       <description>&lt;p&gt;Ori&amp;rsquo;s office hours have been moved to 5-6:30pm Monday (in Rice 442).
 All of our office hours are:&lt;/p&gt;
 
