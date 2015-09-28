@@ -2,138 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://bitcoin-class.org/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ps/ps1/</loc>
+    <loc>http://bitcoin-class.org/ps/ps1/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tools/github/</loc>
+    <loc>http://bitcoin-class.org/tools/github/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/registration/</loc>
+    <loc>http://bitcoin-class.org/registration/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/syllabus/</loc>
+    <loc>http://bitcoin-class.org/syllabus/</loc>
     <lastmod>2015-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class10/</loc>
+    <loc>http://bitcoin-class.org/classes/class10/</loc>
     <lastmod>2015-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/news/radiolab/</loc>
+    <loc>http://bitcoin-class.org/news/radiolab/</loc>
     <lastmod>2015-09-23T21:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class9/</loc>
+    <loc>http://bitcoin-class.org/classes/class9/</loc>
     <lastmod>2015-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/news/u21/</loc>
+    <loc>http://bitcoin-class.org/news/u21/</loc>
     <lastmod>2015-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class8/</loc>
+    <loc>http://bitcoin-class.org/classes/class8/</loc>
     <lastmod>2015-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/announcements/checkup1/</loc>
+    <loc>http://bitcoin-class.org/announcements/checkup1/</loc>
     <lastmod>2015-09-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class7/</loc>
+    <loc>http://bitcoin-class.org/classes/class7/</loc>
     <lastmod>2015-09-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class6/</loc>
+    <loc>http://bitcoin-class.org/classes/class6/</loc>
     <lastmod>2015-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class5/</loc>
+    <loc>http://bitcoin-class.org/classes/class5/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class4/</loc>
+    <loc>http://bitcoin-class.org/classes/class4/</loc>
     <lastmod>2015-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/announcements/miningpools/</loc>
+    <loc>http://bitcoin-class.org/announcements/miningpools/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/announcements/ps1/</loc>
+    <loc>http://bitcoin-class.org/announcements/ps1/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class3/</loc>
+    <loc>http://bitcoin-class.org/classes/class3/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/announcements/email/</loc>
+    <loc>http://bitcoin-class.org/announcements/email/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class2/</loc>
+    <loc>http://bitcoin-class.org/classes/class2/</loc>
     <lastmod>2015-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/announcements/officehours/</loc>
+    <loc>http://bitcoin-class.org/announcements/officehours/</loc>
     <lastmod>2015-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/classes/class1/</loc>
+    <loc>http://bitcoin-class.org/classes/class1/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/main/</loc>
+    <loc>http://bitcoin-class.org/main/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/news/blockchain/</loc>
+    <loc>http://bitcoin-class.org/news/blockchain/</loc>
     <lastmod>2015-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/news/bitcoinxt/</loc>
+    <loc>http://bitcoin-class.org/news/bitcoinxt/</loc>
     <lastmod>2015-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/news/nyt/</loc>
+    <loc>http://bitcoin-class.org/news/nyt/</loc>
     <lastmod>2015-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/news/ombuds/</loc>
+    <loc>http://bitcoin-class.org/news/ombuds/</loc>
     <lastmod>2015-08-21T00:00:00+00:00</lastmod>
   </url>
   
