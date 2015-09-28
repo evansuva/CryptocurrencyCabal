@@ -2,19 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Classes on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/classes/</link>
+    <link>http://localhost:1313/classes/</link>
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 10: Subverting Bitcoin</title>
+      <link>http://localhost:1313/classes/class10/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/classes/class10/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;checkup-2:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Checkup 2&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/tLGdRxu6IVVzni&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class10.pptx&#34;&gt;download the slides&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;Why would a hypothetical cryptocurrency without miners not work? What is the
+essential service rendered by a miner?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;How does Bitcoin handle forks? What criteria does it use to decide the branch
+to converge on?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;What is a Nash Equilibrium in a game? What is the equilibrium strategy in
+a game of rock-paper-scissors?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What would happen to the bitcoin currency if everyone started mining selfishly?&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 9: Economics of Mining</title>
-      <link>http://bitcoin-class.org/classes/class9/</link>
+      <link>http://localhost:1313/classes/class9/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class9/</guid>
+      <guid>http://localhost:1313/classes/class9/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h2&gt;
@@ -27,7 +82,7 @@
 
 &lt;h1 id=&#34;checkup-2:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Checkup 2&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;As was suggested in class today, there won&amp;rsquo;t be an immediate opportunity
 to submit revisions for this (like there was for Checkup 1), but there
@@ -41,7 +96,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -86,10 +141,10 @@ something to answer in the blank below!)&lt;/p&gt;
     
     <item>
       <title>Class 8: Mining</title>
-      <link>http://bitcoin-class.org/classes/class8/</link>
+      <link>http://localhost:1313/classes/class8/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class8/</guid>
+      <guid>http://localhost:1313/classes/class8/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h2&gt;
@@ -122,7 +177,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -192,7 +247,7 @@ func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;What is needed to verify &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;H&lt;sub&gt;root&lt;/sub&gt;&lt;/span&gt;?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -239,10 +294,10 @@ processor like an Intel i7?
     
     <item>
       <title>Class 7: The Blockchain</title>
-      <link>http://bitcoin-class.org/classes/class7/</link>
+      <link>http://localhost:1313/classes/class7/</link>
       <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class7/</guid>
+      <guid>http://localhost:1313/classes/class7/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h2&gt;
@@ -280,7 +335,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class7-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class7-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -350,10 +405,10 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
     
     <item>
       <title>Class 6: Hash Functions</title>
-      <link>http://bitcoin-class.org/classes/class6/</link>
+      <link>http://localhost:1313/classes/class6/</link>
       <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class6/</guid>
+      <guid>http://localhost:1313/classes/class6/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h2&gt;
@@ -427,10 +482,10 @@ the full string?
     
     <item>
       <title>Class 5: Becoming Paranoid</title>
-      <link>http://bitcoin-class.org/classes/class5/</link>
+      <link>http://localhost:1313/classes/class5/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class5/</guid>
+      <guid>http://localhost:1313/classes/class5/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h2&gt;
@@ -472,7 +527,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class5-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class5-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -593,21 +648,21 @@ decision-making processes inside the government.&lt;/em&gt; (Andrew Odlyzko)&lt;
     
     <item>
       <title>Class 4: Checkup</title>
-      <link>http://bitcoin-class.org/classes/class4/</link>
+      <link>http://localhost:1313/classes/class4/</link>
       <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class4/</guid>
+      <guid>http://localhost:1313/classes/class4/</guid>
       <description>
 
 &lt;h2 id=&#34;checkup-1:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Checkup 1&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/feedback.pdf&#34;&gt;Feedback&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and &lt;a href=&#34;http://localhost:1313/feedback.pdf&#34;&gt;Feedback&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;checkup-revisions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Checkup Revisions&lt;/h2&gt;
 
 &lt;p&gt;If you are not happy with your answers to any of the questions on
 Checkup 1, you may submit revised answers at the beginning of
-Wednesday&amp;rsquo;s class.  (Just print the &lt;a href=&#34;http://bitcoin-class.org/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and fill
+Wednesday&amp;rsquo;s class.  (Just print the &lt;a href=&#34;http://localhost:1313/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and fill
 in revised answers for any questions you want, or submit your clearly
 marked answers on a separate page you generate.  It is not necessary to
 resubmit answers to questions for which you are happy with your original
@@ -625,10 +680,10 @@ answers.)&lt;/p&gt;
     
     <item>
       <title>Class 3: Digital Signatures</title>
-      <link>http://bitcoin-class.org/classes/class3/</link>
+      <link>http://localhost:1313/classes/class3/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class3/</guid>
+      <guid>http://localhost:1313/classes/class3/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h2&gt;
@@ -649,7 +704,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class3-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class3-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -830,10 +885,10 @@ value, you are in big trouble!  A common mistake was to use
     
     <item>
       <title>Class 2: Cryptography</title>
-      <link>http://bitcoin-class.org/classes/class2/</link>
+      <link>http://localhost:1313/classes/class2/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class2/</guid>
+      <guid>http://localhost:1313/classes/class2/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Schedule&lt;/h2&gt;
@@ -879,7 +934,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class2-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class2-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1032,10 +1087,10 @@ to solve to make a cryptocurrency?&lt;/p&gt;
     
     <item>
       <title>Class 1: What is Money?</title>
-      <link>http://bitcoin-class.org/classes/class1/</link>
+      <link>http://localhost:1313/classes/class1/</link>
       <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class1/</guid>
+      <guid>http://localhost:1313/classes/class1/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Schedule&lt;/h2&gt;
@@ -1044,9 +1099,9 @@ to solve to make a cryptocurrency?&lt;/p&gt;
 Before &lt;strong&gt;8:29pm Saturday&lt;/strong&gt; (29 August):&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/syllabus&#34;&gt;Course Syllabus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Setup&lt;/strong&gt; a bitcoin wallet (see &lt;a href=&#34;http://bitcoin-class.org/registration&#34;&gt;Registration&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Submit &lt;a href=&#34;http://bitcoin-class.org/registration&#34;&gt;Registration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/syllabus&#34;&gt;Course Syllabus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Setup&lt;/strong&gt; a bitcoin wallet (see &lt;a href=&#34;http://localhost:1313/registration&#34;&gt;Registration&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Submit &lt;a href=&#34;http://localhost:1313/registration&#34;&gt;Registration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Monday&amp;rsquo;s class&lt;/strong&gt;:&lt;/p&gt;
@@ -1070,7 +1125,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class1-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class1-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
