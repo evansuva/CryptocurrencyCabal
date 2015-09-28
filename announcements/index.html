@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.14" />
+<meta name="generator" content="Hugo 0.15-DEV" />
 
   <meta property="og:title" content="Announcements" />
 <meta property="og:description" content="" />
@@ -166,6 +166,71 @@ function showText(show,hide)
       
 
       <div class="posts">
+        
+          <section  class="post">
+            <header class="post-header">
+            
+            <h1 class="post-title">
+              <a href="/announcements/checkup2revisions/">Checkup 2 Revisions</a>
+            </h1>
+            </header>
+            <p class="post-meta">
+            
+            	<span class="post-date">
+                	28 Sep 2015
+            	</span>
+            	
+      				
+      					
+      				
+      				
+            </p>
+            <article class="post-summary">
+            	<p>If you didn&rsquo;t get a &ldquo;gold star&rdquo; on <a href="./checkup2.pdf">Checkup 2</a>, you can
+improve your score by answering one or more of the questions below.  You
+can submit your revisions in class Wednesday, or at the end of office
+hours Wednesday.  To submit revisions, attach your answers to these
+questions to your original submission.</p>
+
+<p><strong>R1. Hashing</strong> (Answer this question if you want to improve your score on questions 1-4)</p>
+
+<p>There are several different places in bitcoin where cryptographic hashes are used:</p>
+
+<p>A. Producing the public bitcoin address by hashing the public key.</p>
+
+<p>B. Producing a transaction digest for use as the input in signing a transaction.</p>
+
+<p>C. Producing the Merkle tree root for authenticating the transactions in
+a block (using hashes all the way up the tree).</p>
+
+<p>D. Producing the hash of the previous block to use in the block header.</p>
+
+<p>E. Producing the double hash of the block (with nonces) to find a block
+that satisfies the difficult needed in mining.</p>
+
+<p>Suppose <em>H</em> is a hash function that provides strong pre-image
+resistance, but does not provide collision resistance. That is, an
+adversary knows way to efficiently find pairs of values, <em>m</em><sub>1</sub>
+and <em>m</em><sub>2</sub> such that <em>m</em><sub>1</sub> is not equal to
+<em>m</em><sub>2</sub> and <em>H</em>(<em>m</em><sub>1</sub>) = <em>H</em>(<em>m</em><sub>2</sub>).</p>
+
+<p>Explain clearly <em>one place</em> where cryptographic hashing is used in
+bitcoin that the adversary could gain an advantage by knowing how to
+find collisions in <em>H</em>.  (Be careful to not overstate the advantage,
+though.)</p>
+
+<p><strong>R2. Blockchain</strong> (Answer this question if you want to improve your score on questions 5-7)</p>
+
+<p>Ishtosa suggests strengthening bitcoin by adding the hash of the
+previous previous block to the block header.  So, the block header for
+block 534 would now include the both the hash of the block 533, and
+the hash of block 532.  Would this be a good idea?</p>
+
+            </article>
+			<div class="read-more-link">
+				<a href="/announcements/checkup2revisions/"><span class="read-more-slashes">//</span>Read More...</a>
+			</div>
+          </section>
         
           <section  class="post">
             <header class="post-header">

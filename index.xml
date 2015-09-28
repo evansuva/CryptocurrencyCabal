@@ -897,6 +897,54 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Checkup 2 Revisions</title>
+      <link>http://bitcoin-class.org/announcements/checkup2revisions/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/checkup2revisions/</guid>
+      <description>&lt;p&gt;If you didn&amp;rsquo;t get a &amp;ldquo;gold star&amp;rdquo; on &lt;a href=&#34;./checkup2.pdf&#34;&gt;Checkup 2&lt;/a&gt;, you can
+improve your score by answering one or more of the questions below.  You
+can submit your revisions in class Wednesday, or at the end of office
+hours Wednesday.  To submit revisions, attach your answers to these
+questions to your original submission.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;R1. Hashing&lt;/strong&gt; (Answer this question if you want to improve your score on questions 1-4)&lt;/p&gt;
+
+&lt;p&gt;There are several different places in bitcoin where cryptographic hashes are used:&lt;/p&gt;
+
+&lt;p&gt;A. Producing the public bitcoin address by hashing the public key.&lt;/p&gt;
+
+&lt;p&gt;B. Producing a transaction digest for use as the input in signing a transaction.&lt;/p&gt;
+
+&lt;p&gt;C. Producing the Merkle tree root for authenticating the transactions in
+a block (using hashes all the way up the tree).&lt;/p&gt;
+
+&lt;p&gt;D. Producing the hash of the previous block to use in the block header.&lt;/p&gt;
+
+&lt;p&gt;E. Producing the double hash of the block (with nonces) to find a block
+that satisfies the difficult needed in mining.&lt;/p&gt;
+
+&lt;p&gt;Suppose &lt;em&gt;H&lt;/em&gt; is a hash function that provides strong pre-image
+resistance, but does not provide collision resistance. That is, an
+adversary knows way to efficiently find pairs of values, &lt;em&gt;m&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;
+and &lt;em&gt;m&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; such that &lt;em&gt;m&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt; is not equal to
+&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; and &lt;em&gt;H&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;) = &lt;em&gt;H&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;).&lt;/p&gt;
+
+&lt;p&gt;Explain clearly &lt;em&gt;one place&lt;/em&gt; where cryptographic hashing is used in
+bitcoin that the adversary could gain an advantage by knowing how to
+find collisions in &lt;em&gt;H&lt;/em&gt;.  (Be careful to not overstate the advantage,
+though.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;R2. Blockchain&lt;/strong&gt; (Answer this question if you want to improve your score on questions 5-7)&lt;/p&gt;
+
+&lt;p&gt;Ishtosa suggests strengthening bitcoin by adding the hash of the
+previous previous block to the block header.  So, the block header for
+block 534 would now include the both the hash of the block 533, and
+the hash of block 532.  Would this be a good idea?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 10: Subverting Bitcoin</title>
       <link>http://bitcoin-class.org/classes/class10/</link>
       <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
@@ -965,6 +1013,26 @@ people today.  A good thing to think about for a potential project is
 how to solve the problem &amp;mdash;- making it so bitcoin can&amp;rsquo;t be used to
 collect ransom untracably, without losing the desirable aspects of
 anonymity and decentralization.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
+      <link>http://bitcoin-class.org/news/u21/</link>
+      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/news/u21/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
+
+&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
+actually doing.  They have designed some custom mining hardware, but
+hard to see how it makes sense as a USB device for individuals.  I could
+see the value in a secure USB device that works as a bitcoin wallet and
+can be smoothly integrated with a web client, but hard to see the case
+for including a miner in it.&lt;/p&gt;
+
+&lt;p&gt;You can buy it from
+&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1040,26 +1108,6 @@ very difficult question to answer, would be a good project idea, not
 something to answer in the blank below!)&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://bitcoin-class.org/news/u21/</link>
-      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/news/u21/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
-
-&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
-actually doing.  They have designed some custom mining hardware, but
-hard to see how it makes sense as a USB device for individuals.  I could
-see the value in a secure USB device that works as a bitcoin wallet and
-can be smoothly integrated with a web client, but hard to see the case
-for including a miner in it.&lt;/p&gt;
-
-&lt;p&gt;You can buy it from
-&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1704,30 +1752,6 @@ answers.)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.
    &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mining Pools</title>
-      <link>http://bitcoin-class.org/announcements/miningpools/</link>
-      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/miningpools/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s the up-to-date graph of hashing power distributed by mining pools
-(that I wasn&amp;rsquo;t able to find in class Monday):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://blockchain.info/pools?timespan=4days&#34;&gt;https://blockchain.info/pools?timespan=4days&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Looking at the current results for the past for days, more than 50% of
-the hashing power appears to be held by just three mining pools: F2Pool
-(20%), BitFury (17%), and AntPool (17%).  Each of these has around 75
-PH/s (one peta-hash means 10&lt;sup&gt;15&lt;/sup&gt; computations of the bitcoin
-block hashing function, which actually involves two computations of
-SHA-256).&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;ll talk about mining a lot more in the coming weeks to get a good
-understanding of what this means technically, as well as the
-implications for the blockchain.&lt;/p&gt;
 </description>
     </item>
     

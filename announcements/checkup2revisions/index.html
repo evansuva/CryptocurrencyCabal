@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Class 4: Checkup // Cryptocurrency Cabal
+    Checkup 2 Revisions // Cryptocurrency Cabal
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -16,11 +16,11 @@
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.15-DEV" />
 
-  <meta property="og:title" content="Class 4: Checkup" />
+  <meta property="og:title" content="Checkup 2 Revisions" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://bitcoin-class.org/classes/class4/" />
+<meta property="og:url" content="http://bitcoin-class.org/announcements/checkup2revisions/" />
 
 
   
@@ -168,7 +168,7 @@ function showText(show,hide)
     <section id="main">
             
             	<span class="post-date">
-                	7 Sep 2015
+                	28 Sep 2015
             	</span>
             	
             
@@ -184,29 +184,45 @@ function showText(show,hide)
 
 			
 
-            
+            <p>If you didn&rsquo;t get a &ldquo;gold star&rdquo; on <a href="./checkup2.pdf">Checkup 2</a>, you can
+improve your score by answering one or more of the questions below.  You
+can submit your revisions in class Wednesday, or at the end of office
+hours Wednesday.  To submit revisions, attach your answers to these
+questions to your original submission.</p>
 
-<h2 id="checkup-1:a69bef1e5f2725722420b5c4a32452b2">Checkup 1</h2>
+<p><strong>R1. Hashing</strong> (Answer this question if you want to improve your score on questions 1-4)</p>
 
-<p><a href="/checkup1.pdf">Checkup 1</a> and <a href="/feedback.pdf">Feedback</a>.</p>
+<p>There are several different places in bitcoin where cryptographic hashes are used:</p>
 
-<h2 id="checkup-revisions:a69bef1e5f2725722420b5c4a32452b2">Checkup Revisions</h2>
+<p>A. Producing the public bitcoin address by hashing the public key.</p>
 
-<p>If you are not happy with your answers to any of the questions on
-Checkup 1, you may submit revised answers at the beginning of
-Wednesday&rsquo;s class.  (Just print the <a href="/checkup1.pdf">Checkup 1</a> and fill
-in revised answers for any questions you want, or submit your clearly
-marked answers on a separate page you generate.  It is not necessary to
-resubmit answers to questions for which you are happy with your original
-answers.)</p>
+<p>B. Producing a transaction digest for use as the input in signing a transaction.</p>
 
-<h2 id="schedule:a69bef1e5f2725722420b5c4a32452b2">Schedule</h2>
+<p>C. Producing the Merkle tree root for authenticating the transactions in
+a block (using hashes all the way up the tree).</p>
 
-<p><div class="todo">
-<strong>Wednesday, 9 September</strong> (beginning of class): Checkup 1 revisions (if desired).</p>
+<p>D. Producing the hash of the previous block to use in the block header.</p>
 
-<p><strong>Tuesday, September 15</strong> (8:29pm): <a href="http://www.bitcoin-class.org/ps/ps1">Problem Set 1</a> due.
-   </div></p>
+<p>E. Producing the double hash of the block (with nonces) to find a block
+that satisfies the difficult needed in mining.</p>
+
+<p>Suppose <em>H</em> is a hash function that provides strong pre-image
+resistance, but does not provide collision resistance. That is, an
+adversary knows way to efficiently find pairs of values, <em>m</em><sub>1</sub>
+and <em>m</em><sub>2</sub> such that <em>m</em><sub>1</sub> is not equal to
+<em>m</em><sub>2</sub> and <em>H</em>(<em>m</em><sub>1</sub>) = <em>H</em>(<em>m</em><sub>2</sub>).</p>
+
+<p>Explain clearly <em>one place</em> where cryptographic hashing is used in
+bitcoin that the adversary could gain an advantage by knowing how to
+find collisions in <em>H</em>.  (Be careful to not overstate the advantage,
+though.)</p>
+
+<p><strong>R2. Blockchain</strong> (Answer this question if you want to improve your score on questions 5-7)</p>
+
+<p>Ishtosa suggests strengthening bitcoin by adding the hash of the
+previous previous block to the block header.  So, the block header for
+block 534 would now include the both the hash of the block 533, and
+the hash of block 532.  Would this be a good idea?</p>
 
 	
 			
@@ -219,14 +235,14 @@ answers.)</p>
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/classes/class5/">Class 5: Becoming Paranoid</a>
+						<a class="paging-link" href="/syllabus/">Syllabus</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/classes/class3/">Class 3: Digital Signatures</a>
+			            <a class="paging-link" href="/classes/class10/">Class 10: Subverting Bitcoin</a>
 		            </div>
 		            
 	            </div>
