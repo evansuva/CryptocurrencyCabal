@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ps on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/ps/</link>
+    <link>http://localhost:1313/ps/</link>
     <description>Recent content in Ps on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/ps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PS1: Bitcoin Transactions</title>
-      <link>http://bitcoin-class.org/ps/ps1/</link>
+      <link>http://localhost:1313/ps/ps1/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps1/</guid>
+      <guid>http://localhost:1313/ps/ps1/</guid>
       <description>
 
 &lt;h1 id=&#34;problem-set-1-bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Problem Set 1: Bitcoin Transactions&lt;/h1&gt;
@@ -190,7 +190,7 @@ $ export GOPATH=$Home/go_workspace
   btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Setting up git.&lt;/strong&gt; Before continuing with this assignment, you should
-&lt;a href=&#34;http://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
 and follow the directions there to set up your private repository
 containing the starting code for ps1.  (It may seem like overkill to use
 git for this assignment since you will not need to write much code or
@@ -250,7 +250,7 @@ see that it produces a different key pair each time.)&lt;/p&gt;
 class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;, and finding the corresponding public key by
 &amp;ldquo;multiplying&amp;rdquo; it by &lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;, the generator point.
 (Multiplication here is not standard multiplication, but multiplication
-on the elliptic curve, as discussed in &lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
+on the elliptic curve, as discussed in &lt;a href=&#34;http://localhost:1313/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; is defined by &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L912&#34;&gt;lines
 912-3&lt;/a&gt;):&lt;/p&gt;
 

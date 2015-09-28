@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PS1: Bitcoin Transactions</title>
-      <link>http://bitcoin-class.org/ps/ps1/</link>
+      <link>http://localhost:1313/ps/ps1/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps1/</guid>
+      <guid>http://localhost:1313/ps/ps1/</guid>
       <description>
 
 &lt;h1 id=&#34;problem-set-1-bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Problem Set 1: Bitcoin Transactions&lt;/h1&gt;
@@ -190,7 +190,7 @@ $ export GOPATH=$Home/go_workspace
   btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Setting up git.&lt;/strong&gt; Before continuing with this assignment, you should
-&lt;a href=&#34;http://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
 and follow the directions there to set up your private repository
 containing the starting code for ps1.  (It may seem like overkill to use
 git for this assignment since you will not need to write much code or
@@ -250,7 +250,7 @@ see that it produces a different key pair each time.)&lt;/p&gt;
 class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;, and finding the corresponding public key by
 &amp;ldquo;multiplying&amp;rdquo; it by &lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;, the generator point.
 (Multiplication here is not standard multiplication, but multiplication
-on the elliptic curve, as discussed in &lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
+on the elliptic curve, as discussed in &lt;a href=&#34;http://localhost:1313/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; is defined by &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L912&#34;&gt;lines
 912-3&lt;/a&gt;):&lt;/p&gt;
 
@@ -430,10 +430,10 @@ be able to learn something by attemting to do this.&lt;/p&gt;
     
     <item>
       <title>Getting Started with Github</title>
-      <link>http://bitcoin-class.org/tools/github/</link>
+      <link>http://localhost:1313/tools/github/</link>
       <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/tools/github/</guid>
+      <guid>http://localhost:1313/tools/github/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-started-with-github:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Getting Started with Github&lt;/h1&gt;
@@ -503,7 +503,7 @@ working copy, and push to the main repository.&lt;/p&gt;&lt;/li&gt;
 
 &lt;h2 id=&#34;setting-up-the-repository:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Setting up the Repository&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;http://localhost:1313/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;1. Create a new repository named &lt;code&gt;ps1&lt;/code&gt;.&lt;/b&gt;&lt;/p&gt;
 
@@ -615,10 +615,10 @@ changes (or recover from mistakes).&lt;/p&gt;
     
     <item>
       <title>Registration</title>
-      <link>http://bitcoin-class.org/registration/</link>
+      <link>http://localhost:1313/registration/</link>
       <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/registration/</guid>
+      <guid>http://localhost:1313/registration/</guid>
       <description>
 
 &lt;h1 id=&#34;course-registration:38a8983f478dea556d71617301415c7f&#34;&gt;Course Registration&lt;/h1&gt;
@@ -657,10 +657,10 @@ this, be careful, and don&amp;rsquo;t use any funds you cannot afford to lose!&l
     
     <item>
       <title>Syllabus</title>
-      <link>http://bitcoin-class.org/syllabus/</link>
+      <link>http://localhost:1313/syllabus/</link>
       <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/syllabus/</guid>
+      <guid>http://localhost:1313/syllabus/</guid>
       <description>
 
 &lt;h1 id=&#34;syllabus:051025d606153e159a2b11ffecb897d5&#34;&gt;Syllabus&lt;/h1&gt;
@@ -897,11 +897,66 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 10: Subverting Bitcoin</title>
+      <link>http://localhost:1313/classes/class10/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/classes/class10/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;checkup-2:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Checkup 2&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/tLGdRxu6IVVzni&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class10.pptx&#34;&gt;download the slides&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;Why would a hypothetical cryptocurrency without miners not work? What is the
+essential service rendered by a miner?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;How does Bitcoin handle forks? What criteria does it use to decide the branch
+to converge on?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;What is a Nash Equilibrium in a game? What is the equilibrium strategy in
+a game of rock-paper-scissors?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What would happen to the bitcoin currency if everyone started mining selfishly?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Darkode</title>
-      <link>http://bitcoin-class.org/news/radiolab/</link>
+      <link>http://localhost:1313/news/radiolab/</link>
       <pubDate>Wed, 23 Sep 2015 21:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/radiolab/</guid>
+      <guid>http://localhost:1313/news/radiolab/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.radiolab.org/story/darkode/&#34;&gt;latest episode of Radiolab&lt;/a&gt;
 starts with a story about bitcoin being used in a ransom scam
 (CryptoLocker).  Its a sad story, without a lot of technical insights,
@@ -914,31 +969,11 @@ anonymity and decentralization.&lt;/p&gt;
     </item>
     
     <item>
-      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://bitcoin-class.org/news/u21/</link>
-      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/news/u21/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
-
-&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
-actually doing.  They have designed some custom mining hardware, but
-hard to see how it makes sense as a USB device for individuals.  I could
-see the value in a secure USB device that works as a bitcoin wallet and
-can be smoothly integrated with a web client, but hard to see the case
-for including a miner in it.&lt;/p&gt;
-
-&lt;p&gt;You can buy it from
-&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Class 9: Economics of Mining</title>
-      <link>http://bitcoin-class.org/classes/class9/</link>
+      <link>http://localhost:1313/classes/class9/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class9/</guid>
+      <guid>http://localhost:1313/classes/class9/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h2&gt;
@@ -951,7 +986,7 @@ for including a miner in it.&lt;/p&gt;
 
 &lt;h1 id=&#34;checkup-2:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Checkup 2&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;As was suggested in class today, there won&amp;rsquo;t be an immediate opportunity
 to submit revisions for this (like there was for Checkup 1), but there
@@ -965,7 +1000,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1009,11 +1044,31 @@ something to answer in the blank below!)&lt;/p&gt;
     </item>
     
     <item>
+      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
+      <link>http://localhost:1313/news/u21/</link>
+      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/u21/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
+
+&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
+actually doing.  They have designed some custom mining hardware, but
+hard to see how it makes sense as a USB device for individuals.  I could
+see the value in a secure USB device that works as a bitcoin wallet and
+can be smoothly integrated with a web client, but hard to see the case
+for including a miner in it.&lt;/p&gt;
+
+&lt;p&gt;You can buy it from
+&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 8: Mining</title>
-      <link>http://bitcoin-class.org/classes/class8/</link>
+      <link>http://localhost:1313/classes/class8/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class8/</guid>
+      <guid>http://localhost:1313/classes/class8/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h2&gt;
@@ -1046,7 +1101,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1116,7 +1171,7 @@ func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;What is needed to verify &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;H&lt;sub&gt;root&lt;/sub&gt;&lt;/span&gt;?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1163,10 +1218,10 @@ processor like an Intel i7?
     
     <item>
       <title>Checkup 1 Comments</title>
-      <link>http://bitcoin-class.org/announcements/checkup1/</link>
+      <link>http://localhost:1313/announcements/checkup1/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/checkup1/</guid>
+      <guid>http://localhost:1313/announcements/checkup1/</guid>
       <description>
 
 &lt;p&gt;Here are answers and discussions for the Checkup 1 questions.  It would
@@ -1268,10 +1323,10 @@ Send to ledger the message signed by Alice: (&lt;em&gt;msg&lt;/em&gt;, E&lt;sub&
     
     <item>
       <title>Class 7: The Blockchain</title>
-      <link>http://bitcoin-class.org/classes/class7/</link>
+      <link>http://localhost:1313/classes/class7/</link>
       <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class7/</guid>
+      <guid>http://localhost:1313/classes/class7/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h2&gt;
@@ -1309,7 +1364,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class7-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class7-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1379,10 +1434,10 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
     
     <item>
       <title>Class 6: Hash Functions</title>
-      <link>http://bitcoin-class.org/classes/class6/</link>
+      <link>http://localhost:1313/classes/class6/</link>
       <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class6/</guid>
+      <guid>http://localhost:1313/classes/class6/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h2&gt;
@@ -1456,10 +1511,10 @@ the full string?
     
     <item>
       <title>Class 5: Becoming Paranoid</title>
-      <link>http://bitcoin-class.org/classes/class5/</link>
+      <link>http://localhost:1313/classes/class5/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class5/</guid>
+      <guid>http://localhost:1313/classes/class5/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h2&gt;
@@ -1501,7 +1556,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class5-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class5-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1622,21 +1677,21 @@ decision-making processes inside the government.&lt;/em&gt; (Andrew Odlyzko)&lt;
     
     <item>
       <title>Class 4: Checkup</title>
-      <link>http://bitcoin-class.org/classes/class4/</link>
+      <link>http://localhost:1313/classes/class4/</link>
       <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class4/</guid>
+      <guid>http://localhost:1313/classes/class4/</guid>
       <description>
 
 &lt;h2 id=&#34;checkup-1:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Checkup 1&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/feedback.pdf&#34;&gt;Feedback&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and &lt;a href=&#34;http://localhost:1313/feedback.pdf&#34;&gt;Feedback&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;checkup-revisions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Checkup Revisions&lt;/h2&gt;
 
 &lt;p&gt;If you are not happy with your answers to any of the questions on
 Checkup 1, you may submit revised answers at the beginning of
-Wednesday&amp;rsquo;s class.  (Just print the &lt;a href=&#34;http://bitcoin-class.org/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and fill
+Wednesday&amp;rsquo;s class.  (Just print the &lt;a href=&#34;http://localhost:1313/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and fill
 in revised answers for any questions you want, or submit your clearly
 marked answers on a separate page you generate.  It is not necessary to
 resubmit answers to questions for which you are happy with your original
@@ -1653,216 +1708,11 @@ answers.)&lt;/p&gt;
     </item>
     
     <item>
-      <title>Class 3: Digital Signatures</title>
-      <link>http://bitcoin-class.org/classes/class3/</link>
-      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class3/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Monday, September 7&lt;/strong&gt;: Check-up 1.  This will be a short in-class quiz
-  to test your understanding of the main concepts covered so far.  It
-  will cover material from the readings (see Class 2 for details) and classes 1-3.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/aX0xcwqcvhABQg&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class3-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;signatures:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Signatures&lt;/h2&gt;
-
-&lt;p&gt;&amp;ldquo;Real-life&amp;rdquo; signatures. Properties:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Easy to verify&lt;/li&gt;
-&lt;li&gt;Forging unlikely&lt;/li&gt;
-&lt;li&gt;Hard to repudiate&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Digital signatures. Should have same properties, in the absence of legal forces on the internet.&lt;/p&gt;
-
-&lt;p&gt;Topics:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Assymetric cryptography&lt;/li&gt;
-&lt;li&gt;Digital signatures&lt;/li&gt;
-&lt;li&gt;Elliptic curve cryptography&lt;/li&gt;
-&lt;li&gt;Implementation pitfalls&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ordinary (or symmetric) Crypto&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Both parties have to agree on a key&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Diffie-Hellman key exchange&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Proposed in 1976&lt;/li&gt;
-&lt;li&gt;Establishes a private secret key, unknown to any evesdropper&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Whitfield Diffie and Martin E. Hellman, &lt;a href=&#34;http://www-ee.stanford.edu/~hellman/publications/24.pdf&#34;&gt;&lt;em&gt;New Directions in Cryptography&lt;/em&gt;&lt;/a&gt;, IEEE Transactions on Information Theory, 1976.&lt;/p&gt;
-
-&lt;p&gt;The paper concludes with an interesting historical discussion (that gets
-bonus points for mentioning Thomas Jefferson):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;While at first the public key systems and one-way authentication systems suggested in this paper appear to be unportended by past cryptographic developments, it is possible to view them as the natural outgrowth of trends in cryptography stretching back hundreds of years. Secrecy is at the heart of cryptography. In early cryptography, however, there was a confusion about what was to be kept secret. &amp;hellip; After the invention of the telegraph, the distinction between a general system and a specific key allowed the general system to be compromised, for example by theft of a cryptographic device, without compromising future messages enciphered in new keys. &amp;hellip; The development of computers has led for the first time to a mathematical theory of algorithms which can begin to approach the difficult problem of estimating the computational difficulty of breaking a cryptographic system. The position of mathematical proof may thus come full circle and be reestablished as the best method of certification.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The last characteristic which we note in the history of cryptography is the division between amateur and professional cryptographers. Skill in production cryptanalysis has always been heavily on the side of the professionals, but innovation, particularly in the design of new types of cryptographic systems, has come primarily from the amateurs. Thomas Jefferson, a cryptographic amateur, invented a system which was still in use in World War II, while the most noted cryptographic system of the twentieth century, the rotor machine, was invented simultaneously by four separate people, all amateurs. We hope this will inspire others to work in this fascinating area in which participation has been discouraged in the recent past by a nearly total government monopoly.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Observe how the them of amateurs being the ones who design the important
-cryptographic systems carries through with bitcoin. Although Satoshi&amp;rsquo;s
-actual identity is unknown, it seems pretty clear that they are not a
-professionally-trained cryptographer, and (so far, at least!) all the
-digital currencies developed by world renowned cryptographers have
-failed.&lt;/p&gt;
-
-&lt;h3 id=&#34;discrete-logarithm-problem:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Discrete Logarithm Problem&lt;/h3&gt;
-
-&lt;p&gt;Given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt;, and &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt;, find &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;del&gt;Discrete&lt;/del&gt; Logarithm Problem: easy to solve for real numbers.&lt;/p&gt;
-
-&lt;p&gt;What is the range of elements out of which we are randomly selecting?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;mod-5-exponentiation:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Mod 5 exponentiation&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Multiplicative order&lt;/strong&gt; is the number of multiplication after which the result repeats.&lt;/p&gt;
-
-&lt;p&gt;Multiplicative order of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt; is &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; if &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; is the smallest positive integer
-such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sup&gt; = 1&lt;/span&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;exponent-modulus:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Exponent Modulus&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Multiplicative order is at most &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt; - 1&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Pick random &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;0 &amp;le; &lt;em&gt;x&lt;/em&gt; &amp;lt; &lt;em&gt;p&lt;/em&gt; - 1&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt; &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;(&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;) mod &lt;em&gt;n&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;public-key-cryptography:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Public-key Cryptography&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Google announces &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Bob picks random secret &lt;span class=&#34;math&#34;&gt;&lt;em&gt;b&lt;/em&gt;&lt;/span&gt;, computes &lt;span class=&#34;math&#34;&gt;(&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt;)&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt;=&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;ab&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Bob encrypts message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; and sends: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;b&lt;/em&gt;&lt;/sup&gt;, &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;ab&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;man-in-the-middle-mitm:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Man-in-the-middle (MITM)&lt;/h3&gt;
-
-&lt;p&gt;Active adversary can still read everything. We have to know messages are coming from the right person.&lt;/p&gt;
-
-&lt;h2 id=&#34;digital-signatures:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Digital Signatures&lt;/h2&gt;
-
-&lt;p&gt;Discrete-log based signature&lt;/p&gt;
-
-&lt;h3 id=&#34;elgamal-signature-scheme:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;ElGamal Signature Scheme&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Fixed global parameters: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Private key: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Public key: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;a&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Signing:
-
-&lt;ol&gt;
-&lt;li&gt;Input: message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Pick random &lt;span class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Compute &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt;;
-       &lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt; = (&lt;em&gt;m&lt;/em&gt;-&lt;em&gt;ar&lt;/em&gt;)&lt;em&gt;k&lt;/em&gt;&lt;sup&gt;-1&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt; - 1&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Send &lt;span class=&#34;math&#34;&gt;(&lt;em&gt;r&lt;/em&gt;, &lt;em&gt;s&lt;/em&gt;)&lt;/span&gt; with message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;Verification:
-
-&lt;ol&gt;
-&lt;li&gt;Input: message &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;, (&lt;em&gt;r&lt;/em&gt;,&lt;em&gt;s&lt;/em&gt;)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Verify that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sup&gt;&lt;em&gt;s&lt;/em&gt;&lt;/sup&gt;(&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;a&lt;/em&gt;&lt;/sup&gt;)&lt;sup&gt;&lt;em&gt;r&lt;/em&gt;&lt;/sup&gt; = &lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;m&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;p&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;avoiding-overly-long-numbers:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Avoiding (overly) long numbers&lt;/h2&gt;
-
-&lt;p&gt;Real-life keys are long. We can use any group where discrete log is hard.&lt;/p&gt;
-
-&lt;p&gt;A group is a set of elements and an associated operation such that it satisfies the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Closure&lt;/strong&gt;: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt; * &lt;em&gt;b&lt;/em&gt;&lt;/span&gt; is also a group element.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Associativity:&lt;/strong&gt; for all &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;: (&lt;em&gt;a&lt;/em&gt;&lt;em&gt;&lt;em&gt;b&lt;/em&gt;)&lt;/em&gt;&lt;em&gt;c&lt;/em&gt; = &lt;em&gt;a&lt;/em&gt;&lt;em&gt;(&lt;em&gt;b&lt;/em&gt;&lt;/em&gt;&lt;em&gt;c&lt;/em&gt;)&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Identity element:&lt;/strong&gt; there exists an element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;e&lt;/em&gt;&lt;/span&gt;, such that for every element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;: &lt;em&gt;a&lt;/em&gt; * &lt;em&gt;e&lt;/em&gt; = &lt;em&gt;a&lt;/em&gt; = &lt;em&gt;e&lt;/em&gt; * &lt;em&gt;a&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inverse:&lt;/strong&gt; for every element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt;&lt;/span&gt;, there exists an element &lt;span class=&#34;math&#34;&gt;&lt;em&gt;b&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;a&lt;/em&gt; * &lt;em&gt;b&lt;/em&gt; = &lt;em&gt;e&lt;/em&gt; = &lt;em&gt;b&lt;/em&gt; * &lt;em&gt;a&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Additional Cryptographic Properties:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Discrete logarithm should be hard&lt;/li&gt;
-&lt;li&gt;Group operation should be efficient&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;elliptic-curve-cryptography-ecc:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Elliptic Curve Cryptography (ECC)&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Group elements are points on a curve, e.g., &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt; = &lt;em&gt;x&lt;/em&gt;&lt;sup&gt;3&lt;/sup&gt; + 7&lt;/sup&gt;.&lt;/li&gt;
-&lt;li&gt;Point &amp;ldquo;addition&amp;rdquo; using &amp;ldquo;geometry&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;elliptic-curve-digital-signature-algorithm:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Elliptic Curve Digital Signature Algorithm&lt;/h3&gt;
-
-&lt;p&gt;Follows the same structure as ElGamal signature, but only on &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;-coordinate.&lt;/p&gt;
-
-&lt;h2 id=&#34;pitfalls:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Pitfalls&lt;/h2&gt;
-
-&lt;p&gt;If we ever repeat signing nonce, we leak the private key.  Sony actually
-did this with Playstation 3 consoles (&lt;a href=&#34;https://events.ccc.de/congress/2010/Fahrplan/attachments/1780_27c3_console_hacking_2010.pdf&#34;&gt;&lt;em&gt;Console Hacking 2010: PS3 Epic Fail&lt;/em&gt;&lt;/a&gt;, CCC 2010).&lt;/p&gt;
-
-&lt;p&gt;Poor randomness makes private keys predictable. Use &lt;code&gt;/dev/urandom&lt;/code&gt;
-(Linux) or &lt;code&gt;java.security.SecureRandom&lt;/code&gt; in Java.  If you use a
-pseudorandom number generator that is seeded with an easily guessed
-value, you are in big trouble!  A common mistake was to use
-&lt;code&gt;Math.random()&lt;/code&gt; or &lt;code&gt;srand(time(0))&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Logjam attack: downgrade security during handshake.&lt;/p&gt;
-
-&lt;h2 id=&#34;notes:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;How are digital signatures and real-life signatures different in terms of why we trust them? What stops each from being forged by others?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Assume somebody really clever has a way of solving the discrete logarithm problem easily. That is, for any given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt;, and &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt;, the adversary can compute &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;g&lt;/em&gt;&lt;sup&gt;&lt;em&gt;x&lt;/em&gt; mod &lt;em&gt;p&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;&lt;/span&gt;. How can this algorithm be used to break security of Diffie-Hellman protocol?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What is a nonce? What breaks if we reuse it between encrypted messages?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In elliptic curve cryptography, why do we use &lt;span class=&#34;math&#34;&gt;mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt; integers? What would go wrong if we used real numbers?  What would go wrong if we used unbounded integers?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Mining Pools</title>
-      <link>http://bitcoin-class.org/announcements/miningpools/</link>
+      <link>http://localhost:1313/announcements/miningpools/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/miningpools/</guid>
+      <guid>http://localhost:1313/announcements/miningpools/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the up-to-date graph of hashing power distributed by mining pools
 (that I wasn&amp;rsquo;t able to find in class Monday):&lt;/p&gt;
 
