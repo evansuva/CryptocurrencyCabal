@@ -6,8 +6,64 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 11: More mining</title>
+      <link>http://bitcoin-class.org/classes/class11/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class11/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam&lt;/p&gt;
+
+&lt;p&gt;No classes Monday, October 5!
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/31bDBGxrcPo6b9&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class11.pptx&#34;&gt;download the slides&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes:af81afa25b288e26509ba0728268a3b7&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;If we have 20% of the network hashing power, calculate the proportion of blocks we will win if we mine selfishly. Do we come out ahead or behind?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Why does our formular for E not work for alpha greater than a half?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Compute the constant on slide 29, &amp;ldquo;Expected share reward&amp;rdquo;. You may have to look up the Taylor&amp;rsquo;s expansion series for natural logarithm.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;Does mining in a pool increase your reward or decrease it? Explain.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;If a pool is paying out proportionally, and you are profiting by pool hopping in and out of it, is somebody else making a loss? Who and how?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 10: Subverting Bitcoin</title>
