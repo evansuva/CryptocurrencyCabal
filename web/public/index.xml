@@ -897,6 +897,62 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 11: More mining</title>
+      <link>http://bitcoin-class.org/classes/class11/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class11/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam&lt;/p&gt;
+
+&lt;p&gt;No classes Monday, October 5!
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/31bDBGxrcPo6b9&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class11.pptx&#34;&gt;download the slides&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes:af81afa25b288e26509ba0728268a3b7&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;If we have 20% of the network hashing power, calculate the proportion of blocks we will win if we mine selfishly. Do we come out ahead or behind?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Why does our formular for E not work for alpha greater than a half?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Compute the constant on slide 29, &amp;ldquo;Expected share reward&amp;rdquo;. You may have to look up the Taylor&amp;rsquo;s expansion series for natural logarithm.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;Does mining in a pool increase your reward or decrease it? Explain.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;If a pool is paying out proportionally, and you are profiting by pool hopping in and out of it, is somebody else making a loss? Who and how?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Checkup 2 Revisions</title>
       <link>http://bitcoin-class.org/announcements/checkup2revisions/</link>
       <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
@@ -1017,26 +1073,6 @@ anonymity and decentralization.&lt;/p&gt;
     </item>
     
     <item>
-      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://bitcoin-class.org/news/u21/</link>
-      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/news/u21/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
-
-&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
-actually doing.  They have designed some custom mining hardware, but
-hard to see how it makes sense as a USB device for individuals.  I could
-see the value in a secure USB device that works as a bitcoin wallet and
-can be smoothly integrated with a web client, but hard to see the case
-for including a miner in it.&lt;/p&gt;
-
-&lt;p&gt;You can buy it from
-&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Class 9: Economics of Mining</title>
       <link>http://bitcoin-class.org/classes/class9/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
@@ -1108,6 +1144,26 @@ very difficult question to answer, would be a good project idea, not
 something to answer in the blank below!)&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
+      <link>http://bitcoin-class.org/news/u21/</link>
+      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/news/u21/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
+
+&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
+actually doing.  They have designed some custom mining hardware, but
+hard to see how it makes sense as a USB device for individuals.  I could
+see the value in a secure USB device that works as a bitcoin wallet and
+can be smoothly integrated with a web client, but hard to see the case
+for including a miner in it.&lt;/p&gt;
+
+&lt;p&gt;You can buy it from
+&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1720,38 +1776,6 @@ decision-making processes inside the government.&lt;/em&gt; (Andrew Odlyzko)&lt;
 
 &lt;p&gt;How satisfying is the NSA&amp;rsquo;s response?  Are you more dismayed or encouraged?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 4: Checkup</title>
-      <link>http://bitcoin-class.org/classes/class4/</link>
-      <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class4/</guid>
-      <description>
-
-&lt;h2 id=&#34;checkup-1:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Checkup 1&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/feedback.pdf&#34;&gt;Feedback&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;checkup-revisions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Checkup Revisions&lt;/h2&gt;
-
-&lt;p&gt;If you are not happy with your answers to any of the questions on
-Checkup 1, you may submit revised answers at the beginning of
-Wednesday&amp;rsquo;s class.  (Just print the &lt;a href=&#34;http://bitcoin-class.org/checkup1.pdf&#34;&gt;Checkup 1&lt;/a&gt; and fill
-in revised answers for any questions you want, or submit your clearly
-marked answers on a separate page you generate.  It is not necessary to
-resubmit answers to questions for which you are happy with your original
-answers.)&lt;/p&gt;
-
-&lt;h2 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, 9 September&lt;/strong&gt; (beginning of class): Checkup 1 revisions (if desired).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.
-   &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
