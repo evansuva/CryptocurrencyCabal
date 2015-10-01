@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    PS2: The Blockchain // Cryptocurrency Cabal
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.15-DEV" />
+
+  <meta property="og:title" content="PS2: The Blockchain" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://bitcoin-class.org/ps/ps2/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rotunda.png">
+  <link rel="shortcut icon" href="/rotunda.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Cryptocurrency Cabal" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  <link rel="stylesheet" href="http://bitcoin-class.org/css/cabal.css">
+
+  
+ 
+  
+<script>
+function showText(show,hide)
+{
+    document.getElementById(show).className = "show";
+    document.getElementById(hide).className = "hide";
+}
+</script>
+ 
+
+  
+
+  
+</head>
+
+<body>
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+
+    <a href="http://bitcoin-class.org"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
+    <h2 class="brand-tagline">University of Virginia
+    <br>cs4501 Fall 2015
+    </h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href=""></a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/syllabus/">Syllabus</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b><a href="/ps/">Assignments</a></b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/ps/ps1/">PS1: Bitcoin Transactions</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <span class="nav-item-selected">PS2: The Blockchain</span></a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/registration/">Registration</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b><A href="/classes/">Classes</a></b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class10/">Class 10: Subverting Bitcoin</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class11/">Class 11: More Mining</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class1/">Class 1: What is Money?</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class2/">Class 2: Cryptography</a>
+          
+          </li>
+        
+        <li><a href="classes/"><em>More...</em></a></li>
+      </ul>
+
+    </nav>
+
+    <a href="/0/">Spring 2015 Course</a>
+
+    
+
+  </div>
+</div>
+
+	
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+    <section id="main">
+            
+            	<span class="post-date">
+                	20 Sep 2015
+            	</span>
+            	
+            
+
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<h1 id="problem-set-2-br-the-blockchain:e879021a243163cdf3d1d9f61ef73807">Problem Set 2:<br> The Blockchain</h1>
+
+<p><div class="due">
+Due: Friday, 9 October at 8:29pm
+   </div></p>
+
+<h2 id="purpose:e879021a243163cdf3d1d9f61ef73807">Purpose</h2>
+
+<p>The goal of this assignment is for everyone in the class to understand
+how bitcoin mining and the blockchain work, and evaluate risks to the blockchain.</p>
+
+<h3 id="collaboration-policy:e879021a243163cdf3d1d9f61ef73807">Collaboration Policy</h3>
+
+<p>For this assignment, everyone should submit their own assignment and
+should writeup their own answers to the questions.  You may, and are
+encouraged to, discuss all of the problems with anyone else you want
+(both on-line using the course web site or any other means you choose,
+and in person).</p>
+
+<h3 id="submission:e879021a243163cdf3d1d9f61ef73807">Submission</h3>
+
+<p>Submit your answers as a single PDF file using <a href="https://www.dropbox.com/request/oar0AQeg4SJRNtdHbcSS">this
+link</a>.  The name
+of your file should be <code>&lt;your email ID&gt;-ps2.pdf</code>.</p>
+
+<p>Your submission should include clearly marked answers for all the
+problems (highlighted in yellow).  None of the questions require
+submitting a program, although you may find it helpful to write programs
+to develop your answers.  If the code you write is less than a page, it
+is best to just include it in the PDF writeup.  If it is longer, you may
+submit separate code files (and mention them in the PDF submission).</p>
+
+<h1 id="blockchain-consensus:e879021a243163cdf3d1d9f61ef73807">Blockchain Consensus</h1>
+
+<p>These questions concern the original bitcoin paper:</p>
+
+<ul>
+<li>Satoshi Nakamoto, <a href="https://bitcoin.org/bitcoin.pdf"><em>Bitcoin: A Peer-to-Peer Electronic Cash
+System</em></a>, 2008.</li>
+</ul>
+
+<p><div class="problem">
+<strong>Problem 1.</strong> In Section 6, Satoshi writes:
+<em>&ldquo;The incentive may help encourage nodes to stay honest. If a greedy
+attacker is able to assemble more CPU power than all the honest nodes,
+he would have to choose between using it to defraud people by stealing
+back his payments, or using it to generate new coins. He ought to find
+it more profitable to play by the rules, such rules that favour him with
+more new coins than everyone else combined, than to undermine the system
+and the validity of his own wealth.&rdquo;</em></p>
+
+<p>What are the assumptions necessary to support Satoshi&rsquo;s claim that it is
+more profitable for a greedy attacker with a majority of the mining
+power &ldquo;to play by the rules&rdquo;? (other than the assumption that the greedy
+attacker is a &ldquo;he&rdquo;)</div></p>
+
+<p><div class="problem"> <strong>Problem 2.</strong>
+    At the end of Section 11, Satoshi presents a table for <span class="math"><em>p</em></span> &lt; 0.001,
+    where it is listed &ldquo;q=0.45 z=340&rdquo;. What does this mean in plain
+    English, expressed in a short sentence?
+    </div></p>
+
+<p><div class="problem"><strong>Problem 3.</strong> For that same table, what would
+the <span class="math"><em>z</em></span> values be for <span class="math"><em>p</em></span> &lt; 0.05 (instead of <em>p</em> &lt; 0.001)?
+   </div></p>
+
+<h1 id="merkle-trees-and-storage:e879021a243163cdf3d1d9f61ef73807">Merkle Trees and Storage</h1>
+
+<p>Bitcoin uses Merkle Trees to record transactions in a way that enables a
+single hash to be used to record a set of transactions, and a small
+(logarithmic in the number of transactions) number of hashes to be
+sufficient to verify a transaction.  In this question, you&rsquo;ll explore
+another use of Merkle Trees to provide verifiable cloud storage.</p>
+
+<p>Imagine you are storing a database using a cloud storage provider, since
+you do not have local storage. Assume that you have just enough local
+storage to store a small number of cryptographic hashes or keys. You
+fear, however, that your storage provider may be skimping, and may not
+actually be storing all of your data.</p>
+
+<p>So, you want to verify each record as you receive it, to make sure the
+data is the same as what you wrote.  In order to do so, you are willing
+to write extra cryptographic information with each write, but need to
+limit the amount of local storage.</p>
+
+<p>Assume we are storing <span class="math"><em>n</em></span> records, and we can
+query the server for the <span class="math"><em>i</em></span>-th record for any <span class="math"><em>i</em></span> from 0 to <span class="math"><em>n</em> - 1</span>. The
+data content of the <span class="math"><em>i</em></span>-th record will be denoted as <span
+class="math">data[<em>i</em>]</span>.</p>
+
+<p><div class="problem"> <strong>Problem 4.</strong> One naive approach would be to
+just sign each record data with a private key, and verify the signature
+on reading it.</p>
+
+<p>(a) There is a problem with this scheme unless the bytes of <span class="math">data[<em>i</em>]</span> indicate that it is in fact from <span class="math"><em>i</em></span>-th index. What is this problem?</p>
+
+<p>(b) Suppose we perform a write at position <span class="math"><em>i</em></span>, both data and signature. Later on, when we read it back, if the signature matches the data, can we be sure that it is indeed the data item we wrote?
+  Explain.
+</div></p>
+
+<p><div class="problem"><strong>Problem 5.</strong> Another approach would be hashing
+  the concatenation of all records in the database. This hash is a small
+  item that can be stored locally.</p>
+
+<p>(a) What is the write/read/verify procedure for this system?</p>
+
+<p>(b) How does the cost of reading and writing to the database scale with <span class="math"><em>n</em></span> (the number of records)?
+  </div></p>
+
+<p><div class="problem"><strong>Problem 6.</strong> Instead of using the concatenating all the records linear, they were organized into a Merkle tree.</p>
+
+<p>(a) What is the write/read/verify procedure for this system?</p>
+
+<p>(b) How does the cost of reading and writing to the database scale with <em>n</em> (the number of records)?
+    </div></p>
+
+<h1 id="blockchain:e879021a243163cdf3d1d9f61ef73807">Blockchain</h1>
+
+<p>These questions are related to this paper (and what was covered in <a href="/classes/class10">Class 10</a> and <a href="/classes/class11">Class 11</a>):</p>
+
+<ul>
+<li>Ittay Eyal and Emin G&uuml;n Sirer, <a href="http://arxiv.org/pdf/1311.0243v5.pdf"><em>Majority is not Enough: Bitcoin
+Mining is Vulnerable</em></a>, November
+2013.</li>
+</ul>
+
+<p><a href="https://blockchain.info/orphaned-blocks">Orphaned Blocks</a> are blocks
+that are submitted to the bitcoin network, and that are valid, but do
+not become part of the longest (consensus) blockchain.</p>
+
+<p>One way to detect selfish mining is to be on the lookout for &ldquo;orphaned&rdquo;
+blocks, or blocks that were mined but never became part of the final
+blockchain.</p>
+
+<p>Let&rsquo;s say you set up a node to monitor orphaned blocks, and you are in a
+favorable position in the network that allows you to observe all
+orphaned blocks.  Assume that the hashing difficulty stays constant and
+the expected block rate is constant at 10 minutes per block.</p>
+
+<p><div class="problem"> <strong>Problem 7.</strong><br />
+  (a) If a mining pool has 15% (<span class="math">&alpha;</span> = 0.15) of the
+  total network hashing power, how many blocks is it expected to find in
+  a day?</p>
+
+<p>(b) Obtain a general formula for expected number of blocks a mining pool with <span class="math">&alpha;</span> fraction of the total hashing power should find in <span class="math"><em>t</em></span> minutes.
+  </div></p>
+
+<p>For the next questions, you may assume a very simplified network model
+where you can view the network having two &ldquo;supernodes&rdquo;: one represents a
+particular mining pool, and the other represents all other nodes in the
+network.  The latency between the two supernodes is <span class="math"><em>L</em></span> seconds.</p>
+
+<p>With this simple (but very unrealistic) model, we assume that when one
+supernode announces a block, all of the rest of the network learns of
+the new block <span class="math"><em>L</em></span> seconds later (but no one
+learns of it before that).</p>
+
+<p><div class="problem"> <strong>Problem 8.</strong> Assuming all of the miners are
+  honest, what is the expected number of orphaned blocks per day for an honest
+  mining block with hashing power <span class="math">&alpha;</span> and latency <span class="math"><em>L</em></span> (as simplified
+  above).
+  </div></p>
+
+<p><div class="problem"> <strong>Problem 9.</strong> How does this change if the
+  mining pool is mining selfishly?  (For this question, assume that the
+  selfish mining pool learns of a block announced by the rest of the
+  network as soon as it is announced, so will immediately announce any
+  withheld blocks at that time.  That is, you may still assume the
+  simplified latency <span class="math"><em>L</em></span> model, but that the selfish mining pool has a
+  spy in the other supernode with a low-latency direct connection to the
+  mining pool.)
+  </div></p>
+
+<h1 id="pool-hopping:e879021a243163cdf3d1d9f61ef73807">Pool Hopping</h1>
+
+<p>Answer <em>either</em> question 10A or 10B (your choice).</p>
+
+<p><div class="problem"> <strong>Problem 10A.</strong> In class, we saw how pool-hopping
+can be used to game a &ldquo;proportional&rdquo; reward scheme. Design a simple
+reward scheme that eliminates pool-hopping incentive. In particular,
+derive the expected reward for your scheme and show that it does not
+depend on time since last block (or any variable controlled by the
+miner).  </div></p>
+
+<p><div class="problem"> <strong>Problem 10B.</strong> In upcoming classes, we will
+   have visits from a law professor (who also works for the State
+   Department on international cyberlaw and promulgating the open
+   Internet) and an FBI agent who works on criminals using bitcoin for
+   ransom.  Come up with at least one good question that you would like
+   one of them to answer.
+   </div></p>
+
+<h1 id="bonus-opportunities:e879021a243163cdf3d1d9f61ef73807">Bonus Opportunities</h1>
+
+<p>The following questions are suggestions for further work, but it is not
+expected that everyone will solve them.  (Note that some of these could
+be starting ideas for larger projects, although a good answer to any of
+them would be most impressive.)</p>
+
+<p><strong>Challenge 1.</strong> The network model in questions 8 and 9 is very
+  unrealistic.  Answer these questions for a more realistic model of the
+  bitcoin network, and compare your results with the actual rates of
+  orphaned blocks.  To better detect misbehaving miners, you would want
+  to also look into the contents of the dual blocks (note that the one
+  that was orphaned is not necessarily the one from the selfish miner).
+  There is an API for obtaining orphaned blocks provided by
+  <a href="https://api.biteasy.com/blockchain/v1/blocks?type=ORPHANED">https://api.biteasy.com</a>.</p>
+
+<p><strong>Challenge 2.</strong> The analysis in the paper and in class assumed that if
+   the selfish miner is ahead by 2 blocks, it will always win by
+   releasing the blocks when it observes a new block on the blockchain.
+   It could still lose if the rest of the network finds a second block
+   before the selfish miner&rsquo;s blocks have propagated over the network.
+   How does this possibility impact the analysis?</p>
+
+<p><strong>Challenge 3.</strong> The site that was demonstrated in Class 11 uses a very
+  simple model to estimate the profitability of a particular bitcoin
+  miner.  Produce a better model, and use it to evaluated the expected
+  profit (or loss) for mining hardware such as <a href="https://bitmaintech.com/product.htm">Antminer
+  S7</a>.  A better model would need
+  to capture expected increases in the difficulty, cost of capital, and
+  other costs of mining besides electricity.</p>
+
+<h3 id="submission-1:e879021a243163cdf3d1d9f61ef73807">Submission</h3>
+
+<p>Follow the submission instructions at the beginning of this page by
+8:29pm on Friday, 9 October.</p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/ps/ps1/">PS1: Bitcoin Transactions</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+ 
+   var disqus_url = '';
+   var disqus_shortname = 'davidevans'; 
+
+    
+   (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] ||  document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view
+    the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+          
+        
+      <div class="footer">
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+	<hr class="thin" />
+
+   <div class="funding">
+University of Virginia<br>
+cs4501: Introduction to Cryptocurrency<br>
+Fall 2015
+   </div>
+
+	<p></p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

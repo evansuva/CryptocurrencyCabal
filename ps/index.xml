@@ -6,8 +6,246 @@
     <description>Recent content in Ps on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/ps/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PS2: The Blockchain</title>
+      <link>http://bitcoin-class.org/ps/ps2/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/ps/ps2/</guid>
+      <description>
+
+&lt;h1 id=&#34;problem-set-2-br-the-blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Problem Set 2:&lt;br&gt; The Blockchain&lt;/h1&gt;
+
+&lt;p&gt;&lt;div class=&#34;due&#34;&gt;
+Due: Friday, 9 October at 8:29pm
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;purpose:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;The goal of this assignment is for everyone in the class to understand
+how bitcoin mining and the blockchain work, and evaluate risks to the blockchain.&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Collaboration Policy&lt;/h3&gt;
+
+&lt;p&gt;For this assignment, everyone should submit their own assignment and
+should writeup their own answers to the questions.  You may, and are
+encouraged to, discuss all of the problems with anyone else you want
+(both on-line using the course web site or any other means you choose,
+and in person).&lt;/p&gt;
+
+&lt;h3 id=&#34;submission:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+
+&lt;p&gt;Submit your answers as a single PDF file using &lt;a href=&#34;https://www.dropbox.com/request/oar0AQeg4SJRNtdHbcSS&#34;&gt;this
+link&lt;/a&gt;.  The name
+of your file should be &lt;code&gt;&amp;lt;your email ID&amp;gt;-ps2.pdf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Your submission should include clearly marked answers for all the
+problems (highlighted in yellow).  None of the questions require
+submitting a program, although you may find it helpful to write programs
+to develop your answers.  If the code you write is less than a page, it
+is best to just include it in the PDF writeup.  If it is longer, you may
+submit separate code files (and mention them in the PDF submission).&lt;/p&gt;
+
+&lt;h1 id=&#34;blockchain-consensus:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain Consensus&lt;/h1&gt;
+
+&lt;p&gt;These questions concern the original bitcoin paper:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
+System&lt;/em&gt;&lt;/a&gt;, 2008.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
+&lt;strong&gt;Problem 1.&lt;/strong&gt; In Section 6, Satoshi writes:
+&lt;em&gt;&amp;ldquo;The incentive may help encourage nodes to stay honest. If a greedy
+attacker is able to assemble more CPU power than all the honest nodes,
+he would have to choose between using it to defraud people by stealing
+back his payments, or using it to generate new coins. He ought to find
+it more profitable to play by the rules, such rules that favour him with
+more new coins than everyone else combined, than to undermine the system
+and the validity of his own wealth.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What are the assumptions necessary to support Satoshi&amp;rsquo;s claim that it is
+more profitable for a greedy attacker with a majority of the mining
+power &amp;ldquo;to play by the rules&amp;rdquo;? (other than the assumption that the greedy
+attacker is a &amp;ldquo;he&amp;rdquo;)&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 2.&lt;/strong&gt;
+    At the end of Section 11, Satoshi presents a table for &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; &amp;lt; 0.001,
+    where it is listed &amp;ldquo;q=0.45 z=340&amp;rdquo;. What does this mean in plain
+    English, expressed in a short sentence?
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 3.&lt;/strong&gt; For that same table, what would
+the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;/span&gt; values be for &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; &amp;lt; 0.05 (instead of &lt;em&gt;p&lt;/em&gt; &amp;lt; 0.001)?
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;merkle-trees-and-storage:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Merkle Trees and Storage&lt;/h1&gt;
+
+&lt;p&gt;Bitcoin uses Merkle Trees to record transactions in a way that enables a
+single hash to be used to record a set of transactions, and a small
+(logarithmic in the number of transactions) number of hashes to be
+sufficient to verify a transaction.  In this question, you&amp;rsquo;ll explore
+another use of Merkle Trees to provide verifiable cloud storage.&lt;/p&gt;
+
+&lt;p&gt;Imagine you are storing a database using a cloud storage provider, since
+you do not have local storage. Assume that you have just enough local
+storage to store a small number of cryptographic hashes or keys. You
+fear, however, that your storage provider may be skimping, and may not
+actually be storing all of your data.&lt;/p&gt;
+
+&lt;p&gt;So, you want to verify each record as you receive it, to make sure the
+data is the same as what you wrote.  In order to do so, you are willing
+to write extra cryptographic information with each write, but need to
+limit the amount of local storage.&lt;/p&gt;
+
+&lt;p&gt;Assume we are storing &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; records, and we can
+query the server for the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;-th record for any &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; from 0 to &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt; - 1&lt;/span&gt;. The
+data content of the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;-th record will be denoted as &lt;span
+class=&#34;math&#34;&gt;data[&lt;em&gt;i&lt;/em&gt;]&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 4.&lt;/strong&gt; One naive approach would be to
+just sign each record data with a private key, and verify the signature
+on reading it.&lt;/p&gt;
+
+&lt;p&gt;(a) There is a problem with this scheme unless the bytes of &lt;span class=&#34;math&#34;&gt;data[&lt;em&gt;i&lt;/em&gt;]&lt;/span&gt; indicate that it is in fact from &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;-th index. What is this problem?&lt;/p&gt;
+
+&lt;p&gt;(b) Suppose we perform a write at position &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;, both data and signature. Later on, when we read it back, if the signature matches the data, can we be sure that it is indeed the data item we wrote?
+  Explain.
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 5.&lt;/strong&gt; Another approach would be hashing
+  the concatenation of all records in the database. This hash is a small
+  item that can be stored locally.&lt;/p&gt;
+
+&lt;p&gt;(a) What is the write/read/verify procedure for this system?&lt;/p&gt;
+
+&lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; (the number of records)?
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 6.&lt;/strong&gt; Instead of using the concatenating all the records linear, they were organized into a Merkle tree.&lt;/p&gt;
+
+&lt;p&gt;(a) What is the write/read/verify procedure for this system?&lt;/p&gt;
+
+&lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;em&gt;n&lt;/em&gt; (the number of records)?
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain&lt;/h1&gt;
+
+&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;http://bitcoin-class.org/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ittay Eyal and Emin G&amp;uuml;n Sirer, &lt;a href=&#34;http://arxiv.org/pdf/1311.0243v5.pdf&#34;&gt;&lt;em&gt;Majority is not Enough: Bitcoin
+Mining is Vulnerable&lt;/em&gt;&lt;/a&gt;, November
+2013.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blockchain.info/orphaned-blocks&#34;&gt;Orphaned Blocks&lt;/a&gt; are blocks
+that are submitted to the bitcoin network, and that are valid, but do
+not become part of the longest (consensus) blockchain.&lt;/p&gt;
+
+&lt;p&gt;One way to detect selfish mining is to be on the lookout for &amp;ldquo;orphaned&amp;rdquo;
+blocks, or blocks that were mined but never became part of the final
+blockchain.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you set up a node to monitor orphaned blocks, and you are in a
+favorable position in the network that allows you to observe all
+orphaned blocks.  Assume that the hashing difficulty stays constant and
+the expected block rate is constant at 10 minutes per block.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 7.&lt;/strong&gt;&lt;br /&gt;
+  (a) If a mining pool has 15% (&lt;span class=&#34;math&#34;&gt;&amp;alpha;&lt;/span&gt; = 0.15) of the
+  total network hashing power, how many blocks is it expected to find in
+  a day?&lt;/p&gt;
+
+&lt;p&gt;(b) Obtain a general formula for expected number of blocks a mining pool with &lt;span class=&#34;math&#34;&gt;&amp;alpha;&lt;/span&gt; fraction of the total hashing power should find in &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; minutes.
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;For the next questions, you may assume a very simplified network model
+where you can view the network having two &amp;ldquo;supernodes&amp;rdquo;: one represents a
+particular mining pool, and the other represents all other nodes in the
+network.  The latency between the two supernodes is &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; seconds.&lt;/p&gt;
+
+&lt;p&gt;With this simple (but very unrealistic) model, we assume that when one
+supernode announces a block, all of the rest of the network learns of
+the new block &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; seconds later (but no one
+learns of it before that).&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 8.&lt;/strong&gt; Assuming all of the miners are
+  honest, what is the expected number of orphaned blocks per day for an honest
+  mining block with hashing power &lt;span class=&#34;math&#34;&gt;&amp;alpha;&lt;/span&gt; and latency &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; (as simplified
+  above).
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 9.&lt;/strong&gt; How does this change if the
+  mining pool is mining selfishly?  (For this question, assume that the
+  selfish mining pool learns of a block announced by the rest of the
+  network as soon as it is announced, so will immediately announce any
+  withheld blocks at that time.  That is, you may still assume the
+  simplified latency &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; model, but that the selfish mining pool has a
+  spy in the other supernode with a low-latency direct connection to the
+  mining pool.)
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;pool-hopping:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Pool Hopping&lt;/h1&gt;
+
+&lt;p&gt;Answer &lt;em&gt;either&lt;/em&gt; question 10A or 10B (your choice).&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 10A.&lt;/strong&gt; In class, we saw how pool-hopping
+can be used to game a &amp;ldquo;proportional&amp;rdquo; reward scheme. Design a simple
+reward scheme that eliminates pool-hopping incentive. In particular,
+derive the expected reward for your scheme and show that it does not
+depend on time since last block (or any variable controlled by the
+miner).  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 10B.&lt;/strong&gt; In upcoming classes, we will
+   have visits from a law professor (who also works for the State
+   Department on international cyberlaw and promulgating the open
+   Internet) and an FBI agent who works on criminals using bitcoin for
+   ransom.  Come up with at least one good question that you would like
+   one of them to answer.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;bonus-opportunities:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Bonus Opportunities&lt;/h1&gt;
+
+&lt;p&gt;The following questions are suggestions for further work, but it is not
+expected that everyone will solve them.  (Note that some of these could
+be starting ideas for larger projects, although a good answer to any of
+them would be most impressive.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 1.&lt;/strong&gt; The network model in questions 8 and 9 is very
+  unrealistic.  Answer these questions for a more realistic model of the
+  bitcoin network, and compare your results with the actual rates of
+  orphaned blocks.  To better detect misbehaving miners, you would want
+  to also look into the contents of the dual blocks (note that the one
+  that was orphaned is not necessarily the one from the selfish miner).
+  There is an API for obtaining orphaned blocks provided by
+  &lt;a href=&#34;https://api.biteasy.com/blockchain/v1/blocks?type=ORPHANED&#34;&gt;https://api.biteasy.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 2.&lt;/strong&gt; The analysis in the paper and in class assumed that if
+   the selfish miner is ahead by 2 blocks, it will always win by
+   releasing the blocks when it observes a new block on the blockchain.
+   It could still lose if the rest of the network finds a second block
+   before the selfish miner&amp;rsquo;s blocks have propagated over the network.
+   How does this possibility impact the analysis?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 3.&lt;/strong&gt; The site that was demonstrated in Class 11 uses a very
+  simple model to estimate the profitability of a particular bitcoin
+  miner.  Produce a better model, and use it to evaluated the expected
+  profit (or loss) for mining hardware such as &lt;a href=&#34;https://bitmaintech.com/product.htm&#34;&gt;Antminer
+  S7&lt;/a&gt;.  A better model would need
+  to capture expected increases in the difficulty, cost of capital, and
+  other costs of mining besides electricity.&lt;/p&gt;
+
+&lt;h3 id=&#34;submission-1:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+
+&lt;p&gt;Follow the submission instructions at the beginning of this page by
+8:29pm on Friday, 9 October.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PS1: Bitcoin Transactions</title>

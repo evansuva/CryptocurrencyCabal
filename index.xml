@@ -6,8 +6,246 @@
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PS2: The Blockchain</title>
+      <link>http://bitcoin-class.org/ps/ps2/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/ps/ps2/</guid>
+      <description>
+
+&lt;h1 id=&#34;problem-set-2-br-the-blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Problem Set 2:&lt;br&gt; The Blockchain&lt;/h1&gt;
+
+&lt;p&gt;&lt;div class=&#34;due&#34;&gt;
+Due: Friday, 9 October at 8:29pm
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;purpose:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;The goal of this assignment is for everyone in the class to understand
+how bitcoin mining and the blockchain work, and evaluate risks to the blockchain.&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Collaboration Policy&lt;/h3&gt;
+
+&lt;p&gt;For this assignment, everyone should submit their own assignment and
+should writeup their own answers to the questions.  You may, and are
+encouraged to, discuss all of the problems with anyone else you want
+(both on-line using the course web site or any other means you choose,
+and in person).&lt;/p&gt;
+
+&lt;h3 id=&#34;submission:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+
+&lt;p&gt;Submit your answers as a single PDF file using &lt;a href=&#34;https://www.dropbox.com/request/oar0AQeg4SJRNtdHbcSS&#34;&gt;this
+link&lt;/a&gt;.  The name
+of your file should be &lt;code&gt;&amp;lt;your email ID&amp;gt;-ps2.pdf&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Your submission should include clearly marked answers for all the
+problems (highlighted in yellow).  None of the questions require
+submitting a program, although you may find it helpful to write programs
+to develop your answers.  If the code you write is less than a page, it
+is best to just include it in the PDF writeup.  If it is longer, you may
+submit separate code files (and mention them in the PDF submission).&lt;/p&gt;
+
+&lt;h1 id=&#34;blockchain-consensus:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain Consensus&lt;/h1&gt;
+
+&lt;p&gt;These questions concern the original bitcoin paper:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
+System&lt;/em&gt;&lt;/a&gt;, 2008.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
+&lt;strong&gt;Problem 1.&lt;/strong&gt; In Section 6, Satoshi writes:
+&lt;em&gt;&amp;ldquo;The incentive may help encourage nodes to stay honest. If a greedy
+attacker is able to assemble more CPU power than all the honest nodes,
+he would have to choose between using it to defraud people by stealing
+back his payments, or using it to generate new coins. He ought to find
+it more profitable to play by the rules, such rules that favour him with
+more new coins than everyone else combined, than to undermine the system
+and the validity of his own wealth.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What are the assumptions necessary to support Satoshi&amp;rsquo;s claim that it is
+more profitable for a greedy attacker with a majority of the mining
+power &amp;ldquo;to play by the rules&amp;rdquo;? (other than the assumption that the greedy
+attacker is a &amp;ldquo;he&amp;rdquo;)&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 2.&lt;/strong&gt;
+    At the end of Section 11, Satoshi presents a table for &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; &amp;lt; 0.001,
+    where it is listed &amp;ldquo;q=0.45 z=340&amp;rdquo;. What does this mean in plain
+    English, expressed in a short sentence?
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 3.&lt;/strong&gt; For that same table, what would
+the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;/span&gt; values be for &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; &amp;lt; 0.05 (instead of &lt;em&gt;p&lt;/em&gt; &amp;lt; 0.001)?
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;merkle-trees-and-storage:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Merkle Trees and Storage&lt;/h1&gt;
+
+&lt;p&gt;Bitcoin uses Merkle Trees to record transactions in a way that enables a
+single hash to be used to record a set of transactions, and a small
+(logarithmic in the number of transactions) number of hashes to be
+sufficient to verify a transaction.  In this question, you&amp;rsquo;ll explore
+another use of Merkle Trees to provide verifiable cloud storage.&lt;/p&gt;
+
+&lt;p&gt;Imagine you are storing a database using a cloud storage provider, since
+you do not have local storage. Assume that you have just enough local
+storage to store a small number of cryptographic hashes or keys. You
+fear, however, that your storage provider may be skimping, and may not
+actually be storing all of your data.&lt;/p&gt;
+
+&lt;p&gt;So, you want to verify each record as you receive it, to make sure the
+data is the same as what you wrote.  In order to do so, you are willing
+to write extra cryptographic information with each write, but need to
+limit the amount of local storage.&lt;/p&gt;
+
+&lt;p&gt;Assume we are storing &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; records, and we can
+query the server for the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;-th record for any &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt; from 0 to &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt; - 1&lt;/span&gt;. The
+data content of the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;-th record will be denoted as &lt;span
+class=&#34;math&#34;&gt;data[&lt;em&gt;i&lt;/em&gt;]&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 4.&lt;/strong&gt; One naive approach would be to
+just sign each record data with a private key, and verify the signature
+on reading it.&lt;/p&gt;
+
+&lt;p&gt;(a) There is a problem with this scheme unless the bytes of &lt;span class=&#34;math&#34;&gt;data[&lt;em&gt;i&lt;/em&gt;]&lt;/span&gt; indicate that it is in fact from &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;-th index. What is this problem?&lt;/p&gt;
+
+&lt;p&gt;(b) Suppose we perform a write at position &lt;span class=&#34;math&#34;&gt;&lt;em&gt;i&lt;/em&gt;&lt;/span&gt;, both data and signature. Later on, when we read it back, if the signature matches the data, can we be sure that it is indeed the data item we wrote?
+  Explain.
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 5.&lt;/strong&gt; Another approach would be hashing
+  the concatenation of all records in the database. This hash is a small
+  item that can be stored locally.&lt;/p&gt;
+
+&lt;p&gt;(a) What is the write/read/verify procedure for this system?&lt;/p&gt;
+
+&lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; (the number of records)?
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;&lt;strong&gt;Problem 6.&lt;/strong&gt; Instead of using the concatenating all the records linear, they were organized into a Merkle tree.&lt;/p&gt;
+
+&lt;p&gt;(a) What is the write/read/verify procedure for this system?&lt;/p&gt;
+
+&lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;em&gt;n&lt;/em&gt; (the number of records)?
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain&lt;/h1&gt;
+
+&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;http://bitcoin-class.org/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ittay Eyal and Emin G&amp;uuml;n Sirer, &lt;a href=&#34;http://arxiv.org/pdf/1311.0243v5.pdf&#34;&gt;&lt;em&gt;Majority is not Enough: Bitcoin
+Mining is Vulnerable&lt;/em&gt;&lt;/a&gt;, November
+2013.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blockchain.info/orphaned-blocks&#34;&gt;Orphaned Blocks&lt;/a&gt; are blocks
+that are submitted to the bitcoin network, and that are valid, but do
+not become part of the longest (consensus) blockchain.&lt;/p&gt;
+
+&lt;p&gt;One way to detect selfish mining is to be on the lookout for &amp;ldquo;orphaned&amp;rdquo;
+blocks, or blocks that were mined but never became part of the final
+blockchain.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you set up a node to monitor orphaned blocks, and you are in a
+favorable position in the network that allows you to observe all
+orphaned blocks.  Assume that the hashing difficulty stays constant and
+the expected block rate is constant at 10 minutes per block.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 7.&lt;/strong&gt;&lt;br /&gt;
+  (a) If a mining pool has 15% (&lt;span class=&#34;math&#34;&gt;&amp;alpha;&lt;/span&gt; = 0.15) of the
+  total network hashing power, how many blocks is it expected to find in
+  a day?&lt;/p&gt;
+
+&lt;p&gt;(b) Obtain a general formula for expected number of blocks a mining pool with &lt;span class=&#34;math&#34;&gt;&amp;alpha;&lt;/span&gt; fraction of the total hashing power should find in &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; minutes.
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;For the next questions, you may assume a very simplified network model
+where you can view the network having two &amp;ldquo;supernodes&amp;rdquo;: one represents a
+particular mining pool, and the other represents all other nodes in the
+network.  The latency between the two supernodes is &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; seconds.&lt;/p&gt;
+
+&lt;p&gt;With this simple (but very unrealistic) model, we assume that when one
+supernode announces a block, all of the rest of the network learns of
+the new block &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; seconds later (but no one
+learns of it before that).&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 8.&lt;/strong&gt; Assuming all of the miners are
+  honest, what is the expected number of orphaned blocks per day for an honest
+  mining block with hashing power &lt;span class=&#34;math&#34;&gt;&amp;alpha;&lt;/span&gt; and latency &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; (as simplified
+  above).
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 9.&lt;/strong&gt; How does this change if the
+  mining pool is mining selfishly?  (For this question, assume that the
+  selfish mining pool learns of a block announced by the rest of the
+  network as soon as it is announced, so will immediately announce any
+  withheld blocks at that time.  That is, you may still assume the
+  simplified latency &lt;span class=&#34;math&#34;&gt;&lt;em&gt;L&lt;/em&gt;&lt;/span&gt; model, but that the selfish mining pool has a
+  spy in the other supernode with a low-latency direct connection to the
+  mining pool.)
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;pool-hopping:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Pool Hopping&lt;/h1&gt;
+
+&lt;p&gt;Answer &lt;em&gt;either&lt;/em&gt; question 10A or 10B (your choice).&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 10A.&lt;/strong&gt; In class, we saw how pool-hopping
+can be used to game a &amp;ldquo;proportional&amp;rdquo; reward scheme. Design a simple
+reward scheme that eliminates pool-hopping incentive. In particular,
+derive the expected reward for your scheme and show that it does not
+depend on time since last block (or any variable controlled by the
+miner).  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt; &lt;strong&gt;Problem 10B.&lt;/strong&gt; In upcoming classes, we will
+   have visits from a law professor (who also works for the State
+   Department on international cyberlaw and promulgating the open
+   Internet) and an FBI agent who works on criminals using bitcoin for
+   ransom.  Come up with at least one good question that you would like
+   one of them to answer.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;bonus-opportunities:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Bonus Opportunities&lt;/h1&gt;
+
+&lt;p&gt;The following questions are suggestions for further work, but it is not
+expected that everyone will solve them.  (Note that some of these could
+be starting ideas for larger projects, although a good answer to any of
+them would be most impressive.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 1.&lt;/strong&gt; The network model in questions 8 and 9 is very
+  unrealistic.  Answer these questions for a more realistic model of the
+  bitcoin network, and compare your results with the actual rates of
+  orphaned blocks.  To better detect misbehaving miners, you would want
+  to also look into the contents of the dual blocks (note that the one
+  that was orphaned is not necessarily the one from the selfish miner).
+  There is an API for obtaining orphaned blocks provided by
+  &lt;a href=&#34;https://api.biteasy.com/blockchain/v1/blocks?type=ORPHANED&#34;&gt;https://api.biteasy.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 2.&lt;/strong&gt; The analysis in the paper and in class assumed that if
+   the selfish miner is ahead by 2 blocks, it will always win by
+   releasing the blocks when it observes a new block on the blockchain.
+   It could still lose if the rest of the network finds a second block
+   before the selfish miner&amp;rsquo;s blocks have propagated over the network.
+   How does this possibility impact the analysis?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 3.&lt;/strong&gt; The site that was demonstrated in Class 11 uses a very
+  simple model to estimate the profitability of a particular bitcoin
+  miner.  Produce a better model, and use it to evaluated the expected
+  profit (or loss) for mining hardware such as &lt;a href=&#34;https://bitmaintech.com/product.htm&#34;&gt;Antminer
+  S7&lt;/a&gt;.  A better model would need
+  to capture expected increases in the difficulty, cost of capital, and
+  other costs of mining besides electricity.&lt;/p&gt;
+
+&lt;h3 id=&#34;submission-1:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+
+&lt;p&gt;Follow the submission instructions at the beginning of this page by
+8:29pm on Friday, 9 October.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PS1: Bitcoin Transactions</title>
@@ -897,7 +1135,28 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Class 11: More mining</title>
+      <title>PS2 / Projects</title>
+      <link>http://bitcoin-class.org/announcements/ps2/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/ps2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps2/&#34;&gt;Problem Set 2&lt;/a&gt; is now posted, and is due
+Friday, 9 October (8:29pm).  Sorry it took so long to post this!&lt;/p&gt;
+
+&lt;p&gt;The other thing I hope everyone thinks about over &amp;ldquo;reading break&amp;rdquo;, is
+ideas for a course project.  You can see projects from the course last
+Spring here:
+&lt;a href=&#34;http://bitcoin-class.org/0/cryptocurrency-projects.html&#34;&gt;http://bitcoin-class.org/0/cryptocurrency-projects.html&lt;/a&gt;.
+Your project can be anything related to cryptocurrencies or the tools we
+learn about in this class, and can be done individually or with a team
+(the size of the project should scale approximately with the square root
+of the team size).  If you have an idea for an ambitious project that
+you want to start early, it may be possible to arrange for it to substitute for some other course assignments.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 11: More Mining</title>
       <link>http://bitcoin-class.org/classes/class11/</link>
       <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -907,9 +1166,10 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
 &lt;h2 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class.&lt;/p&gt;
+&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class or end of office hours today.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of
+  October 2).  Problem Set 2 will be posted by tomorrow.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam&lt;/p&gt;
 
@@ -1013,7 +1273,7 @@ the hash of block 532.  Would this be a good idea?&lt;/p&gt;
 &lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
 &lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
    &lt;/div&gt;&lt;/p&gt;
@@ -1073,6 +1333,26 @@ anonymity and decentralization.&lt;/p&gt;
     </item>
     
     <item>
+      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
+      <link>http://bitcoin-class.org/news/u21/</link>
+      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/news/u21/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
+
+&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
+actually doing.  They have designed some custom mining hardware, but
+hard to see how it makes sense as a USB device for individuals.  I could
+see the value in a secure USB device that works as a bitcoin wallet and
+can be smoothly integrated with a web client, but hard to see the case
+for including a miner in it.&lt;/p&gt;
+
+&lt;p&gt;You can buy it from
+&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 9: Economics of Mining</title>
       <link>http://bitcoin-class.org/classes/class9/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
@@ -1084,7 +1364,7 @@ anonymity and decentralization.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
 &lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.&lt;br /&gt;
-&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;br /&gt;
+&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later.
 &lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
    &lt;/div&gt;&lt;/p&gt;
 
@@ -1144,26 +1424,6 @@ very difficult question to answer, would be a good project idea, not
 something to answer in the blank below!)&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://bitcoin-class.org/news/u21/</link>
-      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/news/u21/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
-
-&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
-actually doing.  They have designed some custom mining hardware, but
-hard to see how it makes sense as a USB device for individuals.  I could
-see the value in a secure USB device that works as a bitcoin wallet and
-can be smoothly integrated with a web client, but hard to see the case
-for including a miner in it.&lt;/p&gt;
-
-&lt;p&gt;You can buy it from
-&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1532,249 +1792,6 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
 &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt; depends on hash of previous block, transactions, and other information.&lt;/p&gt;
 
 &lt;p&gt;What does it mean for the bitcoin difficulty to go down?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 6: Hash Functions</title>
-      <link>http://bitcoin-class.org/classes/class6/</link>
-      <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class6/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm, tomorrow): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Check 2 (was originally scheduled for Monday, September 21)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Readings for next week&lt;/strong&gt; (should be completed by Monday, September 21 at the latest, but earlier is better):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
-System&lt;/em&gt;&lt;/a&gt;, 2008.  The is the original
-bitcoin paper, which is quite readable and historically interesting.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc&#34;&gt;&lt;em&gt;Chapter 6: The Bitcoin
-Network&lt;/em&gt;&lt;/a&gt;
-and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc&#34;&gt;&lt;em&gt;Chapter 7: The
-Blockchain&lt;/em&gt;&lt;/a&gt;
-from Andreas Antonopoulos&amp;rsquo; book.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Achieves
-Decentralization&lt;/em&gt;&lt;/a&gt;
-and &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf&#34;&gt;&lt;em&gt;Chapter 5: Bitcoin
-Mining&lt;/em&gt;&lt;/a&gt;
-from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
-Technologies&lt;/em&gt;&lt;/a&gt;.
-&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/JWtz4G4wUYKWU5&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;!--
-   &lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, [download the slides](/classes/class5-post.pptx).
-   &lt;/div&gt;
---&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;notes:647dbe1e5b68015679492d34153c74f5&#34;&gt;Notes&lt;/h2&gt;
-
-&lt;p&gt;Why do we typically hash a message before signing it? What&amp;rsquo;s wrong if we always signed the full message?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What are the properties we want in a cryptographically secure hash function?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the &amp;ldquo;birthday attack&amp;rdquo; in the context of a hash function?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;p&gt;Say you have 3000 distinct files in the &amp;ldquo;Documents&amp;rdquo; folder of our laptop. If
-you have SHA-256 hashes for each of them, do you expect any repeats? If we
-truncated the hash output to just 20 bits, how many repeats do you expect to
-see?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the advantage of using a Merkle tree as opposed to directly hashing
-the full string?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 5: Becoming Paranoid</title>
-      <link>http://bitcoin-class.org/classes/class5/</link>
-      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class5/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, 9 September&lt;/strong&gt; (now): Checkup 1 revisions (if desired).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Check 2 (was originally scheduled for Monday, September 21)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Readings for next week&lt;/strong&gt; (should be completed by Monday, September 21 at the latest, but earlier is better):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
-System&lt;/em&gt;&lt;/a&gt;, 2008.  The is the original
-bitcoin paper, which is quite readable and historically interesting.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc&#34;&gt;&lt;em&gt;Chapter 6: The Bitcoin
-Network&lt;/em&gt;&lt;/a&gt;
-and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc&#34;&gt;&lt;em&gt;Chapter 7: The
-Blockchain&lt;/em&gt;&lt;/a&gt;
-from Andreas Antonopoulos&amp;rsquo; book.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Achieves
-Decentralization&lt;/em&gt;&lt;/a&gt;
-and &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf&#34;&gt;&lt;em&gt;Chapter 5: Bitcoin
-Mining&lt;/em&gt;&lt;/a&gt;
-from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
-Technologies&lt;/em&gt;&lt;/a&gt;.
-&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/jXzZMV6Wpg9kCK&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class5-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;notes:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes&lt;/h2&gt;
-
-&lt;p&gt;What does it mean for a problem to be &lt;em&gt;hard&lt;/em&gt;?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;If you know an algorithm with running time in &lt;span class=&#34;math&#34;&gt;&lt;em&gt;O&lt;/em&gt;(2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sup&gt;)&lt;/span&gt; for problem &lt;em&gt;P&lt;/em&gt;, what do you know about the hardness of problem &lt;em&gt;P&lt;/em&gt;?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What are the most common reasons for cryptosystems to fail in practice?&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;
-We didn&amp;rsquo;t get to this in class, but will cover it in a future class.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;bitcoin-s-curve:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Bitcoin&amp;rsquo;s Curve&lt;/h2&gt;
-
-&lt;p&gt;Standards for Efficient Cryptography: &lt;a href=&#34;http://www.secg.org/sec2-v2.pdf&#34;&gt;&lt;em&gt;SEC 2: Recommended Elliptic Curve Domain Parameters&lt;/em&gt;&lt;/a&gt; (Certicom Research, 27 January 2010)&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Verifiably random parameters offer some additional conservative features. These parameters are
-chosen from a seed using SHA-1 as specified in ANSI X9.62 [X9.62]. This process ensures that
-the parameters cannot be predetermined. The parameters are therefore extremely unlikely to
-be susceptible to future special-purpose attacks, and no trapdoors can have been placed in the
-parameters during their generation. When elliptic curve domain parameters are chosen verifiably
-at random, the seed S used to generate the parameters may optionally be stored along with the
-parameters so that users can verify the parameters were chosen verifiably at random.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;What does it mean for parameters to be &amp;ldquo;verifiably random&amp;rdquo;?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;randomness:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Randomness&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Kolmogorov Complexity:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;K&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;)&lt;/span&gt; = the length of the shortest description of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Kolmogorov&amp;rsquo;s Definition of Random:&lt;/strong&gt; A sequence &lt;span
-  class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;/span&gt; is random, if &lt;span class=&#34;math&#34;&gt;&lt;em&gt;K&lt;/em&gt;(&lt;em&gt;s&lt;/em&gt;) =
-  |&lt;em&gt;s&lt;/em&gt;| + &lt;em&gt;C&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the Kolmogorov Complexity of the string &lt;code&gt;0001000010000011111111100111...&lt;/code&gt;?
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the Kolmogorov Complexity of the string: &lt;code&gt;1MRigEo5423vycLnUdSnA4C6Ts691fUiYu 18UikW89q9VgGDftQW3Gmuhe4sQDCFP5kD 19ZQwQmfAsgy47ErehfkW3SeSzNGFfH9iN 1AZCH1insc6JrT2Z9SiNvgtTugXg8sF8yd 15qYggRJvmyZfpchxvNqr6h3pNjw6bGBV9 1C943NwPPffUFY7VDzi3kt7KikXwc2vdkN 1JBhLLCgNYhR8f6AZcRS3mjfEAmMzPvwyf 1JvDrBSYm6o4ZTQUhwUE4FhPFxd2wuXWUR 1KcBM1RNhcp1oENycoD4AezA5Se4SrsZnA 16JZWC433XRxjWwR7X65uxRVFdLTmoPr4t 149LB8VYaT1BdMLyQUL92Kj6KrJfNwcp64 16zDGuzbwkHjW8dNYMw9stDjRbTzVSLZU1 1HfMaZn53ZDWKgmhWxk1UPZMjQ6QmpW6m 14gZWnuwKpRLTCUFCAgTZMciRaEdrkmEpr 1BZ2ateDPugmqLzYsXVy9EK5BguvXa2Bnj 1rCdRyMVcZHJaHA2LKUvRqYBcHqvAfQkc 1Ak8VwX6x4FPbA6aXTC3BQGQHnnhfaJuB8 129sBvF6Jternwdn5XcoA37LinQRcmAD5U1H2in 1HxEzSKHssPtog2krjFPiPfrKSiw4...&lt;/code&gt; ?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Daniel J. Bernstein, Tung Chou, Chitchanok Chuengsatiansup, Andreas
-H&amp;uuml;lsing, Tanja Lange, Ruben Niederhagen, and Christine van Vredendaal.
-&lt;a href=&#34;https://eprint.iacr.org/2014/571.pdf&#34;&gt;&lt;em&gt;How to Manipulate Curve Standards: A White Paper for the Black  Hat&lt;/em&gt;&lt;/a&gt;, 2014.&lt;/p&gt;
-
-&lt;p&gt;How likely is it that the parameters for the secp256k1 curve used by bitcoin have a trapdoor?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;How should ECC parameters be generated for an important curve in a standard?
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.root-dnssec.org/wp-content/uploads/2010/02/draft-icann-dnssec-ceremonies-00.txt&#34;&gt;&lt;em&gt;Root Zone DNSSEC KSK Ceremonies
-Guide&lt;/em&gt;&lt;/a&gt;.
-If you have a few hours to spare, you can watch a key signing for the
-DNSSEC (Domain Name System): &lt;a href=&#34;https://www.iana.org/dnssec/ceremonies/20&#34;&gt;DNSSEC KSK Ceremony
-20&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;dual-ec-prng:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Dual-EC PRNG&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf&#34;&gt;NIST Special Publication 800-90A Recommendation for Random Number
-Generation Using Deterministic Random Bit
-Generators&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; and &lt;span class=&#34;math&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; are points on the curve, specified by the standard (but not
-explained how &lt;span class=&#34;math&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/span&gt; is choosen).  &lt;span class=&#34;math&#34;&gt;&lt;em&gt;P&lt;/em&gt;&lt;/span&gt; is a generator, so there exists some
-&lt;span class=&#34;math&#34;&gt;&lt;em&gt;e&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;Q&lt;/em&gt;&lt;sup&gt;&lt;em&gt;e&lt;/em&gt;&lt;/sup&gt; = &lt;em&gt;P&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt; = &lt;/span&gt; initialize with seed randomness&lt;br /&gt;
-&lt;span class=&#34;math&#34;&gt;&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;+1&lt;/sub&gt; = &amp;phiv;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; &amp;times; &lt;em&gt;P&lt;/em&gt;)&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; = &amp;phiv;(&lt;em&gt;s&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; &amp;times; &lt;em&gt;Q&lt;/em&gt;)&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;math&#34;&gt;&lt;em&gt;o&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt; =&lt;/span&gt; the low-order 16 bits of the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;-coordinate of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;Given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;o&lt;/em&gt;&lt;sub&gt;i&lt;/sub&gt;&lt;/span&gt;, how much work is it to find all the possible &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;i&lt;/sub&gt; = (&lt;em&gt;x&lt;/em&gt;, &lt;em&gt;y&lt;/em&gt;)&lt;/span&gt; values?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;e&lt;/em&gt;&lt;/span&gt;, what is &lt;span class=&#34;math&#34;&gt;&amp;phiv;(&lt;em&gt;e&lt;/em&gt; &amp;times; &lt;em&gt;A&lt;/em&gt;)&lt;/span&gt; where &lt;span class=&#34;math&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; is a possible &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; value?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Dan Shumow, Niels Ferguson.  &lt;a href=&#34;http://rump2007.cr.yp.to/15-shumow.pdf&#34;&gt;&lt;em&gt;On the Possibility of a Back Door in the
-NIST SP800-90 Dual Ec Prng&lt;/em&gt;&lt;/a&gt;.
-CRYPTO 2007 Rump Session.&lt;/p&gt;
-
-&lt;p&gt;Michael Wertheimer (NSA), &lt;a href=&#34;http://www.ams.org/notices/201502/rnoti-p165.pdf&#34;&gt;&lt;em&gt;Encryption and the NSA Role in International
-Standards&lt;/em&gt;&lt;/a&gt;, Notices
-of the American Mathematical Society, February 2015.&lt;/p&gt;
-
-&lt;p&gt;Wertheimer&amp;rsquo;s letter is an attempt to respond to &lt;a href=&#34;http://www.ams.org/notices/201406/rnoti-p623.pdf&#34;&gt;&lt;em&gt;Mathematicians Discuss the
-Snowden Revelations&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;The recent revelations about the NSA’s spying
-programs are both dismaying and encouraging.
-What is encouraging is that they might lead not
-just to a reform of the intelligence agencies but
-also to a more serious look at what the ongoing
-and inevitable erosion of privacy is doing to our
-society. What is dismaying is less the intrusive data
-collection itself and more what it reveals about the
-decision-making processes inside the government.&lt;/em&gt; (Andrew Odlyzko)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;How satisfying is the NSA&amp;rsquo;s response?  Are you more dismayed or encouraged?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
