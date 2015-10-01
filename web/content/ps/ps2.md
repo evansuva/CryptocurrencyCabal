@@ -119,7 +119,7 @@ on reading it.
 
    (a) What is the write/read/verify procedure for this system?  
 
-  (b) How does the cost of reading and writing to the database scale with _n_ (the number of records)?
+  (b) How does the cost of reading and writing to the database scale with <span class="math">_n_</span> (the number of records)?
     </div>
 
 # Blockchain 
