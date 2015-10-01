@@ -130,7 +130,7 @@ on reading it.&lt;/p&gt;
 
 &lt;p&gt;(a) What is the write/read/verify procedure for this system?&lt;/p&gt;
 
-&lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;em&gt;n&lt;/em&gt; (the number of records)?
+&lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; (the number of records)?
     &lt;/div&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain&lt;/h1&gt;
