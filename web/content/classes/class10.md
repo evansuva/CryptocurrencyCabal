@@ -11,7 +11,7 @@ menu: "classes"
    <div class="todo">
 **Wednesday, September 30**: Checkup 2 revisions (if desired), due at the beginning of class.
 
-**Friday, October 9**: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.  
+**Friday, October 9**: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later.  
 
 **Monday, October 19**: Midterm Exam
    </div>

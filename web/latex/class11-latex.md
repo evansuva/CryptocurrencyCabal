@@ -1,12 +1,13 @@
-% Class 11: More mining
+% Class 11: More Mining
 % '2015-09-30'
 
 ## Schedule
 
    <div class="todo">
-**Wednesday, September 30**: Checkup 2 revisions (if desired), due at the beginning of class.
+**Wednesday, September 30**: Checkup 2 revisions (if desired), due at the beginning of class or end of office hours today.
 
-**Friday, October 9**: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.  
+**Friday, October 9**: Problem Set 2 (moved from original deadline of
+  October 2).  Problem Set 2 will be posted by tomorrow.
 
 **Monday, October 19**: Midterm Exam
 

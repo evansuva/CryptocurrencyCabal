@@ -10,7 +10,7 @@ menu: "classes"
 
    <div class="todo">
 **Wednesday, September 23**: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.  
-**Friday, October 9**: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.  
+**Friday, October 9**: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later. 
 **Monday, October 19**: Midterm Exam
    </div>
 
