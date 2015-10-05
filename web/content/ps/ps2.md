@@ -163,7 +163,7 @@ learns of it before that).
 
   <div class="problem"> **Problem 8.** Assuming all of the miners are
   honest, what is the expected number of orphaned blocks per day for an honest
-  mining block with hashing power <span class="math">&alpha;</span> and latency <span class="math">_L_</span> (as simplified
+  mining pool with hashing power <span class="math">&alpha;</span> and latency <span class="math">_L_</span> (as simplified
   above).
   </div>
 
