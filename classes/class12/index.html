@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Class 12: Script // Cryptocurrency Cabal
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.15-DEV" />
+
+  <meta property="og:title" content="Class 12: Script" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://localhost:1313/classes/class12/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rotunda.png">
+  <link rel="shortcut icon" href="/rotunda.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Cryptocurrency Cabal" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  <link rel="stylesheet" href="http://localhost:1313//css/cabal.css">
+
+  
+ 
+  
+<script>
+function showText(show,hide)
+{
+    document.getElementById(show).className = "show";
+    document.getElementById(hide).className = "hide";
+}
+</script>
+ 
+
+  
+
+  
+</head>
+
+<body>
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+
+    <a href="http://localhost:1313/"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
+    <h2 class="brand-tagline">University of Virginia
+    <br>cs4501 Fall 2015
+    </h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href=""></a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/syllabus/">Syllabus</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b><a href="/ps/">Assignments</a></b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/ps/ps1/">PS1: Bitcoin Transactions</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/ps/ps2/">PS2: The Blockchain</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/registration/">Registration</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b><A href="/classes/">Classes</a></b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class12/">Class 12: Script</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class11/">Class 11: More Mining</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class10/">Class 10: Subverting Bitcoin</a>
+          
+          </li>
+        
+        <li><a href="classes/"><em>More...</em></a></li>
+      </ul>
+
+    </nav>
+
+    <a href="/0/">Spring 2015 Course</a>
+
+    
+
+  </div>
+</div>
+
+	
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+    <section id="main">
+            
+            	<span class="post-date">
+                	7 Oct 2015
+            	</span>
+            	
+            
+                <div class="phighlight">
+                     <a href="/class12.pdf">PDF for printing</a>
+                </div>
+            
+
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<h2 id="schedule:bc216d98f3ca2300699af2d41b8a2a45">Schedule</h2>
+
+<p><div class="todo">
+<strong>Read</strong>: <a href="http://bitcoin-class.org/docs/princeton-book/chapter_3.pdf"><em>Chapter 3: Mechanics of Bitcoin</em></a>, from
+Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven
+Goldfeder. <a href="https://piazza.com/princeton/spring2015/btctech/resources"><em>Bitcoin and Cryptocurrency
+Technologies</em></a>.
+Sections 3.2 and 3.3 are about bitcoin scripts, and should be read
+carefully.  (You should read the whole chapter, but those sections are
+most relevant to today&rsquo;s class.)</p>
+
+<p><strong>Friday, October 9</strong>: Problem Set 2 (8:29pm).</p>
+
+<p><strong>Monday, October 19</strong>: Midterm Exam</div></p>
+
+<h1 id="hash-collisions:bc216d98f3ca2300699af2d41b8a2a45">Hash Collisions!</h1>
+
+<p><strong>Computing a bitcoin address:</strong> (<a href="https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses">bitcoinwiki</a>)</p>
+
+<p>Private Key: pick a random number, <em>k</em>.<br />
+Public Key: compute (<em>Ux</em>, <em>Uy</em>) = <em>Gk</em>
+<div class="indented">(elliptic curve multiplication, <em>G</em> is specified generator point)</div>
+<em>Ux</em> and <em>Uy</em> are 32 bytes each.</p>
+
+<p>The bitcoin address is (|| is bitstring concatenation):<br />
+    <div class="indented">
+    raw = <code>1</code> || RIPEMD160(SHA256(<em>Ux</em> || <em>Uy</em>))<br />
+         <div class="indented"><em>RIPEMD output is 160 bits (20 bytes) + one byte for <code>1</code></em></div>
+    checksum = first 4 bytes of SHA256(SHA256(raw))  <div class="indented"><em>Compute a checksum using SHA256 double hash</em></div>
+    address = Base58Check(raw || checksum)  <div class="indented"><em>convert to printable, unambiguous characters</em></div>
+    </div></p>
+
+<p>How important is pre-image resistance for the security of bitcoin addresses?
+<div class="gap"></div></p>
+
+<p>How important is collision resistance for the security of bitcoin addresses?
+<div class="gap"></div></p>
+
+<p>How important is pre-image resistance for the integrity of bitcoin&rsquo;s proof-of-work?
+<div class="gap"></div></p>
+
+<p>How important is collision resistance for the integrity of bitcoin&rsquo;s proof-of-work?
+<div class="gap"></div></p>
+
+<p>Xiaoyun Wang and Hongbo Yu, <a href="http://www.bitcoin-class.org/docs/hashcollisions.pdf"><em>How to Break MD5 and Other Hash Functions</em></a>, EuroCrypt 2005.</p>
+
+<h1 id="bitcoin-script:bc216d98f3ca2300699af2d41b8a2a45">Bitcoin Script</h1>
+
+<p>Transaction outputs in bitcoin are protected by <em>locking scripts</em>, and
+must be unlocked by <em>unlocking scripts</em>.  The scripts are written in a
+simple (compared to, say, the Java Virtual Machine language, but quite
+complex and poorly specified for what one might expect would be needed
+for bitcoin transactions) stack-based language.  A transaction output is
+not unlocked unless an unlocking script is provided such that the result
+of executing the unlocking script, followed by executing the locking
+script, is a stack with value True on top (and no invalid transaction
+results during the execution).</p>
+
+<p>Some script instructions:</p>
+
+<p><table cellpadding=5>
+   <tr>
+   <td align="center"><b>Opcode</b></td><td align="center"><b>Input</b></td><td align="center"><b>Output</b></td><td align="center"><b>Description</b></td></tr>
+   <tr><td><code>OP_1</code></td><td> - </td><td> <strong>1</strong> </td><td> Pushes a <strong>1</strong> (True) on the stack </td></tr>
+   <tr><td><code>OP_DUP</code></td><td> <em>a</em> </td><td> <em>a</em> <em>a</em> </td><td> Duplicates the top element of the stack </td></tr>
+   <tr><td><code>OP_ADD</code></td><td> <em>a</em> <em>b</em> </td><td> (<em>a</em>+<em>b</em>) </td><td> Pushes the sum of the top two elements. </td></tr>
+   <tr><td><code>OP_EQUAL</code></td><td> <em>a</em> <em>b</em> </td><td> <strong>0</strong> or <strong>1</strong> </td><td> Pushes <strong>1</strong> if the top two elements are exactly equal, otherwise <strong>0</strong>. </td></tr>
+   <tr><td><code>OP_VERIFY</code> </td><td> <em>a</em> </td><td> - </td><td> If <em>a</em> is not <strong>True</strong> (<strong>1</strong>), terminates as Invalid. </td></tr>
+   <tr><td><code>OP_RETURN</code></td><td> - </td><td> - </td><td> Terminates as Invalid. </td></tr>
+   <tr><td><code>OP_EQUALVERIFY</code> </td><td> <em>a</em> <em>b</em> </td><td> - </td><td> If <em>a</em> and <em>b</em> are not equal, terminates as Invalid. </td></tr>
+   <tr><td><code>OP_HASH160</code> </td><td> <em>a</em> </td><td> H(<em>a</em>) </td><td> Pushes bitcoin address, RIPEMD160(SHA256(<em>a</em>)). </td></tr>
+</table></p>
+
+<p>Some more complex instructions:</p>
+
+<p><code>OP_IF</code> <em>statements</em> <code>OP_ENDIF</code> - If the top of the stack is <strong>1</strong>, executes <em>statements</em>.  Otherwise does nothing.</p>
+
+<p><code>OP_CHECKSIG</code> - Pops two items from the stack, <em>publickey</em> and <em>sig</em>.
+Verifies the entire transaction (known from node state, not the stack)
+using the <em>publickey</em> and <em>sig</em>.  If the signature is valid, push <strong>1</strong>;
+otherwise, <strong>0</strong>.</p>
+
+<p><code>OP_1 OP_DUP OP_ADD OP_DUP OP_SUB OP_VERIFY</code>
+<div class="gap"></p>
+
+<p></div></p>
+
+<p>The most common locking script (send to public address):<br />
+<code>OP_DUP</code><br />
+<code>OP_HASH160</code><br />
+<code>OP_DATA20</code> <em>(bitcoin address)</em><br />
+<code>OP_EQUALVERIFY</code><br />
+<code>OP_CHECKSIG</code></p>
+
+<p>What must be on the stack for the locking script to succeed (end with <strong>1</strong> on top of stack)?
+<div class="gap"></p>
+
+<p></div></p>
+
+<p><code>OP_HASH160</code> <em>20-byte hash</em> <code>OP_EQUAL</code></p>
+
+<p>What must be on the stack for the locking script above (&ldquo;Pay-to-Script-Hash&rdquo;) to succeed?
+<div class="gap"></p>
+
+<p></div></p>
+
+<p>According to <a href="http://www.quantabytes.com/articles/a-survey-of-bitcoin-transaction-types">Most Popular Transaction
+Scripts</a>
+(analysis of all transactions in first 290,000 blocks), the ninth most popular script is:
+<code>OP_RETURN OP_DATA_40</code></p>
+
+<p>What must be on the stack for the <code>OP_RETURN OP_DATA_40</code> locking script to succeed (end with
+<strong>1</strong> on top of stack)? (Trick question: what happens to the coin
+protected by this locking script?)
+<div class="gap"></p>
+
+<p></div></p>
+
+<p>Is the bitcoin scripting language Turing-complete?
+<div class="gap"></p>
+
+<p></div></p>
+
+<p>If you are not clear on what Turing-complete means, see <a href="http://www.dori-mic.org"><em>Dori-Mic and the Universal Machine!</em></a></p>
+
+<h2 id="btcd-code:bc216d98f3ca2300699af2d41b8a2a45">BTCD Code</h2>
+
+<p>Type: <a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L206">Script</a> is the virtual machine the executes scripts (note that it has two Stacks)</p>
+
+<p>Execute a script: <a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L723">Execute</a><br />
+Execute one instruction: <a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L782">Step</a></p>
+
+<p><a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L38">Opcodes</a><br />
+<a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L971">exec</a> function executes one instruction</p>
+
+<p>Some interesting opcode implementations:
+<a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1143">OP_IF</a><br />
+<a href="https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1235">OP_RETURN</a></p>
+
+<h2 id="bitcoin-core-code:bc216d98f3ca2300699af2d41b8a2a45">Bitcoin Core Code</h2>
+
+<p><a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp">script/interpreter.cpp</a></p>
+
+<p><a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L524">OP_DUP</a><br />
+<a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L752">Crypto</a>
+<a href="https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L785">OP_CHECKSIG</a></p>
+
+<h2 id="links:bc216d98f3ca2300699af2d41b8a2a45">Links</h2>
+
+<p><a href="http://www.crmarsh.com/script-playground/">Script Playground</a></p>
+
+<p>Some interesting things you can do with bitcoin scripts:<br />
+<a href="https://en.bitcoin.it/wiki/Contracts">Contracts</a> (see also Nick Szabo&rsquo;s <a href="http://szabo.best.vwh.net/formalize.html"><em>Formalizing and Securing Relationships on Public Networks</em></a><br />
+<a href="http://eprint.iacr.org/2013/784">Secure Multiparty Computations</a> (to implement lotteries)</p>
+
+<p>The <code>OP_RETURN</code>/pasted script execution bug doesn&rsquo;t even make this list of <a href="http://www.coindesk.com/9-biggest-screwups-bitcoin-history/"><em>The 9 Biggest Screwups in Bitcoin History</em></a>.</p>
+
+<p><a href="http://blockexplorer.com/rawblock/00000000000997f9fd2fe1ee376293ef8c42ad09193a5d2086dddf8e5c426b56">Block 71036</a></p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/syllabus/">Syllabus</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/announcements/ps2/">PS2 / Projects</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+ 
+   var disqus_url = '';
+   var disqus_shortname = 'davidevans'; 
+
+    
+   (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] ||  document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view
+    the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+          
+        
+      <div class="footer">
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+	<hr class="thin" />
+
+   <div class="funding">
+University of Virginia<br>
+cs4501: Introduction to Cryptocurrency<br>
+Fall 2015
+   </div>
+
+	<p></p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
