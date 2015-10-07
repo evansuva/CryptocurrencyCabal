@@ -1,4 +1,4 @@
-% Class 7: The Blockchain
+% Class 07: The Blockchain
 % '2015-09-16'
 
 ## Schedule

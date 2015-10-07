@@ -1,5 +1,5 @@
 ---
-title: "Class 6: Hash Functions"
+title: "Class 06: Hash Functions"
 date: '2015-09-14'
 nocomment: false
 weight: 3

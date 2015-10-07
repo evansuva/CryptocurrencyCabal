@@ -6,8 +6,177 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 12: Script</title>
+      <link>http://bitcoin-class.org/classes/class12/</link>
+      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class12/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Read&lt;/strong&gt;: &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_3.pdf&#34;&gt;&lt;em&gt;Chapter 3: Mechanics of Bitcoin&lt;/em&gt;&lt;/a&gt;, from
+Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven
+Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
+Technologies&lt;/em&gt;&lt;/a&gt;.
+Sections 3.2 and 3.3 are about bitcoin scripts, and should be read
+carefully.  (You should read the whole chapter, but those sections are
+most relevant to today&amp;rsquo;s class.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (8:29pm).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;hash-collisions:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Hash Collisions!&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Computing a bitcoin address:&lt;/strong&gt; (&lt;a href=&#34;https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses&#34;&gt;bitcoinwiki&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Private Key: pick a random number, &lt;em&gt;k&lt;/em&gt;.&lt;br /&gt;
+Public Key: compute (&lt;em&gt;Ux&lt;/em&gt;, &lt;em&gt;Uy&lt;/em&gt;) = &lt;em&gt;Gk&lt;/em&gt;
+&lt;div class=&#34;indented&#34;&gt;(elliptic curve multiplication, &lt;em&gt;G&lt;/em&gt; is specified generator point)&lt;/div&gt;
+&lt;em&gt;Ux&lt;/em&gt; and &lt;em&gt;Uy&lt;/em&gt; are 32 bytes each.&lt;/p&gt;
+
+&lt;p&gt;The bitcoin address is (|| is bitstring concatenation):&lt;br /&gt;
+    &lt;div class=&#34;indented&#34;&gt;
+    raw = &lt;code&gt;1&lt;/code&gt; || RIPEMD160(SHA256(&lt;em&gt;Ux&lt;/em&gt; || &lt;em&gt;Uy&lt;/em&gt;))&lt;br /&gt;
+         &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;RIPEMD output is 160 bits (20 bytes) + one byte for &lt;code&gt;1&lt;/code&gt;&lt;/em&gt;&lt;/div&gt;
+    checksum = first 4 bytes of SHA256(SHA256(raw))  &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;Compute a checksum using SHA256 double hash&lt;/em&gt;&lt;/div&gt;
+    address = Base58Check(raw || checksum)  &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;convert to printable, unambiguous characters&lt;/em&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;How important is pre-image resistance for the security of bitcoin addresses?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;How important is collision resistance for the security of bitcoin addresses?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;How important is pre-image resistance for the integrity of bitcoin&amp;rsquo;s proof-of-work?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;How important is collision resistance for the integrity of bitcoin&amp;rsquo;s proof-of-work?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Xiaoyun Wang and Hongbo Yu, &lt;a href=&#34;http://www.bitcoin-class.org/docs/hashcollisions.pdf&#34;&gt;&lt;em&gt;How to Break MD5 and Other Hash Functions&lt;/em&gt;&lt;/a&gt;, EuroCrypt 2005.&lt;/p&gt;
+
+&lt;h1 id=&#34;bitcoin-script:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Bitcoin Script&lt;/h1&gt;
+
+&lt;p&gt;Transaction outputs in bitcoin are protected by &lt;em&gt;locking scripts&lt;/em&gt;, and
+must be unlocked by &lt;em&gt;unlocking scripts&lt;/em&gt;.  The scripts are written in a
+simple (compared to, say, the Java Virtual Machine language, but quite
+complex and poorly specified for what one might expect would be needed
+for bitcoin transactions) stack-based language.  A transaction output is
+not unlocked unless an unlocking script is provided such that the result
+of executing the unlocking script, followed by executing the locking
+script, is a stack with value True on top (and no invalid transaction
+results during the execution).&lt;/p&gt;
+
+&lt;p&gt;Some script instructions:&lt;/p&gt;
+
+&lt;p&gt;&lt;table cellpadding=5&gt;
+   &lt;tr&gt;
+   &lt;td align=&#34;center&#34;&gt;&lt;b&gt;Opcode&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Input&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Output&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_1&lt;/code&gt;&lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; &lt;strong&gt;1&lt;/strong&gt; &lt;/td&gt;&lt;td&gt; Pushes a &lt;strong&gt;1&lt;/strong&gt; (True) on the stack &lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_DUP&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; Duplicates the top element of the stack &lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_ADD&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; (&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;) &lt;/td&gt;&lt;td&gt; Pushes the sum of the top two elements. &lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_EQUAL&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; &lt;strong&gt;0&lt;/strong&gt; or &lt;strong&gt;1&lt;/strong&gt; &lt;/td&gt;&lt;td&gt; Pushes &lt;strong&gt;1&lt;/strong&gt; if the top two elements are exactly equal, otherwise &lt;strong&gt;0&lt;/strong&gt;. &lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_VERIFY&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; If &lt;em&gt;a&lt;/em&gt; is not &lt;strong&gt;True&lt;/strong&gt; (&lt;strong&gt;1&lt;/strong&gt;), terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_RETURN&lt;/code&gt;&lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; Terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_EQUALVERIFY&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; If &lt;em&gt;a&lt;/em&gt; and &lt;em&gt;b&lt;/em&gt; are not equal, terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_HASH160&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; H(&lt;em&gt;a&lt;/em&gt;) &lt;/td&gt;&lt;td&gt; Pushes bitcoin address, RIPEMD160(SHA256(&lt;em&gt;a&lt;/em&gt;)). &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/p&gt;
+
+&lt;p&gt;Some more complex instructions:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_IF&lt;/code&gt; &lt;em&gt;statements&lt;/em&gt; &lt;code&gt;OP_ENDIF&lt;/code&gt; - If the top of the stack is &lt;strong&gt;1&lt;/strong&gt;, executes &lt;em&gt;statements&lt;/em&gt;.  Otherwise does nothing.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_CHECKSIG&lt;/code&gt; - Pops two items from the stack, &lt;em&gt;publickey&lt;/em&gt; and &lt;em&gt;sig&lt;/em&gt;.
+Verifies the entire transaction (known from node state, not the stack)
+using the &lt;em&gt;publickey&lt;/em&gt; and &lt;em&gt;sig&lt;/em&gt;.  If the signature is valid, push &lt;strong&gt;1&lt;/strong&gt;;
+otherwise, &lt;strong&gt;0&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_1 OP_DUP OP_ADD OP_DUP OP_SUB OP_VERIFY&lt;/code&gt;
+&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;The most common locking script (send to public address):&lt;br /&gt;
+&lt;code&gt;OP_DUP&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_HASH160&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_DATA20&lt;/code&gt; &lt;em&gt;(bitcoin address)&lt;/em&gt;&lt;br /&gt;
+&lt;code&gt;OP_EQUALVERIFY&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_CHECKSIG&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What must be on the stack for the locking script to succeed (end with &lt;strong&gt;1&lt;/strong&gt; on top of stack)?
+&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_HASH160&lt;/code&gt; &lt;em&gt;20-byte hash&lt;/em&gt; &lt;code&gt;OP_EQUAL&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What must be on the stack for the locking script above (&amp;ldquo;Pay-to-Script-Hash&amp;rdquo;) to succeed?
+&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;According to &lt;a href=&#34;http://www.quantabytes.com/articles/a-survey-of-bitcoin-transaction-types&#34;&gt;Most Popular Transaction
+Scripts&lt;/a&gt;
+(analysis of all transactions in first 290,000 blocks), the ninth most popular script is:
+&lt;code&gt;OP_RETURN OP_DATA_40&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What must be on the stack for the &lt;code&gt;OP_RETURN OP_DATA_40&lt;/code&gt; locking script to succeed (end with
+&lt;strong&gt;1&lt;/strong&gt; on top of stack)? (Trick question: what happens to the coin
+protected by this locking script?)
+&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Is the bitcoin scripting language Turing-complete?
+&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are not clear on what Turing-complete means, see &lt;a href=&#34;http://www.dori-mic.org&#34;&gt;&lt;em&gt;Dori-Mic and the Universal Machine!&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;btcd-code:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;BTCD Code&lt;/h2&gt;
+
+&lt;p&gt;Type: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L206&#34;&gt;Script&lt;/a&gt; is the virtual machine the executes scripts (note that it has two Stacks)&lt;/p&gt;
+
+&lt;p&gt;Execute a script: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L723&#34;&gt;Execute&lt;/a&gt;&lt;br /&gt;
+Execute one instruction: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L782&#34;&gt;Step&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L38&#34;&gt;Opcodes&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L971&#34;&gt;exec&lt;/a&gt; function executes one instruction&lt;/p&gt;
+
+&lt;p&gt;Some interesting opcode implementations:
+&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1143&#34;&gt;OP_IF&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1235&#34;&gt;OP_RETURN&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;bitcoin-core-code:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Bitcoin Core Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp&#34;&gt;script/interpreter.cpp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L524&#34;&gt;OP_DUP&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L752&#34;&gt;Crypto&lt;/a&gt;
+&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L785&#34;&gt;OP_CHECKSIG&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.crmarsh.com/script-playground/&#34;&gt;Script Playground&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Some interesting things you can do with bitcoin scripts:&lt;br /&gt;
+&lt;a href=&#34;https://en.bitcoin.it/wiki/Contracts&#34;&gt;Contracts&lt;/a&gt; (see also Nick Szabo&amp;rsquo;s &lt;a href=&#34;http://szabo.best.vwh.net/formalize.html&#34;&gt;&lt;em&gt;Formalizing and Securing Relationships on Public Networks&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://eprint.iacr.org/2013/784&#34;&gt;Secure Multiparty Computations&lt;/a&gt; (to implement lotteries)&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;OP_RETURN&lt;/code&gt;/pasted script execution bug doesn&amp;rsquo;t even make this list of &lt;a href=&#34;http://www.coindesk.com/9-biggest-screwups-bitcoin-history/&#34;&gt;&lt;em&gt;The 9 Biggest Screwups in Bitcoin History&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blockexplorer.com/rawblock/00000000000997f9fd2fe1ee376293ef8c42ad09193a5d2086dddf8e5c426b56&#34;&gt;Block 71036&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 11: More Mining</title>
@@ -122,7 +291,7 @@ a game of rock-paper-scissors?&lt;/p&gt;
     </item>
     
     <item>
-      <title>Class 9: Economics of Mining</title>
+      <title>Class 09: Economics of Mining</title>
       <link>http://bitcoin-class.org/classes/class9/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -197,7 +366,7 @@ something to answer in the blank below!)&lt;/p&gt;
     </item>
     
     <item>
-      <title>Class 8: Mining</title>
+      <title>Class 08: Mining</title>
       <link>http://bitcoin-class.org/classes/class8/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -350,7 +519,7 @@ processor like an Intel i7?
     </item>
     
     <item>
-      <title>Class 7: The Blockchain</title>
+      <title>Class 07: The Blockchain</title>
       <link>http://bitcoin-class.org/classes/class7/</link>
       <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -461,7 +630,7 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
     </item>
     
     <item>
-      <title>Class 6: Hash Functions</title>
+      <title>Class 06: Hash Functions</title>
       <link>http://bitcoin-class.org/classes/class6/</link>
       <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -538,7 +707,7 @@ the full string?
     </item>
     
     <item>
-      <title>Class 5: Becoming Paranoid</title>
+      <title>Class 05: Becoming Paranoid</title>
       <link>http://bitcoin-class.org/classes/class5/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -704,7 +873,7 @@ decision-making processes inside the government.&lt;/em&gt; (Andrew Odlyzko)&lt;
     </item>
     
     <item>
-      <title>Class 4: Checkup</title>
+      <title>Class 04: Checkup</title>
       <link>http://bitcoin-class.org/classes/class4/</link>
       <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -736,7 +905,7 @@ answers.)&lt;/p&gt;
     </item>
     
     <item>
-      <title>Class 3: Digital Signatures</title>
+      <title>Class 03: Digital Signatures</title>
       <link>http://bitcoin-class.org/classes/class3/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
@@ -941,7 +1110,7 @@ value, you are in big trouble!  A common mistake was to use
     </item>
     
     <item>
-      <title>Class 2: Cryptography</title>
+      <title>Class 02: Cryptography</title>
       <link>http://bitcoin-class.org/classes/class2/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
       
@@ -1143,7 +1312,7 @@ to solve to make a cryptocurrency?&lt;/p&gt;
     </item>
     
     <item>
-      <title>Class 1: What is Money?</title>
+      <title>Class 01: What is Money?</title>
       <link>http://bitcoin-class.org/classes/class1/</link>
       <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
       

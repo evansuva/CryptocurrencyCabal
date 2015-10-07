@@ -1,4 +1,4 @@
-% Class 2: Cryptography
+% Class 02: Cryptography
 % '2015-08-31'
 ## Schedule 
 

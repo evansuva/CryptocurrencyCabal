@@ -1,5 +1,5 @@
 ---
-title: "Class 1: What is Money?"
+title: "Class 01: What is Money?"
 date: '2015-08-26'
 print: "class1.pdf"
 nocomment: false

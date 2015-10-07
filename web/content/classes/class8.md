@@ -1,5 +1,5 @@
 ---
-title: "Class 8: Mining"
+title: "Class 08: Mining"
 date: '2015-09-21'
 print: "class8.pdf"
 nocomment: false

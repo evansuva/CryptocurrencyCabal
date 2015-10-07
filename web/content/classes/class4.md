@@ -1,5 +1,5 @@
 ---
-title: "Class 4: Checkup"
+title: "Class 04: Checkup"
 date: '2015-09-07'
 nocomment: false
 weight: 3

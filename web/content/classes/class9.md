@@ -1,7 +1,8 @@
 ---
-title: "Class 9: Economics of Mining"
+title: "Class 09: Economics of Mining"
 date: '2015-09-23'
 nocomment: false
+print: "class9.pdf"
 weight: 3
 menu: "classes"
 ---

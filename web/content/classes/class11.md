@@ -2,6 +2,7 @@
 title: "Class 11: More Mining"
 date: '2015-09-30'
 nocomment: false
+print: "class11.pdf"
 weight: 3
 menu: "classes"
 ---

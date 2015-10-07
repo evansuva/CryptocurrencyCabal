@@ -2,6 +2,7 @@
 title: "Class 10: Subverting Bitcoin"
 date: '2015-09-28'
 nocomment: false
+print: "class10.pdf"
 weight: 3
 menu: "classes"
 ---
