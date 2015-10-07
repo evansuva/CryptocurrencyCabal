@@ -23,6 +23,13 @@ most relevant to today's class.)
 
 **Monday, October 19**: Midterm Exam</div>
 
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/aQYiH6zGCIgxbO" width="625" height="400" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"> </iframe> 
+
+   <div class="caption">
+Sorry, ink markings were lost from today.  [Download the slides](/classes/class12-post.pptx)
+   </div>
+
 # Hash Collisions!
 
 **Computing a bitcoin address:** ([bitcoinwiki](https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses))

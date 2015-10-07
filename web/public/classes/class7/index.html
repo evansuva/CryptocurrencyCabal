@@ -20,7 +20,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://bitcoin-class.org/classes/class7/" />
+<meta property="og:url" content="http://localhost:1313/classes/class7/" />
 
 
   
@@ -52,7 +52,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
 
 
-  <link rel="stylesheet" href="http://bitcoin-class.org/css/cabal.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/cabal.css">
 
   
  
@@ -78,7 +78,7 @@ function showText(show,hide)
     
 
 
-    <a href="http://bitcoin-class.org"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
+    <a href="http://localhost:1313/"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
     <h2 class="brand-tagline">University of Virginia
     <br>cs4501 Fall 2015
     </h2>
@@ -385,5 +385,8 @@ Fall 2015
 	
 
   
-</body>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
