@@ -29,6 +29,7 @@ most relevant to today's class.)
    <div class="caption">
 Sorry, ink markings were lost from today.  [Download the slides](/classes/class12-post.pptx)
    </div>
+</center>
 
 # Hash Collisions!
 
