@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Cryptocurrency Cabal</title>
-    <link>http://localhost:1313/news/</link>
+    <link>http://bitcoin-class.org/news/</link>
     <description>Recent content in News on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Sep 2015 21:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bitcoin-class.org/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Darkode</title>
-      <link>http://localhost:1313/news/radiolab/</link>
+      <link>http://bitcoin-class.org/news/radiolab/</link>
       <pubDate>Wed, 23 Sep 2015 21:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/radiolab/</guid>
+      <guid>http://bitcoin-class.org/news/radiolab/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.radiolab.org/story/darkode/&#34;&gt;latest episode of Radiolab&lt;/a&gt;
 starts with a story about bitcoin being used in a ransom scam
 (CryptoLocker).  Its a sad story, without a lot of technical insights,
@@ -28,10 +28,10 @@ anonymity and decentralization.&lt;/p&gt;
     
     <item>
       <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://localhost:1313/news/u21/</link>
+      <link>http://bitcoin-class.org/news/u21/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/u21/</guid>
+      <guid>http://bitcoin-class.org/news/u21/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
 
 &lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
@@ -48,10 +48,10 @@ for including a miner in it.&lt;/p&gt;
     
     <item>
       <title>Banking Blockchains</title>
-      <link>http://localhost:1313/news/blockchain/</link>
+      <link>http://bitcoin-class.org/news/blockchain/</link>
       <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/blockchain/</guid>
+      <guid>http://bitcoin-class.org/news/blockchain/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.ft.com/cms/s/0/f358ed6c-5ae0-11e5-9846-de406ccb37f2.html&#34;&gt;&lt;em&gt;Blockchain initiative backed by 9 large investment banks&lt;/em&gt;&lt;/a&gt;, Financial Times, 15 Sept 2015.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://recode.net/2015/09/15/nine-of-the-worlds-biggest-banks-form-blockchain-partnership/&#34;&gt;&lt;em&gt;Nine of the World’s Biggest Banks Form Blockchain Partnership&lt;/em&gt;&lt;/a&gt;, Re/Code, 15 Sept 2015.&lt;/p&gt;
@@ -64,10 +64,10 @@ for including a miner in it.&lt;/p&gt;
     
     <item>
       <title>Inside the Fight Over Bitcoin’s Future</title>
-      <link>http://localhost:1313/news/bitcoinxt/</link>
+      <link>http://bitcoin-class.org/news/bitcoinxt/</link>
       <pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/bitcoinxt/</guid>
+      <guid>http://bitcoin-class.org/news/bitcoinxt/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s an article in the New Yorker, &lt;a href=&#34;http://www.newyorker.com/business/currency/inside-the-fight-over-bitcoins-future&#34;&gt;&lt;em&gt;Inside the Fight Over Bitcoin’s
 Future&lt;/em&gt;&lt;/a&gt;,
 25 August 2015 (by Maria Bustillos) about the split over the
@@ -85,10 +85,10 @@ a decentralized system.&lt;/p&gt;
     
     <item>
       <title>Bitcoin Technology Piques Interest on Wall St.</title>
-      <link>http://localhost:1313/news/nyt/</link>
+      <link>http://bitcoin-class.org/news/nyt/</link>
       <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/nyt/</guid>
+      <guid>http://bitcoin-class.org/news/nyt/</guid>
       <description>&lt;p&gt;New York Times, &lt;a href=&#34;http://www.nytimes.com/2015/08/31/business/dealbook/bitcoin-technology-piques-interest-on-wall-st.html&#34;&gt;&lt;em&gt;Bitcoin Technology Piques Interest on Wall St.&lt;/em&gt;&lt;/a&gt;, 28 August 2015 (by Nathaniel Popper).&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -99,17 +99,17 @@ a decentralized system.&lt;/p&gt;
     
     <item>
       <title>Ombuds: Using Bitcoin to make online messages &#39;immutable&#39;</title>
-      <link>http://localhost:1313/news/ombuds/</link>
+      <link>http://bitcoin-class.org/news/ombuds/</link>
       <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/ombuds/</guid>
+      <guid>http://bitcoin-class.org/news/ombuds/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s an article about the Ombuds project created by Alex Kuck and
 Nick Skelsey to use the bitcoin blockchain for communications:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.journalism.co.uk/news/ombuds-using-bitcoin-to-make-online-messages-immutable-/s2/a566167/&#34;&gt;&lt;em&gt;Ombuds: Using Bitcoin to make online messages &amp;lsquo;immutable&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Journalism.co.uk, 20 August 2015.&lt;/p&gt;
 
 &lt;p&gt;Alex and Nick graduated from UVa in Spring 2015, and helped develop the
-&lt;a href=&#34;http://localhost:1313/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
+&lt;a href=&#34;http://bitcoin-class.org/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
 cryptocurrency.&lt;/p&gt;
 </description>
     </item>
