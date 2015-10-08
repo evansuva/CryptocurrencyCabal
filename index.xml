@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptocurrency Cabal</title>
-    <link>http://localhost:1313/</link>
+    <link>http://bitcoin-class.org/</link>
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PS2: The Blockchain</title>
-      <link>http://localhost:1313/ps/ps2/</link>
+      <link>http://bitcoin-class.org/ps/ps2/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ps/ps2/</guid>
+      <guid>http://bitcoin-class.org/ps/ps2/</guid>
       <description>
 
 &lt;h1 id=&#34;problem-set-2-br-the-blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Problem Set 2:&lt;br&gt; The Blockchain&lt;/h1&gt;
@@ -135,7 +135,7 @@ on reading it.&lt;/p&gt;
 
 &lt;h1 id=&#34;blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain&lt;/h1&gt;
 
-&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;http://localhost:1313/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;http://localhost:1313/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;http://bitcoin-class.org/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Ittay Eyal and Emin G&amp;uuml;n Sirer, &lt;a href=&#34;http://arxiv.org/pdf/1311.0243v5.pdf&#34;&gt;&lt;em&gt;Majority is not Enough: Bitcoin
@@ -249,10 +249,10 @@ them would be most impressive.)&lt;/p&gt;
     
     <item>
       <title>PS1: Bitcoin Transactions</title>
-      <link>http://localhost:1313/ps/ps1/</link>
+      <link>http://bitcoin-class.org/ps/ps1/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ps/ps1/</guid>
+      <guid>http://bitcoin-class.org/ps/ps1/</guid>
       <description>
 
 &lt;h1 id=&#34;problem-set-1-bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Problem Set 1: Bitcoin Transactions&lt;/h1&gt;
@@ -428,7 +428,7 @@ $ export GOPATH=$Home/go_workspace
   btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Setting up git.&lt;/strong&gt; Before continuing with this assignment, you should
-&lt;a href=&#34;http://localhost:1313/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
+&lt;a href=&#34;http://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
 and follow the directions there to set up your private repository
 containing the starting code for ps1.  (It may seem like overkill to use
 git for this assignment since you will not need to write much code or
@@ -488,7 +488,7 @@ see that it produces a different key pair each time.)&lt;/p&gt;
 class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;, and finding the corresponding public key by
 &amp;ldquo;multiplying&amp;rdquo; it by &lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;, the generator point.
 (Multiplication here is not standard multiplication, but multiplication
-on the elliptic curve, as discussed in &lt;a href=&#34;http://localhost:1313/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
+on the elliptic curve, as discussed in &lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; is defined by &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L912&#34;&gt;lines
 912-3&lt;/a&gt;):&lt;/p&gt;
 
@@ -668,10 +668,10 @@ be able to learn something by attemting to do this.&lt;/p&gt;
     
     <item>
       <title>Getting Started with Github</title>
-      <link>http://localhost:1313/tools/github/</link>
+      <link>http://bitcoin-class.org/tools/github/</link>
       <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tools/github/</guid>
+      <guid>http://bitcoin-class.org/tools/github/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-started-with-github:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Getting Started with Github&lt;/h1&gt;
@@ -741,7 +741,7 @@ working copy, and push to the main repository.&lt;/p&gt;&lt;/li&gt;
 
 &lt;h2 id=&#34;setting-up-the-repository:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Setting up the Repository&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;http://localhost:1313/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;1. Create a new repository named &lt;code&gt;ps1&lt;/code&gt;.&lt;/b&gt;&lt;/p&gt;
 
@@ -853,10 +853,10 @@ changes (or recover from mistakes).&lt;/p&gt;
     
     <item>
       <title>Registration</title>
-      <link>http://localhost:1313/registration/</link>
+      <link>http://bitcoin-class.org/registration/</link>
       <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/registration/</guid>
+      <guid>http://bitcoin-class.org/registration/</guid>
       <description>
 
 &lt;h1 id=&#34;course-registration:38a8983f478dea556d71617301415c7f&#34;&gt;Course Registration&lt;/h1&gt;
@@ -895,10 +895,10 @@ this, be careful, and don&amp;rsquo;t use any funds you cannot afford to lose!&l
     
     <item>
       <title>Syllabus</title>
-      <link>http://localhost:1313/syllabus/</link>
+      <link>http://bitcoin-class.org/syllabus/</link>
       <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/syllabus/</guid>
+      <guid>http://bitcoin-class.org/syllabus/</guid>
       <description>
 
 &lt;h1 id=&#34;syllabus:051025d606153e159a2b11ffecb897d5&#34;&gt;Syllabus&lt;/h1&gt;
@@ -1136,10 +1136,10 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     
     <item>
       <title>Class 12: Script</title>
-      <link>http://localhost:1313/classes/class12/</link>
+      <link>http://bitcoin-class.org/classes/class12/</link>
       <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/classes/class12/</guid>
+      <guid>http://bitcoin-class.org/classes/class12/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h2&gt;
@@ -1161,7 +1161,7 @@ most relevant to today&amp;rsquo;s class.)&lt;/p&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/aQYiH6zGCIgxbO&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Sorry, ink markings were lost from today.  &lt;a href=&#34;http://localhost:1313/classes/class12-post.pptx&#34;&gt;Download the slides&lt;/a&gt;
+Sorry, ink markings were lost from today.  &lt;a href=&#34;http://bitcoin-class.org/classes/class12-post.pptx&#34;&gt;Download the slides&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
 
@@ -1236,11 +1236,11 @@ Machine!&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>PS2 / Projects</title>
-      <link>http://localhost:1313/announcements/ps2/</link>
+      <link>http://bitcoin-class.org/announcements/ps2/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/ps2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ps/ps2/&#34;&gt;Problem Set 2&lt;/a&gt; is now posted, and is due
+      <guid>http://bitcoin-class.org/announcements/ps2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps2/&#34;&gt;Problem Set 2&lt;/a&gt; is now posted, and is due
 Friday, 9 October (8:29pm).  Sorry it took so long to post this!&lt;/p&gt;
 
 &lt;p&gt;The other thing I hope everyone thinks about over &amp;ldquo;reading break&amp;rdquo;, is
@@ -1257,10 +1257,10 @@ you want to start early, it may be possible to arrange for it to substitute for 
     
     <item>
       <title>Class 11: More Mining</title>
-      <link>http://localhost:1313/classes/class11/</link>
+      <link>http://bitcoin-class.org/classes/class11/</link>
       <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/classes/class11/</guid>
+      <guid>http://bitcoin-class.org/classes/class11/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h2&gt;
@@ -1281,7 +1281,7 @@ you want to start early, it may be possible to arrange for it to substitute for 
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class11.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class11.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1314,10 +1314,10 @@ embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/cla
     
     <item>
       <title>Checkup 2 Revisions</title>
-      <link>http://localhost:1313/announcements/checkup2revisions/</link>
+      <link>http://bitcoin-class.org/announcements/checkup2revisions/</link>
       <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/checkup2revisions/</guid>
+      <guid>http://bitcoin-class.org/announcements/checkup2revisions/</guid>
       <description>&lt;p&gt;If you didn&amp;rsquo;t get a &amp;ldquo;gold star&amp;rdquo; on &lt;a href=&#34;./checkup2.pdf&#34;&gt;Checkup 2&lt;/a&gt;, you can
 improve your score by answering one or more of the questions below.  You
 can submit your revisions in class Wednesday, or at the end of office
@@ -1362,10 +1362,10 @@ the hash of block 532.  Would this be a good idea?&lt;/p&gt;
     
     <item>
       <title>Class 10: Subverting Bitcoin</title>
-      <link>http://localhost:1313/classes/class10/</link>
+      <link>http://bitcoin-class.org/classes/class10/</link>
       <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/classes/class10/</guid>
+      <guid>http://bitcoin-class.org/classes/class10/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h2&gt;
@@ -1380,14 +1380,14 @@ the hash of block 532.  Would this be a good idea?&lt;/p&gt;
 
 &lt;h1 id=&#34;checkup-2:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Checkup 2&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/tLGdRxu6IVVzni&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class10.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class10.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1417,10 +1417,10 @@ a game of rock-paper-scissors?&lt;/p&gt;
     
     <item>
       <title>Darkode</title>
-      <link>http://localhost:1313/news/radiolab/</link>
+      <link>http://bitcoin-class.org/news/radiolab/</link>
       <pubDate>Wed, 23 Sep 2015 21:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/radiolab/</guid>
+      <guid>http://bitcoin-class.org/news/radiolab/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.radiolab.org/story/darkode/&#34;&gt;latest episode of Radiolab&lt;/a&gt;
 starts with a story about bitcoin being used in a ransom scam
 (CryptoLocker).  Its a sad story, without a lot of technical insights,
@@ -1434,10 +1434,10 @@ anonymity and decentralization.&lt;/p&gt;
     
     <item>
       <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://localhost:1313/news/u21/</link>
+      <link>http://bitcoin-class.org/news/u21/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/news/u21/</guid>
+      <guid>http://bitcoin-class.org/news/u21/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
 
 &lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
@@ -1454,10 +1454,10 @@ for including a miner in it.&lt;/p&gt;
     
     <item>
       <title>Class 09: Economics of Mining</title>
-      <link>http://localhost:1313/classes/class9/</link>
+      <link>http://bitcoin-class.org/classes/class9/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/classes/class9/</guid>
+      <guid>http://bitcoin-class.org/classes/class9/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h2&gt;
@@ -1470,7 +1470,7 @@ for including a miner in it.&lt;/p&gt;
 
 &lt;h1 id=&#34;checkup-2:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Checkup 2&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;As was suggested in class today, there won&amp;rsquo;t be an immediate opportunity
 to submit revisions for this (like there was for Checkup 1), but there
@@ -1484,7 +1484,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1529,10 +1529,10 @@ something to answer in the blank below!)&lt;/p&gt;
     
     <item>
       <title>Class 08: Mining</title>
-      <link>http://localhost:1313/classes/class8/</link>
+      <link>http://bitcoin-class.org/classes/class8/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/classes/class8/</guid>
+      <guid>http://bitcoin-class.org/classes/class8/</guid>
       <description>
 
 &lt;h2 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h2&gt;
@@ -1565,7 +1565,7 @@ marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://localhost:1313/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
@@ -1635,7 +1635,7 @@ func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;What is needed to verify &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;H&lt;sub&gt;root&lt;/sub&gt;&lt;/span&gt;?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1682,10 +1682,10 @@ processor like an Intel i7?
     
     <item>
       <title>Checkup 1 Comments</title>
-      <link>http://localhost:1313/announcements/checkup1/</link>
+      <link>http://bitcoin-class.org/announcements/checkup1/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/announcements/checkup1/</guid>
+      <guid>http://bitcoin-class.org/announcements/checkup1/</guid>
       <description>
 
 &lt;p&gt;Here are answers and discussions for the Checkup 1 questions.  It would
