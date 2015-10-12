@@ -39,7 +39,7 @@
     <b><A href="/classes/">Classes</a></b>
     <nav class="nav">
       <ul class="nav-list">
-        {{ range first 3 .Site.Menus.classes.Reverse }}
+        {{ range last 3 .Site.Menus.classes }}
           <li class="nav-item">
           {{ if eq $.Title .Name }}
               <span class="nav-item-selected">{{ .Name }}</span></a>
