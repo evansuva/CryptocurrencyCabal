@@ -1135,6 +1135,34 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 13: Law and Policy</title>
+      <link>http://bitcoin-class.org/classes/class13/</link>
+      <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class13/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt; &lt;strong&gt;Monday-Wednesday, October &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;21&lt;/sub&gt;&lt;/strong&gt;: Midterm Exam.
+Part of the midterm will be handed out in class on Monday, Oct 19. The
+midterm will be in class on Wednesday, October 21.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Today&amp;rsquo;s class was a visit from Tom Dukes on law and policy related to cryptocurrencies.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.law.virginia.edu/lawweb/faculty.nsf/FHPbI/1378405&#34;&gt;Tom Duke&amp;rsquo;s Bio&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Congressional Research Service report he mentioned: &lt;a href=&#34;https://www.fas.org/sgp/crs/misc/R43339.pdf&#34;&gt;&lt;em&gt;Bitcoin:
+Questions, Answers, and Analysis of Legal
+Issues&lt;/em&gt;&lt;/a&gt;, 14 August
+2015. This provides a good summary of US laws and regulations that apply
+to bitcoin, and why Congress is interested in it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Midterm Schedule Update</title>
       <link>http://bitcoin-class.org/announcements/updates/</link>
       <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
@@ -1546,159 +1574,6 @@ very difficult question to answer, would be a good project idea, not
 something to answer in the blank below!)&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 08: Mining</title>
-      <link>http://bitcoin-class.org/classes/class8/</link>
-      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class8/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.&lt;br /&gt;
-&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;br /&gt;
-&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;reminders:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Reminders&lt;/h2&gt;
-
-&lt;p&gt;You can &lt;a href=&#34;https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics&#34;&gt;subscribe to the course
-calendar&lt;/a&gt;.
-This has updated information on deadlines and office hours.&lt;/p&gt;
-
-&lt;p&gt;If you want to receive course website updates by email, you can
-subscribe to the RSS feed using a RSS reader or an emailing service like
-&lt;a href=&#34;https://www.feedmyinbox.com/&#34;&gt;feedmyinbox.com&lt;/a&gt; or
-&lt;a href=&#34;http://blogtrottr.com/&#34;&gt;Blogtrottr&lt;/a&gt;.  The feed address is
-&lt;a href=&#34;http://bitcoin-class.org/index.xml&#34;&gt;http://bitcoin-class.org/index.xml&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We generally will avoid sending out emails to the class, and will assume
-you are observing the website closely.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ir3gwqoaGyncK4&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;exploring-blocks:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Exploring Blocks&lt;/h1&gt;
-
-&lt;table&gt;
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Label&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Bytes&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Block version information&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;prev_block&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Hash of the previous block&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;merkle_root&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Hash of Merkle tree of all transactions&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;timestamp&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;When block was created (overflows in 2106)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;bits&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Difficulty target used for this block&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;nonce&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Nonce found to generate this block&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&#34;merkle-trees:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Merkle Trees&lt;/h1&gt;
-
-&lt;p&gt;Ralph Merkle, &lt;a href=&#34;http://merkle.com/1974/&#34;&gt;&lt;em&gt;Publishing a New Idea&lt;/em&gt;&lt;/a&gt;.
-Includes his &lt;a href=&#34;http://merkle.com/1974/FirstCS244projectProposal.pdf&#34;&gt;cs244 project
-proposal&lt;/a&gt;
-(&amp;ldquo;Discussion: No, I am not joking.&amp;ldquo;) and &lt;a href=&#34;http://merkle.com/1974/ExpertLetter.pdf&#34;&gt;ACM rejection
-letter&lt;/a&gt; (&amp;ldquo;I am sorry to have to
-inform you that the paper is not in the main stream of present
-cryptography thinking and I would not recommend that it be
-published&amp;hellip;&amp;ldquo;).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/master/blockchain/merkle.go&#34;&gt;https://github.com/btcsuite/btcd/blob/master/blockchain/merkle.go&lt;/a&gt; (some comments removed)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// HashMerkleBranches takes two hashes, treated as the left and right tree
-// nodes, and returns the hash of their concatenation. 
-func HashMerkleBranches(left *btcwire.ShaHash, right *btcwire.ShaHash) *btcwire.ShaHash {
-   var sha [btcwire.HashSize * 2]byte
-   copy(sha[:btcwire.HashSize], left.Bytes())
-   copy(sha[btcwire.HashSize:], right.Bytes())
-   newSha, _ := btcwire.NewShaHash(btcwire.DoubleSha256(sha[:]))
-   return newSha
-}
-
-func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
-    nextPoT := nextPowerOfTwo(len(transactions))
-    arraySize := nextPoT*2 - 1
-    merkles := make([]*btcwire.ShaHash, arraySize)
-
-    // Create the base transaction shas and populate the array with them.
-    for i, tx := range transactions { merkles[i] = tx.Sha() }
-
-    // Start the array offset after the last transaction and adjusted to the
-    // next power of two.
-    offset := nextPoT
-    for i := 0; i &amp;lt; arraySize-1; i += 2 {
-        switch {
-           case merkles[i] == nil: 
-              merkles[offset] = nil
-
-           case merkles[i+1] == nil:
-              newSha := HashMerkleBranches(merkles[i], merkles[i])
-              merkles[offset] = newSha
-       
-           default:
-              newSha := HashMerkleBranches(merkles[i], merkles[i+1])
-              merkles[offset] = newSha
-       }
-       offset++
-    }
-    return merkles
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;What is needed to verify &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;H&lt;sub&gt;root&lt;/sub&gt;&lt;/span&gt;?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What must be recomputed if &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt; is replaced?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What must be computed if a new node, &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;5&lt;/sub&gt;&lt;/span&gt;, is added?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How many SHA-256 hashes must be computed to verify &lt;a href=&#34;https://blockexplorer.com/block/00000000000000000a02a2bf9d7b366e226160b8412830e6d72061ea7712d970&#34;&gt;Block 375474&lt;/a&gt;?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;mining-cost:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Mining Cost&lt;/h1&gt;
-
-&lt;p&gt;The measured time to compute one SHA-256 hash on my EC2 node (2.5 GHz
-processor) is 750 ns.  Approximately &lt;em&gt;how many instructions execute&lt;/em&gt; to
-compute on SHA-256 hash?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assumption.&lt;/strong&gt; SHA-256 produces a uniform random output.  (We know this
-  is not really true, but it is a reasonable approximation, and
-  necessary for the analysis.)  So, we can model SHA-256 on any (new)
-  input &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; as drawing randomly from 2&lt;sup&gt;256&lt;/sup&gt; possible outputs:&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SHA-256(&lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;) &amp;larr; [0, 2&lt;sup&gt;256&lt;/sup&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ Target = \frac{T_{max}}{Difficulty}$&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;$ T_{max} \approx 2^{224}$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://bitcoinwisdom.com/bitcoin/difficulty&#34;&gt;Current Bitcoin Difficulty&lt;/a&gt; = 59,335,351,234&lt;/p&gt;
-
-&lt;h1 id=&#34;energy:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Energy&lt;/h1&gt;
-
-&lt;p&gt;Why is energy/hash so much less for custom ASICs?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;In an ASIC, it is possible to build an XOR using 4 transistors.  How
-many transistors have to flip to do an XOR on a general purpose
-processor like an Intel i7?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
