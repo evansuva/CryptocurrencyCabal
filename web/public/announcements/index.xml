@@ -6,8 +6,29 @@
     <description>Recent content in Announcements on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Extra Office Hours</title>
+      <link>http://bitcoin-class.org/announcements/extraoffice/</link>
+      <pubDate>Thu, 15 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/extraoffice/</guid>
+      <description>&lt;p&gt;There will be some additional office hours next week:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Monday, 5-6:30pm (Ori, Rice 442)&lt;/li&gt;
+&lt;li&gt;Tuesday, 2-3:30pm (Dave, Rice 507) &lt;strong&gt;[Added]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tuesday, 3:30-4:30pm (Samee, Rice 442) &lt;strong&gt;[Added]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Wednesday, 3:30-4:30pm (Samee, Rice 442)&lt;/li&gt;
+&lt;li&gt;Thursday, 2:30-3:30 (Dave, Rice 507)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I hope these will be helpful in preparing for the midterm, as well as
+for discussing project ideas.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Midterm Schedule Update</title>

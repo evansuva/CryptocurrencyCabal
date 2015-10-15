@@ -1135,6 +1135,27 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Extra Office Hours</title>
+      <link>http://bitcoin-class.org/announcements/extraoffice/</link>
+      <pubDate>Thu, 15 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/extraoffice/</guid>
+      <description>&lt;p&gt;There will be some additional office hours next week:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Monday, 5-6:30pm (Ori, Rice 442)&lt;/li&gt;
+&lt;li&gt;Tuesday, 2-3:30pm (Dave, Rice 507) &lt;strong&gt;[Added]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tuesday, 3:30-4:30pm (Samee, Rice 442) &lt;strong&gt;[Added]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Wednesday, 3:30-4:30pm (Samee, Rice 442)&lt;/li&gt;
+&lt;li&gt;Thursday, 2:30-3:30 (Dave, Rice 507)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I hope these will be helpful in preparing for the midterm, as well as
+for discussing project ideas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 13: Law and Policy</title>
       <link>http://bitcoin-class.org/classes/class13/</link>
       <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
@@ -1499,81 +1520,6 @@ for including a miner in it.&lt;/p&gt;
 
 &lt;p&gt;You can buy it from
 &lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 09: Economics of Mining</title>
-      <link>http://bitcoin-class.org/classes/class9/</link>
-      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class9/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.&lt;br /&gt;
-&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later.
-&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;checkup-2:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Checkup 2&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As was suggested in class today, there won&amp;rsquo;t be an immediate opportunity
-to submit revisions for this (like there was for Checkup 1), but there
-will be some opportunity to improve your checkup result given in
-Monday&amp;rsquo;s class.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/sTwMIV59OWvurX&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;energy:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Energy&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://en.bitcoin.it/wiki/Mining_hardware_comparison&#34;&gt;Mining Hardware&lt;/a&gt;
-- current ASIC miners achive &amp;gt;5 Billion hashes per seconds and over 1500
-Million hashes per Joule (the energy required to lift an apple one
-meter).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://bitcointalk.org/index.php?topic=1152746.0&#34;&gt;Antminer S5+&lt;/a&gt;
-(here&amp;rsquo;s the specs on the mining hardware we looked at in class)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.thecoinsman.com/2014/08/bitcoin/inside-chinese-bitcoin-mine/&#34;&gt;&lt;em&gt;Inside a Chinese Bitcoin Mine&lt;/em&gt;&lt;/a&gt;, The Coinsman, 11 August 2014.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The first thing you notice as you approach the warehouse is the noise. It begins as soon as you step out of the car, at which point it sounds like massive swarm of angry bees droning away somewhere off in the distance. It becomes louder and louder the closer you get to the building, and as you step through the doors it becomes a deafening and steady roar&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Our nearest nuclear plant, the &lt;a href=&#34;https://www.dom.com/corporate/what-we-do/electricity/generation/nuclear/north-anna-power-station&#34;&gt;North Anna Power
-Station&lt;/a&gt;
-(Lake Anna) generates 1892 MW, &amp;ldquo;enough to power 450,000 homes&amp;rdquo; or about
-9x the amount needed to power the current bitcoin network (only counting
-the miners themselves; additional power needed for cooling, etc.)&lt;/p&gt;
-
-&lt;p&gt;Is it financially lucrative to mine bitcoin in your residencev?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;(&lt;strong&gt;Caveat:&lt;/strong&gt; despite the very rough estimate from class today, we are
-not recommending anyone invest in bitcoin mining!)&lt;/p&gt;
-
-&lt;p&gt;How does the energy use of bitcoin compare to what is used by the
-current financial infrastructure for comparable service?  (This is a
-very difficult question to answer, would be a good project idea, not
-something to answer in the blank below!)&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
