@@ -1156,6 +1156,51 @@ for discussing project ideas.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 14: FBI Visit</title>
+      <link>http://bitcoin-class.org/classes/class14/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class14/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt; &lt;strong&gt;Monday-Wednesday, October &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;21&lt;/sub&gt;&lt;/strong&gt;: Midterm Exam.
+Part of the midterm will be handed out in class on Monday, Oct 19. The
+midterm will be in class on Wednesday, October 21.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Today&amp;rsquo;s class was a visit from Special Agent Jeremy D&amp;rsquo;Errico, Special
+Benjamin Blome, David Cochran, and Stuart VonCanon from the Federal
+Bureau of Investigation (Richmond Division).&lt;/p&gt;
+
+&lt;p&gt;For Problem Set 3, you will be analyzing the blockchain to understand
+transactions involving bitcoin ransomware crimes.  Some links to
+relevant posts and papers:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.secureworks.com/cyber-threat-intelligence/threats/cryptowall-ransomware/&#34;&gt;CryptoWall Ransomware&lt;/a&gt;,
+Dell SecureWorks Counter Threat, August 2014.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.cylance.com/tearing-down-cryptowall&#34;&gt;Tearing Down
+Cryptowall&lt;/a&gt;, Brian
+Wallace, 4 November 2014.&lt;/p&gt;
+
+&lt;p&gt;Amin Kharraz, William Robertson, Davide Balzarotti, Leyla Bilge, and
+Engin Kirda.  &lt;a href=&#34;http://www.seclab.nu/static/publications/dimva2015ransomware.pdf&#34;&gt;&lt;em&gt;Cutting the Gordian Knot: A Look Under the Hood of
+Ransomware
+Attacks&lt;/em&gt;&lt;/a&gt;. DIMVA
+2015.&lt;/p&gt;
+
+&lt;p&gt;Shuang Hao, Kevin Borgolte, Nick Nikiforakis, Gianluca Stringhini,
+Manuel Egele, Michael Eubanks, Brian Krebs, Giovanni Vigna. &lt;a href=&#34;https://www.cs.ucsb.edu/~vigna/publications/2015_CCS_ShippingMules.pdf&#34;&gt;&lt;em&gt;Drops for
+Stuff: An Analysis of Reshipping Mule
+Scams&lt;/em&gt;&lt;/a&gt;. ACM
+Conference on Computer and Communications Security 2015.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 13: Law and Policy</title>
       <link>http://bitcoin-class.org/classes/class13/</link>
       <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
@@ -1500,26 +1545,6 @@ people today.  A good thing to think about for a potential project is
 how to solve the problem &amp;mdash;- making it so bitcoin can&amp;rsquo;t be used to
 collect ransom untracably, without losing the desirable aspects of
 anonymity and decentralization.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://bitcoin-class.org/news/u21/</link>
-      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/news/u21/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
-
-&lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
-actually doing.  They have designed some custom mining hardware, but
-hard to see how it makes sense as a USB device for individuals.  I could
-see the value in a secure USB device that works as a bitcoin wallet and
-can be smoothly integrated with a web client, but hard to see the case
-for including a miner in it.&lt;/p&gt;
-
-&lt;p&gt;You can buy it from
-&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
