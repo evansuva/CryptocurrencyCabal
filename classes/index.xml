@@ -6,8 +6,131 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 15: Scripting Transactions</title>
+      <link>http://bitcoin-class.org/classes/class15/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class15/</guid>
+      <description>
+
+&lt;h2 id=&#34;midterm-exam:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Midterm Exam&lt;/h2&gt;
+
+&lt;p&gt;The midterm exam will be in class, &lt;strong&gt;Wednesday, 21
+  October&lt;/strong&gt;.  The midterm will be closed-resources, but is meant to test
+  understanding, not memorization.&lt;/p&gt;
+
+&lt;p&gt;The midterm covers: Classes 1-15, Checkups 1-2, Problem Sets 1-2, and
+  the assigned readings: Chapters 1, 2, 3, and 5 from &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and
+  Cryptocurrency
+  Technologies&lt;/em&gt;&lt;/a&gt;;
+  Chapters 1, 2, 3, 4, 6, and 7 from &lt;a href=&#34;https://github.com/aantonop/bitcoinbook&#34;&gt;&lt;em&gt;Mastering Bitcoin: Unlocking
+  Digital Cryptocurrencies&lt;/em&gt;&lt;/a&gt;;
+  Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
+  System&lt;/em&gt;&lt;/a&gt;; Ittay Eyal and Emin
+  G&amp;uuml;n Sirer, &lt;a href=&#34;http://arxiv.org/pdf/1311.0243v5.pdf&#34;&gt;&lt;em&gt;Majority is not Enough: Bitcoin Mining is
+  Vulnerable&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first two questions on the midterm will ask you to comment on the
+  technical validity of some statements in the &lt;a href=&#34;https://www.fas.org/sgp/crs/misc/R43339.pdf&#34;&gt;Congressional Research
+  Service report&lt;/a&gt; (in the
+  first 8 pages, not the policy issues).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Extra Office Hours.&lt;/strong&gt; There will be some additional office hours this week:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Monday, 5-6:30pm (Ori, Rice 442)&lt;/li&gt;
+&lt;li&gt;Tuesday, 2-3:30pm (Dave, Rice 507) &lt;strong&gt;(Added)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tuesday, 3:30-4:30pm (Samee, Rice 442) &lt;strong&gt;(Added)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Wednesday, 3:30-4:30pm (Samee, Rice 442)&lt;/li&gt;
+&lt;li&gt;Thursday, 2:30-3:30 (Dave, Rice 507)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;scripting-transactions:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Scripting Transactions&lt;/h2&gt;
+
+&lt;p&gt;Recall from class 12: Transaction outputs in bitcoin are protected by
+&lt;em&gt;locking scripts&lt;/em&gt;, and must be unlocked by &lt;em&gt;unlocking scripts&lt;/em&gt;.  A
+transaction output is not unlocked unless an unlocking script is
+provided such that the result of executing the unlocking script,
+followed by executing the locking script, is a stack with value True on
+top.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_IF&lt;/code&gt; &lt;em&gt;statements&lt;/em&gt; &lt;code&gt;OP_ENDIF&lt;/code&gt; - If the top of the stack is &lt;strong&gt;1&lt;/strong&gt;, executes &lt;em&gt;statements&lt;/em&gt;.  Otherwise does nothing.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_CHECKSIG&lt;/code&gt; - Pops two items from the stack, &lt;em&gt;publickey&lt;/em&gt; and &lt;em&gt;sig&lt;/em&gt;.
+Verifies the entire transaction (known from node state, not the stack)
+using the &lt;em&gt;publickey&lt;/em&gt; and &lt;em&gt;sig&lt;/em&gt;.  If the signature is valid, push &lt;strong&gt;1&lt;/strong&gt;;
+otherwise, &lt;strong&gt;0&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_1 OP_DUP OP_ADD OP_DUP OP_SUB OP_VERIFY&lt;/code&gt;
+&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;The most common locking script (send to public address):&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_DUP&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_HASH160&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_DATA20&lt;/code&gt; &lt;em&gt;(bitcoin address)&lt;/em&gt;&lt;br /&gt;
+&lt;code&gt;OP_EQUALVERIFY&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_CHECKSIG&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What must be on the stack for the locking script to succeed (end with &lt;strong&gt;1&lt;/strong&gt; on top of stack)?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;!-- page--&gt;
+
+&lt;p&gt;&lt;code&gt;OP_HASH160&lt;/code&gt;&lt;br /&gt;
+&lt;em&gt;20-byte hash&lt;/em&gt;&lt;br /&gt;
+&lt;code&gt;OP_EQUAL&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What must be on the stack for the locking script above (&amp;ldquo;Pay-to-Script-Hash&amp;rdquo;) to succeed?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;According to &lt;a href=&#34;http://www.quantabytes.com/articles/a-survey-of-bitcoin-transaction-types&#34;&gt;Most Popular Transaction
+Scripts&lt;/a&gt;
+(analysis of all transactions in first 290,000 blocks), the ninth most popular script is:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;OP_RETURN&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;OP_DATA_40&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;What must be on the stack for the &lt;code&gt;OP_RETURN OP_DATA_40&lt;/code&gt; locking script to succeed (end with
+&lt;strong&gt;1&lt;/strong&gt; on top of stack)? (Trick question: what happens to the coin
+protected by this locking script?)&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;btcd-code:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;BTCD Code&lt;/h2&gt;
+
+&lt;p&gt;Type: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L206&#34;&gt;Script&lt;/a&gt; is the virtual machine the executes scripts (note that it has two Stacks)&lt;/p&gt;
+
+&lt;p&gt;Execute a script: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L723&#34;&gt;Execute&lt;/a&gt;&lt;br /&gt;
+Execute one instruction: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L782&#34;&gt;Step&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L38&#34;&gt;Opcodes&lt;/a&gt;: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L971&#34;&gt;exec&lt;/a&gt; function executes one instruction&lt;/p&gt;
+
+&lt;p&gt;Some interesting opcode implementations: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1143&#34;&gt;OP_IF&lt;/a&gt;, &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1235&#34;&gt;OP_RETURN&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;bitcoin-core-code:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Bitcoin Core Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp&#34;&gt;script/interpreter.cpp&lt;/a&gt;, &lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L524&#34;&gt;OP_DUP&lt;/a&gt;, &lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L752&#34;&gt;Crypto&lt;/a&gt;, &lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L785&#34;&gt;OP_CHECKSIG&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.crmarsh.com/script-playground/&#34;&gt;Script Playground&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Some interesting things you can do with bitcoin scripts:&lt;br /&gt;
+&lt;a href=&#34;https://en.bitcoin.it/wiki/Contracts&#34;&gt;Contracts&lt;/a&gt; (see also Nick Szabo&amp;rsquo;s &lt;a href=&#34;http://szabo.best.vwh.net/formalize.html&#34;&gt;&lt;em&gt;Formalizing and Securing Relationships on Public Networks&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://eprint.iacr.org/2013/784&#34;&gt;Secure Multiparty Computations&lt;/a&gt; (to implement lotteries)&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;OP_RETURN&lt;/code&gt;/pasted script execution bug doesn&amp;rsquo;t even make this list of &lt;a href=&#34;http://www.coindesk.com/9-biggest-screwups-bitcoin-history/&#34;&gt;&lt;em&gt;The 9 Biggest Screwups in Bitcoin History&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- [Block 71036](http://blockexplorer.com/rawblock/00000000000997f9fd2fe1ee376293ef8c42ad09193a5d2086dddf8e5c426b56)--&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 14: FBI Visit</title>
