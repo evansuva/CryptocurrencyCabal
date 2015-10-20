@@ -4,6 +4,10 @@ checkup1.pdf: ../../staff/checkup1/checkup1.md
 	python latexify.py ../../staff/checkup1/checkup1.md > checkup1-latex.md
 	pandoc --template=./cabal.template checkup1-latex.md -o checkup1.pdf
 
+midterm.pdf: ../../staff/midterm/midterm-latex.md
+	python latexify.py ../../staff/midterm/midterm-latex.md > midterm-latex.md
+	pandoc --template=./cabal.template midterm-latex.md -o midterm.pdf
+
 checkup2.pdf: checkup2.md
 	python latexify.py checkup2.md > checkup2-latex.md
 	pandoc --template=./cabal.template checkup2-latex.md -o checkup2.pdf
@@ -55,6 +59,7 @@ feedback.pdf: ../../staff/checkup1/feedback.md
 ../public/class15.pdf: ../content/classes/class15.md
 	python latexify.py ../content/classes/class15.md > class15-latex.md
 	pandoc --template=./cabal.template class15-latex.md -o ../public/class15.pdf
+
 
 
 
