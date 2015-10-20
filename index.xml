@@ -1176,6 +1176,14 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
 
 &lt;h2 id=&#34;scripting-transactions:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Scripting Transactions&lt;/h2&gt;
 
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/cYC6B2BCdrtoy6&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+&lt;a href=&#34;http://bitcoin-class.org/classes/class15-post.pptx&#34;&gt;Download the slides&lt;/a&gt;
+   &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+
 &lt;p&gt;Recall from class 12: Transaction outputs in bitcoin are protected by
 &lt;em&gt;locking scripts&lt;/em&gt;, and must be unlocked by &lt;em&gt;unlocking scripts&lt;/em&gt;.  A
 transaction output is not unlocked unless an unlocking script is
