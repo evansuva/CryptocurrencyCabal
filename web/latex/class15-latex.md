@@ -33,6 +33,14 @@ The midterm exam will be in class, **Wednesday, 21
 
 ## Scripting Transactions
 
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/cYC6B2BCdrtoy6" width="625" height="400" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"> </iframe> 
+
+   <div class="caption">
+[Download the slides](/classes/class15-post.pptx)
+   </div>
+</center>
+
 Recall from class 12: Transaction outputs in bitcoin are protected by
 _locking scripts_, and must be unlocked by _unlocking scripts_.  A
 transaction output is not unlocked unless an unlocking script is
