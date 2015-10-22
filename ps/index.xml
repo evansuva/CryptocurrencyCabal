@@ -6,8 +6,63 @@
     <description>Recent content in Ps on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/ps/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PS3: CSI: Blockchain</title>
+      <link>http://bitcoin-class.org/ps/ps3/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/ps/ps3/</guid>
+      <description>
+
+&lt;h1 id=&#34;problem-set-3-br-csi-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Problem Set 3:&lt;br&gt; CSI: Blockchain&lt;/h1&gt;
+
+&lt;p&gt;&lt;div class=&#34;due&#34;&gt;
+Due: Sunday, 8 November at 8:29pm
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;purpose:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;The goal of this assignment is for everyone to gain experience analyzing
+the blockchain and understanding of the anonymity of bitcoin (and
+mechanisms that are used to increase or decrease it), and to hopefully
+help the FBI catch some criminals.&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Collaboration Policy&lt;/h3&gt;
+
+&lt;p&gt;For this assignment, you may either work alone or with one other person
+of your choice.  If you work with a partner, you should together submit
+one assignment with both of your names on it that reflects your combined
+efforts.  You may, and are encouraged to, discuss all of the problems
+with anyone else you want (both on-line using the course web site or any
+other means you choose, and in person).&lt;/p&gt;
+
+&lt;h3 id=&#34;submission:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Submission&lt;/h3&gt;
+
+&lt;p&gt;Submit your answers as a single PDF file using &lt;a href=&#34;https://www.dropbox.com/request/oar0AQeg4SJRNtdHbcSS&#34;&gt;this
+link&lt;/a&gt;.  The name
+of your file should be &lt;code&gt;&amp;lt;your email ID&amp;gt;-ps3.pdf&lt;/code&gt; (if you worked alone)
+or &lt;code&gt;&amp;lt;partner1 email ID&amp;gt;-&amp;lt;partner2 email ID&amp;gt;-ps3.pdf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Your submission should include clearly marked answers for all the
+problems (highlighted in yellow).  None of the questions require
+submitting a program, although you may find it helpful to write programs
+to develop your answers.  If the code you write is less than a page, it
+is best to just include it in the PDF writeup.  If it is longer, you may
+submit separate code files (and mention them in the PDF submission).&lt;/p&gt;
+
+&lt;h1 id=&#34;anonymity-and-bitcoin:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Anonymity and Bitcoin&lt;/h1&gt;
+
+&lt;p&gt;Readings:&lt;/p&gt;
+
+&lt;h3 id=&#34;submission-1:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Submission&lt;/h3&gt;
+
+&lt;p&gt;Follow the submission instructions at the beginning of this page by
+8:29pm on Sunday, 8 November.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PS2: The Blockchain</title>
