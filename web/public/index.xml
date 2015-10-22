@@ -1190,6 +1190,24 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Midterm / Next Class</title>
+      <link>http://bitcoin-class.org/announcements/midterm/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/midterm/</guid>
+      <description>&lt;p&gt;The midterm exam is here: &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Monday&amp;rsquo;s class will be a guest talk from &lt;a href=&#34;http://bitbanter.com/&#34;&gt;Josh
+Cincinnati&lt;/a&gt;.  Josh is
+&lt;a href=&#34;https://blockcypher.com/&#34;&gt;BlockCypher&lt;/a&gt;&amp;rsquo;s &amp;ldquo;Developer Advocate and
+Comedian&amp;rdquo;.  He is a University of Virginia alum (Political &amp;amp; Social
+Thought and Mathematics) and has an MBA from Stanford.  You can read
+several interesting posts of his on the &lt;a href=&#34;https://medium.com/blockcypher-blog&#34;&gt;BlockCypher
+Blog&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 15: Scripting Transactions</title>
       <link>http://bitcoin-class.org/classes/class15/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
@@ -1611,54 +1629,6 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
 &lt;p&gt;If a pool is paying out proportionally, and you are profiting by pool hopping in and out of it, is somebody else making a loss? Who and how?&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Checkup 2 Revisions</title>
-      <link>http://bitcoin-class.org/announcements/checkup2revisions/</link>
-      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/checkup2revisions/</guid>
-      <description>&lt;p&gt;If you didn&amp;rsquo;t get a &amp;ldquo;gold star&amp;rdquo; on &lt;a href=&#34;./checkup2.pdf&#34;&gt;Checkup 2&lt;/a&gt;, you can
-improve your score by answering one or more of the questions below.  You
-can submit your revisions in class Wednesday, or at the end of office
-hours Wednesday.  To submit revisions, attach your answers to these
-questions to your original submission.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;R1. Hashing&lt;/strong&gt; (Answer this question if you want to improve your score on questions 1-4)&lt;/p&gt;
-
-&lt;p&gt;There are several different places in bitcoin where cryptographic hashes are used:&lt;/p&gt;
-
-&lt;p&gt;A. Producing the public bitcoin address by hashing the public key.&lt;/p&gt;
-
-&lt;p&gt;B. Producing a transaction digest for use as the input in signing a transaction.&lt;/p&gt;
-
-&lt;p&gt;C. Producing the Merkle tree root for authenticating the transactions in
-a block (using hashes all the way up the tree).&lt;/p&gt;
-
-&lt;p&gt;D. Producing the hash of the previous block to use in the block header.&lt;/p&gt;
-
-&lt;p&gt;E. Producing the double hash of the block (with nonces) to find a block
-that satisfies the difficult needed in mining.&lt;/p&gt;
-
-&lt;p&gt;Suppose &lt;em&gt;H&lt;/em&gt; is a hash function that provides strong pre-image
-resistance, but does not provide collision resistance. That is, an
-adversary knows way to efficiently find pairs of values, &lt;em&gt;m&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;
-and &lt;em&gt;m&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; such that &lt;em&gt;m&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt; is not equal to
-&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; and &lt;em&gt;H&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;) = &lt;em&gt;H&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;).&lt;/p&gt;
-
-&lt;p&gt;Explain clearly &lt;em&gt;one place&lt;/em&gt; where cryptographic hashing is used in
-bitcoin that the adversary could gain an advantage by knowing how to
-find collisions in &lt;em&gt;H&lt;/em&gt;.  (Be careful to not overstate the advantage,
-though.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;R2. Blockchain&lt;/strong&gt; (Answer this question if you want to improve your score on questions 5-7)&lt;/p&gt;
-
-&lt;p&gt;Ishtosa suggests strengthening bitcoin by adding the hash of the
-previous previous block to the block header.  So, the block header for
-block 534 would now include the both the hash of the block 533, and
-the hash of block 532.  Would this be a good idea?&lt;/p&gt;
 </description>
     </item>
     

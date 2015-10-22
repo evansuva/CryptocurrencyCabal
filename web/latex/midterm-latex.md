@@ -169,7 +169,7 @@ opcodes are needed based on the size of the data).
 
 Your answer should be:
 
-`OP_DATA` _sig_ where _sig_ is Sign(private key corresponding to public key _pubkey_, transaction)
+`OP_DATA` _sig_ where _sig_ is Sign(private key corresponding to public key _pubkey_, transaction)  
 `OP_DATA` _pubkey_ where _adr_ = _H_(_pubkey_)
 
 \clearpage
@@ -226,7 +226,7 @@ Your answer should be:
 To demonstrate its solvency, a bitcoin exchange may need to publish a
 proof of its total liabilities (that is, the amount of funds it owes to
 customers).  One proposal for doing this is by recording all of the
-customer accounts in a Merkle tree where each leave records one account:
+customer accounts in a Merkle tree where each leaf records one account:
 
 $$ 
 v_i = balance_i   $$

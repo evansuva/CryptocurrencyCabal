@@ -6,8 +6,26 @@
     <description>Recent content in Announcements on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Midterm / Next Class</title>
+      <link>http://bitcoin-class.org/announcements/midterm/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/midterm/</guid>
+      <description>&lt;p&gt;The midterm exam is here: &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Monday&amp;rsquo;s class will be a guest talk from &lt;a href=&#34;http://bitbanter.com/&#34;&gt;Josh
+Cincinnati&lt;/a&gt;.  Josh is
+&lt;a href=&#34;https://blockcypher.com/&#34;&gt;BlockCypher&lt;/a&gt;&amp;rsquo;s &amp;ldquo;Developer Advocate and
+Comedian&amp;rdquo;.  He is a University of Virginia alum (Political &amp;amp; Social
+Thought and Mathematics) and has an MBA from Stanford.  You can read
+several interesting posts of his on the &lt;a href=&#34;https://medium.com/blockcypher-blog&#34;&gt;BlockCypher
+Blog&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Extra Office Hours</title>
