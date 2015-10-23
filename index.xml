@@ -79,10 +79,10 @@ analysis&lt;/a&gt;
 to see the addresses that are receiving bitcoin from the given address).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 1.&lt;/strong&gt;
+&lt;strong&gt;Problem 1.&lt;/strong&gt;&lt;br /&gt;
 (a) What address are you investigating?&lt;br /&gt;
-(b) When was that address in use?
-&amp;copy; How many victims appear to have paid into the address?&lt;br /&gt;
+(b) When was that address in use?&lt;br /&gt;
+&amp;#40;c) How many victims appear to have paid into the address?&lt;br /&gt;
 (d) How much was collected from each victim (the most relevant value would be the value in US dollars at the time of the payment)?  Did all the victims pay the same amount, or did the requested amount vary by victim?&lt;br /&gt;
 (e) How did the ransomist (owner of this address) distribute the proceeds?  Is there a percentage split, or some other fee being paid by the ransomist to other addresses?&lt;br /&gt;
 (f) What else can you learn about the operation starting from your transaction?
@@ -164,6 +164,43 @@ for receiver in get_receivers(sender):
     print(&amp;quot;   &amp;quot; + receiver[0] + &amp;quot; (&amp;quot; + str(satoshi_to_BTC(receiver[1])) + &amp;quot; BTC)&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;To avoid API limits, you will want to &lt;a href=&#34;https://accounts.blockcypher.com/&#34;&gt;obtain an API
+key&lt;/a&gt;, and add an &lt;code&gt;api_key=APIKEY&lt;/code&gt;
+parameter to your requests.&lt;/p&gt;
+
+&lt;p&gt;You can also use direct web API requests:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;     r = requests.get(&#39;https://api.blockcypher.com/v1/btc/main/addrs/&#39; + adr + &#39;/full&#39;, params=API_KEY).json() 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To learn if an address is connected with a known wallet, you can use the&lt;/p&gt;
+
+&lt;h2 id=&#34;follow-the-money:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Follow the Money&lt;/h2&gt;
+
+&lt;p&gt;Now it’s time to follow the money!&lt;/p&gt;
+
+&lt;p&gt;We want to figure out if there are any common addresses that eventually
+receive coin from more than one of the starting addresses. This could
+detect if the suspect addresses are running received coins through a
+mixnet, but outputting to the same address eventually, which could mean
+payments to the same vendor.&lt;/p&gt;
+
+&lt;p&gt;A good approach to this problem could be writing a program that
+iteratively follows successive outputs from a series of seed addresses
+down to a reasonable depth and then checks for overlap between sets.  We
+want to find addresses that eventually receive bitcoin sent from more
+than one of the ransom collection addresses, since these are likely to
+be addresses involved in meaningful transactions.&lt;/p&gt;
+
+&lt;p&gt;We are also interested in finding out the relative importance of the
+addresses found. You can determine this based on factors such as amount
+of bitcoins they receive, number of seed addresses they are associated
+with, or how many hops away the addresses are on average from associated
+seed addresses.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll provide a few hints for things to do, but you should use these as
+starting points and form your own ideas about ways to explore the blockchain.&lt;/p&gt;
+
 &lt;h2 id=&#34;mixing-services:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Mixing Services&lt;/h2&gt;
 
 &lt;p&gt;The directions we provide use blockchain.info’s Python API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). We will be using its “blockexplorer” module.&lt;/p&gt;
@@ -173,12 +210,6 @@ Install Python.
 Install Blockchain API library. Follow the directions to install Blockchain.info’s API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). Familiarize yourself with the blockexplorer module (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&#34;&gt;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&lt;/a&gt;). You will mainly be interacting with the “Address” object.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;suspects.txt&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Problem 1. Determine the average number of transactions that a given address in the suspect set is used for. (Show how you determined the average, including a snippet of code is fine). What kind of risks, if any, does this scheme take on from using some of the same addresses multiple times?&lt;/p&gt;
-
-&lt;p&gt;Problem 2. Looking manually through some of the transactions (i.e. on blockchain.info) describe any particular patterns you see in the spending behaviors of these addresses. Determine the cumulative amount of bitcoin received by all of the suspect addresses. Next, determine the largest single ransom payment in the set. Provide the tx_index and a justification for why you think this payment was made by a victim.&lt;/p&gt;
-
-&lt;p&gt;Problem 3. Now it’s time to follow the money. We want to figure out if there are any common addresses that eventually receive coin from more than one of the starting addresses. This could detect if the suspect addresses are running received coins through a mixnet, but outputting to the same address eventually, which could mean payments to the same “vendor”. A good approach to this problem could be writing a program that recursively follows successive outputs from a series of seed addresses down to a reasonable depth and then checks for overlap between sets. We are also interested in finding out the relative importance of the addresses found. You can determine this based on factors such as amount of “dirty” bitcoins they receive, number of seed addresses they are associated with, or how many hops away the addresses are on average from associated seed addresses.&lt;/p&gt;
 
 &lt;p&gt;Problem 4. Given the intel we have gathered from our analysis, what do you think some possible next steps could be to de-anonymize the addresses? What kind of additional outside data would be required to make blockchain based findings such as our own actionable intelligence for law enforcement?&lt;/p&gt;
 
@@ -1323,20 +1354,32 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Midterm / Next Class</title>
-      <link>http://bitcoin-class.org/announcements/midterm/</link>
-      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      <title>Monday&#39;s Class: Josh Cincinnati</title>
+      <link>http://bitcoin-class.org/announcements/josh/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/midterm/</guid>
-      <description>&lt;p&gt;The midterm exam is here: &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Monday&amp;rsquo;s class will be a guest talk from &lt;a href=&#34;http://bitbanter.com/&#34;&gt;Josh
+      <guid>http://bitcoin-class.org/announcements/josh/</guid>
+      <description>&lt;p&gt;Monday&amp;rsquo;s class will be a guest talk from &lt;a href=&#34;http://bitbanter.com/&#34;&gt;Josh
 Cincinnati&lt;/a&gt;.  Josh is
 &lt;a href=&#34;https://blockcypher.com/&#34;&gt;BlockCypher&lt;/a&gt;&amp;rsquo;s &amp;ldquo;Developer Advocate and
 Comedian&amp;rdquo;.  He is a University of Virginia alum (Political &amp;amp; Social
 Thought and Mathematics) and has an MBA from Stanford.  You can read
 several interesting posts of his on the &lt;a href=&#34;https://medium.com/blockcypher-blog&#34;&gt;BlockCypher
 Blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For some background on the current entrepreneurial landscape in cryptocurrencies, Josh send along this report:
+&lt;a href=&#34;http://storj.io/TheBlockchainReport.pdf&#34;&gt;&lt;em&gt;The Blockchain Report: Welcome to the Internet of Value&lt;/em&gt;&lt;/a&gt;,
+Needham &amp;amp; Company, LLC, 21 October 2015.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Midterm</title>
+      <link>http://bitcoin-class.org/announcements/midterm/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/midterm/</guid>
+      <description>&lt;p&gt;The midterm exam is here: &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1705,63 +1748,6 @@ learn about in this class, and can be done individually or with a team
 (the size of the project should scale approximately with the square root
 of the team size).  If you have an idea for an ambitious project that
 you want to start early, it may be possible to arrange for it to substitute for some other course assignments.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 11: More Mining</title>
-      <link>http://bitcoin-class.org/classes/class11/</link>
-      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class11/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class or end of office hours today.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of
-  October 2).  Problem Set 2 will be posted by tomorrow.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam&lt;/p&gt;
-
-&lt;p&gt;No classes Monday, October 5!
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/31bDBGxrcPo6b9&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class11.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes:af81afa25b288e26509ba0728268a3b7&#34;&gt;Notes&lt;/h1&gt;
-
-&lt;p&gt;If we have 20% of the network hashing power, calculate the proportion of blocks we will win if we mine selfishly. Do we come out ahead or behind?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Why does our formular for E not work for alpha greater than a half?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Compute the constant on slide 29, &amp;ldquo;Expected share reward&amp;rdquo;. You may have to look up the Taylor&amp;rsquo;s expansion series for natural logarithm.&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;!--page--&gt;
-
-&lt;p&gt;Does mining in a pool increase your reward or decrease it? Explain.&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;If a pool is paying out proportionally, and you are profiting by pool hopping in and out of it, is somebody else making a loss? Who and how?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
