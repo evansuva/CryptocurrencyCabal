@@ -70,10 +70,10 @@ analysis](https://blockchain.info/taint/14TCv5MKcyYCM3qij36x8xrKvKHHY1NXmq?rever
 to see the addresses that are receiving bitcoin from the given address).
 
    <div class="problem"> 
-**Problem 1.** 
+**Problem 1.**  
 (a) What address are you investigating?  
-(b) When was that address in use?
-(c) How many victims appear to have paid into the address?   
+(b) When was that address in use?  
+&#40;c) How many victims appear to have paid into the address?   
 (d) How much was collected from each victim (the most relevant value would be the value in US dollars at the time of the payment)?  Did all the victims pay the same amount, or did the requested amount vary by victim?  
 (e) How did the ransomist (owner of this address) distribute the proceeds?  Is there a percentage split, or some other fee being paid by the ransomist to other addresses?  
 (f) What else can you learn about the operation starting from your transaction?
@@ -156,8 +156,44 @@ for receiver in get_receivers(sender):
     print("   " + receiver[0] + " (" + str(satoshi_to_BTC(receiver[1])) + " BTC)")
 ```
 
+To avoid API limits, you will want to [obtain an API
+key](https://accounts.blockcypher.com/), and add an `api_key=APIKEY`
+parameter to your requests.  
+
+You can also use direct web API requests:
+
+```Python
+     r = requests.get('https://api.blockcypher.com/v1/btc/main/addrs/' + adr + '/full', params=API_KEY).json() 
+```
+
+To learn if an address is connected with a known wallet, you can use the 
 
 
+## Follow the Money
+
+Now it’s time to follow the money!
+
+We want to figure out if there are any common addresses that eventually
+receive coin from more than one of the starting addresses. This could
+detect if the suspect addresses are running received coins through a
+mixnet, but outputting to the same address eventually, which could mean
+payments to the same vendor. 
+
+A good approach to this problem could be writing a program that
+iteratively follows successive outputs from a series of seed addresses
+down to a reasonable depth and then checks for overlap between sets.  We
+want to find addresses that eventually receive bitcoin sent from more
+than one of the ransom collection addresses, since these are likely to
+be addresses involved in meaningful transactions.  
+
+We are also interested in finding out the relative importance of the
+addresses found. You can determine this based on factors such as amount
+of bitcoins they receive, number of seed addresses they are associated
+with, or how many hops away the addresses are on average from associated
+seed addresses.
+
+We'll provide a few hints for things to do, but you should use these as
+starting points and form your own ideas about ways to explore the blockchain.
 
 ## Mixing Services
 
@@ -174,12 +210,6 @@ Install Python.
 Install Blockchain API library. Follow the directions to install Blockchain.info’s API (https://github.com/blockchain/api-v1-client-python). Familiarize yourself with the blockexplorer module (https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md). You will mainly be interacting with the “Address” object.
 
 **suspects.txt**
-
-Problem 1. Determine the average number of transactions that a given address in the suspect set is used for. (Show how you determined the average, including a snippet of code is fine). What kind of risks, if any, does this scheme take on from using some of the same addresses multiple times? 
-
-Problem 2. Looking manually through some of the transactions (i.e. on blockchain.info) describe any particular patterns you see in the spending behaviors of these addresses. Determine the cumulative amount of bitcoin received by all of the suspect addresses. Next, determine the largest single ransom payment in the set. Provide the tx_index and a justification for why you think this payment was made by a victim.
-
-Problem 3. Now it’s time to follow the money. We want to figure out if there are any common addresses that eventually receive coin from more than one of the starting addresses. This could detect if the suspect addresses are running received coins through a mixnet, but outputting to the same address eventually, which could mean payments to the same “vendor”. A good approach to this problem could be writing a program that recursively follows successive outputs from a series of seed addresses down to a reasonable depth and then checks for overlap between sets. We are also interested in finding out the relative importance of the addresses found. You can determine this based on factors such as amount of “dirty” bitcoins they receive, number of seed addresses they are associated with, or how many hops away the addresses are on average from associated seed addresses.
 
 Problem 4. Given the intel we have gathered from our analysis, what do you think some possible next steps could be to de-anonymize the addresses? What kind of additional outside data would be required to make blockchain based findings such as our own actionable intelligence for law enforcement?
 

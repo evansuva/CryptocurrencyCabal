@@ -79,10 +79,10 @@ analysis&lt;/a&gt;
 to see the addresses that are receiving bitcoin from the given address).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
-&lt;strong&gt;Problem 1.&lt;/strong&gt;
+&lt;strong&gt;Problem 1.&lt;/strong&gt;&lt;br /&gt;
 (a) What address are you investigating?&lt;br /&gt;
-(b) When was that address in use?
-&amp;copy; How many victims appear to have paid into the address?&lt;br /&gt;
+(b) When was that address in use?&lt;br /&gt;
+&amp;#40;c) How many victims appear to have paid into the address?&lt;br /&gt;
 (d) How much was collected from each victim (the most relevant value would be the value in US dollars at the time of the payment)?  Did all the victims pay the same amount, or did the requested amount vary by victim?&lt;br /&gt;
 (e) How did the ransomist (owner of this address) distribute the proceeds?  Is there a percentage split, or some other fee being paid by the ransomist to other addresses?&lt;br /&gt;
 (f) What else can you learn about the operation starting from your transaction?
@@ -164,6 +164,43 @@ for receiver in get_receivers(sender):
     print(&amp;quot;   &amp;quot; + receiver[0] + &amp;quot; (&amp;quot; + str(satoshi_to_BTC(receiver[1])) + &amp;quot; BTC)&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;To avoid API limits, you will want to &lt;a href=&#34;https://accounts.blockcypher.com/&#34;&gt;obtain an API
+key&lt;/a&gt;, and add an &lt;code&gt;api_key=APIKEY&lt;/code&gt;
+parameter to your requests.&lt;/p&gt;
+
+&lt;p&gt;You can also use direct web API requests:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;     r = requests.get(&#39;https://api.blockcypher.com/v1/btc/main/addrs/&#39; + adr + &#39;/full&#39;, params=API_KEY).json() 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To learn if an address is connected with a known wallet, you can use the&lt;/p&gt;
+
+&lt;h2 id=&#34;follow-the-money:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Follow the Money&lt;/h2&gt;
+
+&lt;p&gt;Now it’s time to follow the money!&lt;/p&gt;
+
+&lt;p&gt;We want to figure out if there are any common addresses that eventually
+receive coin from more than one of the starting addresses. This could
+detect if the suspect addresses are running received coins through a
+mixnet, but outputting to the same address eventually, which could mean
+payments to the same vendor.&lt;/p&gt;
+
+&lt;p&gt;A good approach to this problem could be writing a program that
+iteratively follows successive outputs from a series of seed addresses
+down to a reasonable depth and then checks for overlap between sets.  We
+want to find addresses that eventually receive bitcoin sent from more
+than one of the ransom collection addresses, since these are likely to
+be addresses involved in meaningful transactions.&lt;/p&gt;
+
+&lt;p&gt;We are also interested in finding out the relative importance of the
+addresses found. You can determine this based on factors such as amount
+of bitcoins they receive, number of seed addresses they are associated
+with, or how many hops away the addresses are on average from associated
+seed addresses.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll provide a few hints for things to do, but you should use these as
+starting points and form your own ideas about ways to explore the blockchain.&lt;/p&gt;
+
 &lt;h2 id=&#34;mixing-services:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Mixing Services&lt;/h2&gt;
 
 &lt;p&gt;The directions we provide use blockchain.info’s Python API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). We will be using its “blockexplorer” module.&lt;/p&gt;
@@ -173,12 +210,6 @@ Install Python.
 Install Blockchain API library. Follow the directions to install Blockchain.info’s API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). Familiarize yourself with the blockexplorer module (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&#34;&gt;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&lt;/a&gt;). You will mainly be interacting with the “Address” object.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;suspects.txt&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Problem 1. Determine the average number of transactions that a given address in the suspect set is used for. (Show how you determined the average, including a snippet of code is fine). What kind of risks, if any, does this scheme take on from using some of the same addresses multiple times?&lt;/p&gt;
-
-&lt;p&gt;Problem 2. Looking manually through some of the transactions (i.e. on blockchain.info) describe any particular patterns you see in the spending behaviors of these addresses. Determine the cumulative amount of bitcoin received by all of the suspect addresses. Next, determine the largest single ransom payment in the set. Provide the tx_index and a justification for why you think this payment was made by a victim.&lt;/p&gt;
-
-&lt;p&gt;Problem 3. Now it’s time to follow the money. We want to figure out if there are any common addresses that eventually receive coin from more than one of the starting addresses. This could detect if the suspect addresses are running received coins through a mixnet, but outputting to the same address eventually, which could mean payments to the same “vendor”. A good approach to this problem could be writing a program that recursively follows successive outputs from a series of seed addresses down to a reasonable depth and then checks for overlap between sets. We are also interested in finding out the relative importance of the addresses found. You can determine this based on factors such as amount of “dirty” bitcoins they receive, number of seed addresses they are associated with, or how many hops away the addresses are on average from associated seed addresses.&lt;/p&gt;
 
 &lt;p&gt;Problem 4. Given the intel we have gathered from our analysis, what do you think some possible next steps could be to de-anonymize the addresses? What kind of additional outside data would be required to make blockchain based findings such as our own actionable intelligence for law enforcement?&lt;/p&gt;
 
