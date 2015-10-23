@@ -17,6 +17,8 @@
       <guid>http://bitcoin-class.org/ps/ps3/</guid>
       <description>
 
+&lt;h1 id=&#34;draft-not-yet-posted:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;DRAFT - Not yet posted!&lt;/h1&gt;
+
 &lt;h1 id=&#34;problem-set-3-br-csi-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Problem Set 3:&lt;br&gt; CSI: Blockchain&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
@@ -105,17 +107,70 @@ API&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For this assignment, you are welcome to use any services and open source
 bitcoin libraries and openly-licensed code you want, but must follow the
 license requirements of any code you use and credit this code in your
-submission.  The starting examples we provide will use Python and the
-BlockCypher &lt;a href=&#34;http://dev.blockcypher.com/&#34;&gt;Blockchain API&lt;/a&gt;.&lt;/p&gt;
+submission.&lt;/p&gt;
+
+&lt;p&gt;The starting examples we provide will use Python and the BlockCypher
+&lt;a href=&#34;http://dev.blockcypher.com/&#34;&gt;Blockchain API&lt;/a&gt;, and we provide some
+directions to get started using this next (but feel free to use other
+tools if you prefer).&lt;/p&gt;
+
+&lt;h3 id=&#34;setting-up-blockcypher-api:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Setting up BlockCypher API&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Install Python.&lt;/strong&gt; Start by downloading and installing Python
+  (&lt;a href=&#34;https://www.python.org/downloads/release/python-350/&#34;&gt;https://www.python.org/downloads/release/python-350/&lt;/a&gt;.
+  Note that Python V3 is incompatible with Python V2 (on MacOSX, the
+  default &lt;code&gt;python&lt;/code&gt; is Python 2.7.2; to use Python 3, use &lt;code&gt;python3&lt;/code&gt;).
+  Even if you are not familiar with Python, if you feel comfortable
+  learning a new language on the fly you should be fine jumping right
+  into this assignment. If you prefer a more structured intro to Python
+  there are many tutorials available, including
+  &lt;a href=&#34;http://www.learnpython.org/&#34;&gt;http://www.learnpython.org/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Install the Blockcypher Python library.&lt;/strong&gt; The &lt;a href=&#34;https://github.com/blockcypher/blockcypher-python&#34;&gt;BlockCypher Python
+  library&lt;/a&gt; provides a
+  convenient way to use the APIs.  To install it, execute &lt;code&gt;pip install
+  blockcypher&lt;/code&gt; (in the command shell).&lt;/p&gt;
+
+&lt;p&gt;Here is some example code that uses the BlockCypher API to find all the
+addresses which received bitcoin directly from a sending address:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;import blockcypher
+
+def get_receivers(sending_address):
+    receiving_addresses = set()
+    r = blockcypher.get_address_details(sending_address)
+    for tx in r[&#39;txrefs&#39;]: # loop through all transactions
+        hash = tx[&#39;tx_hash&#39;]
+        transaction = blockcypher.get_transaction_details(hash)
+        # was this address an input
+        sender = False
+        for input in transaction[&#39;inputs&#39;]:
+            if sending_address in input[&#39;addresses&#39;]:
+                sender = True
+                break
+        if sender:
+            for output in transaction[&#39;outputs&#39;]:
+                for adr in output[&#39;addresses&#39;]:
+                    receiving_addresses.add((adr, output[&#39;value&#39;]))
+
+    return receiving_addresses
+
+def satoshi_to_BTC(sval):
+    return sval / 100000000
+
+sender = &#39;1Ez69SnzzmePmZX3WpEzMKTrcBF2gpNQ55&#39;
+print (&amp;quot;Received from &amp;quot; + sender + &amp;quot;: &amp;quot;)
+for receiver in get_receivers(sender):
+    print(&amp;quot;   &amp;quot; + receiver[0] + &amp;quot; (&amp;quot; + str(satoshi_to_BTC(receiver[1])) + &amp;quot; BTC)&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;mixing-services:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Mixing Services&lt;/h2&gt;
 
-&lt;p&gt;The directions we provide use blockchain.info’s Python API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). We will be using its “blockexplorer” module. Even if you are not familiar with Python, if you feel comfortable learning a new language on the fly you should be fine jumping right into this assignment. If you prefer a more structured intro to Python there are many tutorials available, including &lt;a href=&#34;http://www.learnpython.org/&#34;&gt;http://www.learnpython.org/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The directions we provide use blockchain.info’s Python API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). We will be using its “blockexplorer” module.&lt;/p&gt;
 
 &lt;p&gt;Installing our Tools
-Install Python. Start by downloading and installing Python (&lt;a href=&#34;https://www.python.org/downloads/release/python-350/&#34;&gt;https://www.python.org/downloads/release/python-350/&lt;/a&gt;). The latest version is python3.5.0, which is the version you should use.&lt;/p&gt;
-
-&lt;p&gt;Install Blockchain API library. Follow the directions to install Blockchain.info’s API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). Familiarize yourself with the blockexplorer module (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&#34;&gt;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&lt;/a&gt;). You will mainly be interacting with the “Address” object.&lt;/p&gt;
+Install Python.
+Install Blockchain API library. Follow the directions to install Blockchain.info’s API (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python&#34;&gt;https://github.com/blockchain/api-v1-client-python&lt;/a&gt;). Familiarize yourself with the blockexplorer module (&lt;a href=&#34;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&#34;&gt;https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md&lt;/a&gt;). You will mainly be interacting with the “Address” object.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;suspects.txt&lt;/strong&gt;&lt;/p&gt;
 

@@ -5,6 +5,9 @@ nocomment: false
 menu: "hidden"
 ---
 
+# DRAFT - Not yet posted!
+
+
 # Problem Set 3:<br> CSI: Blockchain
 
    <div class="due">
@@ -95,8 +98,66 @@ API](http://dev.blockcypher.com/).
 For this assignment, you are welcome to use any services and open source
 bitcoin libraries and openly-licensed code you want, but must follow the
 license requirements of any code you use and credit this code in your
-submission.  The starting examples we provide will use Python and the
-BlockCypher [Blockchain API](http://dev.blockcypher.com/).  
+submission.  
+
+The starting examples we provide will use Python and the BlockCypher
+[Blockchain API](http://dev.blockcypher.com/), and we provide some
+directions to get started using this next (but feel free to use other
+tools if you prefer).
+
+### Setting up BlockCypher API
+
+**Install Python.** Start by downloading and installing Python
+  ([https://www.python.org/downloads/release/python-350/](https://www.python.org/downloads/release/python-350/).
+  Note that Python V3 is incompatible with Python V2 (on MacOSX, the
+  default `python` is Python 2.7.2; to use Python 3, use `python3`).
+  Even if you are not familiar with Python, if you feel comfortable
+  learning a new language on the fly you should be fine jumping right
+  into this assignment. If you prefer a more structured intro to Python
+  there are many tutorials available, including
+  [http://www.learnpython.org/](http://www.learnpython.org/).
+
+**Install the Blockcypher Python library.** The [BlockCypher Python
+  library](https://github.com/blockcypher/blockcypher-python) provides a
+  convenient way to use the APIs.  To install it, execute `pip install
+  blockcypher` (in the command shell).
+
+Here is some example code that uses the BlockCypher API to find all the
+addresses which received bitcoin directly from a sending address:
+
+```Python
+import blockcypher
+
+def get_receivers(sending_address):
+    receiving_addresses = set()
+    r = blockcypher.get_address_details(sending_address)
+    for tx in r['txrefs']: # loop through all transactions
+        hash = tx['tx_hash']
+        transaction = blockcypher.get_transaction_details(hash)
+        # was this address an input
+        sender = False
+        for input in transaction['inputs']:
+            if sending_address in input['addresses']:
+                sender = True
+                break
+        if sender:
+            for output in transaction['outputs']:
+                for adr in output['addresses']:
+                    receiving_addresses.add((adr, output['value']))
+
+    return receiving_addresses
+
+def satoshi_to_BTC(sval):
+    return sval / 100000000
+
+sender = '1Ez69SnzzmePmZX3WpEzMKTrcBF2gpNQ55'
+print ("Received from " + sender + ": ")
+for receiver in get_receivers(sender):
+    print("   " + receiver[0] + " (" + str(satoshi_to_BTC(receiver[1])) + " BTC)")
+```
+
+
+
 
 ## Mixing Services
 
@@ -105,12 +166,11 @@ BlockCypher [Blockchain API](http://dev.blockcypher.com/).
 
 
 
-The directions we provide use blockchain.info’s Python API (https://github.com/blockchain/api-v1-client-python). We will be using its “blockexplorer” module. Even if you are not familiar with Python, if you feel comfortable learning a new language on the fly you should be fine jumping right into this assignment. If you prefer a more structured intro to Python there are many tutorials available, including http://www.learnpython.org/.
+The directions we provide use blockchain.info’s Python API (https://github.com/blockchain/api-v1-client-python). We will be using its “blockexplorer” module. 
 
 
 Installing our Tools
-Install Python. Start by downloading and installing Python (https://www.python.org/downloads/release/python-350/). The latest version is python3.5.0, which is the version you should use.
-
+Install Python. 
 Install Blockchain API library. Follow the directions to install Blockchain.info’s API (https://github.com/blockchain/api-v1-client-python). Familiarize yourself with the blockexplorer module (https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md). You will mainly be interacting with the “Address” object.
 
 **suspects.txt**
