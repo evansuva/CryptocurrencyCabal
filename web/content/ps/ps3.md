@@ -83,6 +83,16 @@ Since our goal is to learn as much as we can about the overall
 operation, you should post your answers to Problem 1 (for your address)
 as a comment on this page.
 
+## Privacy in the Blockchain
+
+The questions in the section concern these readings:
+
+-  [_Chapter 6: Introduction to Cryptography and
+Cryptocurrencies_](http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf),
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. [_Bitcoin and Cryptocurrency
+Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
+
 ## Blockchain APIs
 
 One way to analyze the blockchain is to run a full bitcoin node, and
@@ -163,11 +173,22 @@ parameter to your requests.
 You can also use direct web API requests:
 
 ```Python
-     r = requests.get('https://api.blockcypher.com/v1/btc/main/addrs/' + adr + '/full', params=API_KEY).json() 
+     r = requests.get('https://api.blockcypher.com/v1/btc/main/addrs/' + adr 
+       	 	       + '/full', params=API_KEY).json() 
 ```
 
-To learn if an address is connected with a known wallet, you can use the 
+To learn if an address is connected with a known wallet, you can use the
+[WalletExplorer.com](http://WalletExplorer.com) API:
 
+```Python
+def address_display(adr):
+    try:
+        r = requests.get('https://www.walletexplorer.com/api/1/address-lookup?address=' + adr 
+	    		 + '&caller=virginia.edu').json()
+        return adr + " (" + r['label'] + ")"
+    except:
+        return adr
+```
 
 ## Follow the Money
 
@@ -221,9 +242,6 @@ Problem 4 (Bonus?). The following address (not included in suspects.txt) is susp
 
 
 
-# Anonymity and Bitcoin
-
-Readings:
 
 
 

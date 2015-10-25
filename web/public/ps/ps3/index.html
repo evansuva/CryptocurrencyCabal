@@ -261,6 +261,18 @@ to see the addresses that are receiving bitcoin from the given address).</p>
 operation, you should post your answers to Problem 1 (for your address)
 as a comment on this page.</p>
 
+<h2 id="privacy-in-the-blockchain:b29158b067a206a408f4a3d38e1dbe1a">Privacy in the Blockchain</h2>
+
+<p>The questions in the section concern these readings:</p>
+
+<ul>
+<li><a href="http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf"><em>Chapter 6: Introduction to Cryptography and
+Cryptocurrencies</em></a>,
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. <a href="https://piazza.com/princeton/spring2015/btctech/resources"><em>Bitcoin and Cryptocurrency
+Technologies</em></a>.</li>
+</ul>
+
 <h2 id="blockchain-apis:b29158b067a206a408f4a3d38e1dbe1a">Blockchain APIs</h2>
 
 <p>One way to analyze the blockchain is to run a full bitcoin node, and
@@ -339,10 +351,21 @@ parameter to your requests.</p>
 
 <p>You can also use direct web API requests:</p>
 
-<pre><code class="language-Python">     r = requests.get('https://api.blockcypher.com/v1/btc/main/addrs/' + adr + '/full', params=API_KEY).json() 
+<pre><code class="language-Python">     r = requests.get('https://api.blockcypher.com/v1/btc/main/addrs/' + adr 
+       	 	       + '/full', params=API_KEY).json() 
 </code></pre>
 
-<p>To learn if an address is connected with a known wallet, you can use the</p>
+<p>To learn if an address is connected with a known wallet, you can use the
+<a href="http://WalletExplorer.com">WalletExplorer.com</a> API:</p>
+
+<pre><code class="language-Python">def address_display(adr):
+    try:
+        r = requests.get('https://www.walletexplorer.com/api/1/address-lookup?address=' + adr 
+	    		 + '&amp;caller=virginia.edu').json()
+        return adr + &quot; (&quot; + r['label'] + &quot;)&quot;
+    except:
+        return adr
+</code></pre>
 
 <h2 id="follow-the-money:b29158b067a206a408f4a3d38e1dbe1a">Follow the Money</h2>
 
@@ -385,10 +408,6 @@ Install Blockchain API library. Follow the directions to install Blockchain.info
 <p>Problem 4 (Bonus?). The following address (not included in suspects.txt) is suspected by the FBI to have been used directly by the attackers. See what interesting things you can find by following the money!</p>
 
 <p>18dwCxqqmya2ckWjCgTYReYyRL6dZF6pzL</p>
-
-<h1 id="anonymity-and-bitcoin:b29158b067a206a408f4a3d38e1dbe1a">Anonymity and Bitcoin</h1>
-
-<p>Readings:</p>
 
 <h3 id="submission-1:b29158b067a206a408f4a3d38e1dbe1a">Submission</h3>
 
