@@ -92,6 +92,18 @@ to see the addresses that are receiving bitcoin from the given address).&lt;/p&g
 operation, you should post your answers to Problem 1 (for your address)
 as a comment on this page.&lt;/p&gt;
 
+&lt;h2 id=&#34;privacy-in-the-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Privacy in the Blockchain&lt;/h2&gt;
+
+&lt;p&gt;The questions in the section concern these readings:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf&#34;&gt;&lt;em&gt;Chapter 6: Introduction to Cryptography and
+Cryptocurrencies&lt;/em&gt;&lt;/a&gt;,
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
+Technologies&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;blockchain-apis:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Blockchain APIs&lt;/h2&gt;
 
 &lt;p&gt;One way to analyze the blockchain is to run a full bitcoin node, and
@@ -170,10 +182,21 @@ parameter to your requests.&lt;/p&gt;
 
 &lt;p&gt;You can also use direct web API requests:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;     r = requests.get(&#39;https://api.blockcypher.com/v1/btc/main/addrs/&#39; + adr + &#39;/full&#39;, params=API_KEY).json() 
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;     r = requests.get(&#39;https://api.blockcypher.com/v1/btc/main/addrs/&#39; + adr 
+       	 	       + &#39;/full&#39;, params=API_KEY).json() 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;To learn if an address is connected with a known wallet, you can use the&lt;/p&gt;
+&lt;p&gt;To learn if an address is connected with a known wallet, you can use the
+&lt;a href=&#34;http://WalletExplorer.com&#34;&gt;WalletExplorer.com&lt;/a&gt; API:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def address_display(adr):
+    try:
+        r = requests.get(&#39;https://www.walletexplorer.com/api/1/address-lookup?address=&#39; + adr 
+	    		 + &#39;&amp;amp;caller=virginia.edu&#39;).json()
+        return adr + &amp;quot; (&amp;quot; + r[&#39;label&#39;] + &amp;quot;)&amp;quot;
+    except:
+        return adr
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;follow-the-money:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Follow the Money&lt;/h2&gt;
 
@@ -216,10 +239,6 @@ Install Blockchain API library. Follow the directions to install Blockchain.info
 &lt;p&gt;Problem 4 (Bonus?). The following address (not included in suspects.txt) is suspected by the FBI to have been used directly by the attackers. See what interesting things you can find by following the money!&lt;/p&gt;
 
 &lt;p&gt;18dwCxqqmya2ckWjCgTYReYyRL6dZF6pzL&lt;/p&gt;
-
-&lt;h1 id=&#34;anonymity-and-bitcoin:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Anonymity and Bitcoin&lt;/h1&gt;
-
-&lt;p&gt;Readings:&lt;/p&gt;
 
 &lt;h3 id=&#34;submission-1:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Submission&lt;/h3&gt;
 
