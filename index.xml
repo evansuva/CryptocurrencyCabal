@@ -94,15 +94,45 @@ as a comment on this page.&lt;/p&gt;
 
 &lt;h2 id=&#34;privacy-in-the-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Privacy in the Blockchain&lt;/h2&gt;
 
-&lt;p&gt;The questions in the section concern these readings:&lt;/p&gt;
+&lt;p&gt;The questions in the section focus on this paper:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf&#34;&gt;&lt;em&gt;Chapter 6: Introduction to Cryptography and
-Cryptocurrencies&lt;/em&gt;&lt;/a&gt;,
+&lt;li&gt;&lt;a href=&#34;http://conferences2.sigcomm.org/imc/2013/papers/imc182-meiklejohnA.pdf&#34;&gt;&lt;em&gt;A Fistful of Bitcoins: Characterizing Payments among Men (sic) with No Names&lt;/em&gt;&lt;/a&gt; by Sarah Meiklejohn, Marjori Pomarole, Grant Jordan, Kirill Levchenko, Damon McCoy, Geoffrey M. Voelker, and Stefan Savage.  &lt;em&gt;Internet Measurement Conference&lt;/em&gt;, 2013.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You should also read:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf&#34;&gt;_Chapter 6: _&lt;/a&gt;,
 from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
 Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
 Technologies&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
+&lt;strong&gt;Problem 2.&lt;/strong&gt; Part of the strategy used in the
+Sarah Meiklejohn et al.\ paper was for the authors to open accounts with services and conduct transactions with questionable merchants.&lt;br /&gt;
+(a) Why was it useful to actually conduct transactions with merchants operating in dark markets to conduct this research?&lt;br /&gt;
+(b) What ethical and legal issues does contudcting a transaction with a questionable merchant raise?&lt;br /&gt;
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
+&lt;strong&gt;Problem 3.&lt;/strong&gt; The Heuristic 1 (Section 4.3) used to detemine sets of
+public addresses owned by the same entity is based on the assumption
+that all inputs to a bitcoin transaction are controlled by the same
+entity.  According to the paper, &amp;ldquo;the sender in the transaction must
+know the private signing key belonging to each public key used as an
+input, so it is unlikely that the collection of public keys are
+controlled by multiple entities (as these entities would need to reveal
+their private keys to each other).&amp;rdquo;  Explain why this is not actually
+true. (A good answer will consider in more detail what is needed in the
+unlocking script to spend each input.)
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;problem&#34;&gt;
+&lt;strong&gt;Problem 4.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;blockchain-apis:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Blockchain APIs&lt;/h2&gt;
 
