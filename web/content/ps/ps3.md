@@ -85,13 +85,41 @@ as a comment on this page.
 
 ## Privacy in the Blockchain
 
-The questions in the section concern these readings:
+The questions in the section focus on this paper:
 
--  [_Chapter 6: Introduction to Cryptography and
-Cryptocurrencies_](http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf),
+- [_A Fistful of Bitcoins: Characterizing Payments among Men (sic) with No Names_](http://conferences2.sigcomm.org/imc/2013/papers/imc182-meiklejohnA.pdf) by Sarah Meiklejohn, Marjori Pomarole, Grant Jordan, Kirill Levchenko, Damon McCoy, Geoffrey M. Voelker, and Stefan Savage.  _Internet Measurement Conference_, 2013. 
+
+You should also read:
+
+-  [_Chapter 6: _](http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf),
 from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
 Steven Goldfeder. [_Bitcoin and Cryptocurrency
 Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
+
+   <div class="problem"> 
+**Problem 2.** Part of the strategy used in the
+Sarah Meiklejohn et al.\ paper was for the authors to open accounts with services and conduct transactions with questionable merchants.  
+(a) Why was it useful to actually conduct transactions with merchants operating in dark markets to conduct this research?  
+(b) What ethical and legal issues does contudcting a transaction with a questionable merchant raise?  
+   </div>
+
+   <div class="problem"> 
+**Problem 3.** The Heuristic 1 (Section 4.3) used to detemine sets of
+public addresses owned by the same entity is based on the assumption
+that all inputs to a bitcoin transaction are controlled by the same
+entity.  According to the paper, "the sender in the transaction must
+know the private signing key belonging to each public key used as an
+input, so it is unlikely that the collection of public keys are
+controlled by multiple entities (as these entities would need to reveal
+their private keys to each other)."  Explain why this is not actually
+true. (A good answer will consider in more detail what is needed in the
+unlocking script to spend each input.)
+   </div>
+
+   <div class="problem">
+**Problem 4.**
+
+   </div>
 
 ## Blockchain APIs
 
