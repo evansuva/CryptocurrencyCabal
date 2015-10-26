@@ -1,12 +1,9 @@
 ---
 title: "PS3: CSI: Blockchain"
-date: '2015-10-21'
+date: '2015-10-25'
 nocomment: false
-menu: "hidden"
+menu: "assignments"
 ---
-
-# DRAFT - Not yet posted!
-
 
 # Problem Set 3:<br> CSI: Blockchain
 
@@ -34,17 +31,13 @@ other means you choose, and in person).
 
 ### Submission
 
-Submit your answers as a single PDF file using [this
-link](https://www.dropbox.com/request/oar0AQeg4SJRNtdHbcSS).  The name
-of your file should be `<your email ID>-ps3.pdf` (if you worked alone)
-or `<partner1 email ID>-<partner2 email ID>-ps3.pdf`
-
-Your submission should include clearly marked answers for all the
-problems (highlighted in yellow).  None of the questions require
-submitting a program, although you may find it helpful to write programs
-to develop your answers.  If the code you write is less than a page, it
-is best to just include it in the PDF writeup.  If it is longer, you may
-submit separate code files (and mention them in the PDF submission).
+Submit your answers as a single ZIP file using [this
+link](https://www.dropbox.com/request/YC25YAa5DV7ejcc49ONC).  The name
+of your file should be `<your email ID>-ps3.zip` (if you worked alone)
+or `<partner1 email ID>-<partner2 email ID>-ps3.zip`.  Your submission
+should include a PDF document containing all your written (non-code)
+answers, all of the source code for your programs, and any additional
+data you think it useful to provide.
 
 ## Warm-Up: Manual Exploration
 
@@ -81,7 +74,7 @@ to see the addresses that are receiving bitcoin from the given address).
 
 Since our goal is to learn as much as we can about the overall
 operation, you should post your answers to Problem 1 (for your address)
-as a comment on this page.
+as a [comment on this page](#comments).
 
 ## Privacy in the Blockchain
 
@@ -91,14 +84,14 @@ The questions in the section focus on this paper:
 
 You should also read:
 
--  [_Chapter 6: _](http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf),
+-  [_Chapter 6: Bitcoin and Anonymity_](http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf),
 from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
 Steven Goldfeder. [_Bitcoin and Cryptocurrency
 Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
 
    <div class="problem"> 
 **Problem 2.** Part of the strategy used in the
-Sarah Meiklejohn et al.\ paper was for the authors to open accounts with services and conduct transactions with questionable merchants.  
+Sarah Meiklejohn et al. paper was for the authors to open accounts with services and conduct transactions with questionable merchants.  
 (a) Why was it useful to actually conduct transactions with merchants operating in dark markets to conduct this research?  
 (b) What ethical and legal issues does contudcting a transaction with a questionable merchant raise?  
    </div>
@@ -116,9 +109,10 @@ true. (A good answer will consider in more detail what is needed in the
 unlocking script to spend each input.)
    </div>
 
-   <div class="problem">
-**Problem 4.**
-
+   <div class="problem"> 
+**Problem 4.** The analysis in this paper was done before hierarchical
+deterministic wallets became standard.  How does the widespread use of
+HD wallets today impact the effectiveness of their Heuristic 2?
    </div>
 
 ## Blockchain APIs
@@ -196,37 +190,118 @@ for receiver in get_receivers(sender):
 
 To avoid API limits, you will want to [obtain an API
 key](https://accounts.blockcypher.com/), and add an `api_key=APIKEY`
-parameter to your requests.  
+parameter to your requests:
+```Python
+   txdetails = blockcypher.get_transaction_details(tx, api_key=API_KEY)
+```
 
 You can also use direct web API requests:
 
 ```Python
      r = requests.get('https://api.blockcypher.com/v1/btc/main/addrs/' + adr 
-       	 	       + '/full', params=API_KEY).json() 
+       	 	       + '/full', params={'token': API_KEY}).json() 
 ```
 
 To learn if an address is connected with a known wallet, you can use the
-[WalletExplorer.com](http://WalletExplorer.com) API:
+[WalletExplorer.com](http://WalletExplorer.com) API (note the
+WalletExporer API is not publicly documented, but Aleš Janda, the
+WalletExplorer developer, kindly made it available to us):
 
 ```Python
 def address_display(adr):
     try:
-        r = requests.get('https://www.walletexplorer.com/api/1/address-lookup?address=' + adr 
-	    		 + '&caller=virginia.edu').json()
+        r = requests.get('https://www.walletexplorer.com/api/1/address-lookup?address=' 
+		         + adr + '&caller=virginia.edu').json()
         return adr + " (" + r['label'] + ")"
     except:
         return adr
 ```
 
-## Follow the Money
+## Mixing Services
 
-Now it’s time to follow the money!
+Before looking at the ransomware addresses, get some practice using a
+blockchain API by examining a simple mixer (as far as we can tell, the
+ransomwarists are not actually using any mixing service, though).
 
-We want to figure out if there are any common addresses that eventually
-receive coin from more than one of the starting addresses. This could
-detect if the suspect addresses are running received coins through a
-mixnet, but outputting to the same address eventually, which could mean
-payments to the same vendor. 
+In transaction
+[0197dabc3c31c8221b5d7883a9d03240bcf7a3042e1bf6dcc26c8d3aa60c58ab](https://blockchain.info/tx/0197dabc3c31c8221b5d7883a9d03240bcf7a3042e1bf6dcc26c8d3aa60c58ab),
+Dave sent 0.01523 BTC to the mixing service
+[BitMixer.io](https://bitmixer.io).
+
+BitMixer is a mixing service for the impatient - it will send the input
+amount, less the collected fees, to the requested output address
+immediately after the input transaction is confirmed (a single
+confirmation is enough for small amounts, so the mixer output
+transaction is very likely to be in the next block in the blockchain).
+(In this case, Block 379818).
+
+Note BitMixer's [fee structure](https://bitmixer.io/fees.html): "Our
+minimum fee is 0.5% plus 0.0005 BTC for every forward address.  We
+recommend to set higher custom fee to prevent advanced amount-based
+blockchain analysis."  (They don't, to many customers dismay, actually
+make any promises about their maximum fee.)
+
+   <div class="problem"> 
+**Problem 5.** Assuming you know the output
+transaction is in the block immediately following the input transaction
+and that BitMixer's actual fee on this transaction is between 0.5% +
+0.0005 BTC and 0.6% + 0.0005 BTC (but don't know anything else), how big
+is the annonymity set for the output transaction?  (Hint: use the
+blockcypher API to look at all the output values for transactions in the
+target block.)
+
+   </div>
+  
+   <div class="problem"> 
+**Challenge Bonus.** Which address is the output address?  Your answer
+  should include (a) a wager amount indicating your confidence (up to 10
+  points), which you win or lose depending on the correctness of your
+  answer, and (b) an explanation of why you think that is the actual
+  output address.
+   </div>
+
+   <div class="problem"> 
+**Problem 6.** The [BitMixer.io](https://bitmixer.io/why.html) site
+  suggests, "In order to further enhance the security of your
+  transactions we provide the opportunity to use two or more forward
+  addresses as well as convenient time delays."  How much does it enhance anonymity to split your output across two forward addresses?  (A good answer will get into how using two forward addresses impacts both the size of the anonymity set and the computational cost of performining the de-anonymizing analysis.  A great answer would actually test this by examining the blockchain to get a concrete result.)
+   </div>
+
+## Follow the Ransomware Money
+
+Now it’s time to follow the money!  We'll provide a few hints for things
+to do, but you should use these as starting points and form your own
+ideas about ways to explore the blockchain.
+
+First, we examine the direct transactions involving the ransomware
+addresses (in the `suspects.txt` file provided to you).  Since we know
+these addresses were used to collect money from ransomware victims, we
+are more interested in looking at transactions where bitcoin is sent
+from the ransomware collection addresses to other addresses.
+
+   <div class="problem"> 
+**Problem 7.** Write a program that reads in a file containing suspect
+addresses (e.g., the `suspects.txt` file containing the ransomware
+payment addresses that was sent to you), and examines the blockchain to
+find addresses that receive bitcoin from the suspect addresses.  By
+using the WalletExplorer API, you should be able to find some
+interesting transactions, including one where the ransomware address
+sent bitcoin to an address WalletExplorer identifies as being
+"BitPay.com-old".  Report on any interesting transactions found by your
+program.  
+   </div>
+
+If the criminals are more careful, they should avoid making any
+revealing transactions directly from the collection addresses, and
+instead try to hide their money flows by making lots of transfers
+between other addresses (or, if they trust a mixnet operator
+sufficiently, use a mixer to disconnect their money trail).
+
+So, we want to figure out if there are any common addresses that
+eventually receive coin from more than one of the starting
+addresses. This could detect if the suspect addresses are running
+received coins through a mixnet, but outputting to the same address
+eventually, which could mean payments to the same vendor. 
 
 A good approach to this problem could be writing a program that
 iteratively follows successive outputs from a series of seed addresses
@@ -235,47 +310,75 @@ want to find addresses that eventually receive bitcoin sent from more
 than one of the ransom collection addresses, since these are likely to
 be addresses involved in meaningful transactions.  
 
+   <div class="problem"> 
+**Problem 8.** Write a program that reads in a file containing suspect
+addresses (e.g., the `suspects.txt` file containing the ransomware
+payment addresses that was sent to you), and outputs a list of all the
+addresses that eventually receive bitcoin from more than one of the
+suspect addresses.  The receiving addresses are not limited to direct
+transactions, but could receive funds through a sequence of transactions
+starting from suspect addresses.  From the ransonware payment addresses
+you should be able to find at least 34 such addresses (including the
+`18dwCxqqmya2ckWjCgTYReYyRL6dZF6pzL` address which was already known to
+the FBI to have been used by the ransomware operation.)  
+   </div>
+
 We are also interested in finding out the relative importance of the
 addresses found. You can determine this based on factors such as amount
 of bitcoins they receive, number of seed addresses they are associated
 with, or how many hops away the addresses are on average from associated
-seed addresses.
+seed addresses.  You can also use the
+[WalletExplorer.com](http://WalletExplorer.com) API to see if the
+addresses found are associated with known wallets.
 
-We'll provide a few hints for things to do, but you should use these as
-starting points and form your own ideas about ways to explore the blockchain.
+   <div class="problem"> 
+**Problem 9.** Improve your program to provide additional information
+  about the addresses found, and order the addresses according to the
+  total value they received connected to the starting addresses.
+   </div>
 
-## Mixing Services
+The final problem is open-ended.  Your goal is to hopefully find some
+information that would be useful to the FBI, or short of that, to at
+least impress your classmates.
 
+We have a few suggested options below (from which you can select one to
+do). If you have a better idea for what to do, though, feel free to do
+that instead.  If you want to do anything that involves interacting with
+criminals, though, please discuss your idea with the course staff and
+get permission before doing anything potentially risky!
 
+   <div class="problem">
+**Problem 10 (option 1).** Develop and implement a new strategy for exploring the
+  ransomware transactions, and report on what you find.
+   </div>
 
+   <div class="problem">
+**Problem 10 (option 2).** Try applying your programs to other interesting sets of
+  addresses.  There are lots of potential sources of such addresses,
+  including, of course, searching the blockchain itself for addresses
+  involved in interesting transactions.  (You can also look at posts such as [9 Infamous Bitcoin Addresses](http://www.theopenledger.com/9-most-famous-bitcoin-addresses/) or Blockchain.info's [list of popular addresses](https://blockchain.info/popular-addresses?show_adv=true).)
+   </div>
 
-
-
-The directions we provide use blockchain.info’s Python API (https://github.com/blockchain/api-v1-client-python). We will be using its “blockexplorer” module. 
-
-
-Installing our Tools
-Install Python. 
-Install Blockchain API library. Follow the directions to install Blockchain.info’s API (https://github.com/blockchain/api-v1-client-python). Familiarize yourself with the blockexplorer module (https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md). You will mainly be interacting with the “Address” object.
-
-**suspects.txt**
-
-Problem 4. Given the intel we have gathered from our analysis, what do you think some possible next steps could be to de-anonymize the addresses? What kind of additional outside data would be required to make blockchain based findings such as our own actionable intelligence for law enforcement?
-
-Problem 4 (Bonus?). The following address (not included in suspects.txt) is suspected by the FBI to have been used directly by the attackers. See what interesting things you can find by following the money! 
-
-18dwCxqqmya2ckWjCgTYReYyRL6dZF6pzL
-
-
-
-
-
-
-
-
+   <div class="problem">
+**Problem 10 (option 3).** Figure out how a mixing service like
+  BitMixer.io (or select another one) works, and how much anonymity it
+  really provides.
+   </div>
   
+
 ### Submission
 
 Follow the submission instructions at the beginning of this page by
-8:29pm on Sunday, 8 November.
+8:29pm on Sunday, 8 November.  If you do find anything of particular
+interest, please let us know right away, though!
 
+
+   <div class="credits">
+Credits: This assignment was developed by Ori Shimony and David Evans for
+Cryptocurrency Cabal Fall 2015.  We thank Jeremy D'Errico, Benjamin
+Blome, David Cochran, and Stuart VonCanon from the FBI (Richmond Office)
+for providing the impetus and data for this assignment.  We thank Aleš
+Janda for making the WalletExplorer API available to us.
+   </div>
+
+   <a name="comments"></a>
