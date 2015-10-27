@@ -8,8 +8,7 @@ menu: "classes"
  
 Josh Cincinatti, Developer Advocate for BlockCypher (and UVa alum), gave
 a presentation on [The Budding Business of Bitcoin and BlockCypher: An
-Alliterative, Allegorical Adventure into Cryptocurrency
-](https://docs.google.com/presentation/d/12NY2HowHjSA9N0beF6fSAKThAMITOylpc7WONhOUSdk/edit#slide=id.p).
+Alliterative, Allegorical Adventure into Cryptocurrency](https://docs.google.com/presentation/d/12NY2HowHjSA9N0beF6fSAKThAMITOylpc7WONhOUSdk/edit#slide=id.p).
 
 <!--more-->
 
