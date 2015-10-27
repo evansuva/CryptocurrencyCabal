@@ -6,8 +6,31 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 17: Bitcoin and Business</title>
+      <link>http://bitcoin-class.org/classes/class17/</link>
+      <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class17/</guid>
+      <description>&lt;p&gt;Josh Cincinatti, Developer Advocate for BlockCypher (and UVa alum), gave
+a presentation on &lt;a href=&#34;https://docs.google.com/presentation/d/12NY2HowHjSA9N0beF6fSAKThAMITOylpc7WONhOUSdk/edit#slide=id.p&#34;&gt;The Budding Business of Bitcoin and BlockCypher: An
+Alliterative, Allegorical Adventure into Cryptocurrency
+&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 16: Midterm</title>
+      <link>http://bitcoin-class.org/classes/class16/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class16/</guid>
+      <description>&lt;p&gt;Class 16 was the &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;Midterm Exam&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 15: Scripting Transactions</title>
@@ -1241,305 +1264,6 @@ value, you are in big trouble!  A common mistake was to use
 
 &lt;li&gt;&lt;p&gt;In elliptic curve cryptography, why do we use &lt;span class=&#34;math&#34;&gt;mod &lt;em&gt;p&lt;/em&gt;&lt;/span&gt; integers? What would go wrong if we used real numbers?  What would go wrong if we used unbounded integers?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 02: Cryptography</title>
-      <link>http://bitcoin-class.org/classes/class2/</link>
-      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class2/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-Before the next class (Wednesday, Sept 2):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch03.asciidoc&#34;&gt;&lt;em&gt;Chapter 3: The Bitcoin
-Client&lt;/em&gt;&lt;/a&gt;
-and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch04.asciidoc&#34;&gt;&lt;em&gt;Chapter 4: Keys, Addresses,
-Wallets&lt;/em&gt;&lt;/a&gt;
-from Andreas M. Antonopoulos, &lt;a href=&#34;https://github.com/aantonop/bitcoinbook&#34;&gt;&lt;em&gt;Mastering Bitcoin: Unlocking Digital
-Cryptocurrencies&lt;/em&gt;&lt;/a&gt; book (also
-available &lt;a href=&#34;http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042&#34;&gt;in
-print&lt;/a&gt;).
-You can skim most of Chapter 3, especially the parts about installing
-bitcoin core, but should read Chapter 4.  (You should have already read
-Chapters 1 and 2.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_1.pdf&#34;&gt;&lt;em&gt;Chapter 1: Introduction to Cryptography and
-Cryptocurrencies&lt;/em&gt;&lt;/a&gt;,
-from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
-Technologies&lt;/em&gt;&lt;/a&gt;.
-This chapter starts with cryptographic hashing and authenticated data
-structures (which we are deferring until until later, but is still worth
-reading now), and Section 1.3 covers digital signatures.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday, September 7&lt;/strong&gt;: Check-up 1.  This will be a short in-class quiz
-  to test your understanding of the main concepts covered so far.  It
-  will cover material from the readings and classes 1-3.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ppf9BW9JlnIXC5&#34;
-width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class2-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;!--
-how is it possible to own something digital?
-
-- copyright!
-
-England
-
-1662 - Licensing of the Press Act
-
-guild of printers, &#34;Stationer&#39;s Company&#34; (formed in 1403, royal charter in 1557)
-granted monopoly on printing [cf. Chinese granting monopoly on salt production]
-exclusive right to print - responsible for censoring
-
-ended in 1694 - no restrictions        
-
-
-Act of Queen Anne
---&gt;
-
-&lt;h2 id=&#34;cryptography:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Cryptography&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;kryptos&lt;/em&gt; is a Greek root meaning hidden (&amp;ldquo;secret&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;crypto&lt;/em&gt; + &lt;em&gt;graphy&lt;/em&gt; = &amp;ldquo;secret writing&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Decryption&lt;/em&gt; is what the intended receiver does.&lt;br /&gt;
-&lt;em&gt;Cryptanalysis&lt;/em&gt; is what an attacker does.&lt;/p&gt;
-
-&lt;p&gt;How are cryptography and security related?
-&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;simple-message-cryptosystem:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Simple Message Cryptosystem&lt;/h3&gt;
-
-&lt;p&gt;Two functions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Encrypt:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;E&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;: byte[]) &amp;rarr; byte[]&lt;/span&gt;.  The input is called the
-&lt;strong&gt;plaintext&lt;/strong&gt;; the output is called the &lt;strong&gt;ciphertext&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Decrypt:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;D&lt;/em&gt;(&lt;em&gt;c&lt;/em&gt;: byte[]) &amp;rarr; byte[]&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Required properties:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Correctness:&lt;/strong&gt; for all possible messages, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;, &lt;em&gt;D&lt;/em&gt;(&lt;em&gt;E&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;)) = &lt;em&gt;m&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Security:&lt;/strong&gt; given the output of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;E&lt;/em&gt;(&lt;em&gt;m&lt;/em&gt;)&lt;/span&gt;, it is &amp;ldquo;hard&amp;rdquo; to learn anything interesting about &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://web.mit.edu/newsoffice/2013/goldwasser-and-micali-win-turing-award-0313.html&#34;&gt;&lt;em&gt;Goldwasser and Micali win Turing Award: Team honored for
-‘revolutionizing the science of
-cryptography&amp;rsquo;&lt;/em&gt;&lt;/a&gt;,
-MIT News, 13 March 2013.&lt;/p&gt;
-
-&lt;p&gt;Their paper that introduced semantic security notions is:
-&lt;a href=&#34;http://groups.csail.mit.edu/cis/pubs/shafi/1982-stoc.pdf&#34;&gt;&lt;em&gt;Probabilistic Encryption and How to Play Mental Poker Keeping Secret
-All Partial
-Information&lt;/em&gt;&lt;/a&gt;,
-ACM Symposium on Theory of Computing, 1982.  (We will not get into
-formal security definitions or proofs in this class, but you should take
-&lt;a href=&#34;http://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad Mahmoody&lt;/a&gt;&amp;rsquo;s class to
-learn them.)&lt;/p&gt;
-
-&lt;h3 id=&#34;keyed-symmetric-cryptosystem:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Keyed Symmetric Cryptosystem&lt;/h3&gt;
-
-&lt;p&gt;Claude Shannon, &lt;a href=&#34;http://netlab.cs.ucla.edu/wiki/files/shannon1949.pdf&#34;&gt;&lt;em&gt;Communication Theory of Secrecy Systems&lt;/em&gt;&lt;/a&gt;, 1949 (work done during World War II, but declassified later).&lt;/p&gt;
-
-&lt;p&gt;Two functions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Encrypt:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;E&lt;/em&gt;(&lt;em&gt;&lt;font color=&#34;red&#34;&gt;k&lt;/font&gt;&lt;/em&gt;: byte[], &lt;em&gt;m&lt;/em&gt;: byte[]) &amp;rarr; byte[]&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Decrypt:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;D&lt;/em&gt;(&lt;em&gt;&lt;font color=&#34;red&#34;&gt;k&lt;/font&gt;&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;: byte[]) &amp;rarr; byte[]&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Required properties:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Correctness:&lt;/strong&gt; for all possible messages, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt;, and keys, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;D&lt;/em&gt;(&lt;em&gt;&lt;font color=&#34;red&#34;&gt;k&lt;/font&gt;&lt;/em&gt;, &lt;em&gt;E&lt;/em&gt;(&lt;em&gt;&lt;font color=&#34;red&#34;&gt;k&lt;/font&gt;&lt;/em&gt;, &lt;em&gt;m&lt;/em&gt;)) = &lt;em&gt;m&lt;/em&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Security:&lt;/strong&gt; given &lt;span class=&#34;math&#34;&gt;&lt;em&gt;E&lt;/em&gt;&lt;/span&gt;, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;D&lt;/em&gt;&lt;/span&gt;, and the output of &lt;span class=&#34;math&#34;&gt;&lt;em&gt;E&lt;/em&gt;(&lt;font color=&#34;red&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/font&gt;, &lt;em&gt;m&lt;/em&gt;)&lt;/span&gt; it is &amp;ldquo;hard&amp;rdquo; to learn anything interesting about &lt;span class=&#34;math&#34;&gt;&lt;em&gt;m&lt;/em&gt;&lt;/span&gt; (without knowing &lt;span class=&#34;math&#34;&gt;&lt;font color=&#34;red&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/font&gt;&lt;/span&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Are these properties enough to be secure against an active attacker?
-&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Keyspace:&lt;/strong&gt; set of all possible keys.  Assume (hopefully for
-  user!) that key is drawn uniformly from this set.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Brute Force Attack:&lt;/strong&gt; for all possible keys, &lt;span
-  class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;i&lt;/sub&gt;&lt;/span&gt;, try computing &lt;span
-  class=&#34;math&#34;&gt;&lt;em&gt;D&lt;/em&gt;(&lt;em&gt;k&lt;/em&gt;&lt;sub&gt;i&lt;/sub&gt;)&lt;/span&gt; to see if it looks like a
-  reasonable plaintext.&lt;/p&gt;
-
-&lt;p&gt;In order for a brute force attack to succeed, what properties are
-necessary about (1) the keyspace and (2) the message space?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Where is symmetric cryptography used in your bitcoin wallet?&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;!--page--&gt;
-
-&lt;p&gt;(This material was not actually covered in class 2, but will be covered in class 3.)&lt;/p&gt;
-
-&lt;h2 id=&#34;asymmetric-cryptosystems:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Asymmetric Cryptosystems&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Asymmetric cryptosystems&lt;/strong&gt; use &lt;em&gt;different functions&lt;/em&gt; for encrypting
-  and decrypting, with the property that revealing the encryption
-  function does not reveal the decryption function.  With Kerckhoff&amp;rsquo;s
-  Principle, this means there are different keys for encryption and
-  decryption.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Generate:&lt;/strong&gt; produce key pair, &lt;span class=&#34;math&#34;&gt;(&lt;em&gt;&lt;font color=&#34;green&#34;&gt;KU&lt;sub&gt;X&lt;/sub&gt;&lt;/font&gt;&lt;/em&gt;, &lt;em&gt;&lt;font color=&#34;red&#34;&gt;KR&lt;sub&gt;X&lt;/sub&gt;&lt;/font&gt;&lt;/em&gt;)&lt;/span&gt;, and publish the public key, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;&lt;font color=&#34;green&#34;&gt;KU&lt;sub&gt;X&lt;/sub&gt;&lt;/font&gt;&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Encrypt:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;E&lt;/em&gt;(&lt;em&gt;&lt;font color=&#34;green&#34;&gt;KU&lt;sub&gt;X&lt;/sub&gt;&lt;/font&gt;&lt;/em&gt;: byte[], &lt;em&gt;m&lt;/em&gt;: byte[]) &amp;rarr; byte[]&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Decrypt:&lt;/strong&gt; &lt;span class=&#34;math&#34;&gt;&lt;em&gt;D&lt;/em&gt;(&lt;em&gt;&lt;font color=&#34;red&#34;&gt;KR&lt;sub&gt;X&lt;/sub&gt;&lt;/font&gt;&lt;/em&gt;, &lt;em&gt;c&lt;/em&gt;: byte[]) &amp;rarr; byte[]&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Messages:&lt;/strong&gt; Sender encrypts a message with the recipient&amp;rsquo;s public key.
-  Recipient decrypts the message using her private key.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Signatures:&lt;/strong&gt; Signer encrypts a message with her own private key.
-  Verifier checks the message using the signer&amp;rsquo;s public key.&lt;/p&gt;
-
-&lt;p&gt;How can we use asymmetric cryptosystems to &lt;em&gt;prove&lt;/em&gt; ownership?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How can we use asymmetric cryptosystems to &lt;em&gt;transfer&lt;/em&gt; ownership?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Where is asymmetric cryptography used in your wallet?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Assuming we have a strong asymmetric cryptosystem, what hard problems are left
-to solve to make a cryptocurrency?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 01: What is Money?</title>
-      <link>http://bitcoin-class.org/classes/class1/</link>
-      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class1/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-Before &lt;strong&gt;8:29pm Saturday&lt;/strong&gt; (29 August):&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt; &lt;a href=&#34;http://bitcoin-class.org/syllabus&#34;&gt;Course Syllabus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Setup&lt;/strong&gt; a bitcoin wallet (see &lt;a href=&#34;http://bitcoin-class.org/registration&#34;&gt;Registration&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Submit &lt;a href=&#34;http://bitcoin-class.org/registration&#34;&gt;Registration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Monday&amp;rsquo;s class&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Read:&lt;/strong&gt;
-&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch01.asciidoc&#34;&gt;&lt;em&gt;Chapter 1: Introduction&lt;/em&gt;&lt;/a&gt;
-and
-&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch02.asciidoc&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Works&lt;/em&gt;&lt;/a&gt;
-from Andreas M. Antonopoulos, &lt;a href=&#34;https://github.com/aantonop/bitcoinbook&#34;&gt;&lt;em&gt;Mastering Bitcoin: Unlocking Digital
-Cryptocurrencies&lt;/em&gt;&lt;/a&gt; book (also
-available &lt;a href=&#34;http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Currencies/dp/1449374042&#34;&gt;in
-print&lt;/a&gt;).&lt;br /&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/md9EiU6QZoWroa&#34;
-width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class1-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;notes:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Notes&lt;/h2&gt;
-
-&lt;p&gt;What is currency?&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Every commodity admits two uses: (1) its proper use, (2) its use as an article of exchange.&lt;/em&gt;&lt;br /&gt;
-Aristotle&amp;rsquo;s &lt;a href=&#34;https://play.google.com/books/reader?id=1J7N4eAKuhwC&amp;amp;printsec=frontcover&amp;amp;output=reader&amp;amp;hl=en&amp;amp;pg=GBS.PR13&#34;&gt;&lt;em&gt;Politics&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;What properties should a currency have?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What is a &lt;em&gt;fiat currency&lt;/em&gt;?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;All these pieces of paper are, issued with as much solemnity and authority as if they were of pure gold or silver&amp;hellip; and indeed everybody takes them readily, for wheresoever a person may go throughout the Great Kaan&amp;rsquo;s dominions he shall find these pieces of paper current, and shall be able to transact all sales and purchases of goods by means of them just as well as if they were coins of pure gold.&lt;/em&gt;&lt;br /&gt;
-Macro Polo (on Yuan Dynasty paper money, 13th century)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Was salt a fiat currency as used by the Romans?  Was salt a fiat currency as used by the Han Dynasty?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://sinosphere.blogs.nytimes.com/2014/11/21/chinas-millenniums-old-salt-monopoly-no-match-for-economic-reform/&#34;&gt;&lt;em&gt;China’s Millenniums-Old Salt Monopoly No Match for Economic Reform&lt;/em&gt;&lt;/a&gt;, New York Times, 21 November 2014.&lt;/p&gt;
-
-&lt;h2 id=&#34;designing-a-digital-currency:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Designing a Digital Currency&lt;/h2&gt;
-
-&lt;p&gt;What are the drawbacks of using a centralized bank to record transactions?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What race conditions could occur when you make a purchase with a credit card today?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is recorded in the bitcoin ledger?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;discussion-questions:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Discussion Questions&lt;/h2&gt;
-
-&lt;p&gt;How well does US paper money work as a currency?&lt;/p&gt;
-
-&lt;p&gt;Why are there &lt;a href=&#34;https://angel.co/cryptocurrency-2&#34;&gt;over 800 cryptocurrency startups&lt;/a&gt;?&lt;/p&gt;
-
-&lt;p&gt;How big do you expect the bitcoin blockchain to be on the last day of
-class (December 7, 2:00pm)?  (closest answer wins!)&lt;/p&gt;
 </description>
     </item>
     

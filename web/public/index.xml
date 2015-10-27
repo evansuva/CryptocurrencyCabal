@@ -1520,6 +1520,19 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 17: Bitcoin and Business</title>
+      <link>http://bitcoin-class.org/classes/class17/</link>
+      <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class17/</guid>
+      <description>&lt;p&gt;Josh Cincinatti, Developer Advocate for BlockCypher (and UVa alum), gave
+a presentation on &lt;a href=&#34;https://docs.google.com/presentation/d/12NY2HowHjSA9N0beF6fSAKThAMITOylpc7WONhOUSdk/edit#slide=id.p&#34;&gt;The Budding Business of Bitcoin and BlockCypher: An
+Alliterative, Allegorical Adventure into Cryptocurrency
+&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>PS3</title>
       <link>http://bitcoin-class.org/announcements/ps3/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
@@ -1548,6 +1561,16 @@ Blog&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For some background on the current entrepreneurial landscape in cryptocurrencies, Josh send along this report:
 &lt;a href=&#34;http://storj.io/TheBlockchainReport.pdf&#34;&gt;&lt;em&gt;The Blockchain Report: Welcome to the Internet of Value&lt;/em&gt;&lt;/a&gt;,
 Needham &amp;amp; Company, LLC, 21 October 2015.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 16: Midterm</title>
+      <link>http://bitcoin-class.org/classes/class16/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class16/</guid>
+      <description>&lt;p&gt;Class 16 was the &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;Midterm Exam&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1783,128 +1806,6 @@ Questions, Answers, and Analysis of Legal
 Issues&lt;/em&gt;&lt;/a&gt;, 14 August
 2015. This provides a good summary of US laws and regulations that apply
 to bitcoin, and why Congress is interested in it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Midterm Schedule Update</title>
-      <link>http://bitcoin-class.org/announcements/updates/</link>
-      <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/updates/</guid>
-      <description>&lt;p&gt;The midterm was originally scheduled for Monday, October 19, but due to
-the two guest lectures this week it will be rescheduled to be on
-Wednesday, October 21.&lt;/p&gt;
-
-&lt;p&gt;In class on Monday, October 19, you will receive a handout that sets up
-and includes a few of the questions on the midterm (which you&amp;rsquo;ll be
-expected to work on before Wednesday, Oct 21, and will be able to bring
-in written answers to that you will submit as part of the midterm).  The
-rest of the midterm will be in class on Wednesday, October 21.&lt;/p&gt;
-
-&lt;p&gt;If you have a problem with the schedule change and prefer to do the
-midterm on Monday, October 19, this is an option.  You should contact
-Dave or Samee to arrange this by Oct 14 at the latest.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 12: Script</title>
-      <link>http://bitcoin-class.org/classes/class12/</link>
-      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class12/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Read&lt;/strong&gt;: &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_3.pdf&#34;&gt;&lt;em&gt;Chapter 3: Mechanics of Bitcoin&lt;/em&gt;&lt;/a&gt;, from
-Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven
-Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
-Technologies&lt;/em&gt;&lt;/a&gt;.
-Sections 3.2 and 3.3 are about bitcoin scripts, and should be read
-carefully.  (You should read the whole chapter, but those sections are
-most relevant to today&amp;rsquo;s class.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (8:29pm).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/aQYiH6zGCIgxbO&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Sorry, ink markings were lost from today.  &lt;a href=&#34;http://bitcoin-class.org/classes/class12-post.pptx&#34;&gt;Download the slides&lt;/a&gt;
-   &lt;/div&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;hash-collisions:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Hash Collisions!&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Computing a bitcoin address:&lt;/strong&gt; (&lt;a href=&#34;https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses&#34;&gt;bitcoinwiki&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;Private Key: pick a random number, &lt;em&gt;k&lt;/em&gt;.&lt;br /&gt;
-Public Key: compute (&lt;em&gt;Ux&lt;/em&gt;, &lt;em&gt;Uy&lt;/em&gt;) = &lt;em&gt;Gk&lt;/em&gt;
-&lt;div class=&#34;indented&#34;&gt;(elliptic curve multiplication, &lt;em&gt;G&lt;/em&gt; is specified generator point)&lt;/div&gt;
-&lt;em&gt;Ux&lt;/em&gt; and &lt;em&gt;Uy&lt;/em&gt; are 32 bytes each.&lt;/p&gt;
-
-&lt;p&gt;The bitcoin address is (|| is bitstring concatenation):&lt;br /&gt;
-    &lt;div class=&#34;indented&#34;&gt;
-    raw = &lt;code&gt;1&lt;/code&gt; || RIPEMD160(SHA256(&lt;em&gt;Ux&lt;/em&gt; || &lt;em&gt;Uy&lt;/em&gt;))&lt;br /&gt;
-         &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;RIPEMD output is 160 bits (20 bytes) + one byte for &lt;code&gt;1&lt;/code&gt;&lt;/em&gt;&lt;/div&gt;
-    checksum = first 4 bytes of SHA256(SHA256(raw))  &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;Compute a checksum using SHA256 double hash&lt;/em&gt;&lt;/div&gt;
-    address = Base58Check(raw || checksum)  &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;convert to printable, unambiguous characters&lt;/em&gt;&lt;/div&gt;
-    &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is pre-image resistance for the security of bitcoin addresses?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is collision resistance for the security of bitcoin addresses?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is pre-image resistance for the integrity of bitcoin&amp;rsquo;s proof-of-work?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is collision resistance for the integrity of bitcoin&amp;rsquo;s proof-of-work?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Xiaoyun Wang and Hongbo Yu, &lt;a href=&#34;http://www.bitcoin-class.org/docs/hashcollisions.pdf&#34;&gt;&lt;em&gt;How to Break MD5 and Other Hash Functions&lt;/em&gt;&lt;/a&gt;, EuroCrypt 2005.&lt;/p&gt;
-
-&lt;h1 id=&#34;bitcoin-script:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Bitcoin Script&lt;/h1&gt;
-
-&lt;p&gt;Transaction outputs in bitcoin are protected by &lt;em&gt;locking scripts&lt;/em&gt;, and
-must be unlocked by &lt;em&gt;unlocking scripts&lt;/em&gt;.  The scripts are written in a
-simple (compared to, say, the Java Virtual Machine language, but quite
-complex and poorly specified for what one might expect would be needed
-for bitcoin transactions) stack-based language.  A transaction output is
-not unlocked unless an unlocking script is provided such that the result
-of executing the unlocking script, followed by executing the locking
-script, is a stack with value True on top (and no invalid transaction
-results during the execution).&lt;/p&gt;
-
-&lt;p&gt;Some script instructions:&lt;/p&gt;
-
-&lt;p&gt;&lt;table cellpadding=5&gt;
-   &lt;tr&gt;
-   &lt;td align=&#34;center&#34;&gt;&lt;b&gt;Opcode&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Input&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Output&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_1&lt;/code&gt;&lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; &lt;strong&gt;1&lt;/strong&gt; &lt;/td&gt;&lt;td&gt; Pushes a &lt;strong&gt;1&lt;/strong&gt; (True) on the stack &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_DUP&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; Duplicates the top element of the stack &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_ADD&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; (&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;) &lt;/td&gt;&lt;td&gt; Pushes the sum of the top two elements. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_EQUAL&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; &lt;strong&gt;0&lt;/strong&gt; or &lt;strong&gt;1&lt;/strong&gt; &lt;/td&gt;&lt;td&gt; Pushes &lt;strong&gt;1&lt;/strong&gt; if the top two elements are exactly equal, otherwise &lt;strong&gt;0&lt;/strong&gt;. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_VERIFY&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; If &lt;em&gt;a&lt;/em&gt; is not &lt;strong&gt;True&lt;/strong&gt; (&lt;strong&gt;1&lt;/strong&gt;), terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_RETURN&lt;/code&gt;&lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; Terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_EQUALVERIFY&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; If &lt;em&gt;a&lt;/em&gt; and &lt;em&gt;b&lt;/em&gt; are not equal, terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_HASH160&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; H(&lt;em&gt;a&lt;/em&gt;) &lt;/td&gt;&lt;td&gt; Pushes bitcoin address, RIPEMD160(SHA256(&lt;em&gt;a&lt;/em&gt;)). &lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;&lt;/p&gt;
-
-&lt;p&gt;Is the bitcoin scripting language Turing-complete?
-&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are not clear on what Turing-complete means (and why real
-machines are not ideal), see &lt;a href=&#34;http://www.dori-mic.org&#34;&gt;&lt;em&gt;Dori-Mic and the Universal
-Machine!&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
