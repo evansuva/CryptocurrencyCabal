@@ -1441,14 +1441,14 @@ thoroughly&lt;/b&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;h2 id=&#34;assignments:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments&lt;/h2&gt;
 
-&lt;p&gt;The course will have one midterm, four problem sets, one final project,
+&lt;p&gt;The course will have one midterm, three problem sets, one final project,
 and a (discretionary) final exam.  In addition, there will be several
 check-ups (short tests in class, with opportunities to revise and
 improve answers after discussion) and short assignments that may involve
 reading assignments and posting answers and questions on the course
 website.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Exams.&lt;/strong&gt; The midterm is Monday, 19 October.  The final exam is
+&lt;p&gt;&lt;strong&gt;Exams.&lt;/strong&gt; The midterm is Wednesday, 21 October.  The final exam is
 scheduled for Friday, 11 December (2-5pm).  This time will be used to
 schedule short oral exams for students who have not already demonstrated
 strong understanding of the course topics.&lt;/p&gt;
@@ -1456,16 +1456,15 @@ strong understanding of the course topics.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem Sets.&lt;/strong&gt; The problem sets will involve writing programs and
 solving problems to understand transactions in bitcoin (Problem Set 1),
 bitcoin nodes and mining (Problem Set 2), blockchain analysis (Problem
-Set 3), and alternate cryptocurrencies (Problem Set 4).  For most of
-these assignments, you will be encouraged to work with one or two other
-people in a small team.&lt;/p&gt;
+Set 3).  For some assignments, you will be encouraged to work with one
+or two other people in a small team.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Final Project.&lt;/strong&gt; For the final project, you are free to work on
 anything relevant to cryptocurrencies.  Some suggestions for project
 ideas will be posted on the course website.  Students who have ambitious
 ideas for a project may be able to arrange with the course staff to
 expand the project to substitute for other assignments (such as Problem
-Set 4).&lt;/p&gt;
+Set 3).&lt;/p&gt;
 
 &lt;h2 id=&#34;schedule:051025d606153e159a2b11ffecb897d5&#34;&gt;Schedule&lt;/h2&gt;
 
@@ -1477,7 +1476,7 @@ link&lt;/a&gt;.
 Except when noted otherwise, assignments are due at &lt;b&gt;8:29pm&lt;/b&gt; on the
 due date.&lt;/p&gt;
 
-&lt;p&gt;The main expected due dates: &lt;font color=&#34;red&#34;&gt;(updated 20 September 2015, see &lt;a href=&#34;https://web.archive.org/web/20150921010439/http://bitcoin-class.org/syllabus/&#34;&gt;archived version&lt;/a&gt; for original)&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;The main expected due dates: &lt;font color=&#34;red&#34;&gt;(updated 28 October 2015, see &lt;a href=&#34;https://web.archive.org/web/20150921010439/http://bitcoin-class.org/syllabus/&#34;&gt;archived version&lt;/a&gt; for original)&lt;/font&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Saturday, 29 August: &lt;strong&gt;Registration&lt;/strong&gt;&lt;/li&gt;
@@ -1485,10 +1484,10 @@ due date.&lt;/p&gt;
 &lt;li&gt;Tuesday, 15 September: &lt;strong&gt;Problem Set 1: Bitcoin Transactions&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Wednesday, 23 September: &lt;strong&gt;Checkup 2&lt;/strong&gt; (in class)&lt;/li&gt;
 &lt;li&gt;Friday, 9 October: &lt;strong&gt;Problem Set 2: Blockchain&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Monday, 19 October: &lt;strong&gt;Midterm Exam&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Tuesday, 27 October: &lt;strong&gt;Problem Set 3: Blockchain Analysis&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Tuesday, 17 November: &lt;strong&gt;Problem Set 4: Alternate Cryptocurrencies&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Sunday, 22 November: &lt;strong&gt;Project Proposal&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Wednesday, 21 October: &lt;strong&gt;Midterm Exam&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sunday, 8 November: &lt;strong&gt;Problem Set 3: Blockchain Analysis&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Friday, 13 November: &lt;strong&gt;Project Pre-Proposal&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Monday, 23 November: &lt;strong&gt;Project Update&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Monday, 7 December: Last class&lt;/li&gt;
 &lt;li&gt;Friday, 11 December: &lt;strong&gt;Final Exam&lt;/strong&gt; (discretionary)&lt;/li&gt;
 &lt;/ul&gt;
@@ -1516,6 +1515,50 @@ answers, rather than reading everything submitted.&lt;/p&gt;
 &lt;p&gt;There is no set weighting among these things, and in general, if there
 is some combination of the above that demonstrates that you have gotten
 what we hope out of the class then you will receive an A grade.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 18: Confirming the Midterm</title>
+      <link>http://bitcoin-class.org/classes/class18/</link>
+      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class18/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule-updates:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule Updates&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3&#34;&gt;Problem Set 3&lt;/a&gt; is due Sunday, 8
+November (8:29pm).  Please don&amp;rsquo;t wait to get started so you have enough
+time to do something interesting and valuable for the open-ended
+questions.&lt;/p&gt;
+
+&lt;p&gt;There is no Problem Set 4.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project Pre-Proposal: Friday, November 13&lt;/strong&gt;&lt;br /&gt;
+Project Update: Monday, November 23&lt;br /&gt;
+Last class: Monday, December 7&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/mGDH0YpBR4iNtn&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
+   &lt;div class=&#34;caption&#34;&gt;
+&lt;a href=&#34;http://bitcoin-class.org/classes/class18-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
+   &lt;/div&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Simeon-Denis Poisson, &lt;a href=&#34;http://gallica.bnf.fr/ark:/12148/bpt6k110193z/&#34;&gt;&lt;em&gt;Recherches sur la probabilité des jugements en matière criminelle et en matière civile ; précédées des Règles générales du calcul des probabilités&lt;/em&gt;&lt;/a&gt;, 1837.&lt;/p&gt;
+
+&lt;p&gt;For a more accessible presentation, at least if you don&amp;rsquo;t read French, try: &lt;a href=&#34;http://www.rle.mit.edu/rgallager/documents/6.262lateweb2.pdf&#34;&gt;&lt;em&gt;Poisson Processes&lt;/em&gt;&lt;/a&gt;, Robert Gallager.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blockchain.info/charts/avg-confirmation-time&#34;&gt;Blockchain: Median (?) Confirmation Time&lt;/a&gt; (not sure they understand the difference - URL has &amp;ldquo;avg&amp;rdquo;, title has &amp;ldquo;median&amp;rdquo;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.quandl.com/data/BCHAIN/ATRCT-Bitcoin-Average-Transaction-Confirmation-Time&#34;&gt;quandl.com: Average Confirmation Time&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;How do these make sense with what we know about Poisson processes and
+bitcoin transactions?
+&lt;div class=&#34;gap&#34;&gt;&lt;/gap&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1777,34 +1820,6 @@ Manuel Egele, Michael Eubanks, Brian Krebs, Giovanni Vigna. &lt;a href=&#34;http
 Stuff: An Analysis of Reshipping Mule
 Scams&lt;/em&gt;&lt;/a&gt;. ACM
 Conference on Computer and Communications Security 2015.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 13: Law and Policy</title>
-      <link>http://bitcoin-class.org/classes/class13/</link>
-      <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class13/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt; &lt;strong&gt;Monday-Wednesday, October &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;21&lt;/sub&gt;&lt;/strong&gt;: Midterm Exam.
-Part of the midterm will be handed out in class on Monday, Oct 19. The
-midterm will be in class on Wednesday, October 21.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Today&amp;rsquo;s class was a visit from Tom Dukes on law and policy related to cryptocurrencies.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.law.virginia.edu/lawweb/faculty.nsf/FHPbI/1378405&#34;&gt;Tom Duke&amp;rsquo;s Bio&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Congressional Research Service report he mentioned: &lt;a href=&#34;https://www.fas.org/sgp/crs/misc/R43339.pdf&#34;&gt;&lt;em&gt;Bitcoin:
-Questions, Answers, and Analysis of Legal
-Issues&lt;/em&gt;&lt;/a&gt;, 14 August
-2015. This provides a good summary of US laws and regulations that apply
-to bitcoin, and why Congress is interested in it.&lt;/p&gt;
 </description>
     </item>
     
