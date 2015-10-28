@@ -34,6 +34,8 @@ Simeon-Denis Poisson, [_Recherches sur la probabilité des jugements en matière
 
 For a more accessible presentation, at least if you don't read French, try: [_Poisson Processes_](http://www.rle.mit.edu/rgallager/documents/6.262lateweb2.pdf), Robert Gallager. 
 
+Alan E. Gelfand and Herbert Solomon, [_A Study of Poisson's Models for Jury Verdicts in Criminal and Civil Trials_](http://www.jstor.org/stable/pdf/2284062.pdf?acceptTC=true), Journal of the American Statistical Association, 1973.
+
 [Blockchain: Median (?) Confirmation Time](https://blockchain.info/charts/avg-confirmation-time) (not sure they understand the difference - URL has "avg", title has "median")
 
 [quandl.com: Average Confirmation Time](https://www.quandl.com/data/BCHAIN/ATRCT-Bitcoin-Average-Transaction-Confirmation-Time)
