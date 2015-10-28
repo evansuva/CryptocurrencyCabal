@@ -153,14 +153,14 @@ cryptocurrency.
 
 ## Assignments
 
-The course will have one midterm, four problem sets, one final project,
+The course will have one midterm, three problem sets, one final project,
 and a (discretionary) final exam.  In addition, there will be several
 check-ups (short tests in class, with opportunities to revise and
 improve answers after discussion) and short assignments that may involve
 reading assignments and posting answers and questions on the course
 website.
 
-**Exams.** The midterm is Monday, 19 October.  The final exam is
+**Exams.** The midterm is Wednesday, 21 October.  The final exam is
 scheduled for Friday, 11 December (2-5pm).  This time will be used to
 schedule short oral exams for students who have not already demonstrated
 strong understanding of the course topics.
@@ -168,16 +168,15 @@ strong understanding of the course topics.
 **Problem Sets.** The problem sets will involve writing programs and
 solving problems to understand transactions in bitcoin (Problem Set 1),
 bitcoin nodes and mining (Problem Set 2), blockchain analysis (Problem
-Set 3), and alternate cryptocurrencies (Problem Set 4).  For most of
-these assignments, you will be encouraged to work with one or two other
-people in a small team.
+Set 3).  For some assignments, you will be encouraged to work with one
+or two other people in a small team.
 
 **Final Project.** For the final project, you are free to work on
 anything relevant to cryptocurrencies.  Some suggestions for project
 ideas will be posted on the course website.  Students who have ambitious
 ideas for a project may be able to arrange with the course staff to
 expand the project to substitute for other assignments (such as Problem
-Set 4).
+Set 3).
 
 
 ## Schedule
@@ -190,17 +189,17 @@ link](https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.ca
 Except when noted otherwise, assignments are due at <b>8:29pm</b> on the
 due date.
 
-The main expected due dates: <font color="red">(updated 20 September 2015, see <a href="https://web.archive.org/web/20150921010439/http://bitcoin-class.org/syllabus/">archived version</a> for original)</font>
+The main expected due dates: <font color="red">(updated 28 October 2015, see <a href="https://web.archive.org/web/20150921010439/http://bitcoin-class.org/syllabus/">archived version</a> for original)</font>
 
 - Saturday, 29 August: **Registration**
 - Monday, 7 September: **Checkup 1** (in class)
 - Tuesday, 15 September: **Problem Set 1: Bitcoin Transactions**
 - Wednesday, 23 September: **Checkup 2** (in class)
 - Friday, 9 October: **Problem Set 2: Blockchain**
-- Monday, 19 October: **Midterm Exam**
-- Tuesday, 27 October: **Problem Set 3: Blockchain Analysis**
-- Tuesday, 17 November: **Problem Set 4: Alternate Cryptocurrencies**
-- Sunday, 22 November: **Project Proposal**
+- Wednesday, 21 October: **Midterm Exam**
+- Sunday, 8 November: **Problem Set 3: Blockchain Analysis**
+- Friday, 13 November: **Project Pre-Proposal**
+- Monday, 23 November: **Project Update**
 - Monday, 7 December: Last class
 - Friday, 11 December: **Final Exam** (discretionary)
 
