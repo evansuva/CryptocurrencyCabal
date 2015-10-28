@@ -42,7 +42,8 @@ Alan E. Gelfand and Herbert Solomon, [_A Study of Poisson's Models for Jury Verd
 
 How do these make sense with what we know about Poisson processes and
 bitcoin transactions?
-<div class="gap"></gap>
+
+<div class="gap"></div>
 
 <!--more-->
 
