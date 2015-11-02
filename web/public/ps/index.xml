@@ -257,7 +257,7 @@ make any promises about their maximum fee.)&lt;/p&gt;
 transaction is in the block immediately following the input transaction
 and that BitMixer&amp;rsquo;s actual fee on this transaction is between 0.5% +
 0.0005 BTC and 0.6% + 0.0005 BTC (but don&amp;rsquo;t know anything else), how big
-is the annonymity set for the output transaction?  (Hint: use the
+is the anonymity set for the output transaction?  (Hint: use the
 blockcypher API to look at all the output values for transactions in the
 target block.)&lt;/p&gt;
 
