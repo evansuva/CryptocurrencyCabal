@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Class 19: Anonymity in Bitcoin // Cryptocurrency Cabal
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.15-DEV" />
+
+  <meta property="og:title" content="Class 19: Anonymity in Bitcoin" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://bitcoin-class.org/classes/class19/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rotunda.png">
+  <link rel="shortcut icon" href="/rotunda.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Cryptocurrency Cabal" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  <link rel="stylesheet" href="http://bitcoin-class.org/css/cabal.css">
+
+  
+ 
+  
+<script>
+function showText(show,hide)
+{
+    document.getElementById(show).className = "show";
+    document.getElementById(hide).className = "hide";
+}
+</script>
+ 
+
+  
+
+  
+</head>
+
+<body>
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+
+    <a href="http://bitcoin-class.org"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
+    <h2 class="brand-tagline">University of Virginia
+    <br>cs4501 Fall 2015
+    </h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href=""></a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/syllabus/">Syllabus</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b><a href="/ps/">Assignments</a></b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/ps/ps1/">PS1: Bitcoin Transactions</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/ps/ps2/">PS2: The Blockchain</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/ps/ps3/">PS3: CSI: Blockchain</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/registration/">Registration</a>
+          
+          </li>
+        
+      </ul>
+    </nav>
+
+    <b><A href="/classes/">Classes</a></b>
+    <nav class="nav">
+      <ul class="nav-list">
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class17/">Class 17: Bitcoin and Business</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <a href="/classes/class18/">Class 18: Confirming the Midterm</a>
+          
+          </li>
+        
+          <li class="nav-item">
+          
+              <span class="nav-item-selected">Class 19: Anonymity in Bitcoin</span></a>
+          
+          </li>
+        
+        <li><a href="/classes/"><em>More...</em></a></li>
+      </ul>
+
+    </nav>
+
+    <a href="/0/">Spring 2015 Course</a>
+
+    
+
+  </div>
+</div>
+
+	
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+    <section id="main">
+            
+            	<span class="post-date">
+                	2 Nov 2015
+            	</span>
+            	
+            
+
+            
+            	
+            
+
+			
+			
+
+			
+
+			
+
+            
+
+<h2 id="schedule-updates:90174cd8255fa2ab935573c4a489ebf1">Schedule Updates</h2>
+
+<p><a href="http://bitcoin-class.org/ps/ps3">Problem Set 3</a> is due Sunday, 8
+November (8:29pm).  Readings for PS3:</p>
+
+<ul>
+<li><p><a href="http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf"><em>Chapter 6: Bitcoin and Anonymity</em></a>,
+from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
+Steven Goldfeder. <a href="https://piazza.com/princeton/spring2015/btctech/resources"><em>Bitcoin and Cryptocurrency
+Technologies</em></a>.</p></li>
+
+<li><p><a href="http://conferences2.sigcomm.org/imc/2013/papers/imc182-meiklejohnA.pdf"><em>A Fistful of Bitcoins: Characterizing Payments among Men (sic) with No Names</em></a> by Sarah Meiklejohn, Marjori Pomarole, Grant Jordan, Kirill Levchenko, Damon McCoy, Geoffrey M. Voelker, and Stefan Savage.  <em>Internet Measurement Conference</em>, 2013.</p></li>
+</ul>
+
+<p><strong>Project Pre-Proposal: Friday, November 13</strong></p>
+
+<p><center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/r8z63ObiqE9jD7" width="625" height="400" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"> </iframe>
+   <div class="caption">
+<a href="/classes/class19-post.pptx">Download slides (with annotations)</a>
+   </div>
+</center></p>
+
+<h2 id="links:90174cd8255fa2ab935573c4a489ebf1">Links</h2>
+
+<p>Dorit Ron and Adi Shamir. <a href="http://cryptome.org/2013/11/bitcoin-pirate-nakamoto.pdf"><em>How Did Dread Pirate Roberts Acquire and Protect His Bitcoin Wealth?</em></a>. Cryptology ePrint <sup>2013</sup>&frasl;<sub>782</sub>.  23 November 2013.  <a href="https://www.reddit.com/r/Bitcoin/comments/1reuwq/vigorous_debate_over_shamirrons_supposedly/">Reddit Discussion</a></p>
+
+<p>Dustin Trammell. <a href="http://blog.dustintrammell.com/2013/11/26/i-am-not-satoshi/"><em>I Am Not Satoshi</em></a>. 26 November 2013.</p>
+
+<p>Roger Dingledine, Nick Mathewson, Paul Syverson. <a href="https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf"><em>Tor: The Second-Generation Onion Router</em></a>, <a href="https://www.usenix.org/legacy/event/sec04/">USENIX Security Symposium 2004</a>.</p>
+
+<p><a href="https://www.torproject.org/">Tor Project Site</a></p>
+
+<p><a href="https://metrics.torproject.org/relayflags.html?graph=relayflags&amp;start=2014-01-13&amp;end=2015-04-13&amp;flag=Running&amp;flag=Exit&amp;flag=Fast&amp;flag=Stable">How many exit nodes?</a></p>
+
+<p>Nicolas Christin, <a href="http://arxiv.org/pdf/1207.7139.pdf"><em>Traveling the Silk Road: A measurement analysis of a large anonymous online marketplace</em></a>. November 2012.</p>
+
+<p><a href="http://www.nytimes.com/2014/01/19/business/eagle-scout-idealist-drug-trafficker.html?_r=0"><em>Eagle Scout. Idealist. Drug Trafficker?</em></a>, New York Times, 18 Jan 2014.</p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/syllabus/">Syllabus</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/classes/class18/">Class 18: Confirming the Midterm</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+ 
+   var disqus_url = '';
+   var disqus_shortname = 'davidevans'; 
+
+    
+   (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] ||  document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view
+    the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+          
+        
+      <div class="footer">
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+	<hr class="thin" />
+
+   <div class="funding">
+University of Virginia<br>
+cs4501: Introduction to Cryptocurrency<br>
+Fall 2015
+   </div>
+
+	<p></p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>
