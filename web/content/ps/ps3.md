@@ -70,6 +70,7 @@ to see the addresses that are receiving bitcoin from the given address).
 (d) How much was collected from each victim (the most relevant value would be the value in US dollars at the time of the payment)?  Did all the victims pay the same amount, or did the requested amount vary by victim?  
 (e) How did the ransomist (owner of this address) distribute the proceeds?  Is there a percentage split, or some other fee being paid by the ransomist to other addresses?  
 (f) What else can you learn about the operation starting from your transaction?
+(g) **Added 4 Nov: If you are answering Problem 1 after class Wednesday, also answer**: How is your address similar to and different from what has been observed by other students for other addresses?
    </div>
 
 Since our goal is to learn as much as we can about the overall
