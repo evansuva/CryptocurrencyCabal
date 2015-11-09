@@ -4,8 +4,9 @@ weight: 3
 date: 2015-11-09
 ---
 
-**Project Pre-Proposals** are due Friday (November 13) at 8:29pm.  Your
-  pre-proposal should include the following information:
+**Project Pre-Proposals** are due **Friday (November 13) at 8:29pm**.  
+
+Your pre-proposal should include the following information:
 
 1. Names of everyone on the project team - you may work on your own, or
 with any number of teammates.  The expected impressiveness of your
@@ -30,11 +31,13 @@ points to look at.
 6. Immediate plans - what are the next steps you plan to do.
 
 Please submit this as a plain text email to
-<em>ccc-staff@cs.virginia.edu</em>.  Your email should have as its
-subject line: <b>Project: <em>Title</em></b> where <em>Title</em> is the
-title of your project.  It should include all team members as cc'd
-recipients.  It should include your answers to the six points above,
-clearly numbered.  Do not use any PDF attachments unless it is really
-necessary to provide a figure for your idea to be understandable.
+<em>ccc-staff@cs.virginia.edu</em>.  
+
+Your email should have as its subject line: <b>Project:
+<em>Title</em></b> where <em>Title</em> is the title of your project.
+It should include all team members as cc'd recipients.  It should
+include your answers to the six points above, clearly numbered.  Do not
+use any PDF attachments unless it is really necessary to provide a
+figure for your idea to be understandable.
 
 <!--more-->
