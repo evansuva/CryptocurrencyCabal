@@ -6,8 +6,51 @@
     <description>Recent content in Announcements on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Project Pre-Proposal</title>
+      <link>http://bitcoin-class.org/announcements/project/</link>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/project/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Project Pre-Proposals&lt;/strong&gt; are due Friday (November 13) at 8:29pm.  Your
+  pre-proposal should include the following information:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Names of everyone on the project team - you may work on your own, or
+with any number of teammates.  The expected impressiveness of your
+project should scale at least as the square root of the number of
+project members.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Title of your project - a short title that gets across what your
+project is about.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Idea for your project - one or two paragraphs that explain what
+the purpose of your project is and what you plan to do.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Expected outcome - what you hope will be the outcome of your
+project. This should explain what you expect to be able to deliver by
+the end of semester, and how the world will benefit from it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Related work - list of projects (which could include papers,
+companies, etc.) that had goals related to yours.  You do not have to
+have studied these in detail yet, but should have identified starting
+points to look at.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Immediate plans - what are the next steps you plan to do.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Please submit this as a plain text email to
+&lt;em&gt;ccc-staff@cs.virginia.edu&lt;/em&gt;.  Your email should have as its
+subject line: &lt;b&gt;Project: &lt;em&gt;Title&lt;/em&gt;&lt;/b&gt; where &lt;em&gt;Title&lt;/em&gt; is the
+title of your project.  It should include all team members as cc&amp;rsquo;d
+recipients.  It should include your answers to the six points above,
+clearly numbered.  Do not use any PDF attachments unless it is really
+necessary to provide a figure for your idea to be understandable.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PS3</title>
