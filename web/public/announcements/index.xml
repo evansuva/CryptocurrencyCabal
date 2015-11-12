@@ -6,8 +6,24 @@
     <description>Recent content in Announcements on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Security Club Meeting</title>
+      <link>http://bitcoin-class.org/announcements/fbi/</link>
+      <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/fbi/</guid>
+      <description>&lt;p&gt;As Cyrus and Collin mentioned in class yesterday, Special Agent Jeremy
+D&amp;rsquo;Errico, who visited our class earlier in the semester, will be the
+guest speaker at the meeting of the &lt;a href=&#34;http://uvacns.io&#34;&gt;UVa Computer and Network Security
+Club&lt;/a&gt; tonight (Thursday) at 7:00pm.  He&amp;rsquo;ll talk about
+Cryptowall malware and efforts to analyze and detect it.&lt;/p&gt;
+
+&lt;p&gt;The meeting will be in Thorton D223.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Project Pre-Proposal</title>
