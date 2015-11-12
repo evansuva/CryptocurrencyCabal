@@ -10,6 +10,30 @@
     <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Is Graph Isomorphism Hard?</title>
+      <link>http://bitcoin-class.org/announcements/graphisomorphism/</link>
+      <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/graphisomorphism/</guid>
+      <description>&lt;p&gt;Last class, we talked about using Graph Isomorphism as the basis for a
+zero knowledge proof, based on the assumption that it is a
+computationally hard problem to determine if two graphs are isomorphic.&lt;/p&gt;
+
+&lt;p&gt;Yesterday, Laszlo Babai presented a result that claims a quasipolynomial
+time algorithm for graph isomorphism (that is, shows graph isomorphism
+is not a hard enough problem to use as the basis for a zero knowledge
+proof).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jeremykun.com/2015/11/12/a-quasipolynomial-time-algorithm-for-graph-isomorphism-the-details/&#34;&gt;Jeremy Kun&amp;rsquo;s summary of Babai&amp;rsquo;s presentation&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://rjlipton.wordpress.com/2015/11/04/a-big-result-on-graph-isomorphism/&#34;&gt;&lt;em&gt;A Big Result on Graph Isomorphism&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that this has no bearing on the zero knowledge proofs based on the
+hardness of graph three-coloring, which, unlike graph isomorphism, is
+know to be NP-Complete.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Security Club Meeting</title>
       <link>http://bitcoin-class.org/announcements/fbi/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
