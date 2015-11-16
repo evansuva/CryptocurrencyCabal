@@ -72,6 +72,13 @@ owner.  I'll leave the details of how to do this as a challenge problem.
 
 <!--more-->
 
+<center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/iyNnco2LsnAF74" width="625" height="400" frameborder="2" marginwidth="0" marginheight="0" scrolling="no"> </iframe> 
+   <div class="caption">
+[Download slides (with annotations)](/classes/class23-post.pptx)
+   </div>
+</center>
+
 ## Notes
 
 [High Trust Bank](https://www.fdic.gov/bank/individual/failed/hightrust.html) must be trusty!
