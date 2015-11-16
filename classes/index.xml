@@ -6,8 +6,19 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 21: Ombuds!</title>
+      <link>http://bitcoin-class.org/classes/class21/</link>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class21/</guid>
+      <description>&lt;p&gt;The slides from Nick Skelsey and Alex Kuck&amp;rsquo;s presentation about
+&lt;a href=&#34;http://www.getombuds.org&#34;&gt;ombuds&lt;/a&gt; are here: &lt;a href=&#34;./classes/Crypto-Cabal-L21.pdf&#34;&gt;&lt;em&gt;Scaling Bitcoin and &lt;strike&gt;Web&lt;/strike&gt; &lt;strike&gt;Bitcoin&lt;/strike&gt; Blockchain 2.0&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 20: Hidden Services, Zero Knowledge</title>
@@ -917,83 +928,6 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
 &lt;span class=&#34;math&#34;&gt;&lt;em&gt;r&lt;/em&gt;&lt;/span&gt; depends on hash of previous block, transactions, and other information.&lt;/p&gt;
 
 &lt;p&gt;What does it mean for the bitcoin difficulty to go down?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 06: Hash Functions</title>
-      <link>http://bitcoin-class.org/classes/class6/</link>
-      <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class6/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Tuesday, September 15&lt;/strong&gt; (8:29pm, tomorrow): &lt;a href=&#34;http://www.bitcoin-class.org/ps/ps1&#34;&gt;Problem Set 1&lt;/a&gt; due.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Check 2 (was originally scheduled for Monday, September 21)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Readings for next week&lt;/strong&gt; (should be completed by Monday, September 21 at the latest, but earlier is better):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Satoshi Nakamoto, &lt;a href=&#34;https://bitcoin.org/bitcoin.pdf&#34;&gt;&lt;em&gt;Bitcoin: A Peer-to-Peer Electronic Cash
-System&lt;/em&gt;&lt;/a&gt;, 2008.  The is the original
-bitcoin paper, which is quite readable and historically interesting.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch06.asciidoc&#34;&gt;&lt;em&gt;Chapter 6: The Bitcoin
-Network&lt;/em&gt;&lt;/a&gt;
-and &lt;a href=&#34;https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc&#34;&gt;&lt;em&gt;Chapter 7: The
-Blockchain&lt;/em&gt;&lt;/a&gt;
-from Andreas Antonopoulos&amp;rsquo; book.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf&#34;&gt;&lt;em&gt;Chapter 2: How Bitcoin Achieves
-Decentralization&lt;/em&gt;&lt;/a&gt;
-and &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf&#34;&gt;&lt;em&gt;Chapter 5: Bitcoin
-Mining&lt;/em&gt;&lt;/a&gt;
-from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
-Technologies&lt;/em&gt;&lt;/a&gt;.
-&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/JWtz4G4wUYKWU5&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;!--
-   &lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, [download the slides](/classes/class5-post.pptx).
-   &lt;/div&gt;
---&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;notes:647dbe1e5b68015679492d34153c74f5&#34;&gt;Notes&lt;/h2&gt;
-
-&lt;p&gt;Why do we typically hash a message before signing it? What&amp;rsquo;s wrong if we always signed the full message?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What are the properties we want in a cryptographically secure hash function?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the &amp;ldquo;birthday attack&amp;rdquo; in the context of a hash function?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;p&gt;Say you have 3000 distinct files in the &amp;ldquo;Documents&amp;rdquo; folder of our laptop. If
-you have SHA-256 hashes for each of them, do you expect any repeats? If we
-truncated the hash output to just 20 bits, how many repeats do you expect to
-see?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the advantage of using a Merkle tree as opposed to directly hashing
-the full string?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
