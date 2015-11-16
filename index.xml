@@ -46,6 +46,9 @@ Cyrus Malekpour&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Evaluating BlockCypher’s Confidence Level&lt;/strong&gt;&lt;br /&gt;
 Dean Makovsky and Vignesh Kuppusamy&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Geopolitical Strategy and Bitcoin&lt;/strong&gt;
+Eashan Kaw&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Bitcoin at Point of Sale&lt;/strong&gt;&lt;br /&gt;
 Elizabeth Kukla&lt;/p&gt;
 
@@ -1645,11 +1648,38 @@ doing what.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;(optional) Any questions you have for us.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;h3 id=&#34;addendum:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Addendum&lt;/h3&gt;
+
+&lt;p&gt;Vignesh raised a really good point about Chaum&amp;rsquo;s scheme which I
+misunderstood in class until he clarified it after, so I&amp;rsquo;m posting an
+explanation here.&lt;/p&gt;
+
+&lt;p&gt;The issue he noticed is that if the bank knows all the possible &lt;em&gt;I&lt;/em&gt;
+values (all the customer identities), and receives one of the identity
+split perimages, e.g., &lt;span class=&#34;math&#34;&gt;&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1L&lt;/sub&gt;&lt;/span&gt;, then
+the bank can search through all the identities to find an &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1R&lt;/sub&gt;&lt;/span&gt; such that &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;h&lt;/em&gt;(&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1R&lt;/sub&gt;)&lt;/span&gt; matches the hash value.  This
+is done by just xor-ing all the &lt;em&gt;I&lt;/em&gt; values with &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1L&lt;/sub&gt;&lt;/span&gt; to find a guess for &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1R&lt;/sub&gt;&lt;/span&gt;, and then computing the hash to
+check if it is the right one.  As I presented the scheme, this would be
+a big vulnerability!  It violates the desired property that the bill
+spender&amp;rsquo;s anonymity is protected (even from the bank) unless she
+attempts to spend the bill twice.&lt;/p&gt;
+
+&lt;p&gt;To defeat this, we need to ensure that the set of possible &lt;em&gt;I&lt;/em&gt; values is
+not known (even to the bank).  One way to do this would be to add some
+randomness in the &lt;em&gt;I&lt;/em&gt; values used in the generated banknotes used in the
+cut-and-choose for the blind signatures.  Each note with have a
+different &lt;em&gt;I&lt;/em&gt;, but one the bank can verify is still the right account
+owner.  I&amp;rsquo;ll leave the details of how to do this as a challenge problem.&lt;/p&gt;
+
 &lt;h2 id=&#34;notes:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Notes&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.fdic.gov/bank/individual/failed/hightrust.html&#34;&gt;High Trust Bank&lt;/a&gt; must be trusty!&lt;/p&gt;
 
-&lt;p&gt;David Chaum, Amos Fiat, and Moni Naor.  &lt;a href=&#34;./ecash.pdf&#34;&gt;&lt;em&gt;Untraceable Electronic
+&lt;p&gt;David Chaum, Amos Fiat, and Moni Naor.  &lt;a href=&#34;http://bitcoin-class.org/classes/ecash.pdf&#34;&gt;&lt;em&gt;Untraceable Electronic
 Cash&lt;/em&gt;&lt;/a&gt;.  CRYPTO 1988.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Simple RSA Signatures&lt;/strong&gt;&lt;br /&gt;
