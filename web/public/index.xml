@@ -6,8 +6,86 @@
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Projects</title>
+      <link>http://bitcoin-class.org/projects/</link>
+      <pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/projects/</guid>
+      <description>
+
+&lt;h1 id=&#34;project-ideas:3c42bb4157bf51d85ae7ffc4e1685909&#34;&gt;Project Ideas&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;The Evolution of Bitcoin Script Interpreter&lt;/strong&gt;&lt;br /&gt;
+Acacia Dai&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Developing a Distributed Distributed Consensus Protocol Consensus Protocol&lt;/strong&gt;&lt;br /&gt;
+Alec Grieser&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+Alishan Hassan&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Blockchain Voting&lt;/strong&gt;&lt;br /&gt;
+Sugat Poudel, Austin J. Varshneya, Xhama Vyas&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Distributed Bitcoin Mixing with Interest&lt;/strong&gt;&lt;br /&gt;
+Carter Hall, Reid Bixler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Divergence of Alt Coins and their Concurrent Developments&lt;/strong&gt;&lt;br /&gt;
+Cody Robertson&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vending on Dark Net Markets&lt;/strong&gt;&lt;br /&gt;
+Collin Berman&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pruning Nodes&lt;/strong&gt;&lt;br /&gt;
+Cyrus Malekpour&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Evaluating BlockCypher’s Confidence Level&lt;/strong&gt;&lt;br /&gt;
+Dean Makovsky and Vignesh Kuppusamy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bitcoin at Point of Sale&lt;/strong&gt;&lt;br /&gt;
+Elizabeth Kukla&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Detecting Selfish Mining in Bitcoin and Litecoin&lt;/strong&gt;&lt;br /&gt;
+Fangyang Cui&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sitepay&lt;/strong&gt;&lt;br /&gt;
+Gardner Fiveash&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bitcoin Controversy and Conflicts of Interest&lt;/strong&gt;&lt;br /&gt;
+Jacob Freck&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Analysis of Bitcoin Derivatives&lt;/strong&gt;&lt;br /&gt;
+Joseph Tobin&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tricking the Confidence Factor of BlockCypher&lt;/strong&gt;&lt;br /&gt;
+Kevin Zhao&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Analyzing the Feasibility of a Donation Accountability System in Bitcoin&lt;/strong&gt;&lt;br /&gt;
+Kienan Adams&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bitcoin Block-size Options&lt;/strong&gt;&lt;br /&gt;
+Michael Parisi Presicce&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Beyond the Lightning Network - Exploring How to Scale Bitcoin&lt;/strong&gt;&lt;br /&gt;
+Muthu Chidambaram&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Analysis of the viability of Bitcoin replacing as a National Currency&lt;/strong&gt;&lt;br /&gt;
+Peter Leng&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time&lt;/strong&gt;&lt;br /&gt;
+Quentin Moore&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Visual Explorer for Addresses and their Relations&lt;/strong&gt;&lt;br /&gt;
+Ryan Anderson, Sam Prestwood, Luke Gessler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Understanding Mobile Bitcoin Wallet&lt;/strong&gt;&lt;br /&gt;
+Ziqi Liu&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PS3: CSI: Blockchain</title>
@@ -1520,6 +1598,22 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Project Ideas</title>
+      <link>http://bitcoin-class.org/announcements/project-ideas/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/project-ideas/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;./projects/&#34;&gt;This page&lt;/a&gt; should contain everyone&amp;rsquo;s submitted project
+idea.  We&amp;rsquo;ll keep this updated as the projects develop, so please let us
+know if things change (you can also post comments on the page for
+updates).&lt;/p&gt;
+
+&lt;p&gt;The slides from Alex and Nick&amp;rsquo;s presentation are now posted:&lt;br /&gt;
+&lt;a href=&#34;./classes/Crypto-Cabal-L21.pdf&#34;&gt;&lt;em&gt;Scaling Bitcoin and &lt;strike&gt;Web&lt;/strike&gt; &lt;strike&gt;Bitcoin&lt;/strike&gt; Blockchain 2.0&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Is Graph Isomorphism Hard?</title>
       <link>http://bitcoin-class.org/announcements/graphisomorphism/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
@@ -1556,6 +1650,17 @@ Club&lt;/a&gt; tonight (Thursday) at 7:00pm.  He&amp;rsquo;ll talk about
 Cryptowall malware and efforts to analyze and detect it.&lt;/p&gt;
 
 &lt;p&gt;The meeting will be in Thorton D223.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 21: Ombuds!</title>
+      <link>http://bitcoin-class.org/classes/class21/</link>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class21/</guid>
+      <description>&lt;p&gt;The slides from Nick Skelsey and Alex Kuck&amp;rsquo;s presentation about
+&lt;a href=&#34;http://www.getombuds.org&#34;&gt;ombuds&lt;/a&gt; are here: &lt;a href=&#34;./classes/Crypto-Cabal-L21.pdf&#34;&gt;&lt;em&gt;Scaling Bitcoin and &lt;strike&gt;Web&lt;/strike&gt; &lt;strike&gt;Bitcoin&lt;/strike&gt; Blockchain 2.0&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1737,50 +1842,6 @@ Last class: Monday, December 7&lt;/p&gt;
 bitcoin transactions?&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 17: Bitcoin and Business</title>
-      <link>http://bitcoin-class.org/classes/class17/</link>
-      <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class17/</guid>
-      <description>&lt;p&gt;Josh Cincinatti, Developer Advocate for BlockCypher (and UVa alum), gave
-a presentation on &lt;a href=&#34;https://docs.google.com/presentation/d/12NY2HowHjSA9N0beF6fSAKThAMITOylpc7WONhOUSdk/edit#slide=id.p&#34;&gt;The Budding Business of Bitcoin and BlockCypher: An
-Alliterative, Allegorical Adventure into Cryptocurrency&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>PS3</title>
-      <link>http://bitcoin-class.org/announcements/ps3/</link>
-      <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/ps3/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3/&#34;&gt;Problem Set 3&lt;/a&gt; is now posted, and is
-due Sunday, 8 November (8:29pm).  You should have received an email with
-information on the bitcoin ransomware addresses to use for PS3.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Monday&#39;s Class: Josh Cincinnati</title>
-      <link>http://bitcoin-class.org/announcements/josh/</link>
-      <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/josh/</guid>
-      <description>&lt;p&gt;Monday&amp;rsquo;s class will be a guest talk from &lt;a href=&#34;http://bitbanter.com/&#34;&gt;Josh
-Cincinnati&lt;/a&gt;.  Josh is
-&lt;a href=&#34;https://blockcypher.com/&#34;&gt;BlockCypher&lt;/a&gt;&amp;rsquo;s &amp;ldquo;Developer Advocate and
-Comedian&amp;rdquo;.  He is a University of Virginia alum (Political &amp;amp; Social
-Thought and Mathematics) and has an MBA from Stanford.  You can read
-several interesting posts of his on the &lt;a href=&#34;https://medium.com/blockcypher-blog&#34;&gt;BlockCypher
-Blog&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For some background on the current entrepreneurial landscape in cryptocurrencies, Josh send along this report:
-&lt;a href=&#34;http://storj.io/TheBlockchainReport.pdf&#34;&gt;&lt;em&gt;The Blockchain Report: Welcome to the Internet of Value&lt;/em&gt;&lt;/a&gt;,
-Needham &amp;amp; Company, LLC, 21 October 2015.&lt;/p&gt;
 </description>
     </item>
     
