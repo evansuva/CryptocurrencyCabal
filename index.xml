@@ -1598,6 +1598,125 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 23: Before (and Beyond) Bitcoin</title>
+      <link>http://bitcoin-class.org/classes/class23/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class23/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Starting Wednesday and every following class&lt;/strong&gt;: Be prepared to give an
+  elevator pitch for your project.  Your pitch should be no more than 2
+  minutes long.  You may use visuals as long as you can obtain them by
+  (quickly) entering a URL in a web browser.  Your pitch should get
+  across in a convincing and engaging way:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The purpose of your project (what problem are you solving)&lt;/li&gt;
+&lt;li&gt;What you are actually doing&lt;/li&gt;
+&lt;li&gt;Why we should care&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, 23 November&lt;/strong&gt; (8:29pm): Project Progress Reports.  Send an
+  email to
+  &lt;a href=&#34;mailto:ccc-staff@cs.virginia.edu&#34;&gt;ccc-staff@cs.virginia.edu&lt;/a&gt;, cc-ing
+  all members of your project team.  The email should have a subject
+  line, &lt;code&gt;Project:&lt;/code&gt;&lt;em&gt;Title&lt;/em&gt;, with your project title.  Its body should contain at least this information:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;A link to the website for your project (this could be a github page
+if you want).  That site should have a front page that describes your
+project, lists the team members, and provides more information about
+your project.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A short paragraph explaining how your project has changed since the
+preliminary proposal email.  This should explain if the goals of your
+project have changed and why.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A description of what progress you have made on your project.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A description of what you plan to do to complete your project, and
+your plans for doing this.  If you have a multi-person team, this should
+include an explanation of how your team is working together and who is
+doing what.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(optional) Any questions you have for us.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;notes:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Notes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.fdic.gov/bank/individual/failed/hightrust.html&#34;&gt;High Trust Bank&lt;/a&gt; must be trusty!&lt;/p&gt;
+
+&lt;p&gt;David Chaum, Amos Fiat, and Moni Naor.  &lt;a href=&#34;./ecash.pdf&#34;&gt;&lt;em&gt;Untraceable Electronic
+Cash&lt;/em&gt;&lt;/a&gt;.  CRYPTO 1988.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Simple RSA Signatures&lt;/strong&gt;&lt;br /&gt;
+Public Key = &lt;span class=&#34;math&#34;&gt;(&lt;em&gt;e&lt;/em&gt;, &lt;em&gt;n&lt;/em&gt;)&lt;/span&gt;
+Private Key = &lt;span class=&#34;math&#34;&gt;&lt;em&gt;d&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Identity: &lt;span class=&#34;math&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;sup&gt;&lt;em&gt;de&lt;/em&gt;&lt;/sup&gt; = &lt;em&gt;M&lt;/em&gt; mod &lt;em&gt;n&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;math&#34;&gt;Sign(&lt;em&gt;m&lt;/em&gt;) = &lt;em&gt;m&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;n&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Blind Signatures&lt;/strong&gt;
+Alice picks random &lt;span class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;[1, &lt;em&gt;n&lt;/em&gt;)&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt; = &lt;em&gt;mk&lt;/em&gt;&lt;sup&gt;&lt;em&gt;e&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;n&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+Sends &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; to signer.&lt;/p&gt;
+
+&lt;p&gt;Signer returns &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Signer returns &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt; = (&lt;em&gt;mk&lt;/em&gt;&lt;sup&gt;&lt;em&gt;e&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;n&lt;/em&gt;)&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;n&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span class=&#34;math&#34;&gt;= &lt;em&gt;m&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;k&lt;/em&gt;&lt;sup&gt;&lt;em&gt;ed&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;n&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span class=&#34;math&#34;&gt;= &lt;em&gt;m&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt;&lt;em&gt;k&lt;/em&gt; mod &lt;em&gt;n&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Dividing by &lt;span class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt; gives &lt;span class=&#34;math&#34;&gt;Sign(&lt;em&gt;m&lt;/em&gt;) = &lt;em&gt;m&lt;/em&gt;&lt;sup&gt;&lt;em&gt;d&lt;/em&gt;&lt;/sup&gt; mod &lt;em&gt;n&lt;/em&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;What should a signer know before signing a random-looking string?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cut-and-Choose&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose Alice sends 256 copies and the Bank checks 255 of them.  What is the probability Alice can cheat without getting caught?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What should the maximimum bill size be to prevent cheating?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;identity-strings:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Identity Strings&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;I&lt;/em&gt; = &amp;ldquo;alice@alice.org&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;M&lt;/em&gt;&lt;sub&gt;&lt;em&gt;i&lt;/em&gt;&lt;/sub&gt;&lt;/span&gt; = &amp;ldquo;Bill #[r&lt;sub&gt;i&lt;/sub&gt;] : Bear’s Turns Bank owes the holder of this message $100.&amp;rdquo;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; + identity strings:
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span class=&#34;math&#34;&gt;&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt; = (&lt;em&gt;h&lt;/em&gt;(&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1L&lt;/sub&gt;), &lt;em&gt;h&lt;/em&gt;(&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;1R&lt;/sub&gt;)), &amp;hellip;, &lt;em&gt;I&lt;/em&gt;&lt;sub&gt;&lt;em&gt;n&lt;/em&gt;&lt;/sub&gt; = (&lt;em&gt;h&lt;/em&gt;(&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;nL&lt;/sub&gt;), &lt;em&gt;h&lt;/em&gt;(&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;nR&lt;/sub&gt;))&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; where &lt;span class=&#34;math&#34;&gt;&lt;em&gt;h&lt;/em&gt;&lt;/span&gt; is a one-way hash function and each &lt;span class=&#34;math&#34;&gt;&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;iL&lt;/sub&gt; &amp;oplus; &lt;em&gt;I&lt;/em&gt;&lt;sub&gt;iR&lt;/sub&gt; = &lt;em&gt;I&lt;/em&gt;&lt;/span&gt; (but &lt;span class=&#34;math&#34;&gt;&lt;em&gt;I&lt;/em&gt;&lt;sub&gt;iL&lt;/sub&gt; is choosen randomly).&lt;/p&gt;
+
+&lt;p&gt;To spend a bill, the reciever chooses either L or R for each pair for spender to open.&lt;/p&gt;
+
+&lt;p&gt;What is the probability Alice can spend a bill twice without revealing her identity?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://globalcryptonews.com/before-bitcoin-the-rise-and-fall-of-digicash/&#34;&gt;Before Bitcoin: The Rise and Fall of DigiCash&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;By all accounts Chaum was a charismatic leader with an interesting management style, but he refused to compromise his artistic vision in any area against the best advice of his employees. He was suspicious of everyone and &amp;lsquo;paranoid&amp;rsquo; with a habit of suddenly changing his mind without warning. At one time, Microsoft had offered DigiCash $180 million to allow them to preinstall Ecash software on Windows computers and the deal was on the verge of completion, but Chaum suddenly decided that his product was worth more and the deal collapsed. If the deal had gone through, cryptocurrency would now be as ubiquitous as Internet Explorer.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;links:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&amp;ldquo;Still think you’re anonymous on the Dark Web?&amp;rdquo;, &lt;a href=&#34;https://twitter.com/NCA_UK/status/530740716134490112&#34;&gt;NCA_UK&amp;rsquo;s tweet&lt;/a&gt;, 7 November 2014&lt;/p&gt;
+
+&lt;p&gt;Sambuddho Chakravarty, Marco V. Barbera, Georgios Portokalidis, Michalis Polychronakis, and Angelos D. Keromytis. &lt;a href=&#34;http://www3.cs.stonybrook.edu/~mikepo/papers/tor-netflow.pam14.pdf&#34;&gt;&lt;em&gt;On the Effectiveness of Traffic Analysis Against Anonymity Networks Using Flow Records&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;Passive and Active Measurement Conference&lt;/em&gt;, March 2014.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack&#34;&gt;&lt;em&gt;Tor security advisory: &amp;ldquo;relay early&amp;rdquo; traffic confirmation attack&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Project Ideas</title>
       <link>http://bitcoin-class.org/announcements/project-ideas/</link>
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
@@ -1795,53 +1914,6 @@ Technologies&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;Nicolas Christin, &lt;a href=&#34;http://arxiv.org/pdf/1207.7139.pdf&#34;&gt;&lt;em&gt;Traveling the Silk Road: A measurement analysis of a large anonymous online marketplace&lt;/em&gt;&lt;/a&gt;. November 2012.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2014/01/19/business/eagle-scout-idealist-drug-trafficker.html?_r=0&#34;&gt;&lt;em&gt;Eagle Scout. Idealist. Drug Trafficker?&lt;/em&gt;&lt;/a&gt;, New York Times, 18 Jan 2014.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 18: Confirming the Midterm</title>
-      <link>http://bitcoin-class.org/classes/class18/</link>
-      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class18/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule-updates:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule Updates&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3&#34;&gt;Problem Set 3&lt;/a&gt; is due Sunday, 8
-November (8:29pm).  Please don&amp;rsquo;t wait to get started so you have enough
-time to do something interesting and valuable for the open-ended
-questions.&lt;/p&gt;
-
-&lt;p&gt;There is no Problem Set 4.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Project Pre-Proposal: Friday, November 13&lt;/strong&gt;&lt;br /&gt;
-Project Update: Monday, November 23&lt;br /&gt;
-Last class: Monday, December 7&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/mGDH0YpBR4iNtn&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
-   &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class18-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
-   &lt;/div&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Simeon-Denis Poisson, &lt;a href=&#34;http://gallica.bnf.fr/ark:/12148/bpt6k110193z/&#34;&gt;&lt;em&gt;Recherches sur la probabilité des jugements en matière criminelle et en matière civile ; précédées des Règles générales du calcul des probabilités&lt;/em&gt;&lt;/a&gt;, 1837.&lt;/p&gt;
-
-&lt;p&gt;For a more accessible presentation, at least if you don&amp;rsquo;t read French, try: &lt;a href=&#34;http://www.rle.mit.edu/rgallager/documents/6.262lateweb2.pdf&#34;&gt;&lt;em&gt;Poisson Processes&lt;/em&gt;&lt;/a&gt;, Robert Gallager.&lt;/p&gt;
-
-&lt;p&gt;Alan E. Gelfand and Herbert Solomon, &lt;a href=&#34;http://www.jstor.org/stable/pdf/2284062.pdf?acceptTC=true&#34;&gt;&lt;em&gt;A Study of Poisson&amp;rsquo;s Models for Jury Verdicts in Criminal and Civil Trials&lt;/em&gt;&lt;/a&gt;, Journal of the American Statistical Association, 1973.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://blockchain.info/charts/avg-confirmation-time&#34;&gt;Blockchain: Median (?) Confirmation Time&lt;/a&gt; (not sure they understand the difference - URL has &amp;ldquo;avg&amp;rdquo;, title has &amp;ldquo;median&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.quandl.com/data/BCHAIN/ATRCT-Bitcoin-Average-Transaction-Confirmation-Time&#34;&gt;quandl.com: Average Confirmation Time&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;How do these make sense with what we know about Poisson processes and
-bitcoin transactions?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
