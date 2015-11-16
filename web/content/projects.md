@@ -34,6 +34,9 @@ Cyrus Malekpour
 **Evaluating BlockCypher’s Confidence Level**  
 Dean Makovsky and Vignesh Kuppusamy
 
+**Geopolitical Strategy and Bitcoin**
+Eashan Kaw
+
 **Bitcoin at Point of Sale**  
 Elizabeth Kukla 
 

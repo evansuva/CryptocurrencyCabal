@@ -25,8 +25,6 @@ menu: "classes"
   all members of your project team.  The email should have a subject
   line, `Project: `_Title_, with your project title.  Its body should contain at least this information:
 
-<!--more-->
-
 1. A link to the website for your project (this could be a github page
 if you want).  That site should have a front page that describes your
 project, lists the team members, and provides more information about
@@ -45,12 +43,41 @@ doing what.
 
 5. (optional) Any questions you have for us.
 
+### Addendum
+
+Vignesh raised a really good point about Chaum's scheme which I
+misunderstood in class until he clarified it after, so I'm posting an
+explanation here.
+
+The issue he noticed is that if the bank knows all the possible _I_
+values (all the customer identities), and receives one of the identity
+split perimages, e.g., <span class="math">_I_<sub>1L</sub></span>, then
+the bank can search through all the identities to find an <span
+class="math">_I_<sub>1R</sub></span> such that <span
+class="math">_h_(_I_<sub>1R</sub>)</span> matches the hash value.  This
+is done by just xor-ing all the _I_ values with <span
+class="math">_I_<sub>1L</sub></span> to find a guess for <span
+class="math">_I_<sub>1R</sub></span>, and then computing the hash to
+check if it is the right one.  As I presented the scheme, this would be
+a big vulnerability!  It violates the desired property that the bill
+spender's anonymity is protected (even from the bank) unless she
+attempts to spend the bill twice.
+
+To defeat this, we need to ensure that the set of possible _I_ values is
+not known (even to the bank).  One way to do this would be to add some
+randomness in the _I_ values used in the generated banknotes used in the
+cut-and-choose for the blind signatures.  Each note with have a
+different _I_, but one the bank can verify is still the right account
+owner.  I'll leave the details of how to do this as a challenge problem.
+
+<!--more-->
+
 ## Notes
 
 [High Trust Bank](https://www.fdic.gov/bank/individual/failed/hightrust.html) must be trusty!
 
 David Chaum, Amos Fiat, and Moni Naor.  [_Untraceable Electronic
-Cash_](./ecash.pdf).  CRYPTO 1988.
+Cash_](http://bitcoin-class.org/classes/ecash.pdf).  CRYPTO 1988.
 
 **Simple RSA Signatures**  
 Public Key = <span class="math">(_e_, _n_)</span>
