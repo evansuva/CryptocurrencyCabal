@@ -32,9 +32,9 @@ Collin Berman
 Cyrus Malekpour
 
 **Evaluating BlockCypher’s Confidence Level**  
-Dean Makovsky and Vignesh Kuppusamy
+Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy
 
-**Geopolitical Strategy and Bitcoin**
+**Geopolitical Strategy and Bitcoin**  
 Eashan Kaw
 
 **Bitcoin at Point of Sale**  
@@ -43,23 +43,20 @@ Elizabeth Kukla
 **Detecting Selfish Mining in Bitcoin and Litecoin**  
 Fangyang Cui
 
-**Sitepay**  
+**Understanding Takedowns**  
 Gardner Fiveash
 
 **Bitcoin Controversy and Conflicts of Interest**  
 Jacob Freck
-
-**Analysis of Bitcoin Derivatives**  
-Joseph Tobin
-
-**Tricking the Confidence Factor of BlockCypher**  
-Kevin Zhao
 
 **Analyzing the Feasibility of a Donation Accountability System in Bitcoin**  
 Kienan Adams
 
 **Bitcoin Block-size Options**  
 Michael Parisi Presicce
+
+**Mixing with Miners**  
+Morgan Locks
 
 **Beyond the Lightning Network - Exploring How to Scale Bitcoin**  
 Muthu Chidambaram
