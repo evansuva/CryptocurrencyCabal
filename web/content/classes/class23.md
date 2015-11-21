@@ -1,5 +1,5 @@
 ---
-title: "Class 23: Before (and Beyond) Bitcoin"
+title: "Class 23: Before Bitcoin"
 date: '2015-11-16'
 nocomment: false
 print: "class23.pdf"

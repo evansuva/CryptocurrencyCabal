@@ -1598,7 +1598,62 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Class 23: Before (and Beyond) Bitcoin</title>
+      <title>Class 24: Altcoins</title>
+      <link>http://bitcoin-class.org/classes/class24/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class24/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:86508045a4d3421b9227629a04fa6324&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Monday, 23 November&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;http://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Teams that did not present their project in class Wednesday, should be
+ready to present well on Monday!&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/athYLS5aquTn8a&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class24.pptx&#34;&gt;download the slides&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes:86508045a4d3421b9227629a04fa6324&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;Litecoin boasts faster confirmations (2.5 minutes as opposed to 10 minutes). Does this help you gain confidence in a given transaction faster (at which point it is unlikely to be double-spent)?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Does Litecoin use scrypt because (a) scrypt is slower than SHA-256 or (b) the gap between ASIC and CPU performance for scrypt is believed to be narrower than that for SHA-256?  Would either be a good reason?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Ripple&lt;/strong&gt; network does not require any proof of work. In case of
+Bitcoins, the adversary had to control the majority hashing power. What
+expensive resource does the adversary then have to control in Ripple to
+affect and control Ripple transactions?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;How is the process of currency distribution different between Ripple and Bitcoin?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;The hallmark of the Ethereum network is a Turing-complete scripting
+language. How does Ethereum prevent miners from being flooded with
+CPU-intensive scripts?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 23: Before Bitcoin</title>
       <link>http://bitcoin-class.org/classes/class23/</link>
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
       
@@ -1807,6 +1862,58 @@ Cryptowall malware and efforts to analyze and detect it.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Class 22: Zero-Knowledge Proofs</title>
+      <link>http://bitcoin-class.org/classes/class22/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class22/</guid>
+      <description>
+
+&lt;h2 id=&#34;reading-materials:b1f171c11b7e766822270107caa74abd&#34;&gt;Reading Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Jean-Jacques Quisquater (Myriam, Muriel, Michael), Louis Guillou
+(Marie Annick, Gaid, Anna, Gwenole, Soazig), &lt;a href=&#34;http://bitcoin-class.org/classes/zkforkids.pdf&#34;&gt;&lt;em&gt;How to Explain
+Zero-Knowledge Protocols to Your Children&lt;/em&gt;&lt;/a&gt;.  (Explains how
+zero-knowledge protocols work using a story about the Strange Cave
+of Ali Baba.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ben Sasson et al. &lt;a href=&#34;http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf&#34;&gt;&lt;em&gt;Zerocash: Decentralized anonymous payments from Bitcoin&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Miers, I.; Garman, C.; Green, M.; Rubin, A.D. &lt;a href=&#34;http://ieeexplore.ieee.org/iel7/6547086/6547088/06547123.pdf?arnumber=6547123&#34;&gt;&lt;em&gt;Zerocoin: Anonymous distributed e-cash from bitcoin&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;notes:b1f171c11b7e766822270107caa74abd&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;In class, we saw how arbitrary statements in NP could be reduced to a
+questions in graph 3-coloring. This allowed us to use 3-coloring
+zero-knowledge procedure for seemingly unrelated problems.&lt;/p&gt;
+
+&lt;p&gt;How would you represent a statement such as &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;
++ 2&lt;/span&gt; as a graph 3-coloring problem? Let&amp;rsquo;s assume for simplicity
+that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; is a 2-bit integer, while &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt; can either be 0 or 1. You can represent the
+numbers in the graph in any way you want (as long as you specify the
+encoding). Design a graph that would be 3-colorable if and only if the
+numbers satisfy the relation &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;
++ 2&lt;/span&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;The 3-coloring zero-knowledge protocol requires the prover to reveal the
+colors of any verifier-chosen pair of neighboring vertices. There is a
+risk that this may leak coloring information. Argue that no information
+is indeed being leaked, other than the fact that it is a valid
+3-coloring. (Hint: You may want to rely on the fact that each time, the
+verifier already knows the probability with which each coloring should
+appear on the revealed nodes, so it sees no more information than what
+it already has.)&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 21: Ombuds!</title>
       <link>http://bitcoin-class.org/classes/class21/</link>
       <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
@@ -1860,94 +1967,6 @@ It should include all team members as cc&amp;rsquo;d recipients.  It should
 include your answers to the six points above, clearly numbered.  Do not
 use any PDF attachments unless it is really necessary to provide a
 figure for your idea to be understandable.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 20: Hidden Services, Zero Knowledge</title>
-      <link>http://bitcoin-class.org/classes/class20/</link>
-      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class20/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule-updates:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule Updates&lt;/h2&gt;
-
-&lt;p&gt;Monday&amp;rsquo;s class will be a visit from Nick Skelsey and Alex Kuck of
-&lt;a href=&#34;https://getombuds.org/&#34;&gt;Ombuds&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3&#34;&gt;Problem Set 3&lt;/a&gt; is due Sunday, 8
-November (8:29pm).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Project Pre-Proposal: Friday, November 13&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/9GfuOmKto4Pnb1&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
-   &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class20-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
-   &lt;/div&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Roger Dingledine, Nick Mathewson, Paul Syverson. &lt;a href=&#34;https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf&#34;&gt;&lt;em&gt;Tor: The Second-Generation Onion Router&lt;/em&gt;&lt;/a&gt;.   USENIX Security Symposium 2004.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.unitedstatescourts.org/federal/nysd/422824/&#34;&gt;Documents from Ross Ulbright case&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;|filename|./fbi.pdf&#34;&gt;&lt;em&gt;Declaration of Christopher Tarbell&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://antilop.cc/sr/files/2015_03_06_ULBRICHT_motion_new_trial.pdf&#34;&gt;Motion from 6 March&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://s3.amazonaws.com/s3.documentcloud.org/documents/2086668/gov-uscourts-nysd-422824-251-1.pdf&#34;&gt;Ross Ulbricht&amp;rsquo;s Letter to Judge Forrest&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 19: Anonymity in Bitcoin</title>
-      <link>http://bitcoin-class.org/classes/class19/</link>
-      <pubDate>Mon, 02 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class19/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule-updates:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule Updates&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3&#34;&gt;Problem Set 3&lt;/a&gt; is due Sunday, 8
-November (8:29pm).  Readings for PS3:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf&#34;&gt;&lt;em&gt;Chapter 6: Bitcoin and Anonymity&lt;/em&gt;&lt;/a&gt;,
-from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
-Technologies&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://conferences2.sigcomm.org/imc/2013/papers/imc182-meiklejohnA.pdf&#34;&gt;&lt;em&gt;A Fistful of Bitcoins: Characterizing Payments among Men (sic) with No Names&lt;/em&gt;&lt;/a&gt; by Sarah Meiklejohn, Marjori Pomarole, Grant Jordan, Kirill Levchenko, Damon McCoy, Geoffrey M. Voelker, and Stefan Savage.  &lt;em&gt;Internet Measurement Conference&lt;/em&gt;, 2013.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Project Pre-Proposal: Friday, November 13&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/r8z63ObiqE9jD7&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
-   &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class19-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
-   &lt;/div&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Dorit Ron and Adi Shamir. &lt;a href=&#34;http://cryptome.org/2013/11/bitcoin-pirate-nakamoto.pdf&#34;&gt;&lt;em&gt;How Did Dread Pirate Roberts Acquire and Protect His Bitcoin Wealth?&lt;/em&gt;&lt;/a&gt;. Cryptology ePrint &lt;sup&gt;2013&lt;/sup&gt;&amp;frasl;&lt;sub&gt;782&lt;/sub&gt;.  23 November 2013.  &lt;a href=&#34;https://www.reddit.com/r/Bitcoin/comments/1reuwq/vigorous_debate_over_shamirrons_supposedly/&#34;&gt;Reddit Discussion&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Dustin Trammell. &lt;a href=&#34;http://blog.dustintrammell.com/2013/11/26/i-am-not-satoshi/&#34;&gt;&lt;em&gt;I Am Not Satoshi&lt;/em&gt;&lt;/a&gt;. 26 November 2013.&lt;/p&gt;
-
-&lt;p&gt;Roger Dingledine, Nick Mathewson, Paul Syverson. &lt;a href=&#34;https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf&#34;&gt;&lt;em&gt;Tor: The Second-Generation Onion Router&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://www.usenix.org/legacy/event/sec04/&#34;&gt;USENIX Security Symposium 2004&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.torproject.org/&#34;&gt;Tor Project Site&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://metrics.torproject.org/relayflags.html?graph=relayflags&amp;amp;start=2014-01-13&amp;amp;end=2015-04-13&amp;amp;flag=Running&amp;amp;flag=Exit&amp;amp;flag=Fast&amp;amp;flag=Stable&#34;&gt;How many exit nodes?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Nicolas Christin, &lt;a href=&#34;http://arxiv.org/pdf/1207.7139.pdf&#34;&gt;&lt;em&gt;Traveling the Silk Road: A measurement analysis of a large anonymous online marketplace&lt;/em&gt;&lt;/a&gt;. November 2012.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2014/01/19/business/eagle-scout-idealist-drug-trafficker.html?_r=0&#34;&gt;&lt;em&gt;Eagle Scout. Idealist. Drug Trafficker?&lt;/em&gt;&lt;/a&gt;, New York Times, 18 Jan 2014.&lt;/p&gt;
 </description>
     </item>
     

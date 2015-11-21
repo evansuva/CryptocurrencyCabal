@@ -6,11 +6,66 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Class 23: Before (and Beyond) Bitcoin</title>
+      <title>Class 24: Altcoins</title>
+      <link>http://bitcoin-class.org/classes/class24/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class24/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:86508045a4d3421b9227629a04fa6324&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Monday, 23 November&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;http://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Teams that did not present their project in class Wednesday, should be
+ready to present well on Monday!&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/athYLS5aquTn8a&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
+Note: ink markings may not appear in the
+embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class24.pptx&#34;&gt;download the slides&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes:86508045a4d3421b9227629a04fa6324&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;Litecoin boasts faster confirmations (2.5 minutes as opposed to 10 minutes). Does this help you gain confidence in a given transaction faster (at which point it is unlikely to be double-spent)?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Does Litecoin use scrypt because (a) scrypt is slower than SHA-256 or (b) the gap between ASIC and CPU performance for scrypt is believed to be narrower than that for SHA-256?  Would either be a good reason?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Ripple&lt;/strong&gt; network does not require any proof of work. In case of
+Bitcoins, the adversary had to control the majority hashing power. What
+expensive resource does the adversary then have to control in Ripple to
+affect and control Ripple transactions?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;How is the process of currency distribution different between Ripple and Bitcoin?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;The hallmark of the Ethereum network is a Turing-complete scripting
+language. How does Ethereum prevent miners from being flooded with
+CPU-intensive scripts?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 23: Before Bitcoin</title>
       <link>http://bitcoin-class.org/classes/class23/</link>
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
       
@@ -159,6 +214,58 @@ Sends &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; to si
 &lt;p&gt;Sambuddho Chakravarty, Marco V. Barbera, Georgios Portokalidis, Michalis Polychronakis, and Angelos D. Keromytis. &lt;a href=&#34;http://www3.cs.stonybrook.edu/~mikepo/papers/tor-netflow.pam14.pdf&#34;&gt;&lt;em&gt;On the Effectiveness of Traffic Analysis Against Anonymity Networks Using Flow Records&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;Passive and Active Measurement Conference&lt;/em&gt;, March 2014.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack&#34;&gt;&lt;em&gt;Tor security advisory: &amp;ldquo;relay early&amp;rdquo; traffic confirmation attack&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 22: Zero-Knowledge Proofs</title>
+      <link>http://bitcoin-class.org/classes/class22/</link>
+      <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class22/</guid>
+      <description>
+
+&lt;h2 id=&#34;reading-materials:b1f171c11b7e766822270107caa74abd&#34;&gt;Reading Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Jean-Jacques Quisquater (Myriam, Muriel, Michael), Louis Guillou
+(Marie Annick, Gaid, Anna, Gwenole, Soazig), &lt;a href=&#34;http://bitcoin-class.org/classes/zkforkids.pdf&#34;&gt;&lt;em&gt;How to Explain
+Zero-Knowledge Protocols to Your Children&lt;/em&gt;&lt;/a&gt;.  (Explains how
+zero-knowledge protocols work using a story about the Strange Cave
+of Ali Baba.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ben Sasson et al. &lt;a href=&#34;http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf&#34;&gt;&lt;em&gt;Zerocash: Decentralized anonymous payments from Bitcoin&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Miers, I.; Garman, C.; Green, M.; Rubin, A.D. &lt;a href=&#34;http://ieeexplore.ieee.org/iel7/6547086/6547088/06547123.pdf?arnumber=6547123&#34;&gt;&lt;em&gt;Zerocoin: Anonymous distributed e-cash from bitcoin&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;notes:b1f171c11b7e766822270107caa74abd&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;p&gt;In class, we saw how arbitrary statements in NP could be reduced to a
+questions in graph 3-coloring. This allowed us to use 3-coloring
+zero-knowledge procedure for seemingly unrelated problems.&lt;/p&gt;
+
+&lt;p&gt;How would you represent a statement such as &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;
++ 2&lt;/span&gt; as a graph 3-coloring problem? Let&amp;rsquo;s assume for simplicity
+that &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; is a 2-bit integer, while &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;y&lt;/em&gt;&lt;/span&gt; can either be 0 or 1. You can represent the
+numbers in the graph in any way you want (as long as you specify the
+encoding). Design a graph that would be 3-colorable if and only if the
+numbers satisfy the relation &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = &lt;em&gt;y&lt;/em&gt;
++ 2&lt;/span&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;The 3-coloring zero-knowledge protocol requires the prover to reveal the
+colors of any verifier-chosen pair of neighboring vertices. There is a
+risk that this may leak coloring information. Argue that no information
+is indeed being leaked, other than the fact that it is a valid
+3-coloring. (Hint: You may want to rely on the fact that each time, the
+verifier already knows the probability with which each coloring should
+appear on the revealed nodes, so it sees no more information than what
+it already has.)&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 </description>
     </item>
     
@@ -743,234 +850,6 @@ a game of rock-paper-scissors?&lt;/p&gt;
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;What would happen to the bitcoin currency if everyone started mining selfishly?&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 09: Economics of Mining</title>
-      <link>http://bitcoin-class.org/classes/class9/</link>
-      <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class9/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.&lt;br /&gt;
-&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later.
-&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;checkup-2:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Checkup 2&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As was suggested in class today, there won&amp;rsquo;t be an immediate opportunity
-to submit revisions for this (like there was for Checkup 1), but there
-will be some opportunity to improve your checkup result given in
-Monday&amp;rsquo;s class.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/sTwMIV59OWvurX&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class9-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;energy:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Energy&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://en.bitcoin.it/wiki/Mining_hardware_comparison&#34;&gt;Mining Hardware&lt;/a&gt;
-- current ASIC miners achive &amp;gt;5 Billion hashes per seconds and over 1500
-Million hashes per Joule (the energy required to lift an apple one
-meter).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://bitcointalk.org/index.php?topic=1152746.0&#34;&gt;Antminer S5+&lt;/a&gt;
-(here&amp;rsquo;s the specs on the mining hardware we looked at in class)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.thecoinsman.com/2014/08/bitcoin/inside-chinese-bitcoin-mine/&#34;&gt;&lt;em&gt;Inside a Chinese Bitcoin Mine&lt;/em&gt;&lt;/a&gt;, The Coinsman, 11 August 2014.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The first thing you notice as you approach the warehouse is the noise. It begins as soon as you step out of the car, at which point it sounds like massive swarm of angry bees droning away somewhere off in the distance. It becomes louder and louder the closer you get to the building, and as you step through the doors it becomes a deafening and steady roar&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Our nearest nuclear plant, the &lt;a href=&#34;https://www.dom.com/corporate/what-we-do/electricity/generation/nuclear/north-anna-power-station&#34;&gt;North Anna Power
-Station&lt;/a&gt;
-(Lake Anna) generates 1892 MW, &amp;ldquo;enough to power 450,000 homes&amp;rdquo; or about
-9x the amount needed to power the current bitcoin network (only counting
-the miners themselves; additional power needed for cooling, etc.)&lt;/p&gt;
-
-&lt;p&gt;Is it financially lucrative to mine bitcoin in your residencev?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;(&lt;strong&gt;Caveat:&lt;/strong&gt; despite the very rough estimate from class today, we are
-not recommending anyone invest in bitcoin mining!)&lt;/p&gt;
-
-&lt;p&gt;How does the energy use of bitcoin compare to what is used by the
-current financial infrastructure for comparable service?  (This is a
-very difficult question to answer, would be a good project idea, not
-something to answer in the blank below!)&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 08: Mining</title>
-      <link>http://bitcoin-class.org/classes/class8/</link>
-      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class8/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, September 23&lt;/strong&gt;: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.&lt;br /&gt;
-&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later this week.&lt;br /&gt;
-&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;reminders:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Reminders&lt;/h2&gt;
-
-&lt;p&gt;You can &lt;a href=&#34;https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics&#34;&gt;subscribe to the course
-calendar&lt;/a&gt;.
-This has updated information on deadlines and office hours.&lt;/p&gt;
-
-&lt;p&gt;If you want to receive course website updates by email, you can
-subscribe to the RSS feed using a RSS reader or an emailing service like
-&lt;a href=&#34;https://www.feedmyinbox.com/&#34;&gt;feedmyinbox.com&lt;/a&gt; or
-&lt;a href=&#34;http://blogtrottr.com/&#34;&gt;Blogtrottr&lt;/a&gt;.  The feed address is
-&lt;a href=&#34;http://bitcoin-class.org/index.xml&#34;&gt;http://bitcoin-class.org/index.xml&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We generally will avoid sending out emails to the class, and will assume
-you are observing the website closely.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ir3gwqoaGyncK4&#34;
-width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34;
-marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class8-post.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;exploring-blocks:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Exploring Blocks&lt;/h1&gt;
-
-&lt;table&gt;
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Label&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Bytes&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Block version information&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;prev_block&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Hash of the previous block&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;merkle_root&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Hash of Merkle tree of all transactions&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;timestamp&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;When block was created (overflows in 2106)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;bits&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Difficulty target used for this block&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;nonce&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Nonce found to generate this block&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&#34;merkle-trees:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Merkle Trees&lt;/h1&gt;
-
-&lt;p&gt;Ralph Merkle, &lt;a href=&#34;http://merkle.com/1974/&#34;&gt;&lt;em&gt;Publishing a New Idea&lt;/em&gt;&lt;/a&gt;.
-Includes his &lt;a href=&#34;http://merkle.com/1974/FirstCS244projectProposal.pdf&#34;&gt;cs244 project
-proposal&lt;/a&gt;
-(&amp;ldquo;Discussion: No, I am not joking.&amp;ldquo;) and &lt;a href=&#34;http://merkle.com/1974/ExpertLetter.pdf&#34;&gt;ACM rejection
-letter&lt;/a&gt; (&amp;ldquo;I am sorry to have to
-inform you that the paper is not in the main stream of present
-cryptography thinking and I would not recommend that it be
-published&amp;hellip;&amp;ldquo;).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/btcsuite/btcd/blob/master/blockchain/merkle.go&#34;&gt;https://github.com/btcsuite/btcd/blob/master/blockchain/merkle.go&lt;/a&gt; (some comments removed)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// HashMerkleBranches takes two hashes, treated as the left and right tree
-// nodes, and returns the hash of their concatenation. 
-func HashMerkleBranches(left *btcwire.ShaHash, right *btcwire.ShaHash) *btcwire.ShaHash {
-   var sha [btcwire.HashSize * 2]byte
-   copy(sha[:btcwire.HashSize], left.Bytes())
-   copy(sha[btcwire.HashSize:], right.Bytes())
-   newSha, _ := btcwire.NewShaHash(btcwire.DoubleSha256(sha[:]))
-   return newSha
-}
-
-func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
-    nextPoT := nextPowerOfTwo(len(transactions))
-    arraySize := nextPoT*2 - 1
-    merkles := make([]*btcwire.ShaHash, arraySize)
-
-    // Create the base transaction shas and populate the array with them.
-    for i, tx := range transactions { merkles[i] = tx.Sha() }
-
-    // Start the array offset after the last transaction and adjusted to the
-    // next power of two.
-    offset := nextPoT
-    for i := 0; i &amp;lt; arraySize-1; i += 2 {
-        switch {
-           case merkles[i] == nil: 
-              merkles[offset] = nil
-
-           case merkles[i+1] == nil:
-              newSha := HashMerkleBranches(merkles[i], merkles[i])
-              merkles[offset] = newSha
-       
-           default:
-              newSha := HashMerkleBranches(merkles[i], merkles[i+1])
-              merkles[offset] = newSha
-       }
-       offset++
-    }
-    return merkles
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/merkle.png&#34;&gt;&lt;img src=&#34;http://bitcoin-class.org/classes/merkle.png&#34; width=600&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;What is needed to verify &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; in &lt;span class=&#34;math&#34;&gt;H&lt;sub&gt;root&lt;/sub&gt;&lt;/span&gt;?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What must be recomputed if &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt; is replaced?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What must be computed if a new node, &lt;span class=&#34;math&#34;&gt;T&lt;sub&gt;5&lt;/sub&gt;&lt;/span&gt;, is added?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How many SHA-256 hashes must be computed to verify &lt;a href=&#34;https://blockexplorer.com/block/00000000000000000a02a2bf9d7b366e226160b8412830e6d72061ea7712d970&#34;&gt;Block 375474&lt;/a&gt;?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;mining-cost:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Mining Cost&lt;/h1&gt;
-
-&lt;p&gt;The measured time to compute one SHA-256 hash on my EC2 node (2.5 GHz
-processor) is 750 ns.  Approximately &lt;em&gt;how many instructions execute&lt;/em&gt; to
-compute on SHA-256 hash?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assumption.&lt;/strong&gt; SHA-256 produces a uniform random output.  (We know this
-  is not really true, but it is a reasonable approximation, and
-  necessary for the analysis.)  So, we can model SHA-256 on any (new)
-  input &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; as drawing randomly from 2&lt;sup&gt;256&lt;/sup&gt; possible outputs:&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SHA-256(&lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;) &amp;larr; [0, 2&lt;sup&gt;256&lt;/sup&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ Target = \frac{T_{max}}{Difficulty}$&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;$ T_{max} \approx 2^{224}$&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://bitcoinwisdom.com/bitcoin/difficulty&#34;&gt;Current Bitcoin Difficulty&lt;/a&gt; = 59,335,351,234&lt;/p&gt;
-
-&lt;h1 id=&#34;energy:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Energy&lt;/h1&gt;
-
-&lt;p&gt;Why is energy/hash so much less for custom ASICs?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;In an ASIC, it is possible to build an XOR using 4 transistors.  How
-many transistors have to flip to do an XOR on a general purpose
-processor like an Intel i7?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -2,7 +2,7 @@
 title: "Registration"
 weight: 2
 date: '2015-08-26'
-menu: "assignments"
+menu: "hidden"
 ---
 
 # Course Registration
