@@ -1,11 +1,5 @@
----
-title: "Class 25: Project Pitches"
-date: '2015-11-23'
-print: "class25.pdf"
-nocomment: false
-weight: 3
-menu: "classes"
----
+% Class 25: Project Pitches
+% '2015-11-23'
 
 ## Schedule
 
