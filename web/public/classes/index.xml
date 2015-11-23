@@ -6,8 +6,198 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 25: Project Pitches</title>
+      <link>http://bitcoin-class.org/classes/class25/</link>
+      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class25/</guid>
+      <description>
+
+&lt;h2 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
+&lt;strong&gt;Today!&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;http://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday, 2 Dec and Monday 7 Dec&lt;/strong&gt;: &lt;strong&gt;Final Project Presentations&lt;/strong&gt; (see below).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm): &lt;strong&gt;Project Final Reports&lt;/strong&gt; (see below)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Friday, 11 December&lt;/strong&gt;:
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;today-s-presentations:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Today&amp;rsquo;s Presentations&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Understanding Mobile Bitcoin Wallet&lt;/strong&gt;&lt;br /&gt;
+Ziqi Liu&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Visual Explorer for Addresses and their Relations&lt;/strong&gt;&lt;br /&gt;
+Ryan Anderson, Sam Prestwood, Luke Gessler&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time&lt;/strong&gt;&lt;br /&gt;
+Quentin Moore&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Analysis of the viability of Bitcoin replacing as a National Currency&lt;/strong&gt;&lt;br /&gt;
+Peter Leng&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Beyond the Lightning Network - Exploring How to Scale Bitcoin&lt;/strong&gt;&lt;br /&gt;
+Muthu Chidambaram&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mixing with Miners&lt;/strong&gt;&lt;br /&gt;
+Morgan Locks&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bitcoin Block-size Options&lt;/strong&gt;&lt;br /&gt;
+Michael Parisi Presicce&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bitcoin Controversy and Conflicts of Interest&lt;/strong&gt;&lt;br /&gt;
+Jacob Freck&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Understanding Takedowns&lt;/strong&gt;&lt;br /&gt;
+Gardner Fiveash&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Detecting Selfish Mining in Bitcoin and Litecoin&lt;/strong&gt;&lt;br /&gt;
+Fangyang Cui&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Geopolitical Strategy and Bitcoin&lt;/strong&gt;&lt;br /&gt;
+Eashan Kaw&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Evaluating BlockCypher’s Confidence Level&lt;/strong&gt;&lt;br /&gt;
+Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pruning Nodes&lt;/strong&gt;&lt;br /&gt;
+Cyrus Malekpour&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Divergence of Alt Coins and their Concurrent Developments&lt;/strong&gt;&lt;br /&gt;
+Cody Robertson&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo;&lt;/strong&gt;&lt;br /&gt;
+Alishan Hassan&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Developing a Distributed Distributed Consensus Protocol Consensus Protocol&lt;/strong&gt;&lt;br /&gt;
+Alec Grieser&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Evolution of Bitcoin Script Interpreter&lt;/strong&gt;&lt;br /&gt;
+Acacia Dai&lt;/p&gt;
+
+&lt;h2 id=&#34;project-final-presentations:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Project Final Presentations&lt;/h2&gt;
+
+&lt;p&gt;The final project presentations will be in class on Wednesday, 2
+December and Monday, 7 December.  The presentation will count for
+approximately 50% of the grade for your final project.&lt;/p&gt;
+
+&lt;p&gt;The schedule of the presentations is below.  Each team will have &lt;strong&gt;5 +
+(&lt;em&gt;N&lt;/em&gt; - 1) minutes&lt;/strong&gt; to present your project (where &lt;em&gt;N&lt;/em&gt; is the number of
+team members; so a 4-person team will have 8 minutes).  Your
+presentation should be well prepared and enthusiastically delivered!&lt;/p&gt;
+
+&lt;p&gt;You should send a link to your presentation (PDF, PowerPoint, or
+anything that works in Firefox browser) to ccc-staff before &lt;strong&gt;11:59am&lt;/strong&gt;
+on the day you are scheduled to present.  If your presentation includes
+a demo that&amp;rsquo;s great, but it needs to be designed in a way that can be
+set up quickly and used effectively.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wednesday, 2 December:&lt;/strong&gt;&lt;br /&gt;
+Developing a Distributed Distributed Consensus Protocol Consensus Protocol (Alec Grieser)&lt;br /&gt;
+Blockchain Voting (Sugat Poudel, Austin J. Varshneya, Xhama Vyas)&lt;br /&gt;
+Distributed Bitcoin Mixing with Interest (Carter Hall, Reid Bixler)&lt;br /&gt;
+Beyond the Lightning Network - Exploring How to Scale Bitcoin (Muthu Chidambaram)&lt;br /&gt;
+Mixing with Miners (Morgan Locks)&lt;br /&gt;
+Pruning Nodes (Cyrus Malekpour)&lt;br /&gt;
+Bitcoin Block-size Options (Michael Parisi Presicce)&lt;br /&gt;
+Bitcoin Controversy and Conflicts of Interest (Jacob Freck)&lt;br /&gt;
+Understanding Takedowns (Gardner Fiveash)&lt;br /&gt;
+Detecting Selfish Mining in Bitcoin and Litecoin (Fangyang Cui)&lt;br /&gt;
+Geopolitical Strategy and Bitcoin (Eashan Kaw)&lt;br /&gt;
+Divergence of Alt Coins and their Concurrent Developments (Cody Robertson)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monday, 7 December:&lt;/strong&gt;&lt;br /&gt;
+The Evolution of Bitcoin Script Interpreter (Acacia Dai)&lt;br /&gt;
+A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo; (Alishan Hassan)&lt;br /&gt;
+Bitcoin at Point of Sale (Elizabeth Kukla)&lt;br /&gt;
+Vending on Dark Net Markets (Collin Berman)&lt;br /&gt;
+Analyzing the Feasibility of a Donation Accountability System in Bitcoin (Kienan Adams)&lt;br /&gt;
+Understanding Mobile Bitcoin Wallet (Ziqi Liu)&lt;br /&gt;
+Visual Explorer for Addresses and their Relations (Ryan Anderson, Sam Prestwood, Luke Gessler)&lt;br /&gt;
+How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time (Quentin Moore)&lt;br /&gt;
+Analysis of the viability of Bitcoin replacing as a National Currency (Peter Leng)&lt;br /&gt;
+Evaluating BlockCypher’s Confidence Level (Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy)&lt;/p&gt;
+
+&lt;h2 id=&#34;project-final-reports:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Project Final Reports&lt;/h2&gt;
+
+&lt;p&gt;To submit your final report, send an email to
+&lt;em&gt;ccc-staff@cs.virginia.edu&lt;/em&gt; with subject line &lt;strong&gt;Project Report:
+&lt;em&gt;Title&lt;/em&gt;&lt;/strong&gt; and cc-ing all of your team members.  The official deadline
+for the final reports is &lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm), but
+extensions will be granted upon request so long as extending the
+deadline for this does not interfere problematically with your other
+courses and responsibilities.&lt;/p&gt;
+
+&lt;p&gt;The email should be plaintext containing:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;A title for your project (this is the title I will use on the public
+page listing all the projects; add a &lt;b&gt;*&lt;/b&gt; if it is different from
+the title currently listed on &lt;a href=&#34;http://bitcoin-class.org/projects/&#34;&gt;Project&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A one-sentence description of your project. This should be a clear,
+well-written sentence that will be enough for someone to understand what
+you did and why.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A URL that points to a publicly-viewable web page that describes your
+project. The linked page can (and probably should) contain links to
+other pages (e.g., a website that is your actual project or a github
+repo with your project code). For example, the link you send could be a
+link to &lt;a href=&#34;http://my-project-site.org/about.html&#34;&gt;http://my-project-site.org/about.html&lt;/a&gt; or
+&lt;a href=&#34;https://github.com/your-repo/README.md&#34;&gt;https://github.com/your-repo/README.md&lt;/a&gt;, which is a page describing your
+project, as well as containing links to the main project site. Please
+try to put your project site somewhere that will not expire when you
+graduate from UVa, but that can survive forever.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your project report, either as a PDF attachment, or a URL.  Your
+project report should be a well-written and readable paper about your
+project.  For most projects, this should include at least: (1) the
+motivation for your project, (2) background, including a description of
+related work (with references), (3) explanation of what you did, and (4)
+your results.  For projects that do not involve building something, it
+may make more sense for it to be a more integrated report.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;discretionary-final-exams:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Discretionary Final Exams&lt;/h2&gt;
+
+&lt;p&gt;By the end of this week, everyone should receive an email with your
+status in the class (including feedback on PS3).&lt;/p&gt;
+
+&lt;p&gt;The main message of this email will be guidance as to whether or not you
+should schedule a final exam.  The main options are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;You&amp;rsquo;re well positioned to get an &lt;strong&gt;A&lt;/strong&gt; in the class.  So long as you
+do a decent job on the project, you&amp;rsquo;ll get an &lt;strong&gt;A&lt;/strong&gt; and don&amp;rsquo;t need to
+do the final exam.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You are approaching what you need to do to convince us you deserve an
+&lt;strong&gt;A&lt;/strong&gt; in the class, but need do more.  If your project is outstanding,
+that may be enough to make the case.  If not, you&amp;rsquo;ll have a last chance
+to do so by doing a final exam.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;From what you&amp;rsquo;ve done so far, we&amp;rsquo;re not convinced you understand
+cryptocurrencies well enough to earn an &lt;strong&gt;A&lt;/strong&gt; in the class.  You should
+plan on doing a final exam to convince us otherwise!&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For students receving options 1 or 2, we&amp;rsquo;ll try to give feedback on your
+final projects are quickly as possible so you know whether or not a
+final exam will be recommended.&lt;/p&gt;
+
+&lt;p&gt;The final exam will be an oral exam where you will explain how bitcoin
+works, and then answer a few follow-up questions.  These will be
+scheduled during the scheduled final exam time (Friday, 11 December
+2-5pm) and other times.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 24: Altcoins</title>
@@ -795,61 +985,6 @@ embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/
 &lt;p&gt;If a pool is paying out proportionally, and you are profiting by pool hopping in and out of it, is somebody else making a loss? Who and how?&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 10: Subverting Bitcoin</title>
-      <link>http://bitcoin-class.org/classes/class10/</link>
-      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class10/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Wednesday, September 30&lt;/strong&gt;: Checkup 2 revisions (if desired), due at the beginning of class.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (moved from original deadline of October 2).  Problem Set 2 will be posted later.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;checkup-2:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Checkup 2&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/checkup2.pdf&#34;&gt;Checkup 2 (PDF)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/tLGdRxu6IVVzni&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class10.pptx&#34;&gt;download the slides&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Notes&lt;/h1&gt;
-
-&lt;p&gt;Why would a hypothetical cryptocurrency without miners not work? What is the
-essential service rendered by a miner?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;How does Bitcoin handle forks? What criteria does it use to decide the branch
-to converge on?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;!--page--&gt;
-
-&lt;p&gt;What is a Nash Equilibrium in a game? What is the equilibrium strategy in
-a game of rock-paper-scissors?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What would happen to the bitcoin currency if everyone started mining selfishly?&lt;/p&gt;
 </description>
     </item>
     
