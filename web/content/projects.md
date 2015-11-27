@@ -61,7 +61,7 @@ Morgan Locks
 **[Beyond the Lightning Network - Exploring How to Scale Bitcoin](https://github.com/2014mchidamb/Beyond-Lightning)**  
 Muthu Chidambaram
 
-**[Analysis of the viability of Bitcoin replacing as a National Currency](http://peterleng.github.io/BIT)**  
+**[Analysis of the viability of Bitcoin replacing as a National Currency](http://pleng28.github.io/BIT/)**
 Peter Leng
 
 **[How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time](https://github.com/UVAqmoore/cccfinal)**  
