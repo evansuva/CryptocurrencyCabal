@@ -6,8 +6,47 @@
     <description>Recent content in Classes on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 28: Project Presentations 2</title>
+      <link>http://bitcoin-class.org/classes/class28/</link>
+      <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class28/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1amox_dRwiwuK9lUCXeP8rILcHyylHwgcicwZr9GNdX4/edit?usp=sharing&#34;&gt;The Evolution of Bitcoin Script Interpreter&lt;/a&gt; (Acacia Dai)&lt;br /&gt;
+&lt;a href=&#34;https://github.com/AlishanHassan/Cryptocurrency-Project/blob/master/Presentation.pptx&#34;&gt;A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo;&lt;/a&gt; (Alishan Hassan)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/kukla.pptx&#34;&gt;Bitcoin at Point of Sale&lt;/a&gt; (Elizabeth Kukla)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/berman.pdf&#34;&gt;Vending on Dark Net Markets&lt;/a&gt; (Collin Berman)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/adams.pdf&#34;&gt;Donation Accountability&lt;/a&gt; (Kienan Adams)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/liu.pptx&#34;&gt;Understanding Mobile Bitcoin Wallet&lt;/a&gt; (Ziqi Liu)&lt;br /&gt;
+&lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1pxnHcMD27RAsbttOCVOgnlWQX2anMakddKkswe5hois/edit?usp=sharing&#34;&gt;BitSniffer: a Tool for Linkability Analysis&lt;/a&gt; (Ryan Anderson, Sam Prestwood, Luke Gessler)&lt;br /&gt;
+&lt;a href=&#34;https://docs.google.com/presentation/d/16uosMp3ylLJCFFBfTNyQz7YPR9KnpONSY58jiwakdIE/edit#slide=id.p&#34;&gt;Taking Down Silk Road&lt;/a&gt; (Gardner Fiveash)&lt;br /&gt;
+&lt;a href=&#34;https://github.com/UVAqmoore/cccfinal/blob/master/Presentation%20Slides.pptx&#34;&gt;How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time&lt;/a&gt; (Quentin Moore)&lt;br /&gt;
+Analysis of the viability of Bitcoin replacing as a National Currency (Peter Leng)&lt;br /&gt;
+&lt;a href=&#34;https://docs.google.com/presentation/d/15FminKlQFXQ1FUOvn4qOXEUhmuRNZyPrOoKEQpn5TRk/edit?usp=sharing&#34;&gt;Evaluating BlockCypher’s Confidence Level&lt;/a&gt; (Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 27: Project Presentations 1</title>
+      <link>http://bitcoin-class.org/classes/class27/</link>
+      <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/classes/class27/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;alecgrieser.github.io/ddcpcp/presentation/presentation.pdf&#34;&gt;Developing a Distributed Distributed Consensus Protocol Consensus Protocol&lt;/a&gt; (Alec Grieser)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/Blockchain_Voting.pdf&#34;&gt;Blockchain Voting&lt;/a&gt; (Sugat Poudel, Austin J. Varshneya, Xhama Vyas)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/BitMingle.pptx&#34;&gt;BitMingle&lt;/a&gt; (Carter Hall, Reid Bixler)&lt;br /&gt;
+Beyond the Lightning Network - Exploring How to Scale Bitcoin (Muthu Chidambaram)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/morgan.ppt&#34;&gt;Mixing with Miners&lt;/a&gt; (Morgan Locks)&lt;br /&gt;
+&lt;a href=&#34;https://docs.google.com/presentation/d/11r4DgGYdz-XdtVMbFF8MdCMfCydIh5n5IQCCc4_j-fA/edit?usp=sharing&#34;&gt;Pruning Nodes&lt;/a&gt; (Cyrus Malekpour)&lt;br /&gt;
+&lt;a href=&#34;https://docs.google.com/presentation/d/1nnV4WHCCb2KPpk2pfNJTI2GlxRNVwCANTY95t_A88hg/edit?usp=sharing&#34;&gt;Bitcoin Block-size Options&lt;/a&gt; (Michael Parisi Presicce)&lt;br /&gt;
+&lt;a href=&#34;https://onedrive.live.com/view.aspx?resid=3492CC9C71E5A42D!2002&amp;amp;ithint=file%2cpptx&amp;amp;app=PowerPoint&amp;amp;authkey=!AHb95fsl2SUYzl4&#34;&gt;Bitcoin Controversy and Conflicts of Interest&lt;/a&gt; (Jacob Freck)&lt;br /&gt;
+&lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1G1iQKaRQEZPsEQ-CtleiSF9QbVLwYc-KTrzkTTbmN4I/edit?usp=sharing&#34;&gt;Detecting Selfish Mining in Bitcoin and Litecoin&lt;/a&gt; (Fangyang Cui)&lt;br /&gt;
+&lt;a href=&#34;http://bitcoin-class.org/presentations/eashan.pptx&#34;&gt;Geopolitical Strategy and Bitcoin&lt;/a&gt; (Eashan Kaw)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 26: Cryptocurrency Jeopardy</title>
@@ -878,134 +917,6 @@ Manuel Egele, Michael Eubanks, Brian Krebs, Giovanni Vigna. &lt;a href=&#34;http
 Stuff: An Analysis of Reshipping Mule
 Scams&lt;/em&gt;&lt;/a&gt;. ACM
 Conference on Computer and Communications Security 2015.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 13: Law and Policy</title>
-      <link>http://bitcoin-class.org/classes/class13/</link>
-      <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class13/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt; &lt;strong&gt;Monday-Wednesday, October &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;21&lt;/sub&gt;&lt;/strong&gt;: Midterm Exam.
-Part of the midterm will be handed out in class on Monday, Oct 19. The
-midterm will be in class on Wednesday, October 21.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Today&amp;rsquo;s class was a visit from Tom Dukes on law and policy related to cryptocurrencies.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.law.virginia.edu/lawweb/faculty.nsf/FHPbI/1378405&#34;&gt;Tom Duke&amp;rsquo;s Bio&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Congressional Research Service report he mentioned: &lt;a href=&#34;https://www.fas.org/sgp/crs/misc/R43339.pdf&#34;&gt;&lt;em&gt;Bitcoin:
-Questions, Answers, and Analysis of Legal
-Issues&lt;/em&gt;&lt;/a&gt;, 14 August
-2015. This provides a good summary of US laws and regulations that apply
-to bitcoin, and why Congress is interested in it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 12: Script</title>
-      <link>http://bitcoin-class.org/classes/class12/</link>
-      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/classes/class12/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h2&gt;
-
-&lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Read&lt;/strong&gt;: &lt;a href=&#34;http://bitcoin-class.org/docs/princeton-book/chapter_3.pdf&#34;&gt;&lt;em&gt;Chapter 3: Mechanics of Bitcoin&lt;/em&gt;&lt;/a&gt;, from
-Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven
-Goldfeder. &lt;a href=&#34;https://piazza.com/princeton/spring2015/btctech/resources&#34;&gt;&lt;em&gt;Bitcoin and Cryptocurrency
-Technologies&lt;/em&gt;&lt;/a&gt;.
-Sections 3.2 and 3.3 are about bitcoin scripts, and should be read
-carefully.  (You should read the whole chapter, but those sections are
-most relevant to today&amp;rsquo;s class.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Friday, October 9&lt;/strong&gt;: Problem Set 2 (8:29pm).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Monday, October 19&lt;/strong&gt;: Midterm Exam&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/aQYiH6zGCIgxbO&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-Sorry, ink markings were lost from today.  &lt;a href=&#34;http://bitcoin-class.org/classes/class12-post.pptx&#34;&gt;Download the slides&lt;/a&gt;
-   &lt;/div&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;hash-collisions:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Hash Collisions!&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Computing a bitcoin address:&lt;/strong&gt; (&lt;a href=&#34;https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses&#34;&gt;bitcoinwiki&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;Private Key: pick a random number, &lt;em&gt;k&lt;/em&gt;.&lt;br /&gt;
-Public Key: compute (&lt;em&gt;Ux&lt;/em&gt;, &lt;em&gt;Uy&lt;/em&gt;) = &lt;em&gt;Gk&lt;/em&gt;
-&lt;div class=&#34;indented&#34;&gt;(elliptic curve multiplication, &lt;em&gt;G&lt;/em&gt; is specified generator point)&lt;/div&gt;
-&lt;em&gt;Ux&lt;/em&gt; and &lt;em&gt;Uy&lt;/em&gt; are 32 bytes each.&lt;/p&gt;
-
-&lt;p&gt;The bitcoin address is (|| is bitstring concatenation):&lt;br /&gt;
-    &lt;div class=&#34;indented&#34;&gt;
-    raw = &lt;code&gt;1&lt;/code&gt; || RIPEMD160(SHA256(&lt;em&gt;Ux&lt;/em&gt; || &lt;em&gt;Uy&lt;/em&gt;))&lt;br /&gt;
-         &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;RIPEMD output is 160 bits (20 bytes) + one byte for &lt;code&gt;1&lt;/code&gt;&lt;/em&gt;&lt;/div&gt;
-    checksum = first 4 bytes of SHA256(SHA256(raw))  &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;Compute a checksum using SHA256 double hash&lt;/em&gt;&lt;/div&gt;
-    address = Base58Check(raw || checksum)  &lt;div class=&#34;indented&#34;&gt;&lt;em&gt;convert to printable, unambiguous characters&lt;/em&gt;&lt;/div&gt;
-    &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is pre-image resistance for the security of bitcoin addresses?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is collision resistance for the security of bitcoin addresses?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is pre-image resistance for the integrity of bitcoin&amp;rsquo;s proof-of-work?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;How important is collision resistance for the integrity of bitcoin&amp;rsquo;s proof-of-work?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Xiaoyun Wang and Hongbo Yu, &lt;a href=&#34;http://www.bitcoin-class.org/docs/hashcollisions.pdf&#34;&gt;&lt;em&gt;How to Break MD5 and Other Hash Functions&lt;/em&gt;&lt;/a&gt;, EuroCrypt 2005.&lt;/p&gt;
-
-&lt;h1 id=&#34;bitcoin-script:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Bitcoin Script&lt;/h1&gt;
-
-&lt;p&gt;Transaction outputs in bitcoin are protected by &lt;em&gt;locking scripts&lt;/em&gt;, and
-must be unlocked by &lt;em&gt;unlocking scripts&lt;/em&gt;.  The scripts are written in a
-simple (compared to, say, the Java Virtual Machine language, but quite
-complex and poorly specified for what one might expect would be needed
-for bitcoin transactions) stack-based language.  A transaction output is
-not unlocked unless an unlocking script is provided such that the result
-of executing the unlocking script, followed by executing the locking
-script, is a stack with value True on top (and no invalid transaction
-results during the execution).&lt;/p&gt;
-
-&lt;p&gt;Some script instructions:&lt;/p&gt;
-
-&lt;p&gt;&lt;table cellpadding=5&gt;
-   &lt;tr&gt;
-   &lt;td align=&#34;center&#34;&gt;&lt;b&gt;Opcode&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Input&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Output&lt;/b&gt;&lt;/td&gt;&lt;td align=&#34;center&#34;&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_1&lt;/code&gt;&lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; &lt;strong&gt;1&lt;/strong&gt; &lt;/td&gt;&lt;td&gt; Pushes a &lt;strong&gt;1&lt;/strong&gt; (True) on the stack &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_DUP&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; Duplicates the top element of the stack &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_ADD&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; (&lt;em&gt;a&lt;/em&gt;+&lt;em&gt;b&lt;/em&gt;) &lt;/td&gt;&lt;td&gt; Pushes the sum of the top two elements. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_EQUAL&lt;/code&gt;&lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; &lt;strong&gt;0&lt;/strong&gt; or &lt;strong&gt;1&lt;/strong&gt; &lt;/td&gt;&lt;td&gt; Pushes &lt;strong&gt;1&lt;/strong&gt; if the top two elements are exactly equal, otherwise &lt;strong&gt;0&lt;/strong&gt;. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_VERIFY&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; If &lt;em&gt;a&lt;/em&gt; is not &lt;strong&gt;True&lt;/strong&gt; (&lt;strong&gt;1&lt;/strong&gt;), terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_RETURN&lt;/code&gt;&lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; Terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_EQUALVERIFY&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;em&gt;b&lt;/em&gt; &lt;/td&gt;&lt;td&gt; - &lt;/td&gt;&lt;td&gt; If &lt;em&gt;a&lt;/em&gt; and &lt;em&gt;b&lt;/em&gt; are not equal, terminates as Invalid. &lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;code&gt;OP_HASH160&lt;/code&gt; &lt;/td&gt;&lt;td&gt; &lt;em&gt;a&lt;/em&gt; &lt;/td&gt;&lt;td&gt; H(&lt;em&gt;a&lt;/em&gt;) &lt;/td&gt;&lt;td&gt; Pushes bitcoin address, RIPEMD160(SHA256(&lt;em&gt;a&lt;/em&gt;)). &lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;&lt;/p&gt;
-
-&lt;p&gt;Is the bitcoin scripting language Turing-complete?
-&lt;div class=&#34;gap&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are not clear on what Turing-complete means (and why real
-machines are not ideal), see &lt;a href=&#34;http://www.dori-mic.org&#34;&gt;&lt;em&gt;Dori-Mic and the Universal
-Machine!&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
