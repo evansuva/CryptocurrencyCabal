@@ -1,4 +1,4 @@
-% Class 01: What is Money?
+% Class 1: What is Money?
 % '2015-08-26'
 
 ## Schedule

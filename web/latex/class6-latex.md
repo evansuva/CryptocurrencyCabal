@@ -1,4 +1,4 @@
-% Class 06: Hash Functions
+% Class 6: Hash Functions
 % '2015-09-14'
 
 ## Schedule

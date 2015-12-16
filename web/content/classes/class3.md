@@ -1,5 +1,5 @@
 ---
-title: "Class 03: Digital Signatures"
+title: "Class 3: Digital Signatures"
 date: '2015-09-02'
 print: "class3.pdf"
 nocomment: false

@@ -2,12 +2,12 @@
 title: "Projects"
 date: '2015-11-15'
 nocomment: false
-menu: "assignments"
 ---
 
-# Project Ideas
+# Projects
 
-**[The Evolution of Bitcoin Script Interpreter](https://github.com/AcaciaDai/Bitcoin-Script-Interpreter)**  
+   
+**[The Evolution of Bitcoin Script Interpreter](https://sites.google.com/a/virginia.edu/the-evolution-of-bitcoin-scripting-interpreter/)** 
 Acacia Dai
 
 **[Developing a Distributed Distributed Consensus Protocol Consensus Protocol](http://alecgrieser.github.io/ddcpcp)**  
@@ -19,7 +19,7 @@ Alishan Hassan
 **[Blockchain Voting](http://ccc-voting.github.io)**  
 Sugat Poudel, Austin J. Varshneya, Xhama Vyas
 
-**[BitMingle](https://github.com/cahruhr/BitMingle)**  
+**[BitMingle](https://github.com/cahruhr/BitMingle)** [Report](https://github.com/cahruhr/BitMingle/blob/master/BitMingle.pdf)  
 Carter Hall, Reid Bixler
 
 **[Divergence of Alt Coins and their Concurrent Developments](missingURL)**  

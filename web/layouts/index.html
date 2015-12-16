@@ -7,20 +7,6 @@
             <a name="top"></a>
             {{ partial "listtop.html" . }}
 
-
-<section id="news">
-   <div class="items">
-        <b><A href="/news/">Cryptocurrency News</a></b>
-        {{ range .Data.Pages }}
-           {{ if eq .Section "news" }}
-         <h1 class="news-title">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-         </h1>
-           {{ end }}
-        {{ end }}
-   </div>
-</section>
-
 <section id="main">
       <div class="posts">
         {{ range .Data.Pages }}

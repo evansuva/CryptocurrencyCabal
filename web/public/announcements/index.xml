@@ -6,8 +6,24 @@
     <description>Recent content in Announcements on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Final Project Reports</title>
+      <link>http://bitcoin-class.org/announcements/final/</link>
+      <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://bitcoin-class.org/announcements/final/</guid>
+      <description>&lt;p&gt;The final project reports and sites are now posted: &lt;a href=&#34;http://bitcoin-class.org/project-reports/&#34;&gt;Project Reports&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://bitcoin-class.org/images/lawn.jpg&#34; width=640 height=347&gt;
+&lt;center&gt;
+Thanks to everyone for your contributions to the class!&lt;br /&gt;
+&lt;strong&gt;Enjoy winter break.&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Project Ideas</title>
@@ -401,24 +417,6 @@ implications for the blockchain.&lt;/p&gt;
       
       <guid>http://bitcoin-class.org/announcements/ps1/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Email/Calendar Update</title>
-      <link>http://bitcoin-class.org/announcements/email/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://bitcoin-class.org/announcements/email/</guid>
-      <description>&lt;p&gt;The email address, &lt;code&gt;ccc-staff@cs.virginia.edu&lt;/code&gt;, reaches all the course
-staff (Dave, Samee, and Ori).  If you have a question that can be asked
-publicly, its best to post it as a comment on the website.  But, for
-things that don&amp;rsquo;t belong as website comments, use that email address to
-reach all of us.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve updated the course calendar to include all the deadlines, and
-encourage you to incorporate this into your calendar:
-&lt;a href=&#34;https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics&#34;&gt;use this link&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

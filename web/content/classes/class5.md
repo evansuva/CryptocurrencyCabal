@@ -1,5 +1,5 @@
 ---
-title: "Class 05: Becoming Paranoid"
+title: "Class 5: Becoming Paranoid"
 date: '2015-09-09'
 nocomment: false
 weight: 3

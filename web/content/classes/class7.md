@@ -1,5 +1,5 @@
 ---
-title: "Class 07: The Blockchain"
+title: "Class 7: The Blockchain"
 date: '2015-09-16'
 print: "class7.pdf"
 nocomment: false
