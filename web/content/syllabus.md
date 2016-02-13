@@ -33,8 +33,6 @@ version](http://www.amazon.com/Mastering-Bitcoin-Unlocking-Digital-Crypto-Curren
 - Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven
 Goldfeder. [_Bitcoin and Cryptocurrency
 Technologies_](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf?a=1).
-This is a new book under development by a team at Princeton University.
-(There are also lecture videos and slides that correspond to the book.)
 
 In addition to those books, we will have several readings from both
 general audience publications, technical documents, and research papers.
