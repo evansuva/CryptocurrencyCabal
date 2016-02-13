@@ -11,10 +11,10 @@ menu: "classes"
 ## Schedule
 
    <div class="todo"> 
-**Read**: [_Chapter 3: Mechanics of Bitcoin_](http://bitcoin-class.org/docs/princeton-book/chapter_3.pdf), from
+**Read**: _Chapter 3: Mechanics of Bitcoin_, from
 Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller, Steven
 Goldfeder. [_Bitcoin and Cryptocurrency
-Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
+Technologies_](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf?a=1).
 Sections 3.2 and 3.3 are about bitcoin scripts, and should be read
 carefully.  (You should read the whole chapter, but those sections are
 most relevant to today's class.)

@@ -24,13 +24,12 @@ and [_Chapter 7: The
 Blockchain_](https://github.com/aantonop/bitcoinbook/blob/develop/ch07.asciidoc)
 from Andreas Antonopoulos' book.  
 
-- [_Chapter 2: How Bitcoin Achieves
-Decentralization_](http://bitcoin-class.org/docs/princeton-book/chapter_2.pdf)
-and [_Chapter 5: Bitcoin
-Mining_](http://bitcoin-class.org/docs/princeton-book/chapter_5.pdf)
+- _Chapter 2: How Bitcoin Achieves
+Decentralization_
+and _Chapter 5: Bitcoin Mining_
 from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. [_Bitcoin and Cryptocurrency
-Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
+Steven Goldfeder. _Bitcoin and Cryptocurrency
+Technologies_.
    </div>
 
 <center>

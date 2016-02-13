@@ -23,12 +23,10 @@ You can skim most of Chapter 3, especially the parts about installing
 bitcoin core, but should read Chapter 4.  (You should have already read
 Chapters 1 and 2.)
 
-- **Read:** [_Chapter 1: Introduction to Cryptography and
-Cryptocurrencies_](http://bitcoin-class.org/docs/princeton-book/chapter_1.pdf),
+- **Read:** _Chapter 1: Introduction to Cryptography and
+Cryptocurrencies_,
 from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. [_Bitcoin and Cryptocurrency
-Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
-This chapter starts with cryptographic hashing and authenticated data
+Steven Goldfeder.  This chapter starts with cryptographic hashing and authenticated data
 structures (which we are deferring until until later, but is still worth
 reading now), and Section 1.3 covers digital signatures.
 

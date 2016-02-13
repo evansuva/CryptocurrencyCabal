@@ -11,10 +11,9 @@ menu: "classes"
 [Problem Set 3](http://bitcoin-class.org/ps/ps3) is due Sunday, 8 
 November (8:29pm).  Readings for PS3: 
 
--  [_Chapter 6: Bitcoin and Anonymity_](http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf),
+-  _Chapter 6: Bitcoin and Anonymity_ 
 from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
-Steven Goldfeder. [_Bitcoin and Cryptocurrency
-Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
+Steven Goldfeder.
 
 - [_A Fistful of Bitcoins: Characterizing Payments among Men (sic) with No Names_](http://conferences2.sigcomm.org/imc/2013/papers/imc182-meiklejohnA.pdf) by Sarah Meiklejohn, Marjori Pomarole, Grant Jordan, Kirill Levchenko, Damon McCoy, Geoffrey M. Voelker, and Stefan Savage.  _Internet Measurement Conference_, 2013. 
 

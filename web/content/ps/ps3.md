@@ -85,10 +85,10 @@ The questions in the section focus on this paper:
 
 You should also read:
 
--  [_Chapter 6: Bitcoin and Anonymity_](http://bitcoin-class.org/docs/princeton-book/chapter_6.pdf),
+-  _Chapter 6: Bitcoin and Anonymity_,
 from Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller,
 Steven Goldfeder. [_Bitcoin and Cryptocurrency
-Technologies_](https://piazza.com/princeton/spring2015/btctech/resources).
+Technologies_](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf?a=1)
 
    <div class="problem"> 
 **Problem 2.** Part of the strategy used in the
