@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/</link>
+    <link>https://bitcoin-class.org/index.xml</link>
     <description>Recent content on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Nov 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Project Reports</title>
-      <link>http://bitcoin-class.org/project-reports/</link>
+      <link>https://bitcoin-class.org/project-reports/</link>
       <pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/project-reports/</guid>
+      <guid>https://bitcoin-class.org/project-reports/</guid>
       <description>
 
-&lt;h1 id=&#34;projects:7e12de9ccd9171146849fec4c53e259c&#34;&gt;Projects&lt;/h1&gt;
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
 
 &lt;p&gt;This page collects the final project presentations and reports.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://sites.google.com/a/virginia.edu/the-evolution-of-bitcoin-scripting-interpreter/&#34;&gt;The Evolution of Bitcoin Script Interpreter&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/script.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://sites.google.com/a/virginia.edu/the-evolution-of-bitcoin-scripting-interpreter/&#34;&gt;The Evolution of Bitcoin Script Interpreter&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/script.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Acacia Dai&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://alecgrieser.github.io/ddcpcp&#34;&gt;Developing a Distributed Distributed Consensus Protocol Consensus Protocol&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/consensus.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://alecgrieser.github.io/ddcpcp&#34;&gt;Developing a Distributed Distributed Consensus Protocol Consensus Protocol&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/consensus.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Alec Grieser&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/AlishanHassan/Cryptocurrency-Project&#34;&gt;A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo;&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/bandwidth.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/AlishanHassan/Cryptocurrency-Project&#34;&gt;A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo;&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/bandwidth.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Alishan Hassan&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://ccc-voting.github.io&#34;&gt;Blockchain Voting&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/voting.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://ccc-voting.github.io&#34;&gt;Blockchain Voting&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/voting.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Sugat Poudel, Austin J. Varshneya, Xhama Vyas&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/cahruhr/BitMingle&#34;&gt;BitMingle&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://github.com/cahruhr/BitMingle/blob/master/BitMingle.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Carter Hall, Reid Bixler&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://cberman.github.io/Cryptocurrency-Final-Project/&#34;&gt;Vending on Dark Net Markets&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/darkmarkets.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://cberman.github.io/Cryptocurrency-Final-Project/&#34;&gt;Vending on Dark Net Markets&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/darkmarkets.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Collin Berman&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/cmalekpour/btcd-prune&#34;&gt;Pruning Nodes&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/pruning.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/cmalekpour/btcd-prune&#34;&gt;Pruning Nodes&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/pruning.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Cyrus Malekpour&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/DeanMakovsky/evalbc&#34;&gt;Evaluating BlockCypher’s Confidence Level&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/confidence.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/DeanMakovsky/evalbc&#34;&gt;Evaluating BlockCypher’s Confidence Level&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/confidence.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh&amp;nbsp;Kuppusamy&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://eashankaw.com/?p=10&#34;&gt;Chinese Geopolitical Strategy and Bitcoin&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/china.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://eashankaw.com/?p=10&#34;&gt;Chinese Geopolitical Strategy and Bitcoin&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/china.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Eashan Kaw&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://kukla1234.github.io/&#34;&gt;Bitcoin at Point of Sale&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/pos.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://kukla1234.github.io/&#34;&gt;Bitcoin at Point of Sale&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/pos.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Elizabeth Kukla&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/fc5fz/CC-Project/wiki&#34;&gt;Detecting Selfish Mining in Bitcoin and Litecoin&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/selfish.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/fc5fz/CC-Project/wiki&#34;&gt;Detecting Selfish Mining in Bitcoin and Litecoin&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/selfish.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Fangyang Cui&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/jg5ash4/silkroadproject&#34;&gt;Silkroad Takedown&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/silkroad.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/jg5ash4/silkroadproject&#34;&gt;Silkroad Takedown&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/silkroad.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Gardner Fiveash&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/Dellvan7/measurespv&#34;&gt;Measure SPV&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/spv.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/Dellvan7/measurespv&#34;&gt;Measure SPV&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/spv.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Jacob Freck&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.kienanadams.com/btc-donation-transparency/&#34;&gt;Bitcoin Donation Transparency&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/donation-transparency.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.kienanadams.com/btc-donation-transparency/&#34;&gt;Bitcoin Donation Transparency&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/donation-transparency.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Kienan Adams&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://people.virginia.edu/~mjp9zn/CS4501/project.html&#34;&gt;Bitcoin Block-Size Options&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/scaling.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://people.virginia.edu/~mjp9zn/CS4501/project.html&#34;&gt;Bitcoin Block-Size Options&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/scaling.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Michael Parisi Presicce&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://btccabal.weebly.com/&#34;&gt;Proved Anonymous Mixing&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/verifiable-mixing.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://btccabal.weebly.com/&#34;&gt;Proved Anonymous Mixing&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/verifiable-mixing.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Morgan Locks&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/2014mchidamb/Beyond-Lightning&#34;&gt;Beyond the Lightning Network - Exploring How to Scale Bitcoin&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
@@ -75,26 +75,26 @@ Muthu Chidambaram&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://pleng28.github.io/BIT/&#34;&gt;Analysis of the Viability of Bitcoin replacing as a National Currency&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
 Peter Leng&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/UVAqmoore/cccfinal&#34;&gt;How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/exchanges.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/UVAqmoore/cccfinal&#34;&gt;How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/exchanges.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Quentin Moore&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/mrranderson/Mixer-Verifier&#34;&gt;Mixer Verifier&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/bitsniffer.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/mrranderson/Mixer-Verifier&#34;&gt;Mixer Verifier&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/bitsniffer.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Ryan Anderson, Sam Prestwood, Luke Gessler&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://ziqi.herokuapp.com/bitcoin_project&#34;&gt;Understanding Mobile Bitcoin Wallets&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;http://bitcoin-class.org/projects/wallet.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://ziqi.herokuapp.com/bitcoin_project&#34;&gt;Understanding Mobile Bitcoin Wallets&lt;/a&gt;&lt;/strong&gt; - &lt;a href=&#34;https://bitcoin-class.org/projects/wallet.pdf&#34;&gt;Report (PDF)&lt;/a&gt;&lt;br /&gt;
 Ziqi Liu&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://bitcoin-class.org/projects/</link>
+      <link>https://bitcoin-class.org/projects/</link>
       <pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/projects/</guid>
+      <guid>https://bitcoin-class.org/projects/</guid>
       <description>
 
-&lt;h1 id=&#34;projects:3c42bb4157bf51d85ae7ffc4e1685909&#34;&gt;Projects&lt;/h1&gt;
+&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://sites.google.com/a/virginia.edu/the-evolution-of-bitcoin-scripting-interpreter/&#34;&gt;The Evolution of Bitcoin Script Interpreter&lt;/a&gt;&lt;/strong&gt;
 Acacia Dai&lt;/p&gt;
@@ -166,26 +166,26 @@ Ziqi Liu&lt;/p&gt;
     
     <item>
       <title>PS3: CSI: Blockchain</title>
-      <link>http://bitcoin-class.org/ps/ps3/</link>
+      <link>https://bitcoin-class.org/ps/ps3/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps3/</guid>
-      <description>
-
-&lt;h1 id=&#34;problem-set-3-br-csi-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Problem Set 3:&lt;br&gt; CSI: Blockchain&lt;/h1&gt;
+      <guid>https://bitcoin-class.org/ps/ps3/</guid>
+      <description>&lt;h1 id=&#34;problem-set-3-br-csi-blockchain&#34;&gt;Problem Set 3:&lt;br&gt; CSI: Blockchain&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
 Due: Sunday, 8 November at 8:29pm
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;purpose:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Purpose&lt;/h2&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;The goal of this assignment is for everyone to gain experience analyzing
 the blockchain and understanding of the anonymity of bitcoin (and
 mechanisms that are used to increase or decrease it), and to hopefully
 help the FBI catch some heinous criminals.&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, you may either work alone or with one other person
 of your choice.  If you work with a partner, you should together submit
@@ -194,7 +194,7 @@ efforts.  You may, and are encouraged to, discuss all of the problems
 with anyone else you want (both on-line using the course web site or any
 other means you choose, and in person).&lt;/p&gt;
 
-&lt;h3 id=&#34;submission:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Submit your answers as a single ZIP file using &lt;a href=&#34;https://www.dropbox.com/request/YC25YAa5DV7ejcc49ONC&#34;&gt;this
 link&lt;/a&gt;.  The name
@@ -204,7 +204,7 @@ should include a PDF document containing all your written (non-code)
 answers, all of the source code for your programs, and any additional
 data you think it useful to provide.&lt;/p&gt;
 
-&lt;h2 id=&#34;warm-up-manual-exploration:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Warm-Up: Manual Exploration&lt;/h2&gt;
+&lt;h2 id=&#34;warm-up-manual-exploration&#34;&gt;Warm-Up: Manual Exploration&lt;/h2&gt;
 
 &lt;p&gt;You should have received by email a list of bitcoin addresses that were
 given to us by the FBI.  These are addresses that were used to collect
@@ -242,7 +242,7 @@ to see the addresses that are receiving bitcoin from the given address).&lt;/p&g
 operation, you should post your answers to Problem 1 (for your address)
 as a &lt;a href=&#34;#comments&#34;&gt;comment on this page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;privacy-in-the-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Privacy in the Blockchain&lt;/h2&gt;
+&lt;h2 id=&#34;privacy-in-the-blockchain&#34;&gt;Privacy in the Blockchain&lt;/h2&gt;
 
 &lt;p&gt;The questions in the section focus on this paper:&lt;/p&gt;
 
@@ -285,7 +285,7 @@ deterministic wallets became standard.  How does the widespread use of
 HD wallets today impact the effectiveness of their Heuristic 2?
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;blockchain-apis:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Blockchain APIs&lt;/h2&gt;
+&lt;h2 id=&#34;blockchain-apis&#34;&gt;Blockchain APIs&lt;/h2&gt;
 
 &lt;p&gt;One way to analyze the blockchain is to run a full bitcoin node, and
 operate on your own local copy of the blockchain.  This requires
@@ -307,7 +307,7 @@ submission.&lt;/p&gt;
 directions to get started using this next (but feel free to use other
 tools if you prefer).&lt;/p&gt;
 
-&lt;h3 id=&#34;setting-up-blockcypher-api:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Setting up BlockCypher API&lt;/h3&gt;
+&lt;h3 id=&#34;setting-up-blockcypher-api&#34;&gt;Setting up BlockCypher API&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Install Python.&lt;/strong&gt; Start by downloading and installing Python
   (&lt;a href=&#34;https://www.python.org/downloads/release/python-350/&#34;&gt;https://www.python.org/downloads/release/python-350/&lt;/a&gt;.
@@ -384,7 +384,7 @@ WalletExplorer developer, kindly made it available to us):&lt;/p&gt;
         return adr
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;mixing-services:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Mixing Services&lt;/h2&gt;
+&lt;h2 id=&#34;mixing-services&#34;&gt;Mixing Services&lt;/h2&gt;
 
 &lt;p&gt;Before looking at the ransomware addresses, get some practice using a
 blockchain API by examining a simple mixer (as far as we can tell, the
@@ -434,7 +434,7 @@ target block.)&lt;/p&gt;
   addresses as well as convenient time delays.&amp;rdquo;  How much does it enhance anonymity to split your output across two forward addresses?  (A good answer will get into how using two forward addresses impacts both the size of the anonymity set and the computational cost of performining the de-anonymizing analysis.  A great answer would actually test this by examining the blockchain to get a concrete result.)
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;follow-the-ransomware-money:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Follow the Ransomware Money&lt;/h2&gt;
+&lt;h2 id=&#34;follow-the-ransomware-money&#34;&gt;Follow the Ransomware Money&lt;/h2&gt;
 
 &lt;p&gt;Now it’s time to follow the money!  We&amp;rsquo;ll provide a few hints for things
 to do, but you should use these as starting points and form your own
@@ -532,7 +532,7 @@ get permission before doing anything potentially risky!&lt;/p&gt;
   really provides.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;submission-1:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission-1&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Follow the submission instructions at the beginning of this page by
 8:29pm on Sunday, 8 November.  If you do find anything of particular
@@ -546,30 +546,29 @@ for providing the impetus and data for this assignment.  We thank Aleš
 Janda for making the WalletExplorer API available to us.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a name=&#34;comments&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a name=&#34;comments&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PS2: The Blockchain</title>
-      <link>http://bitcoin-class.org/ps/ps2/</link>
+      <link>https://bitcoin-class.org/ps/ps2/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps2/</guid>
-      <description>
-
-&lt;h1 id=&#34;problem-set-2-br-the-blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Problem Set 2:&lt;br&gt; The Blockchain&lt;/h1&gt;
+      <guid>https://bitcoin-class.org/ps/ps2/</guid>
+      <description>&lt;h1 id=&#34;problem-set-2-br-the-blockchain&#34;&gt;Problem Set 2:&lt;br&gt; The Blockchain&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
 Due: Friday, 9 October at 8:29pm
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;purpose:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Purpose&lt;/h2&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;The goal of this assignment is for everyone in the class to understand
 how bitcoin mining and the blockchain work, and evaluate risks to the blockchain.&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, everyone should submit their own assignment and
 should writeup their own answers to the questions.  You may, and are
@@ -577,7 +576,7 @@ encouraged to, discuss all of the problems with anyone else you want
 (both on-line using the course web site or any other means you choose,
 and in person).&lt;/p&gt;
 
-&lt;h3 id=&#34;submission:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Submit your answers as a single PDF file using &lt;a href=&#34;https://www.dropbox.com/request/oar0AQeg4SJRNtdHbcSS&#34;&gt;this
 link&lt;/a&gt;.  The name
@@ -590,7 +589,7 @@ to develop your answers.  If the code you write is less than a page, it
 is best to just include it in the PDF writeup.  If it is longer, you may
 submit separate code files (and mention them in the PDF submission).&lt;/p&gt;
 
-&lt;h1 id=&#34;blockchain-consensus:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain Consensus&lt;/h1&gt;
+&lt;h1 id=&#34;blockchain-consensus&#34;&gt;Blockchain Consensus&lt;/h1&gt;
 
 &lt;p&gt;These questions concern the original bitcoin paper:&lt;/p&gt;
 
@@ -624,7 +623,7 @@ attacker is a &amp;ldquo;he&amp;rdquo;)&lt;/div&gt;&lt;/p&gt;
 the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;/span&gt; values be for &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; &amp;lt; 0.05 (instead of &lt;em&gt;p&lt;/em&gt; &amp;lt; 0.001)?
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;merkle-trees-and-storage:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Merkle Trees and Storage&lt;/h1&gt;
+&lt;h1 id=&#34;merkle-trees-and-storage&#34;&gt;Merkle Trees and Storage&lt;/h1&gt;
 
 &lt;p&gt;Bitcoin uses Merkle Trees to record transactions in a way that enables a
 single hash to be used to record a set of transactions, and a small
@@ -674,9 +673,9 @@ on reading it.&lt;/p&gt;
 &lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; (the number of records)?
     &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain&lt;/h1&gt;
+&lt;h1 id=&#34;blockchain&#34;&gt;Blockchain&lt;/h1&gt;
 
-&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;http://bitcoin-class.org/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;https://bitcoin-class.org/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;https://bitcoin-class.org/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Ittay Eyal and Emin G&amp;uuml;n Sirer, &lt;a href=&#34;http://arxiv.org/pdf/1311.0243v5.pdf&#34;&gt;&lt;em&gt;Majority is not Enough: Bitcoin
@@ -731,7 +730,7 @@ learns of it before that).&lt;/p&gt;
   mining pool.)
   &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;pool-hopping:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Pool Hopping&lt;/h1&gt;
+&lt;h1 id=&#34;pool-hopping&#34;&gt;Pool Hopping&lt;/h1&gt;
 
 &lt;p&gt;Answer &lt;em&gt;either&lt;/em&gt; question 10A or 10B (your choice).&lt;/p&gt;
 
@@ -750,7 +749,7 @@ miner).  &lt;/div&gt;&lt;/p&gt;
    one of them to answer.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;bonus-opportunities:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Bonus Opportunities&lt;/h1&gt;
+&lt;h1 id=&#34;bonus-opportunities&#34;&gt;Bonus Opportunities&lt;/h1&gt;
 
 &lt;p&gt;The following questions are suggestions for further work, but it is not
 expected that everyone will solve them.  (Note that some of these could
@@ -781,28 +780,25 @@ them would be most impressive.)&lt;/p&gt;
   to capture expected increases in the difficulty, cost of capital, and
   other costs of mining besides electricity.&lt;/p&gt;
 
-&lt;h3 id=&#34;submission-1:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission-1&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Follow the submission instructions at the beginning of this page by
-8:29pm on Friday, 9 October.&lt;/p&gt;
-</description>
+8:29pm on Friday, 9 October.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PS1: Bitcoin Transactions</title>
-      <link>http://bitcoin-class.org/ps/ps1/</link>
+      <link>https://bitcoin-class.org/ps/ps1/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps1/</guid>
-      <description>
-
-&lt;h1 id=&#34;problem-set-1-bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Problem Set 1: Bitcoin Transactions&lt;/h1&gt;
+      <guid>https://bitcoin-class.org/ps/ps1/</guid>
+      <description>&lt;h1 id=&#34;problem-set-1-bitcoin-transactions&#34;&gt;Problem Set 1: Bitcoin Transactions&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
 Due: Tuesday, 15 September at 8:29pm
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;purpose:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Purpose&lt;/h2&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;The goal of this assignment is for everyone in the class to understand
 how keys, addresses, and transactions work in bitcoin.  In addition,
@@ -810,7 +806,9 @@ this assignment should help everyone get up-to-speed with the software
 tools (including the Go programming language) we will use in later
 assignments.&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, everyone should submit their own assignment and
 should writeup their own answers to the questions as well as execute all
@@ -821,7 +819,7 @@ else you want (both on-line using the course web site or any other means
 you choose, and in person), and it is okay to share code with others so
 long as you understand everything in all of the code you use.&lt;/p&gt;
 
-&lt;h3 id=&#34;submission:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Submit your answers as a single PDF file using &lt;a href=&#34;https://www.dropbox.com/request/KV26Qd6UrcB9j6nBLVw8&#34;&gt;this
 link&lt;/a&gt;.  The name
@@ -832,7 +830,7 @@ code for question 11, or incorporate that code into the PDF submission.)&lt;/p&g
 &lt;p&gt;Your submission should include clearly marked answers for all the
 problems (highlighted in yellow).&lt;/p&gt;
 
-&lt;h1 id=&#34;blockchain-sleuthing:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Blockchain Sleuthing&lt;/h1&gt;
+&lt;h1 id=&#34;blockchain-sleuthing&#34;&gt;Blockchain Sleuthing&lt;/h1&gt;
 
 &lt;p&gt;You should have received some bitcoin at the address you submitted in
 the registration form.  (If you did not receive any bitcoin, contact the
@@ -910,7 +908,7 @@ that transaction.&lt;/p&gt;&lt;/li&gt;
   confidence if you were going to store all of your income in it?
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;getting-going:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Getting GOing&lt;/h1&gt;
+&lt;h1 id=&#34;getting-going&#34;&gt;Getting GOing&lt;/h1&gt;
 
 &lt;p&gt;You are free to use any programming language and open source bitcoin
 libraries and openly-licensed code you want for this assignment, but
@@ -950,7 +948,7 @@ After you have installed go, you can set up the BTC library by doing:
 ```
 --&gt;
 
-&lt;h1 id=&#34;obtain-the-starting-code:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Obtain the Starting Code&lt;/h1&gt;
+&lt;h1 id=&#34;obtain-the-starting-code&#34;&gt;Obtain the Starting Code&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Install Go.&lt;/strong&gt;
 Start by &lt;a href=&#34;https://golang.org/doc/install&#34;&gt;downloading and installing
@@ -969,7 +967,7 @@ $ export GOPATH=$Home/go_workspace
   btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Setting up git.&lt;/strong&gt; Before continuing with this assignment, you should
-&lt;a href=&#34;http://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
 and follow the directions there to set up your private repository
 containing the starting code for ps1.  (It may seem like overkill to use
 git for this assignment since you will not need to write much code or
@@ -986,7 +984,7 @@ code for generating a bitcoin key pair (including its public address).&lt;/li&gt
 &lt;li&gt;&lt;a href=&#34;https://github.com/CryptocurrencyCabal/ps1/blob/master/spend.go&#34;&gt;spend.go&lt;/a&gt;: code for generating a bitcoin transaction.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;elliptic-curve-cryptography:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Elliptic Curve Cryptography&lt;/h1&gt;
+&lt;h1 id=&#34;elliptic-curve-cryptography&#34;&gt;Elliptic Curve Cryptography&lt;/h1&gt;
 
 &lt;p&gt;The btcsuite library includes,
 &lt;a href=&#34;https://github.com/btcsuite/btcd/tree/master/btcec&#34;&gt;btcec&lt;/a&gt;, an
@@ -1016,7 +1014,7 @@ code.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;generating-a-key-pair:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Generating a Key Pair&lt;/h2&gt;
+&lt;h2 id=&#34;generating-a-key-pair&#34;&gt;Generating a Key Pair&lt;/h2&gt;
 
 &lt;p&gt;We have provided code in &lt;code&gt;keypair.go&lt;/code&gt; that generates a bitcoin key pair.
 You can try running this by running &lt;code&gt;go run keypair.go&lt;/code&gt; (or you can
@@ -1029,7 +1027,7 @@ see that it produces a different key pair each time.)&lt;/p&gt;
 class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;, and finding the corresponding public key by
 &amp;ldquo;multiplying&amp;rdquo; it by &lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;, the generator point.
 (Multiplication here is not standard multiplication, but multiplication
-on the elliptic curve, as discussed in &lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
+on the elliptic curve, as discussed in &lt;a href=&#34;https://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; is defined by &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L912&#34;&gt;lines
 912-3&lt;/a&gt;):&lt;/p&gt;
 
@@ -1066,7 +1064,7 @@ should assume that you are an ultra-paranoid multi-billionaire who
 intends to transfer her entire fortune to the generated address.&lt;br /&gt;
     &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;generating-a-vanity-address:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Generating a Vanity Address&lt;/h2&gt;
+&lt;h2 id=&#34;generating-a-vanity-address&#34;&gt;Generating a Vanity Address&lt;/h2&gt;
 
 &lt;p&gt;Anyone can have a bitcoin address like
 &lt;code&gt;1H7tu2qUAyyr5aX1WA17eyvbetAGyqxfKZ&lt;/code&gt; or
@@ -1106,7 +1104,7 @@ be creative.)&lt;br /&gt;
    should contemplate briefly whether using such a site is &lt;a href=&#34;http://www.reddit.com/r/Bitcoin/comments/21foj9/funds_currently_being_stolen_from_vanity/&#34;&gt;more vain or
    stupid&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Bitcoin Transactions&lt;/h1&gt;
+&lt;h1 id=&#34;bitcoin-transactions&#34;&gt;Bitcoin Transactions&lt;/h1&gt;
 
 &lt;p&gt;Having an address is not much fun without any funds!&lt;/p&gt;
 
@@ -1200,22 +1198,21 @@ are not expected to actually be able to double-spend successfully (if
 this were easy, bitcoin would not work well as a currency!), but should
 be able to learn something by attemting to do this.&lt;/p&gt;
 
-&lt;h3 id=&#34;submission-1:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission-1&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Follow the submission instructions at the beginning of this page by
-8:29pm on Tuesday, 15 September.&lt;/p&gt;
-</description>
+8:29pm on Tuesday, 15 September.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Getting Started with Github</title>
-      <link>http://bitcoin-class.org/tools/github/</link>
+      <link>https://bitcoin-class.org/tools/github/</link>
       <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/tools/github/</guid>
+      <guid>https://bitcoin-class.org/tools/github/</guid>
       <description>
 
-&lt;h1 id=&#34;getting-started-with-github:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Getting Started with Github&lt;/h1&gt;
+&lt;h1 id=&#34;getting-started-with-github&#34;&gt;Getting Started with Github&lt;/h1&gt;
 
 &lt;p&gt;For this course you will need to use &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt; to
 manage your code and submit your assignments.  &lt;a href=&#34;http://gitscm.com/&#34;&gt;Git&lt;/a&gt;
@@ -1250,7 +1247,7 @@ class, but this should be enough to get started):&lt;/p&gt;
   &lt;a href=&#34;http://windows.github.com/&#34;&gt;Windows&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;using-git-for-ccc:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Using git for CCC&lt;/h1&gt;
+&lt;h1 id=&#34;using-git-for-ccc&#34;&gt;Using git for CCC&lt;/h1&gt;
 
 &lt;p&gt;For some of the assignments in this course, we will provide starting
 code in a git repository and you will need to use separate private
@@ -1280,9 +1277,9 @@ working copy, and push to the main repository.&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;As you do the assignment, you should commit and push your changes regularly.&lt;/p&gt;
 
-&lt;h2 id=&#34;setting-up-the-repository:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Setting up the Repository&lt;/h2&gt;
+&lt;h2 id=&#34;setting-up-the-repository&#34;&gt;Setting up the Repository&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;https://bitcoin-class.org/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;1. Create a new repository named &lt;code&gt;ps1&lt;/code&gt;.&lt;/b&gt;&lt;/p&gt;
 
@@ -1315,7 +1312,7 @@ git pull starting master
 git push --tags origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;working-with-files:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Working with Files&lt;/h2&gt;
+&lt;h2 id=&#34;working-with-files&#34;&gt;Working with Files&lt;/h2&gt;
 
 &lt;p&gt;Now you can write your own code in editor and save it to files. You can see what files have changed by running:
 &lt;code&gt;git status&lt;/code&gt;.  You should see something like this:&lt;/p&gt;
@@ -1394,87 +1391,87 @@ changes (or recover from mistakes).&lt;/p&gt;
     
     <item>
       <title>Classes</title>
-      <link>http://bitcoin-class.org/allclasses/</link>
+      <link>https://bitcoin-class.org/allclasses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/allclasses/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/class1/&#34;&gt;1: What is Money?&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class2/&#34;&gt;2: Cryptography&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;3: Signatures&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class4/&#34;&gt;4: Checkup 1&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class5/&#34;&gt;5: Becoming Paranoid&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class6/&#34;&gt;6: Hash Functions&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class7/&#34;&gt;7: The Blockchain&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class8&#34;&gt;8: Mining&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class9&#34;&gt;9: Mining Economics&lt;/a&gt; (and Checkup 2)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class10&#34;&gt;10: Subverting Bitcoin&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class11&#34;&gt;11: More Mining&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class12&#34;&gt;12: Script&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class13&#34;&gt;13: Law and Policy&lt;/a&gt; (Tom Dukes visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class14&#34;&gt;14: Crime&lt;/a&gt; (FBI visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class15&#34;&gt;15: Scripting Transactions&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class16&#34;&gt;16: Midterm&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class17&#34;&gt;17: Business&lt;/a&gt; (Josh Cincinatti visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class18&#34;&gt;18: Confirmations&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class19&#34;&gt;19: Anonymity&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class20&#34;&gt;20: Hidden Services&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class21&#34;&gt;21: Scaling Bitcoin&lt;/a&gt; (Alex Kuck and Nick Skelsey visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class22&#34;&gt;22: Zero Knowledge Proofs&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class23&#34;&gt;23: Before Bitcoin (Digicash)&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class24&#34;&gt;24: Altcoins&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class25&#34;&gt;25: Project Proposal Presentations&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class26&#34;&gt;26: Jeopardy!&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class27&#34;&gt;27: Project Presentations 1&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class28&#34;&gt;28: Project Presentations 2&lt;/a&gt;&lt;/p&gt;
+      <guid>https://bitcoin-class.org/allclasses/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://bitcoin-class.org/classes/class1/&#34;&gt;1: What is Money?&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class2/&#34;&gt;2: Cryptography&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class3/&#34;&gt;3: Signatures&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class4/&#34;&gt;4: Checkup 1&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class5/&#34;&gt;5: Becoming Paranoid&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class6/&#34;&gt;6: Hash Functions&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class7/&#34;&gt;7: The Blockchain&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class8&#34;&gt;8: Mining&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class9&#34;&gt;9: Mining Economics&lt;/a&gt; (and Checkup 2)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class10&#34;&gt;10: Subverting Bitcoin&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class11&#34;&gt;11: More Mining&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class12&#34;&gt;12: Script&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class13&#34;&gt;13: Law and Policy&lt;/a&gt; (Tom Dukes visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class14&#34;&gt;14: Crime&lt;/a&gt; (FBI visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class15&#34;&gt;15: Scripting Transactions&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class16&#34;&gt;16: Midterm&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class17&#34;&gt;17: Business&lt;/a&gt; (Josh Cincinatti visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class18&#34;&gt;18: Confirmations&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class19&#34;&gt;19: Anonymity&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class20&#34;&gt;20: Hidden Services&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class21&#34;&gt;21: Scaling Bitcoin&lt;/a&gt; (Alex Kuck and Nick Skelsey visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class22&#34;&gt;22: Zero Knowledge Proofs&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class23&#34;&gt;23: Before Bitcoin (Digicash)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class24&#34;&gt;24: Altcoins&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class25&#34;&gt;25: Project Proposal Presentations&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class26&#34;&gt;26: Jeopardy!&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class27&#34;&gt;27: Project Presentations 1&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class28&#34;&gt;28: Project Presentations 2&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Classes</title>
-      <link>http://bitcoin-class.org/classes/</link>
+      <link>https://bitcoin-class.org/classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/classes/class1/&#34;&gt;1: What is Money?&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class2/&#34;&gt;2: Cryptography&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;3: Signatures&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class4/&#34;&gt;4: Checkup 1&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class5/&#34;&gt;5: Becoming Paranoid&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class6/&#34;&gt;6: Hash Functions&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class7/&#34;&gt;7: The Blockchain&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class8&#34;&gt;8: Mining&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class9&#34;&gt;9: Mining Economics&lt;/a&gt; (and Checkup 2)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class10&#34;&gt;10: Subverting Bitcoin&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class11&#34;&gt;11: More Mining&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class12&#34;&gt;12: Script&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class13&#34;&gt;13: Law and Policy&lt;/a&gt; (Tom Dukes visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class14&#34;&gt;14: Crime&lt;/a&gt; (FBI visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class15&#34;&gt;15: Scripting Transactions&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class16&#34;&gt;16: Midterm&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class17&#34;&gt;17: Business&lt;/a&gt; (Josh Cincinatti visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class18&#34;&gt;18: Confirmations&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class19&#34;&gt;19: Anonymity&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class20&#34;&gt;20: Hidden Services&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class21&#34;&gt;21: Scaling Bitcoin&lt;/a&gt; (Alex Kuck and Nick Skelsey visit)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class22&#34;&gt;22: Zero Knowledge Proofs&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class23&#34;&gt;23: Before Bitcoin (Digicash)&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class24&#34;&gt;24: Altcoins&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class25&#34;&gt;25: Project Proposal Presentations&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class26&#34;&gt;26: Jeopardy!&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class27&#34;&gt;27: Project Presentations 1&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class28&#34;&gt;28: Project Presentations 2&lt;/a&gt;&lt;/p&gt;
+      <guid>https://bitcoin-class.org/classes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://bitcoin-class.org/classes/class1/&#34;&gt;1: What is Money?&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class2/&#34;&gt;2: Cryptography&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class3/&#34;&gt;3: Signatures&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class4/&#34;&gt;4: Checkup 1&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class5/&#34;&gt;5: Becoming Paranoid&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class6/&#34;&gt;6: Hash Functions&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class7/&#34;&gt;7: The Blockchain&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class8&#34;&gt;8: Mining&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class9&#34;&gt;9: Mining Economics&lt;/a&gt; (and Checkup 2)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class10&#34;&gt;10: Subverting Bitcoin&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class11&#34;&gt;11: More Mining&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class12&#34;&gt;12: Script&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class13&#34;&gt;13: Law and Policy&lt;/a&gt; (Tom Dukes visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class14&#34;&gt;14: Crime&lt;/a&gt; (FBI visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class15&#34;&gt;15: Scripting Transactions&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class16&#34;&gt;16: Midterm&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class17&#34;&gt;17: Business&lt;/a&gt; (Josh Cincinatti visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class18&#34;&gt;18: Confirmations&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class19&#34;&gt;19: Anonymity&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class20&#34;&gt;20: Hidden Services&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class21&#34;&gt;21: Scaling Bitcoin&lt;/a&gt; (Alex Kuck and Nick Skelsey visit)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class22&#34;&gt;22: Zero Knowledge Proofs&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class23&#34;&gt;23: Before Bitcoin (Digicash)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class24&#34;&gt;24: Altcoins&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class25&#34;&gt;25: Project Proposal Presentations&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class26&#34;&gt;26: Jeopardy!&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class27&#34;&gt;27: Project Presentations 1&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class28&#34;&gt;28: Project Presentations 2&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Registration</title>
-      <link>http://bitcoin-class.org/registration/</link>
+      <link>https://bitcoin-class.org/registration/</link>
       <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/registration/</guid>
+      <guid>https://bitcoin-class.org/registration/</guid>
       <description>
 
-&lt;h1 id=&#34;course-registration:38a8983f478dea556d71617301415c7f&#34;&gt;Course Registration&lt;/h1&gt;
+&lt;h1 id=&#34;course-registration&#34;&gt;Course Registration&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
 Due: 8:29pm on Saturday, 29 August
@@ -1510,13 +1507,13 @@ this, be careful, and don&amp;rsquo;t use any funds you cannot afford to lose!&l
     
     <item>
       <title>Syllabus</title>
-      <link>http://bitcoin-class.org/syllabus/</link>
+      <link>https://bitcoin-class.org/syllabus/</link>
       <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/syllabus/</guid>
+      <guid>https://bitcoin-class.org/syllabus/</guid>
       <description>
 
-&lt;h1 id=&#34;syllabus:051025d606153e159a2b11ffecb897d5&#34;&gt;Syllabus&lt;/h1&gt;
+&lt;h1 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Meetings:&lt;/strong&gt; Mondays and Wednesdays, 2:00-3:15pm in Olsson 120.&lt;/p&gt;
 
@@ -1551,7 +1548,7 @@ general audience publications, technical documents, and research papers.&lt;/p&g
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;overview:051025d606153e159a2b11ffecb897d5&#34;&gt;Overview&lt;/h2&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 
 &lt;p&gt;For the past 10,000 years, humans have been seeking better ways to store
 and transfer value.  &lt;em&gt;Cryptocurrencies&lt;/em&gt; (most notably bitcoin), provide
@@ -1561,7 +1558,7 @@ cryptocurrencies; networking, software, hardware, and security issues
 relevant to designing and implementing a cryptocurrency, and consider
 the economic, legal, and political issues raised by cryptocurrencies.&lt;/p&gt;
 
-&lt;h2 id=&#34;expected-background:051025d606153e159a2b11ffecb897d5&#34;&gt;Expected Background&lt;/h2&gt;
+&lt;h2 id=&#34;expected-background&#34;&gt;Expected Background&lt;/h2&gt;
 
 &lt;p&gt;Students entering this course are expected to be comfortable reading,
 designing, and writing complex programs that involve thousands of lines
@@ -1602,7 +1599,7 @@ use computing to make the world a better place.&lt;/p&gt;&lt;/li&gt;
 cannot take the class, but you need to let one of the course teachers
 know about it at the beginning of the semester.&lt;/p&gt;
 
-&lt;h2 id=&#34;honor-pledge:051025d606153e159a2b11ffecb897d5&#34;&gt;Honor Pledge&lt;/h2&gt;
+&lt;h2 id=&#34;honor-pledge&#34;&gt;Honor Pledge&lt;/h2&gt;
 
 &lt;p&gt;This course focuses on how to establish trust among distrusting people
 using mathematics, computing, and networking.  As a student at
@@ -1667,7 +1664,7 @@ staff directly. &lt;b&gt;I will fill out all requested surveys honestly and
 thoroughly&lt;/b&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;assignments:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments&lt;/h2&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
 
 &lt;p&gt;The course will have one midterm, three problem sets, one final project,
 and a (discretionary) final exam.  In addition, there will be several
@@ -1694,7 +1691,7 @@ ideas for a project may be able to arrange with the course staff to
 expand the project to substitute for other assignments (such as Problem
 Set 3).&lt;/p&gt;
 
-&lt;h2 id=&#34;schedule:051025d606153e159a2b11ffecb897d5&#34;&gt;Schedule&lt;/h2&gt;
+&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;A tenative and (continually) updated schedule is available as a &lt;a href=&#34;https://www.google.com/calendar/embed?src=rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;Google
 calendar&lt;/a&gt;.
@@ -1723,7 +1720,7 @@ due date.&lt;/p&gt;
 &lt;p&gt;Dates shown here are subject to change based on how the semester
 progresses, but with ample warning.&lt;/p&gt;
 
-&lt;h2 id=&#34;grading:051025d606153e159a2b11ffecb897d5&#34;&gt;Grading&lt;/h2&gt;
+&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
 
 &lt;p&gt;We prefer to spend our time focused as much as possible on &lt;em&gt;teaching&lt;/em&gt;,
 and as little as possible on &lt;em&gt;grading&lt;/em&gt;.  The assignments in this class
@@ -1748,71 +1745,71 @@ what we hope out of the class then you will receive an A grade.&lt;/p&gt;
     
     <item>
       <title>Final Project Reports</title>
-      <link>http://bitcoin-class.org/announcements/final/</link>
+      <link>https://bitcoin-class.org/announcements/final/</link>
       <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/final/</guid>
-      <description>&lt;p&gt;The final project reports and sites are now posted: &lt;a href=&#34;http://bitcoin-class.org/project-reports/&#34;&gt;Project Reports&lt;/a&gt;&lt;/p&gt;
+      <guid>https://bitcoin-class.org/announcements/final/</guid>
+      <description>&lt;p&gt;The final project reports and sites are now posted: &lt;a href=&#34;https://bitcoin-class.org/project-reports/&#34;&gt;Project Reports&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://bitcoin-class.org/images/lawn.jpg&#34; width=640 height=347&gt;
+&lt;p&gt;&lt;img src=&#34;https://bitcoin-class.org/images/lawn.jpg&#34; width=640 height=347&gt;
 &lt;center&gt;
 Thanks to everyone for your contributions to the class!&lt;br /&gt;
 &lt;strong&gt;Enjoy winter break.&lt;/strong&gt;
-&lt;/center&gt;&lt;/p&gt;
-</description>
+&lt;/center&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 28: Project Presentations 2</title>
-      <link>http://bitcoin-class.org/classes/class28/</link>
+      <link>https://bitcoin-class.org/classes/class28/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class28/</guid>
+      <guid>https://bitcoin-class.org/classes/class28/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1amox_dRwiwuK9lUCXeP8rILcHyylHwgcicwZr9GNdX4/edit?usp=sharing&#34;&gt;The Evolution of Bitcoin Script Interpreter&lt;/a&gt; (Acacia Dai)&lt;br /&gt;
 &lt;a href=&#34;https://github.com/AlishanHassan/Cryptocurrency-Project/blob/master/Presentation.pptx&#34;&gt;A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo;&lt;/a&gt; (Alishan Hassan)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/kukla.pptx&#34;&gt;Bitcoin at Point of Sale&lt;/a&gt; (Elizabeth Kukla)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/berman.pdf&#34;&gt;Vending on Dark Net Markets&lt;/a&gt; (Collin Berman)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/adams.pdf&#34;&gt;Donation Accountability&lt;/a&gt; (Kienan Adams)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/liu.pptx&#34;&gt;Understanding Mobile Bitcoin Wallet&lt;/a&gt; (Ziqi Liu)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/kukla.pptx&#34;&gt;Bitcoin at Point of Sale&lt;/a&gt; (Elizabeth Kukla)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/berman.pdf&#34;&gt;Vending on Dark Net Markets&lt;/a&gt; (Collin Berman)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/adams.pdf&#34;&gt;Donation Accountability&lt;/a&gt; (Kienan Adams)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/liu.pptx&#34;&gt;Understanding Mobile Bitcoin Wallet&lt;/a&gt; (Ziqi Liu)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1pxnHcMD27RAsbttOCVOgnlWQX2anMakddKkswe5hois/edit?usp=sharing&#34;&gt;BitSniffer: a Tool for Linkability Analysis&lt;/a&gt; (Ryan Anderson, Sam Prestwood, Luke Gessler)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/16uosMp3ylLJCFFBfTNyQz7YPR9KnpONSY58jiwakdIE/edit#slide=id.p&#34;&gt;Taking Down Silk Road&lt;/a&gt; (Gardner Fiveash)&lt;br /&gt;
 &lt;a href=&#34;https://github.com/UVAqmoore/cccfinal/blob/master/Presentation%20Slides.pptx&#34;&gt;How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time&lt;/a&gt; (Quentin Moore)&lt;br /&gt;
 Analysis of the viability of Bitcoin replacing as a National Currency (Peter Leng)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/15FminKlQFXQ1FUOvn4qOXEUhmuRNZyPrOoKEQpn5TRk/edit?usp=sharing&#34;&gt;Evaluating BlockCypher’s Confidence Level&lt;/a&gt; (Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy)&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 27: Project Presentations 1</title>
-      <link>http://bitcoin-class.org/classes/class27/</link>
+      <link>https://bitcoin-class.org/classes/class27/</link>
       <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class27/</guid>
+      <guid>https://bitcoin-class.org/classes/class27/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;alecgrieser.github.io/ddcpcp/presentation/presentation.pdf&#34;&gt;Developing a Distributed Distributed Consensus Protocol Consensus Protocol&lt;/a&gt; (Alec Grieser)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/Blockchain_Voting.pdf&#34;&gt;Blockchain Voting&lt;/a&gt; (Sugat Poudel, Austin J. Varshneya, Xhama Vyas)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/BitMingle.pptx&#34;&gt;BitMingle&lt;/a&gt; (Carter Hall, Reid Bixler)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/Blockchain_Voting.pdf&#34;&gt;Blockchain Voting&lt;/a&gt; (Sugat Poudel, Austin J. Varshneya, Xhama Vyas)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/BitMingle.pptx&#34;&gt;BitMingle&lt;/a&gt; (Carter Hall, Reid Bixler)&lt;br /&gt;
 Beyond the Lightning Network - Exploring How to Scale Bitcoin (Muthu Chidambaram)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/morgan.ppt&#34;&gt;Mixing with Miners&lt;/a&gt; (Morgan Locks)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/morgan.ppt&#34;&gt;Mixing with Miners&lt;/a&gt; (Morgan Locks)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/11r4DgGYdz-XdtVMbFF8MdCMfCydIh5n5IQCCc4_j-fA/edit?usp=sharing&#34;&gt;Pruning Nodes&lt;/a&gt; (Cyrus Malekpour)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/1nnV4WHCCb2KPpk2pfNJTI2GlxRNVwCANTY95t_A88hg/edit?usp=sharing&#34;&gt;Bitcoin Block-size Options&lt;/a&gt; (Michael Parisi Presicce)&lt;br /&gt;
 &lt;a href=&#34;https://onedrive.live.com/view.aspx?resid=3492CC9C71E5A42D!2002&amp;amp;ithint=file%2cpptx&amp;amp;app=PowerPoint&amp;amp;authkey=!AHb95fsl2SUYzl4&#34;&gt;Bitcoin Controversy and Conflicts of Interest&lt;/a&gt; (Jacob Freck)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1G1iQKaRQEZPsEQ-CtleiSF9QbVLwYc-KTrzkTTbmN4I/edit?usp=sharing&#34;&gt;Detecting Selfish Mining in Bitcoin and Litecoin&lt;/a&gt; (Fangyang Cui)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/eashan.pptx&#34;&gt;Geopolitical Strategy and Bitcoin&lt;/a&gt; (Eashan Kaw)&lt;/p&gt;
-</description>
+&lt;a href=&#34;https://bitcoin-class.org/presentations/eashan.pptx&#34;&gt;Geopolitical Strategy and Bitcoin&lt;/a&gt; (Eashan Kaw)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 26: Cryptocurrency Jeopardy</title>
-      <link>http://bitcoin-class.org/classes/class26/</link>
+      <link>https://bitcoin-class.org/classes/class26/</link>
       <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class26/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Schedule&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class26/</guid>
+      <description>&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Wednesday, 2 Dec&lt;/strong&gt; and &lt;strong&gt;Monday 7 Dec&lt;/strong&gt;: &lt;strong&gt;Final Project
-Presentations&lt;/strong&gt;.  See &lt;a href=&#34;http://bitcoin-class.org/classes/class25/&#34;&gt;Class 25&lt;/a&gt; for schedule.&lt;/p&gt;
+Presentations&lt;/strong&gt;.  See &lt;a href=&#34;https://bitcoin-class.org/classes/class25/&#34;&gt;Class 25&lt;/a&gt; for schedule.&lt;/p&gt;
 
 &lt;p&gt;These people are scheduled to present Wednesday: &lt;strong&gt;Alec Grieser, (Sugat
 Poudel, Austin J. Varshneya, Xhama Vyas), (Carter Hall, Reid Bixler),
@@ -1860,9 +1857,9 @@ a PhD in computer science from UC Berkeley, and a BS from the University
 of Virginia in 2008.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm): &lt;strong&gt;Project Final Reports&lt;/strong&gt;.  See &lt;a href=&#34;http://bitcoin-class.org/classes/class25&#34;&gt;Class 25&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm): &lt;strong&gt;Project Final Reports&lt;/strong&gt;.  See &lt;a href=&#34;https://bitcoin-class.org/classes/class25&#34;&gt;Class 25&lt;/a&gt; for details.&lt;/p&gt;
 
-&lt;h1 id=&#34;slides:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Slides&lt;/h1&gt;
+&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
 
 &lt;p&gt;The slides below include all the Jeopardy questions, even ones we didn&amp;rsquo;t
 get to in class.  You shouldn&amp;rsquo;t expect to get asked trivia questions in
@@ -1875,31 +1872,30 @@ good potential exam questions).&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/r1C43Bq1YeWqH1&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
    &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class26-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class26-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 25: Project Pitches</title>
-      <link>http://bitcoin-class.org/classes/class25/</link>
+      <link>https://bitcoin-class.org/classes/class25/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class25/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class25/</guid>
+      <description>&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Today!&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;http://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
+&lt;strong&gt;Today!&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;https://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Wednesday, 2 Dec and Monday 7 Dec&lt;/strong&gt;: &lt;strong&gt;Final Project Presentations&lt;/strong&gt; (see below).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm): &lt;strong&gt;Project Final Reports&lt;/strong&gt; (see below)
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;today-s-presentations:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Today&amp;rsquo;s Presentations&lt;/h2&gt;
+&lt;h2 id=&#34;today-s-presentations&#34;&gt;Today&amp;rsquo;s Presentations&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Understanding Mobile Bitcoin Wallet&lt;/strong&gt;&lt;br /&gt;
 Ziqi Liu&lt;/p&gt;
@@ -1952,7 +1948,7 @@ Alec Grieser&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Evolution of Bitcoin Script Interpreter&lt;/strong&gt;&lt;br /&gt;
 Acacia Dai&lt;/p&gt;
 
-&lt;h2 id=&#34;project-final-presentations:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Project Final Presentations&lt;/h2&gt;
+&lt;h2 id=&#34;project-final-presentations&#34;&gt;Project Final Presentations&lt;/h2&gt;
 
 &lt;p&gt;The final project presentations will be in class on Wednesday, 2
 December and Monday, 7 December.  The presentation will count for
@@ -1995,7 +1991,7 @@ How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time (Quenti
 Analysis of the viability of Bitcoin replacing as a National Currency (Peter Leng)&lt;br /&gt;
 Evaluating BlockCypher’s Confidence Level (Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy)&lt;/p&gt;
 
-&lt;h2 id=&#34;project-final-reports:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Project Final Reports&lt;/h2&gt;
+&lt;h2 id=&#34;project-final-reports&#34;&gt;Project Final Reports&lt;/h2&gt;
 
 &lt;p&gt;To submit your final report, send an email to
 &lt;em&gt;ccc-staff@cs.virginia.edu&lt;/em&gt; with subject line &lt;strong&gt;Project Report:
@@ -2010,7 +2006,7 @@ courses and responsibilities.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;A title for your project (this is the title I will use on the public
 page listing all the projects; add a &lt;b&gt;*&lt;/b&gt; if it is different from
-the title currently listed on &lt;a href=&#34;http://bitcoin-class.org/projects/&#34;&gt;Project&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+the title currently listed on &lt;a href=&#34;https://bitcoin-class.org/projects/&#34;&gt;Project&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;A one-sentence description of your project. This should be a clear,
 well-written sentence that will be enough for someone to understand what
@@ -2035,7 +2031,7 @@ your results.  For projects that do not involve building something, it
 may make more sense for it to be a more integrated report.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;discretionary-final-exams:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Discretionary Final Exams&lt;/h2&gt;
+&lt;h2 id=&#34;discretionary-final-exams&#34;&gt;Discretionary Final Exams&lt;/h2&gt;
 
 &lt;p&gt;By the end of this week, everyone should receive an email with your
 status in the class (including feedback on PS3).&lt;/p&gt;
@@ -2066,7 +2062,8 @@ final exam will be recommended.&lt;/p&gt;
 works, and then answer a few follow-up questions.  These will be
 scheduled during the scheduled final exam time (Friday, 11 December
 2-5pm) and other times.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

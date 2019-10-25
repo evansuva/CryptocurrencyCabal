@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Classes on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/classes/</link>
-    <description>Recent content in Classes on Cryptocurrency Cabal</description>
+    <title>Classes-rsses on Cryptocurrency Cabal</title>
+    <link>https://bitcoin-class.org/classes/index.xml</link>
+    <description>Recent content in Classes-rsses on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/classes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/classes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Class 28: Project Presentations 2</title>
-      <link>http://bitcoin-class.org/classes/class28/</link>
+      <link>https://bitcoin-class.org/classes/class28/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class28/</guid>
+      <guid>https://bitcoin-class.org/classes/class28/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1amox_dRwiwuK9lUCXeP8rILcHyylHwgcicwZr9GNdX4/edit?usp=sharing&#34;&gt;The Evolution of Bitcoin Script Interpreter&lt;/a&gt; (Acacia Dai)&lt;br /&gt;
 &lt;a href=&#34;https://github.com/AlishanHassan/Cryptocurrency-Project/blob/master/Presentation.pptx&#34;&gt;A Bandwidth Based &amp;ldquo;Proof of Work&amp;rdquo;&lt;/a&gt; (Alishan Hassan)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/kukla.pptx&#34;&gt;Bitcoin at Point of Sale&lt;/a&gt; (Elizabeth Kukla)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/berman.pdf&#34;&gt;Vending on Dark Net Markets&lt;/a&gt; (Collin Berman)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/adams.pdf&#34;&gt;Donation Accountability&lt;/a&gt; (Kienan Adams)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/liu.pptx&#34;&gt;Understanding Mobile Bitcoin Wallet&lt;/a&gt; (Ziqi Liu)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/kukla.pptx&#34;&gt;Bitcoin at Point of Sale&lt;/a&gt; (Elizabeth Kukla)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/berman.pdf&#34;&gt;Vending on Dark Net Markets&lt;/a&gt; (Collin Berman)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/adams.pdf&#34;&gt;Donation Accountability&lt;/a&gt; (Kienan Adams)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/liu.pptx&#34;&gt;Understanding Mobile Bitcoin Wallet&lt;/a&gt; (Ziqi Liu)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1pxnHcMD27RAsbttOCVOgnlWQX2anMakddKkswe5hois/edit?usp=sharing&#34;&gt;BitSniffer: a Tool for Linkability Analysis&lt;/a&gt; (Ryan Anderson, Sam Prestwood, Luke Gessler)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/16uosMp3ylLJCFFBfTNyQz7YPR9KnpONSY58jiwakdIE/edit#slide=id.p&#34;&gt;Taking Down Silk Road&lt;/a&gt; (Gardner Fiveash)&lt;br /&gt;
 &lt;a href=&#34;https://github.com/UVAqmoore/cccfinal/blob/master/Presentation%20Slides.pptx&#34;&gt;How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time&lt;/a&gt; (Quentin Moore)&lt;br /&gt;
 Analysis of the viability of Bitcoin replacing as a National Currency (Peter Leng)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/15FminKlQFXQ1FUOvn4qOXEUhmuRNZyPrOoKEQpn5TRk/edit?usp=sharing&#34;&gt;Evaluating BlockCypher’s Confidence Level&lt;/a&gt; (Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy)&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 27: Project Presentations 1</title>
-      <link>http://bitcoin-class.org/classes/class27/</link>
+      <link>https://bitcoin-class.org/classes/class27/</link>
       <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class27/</guid>
+      <guid>https://bitcoin-class.org/classes/class27/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;alecgrieser.github.io/ddcpcp/presentation/presentation.pdf&#34;&gt;Developing a Distributed Distributed Consensus Protocol Consensus Protocol&lt;/a&gt; (Alec Grieser)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/Blockchain_Voting.pdf&#34;&gt;Blockchain Voting&lt;/a&gt; (Sugat Poudel, Austin J. Varshneya, Xhama Vyas)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/BitMingle.pptx&#34;&gt;BitMingle&lt;/a&gt; (Carter Hall, Reid Bixler)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/Blockchain_Voting.pdf&#34;&gt;Blockchain Voting&lt;/a&gt; (Sugat Poudel, Austin J. Varshneya, Xhama Vyas)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/BitMingle.pptx&#34;&gt;BitMingle&lt;/a&gt; (Carter Hall, Reid Bixler)&lt;br /&gt;
 Beyond the Lightning Network - Exploring How to Scale Bitcoin (Muthu Chidambaram)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/morgan.ppt&#34;&gt;Mixing with Miners&lt;/a&gt; (Morgan Locks)&lt;br /&gt;
+&lt;a href=&#34;https://bitcoin-class.org/presentations/morgan.ppt&#34;&gt;Mixing with Miners&lt;/a&gt; (Morgan Locks)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/11r4DgGYdz-XdtVMbFF8MdCMfCydIh5n5IQCCc4_j-fA/edit?usp=sharing&#34;&gt;Pruning Nodes&lt;/a&gt; (Cyrus Malekpour)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/presentation/d/1nnV4WHCCb2KPpk2pfNJTI2GlxRNVwCANTY95t_A88hg/edit?usp=sharing&#34;&gt;Bitcoin Block-size Options&lt;/a&gt; (Michael Parisi Presicce)&lt;br /&gt;
 &lt;a href=&#34;https://onedrive.live.com/view.aspx?resid=3492CC9C71E5A42D!2002&amp;amp;ithint=file%2cpptx&amp;amp;app=PowerPoint&amp;amp;authkey=!AHb95fsl2SUYzl4&#34;&gt;Bitcoin Controversy and Conflicts of Interest&lt;/a&gt; (Jacob Freck)&lt;br /&gt;
 &lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1G1iQKaRQEZPsEQ-CtleiSF9QbVLwYc-KTrzkTTbmN4I/edit?usp=sharing&#34;&gt;Detecting Selfish Mining in Bitcoin and Litecoin&lt;/a&gt; (Fangyang Cui)&lt;br /&gt;
-&lt;a href=&#34;http://bitcoin-class.org/presentations/eashan.pptx&#34;&gt;Geopolitical Strategy and Bitcoin&lt;/a&gt; (Eashan Kaw)&lt;/p&gt;
-</description>
+&lt;a href=&#34;https://bitcoin-class.org/presentations/eashan.pptx&#34;&gt;Geopolitical Strategy and Bitcoin&lt;/a&gt; (Eashan Kaw)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 26: Cryptocurrency Jeopardy</title>
-      <link>http://bitcoin-class.org/classes/class26/</link>
+      <link>https://bitcoin-class.org/classes/class26/</link>
       <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class26/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Schedule&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class26/</guid>
+      <description>&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Wednesday, 2 Dec&lt;/strong&gt; and &lt;strong&gt;Monday 7 Dec&lt;/strong&gt;: &lt;strong&gt;Final Project
-Presentations&lt;/strong&gt;.  See &lt;a href=&#34;http://bitcoin-class.org/classes/class25/&#34;&gt;Class 25&lt;/a&gt; for schedule.&lt;/p&gt;
+Presentations&lt;/strong&gt;.  See &lt;a href=&#34;https://bitcoin-class.org/classes/class25/&#34;&gt;Class 25&lt;/a&gt; for schedule.&lt;/p&gt;
 
 &lt;p&gt;These people are scheduled to present Wednesday: &lt;strong&gt;Alec Grieser, (Sugat
 Poudel, Austin J. Varshneya, Xhama Vyas), (Carter Hall, Reid Bixler),
@@ -107,9 +107,9 @@ a PhD in computer science from UC Berkeley, and a BS from the University
 of Virginia in 2008.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm): &lt;strong&gt;Project Final Reports&lt;/strong&gt;.  See &lt;a href=&#34;http://bitcoin-class.org/classes/class25&#34;&gt;Class 25&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm): &lt;strong&gt;Project Final Reports&lt;/strong&gt;.  See &lt;a href=&#34;https://bitcoin-class.org/classes/class25&#34;&gt;Class 25&lt;/a&gt; for details.&lt;/p&gt;
 
-&lt;h1 id=&#34;slides:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Slides&lt;/h1&gt;
+&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
 
 &lt;p&gt;The slides below include all the Jeopardy questions, even ones we didn&amp;rsquo;t
 get to in class.  You shouldn&amp;rsquo;t expect to get asked trivia questions in
@@ -122,31 +122,30 @@ good potential exam questions).&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/r1C43Bq1YeWqH1&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
    &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class26-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class26-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 25: Project Pitches</title>
-      <link>http://bitcoin-class.org/classes/class25/</link>
+      <link>https://bitcoin-class.org/classes/class25/</link>
       <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class25/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class25/</guid>
+      <description>&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Today!&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;http://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
+&lt;strong&gt;Today!&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;https://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Wednesday, 2 Dec and Monday 7 Dec&lt;/strong&gt;: &lt;strong&gt;Final Project Presentations&lt;/strong&gt; (see below).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Monday, 7 December&lt;/strong&gt; (11:59pm): &lt;strong&gt;Project Final Reports&lt;/strong&gt; (see below)
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;today-s-presentations:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Today&amp;rsquo;s Presentations&lt;/h2&gt;
+&lt;h2 id=&#34;today-s-presentations&#34;&gt;Today&amp;rsquo;s Presentations&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Understanding Mobile Bitcoin Wallet&lt;/strong&gt;&lt;br /&gt;
 Ziqi Liu&lt;/p&gt;
@@ -199,7 +198,7 @@ Alec Grieser&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Evolution of Bitcoin Script Interpreter&lt;/strong&gt;&lt;br /&gt;
 Acacia Dai&lt;/p&gt;
 
-&lt;h2 id=&#34;project-final-presentations:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Project Final Presentations&lt;/h2&gt;
+&lt;h2 id=&#34;project-final-presentations&#34;&gt;Project Final Presentations&lt;/h2&gt;
 
 &lt;p&gt;The final project presentations will be in class on Wednesday, 2
 December and Monday, 7 December.  The presentation will count for
@@ -242,7 +241,7 @@ How Much is Bitcoin Worth: Pricing Differences Across Exchanges and Time (Quenti
 Analysis of the viability of Bitcoin replacing as a National Currency (Peter Leng)&lt;br /&gt;
 Evaluating BlockCypher’s Confidence Level (Dean Makovsky and Joseph Tobin and Kevin Zhao and Vignesh Kuppusamy)&lt;/p&gt;
 
-&lt;h2 id=&#34;project-final-reports:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Project Final Reports&lt;/h2&gt;
+&lt;h2 id=&#34;project-final-reports&#34;&gt;Project Final Reports&lt;/h2&gt;
 
 &lt;p&gt;To submit your final report, send an email to
 &lt;em&gt;ccc-staff@cs.virginia.edu&lt;/em&gt; with subject line &lt;strong&gt;Project Report:
@@ -257,7 +256,7 @@ courses and responsibilities.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;A title for your project (this is the title I will use on the public
 page listing all the projects; add a &lt;b&gt;*&lt;/b&gt; if it is different from
-the title currently listed on &lt;a href=&#34;http://bitcoin-class.org/projects/&#34;&gt;Project&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
+the title currently listed on &lt;a href=&#34;https://bitcoin-class.org/projects/&#34;&gt;Project&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;A one-sentence description of your project. This should be a clear,
 well-written sentence that will be enough for someone to understand what
@@ -282,7 +281,7 @@ your results.  For projects that do not involve building something, it
 may make more sense for it to be a more integrated report.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;discretionary-final-exams:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Discretionary Final Exams&lt;/h2&gt;
+&lt;h2 id=&#34;discretionary-final-exams&#34;&gt;Discretionary Final Exams&lt;/h2&gt;
 
 &lt;p&gt;By the end of this week, everyone should receive an email with your
 status in the class (including feedback on PS3).&lt;/p&gt;
@@ -313,21 +312,20 @@ final exam will be recommended.&lt;/p&gt;
 works, and then answer a few follow-up questions.  These will be
 scheduled during the scheduled final exam time (Friday, 11 December
 2-5pm) and other times.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 24: Altcoins</title>
-      <link>http://bitcoin-class.org/classes/class24/</link>
+      <link>https://bitcoin-class.org/classes/class24/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class24/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:86508045a4d3421b9227629a04fa6324&#34;&gt;Schedule&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class24/</guid>
+      <description>&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;div class=&#34;todo&#34;&gt;
-&lt;strong&gt;Monday, 23 November&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;http://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
+&lt;strong&gt;Monday, 23 November&lt;/strong&gt; (8:29 pm): Project Progress Reports due (see &lt;a href=&#34;https://bitcoin-class.org/classes/class23/&#34;&gt;Class 23&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;Teams that did not present their project in class Wednesday, should be
 ready to present well on Monday!&lt;/div&gt;&lt;/p&gt;
@@ -337,14 +335,15 @@ ready to present well on Monday!&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
 Note: ink markings may not appear in the
-embedded viewer.  To see them, &lt;a href=&#34;http://bitcoin-class.org/classes/class24.pptx&#34;&gt;download the slides&lt;/a&gt;.
+embedded viewer.  To see them, &lt;a href=&#34;https://bitcoin-class.org/classes/class24.pptx&#34;&gt;download the slides&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/center&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes:86508045a4d3421b9227629a04fa6324&#34;&gt;Notes&lt;/h1&gt;
+&lt;h1 id=&#34;notes&#34;&gt;Notes&lt;/h1&gt;
 
-&lt;p&gt;Litecoin boasts faster confirmations (2.5 minutes as opposed to 10 minutes). Does this help you gain confidence in a given transaction faster (at which point it is unlikely to be double-spent)?&lt;/p&gt;
+&lt;p&gt;Litecoin boasts faster confirmations (2.5 minutes as opposed to 10 minutes). Does this help you gain confidence in a given transaction faster (at which point it is unlikely to be double-spent)?
+&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 
@@ -367,19 +366,16 @@ affect and control Ripple transactions?&lt;/p&gt;
 &lt;p&gt;The hallmark of the Ethereum network is a Turing-complete scripting
 language. How does Ethereum prevent miners from being flooded with
 CPU-intensive scripts?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 23: Before Bitcoin</title>
-      <link>http://bitcoin-class.org/classes/class23/</link>
+      <link>https://bitcoin-class.org/classes/class23/</link>
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class23/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class23/</guid>
+      <description>&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Starting Wednesday and every following class&lt;/strong&gt;: Be prepared to give an
   elevator pitch for your project.  Your pitch should be no more than 2
@@ -419,7 +415,7 @@ doing what.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;(optional) Any questions you have for us.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;addendum:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Addendum&lt;/h3&gt;
+&lt;h3 id=&#34;addendum&#34;&gt;Addendum&lt;/h3&gt;
 
 &lt;p&gt;Vignesh raised a really good point about Chaum&amp;rsquo;s scheme which I
 misunderstood in class until he clarified it after, so I&amp;rsquo;m posting an
@@ -446,14 +442,16 @@ cut-and-choose for the blind signatures.  Each note with have a
 different &lt;em&gt;I&lt;/em&gt;, but one the bank can verify is still the right account
 owner.  I&amp;rsquo;ll leave the details of how to do this as a challenge problem.&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/iyNnco2LsnAF74&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
    &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class23-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class23-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;notes:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Notes&lt;/h2&gt;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.fdic.gov/bank/individual/failed/hightrust.html&#34;&gt;High Trust Bank&lt;/a&gt; must be trusty!&lt;/p&gt;
 
@@ -494,7 +492,7 @@ Sends &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; to si
 &lt;p&gt;What should the maximimum bill size be to prevent cheating?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;identity-strings:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Identity Strings&lt;/h3&gt;
+&lt;h3 id=&#34;identity-strings&#34;&gt;Identity Strings&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;I&lt;/em&gt; = &amp;ldquo;alice@alice.org&amp;rdquo;&lt;/p&gt;
 
@@ -514,29 +512,26 @@ Sends &lt;span class=&#34;math&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;/span&gt; to si
 &lt;p&gt;&lt;em&gt;By all accounts Chaum was a charismatic leader with an interesting management style, but he refused to compromise his artistic vision in any area against the best advice of his employees. He was suspicious of everyone and &amp;lsquo;paranoid&amp;rsquo; with a habit of suddenly changing his mind without warning. At one time, Microsoft had offered DigiCash $180 million to allow them to preinstall Ecash software on Windows computers and the deal was on the verge of completion, but Chaum suddenly decided that his product was worth more and the deal collapsed. If the deal had gone through, cryptocurrency would now be as ubiquitous as Internet Explorer.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;links:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&amp;ldquo;Still think you’re anonymous on the Dark Web?&amp;rdquo;, &lt;a href=&#34;https://twitter.com/NCA_UK/status/530740716134490112&#34;&gt;NCA_UK&amp;rsquo;s tweet&lt;/a&gt;, 7 November 2014&lt;/p&gt;
 
 &lt;p&gt;Sambuddho Chakravarty, Marco V. Barbera, Georgios Portokalidis, Michalis Polychronakis, and Angelos D. Keromytis. &lt;a href=&#34;http://www3.cs.stonybrook.edu/~mikepo/papers/tor-netflow.pam14.pdf&#34;&gt;&lt;em&gt;On the Effectiveness of Traffic Analysis Against Anonymity Networks Using Flow Records&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;Passive and Active Measurement Conference&lt;/em&gt;, March 2014.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack&#34;&gt;&lt;em&gt;Tor security advisory: &amp;ldquo;relay early&amp;rdquo; traffic confirmation attack&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack&#34;&gt;&lt;em&gt;Tor security advisory: &amp;ldquo;relay early&amp;rdquo; traffic confirmation attack&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 22: Zero-Knowledge Proofs</title>
-      <link>http://bitcoin-class.org/classes/class22/</link>
+      <link>https://bitcoin-class.org/classes/class22/</link>
       <pubDate>Wed, 11 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class22/</guid>
-      <description>
-
-&lt;h2 id=&#34;reading-materials:b1f171c11b7e766822270107caa74abd&#34;&gt;Reading Materials&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class22/</guid>
+      <description>&lt;h2 id=&#34;reading-materials&#34;&gt;Reading Materials&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Jean-Jacques Quisquater (Myriam, Muriel, Michael), Louis Guillou
-(Marie Annick, Gaid, Anna, Gwenole, Soazig), &lt;a href=&#34;http://bitcoin-class.org/classes/zkforkids.pdf&#34;&gt;&lt;em&gt;How to Explain
+(Marie Annick, Gaid, Anna, Gwenole, Soazig), &lt;a href=&#34;https://bitcoin-class.org/classes/zkforkids.pdf&#34;&gt;&lt;em&gt;How to Explain
 Zero-Knowledge Protocols to Your Children&lt;/em&gt;&lt;/a&gt;.  (Explains how
 zero-knowledge protocols work using a story about the Strange Cave
 of Ali Baba.)&lt;/p&gt;&lt;/li&gt;
@@ -546,7 +541,9 @@ of Ali Baba.)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Miers, I.; Garman, C.; Green, M.; Rubin, A.D. &lt;a href=&#34;http://ieeexplore.ieee.org/iel7/6547086/6547088/06547123.pdf?arnumber=6547123&#34;&gt;&lt;em&gt;Zerocoin: Anonymous distributed e-cash from bitcoin&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;notes:b1f171c11b7e766822270107caa74abd&#34;&gt;Notes&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes&#34;&gt;Notes&lt;/h1&gt;
 
 &lt;p&gt;In class, we saw how arbitrary statements in NP could be reduced to a
 questions in graph 3-coloring. This allowed us to use 3-coloring
@@ -572,30 +569,28 @@ verifier already knows the probability with which each coloring should
 appear on the revealed nodes, so it sees no more information than what
 it already has.)&lt;/p&gt;
 
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Class 21: Ombuds!</title>
-      <link>http://bitcoin-class.org/classes/class21/</link>
+      <link>https://bitcoin-class.org/classes/class21/</link>
       <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class21/</guid>
+      <guid>https://bitcoin-class.org/classes/class21/</guid>
       <description>&lt;p&gt;The slides from Nick Skelsey and Alex Kuck&amp;rsquo;s presentation about
 &lt;a href=&#34;http://www.getombuds.org&#34;&gt;ombuds&lt;/a&gt; are here: &lt;a href=&#34;./classes/Crypto-Cabal-L21.pdf&#34;&gt;&lt;em&gt;Scaling Bitcoin and &lt;strike&gt;Web&lt;/strike&gt; &lt;strike&gt;Bitcoin&lt;/strike&gt; Blockchain 2.0&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 20: Hidden Services, Zero Knowledge</title>
-      <link>http://bitcoin-class.org/classes/class20/</link>
+      <link>https://bitcoin-class.org/classes/class20/</link>
       <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class20/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule-updates:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule Updates&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class20/</guid>
+      <description>&lt;h2 id=&#34;schedule-updates&#34;&gt;Schedule Updates&lt;/h2&gt;
 
 &lt;p&gt;Monday&amp;rsquo;s class will be a visit from Nick Skelsey and Alex Kuck of
 &lt;a href=&#34;https://getombuds.org/&#34;&gt;Ombuds&lt;/a&gt;!&lt;/p&gt;
@@ -608,11 +603,13 @@ November (8:29pm).&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/9GfuOmKto4Pnb1&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
    &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class20-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class20-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Roger Dingledine, Nick Mathewson, Paul Syverson. &lt;a href=&#34;https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf&#34;&gt;&lt;em&gt;Tor: The Second-Generation Onion Router&lt;/em&gt;&lt;/a&gt;.   USENIX Security Symposium 2004.&lt;/p&gt;
 
@@ -622,19 +619,16 @@ November (8:29pm).&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://antilop.cc/sr/files/2015_03_06_ULBRICHT_motion_new_trial.pdf&#34;&gt;Motion from 6 March&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://s3.amazonaws.com/s3.documentcloud.org/documents/2086668/gov-uscourts-nysd-422824-251-1.pdf&#34;&gt;Ross Ulbricht&amp;rsquo;s Letter to Judge Forrest&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;https://s3.amazonaws.com/s3.documentcloud.org/documents/2086668/gov-uscourts-nysd-422824-251-1.pdf&#34;&gt;Ross Ulbricht&amp;rsquo;s Letter to Judge Forrest&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 19: Anonymity in Bitcoin</title>
-      <link>http://bitcoin-class.org/classes/class19/</link>
+      <link>https://bitcoin-class.org/classes/class19/</link>
       <pubDate>Mon, 02 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class19/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule-updates:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule Updates&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class19/</guid>
+      <description>&lt;h2 id=&#34;schedule-updates&#34;&gt;Schedule Updates&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3&#34;&gt;Problem Set 3&lt;/a&gt; is due Sunday, 8
 November (8:29pm).  Readings for PS3:&lt;/p&gt;
@@ -652,11 +646,13 @@ Steven Goldfeder.&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/r8z63ObiqE9jD7&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
    &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class19-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class19-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Links&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Dorit Ron and Adi Shamir. &lt;a href=&#34;http://cryptome.org/2013/11/bitcoin-pirate-nakamoto.pdf&#34;&gt;&lt;em&gt;How Did Dread Pirate Roberts Acquire and Protect His Bitcoin Wealth?&lt;/em&gt;&lt;/a&gt;. Cryptology ePrint &lt;sup&gt;2013&lt;/sup&gt;&amp;frasl;&lt;sub&gt;782&lt;/sub&gt;.  23 November 2013.  &lt;a href=&#34;https://www.reddit.com/r/Bitcoin/comments/1reuwq/vigorous_debate_over_shamirrons_supposedly/&#34;&gt;Reddit Discussion&lt;/a&gt;&lt;/p&gt;
 
@@ -670,19 +666,16 @@ Steven Goldfeder.&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;Nicolas Christin, &lt;a href=&#34;http://arxiv.org/pdf/1207.7139.pdf&#34;&gt;&lt;em&gt;Traveling the Silk Road: A measurement analysis of a large anonymous online marketplace&lt;/em&gt;&lt;/a&gt;. November 2012.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2014/01/19/business/eagle-scout-idealist-drug-trafficker.html?_r=0&#34;&gt;&lt;em&gt;Eagle Scout. Idealist. Drug Trafficker?&lt;/em&gt;&lt;/a&gt;, New York Times, 18 Jan 2014.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2014/01/19/business/eagle-scout-idealist-drug-trafficker.html?_r=0&#34;&gt;&lt;em&gt;Eagle Scout. Idealist. Drug Trafficker?&lt;/em&gt;&lt;/a&gt;, New York Times, 18 Jan 2014.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 18: Confirming the Midterm</title>
-      <link>http://bitcoin-class.org/classes/class18/</link>
+      <link>https://bitcoin-class.org/classes/class18/</link>
       <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class18/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule-updates:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule Updates&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class18/</guid>
+      <description>&lt;h2 id=&#34;schedule-updates&#34;&gt;Schedule Updates&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3&#34;&gt;Problem Set 3&lt;/a&gt; is due Sunday, 8
 November (8:29pm).  Please don&amp;rsquo;t wait to get started so you have enough
@@ -698,13 +691,15 @@ Last class: Monday, December 7&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/mGDH0YpBR4iNtn&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;
    &lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class18-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class18-post.pptx&#34;&gt;Download slides (with annotations)&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Simeon-Denis Poisson, &lt;a href=&#34;http://gallica.bnf.fr/ark:/12148/bpt6k110193z/&#34;&gt;&lt;em&gt;Recherches sur la probabilité des jugements en matière criminelle et en matière civile ; précédées des Règles générales du calcul des probabilités&lt;/em&gt;&lt;/a&gt;, 1837.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;For a more accessible presentation, at least if you don&amp;rsquo;t read French, try: &lt;a href=&#34;http://www.rle.mit.edu/rgallager/documents/6.262lateweb2.pdf&#34;&gt;&lt;em&gt;Poisson Processes&lt;/em&gt;&lt;/a&gt;, Robert Gallager.&lt;/p&gt;
 
@@ -718,40 +713,41 @@ Last class: Monday, December 7&lt;/p&gt;
 bitcoin transactions?&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-</description>
+
+&lt;!--more--&gt;</description>
     </item>
     
     <item>
       <title>Class 17: Bitcoin and Business</title>
-      <link>http://bitcoin-class.org/classes/class17/</link>
+      <link>https://bitcoin-class.org/classes/class17/</link>
       <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class17/</guid>
+      <guid>https://bitcoin-class.org/classes/class17/</guid>
       <description>&lt;p&gt;Josh Cincinatti, Developer Advocate for BlockCypher (and UVa alum), gave
 a presentation on &lt;a href=&#34;https://docs.google.com/presentation/d/12NY2HowHjSA9N0beF6fSAKThAMITOylpc7WONhOUSdk/edit#slide=id.p&#34;&gt;The Budding Business of Bitcoin and BlockCypher: An
 Alliterative, Allegorical Adventure into Cryptocurrency&lt;/a&gt;.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 16: Midterm</title>
-      <link>http://bitcoin-class.org/classes/class16/</link>
+      <link>https://bitcoin-class.org/classes/class16/</link>
       <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class16/</guid>
-      <description>&lt;p&gt;Class 16 was the &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;Midterm Exam&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>https://bitcoin-class.org/classes/class16/</guid>
+      <description>&lt;p&gt;Class 16 was the &lt;a href=&#34;https://bitcoin-class.org/midterm.pdf&#34;&gt;Midterm Exam&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Class 15: Scripting Transactions</title>
-      <link>http://bitcoin-class.org/classes/class15/</link>
+      <link>https://bitcoin-class.org/classes/class15/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class15/</guid>
-      <description>
-
-&lt;h2 id=&#34;midterm-exam:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Midterm Exam&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class15/</guid>
+      <description>&lt;h2 id=&#34;midterm-exam&#34;&gt;Midterm Exam&lt;/h2&gt;
 
 &lt;p&gt;The midterm exam will be in class, &lt;strong&gt;Wednesday, 21
   October&lt;/strong&gt;.  The midterm will be closed-resources, but is meant to test
@@ -783,13 +779,13 @@ Alliterative, Allegorical Adventure into Cryptocurrency&lt;/a&gt;.&lt;/p&gt;
 &lt;li&gt;Thursday, 2:30-3:30 (Dave, Rice 507)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;scripting-transactions:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Scripting Transactions&lt;/h2&gt;
+&lt;h2 id=&#34;scripting-transactions&#34;&gt;Scripting Transactions&lt;/h2&gt;
 
 &lt;p&gt;&lt;center&gt;
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/cYC6B2BCdrtoy6&#34; width=&#34;625&#34; height=&#34;400&#34; frameborder=&#34;2&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;caption&#34;&gt;
-&lt;a href=&#34;http://bitcoin-class.org/classes/class15-post.pptx&#34;&gt;Download the slides&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/classes/class15-post.pptx&#34;&gt;Download the slides&lt;/a&gt;
    &lt;/div&gt;
 &lt;/center&gt;&lt;/p&gt;
 
@@ -799,6 +795,8 @@ transaction output is not unlocked unless an unlocking script is
 provided such that the result of executing the unlocking script,
 followed by executing the locking script, is a stack with value True on
 top.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;OP_IF&lt;/code&gt; &lt;em&gt;statements&lt;/em&gt; &lt;code&gt;OP_ENDIF&lt;/code&gt; - If the top of the stack is &lt;strong&gt;1&lt;/strong&gt;, executes &lt;em&gt;statements&lt;/em&gt;.  Otherwise does nothing.&lt;/p&gt;
 
@@ -845,7 +843,7 @@ protected by this locking script?)&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 
-&lt;h2 id=&#34;btcd-code:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;BTCD Code&lt;/h2&gt;
+&lt;h2 id=&#34;btcd-code&#34;&gt;BTCD Code&lt;/h2&gt;
 
 &lt;p&gt;Type: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/script.go#L206&#34;&gt;Script&lt;/a&gt; is the virtual machine the executes scripts (note that it has two Stacks)&lt;/p&gt;
 
@@ -856,11 +854,11 @@ Execute one instruction: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c
 
 &lt;p&gt;Some interesting opcode implementations: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1143&#34;&gt;OP_IF&lt;/a&gt;, &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c153596542b3d87dd774c29aa5be5117ac01a234/txscript/opcode.go#L1235&#34;&gt;OP_RETURN&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;bitcoin-core-code:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Bitcoin Core Code&lt;/h2&gt;
+&lt;h2 id=&#34;bitcoin-core-code&#34;&gt;Bitcoin Core Code&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp&#34;&gt;script/interpreter.cpp&lt;/a&gt;, &lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L524&#34;&gt;OP_DUP&lt;/a&gt;, &lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L752&#34;&gt;Crypto&lt;/a&gt;, &lt;a href=&#34;https://github.com/bitcoin/bitcoin/blob/41e6e4caba9899ce7c165b0784461c55c867ee24/src/script/interpreter.cpp#L785&#34;&gt;OP_CHECKSIG&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.crmarsh.com/script-playground/&#34;&gt;Script Playground&lt;/a&gt;&lt;/p&gt;
 
@@ -870,19 +868,16 @@ Execute one instruction: &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/c
 
 &lt;p&gt;The &lt;code&gt;OP_RETURN&lt;/code&gt;/pasted script execution bug doesn&amp;rsquo;t even make this list of &lt;a href=&#34;http://www.coindesk.com/9-biggest-screwups-bitcoin-history/&#34;&gt;&lt;em&gt;The 9 Biggest Screwups in Bitcoin History&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;!-- [Block 71036](http://blockexplorer.com/rawblock/00000000000997f9fd2fe1ee376293ef8c42ad09193a5d2086dddf8e5c426b56)--&gt;
-</description>
+&lt;!-- [Block 71036](http://blockexplorer.com/rawblock/00000000000997f9fd2fe1ee376293ef8c42ad09193a5d2086dddf8e5c426b56)--&gt;</description>
     </item>
     
     <item>
       <title>Class 14: FBI Visit</title>
-      <link>http://bitcoin-class.org/classes/class14/</link>
+      <link>https://bitcoin-class.org/classes/class14/</link>
       <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/classes/class14/</guid>
-      <description>
-
-&lt;h2 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h2&gt;
+      <guid>https://bitcoin-class.org/classes/class14/</guid>
+      <description>&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
 
 &lt;p&gt;&lt;div class=&#34;todo&#34;&gt; &lt;strong&gt;Monday-Wednesday, October &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;21&lt;/sub&gt;&lt;/strong&gt;: Midterm Exam.
 Part of the midterm will be handed out in class on Monday, Oct 19. The
@@ -916,7 +911,8 @@ Manuel Egele, Michael Eubanks, Brian Krebs, Giovanni Vigna. &lt;a href=&#34;http
 Stuff: An Analysis of Reshipping Mule
 Scams&lt;/em&gt;&lt;/a&gt;. ACM
 Conference on Computer and Communications Security 2015.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

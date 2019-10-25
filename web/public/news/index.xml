@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/news/</link>
-    <description>Recent content in News on Cryptocurrency Cabal</description>
+    <title>News-rsses on Cryptocurrency Cabal</title>
+    <link>https://bitcoin-class.org/news/index.xml</link>
+    <description>Recent content in News-rsses on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Sep 2015 21:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Darkode</title>
-      <link>http://bitcoin-class.org/news/radiolab/</link>
+      <link>https://bitcoin-class.org/news/radiolab/</link>
       <pubDate>Wed, 23 Sep 2015 21:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/radiolab/</guid>
+      <guid>https://bitcoin-class.org/news/radiolab/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.radiolab.org/story/darkode/&#34;&gt;latest episode of Radiolab&lt;/a&gt;
 starts with a story about bitcoin being used in a ransom scam
 (CryptoLocker).  Its a sad story, without a lot of technical insights,
@@ -23,16 +23,19 @@ people today.  A good thing to think about for a potential project is
 how to solve the problem &amp;mdash;- making it so bitcoin can&amp;rsquo;t be used to
 collect ransom untracably, without losing the desirable aspects of
 anonymity and decentralization.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>21 Inc. Releases First Product, a ‘Bitcoin Computer’</title>
-      <link>http://bitcoin-class.org/news/u21/</link>
+      <link>https://bitcoin-class.org/news/u21/</link>
       <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/u21/</guid>
+      <guid>https://bitcoin-class.org/news/u21/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://blogs.wsj.com/moneybeat/2015/09/21/21-inc-releases-first-product-a-bitcoin-computer/&#34;&gt;&lt;em&gt;21 Inc. Releases First Product, a &amp;lsquo;Bitcoin Computer&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Wall Street Journal, 21 September 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;21 Inc. has been very well funded, but pretty opaque about what they are
 actually doing.  They have designed some custom mining hardware, but
@@ -42,16 +45,15 @@ can be smoothly integrated with a web client, but hard to see the case
 for including a miner in it.&lt;/p&gt;
 
 &lt;p&gt;You can buy it from
-&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;a href=&#34;www.amazon.com/21-INC-21BC1-Bitcoin-Computer/dp/B014RD021C/&#34;&gt;amazon.com&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Banking Blockchains</title>
-      <link>http://bitcoin-class.org/news/blockchain/</link>
+      <link>https://bitcoin-class.org/news/blockchain/</link>
       <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/blockchain/</guid>
+      <guid>https://bitcoin-class.org/news/blockchain/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.ft.com/cms/s/0/f358ed6c-5ae0-11e5-9846-de406ccb37f2.html&#34;&gt;&lt;em&gt;Blockchain initiative backed by 9 large investment banks&lt;/em&gt;&lt;/a&gt;, Financial Times, 15 Sept 2015.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://recode.net/2015/09/15/nine-of-the-worlds-biggest-banks-form-blockchain-partnership/&#34;&gt;&lt;em&gt;Nine of the World’s Biggest Banks Form Blockchain Partnership&lt;/em&gt;&lt;/a&gt;, Re/Code, 15 Sept 2015.&lt;/p&gt;
@@ -59,15 +61,16 @@ for including a miner in it.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/mikemontgomery/2015/09/15/bitcoin-is-only-the-beginning-for-blockchain-technology/&#34;&gt;&lt;em&gt;Bitcoin Is Only The Beginning For Blockchain Technology&lt;/em&gt;&lt;/a&gt;, Forbes, 15 Sept 2015.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/laurashin/2015/09/09/bitcoins-shared-ledger-technology-moneys-new-operating-system/&#34;&gt;&lt;em&gt;Bitcoin&amp;rsquo;s Shared Ledger Technology: Money&amp;rsquo;s New Operating System&lt;/em&gt;&lt;/a&gt;, Forbes, 9 Sept 2015.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Inside the Fight Over Bitcoin’s Future</title>
-      <link>http://bitcoin-class.org/news/bitcoinxt/</link>
+      <link>https://bitcoin-class.org/news/bitcoinxt/</link>
       <pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/bitcoinxt/</guid>
+      <guid>https://bitcoin-class.org/news/bitcoinxt/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s an article in the New Yorker, &lt;a href=&#34;http://www.newyorker.com/business/currency/inside-the-fight-over-bitcoins-future&#34;&gt;&lt;em&gt;Inside the Fight Over Bitcoin’s
 Future&lt;/em&gt;&lt;/a&gt;,
 25 August 2015 (by Maria Bustillos) about the split over the
@@ -80,38 +83,41 @@ software is 1MB (which means the network can support only approximately
 this, including increasing the block size, but they are controversial
 and also raise lots of issues about how to make decisions like this for
 a decentralized system.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Bitcoin Technology Piques Interest on Wall St.</title>
-      <link>http://bitcoin-class.org/news/nyt/</link>
+      <link>https://bitcoin-class.org/news/nyt/</link>
       <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/nyt/</guid>
+      <guid>https://bitcoin-class.org/news/nyt/</guid>
       <description>&lt;p&gt;New York Times, &lt;a href=&#34;http://www.nytimes.com/2015/08/31/business/dealbook/bitcoin-technology-piques-interest-on-wall-st.html&#34;&gt;&lt;em&gt;Bitcoin Technology Piques Interest on Wall St.&lt;/em&gt;&lt;/a&gt;, 28 August 2015 (by Nathaniel Popper).&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&amp;hellip; the innovations that helped turn Bitcoin into the most popular virtual currency are now being viewed as a potentially enormous disruptive force for several industries, including accounting, music and journalism. Nowhere, though, are more money and resources being spent on the technology than on Wall Street — the very industry that Bitcoin was created to circumvent.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Ombuds: Using Bitcoin to make online messages &#39;immutable&#39;</title>
-      <link>http://bitcoin-class.org/news/ombuds/</link>
+      <link>https://bitcoin-class.org/news/ombuds/</link>
       <pubDate>Fri, 21 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/news/ombuds/</guid>
+      <guid>https://bitcoin-class.org/news/ombuds/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s an article about the Ombuds project created by Alex Kuck and
 Nick Skelsey to use the bitcoin blockchain for communications:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.journalism.co.uk/news/ombuds-using-bitcoin-to-make-online-messages-immutable-/s2/a566167/&#34;&gt;&lt;em&gt;Ombuds: Using Bitcoin to make online messages &amp;lsquo;immutable&amp;rsquo;&lt;/em&gt;&lt;/a&gt;, Journalism.co.uk, 20 August 2015.&lt;/p&gt;
 
 &lt;p&gt;Alex and Nick graduated from UVa in Spring 2015, and helped develop the
-&lt;a href=&#34;http://bitcoin-class.org/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
+&lt;a href=&#34;https://bitcoin-class.org/0/&#34;&gt;first offering of this course&lt;/a&gt;, including creating the PointCoin
 cryptocurrency.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
