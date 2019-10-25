@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tools on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/tools/</link>
-    <description>Recent content in Tools on Cryptocurrency Cabal</description>
+    <title>Tools-rsses on Cryptocurrency Cabal</title>
+    <link>https://bitcoin-class.org/tools/index.xml</link>
+    <description>Recent content in Tools-rsses on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/tools/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tools/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Getting Started with Github</title>
-      <link>http://bitcoin-class.org/tools/github/</link>
+      <link>https://bitcoin-class.org/tools/github/</link>
       <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/tools/github/</guid>
+      <guid>https://bitcoin-class.org/tools/github/</guid>
       <description>
 
-&lt;h1 id=&#34;getting-started-with-github:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Getting Started with Github&lt;/h1&gt;
+&lt;h1 id=&#34;getting-started-with-github&#34;&gt;Getting Started with Github&lt;/h1&gt;
 
 &lt;p&gt;For this course you will need to use &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt; to
 manage your code and submit your assignments.  &lt;a href=&#34;http://gitscm.com/&#34;&gt;Git&lt;/a&gt;
@@ -52,7 +52,7 @@ class, but this should be enough to get started):&lt;/p&gt;
   &lt;a href=&#34;http://windows.github.com/&#34;&gt;Windows&lt;/a&gt;).&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;using-git-for-ccc:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Using git for CCC&lt;/h1&gt;
+&lt;h1 id=&#34;using-git-for-ccc&#34;&gt;Using git for CCC&lt;/h1&gt;
 
 &lt;p&gt;For some of the assignments in this course, we will provide starting
 code in a git repository and you will need to use separate private
@@ -82,9 +82,9 @@ working copy, and push to the main repository.&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;As you do the assignment, you should commit and push your changes regularly.&lt;/p&gt;
 
-&lt;h2 id=&#34;setting-up-the-repository:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Setting up the Repository&lt;/h2&gt;
+&lt;h2 id=&#34;setting-up-the-repository&#34;&gt;Setting up the Repository&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take &lt;a href=&#34;https://bitcoin-class.org/ps/ps1/&#34;&gt;PS1&lt;/a&gt; as an example. Here&amp;rsquo;s what you should do.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;1. Create a new repository named &lt;code&gt;ps1&lt;/code&gt;.&lt;/b&gt;&lt;/p&gt;
 
@@ -117,7 +117,7 @@ git pull starting master
 git push --tags origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;working-with-files:93ed8abeb42c248f3c551d1cb44159d4&#34;&gt;Working with Files&lt;/h2&gt;
+&lt;h2 id=&#34;working-with-files&#34;&gt;Working with Files&lt;/h2&gt;
 
 &lt;p&gt;Now you can write your own code in editor and save it to files. You can see what files have changed by running:
 &lt;code&gt;git status&lt;/code&gt;.  You should see something like this:&lt;/p&gt;

@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Announcements on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/announcements/</link>
-    <description>Recent content in Announcements on Cryptocurrency Cabal</description>
+    <title>Announcements-rsses on Cryptocurrency Cabal</title>
+    <link>https://bitcoin-class.org/announcements/index.xml</link>
+    <description>Recent content in Announcements-rsses on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/announcements/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/announcements/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Final Project Reports</title>
-      <link>http://bitcoin-class.org/announcements/final/</link>
+      <link>https://bitcoin-class.org/announcements/final/</link>
       <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/final/</guid>
-      <description>&lt;p&gt;The final project reports and sites are now posted: &lt;a href=&#34;http://bitcoin-class.org/project-reports/&#34;&gt;Project Reports&lt;/a&gt;&lt;/p&gt;
+      <guid>https://bitcoin-class.org/announcements/final/</guid>
+      <description>&lt;p&gt;The final project reports and sites are now posted: &lt;a href=&#34;https://bitcoin-class.org/project-reports/&#34;&gt;Project Reports&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://bitcoin-class.org/images/lawn.jpg&#34; width=640 height=347&gt;
+&lt;p&gt;&lt;img src=&#34;https://bitcoin-class.org/images/lawn.jpg&#34; width=640 height=347&gt;
 &lt;center&gt;
 Thanks to everyone for your contributions to the class!&lt;br /&gt;
 &lt;strong&gt;Enjoy winter break.&lt;/strong&gt;
-&lt;/center&gt;&lt;/p&gt;
-</description>
+&lt;/center&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Project Ideas</title>
-      <link>http://bitcoin-class.org/announcements/project-ideas/</link>
+      <link>https://bitcoin-class.org/announcements/project-ideas/</link>
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/project-ideas/</guid>
+      <guid>https://bitcoin-class.org/announcements/project-ideas/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;./projects/&#34;&gt;This page&lt;/a&gt; should contain everyone&amp;rsquo;s submitted project
 idea.  We&amp;rsquo;ll keep this updated as the projects develop, so please let us
 know if things change (you can also post comments on the page for
@@ -38,15 +38,16 @@ updates).&lt;/p&gt;
 
 &lt;p&gt;The slides from Alex and Nick&amp;rsquo;s presentation are now posted:&lt;br /&gt;
 &lt;a href=&#34;./classes/Crypto-Cabal-L21.pdf&#34;&gt;&lt;em&gt;Scaling Bitcoin and &lt;strike&gt;Web&lt;/strike&gt; &lt;strike&gt;Bitcoin&lt;/strike&gt; Blockchain 2.0&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Is Graph Isomorphism Hard?</title>
-      <link>http://bitcoin-class.org/announcements/graphisomorphism/</link>
+      <link>https://bitcoin-class.org/announcements/graphisomorphism/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/graphisomorphism/</guid>
+      <guid>https://bitcoin-class.org/announcements/graphisomorphism/</guid>
       <description>&lt;p&gt;Last class, we talked about using Graph Isomorphism as the basis for a
 zero knowledge proof, based on the assumption that it is a
 computationally hard problem to determine if two graphs are isomorphic.&lt;/p&gt;
@@ -62,15 +63,16 @@ proof).&lt;/p&gt;
 &lt;p&gt;Note that this has no bearing on the zero knowledge proofs based on the
 hardness of graph three-coloring, which, unlike graph isomorphism, is
 know to be NP-Complete.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Security Club Meeting</title>
-      <link>http://bitcoin-class.org/announcements/fbi/</link>
+      <link>https://bitcoin-class.org/announcements/fbi/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/fbi/</guid>
+      <guid>https://bitcoin-class.org/announcements/fbi/</guid>
       <description>&lt;p&gt;As Cyrus and Collin mentioned in class yesterday, Special Agent Jeremy
 D&amp;rsquo;Errico, who visited our class earlier in the semester, will be the
 guest speaker at the meeting of the &lt;a href=&#34;http://cnsuva.io&#34;&gt;UVa Computer and Network Security
@@ -78,15 +80,16 @@ Club&lt;/a&gt; tonight (Thursday) at 7:00pm.  He&amp;rsquo;ll talk about
 Cryptowall malware and efforts to analyze and detect it.&lt;/p&gt;
 
 &lt;p&gt;The meeting will be in Thorton D223.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Project Pre-Proposal</title>
-      <link>http://bitcoin-class.org/announcements/project/</link>
+      <link>https://bitcoin-class.org/announcements/project/</link>
       <pubDate>Mon, 09 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/project/</guid>
+      <guid>https://bitcoin-class.org/announcements/project/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Project Pre-Proposals&lt;/strong&gt; are due &lt;strong&gt;Friday (November 13) at 8:29pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Your pre-proposal should include the following information:&lt;/p&gt;
@@ -124,27 +127,29 @@ It should include all team members as cc&amp;rsquo;d recipients.  It should
 include your answers to the six points above, clearly numbered.  Do not
 use any PDF attachments unless it is really necessary to provide a
 figure for your idea to be understandable.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PS3</title>
-      <link>http://bitcoin-class.org/announcements/ps3/</link>
+      <link>https://bitcoin-class.org/announcements/ps3/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/ps3/</guid>
+      <guid>https://bitcoin-class.org/announcements/ps3/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps3/&#34;&gt;Problem Set 3&lt;/a&gt; is now posted, and is
 due Sunday, 8 November (8:29pm).  You should have received an email with
 information on the bitcoin ransomware addresses to use for PS3.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Monday&#39;s Class: Josh Cincinnati</title>
-      <link>http://bitcoin-class.org/announcements/josh/</link>
+      <link>https://bitcoin-class.org/announcements/josh/</link>
       <pubDate>Fri, 23 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/josh/</guid>
+      <guid>https://bitcoin-class.org/announcements/josh/</guid>
       <description>&lt;p&gt;Monday&amp;rsquo;s class will be a guest talk from &lt;a href=&#34;http://bitbanter.com/&#34;&gt;Josh
 Cincinnati&lt;/a&gt;.  Josh is
 &lt;a href=&#34;https://blockcypher.com/&#34;&gt;BlockCypher&lt;/a&gt;&amp;rsquo;s &amp;ldquo;Developer Advocate and
@@ -156,25 +161,26 @@ Blog&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For some background on the current entrepreneurial landscape in cryptocurrencies, Josh send along this report:
 &lt;a href=&#34;http://storj.io/TheBlockchainReport.pdf&#34;&gt;&lt;em&gt;The Blockchain Report: Welcome to the Internet of Value&lt;/em&gt;&lt;/a&gt;,
 Needham &amp;amp; Company, LLC, 21 October 2015.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Midterm</title>
-      <link>http://bitcoin-class.org/announcements/midterm/</link>
+      <link>https://bitcoin-class.org/announcements/midterm/</link>
       <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/midterm/</guid>
-      <description>&lt;p&gt;The midterm exam is here: &lt;a href=&#34;http://bitcoin-class.org/midterm.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>https://bitcoin-class.org/announcements/midterm/</guid>
+      <description>&lt;p&gt;The midterm exam is here: &lt;a href=&#34;https://bitcoin-class.org/midterm.pdf&#34;&gt;PDF&lt;/a&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Extra Office Hours</title>
-      <link>http://bitcoin-class.org/announcements/extraoffice/</link>
+      <link>https://bitcoin-class.org/announcements/extraoffice/</link>
       <pubDate>Thu, 15 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/extraoffice/</guid>
+      <guid>https://bitcoin-class.org/announcements/extraoffice/</guid>
       <description>&lt;p&gt;There will be some additional office hours next week:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -187,15 +193,16 @@ Needham &amp;amp; Company, LLC, 21 October 2015.&lt;/p&gt;
 
 &lt;p&gt;I hope these will be helpful in preparing for the midterm, as well as
 for discussing project ideas.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Midterm Schedule Update</title>
-      <link>http://bitcoin-class.org/announcements/updates/</link>
+      <link>https://bitcoin-class.org/announcements/updates/</link>
       <pubDate>Mon, 12 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/updates/</guid>
+      <guid>https://bitcoin-class.org/announcements/updates/</guid>
       <description>&lt;p&gt;The midterm was originally scheduled for Monday, October 19, but due to
 the two guest lectures this week it will be rescheduled to be on
 Wednesday, October 21.&lt;/p&gt;
@@ -209,16 +216,17 @@ rest of the midterm will be in class on Wednesday, October 21.&lt;/p&gt;
 &lt;p&gt;If you have a problem with the schedule change and prefer to do the
 midterm on Monday, October 19, this is an option.  You should contact
 Dave or Samee to arrange this by Oct 14 at the latest.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PS2 / Projects</title>
-      <link>http://bitcoin-class.org/announcements/ps2/</link>
+      <link>https://bitcoin-class.org/announcements/ps2/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/ps2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps2/&#34;&gt;Problem Set 2&lt;/a&gt; is now posted, and is due
+      <guid>https://bitcoin-class.org/announcements/ps2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://bitcoin-class.org/ps/ps2/&#34;&gt;Problem Set 2&lt;/a&gt; is now posted, and is due
 Friday, 9 October (8:29pm).  Sorry it took so long to post this!&lt;/p&gt;
 
 &lt;p&gt;The other thing I hope everyone thinks about over &amp;ldquo;reading break&amp;rdquo;, is
@@ -230,15 +238,16 @@ learn about in this class, and can be done individually or with a team
 (the size of the project should scale approximately with the square root
 of the team size).  If you have an idea for an ambitious project that
 you want to start early, it may be possible to arrange for it to substitute for some other course assignments.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Checkup 2 Revisions</title>
-      <link>http://bitcoin-class.org/announcements/checkup2revisions/</link>
+      <link>https://bitcoin-class.org/announcements/checkup2revisions/</link>
       <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/checkup2revisions/</guid>
+      <guid>https://bitcoin-class.org/announcements/checkup2revisions/</guid>
       <description>&lt;p&gt;If you didn&amp;rsquo;t get a &amp;ldquo;gold star&amp;rdquo; on &lt;a href=&#34;./checkup2.pdf&#34;&gt;Checkup 2&lt;/a&gt;, you can
 improve your score by answering one or more of the questions below.  You
 can submit your revisions in class Wednesday, or at the end of office
@@ -278,23 +287,22 @@ though.)&lt;/p&gt;
 previous previous block to the block header.  So, the block header for
 block 534 would now include the both the hash of the block 533, and
 the hash of block 532.  Would this be a good idea?&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Checkup 1 Comments</title>
-      <link>http://bitcoin-class.org/announcements/checkup1/</link>
+      <link>https://bitcoin-class.org/announcements/checkup1/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/checkup1/</guid>
-      <description>
-
-&lt;p&gt;Here are answers and discussions for the Checkup 1 questions.  It would
+      <guid>https://bitcoin-class.org/announcements/checkup1/</guid>
+      <description>&lt;p&gt;Here are answers and discussions for the Checkup 1 questions.  It would
 not be at all surprising if there are one or two questions on Checkup 2
 (scheduled for Wednesday, Sept 23) that are closely related to questions
 on Checkup 1.&lt;/p&gt;
 
-&lt;h4 id=&#34;1-what-are-the-most-essential-properties-something-must-have-to-be-used-as-a-currency:e149e2b552c6d9eb1457244b9601e8b3&#34;&gt;1. What are the most essential properties something must have to be used as a currency?&lt;/h4&gt;
+&lt;h4 id=&#34;1-what-are-the-most-essential-properties-something-must-have-to-be-used-as-a-currency&#34;&gt;1. What are the most essential properties something must have to be used as a currency?&lt;/h4&gt;
 
 &lt;p&gt;&lt;div class=&#34;answer&#34;&gt;
 The two most essential properties are
@@ -303,9 +311,9 @@ a &amp;ldquo;medium of exchange&amp;rdquo;.  In order for something to be used i
 it must be possible to transfer it from one owner to another.  The
 second essential property of scarcity is intrinsic to having value.  If
 something can be created or duplicated freely, it cannot be used to
-represent value.&lt;/p&gt;
+represent value.&lt;br /&gt;
 
-&lt;p&gt;Being &lt;em&gt;universally recognized as valuable&lt;/em&gt; would be a
+Being &lt;em&gt;universally recognized as valuable&lt;/em&gt; would be a
 good alternative answer to &lt;em&gt;scarcity&lt;/em&gt;, but is a bit circular: nothing is
 &amp;ldquo;universally&amp;rdquo; recognized as valuable for the entire universe; it is
 universally recognized as valuable by all partcipants in an economy
@@ -324,7 +332,7 @@ currencies used in the history of humanity have been centralized); and
 &lt;em&gt;divisible&lt;/em&gt; (important for many transactions).
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;2-what-are-the-drawbacks-of-using-a-centralized-bank-to-record-transactions:e149e2b552c6d9eb1457244b9601e8b3&#34;&gt;2. What are the drawbacks of using a centralized bank to record transactions?&lt;/h4&gt;
+&lt;h4 id=&#34;2-what-are-the-drawbacks-of-using-a-centralized-bank-to-record-transactions&#34;&gt;2. What are the drawbacks of using a centralized bank to record transactions?&lt;/h4&gt;
 
 &lt;p&gt;&lt;div class=&#34;answer&#34;&gt;
 The biggest problem is that it requires placing a large amount of trust
@@ -339,7 +347,7 @@ merchant can&amp;rsquo;t connect to the system to do the transaction), and if th
 bank loses the transaction record everything is lost.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;3-where-is-asymmetric-cryptography-used-in-a-bitcoin-wallet:e149e2b552c6d9eb1457244b9601e8b3&#34;&gt;3. Where is asymmetric cryptography used in a bitcoin wallet?&lt;/h4&gt;
+&lt;h4 id=&#34;3-where-is-asymmetric-cryptography-used-in-a-bitcoin-wallet&#34;&gt;3. Where is asymmetric cryptography used in a bitcoin wallet?&lt;/h4&gt;
 
 &lt;p&gt;&lt;div class=&#34;answer&#34;&gt;
 The most important place is to sign transactions.  It is necessary to
@@ -352,7 +360,7 @@ by the appropriate private key using the public key corresponding to the
 bitcoin address of the sender).
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;4-find-span-class-math-x-span-such-that-span-class-math-2-sup-x-sup-mod-7-1-span:e149e2b552c6d9eb1457244b9601e8b3&#34;&gt;4. Find &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;2&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt; mod 7 = 1&lt;/span&gt;.&lt;/h4&gt;
+&lt;h4 id=&#34;4-find-span-class-math-x-span-such-that-span-class-math-2-sup-x-sup-mod-7-1-span&#34;&gt;4. Find &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt; such that &lt;span class=&#34;math&#34;&gt;2&lt;sup&gt;&lt;em&gt;x&lt;/em&gt;&lt;/sup&gt; mod 7 = 1&lt;/span&gt;.&lt;/h4&gt;
 
 &lt;p&gt;&lt;div class=&#34;answer&#34;&gt;
 The simplest answer is &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = 3&lt;/span&gt; since &lt;span class=&#34;math&#34;&gt;2&lt;sup&gt;3&lt;/sup&gt; = 8 mod 7 = 1&lt;/span&gt;.&lt;/p&gt;
@@ -360,7 +368,7 @@ The simplest answer is &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; =
 &lt;p&gt;Any value &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; mod 6 = 3&lt;/span&gt; satisfies the equation.  For example, &lt;span class=&#34;math&#34;&gt;&lt;em&gt;x&lt;/em&gt; = 9&lt;/span&gt; also works since &lt;span class=&#34;math&#34;&gt;2&lt;sup&gt;9&lt;/sup&gt; = 512 mod 7 = 1&lt;/span&gt;.&lt;br /&gt;
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;5-the-problem-in-the-previous-question-is-an-instance-of-the-discrete-logarithm-problem-why-do-cryptographers-consider-discrete-logarithm-to-be-a-hard-problem:e149e2b552c6d9eb1457244b9601e8b3&#34;&gt;5. The problem in the previous question is an instance of the &lt;em&gt;discrete logarithm problem&lt;/em&gt;.  Why do cryptographers consider discrete logarithm to be a &lt;em&gt;hard&lt;/em&gt; problem?&lt;/h4&gt;
+&lt;h4 id=&#34;5-the-problem-in-the-previous-question-is-an-instance-of-the-discrete-logarithm-problem-why-do-cryptographers-consider-discrete-logarithm-to-be-a-hard-problem&#34;&gt;5. The problem in the previous question is an instance of the &lt;em&gt;discrete logarithm problem&lt;/em&gt;.  Why do cryptographers consider discrete logarithm to be a &lt;em&gt;hard&lt;/em&gt; problem?&lt;/h4&gt;
 
 &lt;p&gt;&lt;div class=&#34;answer&#34;&gt;
 Computer scientists consider a problem to be
@@ -374,7 +382,7 @@ a discrete problem can be made prohibative (given assumptions based on
 what is known today).
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;6-alice-owns-coin-em-x-em-and-has-public-private-key-pair-em-ku-sub-a-sub-em-em-kr-sub-a-sub-em-bob-has-public-private-key-pair-em-ku-sub-b-sub-em-em-kr-sub-b-sub-em-for-the-strong-asymmetric-cryptosystem-e-the-notation-em-e-sub-k-sub-m-em-denotes-the-encryption-of-input-em-m-em-with-key-em-k-em-what-message-should-alice-send-to-the-public-ledger-to-transfer-em-x-em-to-bob:e149e2b552c6d9eb1457244b9601e8b3&#34;&gt;6. Alice owns coin &lt;em&gt;X&lt;/em&gt; and has public/private key pair (&lt;em&gt;KU&lt;sub&gt;A&lt;/sub&gt;&lt;/em&gt;, &lt;em&gt;KR&lt;sub&gt;A&lt;/sub&gt;&lt;/em&gt;); Bob has public/private key pair (&lt;em&gt;KU&lt;sub&gt;B&lt;/sub&gt;&lt;/em&gt;, &lt;em&gt;KR&lt;sub&gt;B&lt;/sub&gt;&lt;/em&gt;) for the strong asymmetric cryptosystem &lt;em&gt;E&lt;/em&gt; (the notation &lt;em&gt;E&lt;sub&gt;K&lt;/sub&gt;(m)&lt;/em&gt; denotes the encryption of input &lt;em&gt;m&lt;/em&gt; with key &lt;em&gt;K&lt;/em&gt;).  What message should Alice send to the public ledger to transfer &lt;em&gt;X&lt;/em&gt; to Bob?&lt;/h4&gt;
+&lt;h4 id=&#34;6-alice-owns-coin-em-x-em-and-has-public-private-key-pair-em-ku-sub-a-sub-em-em-kr-sub-a-sub-em-bob-has-public-private-key-pair-em-ku-sub-b-sub-em-em-kr-sub-b-sub-em-for-the-strong-asymmetric-cryptosystem-e-the-notation-em-e-sub-k-sub-m-em-denotes-the-encryption-of-input-em-m-em-with-key-em-k-em-what-message-should-alice-send-to-the-public-ledger-to-transfer-em-x-em-to-bob&#34;&gt;6. Alice owns coin &lt;em&gt;X&lt;/em&gt; and has public/private key pair (&lt;em&gt;KU&lt;sub&gt;A&lt;/sub&gt;&lt;/em&gt;, &lt;em&gt;KR&lt;sub&gt;A&lt;/sub&gt;&lt;/em&gt;); Bob has public/private key pair (&lt;em&gt;KU&lt;sub&gt;B&lt;/sub&gt;&lt;/em&gt;, &lt;em&gt;KR&lt;sub&gt;B&lt;/sub&gt;&lt;/em&gt;) for the strong asymmetric cryptosystem &lt;em&gt;E&lt;/em&gt; (the notation &lt;em&gt;E&lt;sub&gt;K&lt;/sub&gt;(m)&lt;/em&gt; denotes the encryption of input &lt;em&gt;m&lt;/em&gt; with key &lt;em&gt;K&lt;/em&gt;).  What message should Alice send to the public ledger to transfer &lt;em&gt;X&lt;/em&gt; to Bob?&lt;/h4&gt;
 
 &lt;p&gt;&lt;div class=&#34;answer&#34;&gt;
 The message needs to be something (1) only Alice could generate and (2)
@@ -382,16 +390,15 @@ everyone can verify as transferring the coin to Bob.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;msg&lt;/em&gt; = &amp;ldquo;I, KU&lt;sub&gt;A&lt;/sub&gt; (Alice), transfer coin &lt;em&gt;X&lt;/em&gt; to KU&lt;sub&gt;B&lt;/sub&gt; (Bob)&amp;rdquo;&lt;br /&gt;
 Send to ledger the message signed by Alice: (&lt;em&gt;msg&lt;/em&gt;, E&lt;sub&gt;KR&lt;sub&gt;A&lt;/sub&gt;&lt;/sub&gt;(&lt;em&gt;msg&lt;/em&gt;))
-   &lt;/div&gt;&lt;/p&gt;
-</description>
+   &lt;/div&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Mining Pools</title>
-      <link>http://bitcoin-class.org/announcements/miningpools/</link>
+      <link>https://bitcoin-class.org/announcements/miningpools/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/miningpools/</guid>
+      <guid>https://bitcoin-class.org/announcements/miningpools/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the up-to-date graph of hashing power distributed by mining pools
 (that I wasn&amp;rsquo;t able to find in class Monday):&lt;/p&gt;
 
@@ -407,17 +414,19 @@ SHA-256).&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll talk about mining a lot more in the coming weeks to get a good
 understanding of what this means technically, as well as the
 implications for the blockchain.&lt;/p&gt;
-</description>
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Problem Set 1 Posted</title>
-      <link>http://bitcoin-class.org/announcements/ps1/</link>
+      <link>https://bitcoin-class.org/announcements/ps1/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/announcements/ps1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
-</description>
+      <guid>https://bitcoin-class.org/announcements/ps1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://bitcoin-class.org/ps/ps1/&#34;&gt;Problem Set 1&lt;/a&gt; is now posted, and is due Tuesday, 15 September (8:29pm).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

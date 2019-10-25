@@ -2,316 +2,315 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://bitcoin-class.org/</loc>
-    <lastmod>2015-11-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bitcoin-class.org/project-reports/</loc>
+    <loc>https://bitcoin-class.org/</loc>
     <lastmod>2015-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/projects/</loc>
+    <loc>https://bitcoin-class.org/project-reports/</loc>
     <lastmod>2015-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/ps/ps3/</loc>
+    <loc>https://bitcoin-class.org/projects/</loc>
+    <lastmod>2015-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bitcoin-class.org/ps/ps3/</loc>
     <lastmod>2015-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/ps/ps2/</loc>
+    <loc>https://bitcoin-class.org/ps/ps2/</loc>
     <lastmod>2015-09-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/ps/ps1/</loc>
+    <loc>https://bitcoin-class.org/ps/ps1/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/tools/github/</loc>
+    <loc>https://bitcoin-class.org/tools/github/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/allclasses/</loc>
+    <loc>https://bitcoin-class.org/allclasses/</loc>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/</loc>
+    <loc>https://bitcoin-class.org/classes/</loc>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/registration/</loc>
+    <loc>https://bitcoin-class.org/registration/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/syllabus/</loc>
+    <loc>https://bitcoin-class.org/syllabus/</loc>
     <lastmod>2015-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/final/</loc>
+    <loc>https://bitcoin-class.org/announcements/final/</loc>
     <lastmod>2015-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class28/</loc>
+    <loc>https://bitcoin-class.org/classes/class28/</loc>
     <lastmod>2015-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class27/</loc>
+    <loc>https://bitcoin-class.org/classes/class27/</loc>
     <lastmod>2015-12-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class26/</loc>
+    <loc>https://bitcoin-class.org/classes/class26/</loc>
     <lastmod>2015-11-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class25/</loc>
+    <loc>https://bitcoin-class.org/classes/class25/</loc>
     <lastmod>2015-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class24/</loc>
+    <loc>https://bitcoin-class.org/classes/class24/</loc>
     <lastmod>2015-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class23/</loc>
+    <loc>https://bitcoin-class.org/classes/class23/</loc>
     <lastmod>2015-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/project-ideas/</loc>
+    <loc>https://bitcoin-class.org/announcements/project-ideas/</loc>
     <lastmod>2015-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/graphisomorphism/</loc>
+    <loc>https://bitcoin-class.org/announcements/graphisomorphism/</loc>
     <lastmod>2015-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/fbi/</loc>
+    <loc>https://bitcoin-class.org/announcements/fbi/</loc>
     <lastmod>2015-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class22/</loc>
+    <loc>https://bitcoin-class.org/classes/class22/</loc>
     <lastmod>2015-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class21/</loc>
+    <loc>https://bitcoin-class.org/classes/class21/</loc>
     <lastmod>2015-11-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/project/</loc>
+    <loc>https://bitcoin-class.org/announcements/project/</loc>
     <lastmod>2015-11-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class20/</loc>
+    <loc>https://bitcoin-class.org/classes/class20/</loc>
     <lastmod>2015-11-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class19/</loc>
+    <loc>https://bitcoin-class.org/classes/class19/</loc>
     <lastmod>2015-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class18/</loc>
+    <loc>https://bitcoin-class.org/classes/class18/</loc>
     <lastmod>2015-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class17/</loc>
+    <loc>https://bitcoin-class.org/classes/class17/</loc>
     <lastmod>2015-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/ps3/</loc>
+    <loc>https://bitcoin-class.org/announcements/ps3/</loc>
     <lastmod>2015-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/josh/</loc>
+    <loc>https://bitcoin-class.org/announcements/josh/</loc>
     <lastmod>2015-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class16/</loc>
+    <loc>https://bitcoin-class.org/classes/class16/</loc>
     <lastmod>2015-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/midterm/</loc>
+    <loc>https://bitcoin-class.org/announcements/midterm/</loc>
     <lastmod>2015-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class15/</loc>
+    <loc>https://bitcoin-class.org/classes/class15/</loc>
     <lastmod>2015-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/extraoffice/</loc>
+    <loc>https://bitcoin-class.org/announcements/extraoffice/</loc>
     <lastmod>2015-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class14/</loc>
+    <loc>https://bitcoin-class.org/classes/class14/</loc>
     <lastmod>2015-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class13/</loc>
+    <loc>https://bitcoin-class.org/classes/class13/</loc>
     <lastmod>2015-10-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/updates/</loc>
+    <loc>https://bitcoin-class.org/announcements/updates/</loc>
     <lastmod>2015-10-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class12/</loc>
+    <loc>https://bitcoin-class.org/classes/class12/</loc>
     <lastmod>2015-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/ps2/</loc>
+    <loc>https://bitcoin-class.org/announcements/ps2/</loc>
     <lastmod>2015-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class11/</loc>
+    <loc>https://bitcoin-class.org/classes/class11/</loc>
     <lastmod>2015-09-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/checkup2revisions/</loc>
+    <loc>https://bitcoin-class.org/announcements/checkup2revisions/</loc>
     <lastmod>2015-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class10/</loc>
+    <loc>https://bitcoin-class.org/classes/class10/</loc>
     <lastmod>2015-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/news/radiolab/</loc>
+    <loc>https://bitcoin-class.org/news/radiolab/</loc>
     <lastmod>2015-09-23T21:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/news/u21/</loc>
+    <loc>https://bitcoin-class.org/news/u21/</loc>
     <lastmod>2015-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class9/</loc>
+    <loc>https://bitcoin-class.org/classes/class9/</loc>
     <lastmod>2015-09-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class8/</loc>
+    <loc>https://bitcoin-class.org/classes/class8/</loc>
     <lastmod>2015-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/checkup1/</loc>
+    <loc>https://bitcoin-class.org/announcements/checkup1/</loc>
     <lastmod>2015-09-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class7/</loc>
+    <loc>https://bitcoin-class.org/classes/class7/</loc>
     <lastmod>2015-09-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class6/</loc>
+    <loc>https://bitcoin-class.org/classes/class6/</loc>
     <lastmod>2015-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class5/</loc>
+    <loc>https://bitcoin-class.org/classes/class5/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class4/</loc>
+    <loc>https://bitcoin-class.org/classes/class4/</loc>
     <lastmod>2015-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class3/</loc>
+    <loc>https://bitcoin-class.org/classes/class3/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/miningpools/</loc>
+    <loc>https://bitcoin-class.org/announcements/miningpools/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/ps1/</loc>
+    <loc>https://bitcoin-class.org/announcements/ps1/</loc>
     <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/email/</loc>
+    <loc>https://bitcoin-class.org/announcements/email/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class2/</loc>
+    <loc>https://bitcoin-class.org/classes/class2/</loc>
     <lastmod>2015-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/announcements/officehours/</loc>
+    <loc>https://bitcoin-class.org/announcements/officehours/</loc>
     <lastmod>2015-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/classes/class1/</loc>
+    <loc>https://bitcoin-class.org/classes/class1/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/main/</loc>
+    <loc>https://bitcoin-class.org/main/</loc>
     <lastmod>2015-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/news/blockchain/</loc>
+    <loc>https://bitcoin-class.org/news/blockchain/</loc>
     <lastmod>2015-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/news/bitcoinxt/</loc>
+    <loc>https://bitcoin-class.org/news/bitcoinxt/</loc>
     <lastmod>2015-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/news/nyt/</loc>
+    <loc>https://bitcoin-class.org/news/nyt/</loc>
     <lastmod>2015-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bitcoin-class.org/news/ombuds/</loc>
+    <loc>https://bitcoin-class.org/news/ombuds/</loc>
     <lastmod>2015-08-21T00:00:00+00:00</lastmod>
   </url>
   

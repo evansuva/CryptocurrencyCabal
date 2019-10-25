@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ps on Cryptocurrency Cabal</title>
-    <link>http://bitcoin-class.org/ps/</link>
-    <description>Recent content in Ps on Cryptocurrency Cabal</description>
+    <title>Ps-rsses on Cryptocurrency Cabal</title>
+    <link>https://bitcoin-class.org/ps/index.xml</link>
+    <description>Recent content in Ps-rsses on Cryptocurrency Cabal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Oct 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://bitcoin-class.org/ps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/ps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PS3: CSI: Blockchain</title>
-      <link>http://bitcoin-class.org/ps/ps3/</link>
+      <link>https://bitcoin-class.org/ps/ps3/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps3/</guid>
-      <description>
-
-&lt;h1 id=&#34;problem-set-3-br-csi-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Problem Set 3:&lt;br&gt; CSI: Blockchain&lt;/h1&gt;
+      <guid>https://bitcoin-class.org/ps/ps3/</guid>
+      <description>&lt;h1 id=&#34;problem-set-3-br-csi-blockchain&#34;&gt;Problem Set 3:&lt;br&gt; CSI: Blockchain&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
 Due: Sunday, 8 November at 8:29pm
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;purpose:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Purpose&lt;/h2&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;The goal of this assignment is for everyone to gain experience analyzing
 the blockchain and understanding of the anonymity of bitcoin (and
 mechanisms that are used to increase or decrease it), and to hopefully
 help the FBI catch some heinous criminals.&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, you may either work alone or with one other person
 of your choice.  If you work with a partner, you should together submit
@@ -39,7 +39,7 @@ efforts.  You may, and are encouraged to, discuss all of the problems
 with anyone else you want (both on-line using the course web site or any
 other means you choose, and in person).&lt;/p&gt;
 
-&lt;h3 id=&#34;submission:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Submit your answers as a single ZIP file using &lt;a href=&#34;https://www.dropbox.com/request/YC25YAa5DV7ejcc49ONC&#34;&gt;this
 link&lt;/a&gt;.  The name
@@ -49,7 +49,7 @@ should include a PDF document containing all your written (non-code)
 answers, all of the source code for your programs, and any additional
 data you think it useful to provide.&lt;/p&gt;
 
-&lt;h2 id=&#34;warm-up-manual-exploration:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Warm-Up: Manual Exploration&lt;/h2&gt;
+&lt;h2 id=&#34;warm-up-manual-exploration&#34;&gt;Warm-Up: Manual Exploration&lt;/h2&gt;
 
 &lt;p&gt;You should have received by email a list of bitcoin addresses that were
 given to us by the FBI.  These are addresses that were used to collect
@@ -87,7 +87,7 @@ to see the addresses that are receiving bitcoin from the given address).&lt;/p&g
 operation, you should post your answers to Problem 1 (for your address)
 as a &lt;a href=&#34;#comments&#34;&gt;comment on this page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;privacy-in-the-blockchain:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Privacy in the Blockchain&lt;/h2&gt;
+&lt;h2 id=&#34;privacy-in-the-blockchain&#34;&gt;Privacy in the Blockchain&lt;/h2&gt;
 
 &lt;p&gt;The questions in the section focus on this paper:&lt;/p&gt;
 
@@ -130,7 +130,7 @@ deterministic wallets became standard.  How does the widespread use of
 HD wallets today impact the effectiveness of their Heuristic 2?
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;blockchain-apis:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Blockchain APIs&lt;/h2&gt;
+&lt;h2 id=&#34;blockchain-apis&#34;&gt;Blockchain APIs&lt;/h2&gt;
 
 &lt;p&gt;One way to analyze the blockchain is to run a full bitcoin node, and
 operate on your own local copy of the blockchain.  This requires
@@ -152,7 +152,7 @@ submission.&lt;/p&gt;
 directions to get started using this next (but feel free to use other
 tools if you prefer).&lt;/p&gt;
 
-&lt;h3 id=&#34;setting-up-blockcypher-api:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Setting up BlockCypher API&lt;/h3&gt;
+&lt;h3 id=&#34;setting-up-blockcypher-api&#34;&gt;Setting up BlockCypher API&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Install Python.&lt;/strong&gt; Start by downloading and installing Python
   (&lt;a href=&#34;https://www.python.org/downloads/release/python-350/&#34;&gt;https://www.python.org/downloads/release/python-350/&lt;/a&gt;.
@@ -229,7 +229,7 @@ WalletExplorer developer, kindly made it available to us):&lt;/p&gt;
         return adr
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;mixing-services:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Mixing Services&lt;/h2&gt;
+&lt;h2 id=&#34;mixing-services&#34;&gt;Mixing Services&lt;/h2&gt;
 
 &lt;p&gt;Before looking at the ransomware addresses, get some practice using a
 blockchain API by examining a simple mixer (as far as we can tell, the
@@ -279,7 +279,7 @@ target block.)&lt;/p&gt;
   addresses as well as convenient time delays.&amp;rdquo;  How much does it enhance anonymity to split your output across two forward addresses?  (A good answer will get into how using two forward addresses impacts both the size of the anonymity set and the computational cost of performining the de-anonymizing analysis.  A great answer would actually test this by examining the blockchain to get a concrete result.)
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;follow-the-ransomware-money:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Follow the Ransomware Money&lt;/h2&gt;
+&lt;h2 id=&#34;follow-the-ransomware-money&#34;&gt;Follow the Ransomware Money&lt;/h2&gt;
 
 &lt;p&gt;Now it’s time to follow the money!  We&amp;rsquo;ll provide a few hints for things
 to do, but you should use these as starting points and form your own
@@ -377,7 +377,7 @@ get permission before doing anything potentially risky!&lt;/p&gt;
   really provides.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;submission-1:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission-1&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Follow the submission instructions at the beginning of this page by
 8:29pm on Sunday, 8 November.  If you do find anything of particular
@@ -391,30 +391,29 @@ for providing the impetus and data for this assignment.  We thank Aleš
 Janda for making the WalletExplorer API available to us.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a name=&#34;comments&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a name=&#34;comments&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PS2: The Blockchain</title>
-      <link>http://bitcoin-class.org/ps/ps2/</link>
+      <link>https://bitcoin-class.org/ps/ps2/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps2/</guid>
-      <description>
-
-&lt;h1 id=&#34;problem-set-2-br-the-blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Problem Set 2:&lt;br&gt; The Blockchain&lt;/h1&gt;
+      <guid>https://bitcoin-class.org/ps/ps2/</guid>
+      <description>&lt;h1 id=&#34;problem-set-2-br-the-blockchain&#34;&gt;Problem Set 2:&lt;br&gt; The Blockchain&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
 Due: Friday, 9 October at 8:29pm
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;purpose:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Purpose&lt;/h2&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;The goal of this assignment is for everyone in the class to understand
 how bitcoin mining and the blockchain work, and evaluate risks to the blockchain.&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, everyone should submit their own assignment and
 should writeup their own answers to the questions.  You may, and are
@@ -422,7 +421,7 @@ encouraged to, discuss all of the problems with anyone else you want
 (both on-line using the course web site or any other means you choose,
 and in person).&lt;/p&gt;
 
-&lt;h3 id=&#34;submission:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Submit your answers as a single PDF file using &lt;a href=&#34;https://www.dropbox.com/request/oar0AQeg4SJRNtdHbcSS&#34;&gt;this
 link&lt;/a&gt;.  The name
@@ -435,7 +434,7 @@ to develop your answers.  If the code you write is less than a page, it
 is best to just include it in the PDF writeup.  If it is longer, you may
 submit separate code files (and mention them in the PDF submission).&lt;/p&gt;
 
-&lt;h1 id=&#34;blockchain-consensus:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain Consensus&lt;/h1&gt;
+&lt;h1 id=&#34;blockchain-consensus&#34;&gt;Blockchain Consensus&lt;/h1&gt;
 
 &lt;p&gt;These questions concern the original bitcoin paper:&lt;/p&gt;
 
@@ -469,7 +468,7 @@ attacker is a &amp;ldquo;he&amp;rdquo;)&lt;/div&gt;&lt;/p&gt;
 the &lt;span class=&#34;math&#34;&gt;&lt;em&gt;z&lt;/em&gt;&lt;/span&gt; values be for &lt;span class=&#34;math&#34;&gt;&lt;em&gt;p&lt;/em&gt;&lt;/span&gt; &amp;lt; 0.05 (instead of &lt;em&gt;p&lt;/em&gt; &amp;lt; 0.001)?
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;merkle-trees-and-storage:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Merkle Trees and Storage&lt;/h1&gt;
+&lt;h1 id=&#34;merkle-trees-and-storage&#34;&gt;Merkle Trees and Storage&lt;/h1&gt;
 
 &lt;p&gt;Bitcoin uses Merkle Trees to record transactions in a way that enables a
 single hash to be used to record a set of transactions, and a small
@@ -519,9 +518,9 @@ on reading it.&lt;/p&gt;
 &lt;p&gt;(b) How does the cost of reading and writing to the database scale with &lt;span class=&#34;math&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; (the number of records)?
     &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;blockchain:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Blockchain&lt;/h1&gt;
+&lt;h1 id=&#34;blockchain&#34;&gt;Blockchain&lt;/h1&gt;
 
-&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;http://bitcoin-class.org/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;http://bitcoin-class.org/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;These questions are related to this paper (and what was covered in &lt;a href=&#34;https://bitcoin-class.org/classes/class10&#34;&gt;Class 10&lt;/a&gt; and &lt;a href=&#34;https://bitcoin-class.org/classes/class11&#34;&gt;Class 11&lt;/a&gt;):&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Ittay Eyal and Emin G&amp;uuml;n Sirer, &lt;a href=&#34;http://arxiv.org/pdf/1311.0243v5.pdf&#34;&gt;&lt;em&gt;Majority is not Enough: Bitcoin
@@ -576,7 +575,7 @@ learns of it before that).&lt;/p&gt;
   mining pool.)
   &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;pool-hopping:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Pool Hopping&lt;/h1&gt;
+&lt;h1 id=&#34;pool-hopping&#34;&gt;Pool Hopping&lt;/h1&gt;
 
 &lt;p&gt;Answer &lt;em&gt;either&lt;/em&gt; question 10A or 10B (your choice).&lt;/p&gt;
 
@@ -595,7 +594,7 @@ miner).  &lt;/div&gt;&lt;/p&gt;
    one of them to answer.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;bonus-opportunities:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Bonus Opportunities&lt;/h1&gt;
+&lt;h1 id=&#34;bonus-opportunities&#34;&gt;Bonus Opportunities&lt;/h1&gt;
 
 &lt;p&gt;The following questions are suggestions for further work, but it is not
 expected that everyone will solve them.  (Note that some of these could
@@ -626,28 +625,25 @@ them would be most impressive.)&lt;/p&gt;
   to capture expected increases in the difficulty, cost of capital, and
   other costs of mining besides electricity.&lt;/p&gt;
 
-&lt;h3 id=&#34;submission-1:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission-1&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Follow the submission instructions at the beginning of this page by
-8:29pm on Friday, 9 October.&lt;/p&gt;
-</description>
+8:29pm on Friday, 9 October.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PS1: Bitcoin Transactions</title>
-      <link>http://bitcoin-class.org/ps/ps1/</link>
+      <link>https://bitcoin-class.org/ps/ps1/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://bitcoin-class.org/ps/ps1/</guid>
-      <description>
-
-&lt;h1 id=&#34;problem-set-1-bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Problem Set 1: Bitcoin Transactions&lt;/h1&gt;
+      <guid>https://bitcoin-class.org/ps/ps1/</guid>
+      <description>&lt;h1 id=&#34;problem-set-1-bitcoin-transactions&#34;&gt;Problem Set 1: Bitcoin Transactions&lt;/h1&gt;
 
 &lt;p&gt;&lt;div class=&#34;due&#34;&gt;
 Due: Tuesday, 15 September at 8:29pm
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;purpose:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Purpose&lt;/h2&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;The goal of this assignment is for everyone in the class to understand
 how keys, addresses, and transactions work in bitcoin.  In addition,
@@ -655,7 +651,9 @@ this assignment should help everyone get up-to-speed with the software
 tools (including the Go programming language) we will use in later
 assignments.&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, everyone should submit their own assignment and
 should writeup their own answers to the questions as well as execute all
@@ -666,7 +664,7 @@ else you want (both on-line using the course web site or any other means
 you choose, and in person), and it is okay to share code with others so
 long as you understand everything in all of the code you use.&lt;/p&gt;
 
-&lt;h3 id=&#34;submission:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Submit your answers as a single PDF file using &lt;a href=&#34;https://www.dropbox.com/request/KV26Qd6UrcB9j6nBLVw8&#34;&gt;this
 link&lt;/a&gt;.  The name
@@ -677,7 +675,7 @@ code for question 11, or incorporate that code into the PDF submission.)&lt;/p&g
 &lt;p&gt;Your submission should include clearly marked answers for all the
 problems (highlighted in yellow).&lt;/p&gt;
 
-&lt;h1 id=&#34;blockchain-sleuthing:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Blockchain Sleuthing&lt;/h1&gt;
+&lt;h1 id=&#34;blockchain-sleuthing&#34;&gt;Blockchain Sleuthing&lt;/h1&gt;
 
 &lt;p&gt;You should have received some bitcoin at the address you submitted in
 the registration form.  (If you did not receive any bitcoin, contact the
@@ -755,7 +753,7 @@ that transaction.&lt;/p&gt;&lt;/li&gt;
   confidence if you were going to store all of your income in it?
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;getting-going:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Getting GOing&lt;/h1&gt;
+&lt;h1 id=&#34;getting-going&#34;&gt;Getting GOing&lt;/h1&gt;
 
 &lt;p&gt;You are free to use any programming language and open source bitcoin
 libraries and openly-licensed code you want for this assignment, but
@@ -795,7 +793,7 @@ After you have installed go, you can set up the BTC library by doing:
 ```
 --&gt;
 
-&lt;h1 id=&#34;obtain-the-starting-code:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Obtain the Starting Code&lt;/h1&gt;
+&lt;h1 id=&#34;obtain-the-starting-code&#34;&gt;Obtain the Starting Code&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Install Go.&lt;/strong&gt;
 Start by &lt;a href=&#34;https://golang.org/doc/install&#34;&gt;downloading and installing
@@ -814,7 +812,7 @@ $ export GOPATH=$Home/go_workspace
   btcd&lt;/a&gt; from btcsuite.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Setting up git.&lt;/strong&gt; Before continuing with this assignment, you should
-&lt;a href=&#34;http://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
+&lt;a href=&#34;https://bitcoin-class.org/tools/github/&#34;&gt;set up git and your github account&lt;/a&gt;
 and follow the directions there to set up your private repository
 containing the starting code for ps1.  (It may seem like overkill to use
 git for this assignment since you will not need to write much code or
@@ -831,7 +829,7 @@ code for generating a bitcoin key pair (including its public address).&lt;/li&gt
 &lt;li&gt;&lt;a href=&#34;https://github.com/CryptocurrencyCabal/ps1/blob/master/spend.go&#34;&gt;spend.go&lt;/a&gt;: code for generating a bitcoin transaction.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;elliptic-curve-cryptography:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Elliptic Curve Cryptography&lt;/h1&gt;
+&lt;h1 id=&#34;elliptic-curve-cryptography&#34;&gt;Elliptic Curve Cryptography&lt;/h1&gt;
 
 &lt;p&gt;The btcsuite library includes,
 &lt;a href=&#34;https://github.com/btcsuite/btcd/tree/master/btcec&#34;&gt;btcec&lt;/a&gt;, an
@@ -861,7 +859,7 @@ code.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;generating-a-key-pair:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Generating a Key Pair&lt;/h2&gt;
+&lt;h2 id=&#34;generating-a-key-pair&#34;&gt;Generating a Key Pair&lt;/h2&gt;
 
 &lt;p&gt;We have provided code in &lt;code&gt;keypair.go&lt;/code&gt; that generates a bitcoin key pair.
 You can try running this by running &lt;code&gt;go run keypair.go&lt;/code&gt; (or you can
@@ -874,7 +872,7 @@ see that it produces a different key pair each time.)&lt;/p&gt;
 class=&#34;math&#34;&gt;&lt;em&gt;k&lt;/em&gt;&lt;/span&gt;, and finding the corresponding public key by
 &amp;ldquo;multiplying&amp;rdquo; it by &lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;, the generator point.
 (Multiplication here is not standard multiplication, but multiplication
-on the elliptic curve, as discussed in &lt;a href=&#34;http://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
+on the elliptic curve, as discussed in &lt;a href=&#34;https://bitcoin-class.org/classes/class3/&#34;&gt;Class 3&lt;/a&gt;.)  The point &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt; is defined by &lt;a href=&#34;https://github.com/btcsuite/btcd/blob/BTCD_0_11_1_BETA/btcec/btcec.go#L912&#34;&gt;lines
 912-3&lt;/a&gt;):&lt;/p&gt;
 
@@ -911,7 +909,7 @@ should assume that you are an ultra-paranoid multi-billionaire who
 intends to transfer her entire fortune to the generated address.&lt;br /&gt;
     &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;generating-a-vanity-address:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Generating a Vanity Address&lt;/h2&gt;
+&lt;h2 id=&#34;generating-a-vanity-address&#34;&gt;Generating a Vanity Address&lt;/h2&gt;
 
 &lt;p&gt;Anyone can have a bitcoin address like
 &lt;code&gt;1H7tu2qUAyyr5aX1WA17eyvbetAGyqxfKZ&lt;/code&gt; or
@@ -951,7 +949,7 @@ be creative.)&lt;br /&gt;
    should contemplate briefly whether using such a site is &lt;a href=&#34;http://www.reddit.com/r/Bitcoin/comments/21foj9/funds_currently_being_stolen_from_vanity/&#34;&gt;more vain or
    stupid&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;bitcoin-transactions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Bitcoin Transactions&lt;/h1&gt;
+&lt;h1 id=&#34;bitcoin-transactions&#34;&gt;Bitcoin Transactions&lt;/h1&gt;
 
 &lt;p&gt;Having an address is not much fun without any funds!&lt;/p&gt;
 
@@ -1045,11 +1043,10 @@ are not expected to actually be able to double-spend successfully (if
 this were easy, bitcoin would not work well as a currency!), but should
 be able to learn something by attemting to do this.&lt;/p&gt;
 
-&lt;h3 id=&#34;submission-1:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Submission&lt;/h3&gt;
+&lt;h3 id=&#34;submission-1&#34;&gt;Submission&lt;/h3&gt;
 
 &lt;p&gt;Follow the submission instructions at the beginning of this page by
-8:29pm on Tuesday, 15 September.&lt;/p&gt;
-</description>
+8:29pm on Tuesday, 15 September.&lt;/p&gt;</description>
     </item>
     
   </channel>

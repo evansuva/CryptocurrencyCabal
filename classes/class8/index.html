@@ -5,7 +5,7 @@
     Class 8: Mining // Cryptocurrency Cabal
   </title>
 
-  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <link href="//gmpg.org/xfn/11" rel="profile">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 
@@ -14,13 +14,14 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="generator" content="Hugo 0.15-DEV" />
+<meta name="generator" content="Hugo 0.17" />
+
 
   <meta property="og:title" content="Class 8: Mining" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://bitcoin-class.org/classes/class8/" />
+<meta property="og:url" content="https://bitcoin-class.org/classes/class8/" />
 
 
   
@@ -34,7 +35,7 @@
 
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 
   
@@ -52,7 +53,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
 
 
-  <link rel="stylesheet" href="http://bitcoin-class.org/css/cabal.css">
+  <link rel="stylesheet" href="https://bitcoin-class.org/css/cabal.css">
 
   
  
@@ -78,7 +79,7 @@ function showText(show,hide)
     
 
 
-    <a href="http://bitcoin-class.org"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
+    <a href="https://bitcoin-class.org"><h1 class="brand-title">Crypto Currency Cabal</h1></a>
     <h2 class="brand-tagline">University of Virginia
     <br>cs4501 Fall 2015
     </h2>
@@ -172,9 +173,7 @@ function showText(show,hide)
 
 			
 
-            
-
-<h2 id="schedule:3a7d0da174b09b839e2f33e1cfd8fab3">Schedule</h2>
+            <h2 id="schedule">Schedule</h2>
 
 <p><div class="todo">
 <strong>Wednesday, September 23</strong>: Checkup 2 (was originally scheduled for Monday, September 21).  See previous class notes for details on what is covered.<br />
@@ -182,7 +181,7 @@ function showText(show,hide)
 <strong>Monday, October 19</strong>: Midterm Exam
    </div></p>
 
-<h2 id="reminders:3a7d0da174b09b839e2f33e1cfd8fab3">Reminders</h2>
+<h2 id="reminders">Reminders</h2>
 
 <p>You can <a href="https://www.google.com/calendar/ical/rmjagdrnmu3a9h2q5199lg4t28%40group.calendar.google.com/public/basic.ics">subscribe to the course
 calendar</a>.
@@ -193,6 +192,8 @@ subscribe to the RSS feed using a RSS reader or an emailing service like
 <a href="https://www.feedmyinbox.com/">feedmyinbox.com</a> or
 <a href="http://blogtrottr.com/">Blogtrottr</a>.  The feed address is
 <a href="http://bitcoin-class.org/index.xml">http://bitcoin-class.org/index.xml</a>.</p>
+
+<p></p>
 
 <p>We generally will avoid sending out emails to the class, and will assume
 you are observing the website closely.</p>
@@ -209,7 +210,7 @@ embedded viewer.  To see them, <a href="/classes/class8-post.pptx">download the 
 
 <p></center></p>
 
-<h1 id="exploring-blocks:3a7d0da174b09b839e2f33e1cfd8fab3">Exploring Blocks</h1>
+<h1 id="exploring-blocks">Exploring Blocks</h1>
 
 <table>
 <tr><td><b>Label</b></td><td><b>Bytes</b></td><td><b>Description</b></td></tr>
@@ -221,7 +222,7 @@ embedded viewer.  To see them, <a href="/classes/class8-post.pptx">download the 
 <tr><td>nonce</td><td>4</td><td>Nonce found to generate this block</td></tr>
 </table>
 
-<h1 id="merkle-trees:3a7d0da174b09b839e2f33e1cfd8fab3">Merkle Trees</h1>
+<h1 id="merkle-trees">Merkle Trees</h1>
 
 <p>Ralph Merkle, <a href="http://merkle.com/1974/"><em>Publishing a New Idea</em></a>.
 Includes his <a href="http://merkle.com/1974/FirstCS244projectProposal.pdf">cs244 project
@@ -288,7 +289,7 @@ func BuildMerkleTreeStore(transactions []*btcutil.Tx) []*btcwire.ShaHash {
 <p>How many SHA-256 hashes must be computed to verify <a href="https://blockexplorer.com/block/00000000000000000a02a2bf9d7b366e226160b8412830e6d72061ea7712d970">Block 375474</a>?
 <div class="gap"></div></p>
 
-<h1 id="mining-cost:3a7d0da174b09b839e2f33e1cfd8fab3">Mining Cost</h1>
+<h1 id="mining-cost">Mining Cost</h1>
 
 <p>The measured time to compute one SHA-256 hash on my EC2 node (2.5 GHz
 processor) is 750 ns.  Approximately <em>how many instructions execute</em> to
@@ -307,7 +308,7 @@ compute on SHA-256 hash?
 
 <p><a href="https://bitcoinwisdom.com/bitcoin/difficulty">Current Bitcoin Difficulty</a> = 59,335,351,234</p>
 
-<h1 id="energy:3a7d0da174b09b839e2f33e1cfd8fab3">Energy</h1>
+<h1 id="energy">Energy</h1>
 
 <p>Why is energy/hash so much less for custom ASICs?
 <div class="gap"></div></p>
@@ -316,7 +317,6 @@ compute on SHA-256 hash?
 many transistors have to flip to do an XOR on a general purpose
 processor like an Intel i7?
 <div class="gap"></div></p>
-
 	
 			
 
@@ -345,7 +345,7 @@ processor like an Intel i7?
           	<div id="disqus_thread"></div>
 <script type="text/javascript">
  
-   var disqus_url = '';
+   var disqus_url = '\/classes\/class8\/';
    var disqus_shortname = 'davidevans'; 
 
     
